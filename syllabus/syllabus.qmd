@@ -8,8 +8,7 @@ format:
 ---
 
 # Math 393: Abstract Algebra
-
-**Fall 2026**  
+ 
 **Professor:** Geoffrey Buhl  
 **Email:** [geoffrey.buhl@csuci.edu](mailto:geoffrey.buhl@csuci.edu)  
 **Phone:** 805-437-3122  
@@ -20,33 +19,37 @@ format:
 **Course textbook:** [Abstract Algebra: Theory and Applications](https://judsonbooks.org/aata-files/aata-html/aata-toc.html), Thomas W. Judson  
 **Course website:** CI Learn
 
-## Why I like this course
+## Math 393 Specific Information
 
-Discrete math is a fun departure from the calculus series, free from concerns about continuity and the real numbers. We get our first chance to explore abstract structures and a first introduction to proofs in this course.
+### Why I like this course
 
-## Course Description
+Groups, rings, and fields! Oh My!  These are the core algebraic structures in mathematics.  Finally we get to the good stuff: axiomatic mathematics and discussing the rules and structures that are the baseline tools for all of mathematics. Groups describe symmetry and have rich and interesting structure that arise from 3 simple axioms.
 
-Prerequisite: Math 230
-Topics include: Sets, algebraic systems, axioms, definitions, propositions, and proofs. Combinatorics, graph theory, moduli calculus.  Coding, coding errors, and Hammang codes.  Students are expected to write mathematical proofs, and communicate mathematical ideas clearly in written and oral form.
+### Course Description
 
-## How to contact me
+Prerequisite: MATH 240 and MATH 310
 
-The best way to get in touch with me is in-person or by email.  In general, if you have any difficulties with the material, schedule, or anything else, get in touch with me. I'm here to help, and it's much easier to help if you are proactive.  If my office hours don't work for you, email her and we can work out a time to me in-person or via Zoom.
+Groups, rings, and fields, the basic algebraic structures in contemporary mathematics.
 
-## Student Learning Outcomes
+### How to contact me
 
-Upon successful completion of this course, students will be able to:
-- Apply the principles of logic in a formal language,
-- Discuss the theory and use of sets,
-- Compute the number of ways complicated tasks can be performed,
-- Incorporate applied problems into graph theoretic framework and using this interpretation to solve them, and
-- Express quantitative ideas in oral and written form.
+The best way to get in touch with me is in-person or by email.  In general, if you have any difficulties with the material, schedule, or anything else, get in touch with me. I'm here to help, and it's much easier to help if you are proactive.  If my office hours don't work for you, email me and we can work out a time to me in-person or via Zoom.
 
-## Course Workload
+### Student Learning Outcomes
 
-This is a 3 credit hour course, which means that students should be prepared to spend a  9 hours a week on work related to this class outside of class.  Spending time throughout the week working on homework is critical for a successful learning experience.
+- Discuss the basic algebraic structures appearing in mathematics today
+- Apply the knowledge of these structures to the analysis of concrete special cases
+- Compute degrees of extensions
+- Prove impossibility of certain ruler and compass geometric constructions, e.g. squaring of the circle
+- Parametrize field extensions by groups and vice-versa
+- Determine the solvability of higher degree polynomial equations by radicals
+- Express concepts and techniques of Abstract Algebra in oral and written form
 
-## Student Evaluation Structure
+### Course Workload
+
+This is a 3 credit hour course, which means that students should be prepared to spend 9 hours a week on work related to this class outside of class.  Spending time throughout the week working on homework is critical for a successful learning experience.
+
+### Student Evaluation Structure
 
 | Component | Points |
 |---|---:|
@@ -57,15 +60,29 @@ This is a 3 credit hour course, which means that students should be prepared to 
 | **Total** | **650** |
 
 
-## Educational Opportunities
+### Educational Opportunities
 
 If you have special educational opportunities, like traveling for a conference, going to Santa Rosa Island, participating in an academic competition that would cause you to miss class, *I strongly encourage you to take part in these special opportunities.*  Please let me know in advance, and we can work together on a plan to  address any missed learning.
 
-## Degree Planning
+### Collaboration Policy
+
+Working in groups on the homework assignment is strongly encouraged.  However each person should individually write up their solutions, relying only on their notes about the problem.  On each homework assignment, please indicate which students you worked with.  An important part of mathematical culture and work is acknowledging the people that helped you understand and solve a problem.
+
+### Additional Resources
+
+**Office hours** is a time when you can come to my office and ask me questions about course material.  Students who make use of office hours tend to do better in college courses. You are encouraged to make early and regular use of **campus tutors** in the LRC. For campus tutoring locations, subjects and hours, use [this link](http://go.csuci.edu/tutoring).
+
+### Semester Schedule
+
+comming soon
+
+## CSU Channel Islands Information
+
+### Degree Planning
 
 During Week 3 of classes of each semester, you are asked to update your information in the degree planner. The degree planner is a useful tool to help you stay on track toward achieving your goal of graduation. Students can learn how to update the degree planner using information provided here.
 
-## In Case of Disruption
+### In Case of Disruption
 
 Wildfires and COVID are example of big disruptions that affect us all. There are smaller ones, like the class I wasn't able to teach because my second child was being born or when students have to help their family members.  Events big and small can affect our ability to be in class, but the goal to make sure learning keeps happening.
 
@@ -73,35 +90,27 @@ So, yes disruptions big and small happen! A disruption means you, me, or all of 
 
 **If I am out**: If for whatever reason I am unable to be on campus, I will move lectures to a zoom format, which will be communicated by the announcement in this course.  I will record these lecture and post them as well.
 
-**If you are out*: Be proactive and communicate!  I will always work with you to figure out how to help you keep learning!  I have old lectures and notes that are recorded that I can share, if that is what is needed.  If you just need a little extra time to get something done, let me know, I will always grant you a few more days on assignments.
+**If you are out**: Be proactive and communicate!  I will always work with you to figure out how to help you keep learning!  I have old lectures and notes that are recorded that I can share, if that is what is needed.  If you just need a little extra time to get something done, let me know, I will always grant you a few more days on assignments.
 
-**If campus closes*: If all of campus closes, which has happened at least once over the last three or more academic years,  we will move to Zoom classes which I will also record and post in the pages for each class.  I will communicate changes to the course schedule or other changes by using announcements in CILearn. More details can be found on the "Disruption Plan" page for this course on CI Learn.
+**If campus closes**: If all of campus closes, which has happened at least once over the last three or more academic years,  we will move to Zoom classes which I will also record and post in the pages for each class.  I will communicate changes to the course schedule or other changes by using announcements in CILearn. More details can be found on the "Disruption Plan" page for this course on CI Learn.
 
-## Collaboration Policy
-
-Working in groups on the homework assignment is strongly encouraged.  However each person should individually write up their solutions, relying only on their notes about the problem.  On each homework assignment, please indicate which students you worked with.  An important part of mathematical culture and work is acknowledging the people that helped you understand and solve a problem.
-
-## Additional Resources
-
-**Office hours** is a time when you can come to my office and ask me questions about course material.  Students who make use of office house tend to do better in college courses. You are encouraged to make early and regular use of {\bf campus tutors} in the LRC. For campus tutoring locations, subjects and hours, go [this link](http://go.csuci.edu/tutoring).
-
-## Accomodations
+### Accommodations
 
 If you are a student with a disability requesting reasonable accommodations in this course, please visit Disability Accommodations and Support Services (DASS) located on the second floor of Arroyo Hall, or call 805-437-3331. All requests for reasonable accommodations require registration with DASS in advance of need. You can apply for DASS services here. Faculty, students and DASS will work together regarding classroom accommodations. You are encouraged to discuss approved accommodations with your faculty.
 
-## Civil Discourse Statement
+### Civil Discourse Statement
 
 All students, staff and faculty on our campus are expected to join in making our campus a safe space for communication and civil discourse. If you are experiencing discomfort related to the language you are hearing or seeing on campus (in or out of classes), please talk with a trusted faculty or staff member. Similarly, please consider whether the language that you are using (in person or on Canvas) respects the rights of others to engage in informed discourse and express a diversity of opinions freely and in a civil manner (language from Academic Senate Resolution SR 16-01, Commitment to Equity, Inclusion, and Civil Discourse within our Diverse Campus Community).
  
-## Basic Needs at CI
+### Basic Needs at CI
 
 If you face challenges securing food, housing, or other basic needs, you are not alone, and CSUCI wants to help during this time of crisis. One helpful resource is the community of staff available through the Basic Needs Program (BNP) located on the first floor of Arroyo Hall, Room 114. Students can call 805-437-2067, email basicneeds@csuci.edu, or drop in during open hours and talk with a BNP student assistant or professional staff member for resources, ideas, and strategies connected to basic needs challenges. Students can complete a referral form to request services for themselves or others by going to www.csuci.edu/basicneeds. The BNP is known for the Dolphin Pantry located at Arroyo Hall 114, but there are other resources available and staff who can help you work through housing insecurity or displacement as well as financial insecurity. Undergraduate students living in California are especially encouraged to explore CalFresh (grocery money each month for eligible students) as a resource. Domestic undergraduate students living in California are likely to be eligible for CalFresh and BNP staff are skilled with helping students navigate this process.
 
-## Counseling and Psychological Services (CAPS)
+### Counseling and Psychological Services (CAPS)
 
 CAPS is pleased to provide a wide range of services to assist students in achieving their academic and personal goals.  Services include confidential short-term counseling, crisis intervention, psychiatric consultation, and 24/7 phone counseling.  CAPS is located in Bell Tower East, 1867 and can be reached at 805-437-2088 (select option 1 on voicemail for 24/7 phone counseling); you can also email us at caps@csuci.edu or visit our website at https://www.csuci.edu/caps. 
 
-## Academic Honesty
+### Academic Honesty
 
 *By enrolling at CSU Channel Islands, students are responsible for upholding the University's policies and the Student Conduct Code. Academic integrity and scholarship are values of the institution that ensure respect for the academic reputation of the University, students, faculty, and staff. Cheating, plagiarism, unauthorized collaboration with another student, knowingly furnishing false information to the University, buying, selling or stealing any material for an examination, or substituting for another person may be considered violations of the Student Conduct Code (located at http://www.csuci.edu/campuslife/student-conduct/academic-dishonesty.htm). If a student is found responsible for committing an act of academic dishonesty in this course, the student may receive academic penalties including a failing grade on an assignment or in the course, and a disciplinary referral will be made and submitted to the Dean of Students office. For additional information, please see the faculty Academic Senate Policy on Academic Dishonesty, also in the CI Catalog. Please ask about my expectations regarding academic dishonesty in this course if they are unclear.*
 
@@ -111,10 +120,6 @@ There is a distinction between collaboration and copying.  Collaboration is enco
 
 **Academic Honesty and Generative AI:** I have begun to notice students submitting work generated by AI.  This is copying.  If I suspect AI has been used on an assignment, I will assign a score of 0, but you can present your work in office hours or by appointment to receive credit.
 
-## Disclaimer on syllabus changes
+### Disclaimer on syllabus changes
 
 Information on this syllabus is subject to change. I will make such changes known in class and on CI Learn.
-
-## Semester Schedule
-
-comming soon
