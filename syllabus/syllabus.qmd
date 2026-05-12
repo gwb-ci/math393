@@ -55,10 +55,21 @@ This is a 3 credit hour course, which means that students should be prepared to 
 |---|---:|
 | Homework | 200 |
 | Midterm  | 100 |
-| Proof Portfolio | 60 |
-| Final Exam | 150 |
-| **Total** | **650** |
+| Proof Portfolio | 100 |
+| Final Exam | 200 |
+| **Total** | **600** |
 
+| Percent | Grade |
+|---|---:|
+| 100-90 | A |
+| 89-80  | B |
+| 79-70 | C |
+| 69-60 | D |
+| 59-0| F|
+
+I will assign + and - grades in this course at my discretion. The grade book on CILearn will be used to record and track your scores.  There will be a few small opportunities for extra credit.
+
+**Homework is due by 11:59pm on the Friday due date.**  Late homework will have the total score reduced by 2.5% for each day that the homework is late up for to 20 days.  Homework that is over 20 day late will not be graded.   Submit your assignments as PDFs or JPEGs through CI Learn.  Please take care to write up your work clearly and to submit PDFs that are easy to read.  Many students successfully use CamScanner or Adobe Scan apps for their phones to create PDFs to upload.
 
 ### Educational Opportunities
 
