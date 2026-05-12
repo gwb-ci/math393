@@ -8,7 +8,10 @@ format:
     math: mathjax
 
 website:
+  title: "Math 393 - Abstract Algebra"
   sidebar:
     contents:
-      - index.qmd
-      - syllabus.qmd    
+    - text: "Home"
+      file: index.qmd
+    - text: "Syllabus"
+      file: syllabus.qmd

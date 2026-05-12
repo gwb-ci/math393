@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.3.11)  12 MAY 2026 09:40
+This is LuaHBTeX, Version 1.13.0 (TeX Live 2021)  (format=lualatex 2022.3.11)  12 MAY 2026 09:45
  restricted system commands enabled.
 **syllabus.tex
 (./syllabus.tex
@@ -1144,6 +1144,6 @@ penalty, 1 margin_kern, 316 glyph, 25 attribute, 66 glue_spec, 25 attribute_list
 , 1 temp, 2 if_stack, 2 write, 2 pdf_dest, 2 pdf_colorstack nodes
    avail lists: 1:1,2:306,3:178,4:61,5:324,6:20,7:5618,8:25,9:190,10:12,11:325
  42672 multiletter control sequences out of 65536+600000
- 70 fonts using 20980695 bytes
+ 70 fonts using 20980619 bytes
  111i,7n,122p,10621b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
