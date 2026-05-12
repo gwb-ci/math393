@@ -6,3 +6,9 @@ format:
   html:
     toc: true
     math: mathjax
+
+website:
+  sidebar:
+    contents:
+      - index.qmd
+      - syllabus.qmd    
