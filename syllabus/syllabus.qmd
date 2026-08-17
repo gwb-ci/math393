@@ -5,7 +5,7 @@ format:
     toc: true
     math: mathjax
   pdf: default
----
+--- 
 
 # Math 393: Abstract Algebra
  
