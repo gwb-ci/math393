@@ -1,5 +1,5 @@
 ---
-title: "Tiling with Triominoes"
+title: "Symmetry of regular Polygons"
 format:
   html:
     toc: false

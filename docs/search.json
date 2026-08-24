@@ -178,7 +178,7 @@
     "href": "classes/01/slides.html#activity-3",
     "title": "Course Introduction",
     "section": "Activity 3",
-    "text": "Activity 3\nTake a few moments to introduce yourselves to your group members.\nWhat about a cube? You can rotate around a face where the axis of rotation passes through the center of the face, you can rotate around a vertex where the axis passes through opposite vertices, and you can rotate around an edge where the axis passes through the center of the edge to the center of the opposite edge. List out the symmetries of the cube. Then create a composition table for the symmetries of the cube.\nHere we will label the faces of the cube since there are only six of them and there are 8 vertices. This makes it a bit easier to keep track of the symmetries.",
+    "text": "Activity 3\nTake a few moments to introduce yourselves to your group members.\nWhat about a tetrahedron? You can rotate around a face/vertex or edge or vertex. List out the symmetries of the tetrahedron. Then create a composition table for the symmetries of the tetrahedron.\nWhat about a cube? You can rotate around a face, edge or vertex. List out the symmetries of the cube. Then create a composition table for the symmetries of the cube.\nwe’ll just label the faces of these objects because that is how the dice are labeled.",
     "crumbs": [
       "Class Material",
       "Course Introduction"
