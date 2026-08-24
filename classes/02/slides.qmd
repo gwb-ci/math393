@@ -1,0 +1,21 @@
+---
+title: "Equivalence Relations and Division Algorithm"
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+# Equivalence Relations and Division Algorithm
+
+
+
+
+## Class Session Goals
+
+
+- Learn about Equivalence Relations and see examples
+- Practice determining whether a relation is an equivalence relation
+- Prove the Division Algorithm
+
+---

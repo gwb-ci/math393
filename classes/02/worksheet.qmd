@@ -1,0 +1,25 @@
+---
+title: "Equivalence Relations"
+format: html
+---
+
+**1.13.** Define a relation $\sim$ on $\mathbb{N}$ via $a \sim b$ if and only if $a-b=3k$, for some $k \in \mathbb{Z}$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+**1.14.** Define a relation $\sim$ on $\{1,2,3,4,5,6,7\}$ via $a \sim b$ if and only if $a$ and $b$ are both even or both odd. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+**1.15.** Define a relation $\sim$ on $\mathbb{Z}$ via $a \sim b$ if and only if $|a|=|b|$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+**1.16.** Define a relation $\sim$ on $\mathbb{Z}$ via $a \sim b$ if and only if $ab>0$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+**1.17.** Let $S$ be the set of all subsets of $\mathbb{Z}$. Define a relation $\sim$ on $S$ via $T \sim U$ if and only if $T \subseteq U$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+**1.18.** Let $S$ be the set of all subsets of $\mathbb{Z}$. Define a relation $\sim$ on $S$ via $T \sim U$ if and only if $T \setminus U$ and $U \setminus T$ are both finite. Show that $\sim$ is an equivalence relation and describe $[\{1,2,3\}]$ and $[\{\ldots,-4,-2,0,2,4,\ldots\}]$.
+
+**25.** Determine whether or not the following relations are equivalence relations on the given set. If the relation is an equivalence relation, describe the partition given by it. If the relation is not an equivalence relation, state why it fails to be one.
+
+1. $x \sim y$ in $\mathbb{R}$ if $x \ge y$
+2. $m \sim n$ in $\mathbb{Z}$ if $mn>0$
+3. $x \sim y$ in $\mathbb{R}$ if $|x-y| \le 4$
+4. $m \sim n$ in $\mathbb{Z}$ if $m \equiv n \pmod{6}$
+
+*[Hint]{.underline}*

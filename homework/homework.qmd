@@ -1,0 +1,56 @@
+---
+title: "Math 393: Abstract Algebra Homework"
+format:
+  html:
+    toc: false
+    number-sections: false
+  pdf:
+    documentclass: article
+    geometry:
+      - margin=1in
+    number-sections: false
+---
+
+## Directions 
+
+Each chapter assignment consists of two parts, unstarred assignments, which will be graded for completion, and starred assignments which will receive feedback for revision and are eligible to be include in the final portfolio.  Each student needs to submit 5 unstarred or starred problems and 3 starred problems.
+
+## Homework for Chapters 1 and 2
+
+Chapter 1: 1, 2, 5, 8, 9, 12, 15, 17, 10, 19, 21, 25, 26
+
+Chapter 2: 5, 6, 7\*, 8\*, 11\*, 12, 1\*, 20\*, 28\*
+
+## Homework for Chapter 3
+
+Chapter 3: 3, 5, 6, 7, 10, 13, 14, 15, 22, 24, 25, 26, 28\*, 29\*, 33\*, 36, 37, 40\*, 45\*, 51\*, 53\*, 54\*
+
+## Homework for Chapter 4
+
+Chapter 4: 1, 2, 3, 4, 6, 7, 8, 9, 12, 14, 19\*, 20, 23\*, 24, 27, 28, 30\*, 31\*, 32\*, 35\*, 37\*, 38\*, 42\*, 43\*, 45\*
+
+## Homework for Chapter 5
+
+Chapter 5: 3, 4, 5, 6, 8, 9, 10, 12, 13\*, 14, 17\*, 18\*, 18\*, 20\*, 25\*,  24, 27\*, 30\*, 35\*, 36\*
+
+## Homework for Chapter 6
+
+Chapter 6: 2, 3, 4, 5, 6, 10, 11, 12\*, 13\*, 16\*, 17\*, 18\*, 19\*,  20\*, 21\*
+
+## Homework for Chapter 9
+
+Chapter 9: 7, 8, 9, 11, 12, 13, 14, 19, 22, 28\*, 31\*, 34\*, 38\*, 39\*, 41\*, 43\*, 46\* 50\*, 55\*\* (counts as two)
+
+## Homework for Chapter 10
+
+Chapter 10: 3, 4, 5, 6, 7, 8, 9, 10\*, 11\*, 12\*, 13\*, 14\*
+
+## Homework for Chapter 11
+
+Chapter 11 section 4:  1, 2, 3, 4, 7, 8\*, 9\*, 10\*, 12\*, 13\*, 15\*, 16\*, 17\*, 19* 
+
+Chapter 11 section 5:  1, 2, 3, 4\*, 7\*, 9, 10\*
+
+## Homework for Chapter 16
+
+Chapter 16:  5, 6, 7, 9, 10, 11\*, 12\*, 16\*, 17, 18\*, 19\*,  20\*, 21\* 23\*, 25\*, 27\*,  29\*, 32\*, 35\*

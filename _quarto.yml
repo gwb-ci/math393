@@ -14,5 +14,9 @@ website:
     contents:
     - text: "Home"
       file: index.qmd
-    - text: "Syllabus"
-      file: syllabus/syllabus.qmd
+    - section: "Class Material"
+      contents:
+       - file: classes/01/worksheet.qmd
+       - file: classes/01/slides.qmd
+       - file: classes/02/slides.qmd
+       - file: classes/02/worksheet.qmd

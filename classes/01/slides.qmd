@@ -1,0 +1,99 @@
+---
+title: "Course Introduction"
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+# Course Introduction
+
+
+
+
+## Welcome to Math 393
+
+Welcome to Math 393 Abstract Algebra! I am Prof. Geoffrey Buhl, and I am you instructor for this semester. Buhl rhymes with fuel.
+
+Class Session Goals:
+
+- Meet Classmates and work in small groups.
+- Learn about this course and my expectations.
+- Work on a first discrete mathematics problem.
+
+---
+
+## Syllabus Activity
+
+1. Take a few minutes to introduce yourselves and share what other
+   courses you are taking this semester.
+
+2. As a group, take 10–15 minutes to look over the syllabus and
+   formulate four questions your group would like to ask about the course.
+
+3. As a whole class, groups will ask questions and I will answer them.
+
+---
+
+
+
+## Advice for students
+
+
+- Start homework early, do it consistently, and redo missed or difficult
+problems since homework closely matches exam questions.
+- Attend every lecture, pay attention, take clear notes, and ask questions
+to fully understand concepts and proofs.
+
+---
+
+
+## How I will teach this course
+
+
+I cannot cover everything in the text or in a given chapter or section.  I will focus on the most important concepts and proofs, and I will provide additional examples and exercises to help you understand the material.  I will also provide additional resources and references for further study.  Ask questions in class, during office hours, or via email.  Part of you preparation for the class is to read the text beforehand.
+
+---
+
+## Activity: Symmetries
+
+![QR code for syllabus](math300_class01_worksheet_qr.png){width=70% fig-align="center"}
+
+---
+
+## Activity 1
+
+Take a few moments to introduce yourselves to your group members.  
+
+Then in small groups, work write out all the rotations of the square and pentagon.  Then create a composition table for the rotations of the square and pentagon.  
+
+---
+
+
+## Activity 2
+
+Take a few moments to introduce yourselves to your group members.  
+
+Now we will allow flips or reflections of the triangle and square. What are the addtional symmetries of the triangle and square?  Then create a composition table for the symmetries of the triangle and square that includes both rotations and reflections.
+
+---
+
+## Activity 3
+
+Take a few moments to introduce yourselves to your group members.  
+
+What about a cube?  You can rotate around a face where the axis of rotation passes through the center of the face, you can rotate around a vertex where the axis passes through opposite vertices, and you can rotate around an edge where the axis passes through the center of the edge to the center of the opposite edge.  List out the symmetries of the cube.  Then create a composition table for the symmetries of the cube.
+
+Here we will label the faces of the cube since there are only six of them and there are 8 vertices.  This makes it a bit easier to keep track of the symmetries.
+
+---
+
+## Next Steps
+
+
+- Look over the "Welcome! Students - Start Here!" Module in CI Learn.
+- Look at and work on the W1 (Week 1) Learner Survey Info Quiz on CI
+Learn.
+- Look at and work on W1 Introduce yourself Assignment in CI Learn.
+
+---

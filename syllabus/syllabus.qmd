@@ -9,8 +9,11 @@ format:
 
 # Math 393: Abstract Algebra
  
-Professor contact information is available on CI Learn as an announcement.
-
+**Professor:** Geoffrey Buhl  
+**Email:** geoffrey.buhl@csuci.edu  
+**Phone:** 805-437-3122  
+**Office:** 2324 Marin Hall  
+**Office hours:** MW 9:00–10:00am or by appointment  
 **Course meetings:** Monday and Wednesday, 10:30–11:45am  
 **Course textbook:** [Abstract Algebra: Theory and Applications](https://judsonbooks.org/aata-files/aata-html/aata-toc.html), Thomas W. Judson  
 **Course website:** CI Learn
@@ -79,9 +82,41 @@ Working in groups on the homework assignment is strongly encouraged.  However ea
 
 **Office hours** is a time when you can come to my office and ask me questions about course material.  Students who make use of office hours tend to do better in college courses. You are encouraged to make early and regular use of **campus tutors** in the LRC. For campus tutoring locations, subjects and hours, use [this link](http://go.csuci.edu/tutoring).
 
-### Semester Schedule
+## Class Schedule
 
-comming soon
+| Week | Date | Chapter | Notes |
+|:----:|:----:|:-------:|-------|
+| 1 | Aug 24 |  | Course Introduction |
+| 1 | Aug 26 | 1 & 2| Equivalence Relations and Division Algorithm |
+| 2 | Aug 31 | 3.1 |Integer Equivalence Classes and Symmetries |
+| 2 | Sep 2 | 3.2 | Definitions and Examples of Groups  |
+| 3 | Sep 7 |  | **Labor Day** - Campus Closed|
+| 3 | Sep 9 | 3.3 | Subgroups  |
+| 4 | Sep 14 | 3 |  |
+| 4 | Sep 16 | 4.1 | Cyclic Subgroups  |
+| 5 | Sep 21 | 4.2 | Multiplicative Group of Complex Numbers |
+| 5 | Sep 23 | 5.1 | Definitions and Notation of Permutation Groups  |
+| 6 | Sep 28 | 5.2 | Dihedral Groups |
+| 6 | Sep 30 | 6.1 | Cosets  |
+| 7 | Oct 5 | 6.2 | Lagrange’s Theorem |
+| 7 | Oct 7 | 6.3 | Fermat’s and Euler’s Theorems  |
+| 8 | Oct 12 | 6 |  |
+| 8 | Oct 14 |  | **Midterm**  |
+| 9 | Oct 19 | 9.1 | Definition and Examples of Isomorphisms |
+| 9 | Oct 21 | 9.2 | Direct Products  |
+| 10 | Oct 26 | 10.1 | Factor Groups and Normal Subgroups |
+| 10 | Oct 28 | 10.2 | Simplicity of the Alternating Group |
+| 11 | Nov 2 | 10 |  |
+| 11 | Nov 4 | 11.1 | Group Homomorphisms  |
+| 12 | Nov 9 | 11.2 | Isomorphism Theorems |
+| 12 | Nov 13 |  | **Veterans Day** - Campus Closed  |
+| 13 | Nov 16 | 11 |  |
+| 13 | Nov 18 | 16.1 | Rings  |
+| 14 | Nov 23 | 16.2 | Integral Domains and Fields  |
+| 14 | Nov 25 | 16.3  | Ring Homomorphisms and Ideals  |
+| 15 | Nov 30 | 16.4 | Maximal and Prime Ideals |
+| 15 | Dec 2 | 16 |  |
+|  | Dec 9 |  |**Final Exam** 8:00AM - 10:00AM |
 
 ## CSU Channel Islands Information
 
@@ -135,37 +170,3 @@ There is a distinction between collaboration and copying.  Collaboration is enco
 
 Information on this syllabus is subject to change. I will make such changes known in class and on CI Learn.
 
-## Class Schedule
-
-| Week | Date | Chapter | Notes |
-|:----:|:----:|:-------:|-------|
-| 1 | Aug 24 |  | Course Introduction |
-| 1 | Aug 26 | 1 & 2| Equivalence Relations and Division Algorithm |
-| 2 | Aug 31 | 3.1 |Integer Equivalence Classes and Symmetries |
-| 2 | Sep 2 | 3.2 | Definitions and Examples of Groups  |
-| 3 | Sep 7 |  | **Labor Day** - Campus Closed|
-| 3 | Sep 9 | 3.3 | Subgroups  |
-| 4 | Sep 14 | 3 |  |
-| 4 | Sep 16 | 4.1 | Cyclic Subgroups  |
-| 5 | Sep 21 | 4.2 | Multiplicative Group of Complex Numbers |
-| 5 | Sep 23 | 5.1 | Definitions and Notation of Permutation Groups  |
-| 6 | Sep 28 | 5.2 | Dihedral Groups |
-| 6 | Sep 30 | 6.1 | Cosets  |
-| 7 | Oct 5 | 6.2 | Lagrange’s Theorem |
-| 7 | Oct 7 | 6.3 | Fermat’s and Euler’s Theorems  |
-| 8 | Oct 12 | 6 |  |
-| 8 | Oct 14 |  | **Midtem**  |
-| 9 | Oct 19 | 9.1 | Definition and Examples of Isomorphisms |
-| 9 | Oct 21 | 9.2 | Direct Products  |
-| 10 | Oct 26 | 10.1 | Factor Groups and Normal Subgroups |
-| 10 | Oct 28 | 10.2 | Simplicity of the Alternating Group |
-| 11 | Nov 2 | 10 |  |
-| 11 | Nov 4 | 11.1 | Group Homomorphisms  |
-| 12 | Nov 9 | 11.2 | Isomorphism Theorems |
-| 12 | Nov 13 |  | **Veterans Day** - Campus Closed  |
-| 13 | Nov 16 | 11 |  |
-| 13 | Nov 18 | 16.1 | Rings  |
-| 14 | Nov 23 | 16.2 | Integral Domains and Fields  |
-| 14 | Nov 25 | 16.3  | Ring Homomorphisms and Ideals  |
-| 15 | Nov 30 | 16.4 | Maximal and Prime Ideals |
-| 15 | Dec 2 | 16 |  |
