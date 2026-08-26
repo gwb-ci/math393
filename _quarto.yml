@@ -2,21 +2,22 @@ project:
   type: website
   output-dir: docs
 
-format:
-  html:
-    theme: cosmo
-    toc: true
-    math: mathjax
-
 website:
   title: "Math 393 - Abstract Algebra"
   sidebar:
     contents:
-    - text: "Home"
-      file: index.qmd
-    - section: "Class Material"
-      contents:
-       - file: classes/01/worksheet.qmd
-       - file: classes/01/slides.qmd
-       - file: classes/02/slides.qmd
-       - file: classes/02/worksheet.qmd
+      - text: "Home"
+        file: index.qmd
+
+      - section: "Class Material"
+        contents:
+          - file: classes/01/worksheet.qmd
+          - file: classes/01/slides.qmd
+          - file: classes/02/slides.qmd
+          - file: classes/02/worksheet.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    html-math-method: mathjax
