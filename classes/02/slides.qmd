@@ -194,13 +194,7 @@ The proof has three parts:
 
 ## Division Algorithm: Existence
 
-Let
-
-$$
-S=\{a-bk:k\in\mathbb Z\text{ and }a-bk\geq 0\}.
-$$
-
-If $0\in S$, then $b$ divides $a$, and we can let
+Let $S=\{a-bk:k\in\mathbb Z\text{ and }a-bk\geq 0\}.$ If $0\in S$, then $b$ divides $a$, and we can let
 
 $$
 q=\frac{a}{b}
@@ -208,17 +202,7 @@ q=\frac{a}{b}
 r=0.
 $$
 
-Suppose $0\notin S$.
-
-We first show that $S$ is nonempty.
-
-- If $a>0$, then $a-b\cdot 0\in S$.
-- If $a<0$, then
-  $$
-  a-b(2a)=a(1-2b)\in S.
-  $$
-
-Thus $S\neq\varnothing$.
+Suppose $0\notin S$. We first show that $S$ is nonempty. If $a>0$, then $a-b\cdot 0\in S$. If $a<0$, then $a-b(2a)=a(1-2b)\in S$ Thus $S\neq\varnothing$.
 
 ---
 

@@ -365,7 +365,7 @@
     "href": "classes/02/slides.html#division-algorithm-existence",
     "title": "Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm: Existence",
-    "text": "Division Algorithm: Existence\nLet\n\\[\nS=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\n\\]\nIf \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\).\nWe first show that \\(S\\) is nonempty.\n\nIf \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\).\nIf \\(a&lt;0\\), then \\[\na-b(2a)=a(1-2b)\\in S.\n\\]\n\nThus \\(S\\neq\\varnothing\\).",
+    "text": "Division Algorithm: Existence\nLet \\(S=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\\) If \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\). We first show that \\(S\\) is nonempty. If \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\). If \\(a&lt;0\\), then \\(a-b(2a)=a(1-2b)\\in S\\) Thus \\(S\\neq\\varnothing\\).",
     "crumbs": [
       "Class Material",
       "Equivalence Relations and Division Algorithm"
