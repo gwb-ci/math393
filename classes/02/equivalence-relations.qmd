@@ -1,0 +1,24 @@
+---
+title: "Equivalence Relations"
+format: html
+---
+
+
+Define a relation $\sim$ on $\mathbb{N}$ via $a \sim b$ if and only if $a-b=3k$, for some $k \in \mathbb{Z}$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+Define a relation $\sim$ on $\{1,2,3,4,5,6,7\}$ via $a \sim b$ if and only if $a$ and $b$ are both even or both odd. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+Define a relation $\sim$ on $\mathbb{Z}$ via $a \sim b$ if and only if $|a|=|b|$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+Define a relation $\sim$ on $\mathbb{Z}$ via $a \sim b$ if and only if $ab>0$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+Let $S$ be the set of all subsets of $\mathbb{Z}$. Define a relation $\sim$ on $S$ via $T \sim U$ if and only if $T \subseteq U$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+
+Let $S$ be the set of all subsets of $\mathbb{R}$. Define a relation $\sim$ on $S$ via $x \sim y$ in $\mathbb{R}$ if $x \ge y$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+
+Let $S$ be the set of all subsets of $\mathbb{R}$. Define a relation $\sim$ on $S$ via $x \sim y$ in $\mathbb{R}$ if $|x-y| \le 4$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+
+Let $S$ be the set of all subsets of $\mathbb{Z}$. Define a relation $\sim$ on $S$ via $m \sim n$ in $\mathbb{Z}$ if $m \equiv n \pmod{6}$. Is $\sim$ an equivalence relation? If so, what are the equivalence classes?
+

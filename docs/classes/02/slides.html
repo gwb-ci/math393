@@ -148,6 +148,227 @@
 <li>Prove the Division Algorithm</li>
 </ul>
 </section>
+<section id="relations" class="slide level2">
+<h2>Relations</h2>
+<p>A <strong>relation</strong> between sets <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> is a subset <span class="math inline">\(R \subset A \times B\)</span>.</p>
+<p>If <span class="math inline">\(R \subset X \times X\)</span>, then <span class="math inline">\(R\)</span> is a relation on <span class="math inline">\(X\)</span>.</p>
+</section>
+<section id="functions" class="slide level2">
+<h2>Functions</h2>
+<p>A <strong>function</strong> <span class="math inline">\(f\)</span> from a set <span class="math inline">\(A\)</span> to a set <span class="math inline">\(B\)</span> is a relation from <span class="math inline">\(A\)</span> to <span class="math inline">\(B\)</span> such that each <span class="math inline">\(a \in A\)</span> is related to exactly one element <span class="math inline">\(b \in B\)</span>.</p>
+<p>We write</p>
+<p><span class="math display">\[
+f:A\to B
+\]</span></p>
+</section>
+<section id="functions-1" class="slide level2">
+<h2>Functions</h2>
+<p>We write <span class="math inline">\(f(a)=b\)</span> if <span class="math inline">\(b\)</span> is the unique element of <span class="math inline">\(B\)</span> associated with <span class="math inline">\(a\)</span>.</p>
+<ul>
+<li><span class="math inline">\(A\)</span> is the <strong>domain</strong> of <span class="math inline">\(f\)</span>.</li>
+<li><span class="math inline">\(B\)</span> is the <strong>range</strong> or <strong>codomain</strong> of <span class="math inline">\(f\)</span>.</li>
+<li>The set <span class="math display">\[
+f(A)=\{f(a):a\in A\}
+\]</span> is the <strong>image</strong> of <span class="math inline">\(f\)</span>.</li>
+</ul>
+</section>
+<section id="surjective-functions" class="slide level2">
+<h2>Surjective Functions</h2>
+<p>Let <span class="math inline">\(f:A\to B\)</span> be a function.</p>
+<p>The function <span class="math inline">\(f\)</span> is <strong>onto</strong> or <strong>surjective</strong> if every element in <span class="math inline">\(B\)</span> is the image of some element in <span class="math inline">\(A\)</span>.</p>
+<p>That is, for every <span class="math inline">\(b\in B\)</span>, there exists an <span class="math inline">\(a\in A\)</span> such that <span class="math inline">\(f(a)=b\)</span>.</p>
+<p>Sometimes you will this way of expressing onto functions, <span class="math inline">\(f(A)=B\)</span>.</p>
+</section>
+<section id="one-to-one-functions" class="slide level2">
+<h2>One-to-One Functions</h2>
+<p>Let <span class="math inline">\(f:A\to B\)</span> be a function.</p>
+<p>The function <span class="math inline">\(f\)</span> is <strong>one-to-one</strong> or <strong>injective</strong> if <span class="math inline">\(f(a_1)=f(a_2)\)</span> implies <span class="math inline">\(a_1=a_2\)</span>.</p>
+<p>That is each element in the image comes from a unique element in the domain.</p>
+</section>
+<section id="definition-of-equivalence-relation" class="slide level2">
+<h2>Definition of Equivalence Relation</h2>
+<p>Let <span class="math inline">\(R \subset X \times X\)</span> be a relation on <span class="math inline">\(X\)</span>.<br>
+The relation <span class="math inline">\(R\)</span> is an <strong>equivalence relation</strong> when:</p>
+<ol type="1">
+<li><p><strong>Reflexive:</strong> <span class="math inline">\((x,x) \in R\)</span> for all <span class="math inline">\(x \in X\)</span>.</p></li>
+<li><p><strong>Symmetric:</strong> If <span class="math inline">\((x,y) \in R\)</span>, then <span class="math inline">\((y,x) \in R\)</span>.</p></li>
+<li><p><strong>Transitive:</strong> If <span class="math inline">\((x,y) \in R\)</span> and <span class="math inline">\((y,z) \in R\)</span>, then <span class="math inline">\((x,z) \in R\)</span>.</p></li>
+</ol>
+</section>
+<section id="examples" class="slide level2">
+<h2>Examples</h2>
+<ul>
+<li>Similar Matrices</li>
+<li>Equivalent Fractions</li>
+</ul>
+</section>
+<section id="equivalence-relation-worksheet" class="slide level2 center">
+<h2>Equivalence Relation Worksheet</h2>
+<p><a href="https://gwb-ci.github.io/math393/classes/02/worksheet.html"><img data-src="images/math393-class02-worksheet-qr.png" style="width:35.0%" alt="QR code for the Class 02 worksheet"></a></p>
+<div class="text-center">
+<p>Scan the QR code or click it to open the worksheet.</p>
+<p><a href="https://gwb-ci.github.io/math393/classes/02/worksheet.html" class="uri">https://gwb-ci.github.io/math393/classes/02/worksheet.html</a></p>
+</div>
+</section>
+<section id="equivalence-classes" class="slide level2">
+<h2>Equivalence Classes</h2>
+<p>Let <span class="math inline">\(\sim\)</span> be an equivalence relation on a set <span class="math inline">\(X\)</span>.</p>
+<p>For <span class="math inline">\(x\in X\)</span>, the <strong>equivalence class</strong> of <span class="math inline">\(x\)</span> is <span class="math inline">\([x]=\{y\in X:y\sim x\}\)</span>.</p>
+<p>Equivalence classes have two important properties:</p>
+<ul>
+<li><span class="math inline">\([x]=[y]\)</span>, or</li>
+<li><span class="math inline">\([x]\cap[y]=\emptyset\)</span>.</li>
+</ul>
+</section>
+<section id="equivalence-classes-partition-sets" class="slide level2">
+<h2>Equivalence Classes Partition sets</h2>
+<p>Thus, the equivalence classes of <span class="math inline">\(X\)</span> form a <strong>partition</strong> of <span class="math inline">\(X\)</span>:</p>
+<p><span class="math display">\[
+X=\bigcup_{x\in X}[x].
+\]</span></p>
+<p>Every element of <span class="math inline">\(X\)</span> belongs to <strong>exactly one</strong> equivalence class.</p>
+</section>
+<section id="caution-functions-on-equivalence-classes" class="slide level2">
+<h2>Caution: Functions on Equivalence Classes</h2>
+<p>Suppose we want to define a function on equivalence classes by</p>
+<p><span class="math inline">\(f([x]) = \text{some expression involving } x\)</span>.</p>
+<p><strong>Be careful!</strong> An equivalence class can have many different representatives.</p>
+<div class="fragment">
+<p>To show that <span class="math inline">\(f\)</span> is <strong>well-defined</strong>, we must check that the value of <span class="math inline">\(f([x])\)</span> does <strong>not depend on the choice of representative</strong>.</p>
+<p>That is, we need to prove:</p>
+<blockquote>
+<p>If <span class="math inline">\(x \sim y\)</span>, then <span class="math inline">\(f([x])=f([y])\)</span>.</p>
+</blockquote>
+</div>
+<div class="fragment">
+<p><strong>Defining a rule is not enough — check that it is well-defined!</strong></p>
+</div>
+</section>
+<section id="well-ordering-of-the-natural-numbers" class="slide level2">
+<h2>Well Ordering of the Natural Numbers</h2>
+<p>A set <span class="math inline">\(S\)</span> is <strong>well-ordered</strong> if every nonempty subset of <span class="math inline">\(S\)</span> contains a least element.</p>
+<p><strong>Principle of Well-Ordering.</strong> Every nonempty subset of the natural numbers is well-ordered.</p>
+<p>In this class the natural numbers are <span class="math inline">\(\mathbb{N}=\{0, 1, 2, 3, \ldots\}\)</span>.</p>
+</section>
+<section id="what-about-the-integers" class="slide level2">
+<h2>What about the integers?</h2>
+<p>The integers <span class="math inline">\(\mathbb{Z}\)</span> are <strong>not</strong> well-ordered.</p>
+<p>For example,</p>
+<p><span class="math display">\[
+\{\ldots,-4,-3,-2,-1\}
+\]</span></p>
+<p>has no least element.</p>
+</section>
+<section id="division-algorithm" class="slide level2">
+<h2>Division Algorithm</h2>
+<p><strong>Division Algorithm.</strong> Let <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> be integers, with <span class="math inline">\(b&gt;0\)</span>. Then there exist unique integers <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> such that <span class="math inline">\(a=bq+r\)</span> where <span class="math inline">\(0\leq r&lt;b\)</span>.</p>
+<p>The proof has three parts:</p>
+<ol type="1">
+<li><strong>Existence:</strong> Show that <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> exist.</li>
+<li><span class="math inline">\(0\leq r&lt;b\)</span></li>
+<li><strong>Uniqueness:</strong> Show that no other <span class="math inline">\(q\)</span> and <span class="math inline">\(r\)</span> can satisfy these conditions.</li>
+</ol>
+</section>
+<section id="division-algorithm-existence" class="slide level2">
+<h2>Division Algorithm: Existence</h2>
+<p>Let</p>
+<p><span class="math display">\[
+S=\{a-bk:k\in\mathbb Z\text{ and }a-bk\geq 0\}.
+\]</span></p>
+<p>If <span class="math inline">\(0\in S\)</span>, then <span class="math inline">\(b\)</span> divides <span class="math inline">\(a\)</span>, and we can let</p>
+<p><span class="math display">\[
+q=\frac{a}{b}
+\qquad\text{and}\qquad
+r=0.
+\]</span></p>
+<p>Suppose <span class="math inline">\(0\notin S\)</span>.</p>
+<p>We first show that <span class="math inline">\(S\)</span> is nonempty.</p>
+<ul>
+<li>If <span class="math inline">\(a&gt;0\)</span>, then <span class="math inline">\(a-b\cdot 0\in S\)</span>.</li>
+<li>If <span class="math inline">\(a&lt;0\)</span>, then <span class="math display">\[
+a-b(2a)=a(1-2b)\in S.
+\]</span></li>
+</ul>
+<p>Thus <span class="math inline">\(S\neq\varnothing\)</span>.</p>
+</section>
+<section id="division-algorithm-existence-1" class="slide level2">
+<h2>Division Algorithm: Existence</h2>
+<p>By the Principle of Well-Ordering, <span class="math inline">\(S\)</span> has a smallest member, say</p>
+<p><span class="math display">\[
+r=a-bq.
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+a=bq+r
+\]</span></p>
+<p>and <span class="math inline">\(r\geq 0\)</span>.</p>
+<p>We now show that <span class="math inline">\(r&lt;b\)</span>.</p>
+<p>Suppose that <span class="math inline">\(r&gt;b\)</span>. Then</p>
+<p><span class="math display">\[
+a-b(q+1)=a-bq-b=r-b&gt;0.
+\]</span></p>
+<p>Thus <span class="math inline">\(a-b(q+1)\in S\)</span>, but</p>
+<p><span class="math display">\[
+a-b(q+1)&lt;a-bq=r,
+\]</span></p>
+<p>contradicting the fact that <span class="math inline">\(r\)</span> is the smallest member of <span class="math inline">\(S\)</span>.</p>
+<p>Hence <span class="math inline">\(r\leq b\)</span>. Since <span class="math inline">\(0\notin S\)</span>, <span class="math inline">\(r\neq b\)</span>, and therefore</p>
+<p><span class="math display">\[
+0\leq r&lt;b.
+\]</span></p>
+</section>
+<section id="division-algorithm-uniqueness" class="slide level2">
+<h2>Division Algorithm: Uniqueness</h2>
+<p>Suppose there exist integers <span class="math inline">\(r,r',q,q'\)</span> such that</p>
+<p><span class="math display">\[
+a=bq+r,\qquad 0\leq r&lt;b
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+a=bq'+r',\qquad 0\leq r'&lt;b.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+bq+r=bq'+r'.
+\]</span></p>
+<p>Assume that <span class="math inline">\(r'\geq r\)</span>. Then</p>
+<p><span class="math display">\[
+b(q-q')=r'-r.
+\]</span></p>
+<p>Therefore <span class="math inline">\(b\)</span> divides <span class="math inline">\(r'-r\)</span>, but</p>
+<p><span class="math display">\[
+0\leq r'-r\leq r'&lt;b.
+\]</span></p>
+<p>This is possible only if</p>
+<p><span class="math display">\[
+r'-r=0.
+\]</span></p>
+<p>Hence <span class="math inline">\(r=r'\)</span> and <span class="math inline">\(q=q'\)</span>.</p>
+</section>
+<section id="invertible-function-theorem" class="slide level2">
+<h2>Invertible Function Theorem</h2>
+<p><strong>Theorem 1.2.20.</strong></p>
+<p><em>A mapping is invertible if and only if it is both one-to-one and onto.</em></p>
+<div class="fragment">
+<p>In other words,</p>
+<p><span class="math display">\[
+f \text{ is invertible}
+\quad\Longleftrightarrow\quad
+f \text{ is injective and surjective}.
+\]</span></p>
+</div>
+</section>
+<section id="composition-of-mappings" class="slide level2">
+<h2>Composition of Mappings</h2>
+<p><strong>Theorem 1.2.15.</strong></p>
+<p>Let <span class="math inline">\(f:A\to B\)</span>, <span class="math inline">\(g:B\to C\)</span>, and <span class="math inline">\(h:C\to D\)</span>. Then</p>
+<ol type="1">
+<li><p>The composition of mappings is associative; that is, <span class="math inline">\((h\circ g)\circ f=h\circ(g\circ f)\)</span>.</p></li>
+<li><p>If <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are both one-to-one, then the mapping <span class="math inline">\(g\circ f\)</span> is one-to-one.</p></li>
+<li><p>If <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are both onto, then the mapping <span class="math inline">\(g\circ f\)</span> is onto.</p></li>
+<li><p>If <span class="math inline">\(f\)</span> and <span class="math inline">\(g\)</span> are bijective, then so is <span class="math inline">\(g\circ f\)</span>.</p></li>
+</ol>
+</section>
 <section class="slide level2">
 
 

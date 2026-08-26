@@ -207,15 +207,241 @@
     ]
   },
   {
-    "objectID": "classes/02/worksheet.html",
-    "href": "classes/02/worksheet.html",
-    "title": "Equivalence Relations",
-    "section": "",
-    "text": "1.13. Define a relation \\(\\sim\\) on \\(\\mathbb{N}\\) via \\(a \\sim b\\) if and only if \\(a-b=3k\\), for some \\(k \\in \\mathbb{Z}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\n1.14. Define a relation \\(\\sim\\) on \\(\\{1,2,3,4,5,6,7\\}\\) via \\(a \\sim b\\) if and only if \\(a\\) and \\(b\\) are both even or both odd. Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\n1.15. Define a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(|a|=|b|\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\n1.16. Define a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(ab&gt;0\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\n1.17. Let \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(T \\sim U\\) if and only if \\(T \\subseteq U\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\n1.18. Let \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(T \\sim U\\) if and only if \\(T \\setminus U\\) and \\(U \\setminus T\\) are both finite. Show that \\(\\sim\\) is an equivalence relation and describe \\([\\{1,2,3\\}]\\) and \\([\\{\\ldots,-4,-2,0,2,4,\\ldots\\}]\\).\n25. Determine whether or not the following relations are equivalence relations on the given set. If the relation is an equivalence relation, describe the partition given by it. If the relation is not an equivalence relation, state why it fails to be one.\n\n\\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(x \\ge y\\)\n\\(m \\sim n\\) in \\(\\mathbb{Z}\\) if \\(mn&gt;0\\)\n\\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(|x-y| \\le 4\\)\n\\(m \\sim n\\) in \\(\\mathbb{Z}\\) if \\(m \\equiv n \\pmod{6}\\)\n\nHint",
+    "objectID": "classes/02/slides.html#relations",
+    "href": "classes/02/slides.html#relations",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Relations",
+    "text": "Relations\nA relation between sets \\(A\\) and \\(B\\) is a subset \\(R \\subset A \\times B\\).\nIf \\(R \\subset X \\times X\\), then \\(R\\) is a relation on \\(X\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations"
+      "Equivalence Relations and Division Algorithm"
     ]
+  },
+  {
+    "objectID": "classes/02/slides.html#functions",
+    "href": "classes/02/slides.html#functions",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Functions",
+    "text": "Functions\nA function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a relation from \\(A\\) to \\(B\\) such that each \\(a \\in A\\) is related to exactly one element \\(b \\in B\\).\nWe write\n\\[\nf:A\\to B\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#functions-1",
+    "href": "classes/02/slides.html#functions-1",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Functions",
+    "text": "Functions\nWe write \\(f(a)=b\\) if \\(b\\) is the unique element of \\(B\\) associated with \\(a\\).\n\n\\(A\\) is the domain of \\(f\\).\n\\(B\\) is the range or codomain of \\(f\\).\nThe set \\[\nf(A)=\\{f(a):a\\in A\\}\n\\] is the image of \\(f\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#surjective-functions",
+    "href": "classes/02/slides.html#surjective-functions",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Surjective Functions",
+    "text": "Surjective Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is onto or surjective if every element in \\(B\\) is the image of some element in \\(A\\).\nThat is, for every \\(b\\in B\\), there exists an \\(a\\in A\\) such that \\(f(a)=b\\).\nSometimes you will this way of expressing onto functions, \\(f(A)=B\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#one-to-one-functions",
+    "href": "classes/02/slides.html#one-to-one-functions",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "One-to-One Functions",
+    "text": "One-to-One Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is one-to-one or injective if \\(f(a_1)=f(a_2)\\) implies \\(a_1=a_2\\).\nThat is each element in the image comes from a unique element in the domain.",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#definition-of-equivalence-relation",
+    "href": "classes/02/slides.html#definition-of-equivalence-relation",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Definition of Equivalence Relation",
+    "text": "Definition of Equivalence Relation\nLet \\(R \\subset X \\times X\\) be a relation on \\(X\\).\nThe relation \\(R\\) is an equivalence relation when:\n\nReflexive: \\((x,x) \\in R\\) for all \\(x \\in X\\).\nSymmetric: If \\((x,y) \\in R\\), then \\((y,x) \\in R\\).\nTransitive: If \\((x,y) \\in R\\) and \\((y,z) \\in R\\), then \\((x,z) \\in R\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#examples",
+    "href": "classes/02/slides.html#examples",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Examples",
+    "text": "Examples\n\nSimilar Matrices\nEquivalent Fractions",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
+    "href": "classes/02/slides.html#equivalence-relation-worksheet",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Relation Worksheet",
+    "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-classes",
+    "href": "classes/02/slides.html#equivalence-classes",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Classes",
+    "text": "Equivalence Classes\nLet \\(\\sim\\) be an equivalence relation on a set \\(X\\).\nFor \\(x\\in X\\), the equivalence class of \\(x\\) is \\([x]=\\{y\\in X:y\\sim x\\}\\).\nEquivalence classes have two important properties:\n\n\\([x]=[y]\\), or\n\\([x]\\cap[y]=\\emptyset\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-classes-partition-sets",
+    "href": "classes/02/slides.html#equivalence-classes-partition-sets",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Classes Partition sets",
+    "text": "Equivalence Classes Partition sets\nThus, the equivalence classes of \\(X\\) form a partition of \\(X\\):\n\\[\nX=\\bigcup_{x\\in X}[x].\n\\]\nEvery element of \\(X\\) belongs to exactly one equivalence class.",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#caution-functions-on-equivalence-classes",
+    "href": "classes/02/slides.html#caution-functions-on-equivalence-classes",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Caution: Functions on Equivalence Classes",
+    "text": "Caution: Functions on Equivalence Classes\nSuppose we want to define a function on equivalence classes by\n\\(f([x]) = \\text{some expression involving } x\\).\nBe careful! An equivalence class can have many different representatives.\n\nTo show that \\(f\\) is well-defined, we must check that the value of \\(f([x])\\) does not depend on the choice of representative.\nThat is, we need to prove:\n\nIf \\(x \\sim y\\), then \\(f([x])=f([y])\\).\n\n\n\nDefining a rule is not enough — check that it is well-defined!",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
+    "href": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Well Ordering of the Natural Numbers",
+    "text": "Well Ordering of the Natural Numbers\nA set \\(S\\) is well-ordered if every nonempty subset of \\(S\\) contains a least element.\nPrinciple of Well-Ordering. Every nonempty subset of the natural numbers is well-ordered.\nIn this class the natural numbers are \\(\\mathbb{N}=\\{0, 1, 2, 3, \\ldots\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#what-about-the-integers",
+    "href": "classes/02/slides.html#what-about-the-integers",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "What about the integers?",
+    "text": "What about the integers?\nThe integers \\(\\mathbb{Z}\\) are not well-ordered.\nFor example,\n\\[\n\\{\\ldots,-4,-3,-2,-1\\}\n\\]\nhas no least element.",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#division-algorithm",
+    "href": "classes/02/slides.html#division-algorithm",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm",
+    "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\n\\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#division-algorithm-existence",
+    "href": "classes/02/slides.html#division-algorithm-existence",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Existence",
+    "text": "Division Algorithm: Existence\nLet\n\\[\nS=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\n\\]\nIf \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\).\nWe first show that \\(S\\) is nonempty.\n\nIf \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\).\nIf \\(a&lt;0\\), then \\[\na-b(2a)=a(1-2b)\\in S.\n\\]\n\nThus \\(S\\neq\\varnothing\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#division-algorithm-existence-1",
+    "href": "classes/02/slides.html#division-algorithm-existence-1",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Existence",
+    "text": "Division Algorithm: Existence\nBy the Principle of Well-Ordering, \\(S\\) has a smallest member, say\n\\[\nr=a-bq.\n\\]\nTherefore,\n\\[\na=bq+r\n\\]\nand \\(r\\geq 0\\).\nWe now show that \\(r&lt;b\\).\nSuppose that \\(r&gt;b\\). Then\n\\[\na-b(q+1)=a-bq-b=r-b&gt;0.\n\\]\nThus \\(a-b(q+1)\\in S\\), but\n\\[\na-b(q+1)&lt;a-bq=r,\n\\]\ncontradicting the fact that \\(r\\) is the smallest member of \\(S\\).\nHence \\(r\\leq b\\). Since \\(0\\notin S\\), \\(r\\neq b\\), and therefore\n\\[\n0\\leq r&lt;b.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#division-algorithm-uniqueness",
+    "href": "classes/02/slides.html#division-algorithm-uniqueness",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Uniqueness",
+    "text": "Division Algorithm: Uniqueness\nSuppose there exist integers \\(r,r',q,q'\\) such that\n\\[\na=bq+r,\\qquad 0\\leq r&lt;b\n\\]\nand\n\\[\na=bq'+r',\\qquad 0\\leq r'&lt;b.\n\\]\nThen\n\\[\nbq+r=bq'+r'.\n\\]\nAssume that \\(r'\\geq r\\). Then\n\\[\nb(q-q')=r'-r.\n\\]\nTherefore \\(b\\) divides \\(r'-r\\), but\n\\[\n0\\leq r'-r\\leq r'&lt;b.\n\\]\nThis is possible only if\n\\[\nr'-r=0.\n\\]\nHence \\(r=r'\\) and \\(q=q'\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#invertible-function-theorem",
+    "href": "classes/02/slides.html#invertible-function-theorem",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Invertible Function Theorem",
+    "text": "Invertible Function Theorem\nTheorem 1.2.20.\nA mapping is invertible if and only if it is both one-to-one and onto.\n\nIn other words,\n\\[\nf \\text{ is invertible}\n\\quad\\Longleftrightarrow\\quad\nf \\text{ is injective and surjective}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#composition-of-mappings",
+    "href": "classes/02/slides.html#composition-of-mappings",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Composition of Mappings",
+    "text": "Composition of Mappings\nTheorem 1.2.15.\nLet \\(f:A\\to B\\), \\(g:B\\to C\\), and \\(h:C\\to D\\). Then\n\nThe composition of mappings is associative; that is, \\((h\\circ g)\\circ f=h\\circ(g\\circ f)\\).\nIf \\(f\\) and \\(g\\) are both one-to-one, then the mapping \\(g\\circ f\\) is one-to-one.\nIf \\(f\\) and \\(g\\) are both onto, then the mapping \\(g\\circ f\\) is onto.\nIf \\(f\\) and \\(g\\) are bijective, then so is \\(g\\circ f\\).",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "lecture notes/classxclass.html",
+    "href": "lecture notes/classxclass.html",
+    "title": "Equivalence Relations",
+    "section": "",
+    "text": "For symmetry activity focus on just \\(D_3\\) and and make sure they know the flix axes do not move with the shape. Maybe \\(r_c\\) and \\(r_cc\\), have outside labeled with ABC and flips are \\(f_A\\), \\(f_B\\), \\(f_C\\) and rotations are \\(r_c\\) and \\(r_cc\\). Then have them do the multiplication table for \\(D_3\\) and then ask them to find the inverse of each element. Then have them do the same for \\(D_4\\). Highlight you can reverse every move and when you compose it is already one on the list."
+  },
+  {
+    "objectID": "lecture notes/classxclass.html#class-01-course-introduction-and-symmetry-activity",
+    "href": "lecture notes/classxclass.html#class-01-course-introduction-and-symmetry-activity",
+    "title": "Equivalence Relations",
+    "section": "",
+    "text": "For symmetry activity focus on just \\(D_3\\) and and make sure they know the flix axes do not move with the shape. Maybe \\(r_c\\) and \\(r_cc\\), have outside labeled with ABC and flips are \\(f_A\\), \\(f_B\\), \\(f_C\\) and rotations are \\(r_c\\) and \\(r_cc\\). Then have them do the multiplication table for \\(D_3\\) and then ask them to find the inverse of each element. Then have them do the same for \\(D_4\\). Highlight you can reverse every move and when you compose it is already one on the list."
+  },
+  {
+    "objectID": "lecture notes/classxclass.html#section",
+    "href": "lecture notes/classxclass.html#section",
+    "title": "Equivalence Relations",
+    "section": "02",
+    "text": "02"
+  },
+  {
+    "objectID": "classes/02/equivalence-relations.html",
+    "href": "classes/02/equivalence-relations.html",
+    "title": "Equivalence Relations",
+    "section": "",
+    "text": "Define a relation \\(\\sim\\) on \\(\\mathbb{N}\\) via \\(a \\sim b\\) if and only if \\(a-b=3k\\), for some \\(k \\in \\mathbb{Z}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\{1,2,3,4,5,6,7\\}\\) via \\(a \\sim b\\) if and only if \\(a\\) and \\(b\\) are both even or both odd. Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(|a|=|b|\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(ab&gt;0\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(T \\sim U\\) if and only if \\(T \\subseteq U\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(x \\ge y\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(|x-y| \\le 4\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(m \\sim n\\) in \\(\\mathbb{Z}\\) if \\(m \\equiv n \\pmod{6}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?"
   },
   {
     "objectID": "syllabus/syllabus.html",

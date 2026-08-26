@@ -112,7 +112,9 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../classes/01/worksheet.html">Class Material</a></li><li class="breadcrumb-item"><a href="../../classes/02/worksheet.html">Equivalence Relations</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      Math 393 - Abstract Algebra
+      </li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -170,12 +172,6 @@ window.Quarto = {
  <span class="menu-text">Equivalence Relations and Division Algorithm</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../classes/02/worksheet.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Equivalence Relations</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -189,7 +185,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../classes/01/worksheet.html">Class Material</a></li><li class="breadcrumb-item"><a href="../../classes/02/worksheet.html">Equivalence Relations</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Equivalence Relations</h1>
 </div>
@@ -208,20 +204,14 @@ window.Quarto = {
 </header>
 
 
-<p><strong>1.13.</strong> Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{N}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(a-b=3k\)</span>, for some <span class="math inline">\(k \in \mathbb{Z}\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
-<p><strong>1.14.</strong> Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\{1,2,3,4,5,6,7\}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both even or both odd. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
-<p><strong>1.15.</strong> Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{Z}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(|a|=|b|\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
-<p><strong>1.16.</strong> Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{Z}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(ab&gt;0\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
-<p><strong>1.17.</strong> Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{Z}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(T \sim U\)</span> if and only if <span class="math inline">\(T \subseteq U\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
-<p><strong>1.18.</strong> Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{Z}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(T \sim U\)</span> if and only if <span class="math inline">\(T \setminus U\)</span> and <span class="math inline">\(U \setminus T\)</span> are both finite. Show that <span class="math inline">\(\sim\)</span> is an equivalence relation and describe <span class="math inline">\([\{1,2,3\}]\)</span> and <span class="math inline">\([\{\ldots,-4,-2,0,2,4,\ldots\}]\)</span>.</p>
-<p><strong>25.</strong> Determine whether or not the following relations are equivalence relations on the given set. If the relation is an equivalence relation, describe the partition given by it. If the relation is not an equivalence relation, state why it fails to be one.</p>
-<ol type="1">
-<li><span class="math inline">\(x \sim y\)</span> in <span class="math inline">\(\mathbb{R}\)</span> if <span class="math inline">\(x \ge y\)</span></li>
-<li><span class="math inline">\(m \sim n\)</span> in <span class="math inline">\(\mathbb{Z}\)</span> if <span class="math inline">\(mn&gt;0\)</span></li>
-<li><span class="math inline">\(x \sim y\)</span> in <span class="math inline">\(\mathbb{R}\)</span> if <span class="math inline">\(|x-y| \le 4\)</span></li>
-<li><span class="math inline">\(m \sim n\)</span> in <span class="math inline">\(\mathbb{Z}\)</span> if <span class="math inline">\(m \equiv n \pmod{6}\)</span></li>
-</ol>
-<p><em><u>Hint</u></em></p>
+<p>Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{N}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(a-b=3k\)</span>, for some <span class="math inline">\(k \in \mathbb{Z}\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\{1,2,3,4,5,6,7\}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are both even or both odd. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{Z}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(|a|=|b|\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(\mathbb{Z}\)</span> via <span class="math inline">\(a \sim b\)</span> if and only if <span class="math inline">\(ab&gt;0\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{Z}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(T \sim U\)</span> if and only if <span class="math inline">\(T \subseteq U\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{R}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(x \sim y\)</span> in <span class="math inline">\(\mathbb{R}\)</span> if <span class="math inline">\(x \ge y\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{R}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(x \sim y\)</span> in <span class="math inline">\(\mathbb{R}\)</span> if <span class="math inline">\(|x-y| \le 4\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
+<p>Let <span class="math inline">\(S\)</span> be the set of all subsets of <span class="math inline">\(\mathbb{Z}\)</span>. Define a relation <span class="math inline">\(\sim\)</span> on <span class="math inline">\(S\)</span> via <span class="math inline">\(m \sim n\)</span> in <span class="math inline">\(\mathbb{Z}\)</span> if <span class="math inline">\(m \equiv n \pmod{6}\)</span>. Is <span class="math inline">\(\sim\)</span> an equivalence relation? If so, what are the equivalence classes?</p>
 
 
 
