@@ -284,17 +284,6 @@
     ]
   },
   {
-    "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
-    "href": "classes/02/slides.html#equivalence-relation-worksheet",
-    "title": "Equivalence Relations and Division Algorithm",
-    "section": "Equivalence Relation Worksheet",
-    "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
-    "crumbs": [
-      "Class Material",
-      "Equivalence Relations and Division Algorithm"
-    ]
-  },
-  {
     "objectID": "classes/02/slides.html#equivalence-classes",
     "href": "classes/02/slides.html#equivalence-classes",
     "title": "Equivalence Relations and Division Algorithm",
@@ -311,6 +300,17 @@
     "title": "Equivalence Relations and Division Algorithm",
     "section": "Equivalence Classes Partition sets",
     "text": "Equivalence Classes Partition sets\nThus, the equivalence classes of \\(X\\) form a partition of \\(X\\):\n\\[\nX=\\bigcup_{x\\in X}[x].\n\\]\nEvery element of \\(X\\) belongs to exactly one equivalence class.",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
+    "href": "classes/02/slides.html#equivalence-relation-worksheet",
+    "title": "Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Relation Worksheet",
+    "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
     "crumbs": [
       "Class Material",
       "Equivalence Relations and Division Algorithm"

@@ -93,20 +93,7 @@ The relation $R$ is an **equivalence relation** when:
 
 ---
 
-## Equivalence Relation Worksheet {.center}
 
-[![](images/math393-class02-worksheet-qr.png){
-  fig-alt="QR code for the Class 02 worksheet"
-  width="35%"
-}](https://gwb-ci.github.io/math393/classes/02/worksheet.html)
-
-::: {.text-center}
-
-Scan the QR code or click it to open the worksheet.
-
-<https://gwb-ci.github.io/math393/classes/02/worksheet.html>
-
-:::
 
 ## Equivalence Classes
 
@@ -131,6 +118,22 @@ X=\bigcup_{x\in X}[x].
 $$
 
 Every element of $X$ belongs to **exactly one** equivalence class.
+
+
+## Equivalence Relation Worksheet {.center}
+
+[![](images/math393-class02-worksheet-qr.png){
+  fig-alt="QR code for the Class 02 worksheet"
+  width="35%"
+}](https://gwb-ci.github.io/math393/classes/02/worksheet.html)
+
+::: {.text-center}
+
+Scan the QR code or click it to open the worksheet.
+
+<https://gwb-ci.github.io/math393/classes/02/worksheet.html>
+
+:::
 
 ## Caution: Functions on Equivalence Classes
 
