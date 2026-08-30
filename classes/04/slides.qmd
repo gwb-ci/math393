@@ -1,0 +1,328 @@
+---
+title: "Definitions and Example of Groups"
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+
+## Class Session Goals
+
+- Learn about Equivalence Relations and see examples
+- Practice determining whether a relation is an equivalence relation
+- Prove the Division Algorithm
+
+---
+
+## Relations
+
+A **relation** between sets $A$ and $B$ is a subset $R \subset A \times B$.
+
+If $R \subset X \times X$, then $R$ is a relation on $X$.
+
+
+
+---
+
+## Functions
+
+A **function** $f$ from a set $A$ to a set $B$ is a relation from $A$ to $B$ such that each $a \in A$ is related to exactly one element $b \in B$.
+
+We write
+
+$$
+f:A\to B
+$$
+
+---
+
+## Functions
+
+We write $f(a)=b$ if $b$ is the unique element of $B$ associated with $a$.
+
+- $A$ is the **domain** of $f$.
+- $B$ is the **range** or **codomain** of $f$.
+- The set
+  $$
+  f(A)=\{f(a):a\in A\}
+  $$
+  is the **image** of $f$.
+
+---
+
+## Surjective Functions
+
+Let $f:A\to B$ be a function.
+
+The function $f$ is **onto** or **surjective** if every element in $B$ is the image of some element in $A$.
+
+That is, for every $b\in B$, there exists an $a\in A$ such that $f(a)=b$.
+
+Sometimes you will this way of expressing onto functions, $f(A)=B$.
+
+---
+
+## One-to-One Functions
+
+Let $f:A\to B$ be a function.
+
+The function $f$ is **one-to-one** or **injective** if $f(a_1)=f(a_2)$ implies $a_1=a_2$.
+
+That is each element in the image comes from a unique element in the domain.
+
+---
+
+## Definition of Equivalence Relation
+
+Let $R \subset X \times X$ be a relation on $X$.  
+The relation $R$ is an **equivalence relation** when:
+
+1. **Reflexive:** $(x,x) \in R$ for all $x \in X$.
+
+2. **Symmetric:** If $(x,y) \in R$, then $(y,x) \in R$.
+
+3. **Transitive:** If $(x,y) \in R$ and $(y,z) \in R$, then
+   $(x,z) \in R$.
+
+## Examples
+
+- Similar Matrices
+- Equivalent Fractions
+
+---
+
+
+
+## Equivalence Classes
+
+Let $\sim$ be an equivalence relation on a set $X$.
+
+For $x\in X$, the **equivalence class** of $x$ is $[x]=\{y\in X:y\sim x\}$.
+
+
+Equivalence classes have two important properties:
+
+- $[x]=[y]$, or
+- $[x]\cap[y]=\emptyset$.
+
+## Equivalence Classes Partition sets
+
+
+
+Thus, the equivalence classes of $X$ form a **partition** of $X$:
+
+$$
+X=\bigcup_{x\in X}[x].
+$$
+
+Every element of $X$ belongs to **exactly one** equivalence class.
+
+
+## Equivalence Relation Worksheet {.center}
+
+[![](images/math393-class02-worksheet-qr.png){
+  fig-alt="QR code for the Class 02 worksheet"
+  width="35%"
+}](https://gwb-ci.github.io/math393/classes/02/worksheet.html)
+
+::: {.text-center}
+
+Scan the QR code or click it to open the worksheet.
+
+<https://gwb-ci.github.io/math393/classes/02/worksheet.html>
+
+:::
+
+## Caution: Functions on Equivalence Classes
+
+Suppose we want to define a function on equivalence classes by
+
+$f([x]) = \text{some expression involving } x$.
+
+**Be careful!** An equivalence class can have many different representatives.
+
+::: {.fragment}
+
+To show that $f$ is **well-defined**, we must check that the value of $f([x])$ does **not depend on the choice of representative**.
+
+That is, we need to prove:
+
+> If $x \sim y$, then $f([x])=f([y])$.
+
+:::
+
+::: {.fragment}
+
+**Defining a rule is not enough — check that it is well-defined!**
+
+:::
+
+
+
+## Well Ordering of the Natural Numbers
+
+A set $S$ is **well-ordered** if every nonempty subset of $S$ contains a least element.
+
+**Principle of Well-Ordering.** Every nonempty subset of the natural numbers is well-ordered.
+
+In this class the natural numbers are $\mathbb{N}=\{0, 1, 2, 3, \ldots\}$.
+
+---
+
+## What about  the integers?
+
+The integers $\mathbb{Z}$ are **not** well-ordered.
+
+For example,
+
+$$
+\{\ldots,-4,-3,-2,-1\}
+$$
+
+has no least element.
+
+## Division Algorithm
+
+**Division Algorithm.** Let $a$ and $b$ be integers, with $b>0$. Then there exist unique integers $q$ and $r$ such that $a=bq+r$ where $0\leq r<b$.
+
+The proof has three parts:
+
+1. **Existence:** Show that $q$ and $r$ exist.
+2. $0\leq r<b$
+3. **Uniqueness:** Show that no other $q$ and $r$ can satisfy these conditions.
+
+---
+
+## Division Algorithm: Existence
+
+Let $S=\{a-bk:k\in\mathbb Z\text{ and }a-bk\geq 0\}.$ If $0\in S$, then $b$ divides $a$, and we can let
+
+$$
+q=\frac{a}{b}
+\qquad\text{and}\qquad
+r=0.
+$$
+
+Suppose $0\notin S$. We first show that $S$ is nonempty. If $a>0$, then $a-b\cdot 0\in S$. If $a<0$, then $a-b(2a)=a(1-2b)\in S$ Thus $S\neq\varnothing$.
+
+---
+
+## Division Algorithm: Existence
+
+By the Principle of Well-Ordering, $S$ has a smallest member, say
+
+$$
+r=a-bq.
+$$
+
+Therefore,
+
+$$
+a=bq+r
+$$
+
+and $r\geq 0$.
+
+We now show that $r<b$.
+
+Suppose that $r>b$. Then
+
+$$
+a-b(q+1)=a-bq-b=r-b>0.
+$$
+
+Thus $a-b(q+1)\in S$, but
+
+$$
+a-b(q+1)<a-bq=r,
+$$
+
+contradicting the fact that $r$ is the smallest member of $S$.
+
+Hence $r\leq b$. Since $0\notin S$, $r\neq b$, and therefore
+
+$$
+0\leq r<b.
+$$
+
+---
+
+## Division Algorithm: Uniqueness
+
+Suppose there exist integers $r,r',q,q'$ such that
+
+$$
+a=bq+r,\qquad 0\leq r<b
+$$
+
+and
+
+$$
+a=bq'+r',\qquad 0\leq r'<b.
+$$
+
+Then
+
+$$
+bq+r=bq'+r'.
+$$
+
+Assume that $r'\geq r$. Then
+
+$$
+b(q-q')=r'-r.
+$$
+
+Therefore $b$ divides $r'-r$, but
+
+$$
+0\leq r'-r\leq r'<b.
+$$
+
+This is possible only if
+
+$$
+r'-r=0.
+$$
+
+Hence $r=r'$ and $q=q'$.
+
+
+---
+
+## Invertible Function Theorem
+
+**Theorem 1.2.20.**
+
+*A mapping is invertible if and only if it is both one-to-one and onto.*
+
+::: {.fragment}
+
+In other words,
+
+$$
+f \text{ is invertible}
+\quad\Longleftrightarrow\quad
+f \text{ is injective and surjective}.
+$$
+
+:::
+
+---
+
+## Composition of Mappings
+
+**Theorem 1.2.15.**
+
+Let $f:A\to B$, $g:B\to C$, and $h:C\to D$. Then
+
+1. The composition of mappings is associative; that is, $(h\circ g)\circ f=h\circ(g\circ f)$.
+
+2. If $f$ and $g$ are both one-to-one, then the mapping $g\circ f$ is one-to-one.
+
+3. If $f$ and $g$ are both onto, then the mapping $g\circ f$ is onto.
+
+4. If $f$ and $g$ are bijective, then so is $g\circ f$.
+
+---

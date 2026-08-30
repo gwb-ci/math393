@@ -1,0 +1,10 @@
+---
+title: "Polyigan Symmetries"
+format: html
+---
+
+
+You have a few differnt object in front of you.  Create a list of symmetries of the square and one additional item. How do you know your list is complete or your list does not have duplicates. You will need to think a little bit about how to name the symmetries to keep track of them.
+
+Then as a class we will try to create a composition table for the symmetries of the square. I'm going to call the set of symmetries of the square, $D_4$.  Each group is responisble for three rows of the composition table.
+

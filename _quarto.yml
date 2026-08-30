@@ -15,6 +15,10 @@ website:
           - file: classes/01/slides.qmd
           - file: classes/02/slides.qmd
           - file: classes/02/worksheet.qmd
+          - file: classes/03/worksheet.qmd
+          - file: classes/03/slides.qmd
+          - file: classes/04/slides.qmd
+          - file: classes/04/worksheet.qmd
 
 format:
   html:

@@ -6,7 +6,6 @@ format:
     slide-number: true
 ---
 
-# Equivalence Relations and Division Algorithm
 
 ## Class Session Goals
 
