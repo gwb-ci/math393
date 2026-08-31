@@ -50,6 +50,22 @@ The proof has three parts:
 2. Verify $0\leq r<b$
 3. **Uniqueness:** Show that no other $q$ and $r$ can satisfy these conditions.
 
+
+---
+
+## Theorem 2.2.2
+
+Let $a$ and $b$ be nonzero integers. Then there exist integers $r$ and $s$ such that
+
+$$
+\gcd(a,b) = ar + bs.
+$$
+
+Furthermore, the greatest common divisor of $a$ and $b$ is unique.
+
+
+If $\gcd(a,b) = 1$, we say that $a$ and $b$ are *relatively prime*.
+
 ---
 
 ## Integers Mod n

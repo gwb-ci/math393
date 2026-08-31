@@ -680,6 +680,17 @@
     ]
   },
   {
+    "objectID": "classes/03/slides.html#theorem-2.2.2",
+    "href": "classes/03/slides.html#theorem-2.2.2",
+    "title": "Integer Equivalence Classes and Symmetries",
+    "section": "Theorem 2.2.2",
+    "text": "Theorem 2.2.2\nLet \\(a\\) and \\(b\\) be nonzero integers. Then there exist integers \\(r\\) and \\(s\\) such that\n\\[\n\\gcd(a,b) = ar + bs.\n\\]\nFurthermore, the greatest common divisor of \\(a\\) and \\(b\\) is unique.\nIf \\(\\gcd(a,b) = 1\\), we say that \\(a\\) and \\(b\\) are relatively prime.",
+    "crumbs": [
+      "Class Material",
+      "Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
     "objectID": "classes/03/slides.html#integers-mod-n",
     "href": "classes/03/slides.html#integers-mod-n",
     "title": "Integer Equivalence Classes and Symmetries",
