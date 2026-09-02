@@ -1,328 +1,569 @@
 ---
-title: "Definitions and Example of Groups"
+title: "Slides: Definitions and Examples of Groups"
+
 format:
   revealjs:
     theme: solarized
     slide-number: true
 ---
 
-
 ## Class Session Goals
 
-- Learn about Equivalence Relations and see examples
-- Practice determining whether a relation is an equivalence relation
-- Prove the Division Algorithm
+- Define groups
+- Explore examples of groups
+- Establish basic properties of groups
 
 ---
 
-## Relations
+## Definition of a Group
 
-A **relation** between sets $A$ and $B$ is a subset $R \subset A \times B$.
+A **group** $(G,\circ)$ is a set $G$ together with a law of composition
+$(a,b)\mapsto a\circ b$ satisfying:
 
-If $R \subset X \times X$, then $R$ is a relation on $X$.
+1. **Associativity:**  
+   $(a\circ b)\circ c=a\circ(b\circ c)$ for $a,b,c\in G$.
+
+2. **Identity:**  
+   There exists $e\in G$ such that
+   $e\circ a=a\circ e=a$ for every $a\in G$.
+
+3. **Inverses:**  
+   For each $a\in G$, there exists $a^{-1}\in G$ such that
+   $a\circ a^{-1}=a^{-1}\circ a=e$.
+
+
+---
+
+## Additional Definitions
+
+A group is **abelian** (or **commutative**) if
+$a\circ b=b\circ a$ for all $a,b\in G$.
+
+A **Cayley table** is a table that shows the result of the group operation for all pairs of elements in the group. We use it to verify that every element has an inverse.  If the Caley table is symmetric about the diagonal, then the group is abelian.
+
+The **order** of a group is the number of elements in the group.  Groups can be finite or infinite.
+
+---
+
+## Cayley Table for $\mathbb Z_6$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 630px;">
+<colgroup>
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$+$</th>
+<th style="border: 1px solid black; text-align: right;">$[0]$</th>
+<th style="border: 1px solid black; text-align: right;">$[1]$</th>
+<th style="border: 1px solid black; text-align: right;">$[2]$</th>
+<th style="border: 1px solid black; text-align: right;">$[3]$</th>
+<th style="border: 1px solid black; text-align: right;">$[4]$</th>
+<th style="border: 1px solid black; text-align: right;">$[5]$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[0]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[1]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[2]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[3]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[4]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$[5]$</th>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+<td style="border: 1px solid black;"></td>
+</tr>
+
+</table>
+
+
+---
+
+
+## Cayley Table for the symmetry group of the equilateral triangle
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 630px;"> <colgroup> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> </colgroup> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$\circ$</th> <th style="border: 1px solid black; text-align: right;">$e$</th> <th style="border: 1px solid black; text-align: right;">$r_1$</th> <th style="border: 1px solid black; text-align: right;">$r_2$</th> <th style="border: 1px solid black; text-align: right;">$f_a$</th> <th style="border: 1px solid black; text-align: right;">$f_b$</th> <th style="border: 1px solid black; text-align: right;">$f_c$</th> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$e$</th> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$r_1$</th> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$r_2$</th> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_a$</th> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_b$</th> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_c$</th> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> </tr> </table>
 
 
 
 ---
 
-## Functions
 
-A **function** $f$ from a set $A$ to a set $B$ is a relation from $A$ to $B$ such that each $a \in A$ is related to exactly one element $b \in B$.
 
-We write
+## Integers are a Group
 
-$$
-f:A\to B
-$$
+Consider $(\mathbb Z,+)$.
 
----
+- The sum of two integers is an integer.
+- Addition is associative:
+  $(m+n)+k=m+(n+k)$.
+- The identity is $0$:
+  $0+n=n+0=n$.
+- The inverse of $n$ is $-n$:
+  $n+(-n)=(-n)+n=0$.
 
-## Functions
 
-We write $f(a)=b$ if $b$ is the unique element of $B$ associated with $a$.
 
-- $A$ is the **domain** of $f$.
-- $B$ is the **range** or **codomain** of $f$.
-- The set
-  $$
-  f(A)=\{f(a):a\in A\}
-  $$
-  is the **image** of $f$.
+Since $m+n=n+m$, $(\mathbb Z,+)$ is an **abelian group**.
 
 ---
 
-## Surjective Functions
+## Activity
 
-Let $f:A\to B$ be a function.
+Is $(\mathbb N,+)$ a group?  Why or why not?
 
-The function $f$ is **onto** or **surjective** if every element in $B$ is the image of some element in $A$.
+Why is $(\mathbb Z,\cdot)$ not a group?  In your group come up with two reasons why this is not a group.
 
-That is, for every $b\in B$, there exists an $a\in A$ such that $f(a)=b$.
-
-Sometimes you will this way of expressing onto functions, $f(A)=B$.
-
----
-
-## One-to-One Functions
-
-Let $f:A\to B$ be a function.
-
-The function $f$ is **one-to-one** or **injective** if $f(a_1)=f(a_2)$ implies $a_1=a_2$.
-
-That is each element in the image comes from a unique element in the domain.
-
----
-
-## Definition of Equivalence Relation
-
-Let $R \subset X \times X$ be a relation on $X$.  
-The relation $R$ is an **equivalence relation** when:
-
-1. **Reflexive:** $(x,x) \in R$ for all $x \in X$.
-
-2. **Symmetric:** If $(x,y) \in R$, then $(y,x) \in R$.
-
-3. **Transitive:** If $(x,y) \in R$ and $(y,z) \in R$, then
-   $(x,z) \in R$.
-
-## Examples
-
-- Similar Matrices
-- Equivalent Fractions
+What about $M_2(\mathbb R)$, the set of all $2\times 2$ matrices with real entries, under matrix addition?  Is this a group?  Why or why not?
 
 ---
 
 
+## $\mathbb Z_n$ is a Group Under Addition
 
-## Equivalence Classes
-
-Let $\sim$ be an equivalence relation on a set $X$.
-
-For $x\in X$, the **equivalence class** of $x$ is $[x]=\{y\in X:y\sim x\}$.
+The integers mod $n$ form a group under addition modulo $n$.
 
 
-Equivalence classes have two important properties:
+The identity is $0$, and every element has an additive inverse.
 
-- $[x]=[y]$, or
-- $[x]\cap[y]=\emptyset$.
+For example in $\mathbb Z_5$, 
 
-## Equivalence Classes Partition sets
+$[2]+[3]=[3+2]=[0]$.  In general, $[n]+[n-5]=[n-5]+[n]=[0]$.
 
-
-
-Thus, the equivalence classes of $X$ form a **partition** of $X$:
-
-$$
-X=\bigcup_{x\in X}[x].
-$$
-
-Every element of $X$ belongs to **exactly one** equivalence class.
-
-
-## Equivalence Relation Worksheet {.center}
-
-[![](images/math393-class02-worksheet-qr.png){
-  fig-alt="QR code for the Class 02 worksheet"
-  width="35%"
-}](https://gwb-ci.github.io/math393/classes/02/worksheet.html)
-
-::: {.text-center}
-
-Scan the QR code or click it to open the worksheet.
-
-<https://gwb-ci.github.io/math393/classes/02/worksheet.html>
-
-:::
-
-## Caution: Functions on Equivalence Classes
-
-Suppose we want to define a function on equivalence classes by
-
-$f([x]) = \text{some expression involving } x$.
-
-**Be careful!** An equivalence class can have many different representatives.
-
-::: {.fragment}
-
-To show that $f$ is **well-defined**, we must check that the value of $f([x])$ does **not depend on the choice of representative**.
-
-That is, we need to prove:
-
-> If $x \sim y$, then $f([x])=f([y])$.
-
-:::
-
-::: {.fragment}
-
-**Defining a rule is not enough — check that it is well-defined!**
-
-:::
-
-
-
-## Well Ordering of the Natural Numbers
-
-A set $S$ is **well-ordered** if every nonempty subset of $S$ contains a least element.
-
-**Principle of Well-Ordering.** Every nonempty subset of the natural numbers is well-ordered.
-
-In this class the natural numbers are $\mathbb{N}=\{0, 1, 2, 3, \ldots\}$.
+$[m]+[n]=[n]+[m]$ so $(\mathbb Z_n,+)$ is an abelian group.
 
 ---
 
-## What about  the integers?
+## The Units $U(n)$ are a Group Under Multiplication
 
-The integers $\mathbb{Z}$ are **not** well-ordered.
 
-For example,
 
-$$
-\{\ldots,-4,-3,-2,-1\}
-$$
+Define $U(n)=\{k\in\mathbb Z_n:\gcd(k,n)=1\}$.  This is the group of units of $\mathbb Z_n$
 
-has no least element.
 
-## Division Algorithm
+For example, $U(8)=\{1,3,5,7\}$.
 
-**Division Algorithm.** Let $a$ and $b$ be integers, with $b>0$. Then there exist unique integers $q$ and $r$ such that $a=bq+r$ where $0\leq r<b$.
+<table style="border-collapse: collapse; text-align: center;">
+  <tr>
+    <th style="border: 1px solid black; padding: 6px;">$\cdot$</th>
+    <th style="border: 1px solid black; padding: 6px;">1</th>
+    <th style="border: 1px solid black; padding: 6px;">3</th>
+    <th style="border: 1px solid black; padding: 6px;">5</th>
+    <th style="border: 1px solid black; padding: 6px;">7</th>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px;">1</th>
+    <td style="border: 1px solid black; padding: 6px;">1</td>
+    <td style="border: 1px solid black; padding: 6px;">3</td>
+    <td style="border: 1px solid black; padding: 6px;">5</td>
+    <td style="border: 1px solid black; padding: 6px;">7</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px;">3</th>
+    <td style="border: 1px solid black; padding: 6px;">3</td>
+    <td style="border: 1px solid black; padding: 6px;">1</td>
+    <td style="border: 1px solid black; padding: 6px;">7</td>
+    <td style="border: 1px solid black; padding: 6px;">5</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px;">5</th>
+    <td style="border: 1px solid black; padding: 6px;">5</td>
+    <td style="border: 1px solid black; padding: 6px;">7</td>
+    <td style="border: 1px solid black; padding: 6px;">1</td>
+    <td style="border: 1px solid black; padding: 6px;">3</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px;">7</th>
+    <td style="border: 1px solid black; padding: 6px;">7</td>
+    <td style="border: 1px solid black; padding: 6px;">5</td>
+    <td style="border: 1px solid black; padding: 6px;">3</td>
+    <td style="border: 1px solid black; padding: 6px;">1</td>
+  </tr>
+</table>
 
-The proof has three parts:
-
-1. **Existence:** Show that $q$ and $r$ exist.
-2. $0\leq r<b$
-3. **Uniqueness:** Show that no other $q$ and $r$ can satisfy these conditions.
-
----
-
-## Division Algorithm: Existence
-
-Let $S=\{a-bk:k\in\mathbb Z\text{ and }a-bk\geq 0\}.$ If $0\in S$, then $b$ divides $a$, and we can let
-
-$$
-q=\frac{a}{b}
-\qquad\text{and}\qquad
-r=0.
-$$
-
-Suppose $0\notin S$. We first show that $S$ is nonempty. If $a>0$, then $a-b\cdot 0\in S$. If $a<0$, then $a-b(2a)=a(1-2b)\in S$ Thus $S\neq\varnothing$.
-
----
-
-## Division Algorithm: Existence
-
-By the Principle of Well-Ordering, $S$ has a smallest member, say
-
-$$
-r=a-bq.
-$$
-
-Therefore,
-
-$$
-a=bq+r
-$$
-
-and $r\geq 0$.
-
-We now show that $r<b$.
-
-Suppose that $r>b$. Then
-
-$$
-a-b(q+1)=a-bq-b=r-b>0.
-$$
-
-Thus $a-b(q+1)\in S$, but
-
-$$
-a-b(q+1)<a-bq=r,
-$$
-
-contradicting the fact that $r$ is the smallest member of $S$.
-
-Hence $r\leq b$. Since $0\notin S$, $r\neq b$, and therefore
-
-$$
-0\leq r<b.
-$$
 
 ---
 
-## Division Algorithm: Uniqueness
+## Caley Table for $U(9)$
 
-Suppose there exist integers $r,r',q,q'$ such that
 
-$$
-a=bq+r,\qquad 0\leq r<b
-$$
+<table style="border-collapse: collapse; table-layout: fixed; width: 810px;"> <colgroup> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> </colgroup> <tr> <th style="border: 1px solid black; height: 45px;">$\cdot$</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> <th style="border: 1px solid black;">&nbsp;</th> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> <tr> <th style="border: 1px solid black; height: 45px;">&nbsp;</th> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> <td style="border: 1px solid black;">&nbsp;</td> </tr> </table>
+
+---
+
+## Matrix Groups
+
+Let $M_2(\mathbb R)$ denote the set of all $2\times 2$ matrices with entries from the real numbers.
+
+The **general linear group** $GL_2(\mathbb R)$ is the set of invertible matrices in $M_2(\mathbb R)$.
+
+The identity is the $2\times 2$ identity matrix.
+
+For $A=\begin{pmatrix}a & b \\ c & d\end{pmatrix}\in GL_2(\mathbb R)$, the inverse is
+
+$A^{-1}=\dfrac{1}{ad-bc}\begin{pmatrix}d & -b \\ -c & a\end{pmatrix}$.
+
+
+
+---
+
+## More Matrix Groups
+
+If we change what numbers we allow in the entries of the matrices, we can get different groups.  For example, if we only allow elements of $\mathbb Z_3$, then we get the group $GL_2(\mathbb Z_3)$.  
+
+
+The **orthonormal group** $O_2(\mathbb R)$ is the set of matrices in $GL_2(\mathbb R)$ with determinant equal to $\pm1$.
+
+The **special linear group** with entries in $\mathbb R$ $SL_2(\mathbb R)$ is the set of matrices in $GL_2(\mathbb R)$ with determinant equal to $1$.
+
+---
+
+
+## Quaternion Group
+
+Let
+
+$E=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $I=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$,
+
+$J=\begin{pmatrix}0&i\\i&0\end{pmatrix}$, $K=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$,
+
+$Q=\{E, -E, I, -I, J, -J, K, -K \}$, where $i^2=-1$ and $-E$ is $-1 \cdot E$.
+
+---
+
+## Caley Table for the Quaternion Group
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 810px;">
+  <colgroup>
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+  </colgroup>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$\cdot$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$E$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-E$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$I$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-I$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$J$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-J$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$K$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-K$</th>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$E$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-E$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$I$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-I$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$J$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-J$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$K$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-K$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+---
+
+## Group of Complex Numbers Under Multiplication
+
+Let $\mathbb C^\ast$ be the set of nonzero complex numbers.
+
+Under multiplication, $\mathbb C^\ast$ forms a group.
+
+- Identity: $1$.
+- If $z=a+bi\ne0$, then
+
+  $z^{-1}=\dfrac{a-bi}{a^2+b^2}$.
+
+Thus every nonzero complex number has a multiplicative inverse.
+
+The group $\mathbb C^\ast$ is abelian.
+
+---
+
+## Proposition 3.2.10 — Uniqueness of Identity
+
+
+The identity element in a group $G$ is unique.
+
+<hr>
+
+Suppose $e$ and $e'$ are both identity elements.
+
+Since $e$ is an identity, $ee'=e'$.
+
+Since $e'$ is an identity, $ee'=e$.
+
+Therefore, $e=ee'=e'$.
+
+---
+
+## Proposition 3.2.11 — Uniqueness of the Inverse
+
+
+If $g$ is any element in a group $G$, then its inverse $g^{-1}$ is unique.
+
+<hr>
+
+Suppose $g'$ and $g''$ are both inverses of $g$.
+
+Then $gg'=g'g=e$ and $gg''=g''g=e$.
+
+Therefore, $g'=g'e=g'(gg'')=(g'g)g''=eg''=g''$.
+
+---
+
+## Proposition 3.2.12 — Inverse of a Product
+
+
+Let $G$ be a group. If $a,b\in G$, then $(ab)^{-1}=b^{-1}a^{-1}$.
+
+<hr>
+
+Indeed,
+
+$abb^{-1}a^{-1}
+=aea^{-1}
+=aa^{-1}
+=e$,
+
+and similarly,
+
+$b^{-1}a^{-1}ab=e$.
+
+Thus $b^{-1}a^{-1}$ is the inverse of $ab$.
+
+---
+
+## Proposition 3.2.13 — Inverse of an Inverse
+
+
+Let $G$ be a group. For any $a\in G$, $(a^{-1})^{-1}=a$.
+
+<hr>
+
+Since
+
+$a^{-1}(a^{-1})^{-1}=e$,
+
+we obtain
+
+$(a^{-1})^{-1}
+=e(a^{-1})^{-1}
+=aa^{-1}(a^{-1})^{-1}
+=ae
+=a$.
+
+---
+
+## Proposition 3.2.14
+
+
+Let $G$ be a group and let $a,b\in G$. Then the equations $ax=b$ and $xa=b$ have unique solutions in $G$.
+
+<hr>
+
+For $ax=b$,
+
+$x=a^{-1}b$.
+
+For $xa=b$,
+
+$x=ba^{-1}$.
+
+---
+
+## Proposition 3.2.15
+
+If $G$ is a group and $a,b,c\in G$, then
+
+$ba=ca\quad\Longrightarrow\quad b=c$
 
 and
 
-$$
-a=bq'+r',\qquad 0\leq r'<b.
-$$
+$ab=ac\quad\Longrightarrow\quad b=c$.
 
-Then
+<hr>
 
-$$
-bq+r=bq'+r'.
-$$
+These are the **right and left cancellation laws** for groups.
 
-Assume that $r'\geq r$. Then
+For example,
 
-$$
-b(q-q')=r'-r.
-$$
+$ba=ca
+\quad\Longrightarrow\quad
+baa^{-1}=caa^{-1}
+\quad\Longrightarrow\quad
+b=c$.
 
-Therefore $b$ divides $r'-r$, but
+---
 
-$$
-0\leq r'-r\leq r'<b.
-$$
+## Defining Exponents
 
-This is possible only if
+For $g\in G$, define
 
-$$
-r'-r=0.
-$$
+$g^0=e$,
 
-Hence $r=r'$ and $q=q'$.
+$g^n=\underbrace{g\cdot g\cdots g}_{n\text{ times}}$,
+
+and
+
+$g^{-n}=\underbrace{g^{-1}\cdot g^{-1}\cdots g^{-1}}_{n\text{ times}}$.
 
 
 ---
 
-## Invertible Function Theorem
+## Theorem 3.2.16
 
-**Theorem 1.2.20.**
+For all $g,h\in G$,
 
-*A mapping is invertible if and only if it is both one-to-one and onto.*
+1. $g^m g^n=g^{m+n}$ for all $m,n\in\mathbb Z$;
 
-::: {.fragment}
+2. $(g^m)^n=g^{mn}$ for all $m,n\in\mathbb Z$;
 
-In other words,
+3. $(gh)^n=(h^{-1}g^{-1})^{-n}$ for all $n\in\mathbb Z$.
 
-$$
-f \text{ is invertible}
-\quad\Longleftrightarrow\quad
-f \text{ is injective and surjective}.
-$$
+Furthermore, if $G$ is abelian,
 
-:::
+$(gh)^n=g^nh^n$.
 
----
-
-## Composition of Mappings
-
-**Theorem 1.2.15.**
-
-Let $f:A\to B$, $g:B\to C$, and $h:C\to D$. Then
-
-1. The composition of mappings is associative; that is, $(h\circ g)\circ f=h\circ(g\circ f)$.
-
-2. If $f$ and $g$ are both one-to-one, then the mapping $g\circ f$ is one-to-one.
-
-3. If $f$ and $g$ are both onto, then the mapping $g\circ f$ is onto.
-
-4. If $f$ and $g$ are bijective, then so is $g\circ f$.
-
----

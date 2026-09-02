@@ -1,5 +1,5 @@
 ---
-title: "Working with our Frist Groups"
+title: "Worksheet: Working with our First Groups"
 format: html
 ---
 

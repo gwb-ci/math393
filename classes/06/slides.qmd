@@ -1,0 +1,490 @@
+---
+title: "Slides: Definitions and Examples of Groups"
+
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+## Class Session Goals
+
+- Define subgroups
+- Explore examples of groups and subgroups
+- Establish basic properties of subgroups
+
+---
+
+## Definition of a Subgroup
+
+Let $G$ be a group.
+
+A **subgroup** $H$ of $G$ is a subset $H$ of $G$ such that when the group operation of $G$ is restricted to $H$, $H$ is a group in its own right.
+
+We write
+
+\[
+H \leq G.
+\]
+
+::: {.fragment}
+### Important
+
+A subgroup uses the **same operation** as the original group.
+:::
+
+---
+
+## Trivial Subgroups
+
+Every group $G$ has at least two subgroups:
+
+\[
+\{e\} \leq G
+\]
+
+and
+
+\[
+G \leq G.
+\]
+
+The subgroup
+
+\[
+\{e\}
+\]
+
+is called the **trivial subgroup**.
+
+::: {.fragment}
+A subgroup $H$ that is a proper subset of $G$ is called a **proper subgroup**.
+:::
+
+---
+
+## Subgroups of $\mathbb Z_6$
+
+Consider $\mathbb Z_6$ under addition.
+
+\[
+\mathbb Z_6
+=
+\{[0],[1],[2],[3],[4],[5]\}.
+\]
+
+Which subsets form subgroups?
+
+. . .
+
+\[
+\{[0]\}
+\]
+
+. . .
+
+\[
+\{[0],[3]\}
+\]
+
+. . .
+
+\[
+\{[0],[2],[4]\}
+\]
+
+. . .
+
+\[
+\mathbb Z_6
+\]
+
+::: {.fragment}
+These are all of the subgroups of $\mathbb Z_6$.
+:::
+
+---
+
+## Subgroups of $\mathbb Z$
+
+Consider $\mathbb Z$ under addition.
+
+For $n=0,1,2,\ldots$, define
+
+\[
+n\mathbb Z=\{nk:k\in\mathbb Z\}.
+\]
+
+Examples:
+
+\[
+2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
+\]
+
+\[
+3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
+\]
+
+::: {.fragment}
+For every $n\geq 0$,
+
+\[
+n\mathbb Z\leq\mathbb Z.
+\]
+:::
+
+::: {.fragment}
+In fact, these are the **only** subgroups of $\mathbb Z$.
+:::
+
+---
+
+## $\mathbb R^\ast$ and $\mathbb Q^\ast$
+
+Consider the group of nonzero real numbers under multiplication:
+
+\[
+\mathbb R^\ast=\mathbb R\setminus\{0\}.
+\]
+
+Let
+
+\[
+\mathbb Q^\ast
+=
+\left\{
+\frac{p}{q}:
+p\text{ and }q\text{ are nonzero integers}
+\right\}.
+\]
+
+Then
+
+\[
+\mathbb Q^\ast\leq\mathbb R^\ast.
+\]
+
+. . .
+
+Why?
+
+- $1=1/1\in\mathbb Q^\ast$.
+- If $p/q,r/s\in\mathbb Q^\ast$, then
+
+  \[
+  \frac pq\frac rs=\frac{pr}{qs}\in\mathbb Q^\ast.
+  \]
+
+- If $p/q\in\mathbb Q^\ast$, then
+
+  \[
+  \left(\frac pq\right)^{-1}=\frac qp\in\mathbb Q^\ast.
+  \]
+
+---
+
+## Subgroups of the Quaternions
+
+Recall
+
+\[
+Q_8=\{\pm1,\pm I,\pm J,\pm K\},
+\]
+
+where
+
+\[
+I^2=J^2=K^2=-1.
+\]
+
+Some subgroups are
+
+\[
+\{1\},
+\qquad
+\{1,-1\},
+\]
+
+\[
+\{1,-1,I,-I\},
+\]
+
+\[
+\{1,-1,J,-J\},
+\]
+
+\[
+\{1,-1,K,-K\},
+\]
+
+and
+
+\[
+Q_8.
+\]
+
+::: {.fragment}
+Notice that every nontrivial subgroup contains $-1$.
+:::
+
+---
+
+## Subgroups of the Symmetry Group of an Equilateral Triangle
+
+Let
+
+\[
+D_3=\{e,r_1,r_2,f_a,f_b,f_c\}.
+\]
+
+Here $r_1,r_2$ are the nonidentity rotations and
+$f_a,f_b,f_c$ are the reflections.
+
+The subgroups are
+
+\[
+\{e\},
+\]
+
+\[
+\{e,f_a\},
+\qquad
+\{e,f_b\},
+\qquad
+\{e,f_c\},
+\]
+
+\[
+\{e,r_1,r_2\},
+\]
+
+and
+
+\[
+D_3.
+\]
+
+::: {.fragment}
+The rotations form a subgroup of order $3$.
+
+Each reflection generates a subgroup of order $2$.
+:::
+
+---
+
+## Subgroups of Matrix Groups
+
+Let $GL_2(\mathbb R)$ be the group of invertible
+$2\times2$ real matrices under matrix multiplication.
+
+Define
+
+\[
+SL_2(\mathbb R)
+=
+\{A\in GL_2(\mathbb R):\det A=1\}.
+\]
+
+Then
+
+\[
+SL_2(\mathbb R)\leq GL_2(\mathbb R).
+\]
+
+. . .
+
+If
+
+\[
+A=
+\begin{pmatrix}
+a&b\\
+c&d
+\end{pmatrix}
+\]
+
+and $\det A=ad-bc=1$, then
+
+\[
+A^{-1}
+=
+\begin{pmatrix}
+d&-b\\
+-c&a
+\end{pmatrix}.
+\]
+
+Also,
+
+\[
+\det(AB)=\det(A)\det(B)=1.
+\]
+
+---
+
+## Proposition 3.3.7 Subgroup Criterion
+
+A subset $H$ of $G$ is a subgroup if and only if it satisfies the following conditions.
+
+1. The identity $e$ of $G$ is in $H$.
+
+. . .
+
+2. If $h_1,h_2\in H$, then
+
+   \[
+   h_1h_2\in H.
+   \]
+
+. . .
+
+3. If $h\in H$, then
+
+   \[
+   h^{-1}\in H.
+   \]
+
+::: {.fragment}
+Associativity does **not** need to be checked again: it is inherited from $G$.
+:::
+
+---
+
+## Proposition 3.3.7 Subgroup Criterion — Why It Works
+
+Suppose the three conditions hold.
+
+- $e\in H$ gives an identity.
+- Closure gives a binary operation on $H$.
+- $h\in H\Rightarrow h^{-1}\in H$ gives inverses.
+- Associativity is inherited from $G$.
+
+Therefore $H$ is a group under the same operation as $G$.
+
+\[
+H\leq G.
+\]
+
+::: {.fragment}
+To prove that a subset is a subgroup, we usually do **not** need to verify all of the group axioms from scratch.
+:::
+
+---
+
+## Proposition 3.3.8 Another Subgroup Test
+
+Let $H$ be a subset of a group $G$.
+
+Then $H$ is a subgroup of $G$ if and only if
+
+\[
+H\neq\emptyset
+\]
+
+and whenever $g,h\in H$,
+
+\[
+gh^{-1}\in H.
+\]
+
+. . .
+
+One condition gives us everything:
+
+\[
+gg^{-1}=e\in H,
+\]
+
+\[
+eg^{-1}=g^{-1}\in H,
+\]
+
+and
+
+\[
+h_1(h_2^{-1})^{-1}=h_1h_2\in H.
+\]
+
+---
+
+## Using the Subgroup Test
+
+### Example
+
+Let
+
+\[
+H=2\mathbb Z.
+\]
+
+Since $0\in H$, we know $H\neq\emptyset$.
+
+If $a,b\in H$, then
+
+\[
+a=2m,\qquad b=2n
+\]
+
+for some $m,n\in\mathbb Z$.
+
+Therefore
+
+\[
+a-b=2m-2n=2(m-n)\in2\mathbb Z.
+\]
+
+Hence
+
+\[
+2\mathbb Z\leq\mathbb Z.
+\]
+
+---
+
+## Equivalence Relations on Groups
+
+Groups naturally give rise to several actions on themselves.
+
+### Right action
+
+\[
+x\cdot g=xg
+\]
+
+### Left action
+
+\[
+g\cdot x=gx
+\]
+
+### Conjugation
+
+\[
+g\cdot x=gxg^{-1}
+\]
+
+. . .
+
+The orbits of a group action determine equivalence classes.
+
+Under conjugation, the equivalence classes are called **conjugacy classes**.
+
+---
+
+## Check Your Understanding
+
+For each subset, decide whether it is a subgroup.
+
+1. $\{[0],[2],[4]\}\subseteq\mathbb Z_6$
+
+2. $\{[0],[1],[2]\}\subseteq\mathbb Z_6$
+
+3. $5\mathbb Z\subseteq\mathbb Z$
+
+4. $\mathbb Q^\ast\subseteq\mathbb R^\ast$
+
+5. $\{1,-1,I,-I\}\subseteq Q_8$
+
+::: {.fragment}
+For each example, identify which subgroup criterion is most efficient.
+:::
