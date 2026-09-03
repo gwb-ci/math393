@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Definitions and Examples of Groups</title>
+  <title>Math 393 - Abstract Algebra – Slides: More Groups</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Definitions and Examples of Groups</h1>
+  <h1 class="title">Slides: More Groups</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -138,244 +138,242 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Define groups</li>
-<li>Explore examples of groups</li>
-<li>Establish basic properties of groups</li>
+<li>Define subgroups</li>
+<li>Explore examples of groups and subgroups</li>
+<li>Establish basic properties of subgroups</li>
 </ul>
 </section>
-<section id="definition-of-a-group" class="slide level2">
-<h2>Definition of a Group</h2>
-<p>A <strong>group</strong> <span class="math inline">\((G,\circ)\)</span> is a set <span class="math inline">\(G\)</span> together with a law of composition <span class="math inline">\((a,b)\mapsto a\circ b\)</span> satisfying:</p>
-<ol type="1">
-<li><p><strong>Associativity:</strong><br>
-<span class="math inline">\((a\circ b)\circ c=a\circ(b\circ c)\)</span> for <span class="math inline">\(a,b,c\in G\)</span>.</p></li>
-<li><p><strong>Identity:</strong><br>
-There exists <span class="math inline">\(e\in G\)</span> such that <span class="math inline">\(e\circ a=a\circ e=a\)</span> for every <span class="math inline">\(a\in G\)</span>.</p></li>
-<li><p><strong>Inverses:</strong><br>
-For each <span class="math inline">\(a\in G\)</span>, there exists <span class="math inline">\(a^{-1}\in G\)</span> such that <span class="math inline">\(a\circ a^{-1}=a^{-1}\circ a=e\)</span>.</p></li>
-</ol>
-<p>A group is <strong>abelian</strong> (or <strong>commutative</strong>) if <span class="math inline">\(a\circ b=b\circ a\)</span> for all <span class="math inline">\(a,b\in G\)</span>.</p>
+<section id="definition-of-a-subgroup" class="slide level2">
+<h2>Definition of a Subgroup</h2>
+<p>Let <span class="math inline">\(G\)</span> be a group.</p>
+<p>A <strong>subgroup</strong> <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> such that when the group operation of <span class="math inline">\(G\)</span> is restricted to <span class="math inline">\(H\)</span>, <span class="math inline">\(H\)</span> is a group in its own right.</p>
+<p>We write</p>
+<p>$ H G. $</p>
+<div class="fragment">
+<h3 id="important">Important</h3>
+<p>A subgroup uses the <strong>same operation</strong> as the original group.</p>
+</div>
 </section>
-<section id="integers-are-a-group" class="slide level2">
-<h2>Integers are a Group</h2>
-<p>Consider <span class="math inline">\((\mathbb Z,+)\)</span>.</p>
-<ul>
-<li>The sum of two integers is an integer.</li>
-<li>Addition is associative: <span class="math inline">\((m+n)+k=m+(n+k)\)</span>.</li>
-<li>The identity is <span class="math inline">\(0\)</span>: <span class="math inline">\(0+n=n+0=n\)</span>.</li>
-<li>The inverse of <span class="math inline">\(n\)</span> is <span class="math inline">\(-n\)</span>: <span class="math inline">\(n+(-n)=(-n)+n=0\)</span>.</li>
-</ul>
-<p>Also,</p>
-<p><span class="math inline">\(m+n=n+m\)</span>.</p>
-<p>Therefore <span class="math inline">\((\mathbb Z,+)\)</span> is an <strong>abelian group</strong>.</p>
-</section>
-<section id="mathbb-z_n-is-a-group-under-addition" class="slide level2">
-<h2><span class="math inline">\(\mathbb Z_n\)</span> is a Group Under Addition</h2>
-<p>The integers mod <span class="math inline">\(n\)</span> form a group under addition modulo <span class="math inline">\(n\)</span>.</p>
-<p>The identity is <span class="math inline">\(0\)</span>, and every element has an additive inverse.</p>
-<p>For example,</p>
-<p><span class="math inline">\(2+3=3+2=0\pmod 5\)</span>.</p>
-<p>Thus <span class="math inline">\((\mathbb Z_n,+)\)</span> is an abelian group.</p>
-</section>
-<section id="the-units-un-are-a-group-under-multiplication" class="slide level2">
-<h2>The Units <span class="math inline">\(U(n)\)</span> are a Group Under Multiplication</h2>
-<p>Define <span class="math inline">\(U(n)=\{k\in\mathbb Z_n:\gcd(k,n)=1\}\)</span>. This is the group of units of <span class="math inline">\(\mathbb Z_n\)</span></p>
-<p>For example, <span class="math inline">\(U(8)=\{1,3,5,7\}\)</span>.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th><span class="math inline">\(\cdot\)</span></th>
-<th style="text-align: right;">1</th>
-<th style="text-align: right;">3</th>
-<th style="text-align: right;">5</th>
-<th style="text-align: right;">7</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">7</td>
-</tr>
-<tr class="even">
-<td>3</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">5</td>
-</tr>
-<tr class="odd">
-<td>5</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="matrix-groups" class="slide level2">
-<h2>Matrix Groups</h2>
-<p>Let <span class="math inline">\(M_2(\mathbb R)\)</span> denote the set of all <span class="math inline">\(2\times2\)</span> matrices.</p>
-<p>The <strong>general linear group</strong></p>
-<p><span class="math inline">\(GL_2(\mathbb R)\)</span> is the set of invertible matricies in <span class="math inline">\(M_2(\mathbb R)\)</span>.</p>
-<p>The identity is</p>
-<p><span class="math inline">\(I=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>,</p>
+<section id="trivial-subgroups" class="slide level2">
+<h2>Trivial Subgroups</h2>
+<p>Every group <span class="math inline">\(G\)</span> has at least two subgroups:</p>
+<p>$ {e} G $</p>
 <p>and</p>
-<p><span class="math inline">\(A^{-1}=\dfrac{1}{ad-bc}
-\begin{pmatrix}d&amp;-b\\-c&amp;a\end{pmatrix}\)</span>.</p>
+<p>$ G G. $</p>
+<p>The subgroup</p>
+<p>$ {e} $</p>
+<p>is called the <strong>trivial subgroup</strong>.</p>
+<div class="fragment">
+<p>A subgroup <span class="math inline">\(H\)</span> that is a proper subset of <span class="math inline">\(G\)</span> is called a <strong>proper subgroup</strong>.</p>
+</div>
 </section>
-<section id="quaternion-group" class="slide level2">
-<h2>Quaternion Group</h2>
+<section id="subgroups-of-mathbb-z_6" class="slide level2">
+<h2>Subgroups of <span class="math inline">\(\mathbb Z_6\)</span></h2>
+<p>Consider <span class="math inline">\(\mathbb Z_6\)</span> under addition.</p>
+<p>$ Z_6 = {[0],[1],[2],[3],[4],[5]}. $</p>
+<p>Which subsets form subgroups?</p>
+<div class="fragment">
+<p>$ {[0]} $</p>
+</div>
+<div class="fragment">
+<p>$ {[0],[3]} $</p>
+</div>
+<div class="fragment">
+<p>$ {[0],[2],[4]} $</p>
+</div>
+<div class="fragment">
+<p>$ Z_6 $</p>
+<div class="fragment">
+<p>These are all of the subgroups of <span class="math inline">\(\mathbb Z_6\)</span>.</p>
+</div>
+</div>
+</section>
+<section id="subgroups-of-mathbb-z" class="slide level2">
+<h2>Subgroups of <span class="math inline">\(\mathbb Z\)</span></h2>
+<p>Consider <span class="math inline">\(\mathbb Z\)</span> under addition.</p>
+<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define</p>
+<p>$ nZ={nk:kZ}. $</p>
+<p>Examples:</p>
+<p>$ 2Z={,-4,-2,0,2,4,} $</p>
+<p>$ 3Z={,-6,-3,0,3,6,}. $</p>
+<div class="fragment">
+<p>For every <span class="math inline">\(n\geq 0\)</span>,</p>
+<p>$ nZZ. $</p>
+</div>
+<div class="fragment">
+<p>In fact, these are the <strong>only</strong> subgroups of <span class="math inline">\(\mathbb Z\)</span>.</p>
+</div>
+</section>
+<section id="mathbb-rast-and-mathbb-qast" class="slide level2">
+<h2><span class="math inline">\(\mathbb R^\ast\)</span> and <span class="math inline">\(\mathbb Q^\ast\)</span></h2>
+<p>Consider the group of nonzero real numbers under multiplication:</p>
+<p>$ R^=R{0}. $</p>
 <p>Let</p>
-<p><span class="math inline">\(1=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(I=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(J=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(K=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}\)</span>,</p>
-<p>where <span class="math inline">\(i^2=-1\)</span>.</p>
-</section>
-<section id="quaternion-multiplication" class="slide level2">
-<h2>Quaternion Multiplication</h2>
-<p>The relations include</p>
-<p><span class="math inline">\(I^2=J^2=K^2=-1\)</span></p>
-<p>and</p>
-<p><span class="math inline">\(IJ=K,\qquad JK=I,\qquad KI=J\)</span>,</p>
-<p>while</p>
-<p><span class="math inline">\(JI=-K,\qquad KJ=-I,\qquad IK=-J\)</span>.</p>
-<p>Hence</p>
-<p><span class="math inline">\(Q_8=\{\pm1,\pm I,\pm J,\pm K\}\)</span></p>
-<p>is the <strong>quaternion group</strong>.</p>
-<p>It is noncommutative.</p>
-</section>
-<section id="group-of-complex-numbers-under-multiplication" class="slide level2">
-<h2>Group of Complex Numbers Under Multiplication</h2>
-<p>Let <span class="math inline">\(\mathbb C^\ast\)</span> be the set of nonzero complex numbers.</p>
-<p>Under multiplication, <span class="math inline">\(\mathbb C^\ast\)</span> forms a group.</p>
-<ul>
-<li><p>Identity: <span class="math inline">\(1\)</span>.</p></li>
-<li><p>If <span class="math inline">\(z=a+bi\ne0\)</span>, then</p>
-<p><span class="math inline">\(z^{-1}=\dfrac{a-bi}{a^2+b^2}\)</span>.</p></li>
-</ul>
-<p>Thus every nonzero complex number has a multiplicative inverse.</p>
-<p>The group <span class="math inline">\(\mathbb C^\ast\)</span> is abelian.</p>
-</section>
-<section id="proposition-3.2.10-uniqueness-of-identity" class="slide level2">
-<h2>Proposition 3.2.10 — Uniqueness of Identity</h2>
-<p><strong>Proposition 3.2.10.</strong><br>
-The identity element in a group <span class="math inline">\(G\)</span> is unique.</p>
-<hr>
-<p>Suppose <span class="math inline">\(e\)</span> and <span class="math inline">\(e'\)</span> are both identity elements.</p>
-<p>Since <span class="math inline">\(e\)</span> is an identity,</p>
-<p><span class="math inline">\(ee'=e'\)</span>.</p>
-<p>Since <span class="math inline">\(e'\)</span> is an identity,</p>
-<p><span class="math inline">\(ee'=e\)</span>.</p>
-<p>Therefore,</p>
-<p><span class="math inline">\(e=ee'=e'\)</span>.</p>
-</section>
-<section id="proposition-3.2.11-uniqueness-of-the-inverse" class="slide level2">
-<h2>Proposition 3.2.11 — Uniqueness of the Inverse</h2>
-<p><strong>Proposition 3.2.11.</strong><br>
-If <span class="math inline">\(g\)</span> is any element in a group <span class="math inline">\(G\)</span>, then its inverse <span class="math inline">\(g^{-1}\)</span> is unique.</p>
-<hr>
-<p>Suppose <span class="math inline">\(g'\)</span> and <span class="math inline">\(g''\)</span> are both inverses of <span class="math inline">\(g\)</span>.</p>
+<p>$ Q^ = { : pq }. $</p>
 <p>Then</p>
-<p><span class="math inline">\(gg'=g'g=e\)</span></p>
+<p>$ Q^R^. $</p>
+<div class="fragment">
+<p>Why?</p>
+<ul>
+<li><p><span class="math inline">\(1=1/1\in\mathbb Q^\ast\)</span>.</p></li>
+<li><p>If <span class="math inline">\(p/q,r/s\in\mathbb Q^\ast\)</span>, then</p>
+<p>$ pqrs=Q^. $</p></li>
+<li><p>If <span class="math inline">\(p/q\in\mathbb Q^\ast\)</span>, then</p>
+<p>$ (pq)^{-1}=qpQ^. $</p></li>
+</ul>
+</div>
+</section>
+<section id="subgroups-of-the-quaternions" class="slide level2">
+<h2>Subgroups of the Quaternions</h2>
+<p>Recall</p>
+<p>$ Q_8={,I,J,K}, $</p>
+<p>where</p>
+<p>$ I<sup>2=J</sup>2=K^2=-1. $</p>
+<p>Some subgroups are</p>
+<p>$ {1}, {1,-1}, $</p>
+<p>$ {1,-1,I,-I}, $</p>
+<p>$ {1,-1,J,-J}, $</p>
+<p>$ {1,-1,K,-K}, $</p>
 <p>and</p>
-<p><span class="math inline">\(gg''=g''g=e\)</span>.</p>
-<p>Therefore,</p>
-<p><span class="math inline">\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\)</span>.</p>
+<p>$ Q_8. $</p>
+<div class="fragment">
+<p>Notice that every nontrivial subgroup contains <span class="math inline">\(-1\)</span>.</p>
+</div>
 </section>
-<section id="proposition-3.2.12-inverse-of-a-product" class="slide level2">
-<h2>Proposition 3.2.12 — Inverse of a Product</h2>
-<p><strong>Proposition 3.2.12.</strong><br>
-Let <span class="math inline">\(G\)</span> be a group. If <span class="math inline">\(a,b\in G\)</span>, then</p>
-<p><span class="math inline">\((ab)^{-1}=b^{-1}a^{-1}\)</span>.</p>
-<hr>
-<p>Indeed,</p>
-<p><span class="math inline">\(abb^{-1}a^{-1}
-=aea^{-1}
-=aa^{-1}
-=e\)</span>,</p>
-<p>and similarly,</p>
-<p><span class="math inline">\(b^{-1}a^{-1}ab=e\)</span>.</p>
-<p>Thus <span class="math inline">\(b^{-1}a^{-1}\)</span> is the inverse of <span class="math inline">\(ab\)</span>.</p>
-</section>
-<section id="proposition-3.2.13-inverse-of-an-inverse" class="slide level2">
-<h2>Proposition 3.2.13 — Inverse of an Inverse</h2>
-<p><strong>Proposition 3.2.13.</strong><br>
-Let <span class="math inline">\(G\)</span> be a group. For any <span class="math inline">\(a\in G\)</span>,</p>
-<p><span class="math inline">\((a^{-1})^{-1}=a\)</span>.</p>
-<hr>
-<p>Since</p>
-<p><span class="math inline">\(a^{-1}(a^{-1})^{-1}=e\)</span>,</p>
-<p>we obtain</p>
-<p><span class="math inline">\((a^{-1})^{-1}
-=e(a^{-1})^{-1}
-=aa^{-1}(a^{-1})^{-1}
-=ae
-=a\)</span>.</p>
-</section>
-<section id="proposition-3.2.14" class="slide level2">
-<h2>Proposition 3.2.14</h2>
-<p><strong>Proposition 3.2.14.</strong><br>
-Let <span class="math inline">\(G\)</span> be a group and let <span class="math inline">\(a,b\in G\)</span>. Then the equations</p>
-<p><span class="math inline">\(ax=b\)</span></p>
+<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
+<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
+<p>Let</p>
+<p>$ D_3={e,r_1,r_2,f_a,f_b,f_c}. $</p>
+<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
+<p>The subgroups are</p>
+<p>$ {e}, $</p>
+<p>$ {e,f_a}, {e,f_b}, {e,f_c}, $</p>
+<p>$ {e,r_1,r_2}, $</p>
 <p>and</p>
-<p><span class="math inline">\(xa=b\)</span></p>
-<p>have unique solutions in <span class="math inline">\(G\)</span>.</p>
-<hr>
-<p>For <span class="math inline">\(ax=b\)</span>,</p>
-<p><span class="math inline">\(x=a^{-1}b\)</span>.</p>
-<p>For <span class="math inline">\(xa=b\)</span>,</p>
-<p><span class="math inline">\(x=ba^{-1}\)</span>.</p>
+<p>$ D_3. $</p>
+<div class="fragment">
+<p>The rotations form a subgroup of order <span class="math inline">\(3\)</span>.</p>
+<p>Each reflection generates a subgroup of order <span class="math inline">\(2\)</span>.</p>
+</div>
 </section>
-<section id="proposition-3.2.15" class="slide level2">
-<h2>Proposition 3.2.15</h2>
-<p><strong>Proposition 3.2.15.</strong><br>
-If <span class="math inline">\(G\)</span> is a group and <span class="math inline">\(a,b,c\in G\)</span>, then</p>
-<p><span class="math inline">\(ba=ca\quad\Longrightarrow\quad b=c\)</span></p>
-<p>and</p>
-<p><span class="math inline">\(ab=ac\quad\Longrightarrow\quad b=c\)</span>.</p>
-<hr>
-<p>These are the <strong>right and left cancellation laws</strong> for groups.</p>
-<p>For example,</p>
-<p><span class="math inline">\(ba=ca
-\quad\Longrightarrow\quad
-baa^{-1}=caa^{-1}
-\quad\Longrightarrow\quad
-b=c\)</span>.</p>
+<section id="subgroups-of-matrix-groups" class="slide level2">
+<h2>Subgroups of Matrix Groups</h2>
+<p>Let <span class="math inline">\(GL_2(\mathbb R)\)</span> be the group of invertible <span class="math inline">\(2\times2\)</span> real matrices under matrix multiplication.</p>
+<p>Define</p>
+<p>$ SL_2(R) = {AGL_2(R):A=1}. $</p>
+<p>Then</p>
+<p>$ SL_2(R)GL_2(R). $</p>
+<div class="fragment">
+<p>If</p>
+$ A=
+<span class="math display">\[\begin{pmatrix}
+a&amp;b\\
+c&amp;d
+\end{pmatrix}\]</span>
+<p>$</p>
+<p>and <span class="math inline">\(\det A=ad-bc=1\)</span>, then</p>
+$ A^{-1} =
+<span class="math display">\[\begin{pmatrix}
+d&amp;-b\\
+-c&amp;a
+\end{pmatrix}\]</span>
+<p>. $</p>
+<p>Also,</p>
+<p>$ (AB)=(A)(B)=1. $</p>
+</div>
 </section>
-<section id="defining-exponents" class="slide level2">
-<h2>Defining Exponents</h2>
-<p>For <span class="math inline">\(g\in G\)</span>, define</p>
-<p><span class="math inline">\(g^0=e\)</span>,</p>
-<p><span class="math inline">\(g^n=\underbrace{g\cdot g\cdots g}_{n\text{ times}}\)</span>,</p>
-<p>and</p>
-<p><span class="math inline">\(g^{-n}=\underbrace{g^{-1}\cdot g^{-1}\cdots g^{-1}}_{n\text{ times}}\)</span>.</p>
-</section>
-<section id="theorem-3.2.16" class="slide level2">
-<h2>Theorem 3.2.16</h2>
-<p><strong>Theorem 3.2.16.</strong><br>
-In a group, the usual laws of exponents hold. For all <span class="math inline">\(g,h\in G\)</span>,</p>
+<section id="proposition-3.3.7-subgroup-criterion" class="slide level2">
+<h2>Proposition 3.3.7 Subgroup Criterion</h2>
+<p>A subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subgroup if and only if it satisfies the following conditions.</p>
 <ol type="1">
-<li><p><span class="math inline">\(g^m g^n=g^{m+n}\)</span> for all <span class="math inline">\(m,n\in\mathbb Z\)</span>;</p></li>
-<li><p><span class="math inline">\((g^m)^n=g^{mn}\)</span> for all <span class="math inline">\(m,n\in\mathbb Z\)</span>;</p></li>
-<li><p><span class="math inline">\((gh)^n=(h^{-1}g^{-1})^{-n}\)</span> for all <span class="math inline">\(n\in\mathbb Z\)</span>.</p></li>
+<li>The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</li>
 </ol>
-<p>Furthermore, if <span class="math inline">\(G\)</span> is abelian,</p>
-<p><span class="math inline">\((gh)^n=g^nh^n\)</span>.</p>
+<div class="fragment">
+<ol start="2" type="1">
+<li><p>If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
+<p>$ h_1h_2H. $</p></li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li><p>If <span class="math inline">\(h\in H\)</span>, then</p>
+<p>$ h^{-1}H. $</p></li>
+</ol>
+<div class="fragment">
+<p>Associativity does <strong>not</strong> need to be checked again: it is inherited from <span class="math inline">\(G\)</span>.</p>
+</div>
+</div>
 </section>
-<section class="slide level2">
-
+<section id="proposition-3.3.7-subgroup-criterion-why-it-works" class="slide level2">
+<h2>Proposition 3.3.7 Subgroup Criterion — Why It Works</h2>
+<p>Suppose the three conditions hold.</p>
+<ul>
+<li><span class="math inline">\(e\in H\)</span> gives an identity.</li>
+<li>Closure gives a binary operation on <span class="math inline">\(H\)</span>.</li>
+<li><span class="math inline">\(h\in H\Rightarrow h^{-1}\in H\)</span> gives inverses.</li>
+<li>Associativity is inherited from <span class="math inline">\(G\)</span>.</li>
+</ul>
+<p>Therefore <span class="math inline">\(H\)</span> is a group under the same operation as <span class="math inline">\(G\)</span>.</p>
+<p>$ HG. $</p>
+<div class="fragment">
+<p>To prove that a subset is a subgroup, we usually do <strong>not</strong> need to verify all of the group axioms from scratch.</p>
+</div>
+</section>
+<section id="proposition-3.3.8-another-subgroup-test" class="slide level2">
+<h2>Proposition 3.3.8 Another Subgroup Test</h2>
+<p>Let <span class="math inline">\(H\)</span> be a subset of a group <span class="math inline">\(G\)</span>.</p>
+<p>Then <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(G\)</span> if and only if</p>
+<p>$ H $</p>
+<p>and whenever <span class="math inline">\(g,h\in H\)</span>,</p>
+<p>$ gh^{-1}H. $</p>
+<div class="fragment">
+<p>One condition gives us everything:</p>
+<p>$ gg^{-1}=eH, $</p>
+<p>$ eg<sup>{-1}=g</sup>{-1}H, $</p>
+<p>and</p>
+<p>$ h_1(h_2<sup>{-1})</sup>{-1}=h_1h_2H. $</p>
+</div>
+</section>
+<section id="using-the-subgroup-test" class="slide level2">
+<h2>Using the Subgroup Test</h2>
+<h3 id="example">Example</h3>
+<p>Let</p>
+<p>$ H=2Z. $</p>
+<p>Since <span class="math inline">\(0\in H\)</span>, we know <span class="math inline">\(H\neq\emptyset\)</span>.</p>
+<p>If <span class="math inline">\(a,b\in H\)</span>, then</p>
+<p>$ a=2m,b=2n $</p>
+<p>for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
+<p>Therefore</p>
+<p>$ a-b=2m-2n=2(m-n)Z. $</p>
+<p>Hence</p>
+<p>$ 2ZZ. $</p>
+</section>
+<section id="equivalence-relations-on-groups" class="slide level2">
+<h2>Equivalence Relations on Groups</h2>
+<p>Groups naturally give rise to several actions on themselves.</p>
+<h3 id="right-action">Right action</h3>
+<p>$ xg=xg $</p>
+<h3 id="left-action">Left action</h3>
+<p>$ gx=gx $</p>
+<h3 id="conjugation">Conjugation</h3>
+<p>$ gx=gxg^{-1} $</p>
+<p>. . .</p>
+<p>The orbits of a group action determine equivalence classes.</p>
+<p>Under conjugation, the equivalence classes are called <strong>conjugacy classes</strong>.</p>
+</section>
+<section id="check-your-understanding" class="slide level2">
+<h2>Check Your Understanding</h2>
+<p>For each subset, decide whether it is a subgroup.</p>
+<ol type="1">
+<li><p><span class="math inline">\(\{[0],[2],[4]\}\subseteq\mathbb Z_6\)</span></p></li>
+<li><p><span class="math inline">\(\{[0],[1],[2]\}\subseteq\mathbb Z_6\)</span></p></li>
+<li><p><span class="math inline">\(5\mathbb Z\subseteq\mathbb Z\)</span></p></li>
+<li><p><span class="math inline">\(\mathbb Q^\ast\subseteq\mathbb R^\ast\)</span></p></li>
+<li><p><span class="math inline">\(\{1,-1,I,-I\}\subseteq Q_8\)</span></p></li>
+</ol>
+<div class="fragment">
+<p>For each example, identify which subgroup criterion is most efficient.</p>
+</div>
 
 
 </section>

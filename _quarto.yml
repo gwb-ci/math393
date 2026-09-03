@@ -18,7 +18,8 @@ website:
           - file: classes/03/worksheet.qmd
           - file: classes/03/slides.qmd
           - file: classes/04/slides.qmd
-          - file: classes/04/worksheet.qmd
+          - file: classes/05/slides.qmd
+  
 
 format:
   html:

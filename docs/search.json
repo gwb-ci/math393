@@ -99,121 +99,107 @@
   {
     "objectID": "classes/06/slides.html#class-session-goals",
     "href": "classes/06/slides.html#class-session-goals",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: More Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine groups\nExplore examples of groups\nEstablish basic properties of groups"
+    "text": "Class Session Goals\n\nDefine subgroups\nExplore examples of groups and subgroups\nEstablish basic properties of subgroups"
   },
   {
-    "objectID": "classes/06/slides.html#definition-of-a-group",
-    "href": "classes/06/slides.html#definition-of-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\circ)\\) is a set \\(G\\) together with a law of composition \\((a,b)\\mapsto a\\circ b\\) satisfying:\n\nAssociativity:\n\\((a\\circ b)\\circ c=a\\circ(b\\circ c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\circ a=a\\circ e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\circ a^{-1}=a^{-1}\\circ a=e\\).\n\nA group is abelian (or commutative) if \\(a\\circ b=b\\circ a\\) for all \\(a,b\\in G\\)."
+    "objectID": "classes/06/slides.html#definition-of-a-subgroup",
+    "href": "classes/06/slides.html#definition-of-a-subgroup",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write\n$ H G. $\n\nImportant\nA subgroup uses the same operation as the original group."
   },
   {
-    "objectID": "classes/06/slides.html#integers-are-a-group",
-    "href": "classes/06/slides.html#integers-are-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Integers are a Group",
-    "text": "Integers are a Group\nConsider \\((\\mathbb Z,+)\\).\n\nThe sum of two integers is an integer.\nAddition is associative: \\((m+n)+k=m+(n+k)\\).\nThe identity is \\(0\\): \\(0+n=n+0=n\\).\nThe inverse of \\(n\\) is \\(-n\\): \\(n+(-n)=(-n)+n=0\\).\n\nAlso,\n\\(m+n=n+m\\).\nTherefore \\((\\mathbb Z,+)\\) is an abelian group."
+    "objectID": "classes/06/slides.html#trivial-subgroups",
+    "href": "classes/06/slides.html#trivial-subgroups",
+    "title": "Slides: More Groups",
+    "section": "Trivial Subgroups",
+    "text": "Trivial Subgroups\nEvery group \\(G\\) has at least two subgroups:\n$ {e} G $\nand\n$ G G. $\nThe subgroup\n$ {e} $\nis called the trivial subgroup.\n\nA subgroup \\(H\\) that is a proper subset of \\(G\\) is called a proper subgroup."
   },
   {
-    "objectID": "classes/06/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "href": "classes/06/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "\\(\\mathbb Z_n\\) is a Group Under Addition",
-    "text": "\\(\\mathbb Z_n\\) is a Group Under Addition\nThe integers mod \\(n\\) form a group under addition modulo \\(n\\).\nThe identity is \\(0\\), and every element has an additive inverse.\nFor example,\n\\(2+3=3+2=0\\pmod 5\\).\nThus \\((\\mathbb Z_n,+)\\) is an abelian group."
+    "objectID": "classes/06/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/06/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n$ Z_6 = {[0],[1],[2],[3],[4],[5]}. $\nWhich subsets form subgroups?\n\n$ {[0]} $\n\n\n$ {[0],[3]} $\n\n\n$ {[0],[2],[4]} $\n\n\n$ Z_6 $\n\nThese are all of the subgroups of \\(\\mathbb Z_6\\)."
   },
   {
-    "objectID": "classes/06/slides.html#the-units-un-are-a-group-under-multiplication",
-    "href": "classes/06/slides.html#the-units-un-are-a-group-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "The Units \\(U(n)\\) are a Group Under Multiplication",
-    "text": "The Units \\(U(n)\\) are a Group Under Multiplication\nDefine \\(U(n)=\\{k\\in\\mathbb Z_n:\\gcd(k,n)=1\\}\\). This is the group of units of \\(\\mathbb Z_n\\)\nFor example, \\(U(8)=\\{1,3,5,7\\}\\).\n\n\n\n\\(\\cdot\\)\n1\n3\n5\n7\n\n\n\n\n1\n1\n3\n5\n7\n\n\n3\n3\n1\n7\n5\n\n\n5\n5\n7\n1\n3\n\n\n7\n7\n5\n3\n1"
+    "objectID": "classes/06/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/06/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define\n$ nZ={nk:kZ}. $\nExamples:\n$ 2Z={,-4,-2,0,2,4,} $\n$ 3Z={,-6,-3,0,3,6,}. $\n\nFor every \\(n\\geq 0\\),\n$ nZZ. $\n\n\nIn fact, these are the only subgroups of \\(\\mathbb Z\\)."
   },
   {
-    "objectID": "classes/06/slides.html#matrix-groups",
-    "href": "classes/06/slides.html#matrix-groups",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Matrix Groups",
-    "text": "Matrix Groups\nLet \\(M_2(\\mathbb R)\\) denote the set of all \\(2\\times2\\) matrices.\nThe general linear group\n\\(GL_2(\\mathbb R)\\) is the set of invertible matricies in \\(M_2(\\mathbb R)\\).\nThe identity is\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\),\nand\n\\(A^{-1}=\\dfrac{1}{ad-bc}\n\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)."
+    "objectID": "classes/06/slides.html#mathbb-rast-and-mathbb-qast",
+    "href": "classes/06/slides.html#mathbb-rast-and-mathbb-qast",
+    "title": "Slides: More Groups",
+    "section": "\\(\\mathbb R^\\ast\\) and \\(\\mathbb Q^\\ast\\)",
+    "text": "\\(\\mathbb R^\\ast\\) and \\(\\mathbb Q^\\ast\\)\nConsider the group of nonzero real numbers under multiplication:\n$ R^=R{0}. $\nLet\n$ Q^ = { : pq }. $\nThen\n$ Q^R^. $\n\nWhy?\n\n\\(1=1/1\\in\\mathbb Q^\\ast\\).\nIf \\(p/q,r/s\\in\\mathbb Q^\\ast\\), then\n$ pqrs=Q^. $\nIf \\(p/q\\in\\mathbb Q^\\ast\\), then\n$ (pq)^{-1}=qpQ^. $"
   },
   {
-    "objectID": "classes/06/slides.html#quaternion-group",
-    "href": "classes/06/slides.html#quaternion-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Quaternion Group",
-    "text": "Quaternion Group\nLet\n\\(1=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\),\n\\(I=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(J=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\),\n\\(K=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\nwhere \\(i^2=-1\\)."
+    "objectID": "classes/06/slides.html#subgroups-of-the-quaternions",
+    "href": "classes/06/slides.html#subgroups-of-the-quaternions",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of the Quaternions",
+    "text": "Subgroups of the Quaternions\nRecall\n$ Q_8={,I,J,K}, $\nwhere\n$ I2=J2=K^2=-1. $\nSome subgroups are\n$ {1}, {1,-1}, $\n$ {1,-1,I,-I}, $\n$ {1,-1,J,-J}, $\n$ {1,-1,K,-K}, $\nand\n$ Q_8. $\n\nNotice that every nontrivial subgroup contains \\(-1\\)."
   },
   {
-    "objectID": "classes/06/slides.html#quaternion-multiplication",
-    "href": "classes/06/slides.html#quaternion-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Quaternion Multiplication",
-    "text": "Quaternion Multiplication\nThe relations include\n\\(I^2=J^2=K^2=-1\\)\nand\n\\(IJ=K,\\qquad JK=I,\\qquad KI=J\\),\nwhile\n\\(JI=-K,\\qquad KJ=-I,\\qquad IK=-J\\).\nHence\n\\(Q_8=\\{\\pm1,\\pm I,\\pm J,\\pm K\\}\\)\nis the quaternion group.\nIt is noncommutative."
+    "objectID": "classes/06/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/06/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet\n$ D_3={e,r_1,r_2,f_a,f_b,f_c}. $\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are\n$ {e}, $\n$ {e,f_a}, {e,f_b}, {e,f_c}, $\n$ {e,r_1,r_2}, $\nand\n$ D_3. $\n\nThe rotations form a subgroup of order \\(3\\).\nEach reflection generates a subgroup of order \\(2\\)."
   },
   {
-    "objectID": "classes/06/slides.html#group-of-complex-numbers-under-multiplication",
-    "href": "classes/06/slides.html#group-of-complex-numbers-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Group of Complex Numbers Under Multiplication",
-    "text": "Group of Complex Numbers Under Multiplication\nLet \\(\\mathbb C^\\ast\\) be the set of nonzero complex numbers.\nUnder multiplication, \\(\\mathbb C^\\ast\\) forms a group.\n\nIdentity: \\(1\\).\nIf \\(z=a+bi\\ne0\\), then\n\\(z^{-1}=\\dfrac{a-bi}{a^2+b^2}\\).\n\nThus every nonzero complex number has a multiplicative inverse.\nThe group \\(\\mathbb C^\\ast\\) is abelian."
+    "objectID": "classes/06/slides.html#subgroups-of-matrix-groups",
+    "href": "classes/06/slides.html#subgroups-of-matrix-groups",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of Matrix Groups",
+    "text": "Subgroups of Matrix Groups\nLet \\(GL_2(\\mathbb R)\\) be the group of invertible \\(2\\times2\\) real matrices under matrix multiplication.\nDefine\n$ SL_2(R) = {AGL_2(R):A=1}. $\nThen\n$ SL_2(R)GL_2(R). $\n\nIf\n$ A=\n\\[\\begin{pmatrix}\na&b\\\\\nc&d\n\\end{pmatrix}\\]\n$\nand \\(\\det A=ad-bc=1\\), then\n$ A^{-1} =\n\\[\\begin{pmatrix}\nd&-b\\\\\n-c&a\n\\end{pmatrix}\\]\n. $\nAlso,\n$ (AB)=(A)(B)=1. $"
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.10-uniqueness-of-identity",
-    "href": "classes/06/slides.html#proposition-3.2.10-uniqueness-of-identity",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.10 — Uniqueness of Identity",
-    "text": "Proposition 3.2.10 — Uniqueness of Identity\nProposition 3.2.10.\nThe identity element in a group \\(G\\) is unique.\n\nSuppose \\(e\\) and \\(e'\\) are both identity elements.\nSince \\(e\\) is an identity,\n\\(ee'=e'\\).\nSince \\(e'\\) is an identity,\n\\(ee'=e\\).\nTherefore,\n\\(e=ee'=e'\\)."
+    "objectID": "classes/06/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/06/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nThe identity \\(e\\) of \\(G\\) is in \\(H\\).\n\n\n\nIf \\(h_1,h_2\\in H\\), then\n$ h_1h_2H. $\n\n\n\n\nIf \\(h\\in H\\), then\n$ h^{-1}H. $\n\n\nAssociativity does not need to be checked again: it is inherited from \\(G\\)."
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
-    "href": "classes/06/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.11 — Uniqueness of the Inverse",
-    "text": "Proposition 3.2.11 — Uniqueness of the Inverse\nProposition 3.2.11.\nIf \\(g\\) is any element in a group \\(G\\), then its inverse \\(g^{-1}\\) is unique.\n\nSuppose \\(g'\\) and \\(g''\\) are both inverses of \\(g\\).\nThen\n\\(gg'=g'g=e\\)\nand\n\\(gg''=g''g=e\\).\nTherefore,\n\\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\\)."
+    "objectID": "classes/06/slides.html#proposition-3.3.7-subgroup-criterion-why-it-works",
+    "href": "classes/06/slides.html#proposition-3.3.7-subgroup-criterion-why-it-works",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion — Why It Works",
+    "text": "Proposition 3.3.7 Subgroup Criterion — Why It Works\nSuppose the three conditions hold.\n\n\\(e\\in H\\) gives an identity.\nClosure gives a binary operation on \\(H\\).\n\\(h\\in H\\Rightarrow h^{-1}\\in H\\) gives inverses.\nAssociativity is inherited from \\(G\\).\n\nTherefore \\(H\\) is a group under the same operation as \\(G\\).\n$ HG. $\n\nTo prove that a subset is a subgroup, we usually do not need to verify all of the group axioms from scratch."
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.12-inverse-of-a-product",
-    "href": "classes/06/slides.html#proposition-3.2.12-inverse-of-a-product",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.12 — Inverse of a Product",
-    "text": "Proposition 3.2.12 — Inverse of a Product\nProposition 3.2.12.\nLet \\(G\\) be a group. If \\(a,b\\in G\\), then\n\\((ab)^{-1}=b^{-1}a^{-1}\\).\n\nIndeed,\n\\(abb^{-1}a^{-1}\n=aea^{-1}\n=aa^{-1}\n=e\\),\nand similarly,\n\\(b^{-1}a^{-1}ab=e\\).\nThus \\(b^{-1}a^{-1}\\) is the inverse of \\(ab\\)."
+    "objectID": "classes/06/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/06/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n$ H $\nand whenever \\(g,h\\in H\\),\n$ gh^{-1}H. $\n\nOne condition gives us everything:\n$ gg^{-1}=eH, $\n$ eg{-1}=g{-1}H, $\nand\n$ h_1(h_2{-1}){-1}=h_1h_2H. $"
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.13-inverse-of-an-inverse",
-    "href": "classes/06/slides.html#proposition-3.2.13-inverse-of-an-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.13 — Inverse of an Inverse",
-    "text": "Proposition 3.2.13 — Inverse of an Inverse\nProposition 3.2.13.\nLet \\(G\\) be a group. For any \\(a\\in G\\),\n\\((a^{-1})^{-1}=a\\).\n\nSince\n\\(a^{-1}(a^{-1})^{-1}=e\\),\nwe obtain\n\\((a^{-1})^{-1}\n=e(a^{-1})^{-1}\n=aa^{-1}(a^{-1})^{-1}\n=ae\n=a\\)."
+    "objectID": "classes/06/slides.html#using-the-subgroup-test",
+    "href": "classes/06/slides.html#using-the-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Using the Subgroup Test",
+    "text": "Using the Subgroup Test\nExample\nLet\n$ H=2Z. $\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then\n$ a=2m,b=2n $\nfor some \\(m,n\\in\\mathbb Z\\).\nTherefore\n$ a-b=2m-2n=2(m-n)Z. $\nHence\n$ 2ZZ. $"
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.14",
-    "href": "classes/06/slides.html#proposition-3.2.14",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.14",
-    "text": "Proposition 3.2.14\nProposition 3.2.14.\nLet \\(G\\) be a group and let \\(a,b\\in G\\). Then the equations\n\\(ax=b\\)\nand\n\\(xa=b\\)\nhave unique solutions in \\(G\\).\n\nFor \\(ax=b\\),\n\\(x=a^{-1}b\\).\nFor \\(xa=b\\),\n\\(x=ba^{-1}\\)."
+    "objectID": "classes/06/slides.html#equivalence-relations-on-groups",
+    "href": "classes/06/slides.html#equivalence-relations-on-groups",
+    "title": "Slides: More Groups",
+    "section": "Equivalence Relations on Groups",
+    "text": "Equivalence Relations on Groups\nGroups naturally give rise to several actions on themselves.\nRight action\n$ xg=xg $\nLeft action\n$ gx=gx $\nConjugation\n$ gx=gxg^{-1} $\n. . .\nThe orbits of a group action determine equivalence classes.\nUnder conjugation, the equivalence classes are called conjugacy classes."
   },
   {
-    "objectID": "classes/06/slides.html#proposition-3.2.15",
-    "href": "classes/06/slides.html#proposition-3.2.15",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.15",
-    "text": "Proposition 3.2.15\nProposition 3.2.15.\nIf \\(G\\) is a group and \\(a,b,c\\in G\\), then\n\\(ba=ca\\quad\\Longrightarrow\\quad b=c\\)\nand\n\\(ab=ac\\quad\\Longrightarrow\\quad b=c\\).\n\nThese are the right and left cancellation laws for groups.\nFor example,\n\\(ba=ca\n\\quad\\Longrightarrow\\quad\nbaa^{-1}=caa^{-1}\n\\quad\\Longrightarrow\\quad\nb=c\\)."
-  },
-  {
-    "objectID": "classes/06/slides.html#defining-exponents",
-    "href": "classes/06/slides.html#defining-exponents",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Defining Exponents",
-    "text": "Defining Exponents\nFor \\(g\\in G\\), define\n\\(g^0=e\\),\n\\(g^n=\\underbrace{g\\cdot g\\cdots g}_{n\\text{ times}}\\),\nand\n\\(g^{-n}=\\underbrace{g^{-1}\\cdot g^{-1}\\cdots g^{-1}}_{n\\text{ times}}\\)."
-  },
-  {
-    "objectID": "classes/06/slides.html#theorem-3.2.16",
-    "href": "classes/06/slides.html#theorem-3.2.16",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Theorem 3.2.16",
-    "text": "Theorem 3.2.16\nTheorem 3.2.16.\nIn a group, the usual laws of exponents hold. For all \\(g,h\\in G\\),\n\n\\(g^m g^n=g^{m+n}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((g^m)^n=g^{mn}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((gh)^n=(h^{-1}g^{-1})^{-n}\\) for all \\(n\\in\\mathbb Z\\).\n\nFurthermore, if \\(G\\) is abelian,\n\\((gh)^n=g^nh^n\\)."
+    "objectID": "classes/06/slides.html#check-your-understanding",
+    "href": "classes/06/slides.html#check-your-understanding",
+    "title": "Slides: More Groups",
+    "section": "Check Your Understanding",
+    "text": "Check Your Understanding\nFor each subset, decide whether it is a subgroup.\n\n\\(\\{[0],[2],[4]\\}\\subseteq\\mathbb Z_6\\)\n\\(\\{[0],[1],[2]\\}\\subseteq\\mathbb Z_6\\)\n\\(5\\mathbb Z\\subseteq\\mathbb Z\\)\n\\(\\mathbb Q^\\ast\\subseteq\\mathbb R^\\ast\\)\n\\(\\{1,-1,I,-I\\}\\subseteq Q_8\\)\n\n\nFor each example, identify which subgroup criterion is most efficient."
   },
   {
     "objectID": "classes/01/slides.html#welcome-to-math-393",
@@ -537,121 +523,266 @@
   {
     "objectID": "classes/05/slides.html#class-session-goals",
     "href": "classes/05/slides.html#class-session-goals",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine groups\nExplore examples of groups\nEstablish basic properties of groups"
+    "text": "Class Session Goals\n\nEstablish basic properties of groups\nDefine subgroups\nExplore examples of groups and subgroups\nEstablish basic properties of subgroups",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#definition-of-a-group",
     "href": "classes/05/slides.html#definition-of-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\circ)\\) is a set \\(G\\) together with a law of composition \\((a,b)\\mapsto a\\circ b\\) satisfying:\n\nAssociativity:\n\\((a\\circ b)\\circ c=a\\circ(b\\circ c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\circ a=a\\circ e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\circ a^{-1}=a^{-1}\\circ a=e\\).\n\nA group is abelian (or commutative) if \\(a\\circ b=b\\circ a\\) for all \\(a,b\\in G\\)."
-  },
-  {
-    "objectID": "classes/05/slides.html#integers-are-a-group",
-    "href": "classes/05/slides.html#integers-are-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Integers are a Group",
-    "text": "Integers are a Group\nConsider \\((\\mathbb Z,+)\\).\n\nThe sum of two integers is an integer.\nAddition is associative: \\((m+n)+k=m+(n+k)\\).\nThe identity is \\(0\\): \\(0+n=n+0=n\\).\nThe inverse of \\(n\\) is \\(-n\\): \\(n+(-n)=(-n)+n=0\\).\n\nAlso,\n\\(m+n=n+m\\).\nTherefore \\((\\mathbb Z,+)\\) is an abelian group."
-  },
-  {
-    "objectID": "classes/05/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "href": "classes/05/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "\\(\\mathbb Z_n\\) is a Group Under Addition",
-    "text": "\\(\\mathbb Z_n\\) is a Group Under Addition\nThe integers mod \\(n\\) form a group under addition modulo \\(n\\).\nThe identity is \\(0\\), and every element has an additive inverse.\nFor example,\n\\(2+3=3+2=0\\pmod 5\\).\nThus \\((\\mathbb Z_n,+)\\) is an abelian group."
-  },
-  {
-    "objectID": "classes/05/slides.html#the-units-un-are-a-group-under-multiplication",
-    "href": "classes/05/slides.html#the-units-un-are-a-group-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "The Units \\(U(n)\\) are a Group Under Multiplication",
-    "text": "The Units \\(U(n)\\) are a Group Under Multiplication\nDefine \\(U(n)=\\{k\\in\\mathbb Z_n:\\gcd(k,n)=1\\}\\). This is the group of units of \\(\\mathbb Z_n\\)\nFor example, \\(U(8)=\\{1,3,5,7\\}\\).\n\n\n\n\\(\\cdot\\)\n1\n3\n5\n7\n\n\n\n\n1\n1\n3\n5\n7\n\n\n3\n3\n1\n7\n5\n\n\n5\n5\n7\n1\n3\n\n\n7\n7\n5\n3\n1"
-  },
-  {
-    "objectID": "classes/05/slides.html#matrix-groups",
-    "href": "classes/05/slides.html#matrix-groups",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Matrix Groups",
-    "text": "Matrix Groups\nLet \\(M_2(\\mathbb R)\\) denote the set of all \\(2\\times2\\) matrices.\nThe general linear group\n\\(GL_2(\\mathbb R)\\) is the set of invertible matricies in \\(M_2(\\mathbb R)\\).\nThe identity is\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\),\nand\n\\(A^{-1}=\\dfrac{1}{ad-bc}\n\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\)."
-  },
-  {
-    "objectID": "classes/05/slides.html#quaternion-group",
-    "href": "classes/05/slides.html#quaternion-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Quaternion Group",
-    "text": "Quaternion Group\nLet\n\\(1=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\),\n\\(I=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(J=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\),\n\\(K=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\nwhere \\(i^2=-1\\)."
-  },
-  {
-    "objectID": "classes/05/slides.html#quaternion-multiplication",
-    "href": "classes/05/slides.html#quaternion-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Quaternion Multiplication",
-    "text": "Quaternion Multiplication\nThe relations include\n\\(I^2=J^2=K^2=-1\\)\nand\n\\(IJ=K,\\qquad JK=I,\\qquad KI=J\\),\nwhile\n\\(JI=-K,\\qquad KJ=-I,\\qquad IK=-J\\).\nHence\n\\(Q_8=\\{\\pm1,\\pm I,\\pm J,\\pm K\\}\\)\nis the quaternion group.\nIt is noncommutative."
-  },
-  {
-    "objectID": "classes/05/slides.html#group-of-complex-numbers-under-multiplication",
-    "href": "classes/05/slides.html#group-of-complex-numbers-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Group of Complex Numbers Under Multiplication",
-    "text": "Group of Complex Numbers Under Multiplication\nLet \\(\\mathbb C^\\ast\\) be the set of nonzero complex numbers.\nUnder multiplication, \\(\\mathbb C^\\ast\\) forms a group.\n\nIdentity: \\(1\\).\nIf \\(z=a+bi\\ne0\\), then\n\\(z^{-1}=\\dfrac{a-bi}{a^2+b^2}\\).\n\nThus every nonzero complex number has a multiplicative inverse.\nThe group \\(\\mathbb C^\\ast\\) is abelian."
+    "text": "Definition of a Group\nA group \\((G,\\circ)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\circ b\\) satisfying:\n\nAssociativity:\n\\((a\\circ b)\\circ c=a\\circ(b\\circ c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\circ a=a\\circ e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\circ a^{-1}=a^{-1}\\circ a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.10-uniqueness-of-identity",
     "href": "classes/05/slides.html#proposition-3.2.10-uniqueness-of-identity",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.10 — Uniqueness of Identity",
-    "text": "Proposition 3.2.10 — Uniqueness of Identity\nProposition 3.2.10.\nThe identity element in a group \\(G\\) is unique.\n\nSuppose \\(e\\) and \\(e'\\) are both identity elements.\nSince \\(e\\) is an identity,\n\\(ee'=e'\\).\nSince \\(e'\\) is an identity,\n\\(ee'=e\\).\nTherefore,\n\\(e=ee'=e'\\)."
+    "text": "Proposition 3.2.10 — Uniqueness of Identity\nThe identity element in a group \\(G\\) is unique.\n\nSuppose \\(e\\) and \\(e'\\) are both identity elements.\nSince \\(e\\) is an identity, \\(ee'=e'\\).\nSince \\(e'\\) is an identity, \\(ee'=e\\).\nTherefore, \\(e=ee'=e'\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
     "href": "classes/05/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.11 — Uniqueness of the Inverse",
-    "text": "Proposition 3.2.11 — Uniqueness of the Inverse\nProposition 3.2.11.\nIf \\(g\\) is any element in a group \\(G\\), then its inverse \\(g^{-1}\\) is unique.\n\nSuppose \\(g'\\) and \\(g''\\) are both inverses of \\(g\\).\nThen\n\\(gg'=g'g=e\\)\nand\n\\(gg''=g''g=e\\).\nTherefore,\n\\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\\)."
+    "text": "Proposition 3.2.11 — Uniqueness of the Inverse\nIf \\(g\\) is any element in a group \\(G\\), then its inverse \\(g^{-1}\\) is unique.\n\nSuppose \\(g'\\) and \\(g''\\) are both inverses of \\(g\\).\nThen \\(gg'=g'g=e\\) and \\(gg''=g''g=e\\).\nTherefore, \\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.12-inverse-of-a-product",
     "href": "classes/05/slides.html#proposition-3.2.12-inverse-of-a-product",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.12 — Inverse of a Product",
-    "text": "Proposition 3.2.12 — Inverse of a Product\nProposition 3.2.12.\nLet \\(G\\) be a group. If \\(a,b\\in G\\), then\n\\((ab)^{-1}=b^{-1}a^{-1}\\).\n\nIndeed,\n\\(abb^{-1}a^{-1}\n=aea^{-1}\n=aa^{-1}\n=e\\),\nand similarly,\n\\(b^{-1}a^{-1}ab=e\\).\nThus \\(b^{-1}a^{-1}\\) is the inverse of \\(ab\\)."
+    "text": "Proposition 3.2.12 — Inverse of a Product\nLet \\(G\\) be a group. If \\(a,b\\in G\\), then \\((ab)^{-1}=b^{-1}a^{-1}\\).\n\nIndeed,\n\\(abb^{-1}a^{-1}=aea^{-1}=aa^{-1}=e\\),\nand similarly,\n\\(b^{-1}a^{-1}ab=e\\).\nThus \\(b^{-1}a^{-1}\\) is the inverse of \\(ab\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.13-inverse-of-an-inverse",
     "href": "classes/05/slides.html#proposition-3.2.13-inverse-of-an-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.13 — Inverse of an Inverse",
-    "text": "Proposition 3.2.13 — Inverse of an Inverse\nProposition 3.2.13.\nLet \\(G\\) be a group. For any \\(a\\in G\\),\n\\((a^{-1})^{-1}=a\\).\n\nSince\n\\(a^{-1}(a^{-1})^{-1}=e\\),\nwe obtain\n\\((a^{-1})^{-1}\n=e(a^{-1})^{-1}\n=aa^{-1}(a^{-1})^{-1}\n=ae\n=a\\)."
+    "text": "Proposition 3.2.13 — Inverse of an Inverse\nLet \\(G\\) be a group. For any \\(a\\in G\\), \\((a^{-1})^{-1}=a\\).\n\nSince\n\\(a^{-1}(a^{-1})^{-1}=e\\),\nwe obtain\n\\((a^{-1})^{-1}=e(a^{-1})^{-1}=aa^{-1}(a^{-1})^{-1}=ae=a\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.14",
     "href": "classes/05/slides.html#proposition-3.2.14",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.14",
-    "text": "Proposition 3.2.14\nProposition 3.2.14.\nLet \\(G\\) be a group and let \\(a,b\\in G\\). Then the equations\n\\(ax=b\\)\nand\n\\(xa=b\\)\nhave unique solutions in \\(G\\).\n\nFor \\(ax=b\\),\n\\(x=a^{-1}b\\).\nFor \\(xa=b\\),\n\\(x=ba^{-1}\\)."
+    "text": "Proposition 3.2.14\nLet \\(G\\) be a group and let \\(a,b\\in G\\). Then the equations \\(ax=b\\) and \\(xa=b\\) have unique solutions in \\(G\\).\n\nFor \\(ax=b\\),\n\\(x=a^{-1}b\\).\nFor \\(xa=b\\),\n\\(x=ba^{-1}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#proposition-3.2.15",
     "href": "classes/05/slides.html#proposition-3.2.15",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Proposition 3.2.15",
-    "text": "Proposition 3.2.15\nProposition 3.2.15.\nIf \\(G\\) is a group and \\(a,b,c\\in G\\), then\n\\(ba=ca\\quad\\Longrightarrow\\quad b=c\\)\nand\n\\(ab=ac\\quad\\Longrightarrow\\quad b=c\\).\n\nThese are the right and left cancellation laws for groups.\nFor example,\n\\(ba=ca\n\\quad\\Longrightarrow\\quad\nbaa^{-1}=caa^{-1}\n\\quad\\Longrightarrow\\quad\nb=c\\)."
+    "text": "Proposition 3.2.15\nIf \\(G\\) is a group and \\(a,b,c\\in G\\), then\n\\(ba=ca\\quad\\Longrightarrow\\quad b=c\\)\nand\n\\(ab=ac\\quad\\Longrightarrow\\quad b=c\\).\n\nThese are the right and left cancellation laws for groups.\nFor example,\n\\(ba=ca\\quad\\Longrightarrow\\quad baa^{-1}=caa^{-1}\\quad\\Longrightarrow\\quad b=c\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#defining-exponents",
     "href": "classes/05/slides.html#defining-exponents",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Defining Exponents",
-    "text": "Defining Exponents\nFor \\(g\\in G\\), define\n\\(g^0=e\\),\n\\(g^n=\\underbrace{g\\cdot g\\cdots g}_{n\\text{ times}}\\),\nand\n\\(g^{-n}=\\underbrace{g^{-1}\\cdot g^{-1}\\cdots g^{-1}}_{n\\text{ times}}\\)."
+    "text": "Defining Exponents\nFor \\(g\\in G\\), define\n\\(g^0=e\\),\n\\(g^n=\\underbrace{g\\cdot g\\cdots g}_{n\\text{ times}}\\),\nand\n\\(g^{-n}=\\underbrace{g^{-1}\\cdot g^{-1}\\cdots g^{-1}}_{n\\text{ times}}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/05/slides.html#theorem-3.2.16",
     "href": "classes/05/slides.html#theorem-3.2.16",
-    "title": "Slides: Definitions and Examples of Groups",
+    "title": "Slides: Properties of Groups and Subgroups",
     "section": "Theorem 3.2.16",
-    "text": "Theorem 3.2.16\nTheorem 3.2.16.\nIn a group, the usual laws of exponents hold. For all \\(g,h\\in G\\),\n\n\\(g^m g^n=g^{m+n}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((g^m)^n=g^{mn}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((gh)^n=(h^{-1}g^{-1})^{-n}\\) for all \\(n\\in\\mathbb Z\\).\n\nFurthermore, if \\(G\\) is abelian,\n\\((gh)^n=g^nh^n\\)."
+    "text": "Theorem 3.2.16\nFor all \\(g,h\\in G\\),\n\n\\(g^m g^n=g^{m+n}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((g^m)^n=g^{mn}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((gh)^n=(h^{-1}g^{-1})^{-n}\\) for all \\(n\\in\\mathbb Z\\).\n\nFurthermore, if \\(G\\) is abelian,\n\\((gh)^n=g^nh^n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#definition-of-a-subgroup",
+    "href": "classes/05/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write\n\\(H \\leq G.\\)\nA subgroup always uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#trivial-subgroups",
+    "href": "classes/05/slides.html#trivial-subgroups",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Trivial Subgroups",
+    "text": "Trivial Subgroups\nEvery group \\(G\\) has at least two subgroups:\n\\(\\{e\\} \\leq G\\) and \\(G \\leq G.\\)\nThe subgroup \\(\\{e\\}\\) is called the trivial subgroup.\nA subgroup \\(H\\) that is a proper subset of \\(G\\) is called a proper subgroup.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-of-mathbb-u9",
+    "href": "classes/05/slides.html#subgroups-of-mathbb-u9",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups of \\(\\mathbb U(9)\\)",
+    "text": "Subgroups of \\(\\mathbb U(9)\\)\nConsider \\(\\mathbb U(9)\\) under multiplication.\n\\(\\mathbb U(9)=\\{[1],[2],[4],[5],[7],[8]\\}\\).\nWhich subsets form subgroups?\n\\(\\{[1]\\}\\)\n\\(\\{[1],[8]\\}\\)\n\\(\\{[1],[4],[7]\\}\\)\n\\(\\mathbb U(9)\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-of-mathbb-u9-continued",
+    "href": "classes/05/slides.html#subgroups-of-mathbb-u9-continued",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups of \\(\\mathbb U(9)\\) Continued",
+    "text": "Subgroups of \\(\\mathbb U(9)\\) Continued\nConsider \\(\\{[1],[5]\\}\\). \\([5] \\cdot [5]\\) = [7], which is not in the set, so it is not a subgroup.\n\nIf we add [7] to the set, we get \\(\\{[1],[5],[7]\\}\\). \\([5] \\cdot [7]\\) = [8], which is not in the set, so it is not a subgroup.\n\n\nIf we add [8] to the set, we get \\(\\{[1],[5],[7],[8]\\}\\). \\([5] \\cdot [7]\\) = [8], which is in the set, but \\([5] \\cdot [8]\\) = [4], which is not in the set, so it is not a subgroup.\n\n\nIf we add [4] to the set, we get \\(\\{[1],[4],[5],[7],[8]\\}\\). \\([5] \\cdot [7]\\) = [8], which is in the set, but \\([4] \\cdot [5]\\) = [2], which is not in the set, so it is not a subgroup.\n\n\nIf we add [2] to the set, we get \\(\\{[1],[2],[4],[5],[7],[8]\\}\\), which is \\(\\mathbb U(9)\\), so it is a subgroup.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/05/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define\n\\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\(2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\\)\n\\(3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}\\).\n\nFor every \\(n\\geq 0\\),\n\\(n\\mathbb Z\\leq\\mathbb Z\\).\n\\(12 \\mathbb Z \\leq 6\\mathbb Z \\leq 2\\mathbb Z \\leq \\mathbb Z\\).\n\n\n\\(\\mathbb R^\\ast\\) and \\(\\mathbb Q^\\ast\\)\nConsider the group of nonzero real numbers under multiplication:\n\\(\\mathbb R^\\ast=\\mathbb R\\setminus\\{0\\}\\).\nLet \\(\\mathbb Q^\\ast=\\left\\{\\frac{p}{q}:p\\text{ and }q\\text{ are nonzero integers}\\right\\}\\).\nThen \\(\\mathbb Q^\\ast\\leq\\mathbb R^\\ast\\).\n\n\n\nSubgroups of the Quaternions\nRecall\n\\(Q_8=\\{\\pm E,\\pm I,\\pm J,\\pm K\\}\\),\nwhere\n\\(I^2=J^2=K^2=-1\\).\nSome nontrivial proper subgroups are:\n\\(\\{1,-1\\}\\),\n\\(\\{1,-1,I,-I\\}\\),\n\\(\\{1,-1,J,-J\\}\\),\n\\(\\{1,-1,K,-K\\}\\),\n\n\n\nSubgroups Activity\nIn your groups, identify some subgroups of the following groups:\n\n\\(\\mathbb Z_{6}\\)\n\\(U(8)\\)\nthe symmetry group of a equilateral triangle \\(\\{e, r_1, r_2, f_A, f_B, f_C\\}\\)\n\n\n\n\nSubgroups of Matrix Groups\nLet \\(GL_2(\\mathbb R)\\) be the group of invertible\n\\(2\\times2\\) real matrices under matrix multiplication.\nDefine\n\\(SL_2(\\mathbb R)=\\{A\\in GL_2(\\mathbb R):\\det A=1\\}\\).\nThen\n\\(SL_2(\\mathbb R)\\leq GL_2(\\mathbb R)\\).\n\nIf\n\\(A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\)\nand \\(\\det A=ad-bc=1\\), then\n\\(A^{-1}=\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\).\nAlso,\n\\(\\det(AB)=\\det(A)\\det(B)=1\\).\n\n\n\n\nProposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nThe identity \\(e\\) of \\(G\\) is in \\(H\\).\n\n\n\nIf \\(h_1,h_2\\in H\\), then\n\\(h_1h_2\\in H\\).\n\n\n\n\nIf \\(h\\in H\\), then\n\\(h^{-1}\\in H\\).\n\n\nAssociativity does not need to be checked again: it is inherited from \\(G\\).\n\n\n\n\n\nProposition 3.3.7 Subgroup Criterion — Why It Works\nSuppose the three conditions hold.\n\n\\(e\\in H\\) gives an identity.\nClosure gives a binary operation on \\(H\\).\n\\(h\\in H\\Rightarrow h^{-1}\\in H\\) gives inverses.\nAssociativity is inherited from \\(G\\).\n\nTherefore \\(H\\) is a group under the same operation as \\(G\\).\n\\(H\\leq G\\).\n\nTo prove that a subset is a subgroup, we usually do not need to verify all of the group axioms from scratch.\n\n\n\n\nProposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\(H\\neq\\emptyset\\)\nand whenever \\(g,h\\in H\\),\n\\(gh^{-1}\\in H\\).\n\nOne condition gives us everything:\n\\(gg^{-1}=e\\in H\\),\n\\(eg^{-1}=g^{-1}\\in H\\),\nand\n\\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\).\n\n\n\n\nUsing the Subgroup Test\nExample\nLet\n\\(H=2\\mathbb Z\\).\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then\n\\(a=2m,\\qquad b=2n\\)\nfor some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\).\n\n\n\nCheck Your Understanding\nFor each subset, decide whether it is a subgroup.\n\n\\(\\{[0],[2],[4]\\}\\subseteq\\mathbb Z_6\\)\n\\(\\{[0],[1],[2]\\}\\subseteq\\mathbb Z_6\\)\n\\(5\\mathbb Z\\subseteq\\mathbb Z\\)\n\\(\\mathbb Q^\\ast\\subseteq\\mathbb R^\\ast\\)\n\\(\\{1,-1,I,-I\\}\\subseteq Q_8\\)\n\n\nFor each example, identify which subgroup criterion is most efficient.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#mathbb-rast-and-mathbb-qast",
+    "href": "classes/05/slides.html#mathbb-rast-and-mathbb-qast",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "\\(\\mathbb R^\\ast\\) and \\(\\mathbb Q^\\ast\\)",
+    "text": "\\(\\mathbb R^\\ast\\) and \\(\\mathbb Q^\\ast\\)\nConsider the group of nonzero real numbers under multiplication:\n\\(\\mathbb R^\\ast=\\mathbb R\\setminus\\{0\\}\\).\nLet \\(\\mathbb Q^\\ast=\\left\\{\\frac{p}{q}:p\\text{ and }q\\text{ are nonzero integers}\\right\\}\\).\nThen \\(\\mathbb Q^\\ast\\leq\\mathbb R^\\ast\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-of-the-quaternions",
+    "href": "classes/05/slides.html#subgroups-of-the-quaternions",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups of the Quaternions",
+    "text": "Subgroups of the Quaternions\nRecall\n\\(Q_8=\\{\\pm E,\\pm I,\\pm J,\\pm K\\}\\),\nwhere\n\\(I^2=J^2=K^2=-1\\).\nSome nontrivial proper subgroups are:\n\\(\\{1,-1\\}\\),\n\\(\\{1,-1,I,-I\\}\\),\n\\(\\{1,-1,J,-J\\}\\),\n\\(\\{1,-1,K,-K\\}\\),",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-activity",
+    "href": "classes/05/slides.html#subgroups-activity",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups Activity",
+    "text": "Subgroups Activity\nIn your groups, identify some subgroups of the following groups:\n\n\\(\\mathbb Z_{6}\\)\n\\(U(8)\\)\nthe symmetry group of a equilateral triangle \\(\\{e, r_1, r_2, f_A, f_B, f_C\\}\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#subgroups-of-matrix-groups",
+    "href": "classes/05/slides.html#subgroups-of-matrix-groups",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Subgroups of Matrix Groups",
+    "text": "Subgroups of Matrix Groups\nLet \\(GL_2(\\mathbb R)\\) be the group of invertible\n\\(2\\times2\\) real matrices under matrix multiplication.\nDefine\n\\(SL_2(\\mathbb R)=\\{A\\in GL_2(\\mathbb R):\\det A=1\\}\\).\nThen\n\\(SL_2(\\mathbb R)\\leq GL_2(\\mathbb R)\\).\n\nIf\n\\(A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\)\nand \\(\\det A=ad-bc=1\\), then\n\\(A^{-1}=\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}\\).\nAlso,\n\\(\\det(AB)=\\det(A)\\det(B)=1\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/05/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nThe identity \\(e\\) of \\(G\\) is in \\(H\\).\n\n\n\nIf \\(h_1,h_2\\in H\\), then\n\\(h_1h_2\\in H\\).\n\n\n\n\nIf \\(h\\in H\\), then\n\\(h^{-1}\\in H\\).\n\n\nAssociativity does not need to be checked again: it is inherited from \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#proposition-3.3.7-subgroup-criterion-why-it-works",
+    "href": "classes/05/slides.html#proposition-3.3.7-subgroup-criterion-why-it-works",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Proposition 3.3.7 Subgroup Criterion — Why It Works",
+    "text": "Proposition 3.3.7 Subgroup Criterion — Why It Works\nSuppose the three conditions hold.\n\n\\(e\\in H\\) gives an identity.\nClosure gives a binary operation on \\(H\\).\n\\(h\\in H\\Rightarrow h^{-1}\\in H\\) gives inverses.\nAssociativity is inherited from \\(G\\).\n\nTherefore \\(H\\) is a group under the same operation as \\(G\\).\n\\(H\\leq G\\).\n\nTo prove that a subset is a subgroup, we usually do not need to verify all of the group axioms from scratch.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/05/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\(H\\neq\\emptyset\\)\nand whenever \\(g,h\\in H\\),\n\\(gh^{-1}\\in H\\).\n\nOne condition gives us everything:\n\\(gg^{-1}=e\\in H\\),\n\\(eg^{-1}=g^{-1}\\in H\\),\nand\n\\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#using-the-subgroup-test",
+    "href": "classes/05/slides.html#using-the-subgroup-test",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Using the Subgroup Test",
+    "text": "Using the Subgroup Test\nExample\nLet\n\\(H=2\\mathbb Z\\).\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then\n\\(a=2m,\\qquad b=2n\\)\nfor some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
+  },
+  {
+    "objectID": "classes/05/slides.html#check-your-understanding",
+    "href": "classes/05/slides.html#check-your-understanding",
+    "title": "Slides: Properties of Groups and Subgroups",
+    "section": "Check Your Understanding",
+    "text": "Check Your Understanding\nFor each subset, decide whether it is a subgroup.\n\n\\(\\{[0],[2],[4]\\}\\subseteq\\mathbb Z_6\\)\n\\(\\{[0],[1],[2]\\}\\subseteq\\mathbb Z_6\\)\n\\(5\\mathbb Z\\subseteq\\mathbb Z\\)\n\\(\\mathbb Q^\\ast\\subseteq\\mathbb R^\\ast\\)\n\\(\\{1,-1,I,-I\\}\\subseteq Q_8\\)\n\n\nFor each example, identify which subgroup criterion is most efficient.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Properties of Groups and Subgroups"
+    ]
   },
   {
     "objectID": "classes/04/slides.html#class-session-goals",
