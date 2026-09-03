@@ -204,320 +204,320 @@
   {
     "objectID": "classes/01/slides.html#welcome-to-math-393",
     "href": "classes/01/slides.html#welcome-to-math-393",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Welcome to Math 393",
     "text": "Welcome to Math 393\nWelcome to Math 393 Abstract Algebra! I am Prof. Geoffrey Buhl, and I am you instructor for this semester. Buhl rhymes with fuel.\nClass Session Goals:\n\nMeet Classmates and work in small groups.\nLearn about this course and my expectations.\nWork on a first discrete mathematics problem.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#syllabus-activity",
     "href": "classes/01/slides.html#syllabus-activity",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Syllabus Activity",
     "text": "Syllabus Activity\n\nTake a few minutes to introduce yourselves and share what other courses you are taking this semester.\nAs a group, take 10–15 minutes to look over the syllabus and formulate four questions your group would like to ask about the course.\nAs a whole class, groups will ask questions and I will answer them.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#advice-for-students",
     "href": "classes/01/slides.html#advice-for-students",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Advice for students",
     "text": "Advice for students\n\nStart homework early, do it consistently, and redo missed or difficult problems since homework closely matches exam questions.\nAttend every lecture, pay attention, take clear notes, and ask questions to fully understand concepts and proofs.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#how-i-will-teach-this-course",
     "href": "classes/01/slides.html#how-i-will-teach-this-course",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "How I will teach this course",
     "text": "How I will teach this course\nI cannot cover everything in the text or in a given chapter or section. I will focus on the most important concepts and proofs, and I will provide additional examples and exercises to help you understand the material. I will also provide additional resources and references for further study. Ask questions in class, during office hours, or via email. Part of you preparation for the class is to read the text beforehand.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#activity-symmetries",
     "href": "classes/01/slides.html#activity-symmetries",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Activity: Symmetries",
     "text": "Activity: Symmetries\n\nQR code for syllabus",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#activity-1",
     "href": "classes/01/slides.html#activity-1",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Activity 1",
     "text": "Activity 1\nTake a few moments to introduce yourselves to your group members.\nThen in small groups, work write out all the rotations of the square and pentagon. Then create a composition table for the rotations of the square and pentagon.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#activity-2",
     "href": "classes/01/slides.html#activity-2",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Activity 2",
     "text": "Activity 2\nTake a few moments to introduce yourselves to your group members.\nNow we will allow flips or reflections of the triangle and square. What are the addtional symmetries of the triangle and square? Then create a composition table for the symmetries of the triangle and square that includes both rotations and reflections.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#activity-3",
     "href": "classes/01/slides.html#activity-3",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Activity 3",
     "text": "Activity 3\nTake a few moments to introduce yourselves to your group members.\nWhat about a tetrahedron? You can rotate around a face/vertex or edge or vertex. List out the symmetries of the tetrahedron. Then create a composition table for the symmetries of the tetrahedron.\nWhat about a cube? You can rotate around a face, edge or vertex. List out the symmetries of the cube. Then create a composition table for the symmetries of the cube.\nwe’ll just label the faces of these objects because that is how the dice are labeled.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/01/slides.html#next-steps",
     "href": "classes/01/slides.html#next-steps",
-    "title": "Course Introduction",
+    "title": "Slides: Course Introduction",
     "section": "Next Steps",
     "text": "Next Steps\n\nLook over the “Welcome! Students - Start Here!” Module in CI Learn.\nLook at and work on the W1 (Week 1) Learner Survey Info Quiz on CI Learn.\nLook at and work on W1 Introduce yourself Assignment in CI Learn.",
     "crumbs": [
       "Class Material",
-      "Course Introduction"
+      "Slides: Course Introduction"
     ]
   },
   {
     "objectID": "classes/02/slides.html#class-session-goals",
     "href": "classes/02/slides.html#class-session-goals",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Class Session Goals",
     "text": "Class Session Goals\n\nLearn about Equivalence Relations and see examples\nPractice determining whether a relation is an equivalence relation\nProve the Division Algorithm",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#relations",
     "href": "classes/02/slides.html#relations",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Relations",
     "text": "Relations\nA relation between sets \\(A\\) and \\(B\\) is a subset \\(R \\subset A \\times B\\).\nIf \\(R \\subset X \\times X\\), then \\(R\\) is a relation on \\(X\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#functions",
     "href": "classes/02/slides.html#functions",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Functions",
     "text": "Functions\nA function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a relation from \\(A\\) to \\(B\\) such that each \\(a \\in A\\) is related to exactly one element \\(b \\in B\\).\nWe write\n\\[\nf:A\\to B\n\\]",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#functions-1",
     "href": "classes/02/slides.html#functions-1",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Functions",
     "text": "Functions\nWe write \\(f(a)=b\\) if \\(b\\) is the unique element of \\(B\\) associated with \\(a\\).\n\n\\(A\\) is the domain of \\(f\\).\n\\(B\\) is the range or codomain of \\(f\\).\nThe set \\[\nf(A)=\\{f(a):a\\in A\\}\n\\] is the image of \\(f\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#surjective-functions",
     "href": "classes/02/slides.html#surjective-functions",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Surjective Functions",
     "text": "Surjective Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is onto or surjective if every element in \\(B\\) is the image of some element in \\(A\\).\nThat is, for every \\(b\\in B\\), there exists an \\(a\\in A\\) such that \\(f(a)=b\\).\nSometimes you will this way of expressing onto functions, \\(f(A)=B\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#one-to-one-functions",
     "href": "classes/02/slides.html#one-to-one-functions",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "One-to-One Functions",
     "text": "One-to-One Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is one-to-one or injective if \\(f(a_1)=f(a_2)\\) implies \\(a_1=a_2\\).\nThat is each element in the image comes from a unique element in the domain.",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#definition-of-equivalence-relation",
     "href": "classes/02/slides.html#definition-of-equivalence-relation",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Definition of Equivalence Relation",
     "text": "Definition of Equivalence Relation\nLet \\(R \\subset X \\times X\\) be a relation on \\(X\\).\nThe relation \\(R\\) is an equivalence relation when:\n\nReflexive: \\((x,x) \\in R\\) for all \\(x \\in X\\).\nSymmetric: If \\((x,y) \\in R\\), then \\((y,x) \\in R\\).\nTransitive: If \\((x,y) \\in R\\) and \\((y,z) \\in R\\), then \\((x,z) \\in R\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#examples",
     "href": "classes/02/slides.html#examples",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Examples",
     "text": "Examples\n\nSimilar Matrices\nEquivalent Fractions",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#equivalence-classes",
     "href": "classes/02/slides.html#equivalence-classes",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Equivalence Classes",
     "text": "Equivalence Classes\nLet \\(\\sim\\) be an equivalence relation on a set \\(X\\).\nFor \\(x\\in X\\), the equivalence class of \\(x\\) is \\([x]=\\{y\\in X:y\\sim x\\}\\).\nEquivalence classes have two important properties:\n\n\\([x]=[y]\\), or\n\\([x]\\cap[y]=\\emptyset\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#equivalence-classes-partition-sets",
     "href": "classes/02/slides.html#equivalence-classes-partition-sets",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Equivalence Classes Partition sets",
     "text": "Equivalence Classes Partition sets\nThus, the equivalence classes of \\(X\\) form a partition of \\(X\\):\n\\[\nX=\\bigcup_{x\\in X}[x].\n\\]\nEvery element of \\(X\\) belongs to exactly one equivalence class.",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
     "href": "classes/02/slides.html#equivalence-relation-worksheet",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Equivalence Relation Worksheet",
     "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#caution-functions-on-equivalence-classes",
     "href": "classes/02/slides.html#caution-functions-on-equivalence-classes",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Caution: Functions on Equivalence Classes",
     "text": "Caution: Functions on Equivalence Classes\nSuppose we want to define a function on equivalence classes by\n\\(f([x]) = \\text{some expression involving } x\\).\nBe careful! An equivalence class can have many different representatives.\n\nTo show that \\(f\\) is well-defined, we must check that the value of \\(f([x])\\) does not depend on the choice of representative.\nThat is, we need to prove:\n\nIf \\(x \\sim y\\), then \\(f([x])=f([y])\\).\n\n\n\nDefining a rule is not enough — check that it is well-defined!",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
     "href": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Well Ordering of the Natural Numbers",
     "text": "Well Ordering of the Natural Numbers\nA set \\(S\\) is well-ordered if every nonempty subset of \\(S\\) contains a least element.\nPrinciple of Well-Ordering. Every nonempty subset of the natural numbers is well-ordered.\nIn this class the natural numbers are \\(\\mathbb{N}=\\{0, 1, 2, 3, \\ldots\\}\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#what-about-the-integers",
     "href": "classes/02/slides.html#what-about-the-integers",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "What about the integers?",
     "text": "What about the integers?\nThe integers \\(\\mathbb{Z}\\) are not well-ordered.\nFor example,\n\\[\n\\{\\ldots,-4,-3,-2,-1\\}\n\\]\nhas no least element.",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#division-algorithm",
     "href": "classes/02/slides.html#division-algorithm",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm",
     "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\n\\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#division-algorithm-existence",
     "href": "classes/02/slides.html#division-algorithm-existence",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm: Existence",
     "text": "Division Algorithm: Existence\nLet \\(S=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\\) If \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\). We first show that \\(S\\) is nonempty. If \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\). If \\(a&lt;0\\), then \\(a-b(2a)=a(1-2b)\\in S\\) Thus \\(S\\neq\\varnothing\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#division-algorithm-existence-1",
     "href": "classes/02/slides.html#division-algorithm-existence-1",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm: Existence",
     "text": "Division Algorithm: Existence\nBy the Principle of Well-Ordering, \\(S\\) has a smallest member, say\n\\[\nr=a-bq.\n\\]\nTherefore,\n\\[\na=bq+r\n\\]\nand \\(r\\geq 0\\).\nWe now show that \\(r&lt;b\\).\nSuppose that \\(r&gt;b\\). Then\n\\[\na-b(q+1)=a-bq-b=r-b&gt;0.\n\\]\nThus \\(a-b(q+1)\\in S\\), but\n\\[\na-b(q+1)&lt;a-bq=r,\n\\]\ncontradicting the fact that \\(r\\) is the smallest member of \\(S\\).\nHence \\(r\\leq b\\). Since \\(0\\notin S\\), \\(r\\neq b\\), and therefore\n\\[\n0\\leq r&lt;b.\n\\]",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#division-algorithm-uniqueness",
     "href": "classes/02/slides.html#division-algorithm-uniqueness",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm: Uniqueness",
     "text": "Division Algorithm: Uniqueness\nSuppose there exist integers \\(r,r',q,q'\\) such that\n\\[\na=bq+r,\\qquad 0\\leq r&lt;b\n\\]\nand\n\\[\na=bq'+r',\\qquad 0\\leq r'&lt;b.\n\\]\nThen\n\\[\nbq+r=bq'+r'.\n\\]\nAssume that \\(r'\\geq r\\). Then\n\\[\nb(q-q')=r'-r.\n\\]\nTherefore \\(b\\) divides \\(r'-r\\), but\n\\[\n0\\leq r'-r\\leq r'&lt;b.\n\\]\nThis is possible only if\n\\[\nr'-r=0.\n\\]\nHence \\(r=r'\\) and \\(q=q'\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#invertible-function-theorem",
     "href": "classes/02/slides.html#invertible-function-theorem",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Invertible Function Theorem",
     "text": "Invertible Function Theorem\nTheorem 1.2.20.\nA mapping is invertible if and only if it is both one-to-one and onto.\n\nIn other words,\n\\[\nf \\text{ is invertible}\n\\quad\\Longleftrightarrow\\quad\nf \\text{ is injective and surjective}.\n\\]",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
     "objectID": "classes/02/slides.html#composition-of-mappings",
     "href": "classes/02/slides.html#composition-of-mappings",
-    "title": "Equivalence Relations and Division Algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Composition of Mappings",
     "text": "Composition of Mappings\nTheorem 1.2.15.\nLet \\(f:A\\to B\\), \\(g:B\\to C\\), and \\(h:C\\to D\\). Then\n\nThe composition of mappings is associative; that is, \\((h\\circ g)\\circ f=h\\circ(g\\circ f)\\).\nIf \\(f\\) and \\(g\\) are both one-to-one, then the mapping \\(g\\circ f\\) is one-to-one.\nIf \\(f\\) and \\(g\\) are both onto, then the mapping \\(g\\circ f\\) is onto.\nIf \\(f\\) and \\(g\\) are bijective, then so is \\(g\\circ f\\).",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations and Division Algorithm"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
@@ -1040,221 +1040,221 @@
   {
     "objectID": "classes/03/slides.html#class-session-goals",
     "href": "classes/03/slides.html#class-session-goals",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Class Session Goals",
     "text": "Class Session Goals\n\nProve the Division Algorithm\nExplore the Integers Modulo \\(n\\)",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
     "href": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Well Ordering of the Natural Numbers",
     "text": "Well Ordering of the Natural Numbers\nA set \\(S\\) is well-ordered if every nonempty subset of \\(S\\) contains a least element.\nPrinciple of Well-Ordering. Every nonempty subset of the natural numbers is well-ordered.\nIn this class the natural numbers are \\(\\mathbb{N}=\\{0, 1, 2, 3, \\ldots\\}\\).",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#what-about-the-integers",
     "href": "classes/03/slides.html#what-about-the-integers",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "What about the integers?",
     "text": "What about the integers?\nThe integers \\(\\mathbb{Z}\\) are not well-ordered.\nFor example,\n\\[\n\\{\\ldots,-4,-3,-2,-1\\}\n\\]\nhas no least element.",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#division-algorithm",
     "href": "classes/03/slides.html#division-algorithm",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Division Algorithm",
     "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\nVerify \\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#theorem-2.2.2",
     "href": "classes/03/slides.html#theorem-2.2.2",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Theorem 2.2.2",
     "text": "Theorem 2.2.2\nLet \\(a\\) and \\(b\\) be nonzero integers. Then there exist integers \\(r\\) and \\(s\\) such that\n\\[\n\\gcd(a,b) = ar + bs.\n\\]\nFurthermore, the greatest common divisor of \\(a\\) and \\(b\\) is unique.\nIf \\(\\gcd(a,b) = 1\\), we say that \\(a\\) and \\(b\\) are relatively prime.",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#integers-mod-n",
     "href": "classes/03/slides.html#integers-mod-n",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Integers Mod n",
     "text": "Integers Mod n\nEquivalence Relation: Two integers \\(a\\) and \\(b\\) are equivalent mod \\(n\\) if \\(n\\) divides \\(a-b\\).\nThe integers mod \\(n\\) partition \\(\\mathbb Z\\) into \\(n\\) different equivalence classes; we denote the set of these equivalence classes by \\(\\mathbb Z_n\\). \\(\\mathbb Z_n=\\{[0], [1], [2], \\ldots, [n-1]\\}\\). Recall \\([i]=\\{s \\in \\mathbb Z : s=nl+i \\text{ for some } l\\}\\).\nSometime we will get lazy and use \\(\\{ 0,1,\\ldots,n-1 \\}\\)",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#extending-addintion-and-multiplication",
     "href": "classes/03/slides.html#extending-addintion-and-multiplication",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Extending Addintion and Multiplication",
     "text": "Extending Addintion and Multiplication\nFor two integers \\(a\\) and \\(b\\), define addition modulo \\(n\\) to be \\((a+b)\\pmod n\\); that is, the remainder when \\(a+b\\) is divided by \\(n\\).\nSimilarly, multiplication modulo \\(n\\) is defined as \\((ab)\\pmod n\\), the remainder when \\(ab\\) is divided by \\(n\\).",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
     "href": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Note on defining functions and operations on equivalence classes.",
     "text": "Note on defining functions and operations on equivalence classes.\nWhen defining functions or operations on equivalence classes we must verify that the are well defined. For example,\nWe must show that if\n\\[\n[a]=[a'] \\qquad \\text{and} \\qquad [b]=[b'],\n\\]\nthen\n\\[\n[a+b]=[a'+b'].\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#checking",
     "href": "classes/03/slides.html#checking",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Checking",
     "text": "Checking\nI’ll check the first argument of the operation; the second argument is the same. Assume \\(a \\sim a'\\). I need to show that \\(a+b \\sim a'+b\\).\n\n\n\n\n\n\nImportant\n\n\nWhenever an operation is defined on equivalence classes, we must check that different representatives of the same classes give the same result.",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#pathological-example",
     "href": "classes/03/slides.html#pathological-example",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Pathological Example",
     "text": "Pathological Example\nConsider the rational numbers \\(\\mathbb Q\\). Every rational number can be represented as a fraction\n\\[\n\\frac{a}{b}, \\qquad b\\neq 0.\n\\]\nSuppose we try to define a function \\(f:\\mathbb Q\\to\\mathbb Z\\) by\n\\[\nf\\left(\\frac{a}{b}\\right)=a+b.\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_5",
     "href": "classes/03/slides.html#addition-table-for-mathbb-z_5",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Addition table for \\(\\mathbb Z_5\\)",
     "text": "Addition table for \\(\\mathbb Z_5\\)\n\\[\n\\begin{array}{c|ccccc}\n+ & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline\n0 & 0 & 1 & 2 & 3 & 4 \\\\\n1 & 1 & 2 & 3 & 4 & 0 \\\\\n2 & 2 & 3 & 4 & 0 & 1 \\\\\n3 & 3 & 4 & 0 & 1 & 2 \\\\\n4 & 4 & 0 & 1 & 2 & 3\n\\end{array}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
     "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Multiplication table for \\(\\mathbb Z_8\\):",
     "text": "Multiplication table for \\(\\mathbb Z_8\\):\n\\[\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n3 & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n5 & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n7 & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#units-of-mathbb-z_8",
     "href": "classes/03/slides.html#units-of-mathbb-z_8",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Units of \\(\\mathbb Z_8\\)",
     "text": "Units of \\(\\mathbb Z_8\\)\n\\[\n\\newcommand{\\blue}[1]{\\bbox[cyan]{#1}}\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & \\blue{1} & 2 & \\blue{3} & 4 & \\blue{5} & 6 & \\blue{7} \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n\\blue{1} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n\\blue{3} & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n\\blue{5} & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n\\blue{7} & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#activity",
     "href": "classes/03/slides.html#activity",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Activity",
     "text": "Activity\nConstruct the multiplication tables for \\(\\mathbb Z_6\\).",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_6",
     "href": "classes/03/slides.html#addition-table-for-mathbb-z_6",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Addition Table for \\(\\mathbb Z_6\\)",
     "text": "Addition Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n+ & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
     "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Multiplication Table for \\(\\mathbb Z_6\\)",
     "text": "Multiplication Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]\nWhat are the units?",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#proposition-3.1.4.",
     "href": "classes/03/slides.html#proposition-3.1.4.",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Proposition 3.1.4.",
     "text": "Proposition 3.1.4.\nLet \\(\\mathbb Z_n\\) be the set of equivalence classes of the integers mod \\(n\\) and \\(a,b,c \\in \\mathbb Z_n\\).\n\nAddition and multiplication are commutative:\n\n\\[\n\\begin{aligned}\na+b &\\equiv b+a \\pmod n \\\\\nab &\\equiv ba \\pmod n.\n\\end{aligned}\n\\]\n\nAddition and multiplication are associative:\n\n\\[\n\\begin{aligned}\n(a+b)+c &\\equiv a+(b+c)\\pmod n \\\\\n(ab)c &\\equiv a(bc)\\pmod n.\n\\end{aligned}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#proposition-3.1.4.-continued",
     "href": "classes/03/slides.html#proposition-3.1.4.-continued",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Proposition 3.1.4. Continued",
     "text": "Proposition 3.1.4. Continued\n\nThere are both additive and multiplicative identities:\n\n\\[\n\\begin{aligned}\na+0 &\\equiv a \\pmod n \\\\\na\\cdot 1 &\\equiv a \\pmod n.\n\\end{aligned}\n\\]\n\nMultiplication distributes over addition:\n\n\\[\na(b+c)\\equiv ab+ac\\pmod n.\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#proposition-3.1.4.-continued-more",
     "href": "classes/03/slides.html#proposition-3.1.4.-continued-more",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Proposition 3.1.4. Continued More",
     "text": "Proposition 3.1.4. Continued More\n\nFor every integer \\(a\\) there is an additive inverse \\(-a\\):\n\n\\[\na+(-a)\\equiv 0\\pmod n.\n\\]\n\nLet \\(a\\) be a nonzero integer. Then \\(\\gcd(a,n)=1\\) if and only if there exists a multiplicative inverse \\(b\\) for \\(a\\pmod n\\); that is, a nonzero integer \\(b\\) such that\n\n\\[\nab\\equiv 1\\pmod n.\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
     "objectID": "classes/03/slides.html#polygonal-symmeteties-revisted",
     "href": "classes/03/slides.html#polygonal-symmeteties-revisted",
-    "title": "Integer Equivalence Classes and Symmetries",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Polygonal Symmeteties Revisted",
     "text": "Polygonal Symmeteties Revisted\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n& e & r_1 & r_2 & f_A & f_B & f_C  \\\\\n\\hline\ne &  &  &  &  &  &  &  \\\\\n\\hline\nr_1 &  &  &  &  &  &  &  \\\\\n\\hline\nr_2 &  &  &  &  &  &  &  \\\\\n\\hline\nf_A &  &  &  &  &  &  &  \\\\\n\\hline\nf_B &  &  &  &  &  &  &  \\\\\n\\hline\nf_C &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
     "crumbs": [
       "Class Material",
-      "Integer Equivalence Classes and Symmetries"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {

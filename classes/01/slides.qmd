@@ -1,5 +1,5 @@
 ---
-title: "Course Introduction"
+title: "Slides: Course Introduction"
 format:
   revealjs:
     theme: solarized
