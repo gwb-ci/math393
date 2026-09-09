@@ -18,24 +18,38 @@ format:
 
 ---
 
+# Groups: Exmaple and Properties
+
 ## Definition of a Group
 
 A **group** $(G,\circ)$ is a set $G$ together with a law of composition
 
-$(a,b)\mapsto a\circ b$ satisfying:
+$(a,b)\mapsto a\cdot b$ satisfying:
 
 1. **Associativity:**  
-   $(a\circ b)\circ c=a\circ(b\circ c)$ for $a,b,c\in G$.
+   $(a\cdot b)\cdot c=a\cdot(b\cdot c)$ for $a,b,c\in G$.
 
 2. **Identity:**  
    There exists $e\in G$ such that
-   $e\circ a=a\circ e=a$ for every $a\in G$.
+   $e\cdot a=a\cdot e=a$ for every $a\in G$.
 
 3. **Inverses:**  
    For each $a\in G$, there exists $a^{-1}\in G$ such that
-   $a\circ a^{-1}=a^{-1}\circ a=e$.
+   $a\cdot a^{-1}=a^{-1}\cdot a=e$.
 
 ---
+
+## Examples we have worked with
+
+- $(\mathbb Z, +)$
+- Symmetries of an equilateral Triangle
+- $(\mathbb Z_n, +)$
+- $(U(n), \cdot)$ the group of units of $\mathbb Z_n$
+- Matrix groups $(M_n(\mathbb R), +)$ and $(GL_n(\mathbb R), \cdot)$
+
+
+---
+
 
 ## Proposition 3.2.10 — Uniqueness of Identity
 
@@ -165,6 +179,20 @@ Furthermore, if $G$ is abelian,
 
 $(gh)^n=g^nh^n$.
 
+---
+
+# Subgroups
+
+
+
+## Cayley Table for the symmetry group of the equilateral triangle
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 630px;"> <colgroup> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> <col style="width: 90px;"> </colgroup> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$\circ$</th> <th style="border: 1px solid black; text-align: right;">$e$</th> <th style="border: 1px solid black; text-align: right;">$r_1$</th> <th style="border: 1px solid black; text-align: right;">$r_2$</th> <th style="border: 1px solid black; text-align: right;">$f_a$</th> <th style="border: 1px solid black; text-align: right;">$f_b$</th> <th style="border: 1px solid black; text-align: right;">$f_c$</th> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$e$</th> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$r_1$</th> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$r_2$</th> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_a$</th> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_b$</th> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> </tr> <tr> <th style="border: 1px solid black; height: 45px; text-align: right;">$f_c$</th> <td style="border: 1px solid black; text-align: right;">$f_c$</td> <td style="border: 1px solid black; text-align: right;">$f_b$</td> <td style="border: 1px solid black; text-align: right;">$f_a$</td> <td style="border: 1px solid black; text-align: right;">$r_2$</td> <td style="border: 1px solid black; text-align: right;">$r_1$</td> <td style="border: 1px solid black; text-align: right;">$e$</td> </tr> </table>
+
+
+
+---
+
 ## Definition of a Subgroup
 
 Let $G$ be a group.
@@ -197,14 +225,114 @@ A subgroup $H$ that is a proper subset of $G$ is called a **proper subgroup**.
 
 ---
 
+## What makes a subset a group
+
+Suppose $H \subset G$
 
 
+1. We need the identity: $e \in H$
+2. We need inverse: if $h \in H$ then $h^{-1} \in H$
+3. ~~Associativity~~:  we are using the same multiplication as $G$
+4. Closure:  If $h \in H$ and $k \in H$ then $hk \in H$
 
-## Subgroups of $\mathbb U(9)$
+If we don't have closure than we don't have a binary operation: $H \times H \rightarrow H$.
 
-Consider $\mathbb U(9)$ under multiplication.
 
-$\mathbb U(9)=\{[1],[2],[4],[5],[7],[8]\}$.
+---
+
+
+## Cayley Table for $U(9)$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 630px;">
+<colgroup>
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+<col style="width: 90px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$\cdot$</th>
+<th style="border: 1px solid black;">$1$</th>
+<th style="border: 1px solid black;">$2$</th>
+<th style="border: 1px solid black;">$4$</th>
+<th style="border: 1px solid black;">$5$</th>
+<th style="border: 1px solid black;">$7$</th>
+<th style="border: 1px solid black;">$8$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$1$</th>
+<td style="border: 1px solid black;">$1$</td>
+<td style="border: 1px solid black;">$2$</td>
+<td style="border: 1px solid black;">$4$</td>
+<td style="border: 1px solid black;">$5$</td>
+<td style="border: 1px solid black;">$7$</td>
+<td style="border: 1px solid black;">$8$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$2$</th>
+<td style="border: 1px solid black;">$2$</td>
+<td style="border: 1px solid black;">$4$</td>
+<td style="border: 1px solid black;">$8$</td>
+<td style="border: 1px solid black;">$1$</td>
+<td style="border: 1px solid black;">$5$</td>
+<td style="border: 1px solid black;">$7$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$4$</th>
+<td style="border: 1px solid black;">$4$</td>
+<td style="border: 1px solid black;">$8$</td>
+<td style="border: 1px solid black;">$7$</td>
+<td style="border: 1px solid black;">$2$</td>
+<td style="border: 1px solid black;">$1$</td>
+<td style="border: 1px solid black;">$5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$5$</th>
+<td style="border: 1px solid black;">$5$</td>
+<td style="border: 1px solid black;">$1$</td>
+<td style="border: 1px solid black;">$2$</td>
+<td style="border: 1px solid black;">$7$</td>
+<td style="border: 1px solid black;">$8$</td>
+<td style="border: 1px solid black;">$4$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$7$</th>
+<td style="border: 1px solid black;">$7$</td>
+<td style="border: 1px solid black;">$5$</td>
+<td style="border: 1px solid black;">$1$</td>
+<td style="border: 1px solid black;">$8$</td>
+<td style="border: 1px solid black;">$4$</td>
+<td style="border: 1px solid black;">$2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px;">$8$</th>
+<td style="border: 1px solid black;">$8$</td>
+<td style="border: 1px solid black;">$7$</td>
+<td style="border: 1px solid black;">$5$</td>
+<td style="border: 1px solid black;">$4$</td>
+<td style="border: 1px solid black;">$2$</td>
+<td style="border: 1px solid black;">$1$</td>
+</tr>
+
+</table>
+
+---
+
+## Subgroups of $U(9)$
+
+Consider $U(9)$ under multiplication.
+
+$U(9)=\{[1],[2],[4],[5],[7],[8]\}$.
 
 Which subsets form subgroups?
 
@@ -222,31 +350,35 @@ $\{[1],[4],[7]\}$
 
 
 
-$\mathbb U(9)$
+$U(9)$
 
-## Subgroups of $\mathbb U(9)$ Continued
+---
+
+## Subgroups of $U(9)$ Continued
 
 Consider $\{[1],[5]\}$.  $[5] \cdot [5]$ = [7], which is not in the set, so it is not a subgroup.
 
 . . . 
 
-If we add [7] to the set, we get $\{[1],[5],[7]\}$.  $[5] \cdot [7]$ = [8], which is not in the set, so it is not a subgroup.
+If we add $[7]$ to the set, we get $\{[1],[5],[7]\}$.  $[5] \cdot [7]$ = $[8]$, which is not in the set, so it is not a subgroup.
 
 . . . 
 
-If we add [8] to the set, we get $\{[1],[5],[7],[8]\}$.  $[5] \cdot [7]$ = [8], which is in the set, but $[5] \cdot [8]$ = [4], which is not in the set, so it is not a subgroup.
-
-. . . 
-
-If we add [4] to the set, we get $\{[1],[4],[5],[7],[8]\}$.  $[5] \cdot [7]$ = [8], which is in the set, but $[4] \cdot [5]$ = [2], which is not in the set, so it is not a subgroup.
-
-. . . 
-
-If we add [2] to the set, we get $\{[1],[2],[4],[5],[7],[8]\}$, which is $\mathbb U(9)$, so it is a subgroup.
+If we add $[8]$ to the set, we get $\{[1],[5],[7],[8]\}$.  $[5] \cdot [8]$ = $[4]$, which is not in the set, so it is not a subgroup.
 
 ---
 
-## Subgroups of $\mathbb Z$
+## Subgroups of $U(9)$ Continued
+
+If we add $[4]$ to the set, we get $\{[1],[4],[5],[7],[8]\}$.  $[4] \cdot [5]$ = $[2]$, which is not in the set, so it is not a subgroup.
+
+. . . 
+
+If we add $[2]$ to the set, we get $\{[1],[2],[4],[5],[7],[8]\}$, which is $U(9)$, so it is a subgroup.
+
+---
+
+## Defintion of $n\mathbb Z$
 
 Consider $\mathbb Z$ under addition.
 
@@ -260,7 +392,9 @@ $2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}$
 
 $3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}$.
 
-::: {.fragment}
+---
+
+## Subgroups of $\mathbb Z$
 
 For every $n\geq 0$,
 
@@ -270,7 +404,7 @@ $12 \mathbb Z \leq 6\mathbb Z \leq 2\mathbb Z \leq \mathbb Z$.
 
 ---
 
-## $\mathbb R^\ast$ and $\mathbb Q^\ast$
+## Real Numbers under Mulitplication
 
 Consider the group of nonzero real numbers under multiplication:
 
@@ -280,30 +414,6 @@ Let $\mathbb Q^\ast=\left\{\frac{p}{q}:p\text{ and }q\text{ are nonzero integers
 
 Then $\mathbb Q^\ast\leq\mathbb R^\ast$.
 
-
----
-
-## Subgroups of the Quaternions
-
-Recall
-
-$Q_8=\{\pm E,\pm I,\pm J,\pm K\}$,
-
-where
-
-$I^2=J^2=K^2=-1$.
-
-Some nontrivial proper subgroups are:
-
-$\{1,-1\}$,
-
-$\{1,-1,I,-I\}$,
-
-$\{1,-1,J,-J\}$,
-
-$\{1,-1,K,-K\}$,
-
-
 ---
 
 ## Subgroups Activity
@@ -311,10 +421,14 @@ $\{1,-1,K,-K\}$,
 In your groups, identify some subgroups of the following groups:
 
 - $\mathbb Z_{6}$
-- $U(8)$
+- $U(8)=\{[1],[3],[5],[7]\}$
 - the symmetry group of a equilateral triangle $\{e, r_1, r_2, f_A, f_B, f_C\}$
 
+---
 
+## Graphical Representation of Subgroups
+
+Show subgroups diagrams for $\mathbb Z$ and $U(9)$
 
 ---
 
@@ -324,27 +438,19 @@ Let $GL_2(\mathbb R)$ be the group of invertible
 
 $2\times2$ real matrices under matrix multiplication.
 
-Define
+Define $SL_2(\mathbb R)=\{A\in GL_2(\mathbb R):\det A=1\}$.
 
-$SL_2(\mathbb R)=\{A\in GL_2(\mathbb R):\det A=1\}$.
-
-Then
-
-$SL_2(\mathbb R)\leq GL_2(\mathbb R)$.
+Then $SL_2(\mathbb R)\leq GL_2(\mathbb R)$.
 
 . . .
 
 If
 
-$A=\begin{pmatrix}a&b\\c&d\end{pmatrix}$
-
-and $\det A=ad-bc=1$, then
+$A=\begin{pmatrix}a&b\\c&d\end{pmatrix} and $\det A=ad-bc=1$, then
 
 $A^{-1}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$.
 
-Also,
-
-$\det(AB)=\det(A)\det(B)=1$.
+Also, $\det(AB)=\det(A)\det(B)=1$.
 
 ---
 
@@ -366,35 +472,12 @@ A subset $H$ of $G$ is a subgroup if and only if it satisfies the following cond
 
    $h^{-1}\in H$.
 
-::: {.fragment}
 
-Associativity does **not** need to be checked again: it is inherited from $G$.
 
-:::
+Associativity follows from the group multiplication of the subgroup being the one inherited from $G$.
 
----
 
-## Proposition 3.3.7 Subgroup Criterion — Why It Works
 
-Suppose the three conditions hold.
-
-- $e\in H$ gives an identity.
-
-- Closure gives a binary operation on $H$.
-
-- $h\in H\Rightarrow h^{-1}\in H$ gives inverses.
-
-- Associativity is inherited from $G$.
-
-Therefore $H$ is a group under the same operation as $G$.
-
-$H\leq G$.
-
-::: {.fragment}
-
-To prove that a subset is a subgroup, we usually do **not** need to verify all of the group axioms from scratch.
-
-:::
 
 ---
 
@@ -424,9 +507,168 @@ $h_1(h_2^{-1})^{-1}=h_1h_2\in H$.
 
 ---
 
+
+
+
+## Quaternion Group
+
+Let
+
+$E=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $I=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$,
+
+$J=\begin{pmatrix}0&i\\i&0\end{pmatrix}$, $K=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$,
+
+$Q=\{E, -E, I, -I, J, -J, K, -K \}$, where $i^2=-1$ and $-E$ is $-1 \cdot E$.
+
+---
+
+## Caley Table for the Quaternion Group
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 810px;">
+  <colgroup>
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+    <col style="width: 90px;">
+  </colgroup>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$\cdot$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$E$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-E$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$I$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-I$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$J$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-J$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$K$</th>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-K$</th>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$E$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-E$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$I$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-I$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$J$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-J$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$K$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+  <tr>
+    <th style="border: 1px solid black; padding: 6px; text-align: right;">$-K$</th>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+    <td style="border: 1px solid black;">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+
+
+---
+
+## Subgroups of the Quaternions
+
+Recall
+
+$Q_8=\{\pm E,\pm I,\pm J,\pm K\}$,
+
+where
+
+$I^2=J^2=K^2=-1$.
+
+Some nontrivial proper subgroups are:
+
+$\{1,-1\}$,
+
+$\{1,-1,I,-I\}$,
+
+$\{1,-1,J,-J\}$,
+
+$\{1,-1,K,-K\}$,
+
+
+---
+
+
 ## Using the Subgroup Test
 
-### Example
 
 Let
 
@@ -447,23 +689,3 @@ Hence $2\mathbb Z\leq\mathbb Z$.
 
 
 ---
-
-## Check Your Understanding
-
-For each subset, decide whether it is a subgroup.
-
-1. $\{[0],[2],[4]\}\subseteq\mathbb Z_6$
-
-2. $\{[0],[1],[2]\}\subseteq\mathbb Z_6$
-
-3. $5\mathbb Z\subseteq\mathbb Z$
-
-4. $\mathbb Q^\ast\subseteq\mathbb R^\ast$
-
-5. $\{1,-1,I,-I\}\subseteq Q_8$
-
-::: {.fragment}
-
-For each example, identify which subgroup criterion is most efficient.
-
-:::
