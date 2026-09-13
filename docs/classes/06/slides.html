@@ -123,6 +123,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -138,242 +141,280 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Define subgroups</li>
-<li>Explore examples of groups and subgroups</li>
-<li>Establish basic properties of subgroups</li>
+<li>Understand subgroup tests</li>
+<li>Find Subgroups of given groups</li>
+<li>Graphically represent Groups and Subgroups</li>
 </ul>
+</section>
+<section id="definition-of-a-group" class="slide level2">
+<h2>Definition of a Group</h2>
+<p>A <strong>group</strong> <span class="math inline">\((G,\cdot)\)</span> is a set <span class="math inline">\(G\)</span> together with a law of composition</p>
+<p><span class="math inline">\((a,b)\mapsto a\cdot b\)</span> satisfying:</p>
+<ol type="1">
+<li><p><strong>Associativity:</strong><br>
+<span class="math inline">\((a\cdot b)\cdot c=a\cdot(b\cdot c)\)</span> for <span class="math inline">\(a,b,c\in G\)</span>.</p></li>
+<li><p><strong>Identity:</strong><br>
+There exists <span class="math inline">\(e\in G\)</span> such that <span class="math inline">\(e\cdot a=a\cdot e=a\)</span> for every <span class="math inline">\(a\in G\)</span>.</p></li>
+<li><p><strong>Inverses:</strong><br>
+For each <span class="math inline">\(a\in G\)</span>, there exists <span class="math inline">\(a^{-1}\in G\)</span> such that <span class="math inline">\(a\cdot a^{-1}=a^{-1}\cdot a=e\)</span>.</p></li>
+</ol>
 </section>
 <section id="definition-of-a-subgroup" class="slide level2">
 <h2>Definition of a Subgroup</h2>
 <p>Let <span class="math inline">\(G\)</span> be a group.</p>
 <p>A <strong>subgroup</strong> <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> such that when the group operation of <span class="math inline">\(G\)</span> is restricted to <span class="math inline">\(H\)</span>, <span class="math inline">\(H\)</span> is a group in its own right.</p>
-<p>We write</p>
-<p>$ H G. $</p>
-<div class="fragment">
-<h3 id="important">Important</h3>
+<p>We write <span class="math inline">\(H \leq G\)</span>.</p>
 <p>A subgroup uses the <strong>same operation</strong> as the original group.</p>
-</div>
-</section>
-<section id="trivial-subgroups" class="slide level2">
-<h2>Trivial Subgroups</h2>
-<p>Every group <span class="math inline">\(G\)</span> has at least two subgroups:</p>
-<p>$ {e} G $</p>
-<p>and</p>
-<p>$ G G. $</p>
-<p>The subgroup</p>
-<p>$ {e} $</p>
-<p>is called the <strong>trivial subgroup</strong>.</p>
-<div class="fragment">
-<p>A subgroup <span class="math inline">\(H\)</span> that is a proper subset of <span class="math inline">\(G\)</span> is called a <strong>proper subgroup</strong>.</p>
-</div>
 </section>
 <section id="subgroups-of-mathbb-z_6" class="slide level2">
 <h2>Subgroups of <span class="math inline">\(\mathbb Z_6\)</span></h2>
 <p>Consider <span class="math inline">\(\mathbb Z_6\)</span> under addition.</p>
-<p>$ Z_6 = {[0],[1],[2],[3],[4],[5]}. $</p>
+<p><span class="math inline">\(\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.\)</span></p>
 <p>Which subsets form subgroups?</p>
-<div class="fragment">
-<p>$ {[0]} $</p>
+<p><span class="math display">\[
+\{[0]\}
+\]</span></p>
+<p><span class="math display">\[
+\{[0],[3]\}
+\]</span></p>
+<p><span class="math display">\[
+\{[0],[2],[4]\}
+\]</span></p>
+<p><span class="math display">\[
+\mathbb Z_6
+\]</span></p>
+</section>
+<section id="subgroups-of-mathbbz_6-lattice-diagram" class="slide level2">
+<h2>Subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> Lattice Diagram</h2>
+<p>The subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> are</p>
+<p><span class="math inline">\(\mathbb{Z}_6 = \langle 1 \rangle\)</span>, <span class="math inline">\(\langle 2 \rangle = \{0,2,4\}\)</span>, <span class="math inline">\(\langle 3 \rangle = \{0,3\}\)</span>, and <span class="math inline">\(\{0\}\)</span>.</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
+    H2["⟨2⟩ = {0,2,4}"]
+    H3["⟨3⟩ = {0,3}"]
+    E["{0}"]
+
+    Z6 --- H2
+    Z6 --- H3
+    H2 --- E
+    H3 --- E
+</pre>
 </div>
-<div class="fragment">
-<p>$ {[0],[3]} $</p>
+<p></p></figure><p></p>
 </div>
-<div class="fragment">
-<p>$ {[0],[2],[4]} $</p>
 </div>
-<div class="fragment">
-<p>$ Z_6 $</p>
-<div class="fragment">
-<p>These are all of the subgroups of <span class="math inline">\(\mathbb Z_6\)</span>.</p>
+</div>
+</section>
+<section id="subgroups-of-u9" class="slide level2">
+<h2>Subgroups of <span class="math inline">\(U(9)\)</span></h2>
+<p>The group of units modulo <span class="math inline">\(9\)</span> is</p>
+<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
+<p>The subgroups of <span class="math inline">\(U(9)\)</span> are</p>
+<p><span class="math inline">\(\{1\}\)</span>,</p>
+<p><span class="math inline">\(\langle 8\rangle=\{1,8\}\)</span>,</p>
+<p><span class="math inline">\(\langle 4\rangle=\{1,4,7\}\)</span>,</p>
+<p>and</p>
+<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
+<p>Thus, <span class="math inline">\(U(9)\)</span> has four subgroups.</p>
+</section>
+<section id="subgroups-of-u9-lattice-diagram" class="slide level2">
+<h2>Subgroups of <span class="math inline">\(U(9)\)</span> Lattice Diagram</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
+    H2["⟨8⟩ = {1, 8}"]
+    H3["⟨4⟩ = {1, 4, 7}"]
+    E["{1}"]
+
+    U9 --- H2
+    U9 --- H3
+
+    H2 --- E
+    H3 --- E
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+</section>
+<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
+<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
+<p>Let <span class="math inline">\(D_3=\{e,r_1,r_2,f_a,f_b,f_c\}\)</span>.</p>
+<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
+<p>The subgroups are: <span class="math inline">\(\{e\}\)</span></p>
+<p><span class="math display">\[
+\{e,f_a\},
+\qquad
+\{e,f_b\},
+\qquad
+\{e,f_c\},
+\]</span></p>
+<p><span class="math inline">\(\{e,r_1,r_2\}\)</span>, and <span class="math inline">\(D_3\)</span>.</p>
+</section>
+<section id="group-lattice-for-the-symmetries-of-the-equilateral-triangle" class="slide level2">
+<h2>Group Lattice for the Symmetries of the Equilateral Triangle</h2>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    D3["D&lt;sub&gt;3&lt;/sub&gt;"]
+    R["{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}"]
+    Fa["{e, f&lt;sub&gt;a&lt;/sub&gt;}"]
+    Fb["{e, f&lt;sub&gt;b&lt;/sub&gt;}"]
+    Fc["{e, f&lt;sub&gt;c&lt;/sub&gt;}"]
+    E["{e}"]
+
+    D3 --- R
+    D3 --- Fa
+    D3 --- Fb
+    D3 --- Fc
+
+    R --- E
+    Fa --- E
+    Fb --- E
+    Fc --- E
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
 </div>
 </div>
 </section>
 <section id="subgroups-of-mathbb-z" class="slide level2">
 <h2>Subgroups of <span class="math inline">\(\mathbb Z\)</span></h2>
 <p>Consider <span class="math inline">\(\mathbb Z\)</span> under addition.</p>
-<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define</p>
-<p>$ nZ={nk:kZ}. $</p>
+<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define <span class="math inline">\(n\mathbb Z=\{nk:k\in\mathbb Z\}\)</span>.</p>
 <p>Examples:</p>
-<p>$ 2Z={,-4,-2,0,2,4,} $</p>
-<p>$ 3Z={,-6,-3,0,3,6,}. $</p>
-<div class="fragment">
-<p>For every <span class="math inline">\(n\geq 0\)</span>,</p>
-<p>$ nZZ. $</p>
-</div>
-<div class="fragment">
-<p>In fact, these are the <strong>only</strong> subgroups of <span class="math inline">\(\mathbb Z\)</span>.</p>
-</div>
+<p><span class="math display">\[
+2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
+\]</span></p>
+<p><span class="math display">\[
+3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
+\]</span></p>
+<p>For every <span class="math inline">\(n\geq 0\)</span>, <span class="math inline">\(n\mathbb Z \leq   \mathbb Z\)</span>.</p>
 </section>
-<section id="mathbb-rast-and-mathbb-qast" class="slide level2">
-<h2><span class="math inline">\(\mathbb R^\ast\)</span> and <span class="math inline">\(\mathbb Q^\ast\)</span></h2>
-<p>Consider the group of nonzero real numbers under multiplication:</p>
-<p>$ R^=R{0}. $</p>
-<p>Let</p>
-<p>$ Q^ = { : pq }. $</p>
-<p>Then</p>
-<p>$ Q^R^. $</p>
-<div class="fragment">
-<p>Why?</p>
-<ul>
-<li><p><span class="math inline">\(1=1/1\in\mathbb Q^\ast\)</span>.</p></li>
-<li><p>If <span class="math inline">\(p/q,r/s\in\mathbb Q^\ast\)</span>, then</p>
-<p>$ pqrs=Q^. $</p></li>
-<li><p>If <span class="math inline">\(p/q\in\mathbb Q^\ast\)</span>, then</p>
-<p>$ (pq)^{-1}=qpQ^. $</p></li>
-</ul>
+<section id="a-portion-of-the-subgroup-lattice-of-mathbbz" class="slide level2">
+<h2>A Portion of the Subgroup Lattice of <span class="math inline">\(\mathbb{Z}\)</span></h2>
+<p>Every subgroup of <span class="math inline">\(\mathbb{Z}\)</span> is of the form <span class="math inline">\(n\mathbb{Z}\)</span> for some nonnegative integer <span class="math inline">\(n\)</span>.</p>
+<div class="cell" data-reveal="true" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class=""><p></p>
+<div>
+<pre class="mermaid mermaid-js">flowchart TB
+    Z["Z"]
+    Z2["2Z"]
+    Z3["3Z"]
+    Z5["5Z"]
+    Z6["6Z"]
+    Z10["10Z"]
+    Z15["15Z"]
+    Z30["30Z"]
+
+    Z --- Z2
+    Z --- Z3
+    Z --- Z5
+
+    Z2 --- Z6
+    Z2 --- Z10
+
+    Z3 --- Z6
+    Z3 --- Z15
+
+    Z5 --- Z10
+    Z5 --- Z15
+
+    Z6 --- Z30
+    Z10 --- Z30
+    Z15 --- Z30
+</pre>
 </div>
-</section>
-<section id="subgroups-of-the-quaternions" class="slide level2">
-<h2>Subgroups of the Quaternions</h2>
-<p>Recall</p>
-<p>$ Q_8={,I,J,K}, $</p>
-<p>where</p>
-<p>$ I<sup>2=J</sup>2=K^2=-1. $</p>
-<p>Some subgroups are</p>
-<p>$ {1}, {1,-1}, $</p>
-<p>$ {1,-1,I,-I}, $</p>
-<p>$ {1,-1,J,-J}, $</p>
-<p>$ {1,-1,K,-K}, $</p>
-<p>and</p>
-<p>$ Q_8. $</p>
-<div class="fragment">
-<p>Notice that every nontrivial subgroup contains <span class="math inline">\(-1\)</span>.</p>
+<p></p></figure><p></p>
 </div>
-</section>
-<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
-<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
-<p>Let</p>
-<p>$ D_3={e,r_1,r_2,f_a,f_b,f_c}. $</p>
-<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
-<p>The subgroups are</p>
-<p>$ {e}, $</p>
-<p>$ {e,f_a}, {e,f_b}, {e,f_c}, $</p>
-<p>$ {e,r_1,r_2}, $</p>
-<p>and</p>
-<p>$ D_3. $</p>
-<div class="fragment">
-<p>The rotations form a subgroup of order <span class="math inline">\(3\)</span>.</p>
-<p>Each reflection generates a subgroup of order <span class="math inline">\(2\)</span>.</p>
 </div>
-</section>
-<section id="subgroups-of-matrix-groups" class="slide level2">
-<h2>Subgroups of Matrix Groups</h2>
-<p>Let <span class="math inline">\(GL_2(\mathbb R)\)</span> be the group of invertible <span class="math inline">\(2\times2\)</span> real matrices under matrix multiplication.</p>
-<p>Define</p>
-<p>$ SL_2(R) = {AGL_2(R):A=1}. $</p>
-<p>Then</p>
-<p>$ SL_2(R)GL_2(R). $</p>
-<div class="fragment">
-<p>If</p>
-$ A=
-<span class="math display">\[\begin{pmatrix}
-a&amp;b\\
-c&amp;d
-\end{pmatrix}\]</span>
-<p>$</p>
-<p>and <span class="math inline">\(\det A=ad-bc=1\)</span>, then</p>
-$ A^{-1} =
-<span class="math display">\[\begin{pmatrix}
-d&amp;-b\\
--c&amp;a
-\end{pmatrix}\]</span>
-<p>. $</p>
-<p>Also,</p>
-<p>$ (AB)=(A)(B)=1. $</p>
 </div>
+<p>Here <span class="math inline">\(m\mathbb{Z} \subseteq n\mathbb{Z}\)</span> exactly when <span class="math inline">\(n\)</span> divides <span class="math inline">\(m\)</span>.</p>
 </section>
 <section id="proposition-3.3.7-subgroup-criterion" class="slide level2">
 <h2>Proposition 3.3.7 Subgroup Criterion</h2>
 <p>A subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subgroup if and only if it satisfies the following conditions.</p>
 <ol type="1">
-<li>The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</li>
+<li><p><strong>Identity</strong> The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</p></li>
+<li><p><strong>Closure</strong> If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
+<p><span class="math display">\[
+h_1h_2\in H.
+\]</span></p></li>
+<li><p><strong>Inverse</strong> If <span class="math inline">\(h\in H\)</span>, then</p>
+<p><span class="math display">\[
+h^{-1}\in H.
+\]</span></p></li>
 </ol>
-<div class="fragment">
-<ol start="2" type="1">
-<li><p>If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
-<p>$ h_1h_2H. $</p></li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="3" type="1">
-<li><p>If <span class="math inline">\(h\in H\)</span>, then</p>
-<p>$ h^{-1}H. $</p></li>
-</ol>
-<div class="fragment">
-<p>Associativity does <strong>not</strong> need to be checked again: it is inherited from <span class="math inline">\(G\)</span>.</p>
-</div>
-</div>
-</section>
-<section id="proposition-3.3.7-subgroup-criterion-why-it-works" class="slide level2">
-<h2>Proposition 3.3.7 Subgroup Criterion — Why It Works</h2>
-<p>Suppose the three conditions hold.</p>
-<ul>
-<li><span class="math inline">\(e\in H\)</span> gives an identity.</li>
-<li>Closure gives a binary operation on <span class="math inline">\(H\)</span>.</li>
-<li><span class="math inline">\(h\in H\Rightarrow h^{-1}\in H\)</span> gives inverses.</li>
-<li>Associativity is inherited from <span class="math inline">\(G\)</span>.</li>
-</ul>
-<p>Therefore <span class="math inline">\(H\)</span> is a group under the same operation as <span class="math inline">\(G\)</span>.</p>
-<p>$ HG. $</p>
-<div class="fragment">
-<p>To prove that a subset is a subgroup, we usually do <strong>not</strong> need to verify all of the group axioms from scratch.</p>
-</div>
 </section>
 <section id="proposition-3.3.8-another-subgroup-test" class="slide level2">
 <h2>Proposition 3.3.8 Another Subgroup Test</h2>
 <p>Let <span class="math inline">\(H\)</span> be a subset of a group <span class="math inline">\(G\)</span>.</p>
 <p>Then <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(G\)</span> if and only if</p>
-<p>$ H $</p>
+<p><span class="math display">\[
+H\neq\emptyset
+\]</span></p>
 <p>and whenever <span class="math inline">\(g,h\in H\)</span>,</p>
-<p>$ gh^{-1}H. $</p>
-<div class="fragment">
+<p><span class="math display">\[
+gh^{-1}\in H.
+\]</span></p>
+</section>
+<section id="proof-of-second-subgroup-test" class="slide level2">
+<h2>Proof of Second Subgroup Test</h2>
 <p>One condition gives us everything:</p>
-<p>$ gg^{-1}=eH, $</p>
-<p>$ eg<sup>{-1}=g</sup>{-1}H, $</p>
-<p>and</p>
-<p>$ h_1(h_2<sup>{-1})</sup>{-1}=h_1h_2H. $</p>
-</div>
+<ul>
+<li><p>Identity: <span class="math inline">\(gg^{-1}=e\in H\)</span></p></li>
+<li><p>Inverse: <span class="math inline">\(eg^{-1}=g^{-1}\in H\)</span></p></li>
+<li><p>Closure: <span class="math inline">\(h_1(h_2^{-1})^{-1}=h_1h_2\in H\)</span></p></li>
+</ul>
 </section>
-<section id="using-the-subgroup-test" class="slide level2">
-<h2>Using the Subgroup Test</h2>
-<h3 id="example">Example</h3>
-<p>Let</p>
-<p>$ H=2Z. $</p>
+<section id="example-of-using-the-subgroup-test" class="slide level2">
+<h2>Example of using the Subgroup Test</h2>
+<p>Let <span class="math inline">\(H=2\mathbb Z.\)</span></p>
 <p>Since <span class="math inline">\(0\in H\)</span>, we know <span class="math inline">\(H\neq\emptyset\)</span>.</p>
-<p>If <span class="math inline">\(a,b\in H\)</span>, then</p>
-<p>$ a=2m,b=2n $</p>
-<p>for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
-<p>Therefore</p>
-<p>$ a-b=2m-2n=2(m-n)Z. $</p>
-<p>Hence</p>
-<p>$ 2ZZ. $</p>
+<p>If <span class="math inline">\(a,b\in H\)</span>, then <span class="math inline">\(a=2m,\qquad b=2n\)</span> for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
+<p>Therefore <span class="math inline">\(a-b=2m-2n=2(m-n)\in2\mathbb Z\)</span>.</p>
+<p>Hence <span class="math inline">\(2\mathbb Z\leq\mathbb Z\)</span>.</p>
 </section>
-<section id="equivalence-relations-on-groups" class="slide level2">
-<h2>Equivalence Relations on Groups</h2>
-<p>Groups naturally give rise to several actions on themselves.</p>
-<h3 id="right-action">Right action</h3>
-<p>$ xg=xg $</p>
-<h3 id="left-action">Left action</h3>
-<p>$ gx=gx $</p>
-<h3 id="conjugation">Conjugation</h3>
-<p>$ gx=gxg^{-1} $</p>
-<p>. . .</p>
-<p>The orbits of a group action determine equivalence classes.</p>
-<p>Under conjugation, the equivalence classes are called <strong>conjugacy classes</strong>.</p>
+<section id="quaternion-group" class="slide level2">
+<h2>Quaternion Group</h2>
+<p>Let</p>
+<p><span class="math inline">\(I=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>, <span class="math inline">\(A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\)</span>,</p>
+<p><span class="math inline">\(B=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}\)</span>, <span class="math inline">\(C=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}\)</span>,</p>
+<p><span class="math inline">\(Q_8=\{I, -I, A, -A, B, -B, C, -C \}\)</span>,</p>
+<p><span class="math inline">\(Q_8 \leq M_2(\mathbb C)\)</span></p>
 </section>
-<section id="check-your-understanding" class="slide level2">
-<h2>Check Your Understanding</h2>
-<p>For each subset, decide whether it is a subgroup.</p>
+<section id="symmetries-of-the-square" class="slide level2">
+<h2>Symmetries of the Square</h2>
+<p>Consider the symmetries of the square with four rotations <span class="math inline">\(e, r_1, r_2, r_3\)</span> and four flips <span class="math inline">\(f_v\)</span> flip across a vertical line, <span class="math inline">\(f_h\)</span> flip about a horizonal line, and <span class="math inline">\(f_{d_1}\)</span> and <span class="math inline">\(f_{d_2}\)</span> the flips about the diagonal lines.</p>
+</section>
+<section id="u20" class="slide level2">
+<h2><span class="math inline">\(U(20)\)</span></h2>
+<p><span class="math display">\[\{ 1,3,7,9,11,13,17,19\}\]</span></p>
+</section>
+<section id="group-activty" class="slide level2">
+<h2>Group Activty</h2>
 <ol type="1">
-<li><p><span class="math inline">\(\{[0],[2],[4]\}\subseteq\mathbb Z_6\)</span></p></li>
-<li><p><span class="math inline">\(\{[0],[1],[2]\}\subseteq\mathbb Z_6\)</span></p></li>
-<li><p><span class="math inline">\(5\mathbb Z\subseteq\mathbb Z\)</span></p></li>
-<li><p><span class="math inline">\(\mathbb Q^\ast\subseteq\mathbb R^\ast\)</span></p></li>
-<li><p><span class="math inline">\(\{1,-1,I,-I\}\subseteq Q_8\)</span></p></li>
+<li>Choose either the Quaternions, the symmetries of the square, or <span class="math inline">\(U(8)\)</span></li>
+<li>Construct the Multiplication Table</li>
+<li>Find the Subgroups of the chosen group</li>
+<li>Create a lattice represendtion of the group and its subsgroups.</li>
 </ol>
-<div class="fragment">
-<p>For each example, identify which subgroup criterion is most efficient.</p>
-</div>
 
 
 </section>

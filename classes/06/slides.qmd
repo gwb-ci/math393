@@ -9,9 +9,29 @@ format:
 
 ## Class Session Goals
 
-- Define subgroups
-- Explore examples of groups and subgroups
-- Establish basic properties of subgroups
+- Understand subgroup tests
+- Find Subgroups of given groups
+- Graphically represent Groups and Subgroups
+
+---
+
+
+## Definition of a Group
+
+A **group** $(G,\cdot)$ is a set $G$ together with a law of composition
+
+$(a,b)\mapsto a\cdot b$ satisfying:
+
+1. **Associativity:**  
+   $(a\cdot b)\cdot c=a\cdot(b\cdot c)$ for $a,b,c\in G$.
+
+2. **Identity:**  
+   There exists $e\in G$ such that
+   $e\cdot a=a\cdot e=a$ for every $a\in G$.
+
+3. **Inverses:**  
+   For each $a\in G$, there exists $a^{-1}\in G$ such that
+   $a\cdot a^{-1}=a^{-1}\cdot a=e$.
 
 ---
 
@@ -21,355 +41,252 @@ Let $G$ be a group.
 
 A **subgroup** $H$ of $G$ is a subset $H$ of $G$ such that when the group operation of $G$ is restricted to $H$, $H$ is a group in its own right.
 
-We write
-
-$
-H \leq G.
-$
-
-::: {.fragment}
-### Important
+We write $H \leq G$.
 
 A subgroup uses the **same operation** as the original group.
-:::
 
 ---
 
-## Trivial Subgroups
 
-Every group $G$ has at least two subgroups:
-
-$
-\{e\} \leq G
-$
-
-and
-
-$
-G \leq G.
-$
-
-The subgroup
-
-$
-\{e\}
-$
-
-is called the **trivial subgroup**.
-
-::: {.fragment}
-A subgroup $H$ that is a proper subset of $G$ is called a **proper subgroup**.
-:::
-
----
 
 ## Subgroups of $\mathbb Z_6$
 
 Consider $\mathbb Z_6$ under addition.
 
-$
-\mathbb Z_6
-=
-\{[0],[1],[2],[3],[4],[5]\}.
-$
+$\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.$
 
 Which subsets form subgroups?
 
-. . .
 
-$
+
+$$
 \{[0]\}
-$
+$$
 
-. . .
 
-$
+
+$$
 \{[0],[3]\}
-$
+$$
 
-. . .
 
-$
+
+$$
 \{[0],[2],[4]\}
-$
+$$
 
-. . .
 
-$
+$$
 \mathbb Z_6
-$
+$$
 
-::: {.fragment}
-These are all of the subgroups of $\mathbb Z_6$.
-:::
+
 
 ---
 
-## Subgroups of $\mathbb Z$
 
-Consider $\mathbb Z$ under addition.
+## Subgroups of $\mathbb{Z}_6$ Lattice Diagram
 
-For $n=0,1,2,\ldots$, define
+The subgroups of $\mathbb{Z}_6$ are
 
-$
-n\mathbb Z=\{nk:k\in\mathbb Z\}.
-$
+$\mathbb{Z}_6 = \langle 1 \rangle$, $\langle 2 \rangle = \{0,2,4\}$, 
+$\langle 3 \rangle = \{0,3\}$, and $\{0\}$.
 
-Examples:
+```{mermaid}
+flowchart TB
+    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
+    H2["⟨2⟩ = {0,2,4}"]
+    H3["⟨3⟩ = {0,3}"]
+    E["{0}"]
 
-$
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-$
+    Z6 --- H2
+    Z6 --- H3
+    H2 --- E
+    H3 --- E
+```
 
-$
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-$
-
-::: {.fragment}
-For every $n\geq 0$,
-
-$
-n\mathbb Z\leq\mathbb Z.
-$
-:::
-
-::: {.fragment}
-In fact, these are the **only** subgroups of $\mathbb Z$.
-:::
 
 ---
 
-## $\mathbb R^\ast$ and $\mathbb Q^\ast$
 
-Consider the group of nonzero real numbers under multiplication:
+## Subgroups of $U(9)$
 
-$
-\mathbb R^\ast=\mathbb R\setminus\{0\}.
-$
+The group of units modulo $9$ is
 
-Let
+$U(9)=\{1,2,4,5,7,8\}$.
 
-$
-\mathbb Q^\ast
-=
-\left\{
-\frac{p}{q}:
-p\text{ and }q\text{ are nonzero integers}
-\right\}.
-$
+The subgroups of $U(9)$ are
 
-Then
+$\{1\}$,
 
-$
-\mathbb Q^\ast\leq\mathbb R^\ast.
-$
+$\langle 8\rangle=\{1,8\}$,
 
-. . .
-
-Why?
-
-- $1=1/1\in\mathbb Q^\ast$.
-- If $p/q,r/s\in\mathbb Q^\ast$, then
-
-  $
-  \frac pq\frac rs=\frac{pr}{qs}\in\mathbb Q^\ast.
-  $
-
-- If $p/q\in\mathbb Q^\ast$, then
-
-  $
-  \left(\frac pq\right)^{-1}=\frac qp\in\mathbb Q^\ast.
-  $
-
----
-
-## Subgroups of the Quaternions
-
-Recall
-
-$
-Q_8=\{\pm1,\pm I,\pm J,\pm K\},
-$
-
-where
-
-$
-I^2=J^2=K^2=-1.
-$
-
-Some subgroups are
-
-$
-\{1\},
-\qquad
-\{1,-1\},
-$
-
-$
-\{1,-1,I,-I\},
-$
-
-$
-\{1,-1,J,-J\},
-$
-
-$
-\{1,-1,K,-K\},
-$
+$\langle 4\rangle=\{1,4,7\}$,
 
 and
 
-$
-Q_8.
-$
+$U(9)=\{1,2,4,5,7,8\}$.
 
-::: {.fragment}
-Notice that every nontrivial subgroup contains $-1$.
-:::
+Thus, $U(9)$ has four subgroups.
+
+---
+
+## Subgroups of $U(9)$ Lattice Diagram
+
+```{mermaid}
+flowchart TB
+    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
+    H2["⟨8⟩ = {1, 8}"]
+    H3["⟨4⟩ = {1, 4, 7}"]
+    E["{1}"]
+
+    U9 --- H2
+    U9 --- H3
+
+    H2 --- E
+    H3 --- E
+```
 
 ---
 
 ## Subgroups of the Symmetry Group of an Equilateral Triangle
 
-Let
-
-$
-D_3=\{e,r_1,r_2,f_a,f_b,f_c\}.
-$
+Let $D_3=\{e,r_1,r_2,f_a,f_b,f_c\}$.
 
 Here $r_1,r_2$ are the nonidentity rotations and
 $f_a,f_b,f_c$ are the reflections.
 
-The subgroups are
+The subgroups are: $\{e\}$
 
-$
-\{e\},
-$
-
-$
+$$
 \{e,f_a\},
 \qquad
 \{e,f_b\},
 \qquad
 \{e,f_c\},
-$
+$$
 
-$
-\{e,r_1,r_2\},
-$
+$\{e,r_1,r_2\}$, and $D_3$.
 
-and
-
-$
-D_3.
-$
-
-::: {.fragment}
-The rotations form a subgroup of order $3$.
-
-Each reflection generates a subgroup of order $2$.
-:::
 
 ---
 
-## Subgroups of Matrix Groups
+## Group Lattice for the Symmetries of the Equilateral Triangle
 
-Let $GL_2(\mathbb R)$ be the group of invertible
-$2\times2$ real matrices under matrix multiplication.
+```{mermaid}
+flowchart TB
+    D3["D<sub>3</sub>"]
+    R["{e, r<sub>1</sub>, r<sub>2</sub>}"]
+    Fa["{e, f<sub>a</sub>}"]
+    Fb["{e, f<sub>b</sub>}"]
+    Fc["{e, f<sub>c</sub>}"]
+    E["{e}"]
 
-Define
+    D3 --- R
+    D3 --- Fa
+    D3 --- Fb
+    D3 --- Fc
 
-$
-SL_2(\mathbb R)
-=
-\{A\in GL_2(\mathbb R):\det A=1\}.
-$
-
-Then
-
-$
-SL_2(\mathbb R)\leq GL_2(\mathbb R).
-$
-
-. . .
-
-If
-
-$
-A=
-\begin{pmatrix}
-a&b\\
-c&d
-\end{pmatrix}
-$
-
-and $\det A=ad-bc=1$, then
-
-$
-A^{-1}
-=
-\begin{pmatrix}
-d&-b\\
--c&a
-\end{pmatrix}.
-$
-
-Also,
-
-$
-\det(AB)=\det(A)\det(B)=1.
-$
+    R --- E
+    Fa --- E
+    Fb --- E
+    Fc --- E
+```
 
 ---
+
+
+## Subgroups of $\mathbb Z$
+
+Consider $\mathbb Z$ under addition.
+
+For $n=0,1,2,\ldots$, define $n\mathbb Z=\{nk:k\in\mathbb Z\}$.
+
+Examples:
+
+$$
+2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
+$$
+
+$$
+3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
+$$
+
+
+For every $n\geq 0$, $n\mathbb Z \leq   \mathbb Z$.
+
+
+---
+
+
+## A Portion of the Subgroup Lattice of $\mathbb{Z}$
+
+Every subgroup of $\mathbb{Z}$ is of the form $n\mathbb{Z}$ for some nonnegative integer $n$.
+
+```{mermaid}
+flowchart TB
+    Z["Z"]
+    Z2["2Z"]
+    Z3["3Z"]
+    Z5["5Z"]
+    Z6["6Z"]
+    Z10["10Z"]
+    Z15["15Z"]
+    Z30["30Z"]
+
+    Z --- Z2
+    Z --- Z3
+    Z --- Z5
+
+    Z2 --- Z6
+    Z2 --- Z10
+
+    Z3 --- Z6
+    Z3 --- Z15
+
+    Z5 --- Z10
+    Z5 --- Z15
+
+    Z6 --- Z30
+    Z10 --- Z30
+    Z15 --- Z30
+```
+
+Here $m\mathbb{Z} \subseteq n\mathbb{Z}$ exactly when $n$ divides $m$.
+
+
+---
+
+
+
+
+
+
 
 ## Proposition 3.3.7 Subgroup Criterion
 
 A subset $H$ of $G$ is a subgroup if and only if it satisfies the following conditions.
 
-1. The identity $e$ of $G$ is in $H$.
+1. **Identity** The identity $e$ of $G$ is in $H$.
 
-. . .
 
-2. If $h_1,h_2\in H$, then
 
-   $
+2. **Closure** If $h_1,h_2\in H$, then
+
+   $$
    h_1h_2\in H.
-   $
+   $$
 
-. . .
 
-3. If $h\in H$, then
 
-   $
+3. **Inverse** If $h\in H$, then
+
+   $$
    h^{-1}\in H.
-   $
+   $$
 
-::: {.fragment}
-Associativity does **not** need to be checked again: it is inherited from $G$.
-:::
 
----
 
-## Proposition 3.3.7 Subgroup Criterion — Why It Works
-
-Suppose the three conditions hold.
-
-- $e\in H$ gives an identity.
-- Closure gives a binary operation on $H$.
-- $h\in H\Rightarrow h^{-1}\in H$ gives inverses.
-- Associativity is inherited from $G$.
-
-Therefore $H$ is a group under the same operation as $G$.
-
-$
-H\leq G.
-$
-
-::: {.fragment}
-To prove that a subset is a subgroup, we usually do **not** need to verify all of the group axioms from scratch.
-:::
-
----
 
 ## Proposition 3.3.8 Another Subgroup Test
 
@@ -377,114 +294,87 @@ Let $H$ be a subset of a group $G$.
 
 Then $H$ is a subgroup of $G$ if and only if
 
-$
+$$
 H\neq\emptyset
-$
+$$
 
 and whenever $g,h\in H$,
 
-$
+$$
 gh^{-1}\in H.
-$
+$$
 
-. . .
+
+## Proof of Second Subgroup Test
 
 One condition gives us everything:
 
-$
-gg^{-1}=e\in H,
-$
+- Identity: $gg^{-1}=e\in H$
 
-$
-eg^{-1}=g^{-1}\in H,
-$
+- Inverse: $eg^{-1}=g^{-1}\in H$
 
-and
-
-$
-h_1(h_2^{-1})^{-1}=h_1h_2\in H.
-$
+- Closure:  $h_1(h_2^{-1})^{-1}=h_1h_2\in H$
 
 ---
 
-## Using the Subgroup Test
 
-### Example
+## Example of using the Subgroup Test
 
-Let
 
-$
-H=2\mathbb Z.
-$
+
+Let $H=2\mathbb Z.$
 
 Since $0\in H$, we know $H\neq\emptyset$.
 
-If $a,b\in H$, then
+If $a,b\in H$, then $a=2m,\qquad b=2n$ for some $m,n\in\mathbb Z$.
 
-$
-a=2m,\qquad b=2n
-$
+Therefore $a-b=2m-2n=2(m-n)\in2\mathbb Z$.
 
-for some $m,n\in\mathbb Z$.
-
-Therefore
-
-$
-a-b=2m-2n=2(m-n)\in2\mathbb Z.
-$
-
-Hence
-
-$
-2\mathbb Z\leq\mathbb Z.
-$
+Hence $2\mathbb Z\leq\mathbb Z$.
 
 ---
 
-## Equivalence Relations on Groups
 
-Groups naturally give rise to several actions on themselves.
 
-### Right action
 
-$
-x\cdot g=xg
-$
 
-### Left action
+## Quaternion Group
 
-$
-g\cdot x=gx
-$
+Let
 
-### Conjugation
+$I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$,
 
-$
-g\cdot x=gxg^{-1}
-$
+$B=\begin{pmatrix}0&i\\i&0\end{pmatrix}$, $C=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$,
 
-. . .
+$Q_8=\{I, -I, A, -A, B, -B, C, -C \}$,
 
-The orbits of a group action determine equivalence classes.
+$Q_8 \leq M_2(\mathbb C)$
 
-Under conjugation, the equivalence classes are called **conjugacy classes**.
+
 
 ---
 
-## Check Your Understanding
 
-For each subset, decide whether it is a subgroup.
 
-1. $\{[0],[2],[4]\}\subseteq\mathbb Z_6$
+## Symmetries of the Square
 
-2. $\{[0],[1],[2]\}\subseteq\mathbb Z_6$
+Consider the symmetries of the square with four rotations $e, r_1, r_2, r_3$ and four flips $f_v$ flip across a vertical line, $f_h$ flip about a horizonal line, and $f_{d_1}$ and $f_{d_2}$ the flips about the diagonal lines.
 
-3. $5\mathbb Z\subseteq\mathbb Z$
 
-4. $\mathbb Q^\ast\subseteq\mathbb R^\ast$
+---
 
-5. $\{1,-1,I,-I\}\subseteq Q_8$
 
-::: {.fragment}
-For each example, identify which subgroup criterion is most efficient.
-:::
+## $U(20)$
+
+$$\{ 1,3,7,9,11,13,17,19\}$$
+
+---
+
+## Group Activty
+
+1. Choose either the Quaternions, the symmetries of the square, or $U(8)$
+2. Construct the Multiplication Table
+3. Find the Subgroups of the chosen group
+4. Create a lattice represendtion of the group and its subsgroups.
+
+
