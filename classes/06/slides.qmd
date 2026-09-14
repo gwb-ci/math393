@@ -373,9 +373,9 @@ $$\{ 1,3,7,9,11,13,17,19\}$$
 ## Group Activity
 
 1. Choose one of the following groups:
-   - $Q_8$
-   - the symmetries of the square, $D_4$
-   - $U(20)$
+   - $Q_8$ (medium)
+   - the symmetries of the square, $D_4$ (hard)
+   - $U(20)$ (easy)
 
 2. Construct the multiplication table for your group.
 
@@ -645,3 +645,128 @@ flowchart TB
 ```
 
 ---
+
+
+## Cayley Table for $\mathbb{Z}_8$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+
+<colgroup>
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+</colgroup>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$+$</th>
+
+<th style="border: 1px solid black; text-align: right;">$0$</th>
+
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+
+<th style="border: 1px solid black; text-align: right;">$2$</th>
+
+<th style="border: 1px solid black; text-align: right;">$3$</th>
+
+<th style="border: 1px solid black; text-align: right;">$4$</th>
+
+<th style="border: 1px solid black; text-align: right;">$5$</th>
+
+<th style="border: 1px solid black; text-align: right;">$6$</th>
+
+<th style="border: 1px solid black; text-align: right;">$7$</th>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$0$</th>
+
+<td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+
+<td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$2$</th>
+
+<td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$3$</th>
+
+<td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$4$</th>
+
+<td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$5$</th>
+
+<td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$6$</th>
+
+<td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$7$</th>
+
+<td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td>
+
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for $\mathbb{Z}_8$
+
+```{mermaid}
+flowchart TB
+
+    Z["ℤ<sub>8</sub> = {0, 1, 2, 3, 4, 5, 6, 7}"]
+
+    H4["⟨2⟩ = {0, 2, 4, 6}"]
+
+    H2["⟨4⟩ = {0, 4}"]
+
+    E["{0}"]
+
+    Z --- H4
+
+    H4 --- H2
+
+    H2 --- E
+```    
