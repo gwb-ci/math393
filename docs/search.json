@@ -295,509 +295,433 @@
     ]
   },
   {
-    "objectID": "classes/06/slides.html#group-activty",
-    "href": "classes/06/slides.html#group-activty",
+    "objectID": "classes/06/slides.html#group-activity",
+    "href": "classes/06/slides.html#group-activity",
     "title": "Slides: More Groups",
-    "section": "Group Activty",
-    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups.",
+    "section": "Group Activity",
+    "text": "Group Activity\n\nChoose one of the following groups:\n\n\\(Q_8\\)\nthe symmetries of the square, \\(D_4\\)\n\\(U(20)\\)\n\nConstruct the multiplication table for your group.\nFind all subgroups of your group.\nCreate a lattice representation of the group and its subgroups.",
     "crumbs": [
       "Class Material",
       "Slides: More Groups"
     ]
   },
   {
-    "objectID": "classes/02/worksheet.html",
-    "href": "classes/02/worksheet.html",
-    "title": "Equivalence Relations",
-    "section": "",
-    "text": "Define a relation \\(\\sim\\) on \\(\\mathbb{N}\\) via \\(a \\sim b\\) if and only if \\(a-b=3k\\), for some \\(k \\in \\mathbb{Z}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\{1,2,3,4,5,6,7\\}\\) via \\(a \\sim b\\) if and only if \\(a\\) and \\(b\\) are both even or both odd. Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(|a|=|b|\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(ab&gt;0\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(T \\sim U\\) if and only if \\(T \\subseteq U\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(x \\ge y\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(|x-y| \\le 4\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(m \\sim n\\) in \\(\\mathbb{Z}\\) if \\(m \\equiv n \\pmod{6}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?",
+    "objectID": "classes/06/slides.html#cayley-table-for-q_8",
+    "href": "classes/06/slides.html#cayley-table-for-q_8",
+    "title": "Slides: More Groups",
+    "section": "Cayley Table for \\(Q_8\\)",
+    "text": "Cayley Table for \\(Q_8\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(I\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(-I\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\n\n\\(A\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\n\n\\(-A\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\n\n\\(B\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\n\n\\(-B\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\n\n\\(C\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\n\n\\(-C\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)",
     "crumbs": [
       "Class Material",
-      "Equivalence Relations"
+      "Slides: More Groups"
     ]
   },
   {
-    "objectID": "classes/03/worksheet.html",
-    "href": "classes/03/worksheet.html",
-    "title": "Polyigan Symmetries",
-    "section": "",
-    "text": "You have a few differnt object in front of you. Create a list of symmetries of the square and one additional item. How do you know your list is complete or your list does not have duplicates. You will need to think a little bit about how to name the symmetries to keep track of them.\nThen as a class we will try to create a composition table for the symmetries of the square. I’m going to call the set of symmetries of the square, \\(D_4\\). Each group is responisble for three rows of the composition table.",
+    "objectID": "classes/06/slides.html#subgroup-lattice-for-q_8",
+    "href": "classes/06/slides.html#subgroup-lattice-for-q_8",
+    "title": "Slides: More Groups",
+    "section": "Subgroup Lattice for \\(Q_8\\)",
+    "text": "Subgroup Lattice for \\(Q_8\\)\n\n\n\n\n\nflowchart TB\n    Q[\"Q&lt;sub&gt;8&lt;/sub&gt;\"]\n    A[\"{I, -I, A, -A}\"]\n    B[\"{I, -I, B, -B}\"]\n    C[\"{I, -I, C, -C}\"]\n    M[\"{I, -I}\"]\n    E[\"{I}\"]\n\n    Q --- A\n    Q --- B\n    Q --- C\n    A --- M\n    B --- M\n    C --- M\n    M --- E",
     "crumbs": [
       "Class Material",
-      "Polyigan Symmetries"
+      "Slides: More Groups"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#class-session-goals",
-    "href": "classes/03/slides.html#class-session-goals",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "objectID": "classes/06/slides.html#cayley-table-for-the-symmetries-of-the-square",
+    "href": "classes/06/slides.html#cayley-table-for-the-symmetries-of-the-square",
+    "title": "Slides: More Groups",
+    "section": "Cayley Table for the Symmetries of the Square",
+    "text": "Cayley Table for the Symmetries of the Square\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\circ\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(e\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(r_1\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\n\n\\(r_2\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\n\n\\(r_3\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\n\n\\(f_v\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\n\n\\(f_h\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: More Groups"
+    ]
+  },
+  {
+    "objectID": "classes/06/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
+    "href": "classes/06/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
+    "title": "Slides: More Groups",
+    "section": "Subgroup Lattice for the Symmetries of the Square",
+    "text": "Subgroup Lattice for the Symmetries of the Square\n\n\n\n\n\nflowchart TB\n    D4[\"D&lt;sub&gt;4&lt;/sub&gt;\"]\n\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;, r&lt;sub&gt;3&lt;/sub&gt;}\"]\n    VH[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;v&lt;/sub&gt;, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    DD[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;d1&lt;/sub&gt;, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    R2[\"{e, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    FV[\"{e, f&lt;sub&gt;v&lt;/sub&gt;}\"]\n    FH[\"{e, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    FD1[\"{e, f&lt;sub&gt;d1&lt;/sub&gt;}\"]\n    FD2[\"{e, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    E[\"{e}\"]\n\n    D4 --- R\n    D4 --- VH\n    D4 --- DD\n\n    R --- R2\n    VH --- R2\n    DD --- R2\n\n    VH --- FV\n    VH --- FH\n    DD --- FD1\n    DD --- FD2\n\n    R2 --- E\n    FV --- E\n    FH --- E\n    FD1 --- E\n    FD2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: More Groups"
+    ]
+  },
+  {
+    "objectID": "classes/06/slides.html#cayley-table-for-u20",
+    "href": "classes/06/slides.html#cayley-table-for-u20",
+    "title": "Slides: More Groups",
+    "section": "Cayley Table for \\(U(20)\\)",
+    "text": "Cayley Table for \\(U(20)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\n\n\\(9\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\n\n\\(11\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\n\n\\(13\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\n\n\\(17\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\n\n\\(19\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: More Groups"
+    ]
+  },
+  {
+    "objectID": "classes/06/slides.html#subgroup-lattice-for-u20",
+    "href": "classes/06/slides.html#subgroup-lattice-for-u20",
+    "title": "Slides: More Groups",
+    "section": "Subgroup Lattice for \\(U(20)\\)",
+    "text": "Subgroup Lattice for \\(U(20)\\)\n\n\n\n\n\nflowchart TB\n    U[\"U(20)\"]\n\n    H1[\"{1, 3, 7, 9}\"]\n    H2[\"{1, 9, 13, 17}\"]\n    H3[\"{1, 9, 11, 19}\"]\n\n    K9[\"{1, 9}\"]\n    K11[\"{1, 11}\"]\n    K19[\"{1, 19}\"]\n\n    E[\"{1}\"]\n\n    U --- H1\n    U --- H2\n    U --- H3\n\n    H1 --- K9\n    H2 --- K9\n\n    H3 --- K9\n    H3 --- K11\n    H3 --- K19\n\n    K9 --- E\n    K11 --- E\n    K19 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: More Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#class-session-goals",
+    "href": "classes/09/slides.html#class-session-goals",
+    "title": "Slides: More Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nProve the Division Algorithm\nExplore the Integers Modulo \\(n\\)",
+    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups"
+  },
+  {
+    "objectID": "classes/09/slides.html#definition-of-a-group",
+    "href": "classes/09/slides.html#definition-of-a-group",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\)."
+  },
+  {
+    "objectID": "classes/09/slides.html#definition-of-a-subgroup",
+    "href": "classes/09/slides.html#definition-of-a-subgroup",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group."
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/09/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]"
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "href": "classes/09/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
+    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-u9",
+    "href": "classes/09/slides.html#subgroups-of-u9",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\)",
+    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups."
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-u9-lattice-diagram",
+    "href": "classes/09/slides.html#subgroups-of-u9-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
+    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/09/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\)."
+  },
+  {
+    "objectID": "classes/09/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "href": "classes/09/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
+    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E"
+  },
+  {
+    "objectID": "classes/09/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/09/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/09/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "href": "classes/09/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "title": "Slides: More Groups",
+    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
+    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\)."
+  },
+  {
+    "objectID": "classes/09/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/09/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/09/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/09/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/09/slides.html#proof-of-second-subgroup-test",
+    "href": "classes/09/slides.html#proof-of-second-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proof of Second Subgroup Test",
+    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)"
+  },
+  {
+    "objectID": "classes/09/slides.html#example-of-using-the-subgroup-test",
+    "href": "classes/09/slides.html#example-of-using-the-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Example of using the Subgroup Test",
+    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/09/slides.html#quaternion-group",
+    "href": "classes/09/slides.html#quaternion-group",
+    "title": "Slides: More Groups",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)"
+  },
+  {
+    "objectID": "classes/09/slides.html#symmetries-of-the-square",
+    "href": "classes/09/slides.html#symmetries-of-the-square",
+    "title": "Slides: More Groups",
+    "section": "Symmetries of the Square",
+    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines."
+  },
+  {
+    "objectID": "classes/09/slides.html#u20",
+    "href": "classes/09/slides.html#u20",
+    "title": "Slides: More Groups",
+    "section": "\\(U(20)\\)",
+    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]"
+  },
+  {
+    "objectID": "classes/09/slides.html#group-activty",
+    "href": "classes/09/slides.html#group-activty",
+    "title": "Slides: More Groups",
+    "section": "Group Activty",
+    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups."
+  },
+  {
+    "objectID": "classes/02/slides.html#class-session-goals",
+    "href": "classes/02/slides.html#class-session-goals",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nLearn about Equivalence Relations and see examples\nPractice determining whether a relation is an equivalence relation\nProve the Division Algorithm",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
-    "href": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "objectID": "classes/02/slides.html#relations",
+    "href": "classes/02/slides.html#relations",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Relations",
+    "text": "Relations\nA relation between sets \\(A\\) and \\(B\\) is a subset \\(R \\subset A \\times B\\).\nIf \\(R \\subset X \\times X\\), then \\(R\\) is a relation on \\(X\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#functions",
+    "href": "classes/02/slides.html#functions",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Functions",
+    "text": "Functions\nA function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a relation from \\(A\\) to \\(B\\) such that each \\(a \\in A\\) is related to exactly one element \\(b \\in B\\).\nWe write\n\\[\nf:A\\to B\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#functions-1",
+    "href": "classes/02/slides.html#functions-1",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Functions",
+    "text": "Functions\nWe write \\(f(a)=b\\) if \\(b\\) is the unique element of \\(B\\) associated with \\(a\\).\n\n\\(A\\) is the domain of \\(f\\).\n\\(B\\) is the range or codomain of \\(f\\).\nThe set \\[\nf(A)=\\{f(a):a\\in A\\}\n\\] is the image of \\(f\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#surjective-functions",
+    "href": "classes/02/slides.html#surjective-functions",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Surjective Functions",
+    "text": "Surjective Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is onto or surjective if every element in \\(B\\) is the image of some element in \\(A\\).\nThat is, for every \\(b\\in B\\), there exists an \\(a\\in A\\) such that \\(f(a)=b\\).\nSometimes you will this way of expressing onto functions, \\(f(A)=B\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#one-to-one-functions",
+    "href": "classes/02/slides.html#one-to-one-functions",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "One-to-One Functions",
+    "text": "One-to-One Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is one-to-one or injective if \\(f(a_1)=f(a_2)\\) implies \\(a_1=a_2\\).\nThat is each element in the image comes from a unique element in the domain.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#definition-of-equivalence-relation",
+    "href": "classes/02/slides.html#definition-of-equivalence-relation",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Definition of Equivalence Relation",
+    "text": "Definition of Equivalence Relation\nLet \\(R \\subset X \\times X\\) be a relation on \\(X\\).\nThe relation \\(R\\) is an equivalence relation when:\n\nReflexive: \\((x,x) \\in R\\) for all \\(x \\in X\\).\nSymmetric: If \\((x,y) \\in R\\), then \\((y,x) \\in R\\).\nTransitive: If \\((x,y) \\in R\\) and \\((y,z) \\in R\\), then \\((x,z) \\in R\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#examples",
+    "href": "classes/02/slides.html#examples",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Examples",
+    "text": "Examples\n\nSimilar Matrices\nEquivalent Fractions",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-classes",
+    "href": "classes/02/slides.html#equivalence-classes",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Classes",
+    "text": "Equivalence Classes\nLet \\(\\sim\\) be an equivalence relation on a set \\(X\\).\nFor \\(x\\in X\\), the equivalence class of \\(x\\) is \\([x]=\\{y\\in X:y\\sim x\\}\\).\nEquivalence classes have two important properties:\n\n\\([x]=[y]\\), or\n\\([x]\\cap[y]=\\emptyset\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-classes-partition-sets",
+    "href": "classes/02/slides.html#equivalence-classes-partition-sets",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Classes Partition sets",
+    "text": "Equivalence Classes Partition sets\nThus, the equivalence classes of \\(X\\) form a partition of \\(X\\):\n\\[\nX=\\bigcup_{x\\in X}[x].\n\\]\nEvery element of \\(X\\) belongs to exactly one equivalence class.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
+    "href": "classes/02/slides.html#equivalence-relation-worksheet",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Equivalence Relation Worksheet",
+    "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#caution-functions-on-equivalence-classes",
+    "href": "classes/02/slides.html#caution-functions-on-equivalence-classes",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Caution: Functions on Equivalence Classes",
+    "text": "Caution: Functions on Equivalence Classes\nSuppose we want to define a function on equivalence classes by\n\\(f([x]) = \\text{some expression involving } x\\).\nBe careful! An equivalence class can have many different representatives.\n\nTo show that \\(f\\) is well-defined, we must check that the value of \\(f([x])\\) does not depend on the choice of representative.\nThat is, we need to prove:\n\nIf \\(x \\sim y\\), then \\(f([x])=f([y])\\).\n\n\n\nDefining a rule is not enough — check that it is well-defined!",
+    "crumbs": [
+      "Class Material",
+      "Slides: Equivalence Relations and Division Algorithm"
+    ]
+  },
+  {
+    "objectID": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
+    "href": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Well Ordering of the Natural Numbers",
     "text": "Well Ordering of the Natural Numbers\nA set \\(S\\) is well-ordered if every nonempty subset of \\(S\\) contains a least element.\nPrinciple of Well-Ordering. Every nonempty subset of the natural numbers is well-ordered.\nIn this class the natural numbers are \\(\\mathbb{N}=\\{0, 1, 2, 3, \\ldots\\}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#what-about-the-integers",
-    "href": "classes/03/slides.html#what-about-the-integers",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "objectID": "classes/02/slides.html#what-about-the-integers",
+    "href": "classes/02/slides.html#what-about-the-integers",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "What about the integers?",
     "text": "What about the integers?\nThe integers \\(\\mathbb{Z}\\) are not well-ordered.\nFor example,\n\\[\n\\{\\ldots,-4,-3,-2,-1\\}\n\\]\nhas no least element.",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#division-algorithm",
-    "href": "classes/03/slides.html#division-algorithm",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "objectID": "classes/02/slides.html#division-algorithm",
+    "href": "classes/02/slides.html#division-algorithm",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
     "section": "Division Algorithm",
-    "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\nVerify \\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
+    "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\n\\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#theorem-2.2.2",
-    "href": "classes/03/slides.html#theorem-2.2.2",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Theorem 2.2.2",
-    "text": "Theorem 2.2.2\nLet \\(a\\) and \\(b\\) be nonzero integers. Then there exist integers \\(r\\) and \\(s\\) such that\n\\[\n\\gcd(a,b) = ar + bs.\n\\]\nFurthermore, the greatest common divisor of \\(a\\) and \\(b\\) is unique.\nIf \\(\\gcd(a,b) = 1\\), we say that \\(a\\) and \\(b\\) are relatively prime.",
+    "objectID": "classes/02/slides.html#division-algorithm-existence",
+    "href": "classes/02/slides.html#division-algorithm-existence",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Existence",
+    "text": "Division Algorithm: Existence\nLet \\(S=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\\) If \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\). We first show that \\(S\\) is nonempty. If \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\). If \\(a&lt;0\\), then \\(a-b(2a)=a(1-2b)\\in S\\) Thus \\(S\\neq\\varnothing\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#integers-mod-n",
-    "href": "classes/03/slides.html#integers-mod-n",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Integers Mod n",
-    "text": "Integers Mod n\nEquivalence Relation: Two integers \\(a\\) and \\(b\\) are equivalent mod \\(n\\) if \\(n\\) divides \\(a-b\\).\nThe integers mod \\(n\\) partition \\(\\mathbb Z\\) into \\(n\\) different equivalence classes; we denote the set of these equivalence classes by \\(\\mathbb Z_n\\). \\(\\mathbb Z_n=\\{[0], [1], [2], \\ldots, [n-1]\\}\\). Recall \\([i]=\\{s \\in \\mathbb Z : s=nl+i \\text{ for some } l\\}\\).\nSometime we will get lazy and use \\(\\{ 0,1,\\ldots,n-1 \\}\\)",
+    "objectID": "classes/02/slides.html#division-algorithm-existence-1",
+    "href": "classes/02/slides.html#division-algorithm-existence-1",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Existence",
+    "text": "Division Algorithm: Existence\nBy the Principle of Well-Ordering, \\(S\\) has a smallest member, say\n\\[\nr=a-bq.\n\\]\nTherefore,\n\\[\na=bq+r\n\\]\nand \\(r\\geq 0\\).\nWe now show that \\(r&lt;b\\).\nSuppose that \\(r&gt;b\\). Then\n\\[\na-b(q+1)=a-bq-b=r-b&gt;0.\n\\]\nThus \\(a-b(q+1)\\in S\\), but\n\\[\na-b(q+1)&lt;a-bq=r,\n\\]\ncontradicting the fact that \\(r\\) is the smallest member of \\(S\\).\nHence \\(r\\leq b\\). Since \\(0\\notin S\\), \\(r\\neq b\\), and therefore\n\\[\n0\\leq r&lt;b.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#extending-addintion-and-multiplication",
-    "href": "classes/03/slides.html#extending-addintion-and-multiplication",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Extending Addintion and Multiplication",
-    "text": "Extending Addintion and Multiplication\nFor two integers \\(a\\) and \\(b\\), define addition modulo \\(n\\) to be \\((a+b)\\pmod n\\); that is, the remainder when \\(a+b\\) is divided by \\(n\\).\nSimilarly, multiplication modulo \\(n\\) is defined as \\((ab)\\pmod n\\), the remainder when \\(ab\\) is divided by \\(n\\).",
+    "objectID": "classes/02/slides.html#division-algorithm-uniqueness",
+    "href": "classes/02/slides.html#division-algorithm-uniqueness",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Division Algorithm: Uniqueness",
+    "text": "Division Algorithm: Uniqueness\nSuppose there exist integers \\(r,r',q,q'\\) such that\n\\[\na=bq+r,\\qquad 0\\leq r&lt;b\n\\]\nand\n\\[\na=bq'+r',\\qquad 0\\leq r'&lt;b.\n\\]\nThen\n\\[\nbq+r=bq'+r'.\n\\]\nAssume that \\(r'\\geq r\\). Then\n\\[\nb(q-q')=r'-r.\n\\]\nTherefore \\(b\\) divides \\(r'-r\\), but\n\\[\n0\\leq r'-r\\leq r'&lt;b.\n\\]\nThis is possible only if\n\\[\nr'-r=0.\n\\]\nHence \\(r=r'\\) and \\(q=q'\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
-    "href": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Note on defining functions and operations on equivalence classes.",
-    "text": "Note on defining functions and operations on equivalence classes.\nWhen defining functions or operations on equivalence classes we must verify that the are well defined. For example,\nWe must show that if\n\\[\n[a]=[a'] \\qquad \\text{and} \\qquad [b]=[b'],\n\\]\nthen\n\\[\n[a+b]=[a'+b'].\n\\]",
+    "objectID": "classes/02/slides.html#invertible-function-theorem",
+    "href": "classes/02/slides.html#invertible-function-theorem",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Invertible Function Theorem",
+    "text": "Invertible Function Theorem\nTheorem 1.2.20.\nA mapping is invertible if and only if it is both one-to-one and onto.\n\nIn other words,\n\\[\nf \\text{ is invertible}\n\\quad\\Longleftrightarrow\\quad\nf \\text{ is injective and surjective}.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
-    "objectID": "classes/03/slides.html#checking",
-    "href": "classes/03/slides.html#checking",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Checking",
-    "text": "Checking\nI’ll check the first argument of the operation; the second argument is the same. Assume \\(a \\sim a'\\). I need to show that \\(a+b \\sim a'+b\\).\n\n\n\n\n\n\nImportant\n\n\nWhenever an operation is defined on equivalence classes, we must check that different representatives of the same classes give the same result.",
+    "objectID": "classes/02/slides.html#composition-of-mappings",
+    "href": "classes/02/slides.html#composition-of-mappings",
+    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "section": "Composition of Mappings",
+    "text": "Composition of Mappings\nTheorem 1.2.15.\nLet \\(f:A\\to B\\), \\(g:B\\to C\\), and \\(h:C\\to D\\). Then\n\nThe composition of mappings is associative; that is, \\((h\\circ g)\\circ f=h\\circ(g\\circ f)\\).\nIf \\(f\\) and \\(g\\) are both one-to-one, then the mapping \\(g\\circ f\\) is one-to-one.\nIf \\(f\\) and \\(g\\) are both onto, then the mapping \\(g\\circ f\\) is onto.\nIf \\(f\\) and \\(g\\) are bijective, then so is \\(g\\circ f\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#pathological-example",
-    "href": "classes/03/slides.html#pathological-example",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Pathological Example",
-    "text": "Pathological Example\nConsider the rational numbers \\(\\mathbb Q\\). Every rational number can be represented as a fraction\n\\[\n\\frac{a}{b}, \\qquad b\\neq 0.\n\\]\nSuppose we try to define a function \\(f:\\mathbb Q\\to\\mathbb Z\\) by\n\\[\nf\\left(\\frac{a}{b}\\right)=a+b.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_5",
-    "href": "classes/03/slides.html#addition-table-for-mathbb-z_5",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Addition table for \\(\\mathbb Z_5\\)",
-    "text": "Addition table for \\(\\mathbb Z_5\\)\n\\[\n\\begin{array}{c|ccccc}\n+ & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline\n0 & 0 & 1 & 2 & 3 & 4 \\\\\n1 & 1 & 2 & 3 & 4 & 0 \\\\\n2 & 2 & 3 & 4 & 0 & 1 \\\\\n3 & 3 & 4 & 0 & 1 & 2 \\\\\n4 & 4 & 0 & 1 & 2 & 3\n\\end{array}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
-    "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Multiplication table for \\(\\mathbb Z_8\\):",
-    "text": "Multiplication table for \\(\\mathbb Z_8\\):\n\\[\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n3 & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n5 & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n7 & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#units-of-mathbb-z_8",
-    "href": "classes/03/slides.html#units-of-mathbb-z_8",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Units of \\(\\mathbb Z_8\\)",
-    "text": "Units of \\(\\mathbb Z_8\\)\n\\[\n\\newcommand{\\blue}[1]{\\bbox[cyan]{#1}}\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & \\blue{1} & 2 & \\blue{3} & 4 & \\blue{5} & 6 & \\blue{7} \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n\\blue{1} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n\\blue{3} & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n\\blue{5} & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n\\blue{7} & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#activity",
-    "href": "classes/03/slides.html#activity",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Activity",
-    "text": "Activity\nConstruct the multiplication tables for \\(\\mathbb Z_6\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_6",
-    "href": "classes/03/slides.html#addition-table-for-mathbb-z_6",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Addition Table for \\(\\mathbb Z_6\\)",
-    "text": "Addition Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n+ & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
-    "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Multiplication Table for \\(\\mathbb Z_6\\)",
-    "text": "Multiplication Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]\nWhat are the units?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#proposition-3.1.4.",
-    "href": "classes/03/slides.html#proposition-3.1.4.",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Proposition 3.1.4.",
-    "text": "Proposition 3.1.4.\nLet \\(\\mathbb Z_n\\) be the set of equivalence classes of the integers mod \\(n\\) and \\(a,b,c \\in \\mathbb Z_n\\).\n\nAddition and multiplication are commutative:\n\n\\[\n\\begin{aligned}\na+b &\\equiv b+a \\pmod n \\\\\nab &\\equiv ba \\pmod n.\n\\end{aligned}\n\\]\n\nAddition and multiplication are associative:\n\n\\[\n\\begin{aligned}\n(a+b)+c &\\equiv a+(b+c)\\pmod n \\\\\n(ab)c &\\equiv a(bc)\\pmod n.\n\\end{aligned}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#proposition-3.1.4.-continued",
-    "href": "classes/03/slides.html#proposition-3.1.4.-continued",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Proposition 3.1.4. Continued",
-    "text": "Proposition 3.1.4. Continued\n\nThere are both additive and multiplicative identities:\n\n\\[\n\\begin{aligned}\na+0 &\\equiv a \\pmod n \\\\\na\\cdot 1 &\\equiv a \\pmod n.\n\\end{aligned}\n\\]\n\nMultiplication distributes over addition:\n\n\\[\na(b+c)\\equiv ab+ac\\pmod n.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#proposition-3.1.4.-continued-more",
-    "href": "classes/03/slides.html#proposition-3.1.4.-continued-more",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Proposition 3.1.4. Continued More",
-    "text": "Proposition 3.1.4. Continued More\n\nFor every integer \\(a\\) there is an additive inverse \\(-a\\):\n\n\\[\na+(-a)\\equiv 0\\pmod n.\n\\]\n\nLet \\(a\\) be a nonzero integer. Then \\(\\gcd(a,n)=1\\) if and only if there exists a multiplicative inverse \\(b\\) for \\(a\\pmod n\\); that is, a nonzero integer \\(b\\) such that\n\n\\[\nab\\equiv 1\\pmod n.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/03/slides.html#polygonal-symmeteties-revisted",
-    "href": "classes/03/slides.html#polygonal-symmeteties-revisted",
-    "title": "Slides: Integer Equivalence Classes and Symmetries",
-    "section": "Polygonal Symmeteties Revisted",
-    "text": "Polygonal Symmeteties Revisted\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n& e & r_1 & r_2 & f_A & f_B & f_C  \\\\\n\\hline\ne &  &  &  &  &  &  &  \\\\\n\\hline\nr_1 &  &  &  &  &  &  &  \\\\\n\\hline\nr_2 &  &  &  &  &  &  &  \\\\\n\\hline\nf_A &  &  &  &  &  &  &  \\\\\n\\hline\nf_B &  &  &  &  &  &  &  \\\\\n\\hline\nf_C &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integer Equivalence Classes and Symmetries"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#class-session-goals",
-    "href": "classes/04/slides.html#class-session-goals",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine groups\nExplore examples of groups\nEstablish basic properties of groups",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#definition-of-a-group",
-    "href": "classes/04/slides.html#definition-of-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\circ)\\) is a set \\(G\\) together with a law of composition \\((a,b)\\mapsto a\\circ b\\) satisfying:\n\nAssociativity:\n\\((a\\circ b)\\circ c=a\\circ(b\\circ c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\circ a=a\\circ e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\circ a^{-1}=a^{-1}\\circ a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#additional-definitions",
-    "href": "classes/04/slides.html#additional-definitions",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Additional Definitions",
-    "text": "Additional Definitions\nA group is abelian (or commutative) if \\(a\\circ b=b\\circ a\\) for all \\(a,b\\in G\\).\nA Cayley table is a table that shows the result of the group operation for all pairs of elements in the group. We use it to verify that every element has an inverse. If the Caley table is symmetric about the diagonal, then the group is abelian.\nThe order of a group is the number of elements in the group. Groups can be finite or infinite.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#cayley-table-for-mathbb-z_6",
-    "href": "classes/04/slides.html#cayley-table-for-mathbb-z_6",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Cayley Table for \\(\\mathbb Z_6\\)",
-    "text": "Cayley Table for \\(\\mathbb Z_6\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\([0]\\)\n\n\n\\([1]\\)\n\n\n\\([2]\\)\n\n\n\\([3]\\)\n\n\n\\([4]\\)\n\n\n\\([5]\\)\n\n\n\n\n\\([0]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([1]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([2]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([3]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([4]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([5]\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#cayley-table-for-the-symmetry-group-of-the-equilateral-triangle",
-    "href": "classes/04/slides.html#cayley-table-for-the-symmetry-group-of-the-equilateral-triangle",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Cayley Table for the symmetry group of the equilateral triangle",
-    "text": "Cayley Table for the symmetry group of the equilateral triangle\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\circ\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\n\n\\(e\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\n\n\\(r_1\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\\(f_a\\)\n\n\n\n\n\\(r_2\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(f_c\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\n\n\\(f_a\\)\n\n\n\\(f_a\\)\n\n\n\\(f_c\\)\n\n\n\\(f_b\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\n\n\\(f_b\\)\n\n\n\\(f_b\\)\n\n\n\\(f_a\\)\n\n\n\\(f_c\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\n\n\\(f_c\\)\n\n\n\\(f_c\\)\n\n\n\\(f_b\\)\n\n\n\\(f_a\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#integers-are-a-group",
-    "href": "classes/04/slides.html#integers-are-a-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Integers are a Group",
-    "text": "Integers are a Group\nConsider \\((\\mathbb Z,+)\\).\n\nThe sum of two integers is an integer.\nAddition is associative: \\((m+n)+k=m+(n+k)\\).\nThe identity is \\(0\\): \\(0+n=n+0=n\\).\nThe inverse of \\(n\\) is \\(-n\\): \\(n+(-n)=(-n)+n=0\\).\n\nSince \\(m+n=n+m\\), \\((\\mathbb Z,+)\\) is an abelian group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#activity",
-    "href": "classes/04/slides.html#activity",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Activity",
-    "text": "Activity\nIs \\((\\mathbb N,+)\\) a group? Why or why not?\nWhy is \\((\\mathbb Z,\\cdot)\\) not a group? In your group come up with two reasons why this is not a group.\nWhat about \\(M_2(\\mathbb R)\\), the set of all \\(2\\times 2\\) matrices with real entries, under matrix addition? Is this a group? Why or why not?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "href": "classes/04/slides.html#mathbb-z_n-is-a-group-under-addition",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "\\(\\mathbb Z_n\\) is a Group Under Addition",
-    "text": "\\(\\mathbb Z_n\\) is a Group Under Addition\nThe integers mod \\(n\\) form a group under addition modulo \\(n\\).\nThe identity is \\(0\\), and every element has an additive inverse.\nFor example in \\(\\mathbb Z_5\\),\n\\([2]+[3]=[3+2]=[0]\\). In general, \\([n]+[n-5]=[n-5]+[n]=[0]\\).\n\\([m]+[n]=[n]+[m]\\) so \\((\\mathbb Z_n,+)\\) is an abelian group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#the-units-un-are-a-group-under-multiplication",
-    "href": "classes/04/slides.html#the-units-un-are-a-group-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "The Units \\(U(n)\\) are a Group Under Multiplication",
-    "text": "The Units \\(U(n)\\) are a Group Under Multiplication\nDefine \\(U(n)=\\{k\\in\\mathbb Z_n:\\gcd(k,n)=1\\}\\). This is the group of units of \\(\\mathbb Z_n\\)\nFor example, \\(U(8)=\\{1,3,5,7\\}\\).\n\n\n\n\\(\\cdot\\)\n\n\n1\n\n\n3\n\n\n5\n\n\n7\n\n\n\n\n1\n\n\n1\n\n\n3\n\n\n5\n\n\n7\n\n\n\n\n3\n\n\n3\n\n\n1\n\n\n7\n\n\n5\n\n\n\n\n5\n\n\n5\n\n\n7\n\n\n1\n\n\n3\n\n\n\n\n7\n\n\n7\n\n\n5\n\n\n3\n\n\n1",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#caley-table-for-u9",
-    "href": "classes/04/slides.html#caley-table-for-u9",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Caley Table for \\(U(9)\\)",
-    "text": "Caley Table for \\(U(9)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#matrix-groups",
-    "href": "classes/04/slides.html#matrix-groups",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Matrix Groups",
-    "text": "Matrix Groups\nLet \\(M_2(\\mathbb R)\\) denote the set of all \\(2\\times 2\\) matrices with entries from the real numbers.\nThe general linear group \\(GL_2(\\mathbb R)\\) is the set of invertible matrices in \\(M_2(\\mathbb R)\\).\nThe identity is the \\(2\\times 2\\) identity matrix.\nFor \\(A=\\begin{pmatrix}a & b \\\\ c & d\\end{pmatrix}\\in GL_2(\\mathbb R)\\), the inverse is\n\\(A^{-1}=\\dfrac{1}{ad-bc}\\begin{pmatrix}d & -b \\\\ -c & a\\end{pmatrix}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#more-matrix-groups",
-    "href": "classes/04/slides.html#more-matrix-groups",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "More Matrix Groups",
-    "text": "More Matrix Groups\nIf we change what numbers we allow in the entries of the matrices, we can get different groups. For example, if we only allow elements of \\(\\mathbb Z_3\\), then we get the group \\(GL_2(\\mathbb Z_3)\\).\nThe orthonormal group \\(O_2(\\mathbb R)\\) is the set of matrices in \\(GL_2(\\mathbb R)\\) with determinant equal to \\(\\pm1\\).\nThe special linear group with entries in \\(\\mathbb R\\) \\(SL_2(\\mathbb R)\\) is the set of matrices in \\(GL_2(\\mathbb R)\\) with determinant equal to \\(1\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#quaternion-group",
-    "href": "classes/04/slides.html#quaternion-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Quaternion Group",
-    "text": "Quaternion Group\nLet\n\\(E=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(I=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(J=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(K=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q=\\{E, -E, I, -I, J, -J, K, -K \\}\\), where \\(i^2=-1\\) and \\(-E\\) is \\(-1 \\cdot E\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#caley-table-for-the-quaternion-group",
-    "href": "classes/04/slides.html#caley-table-for-the-quaternion-group",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Caley Table for the Quaternion Group",
-    "text": "Caley Table for the Quaternion Group\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(E\\)\n\n\n\\(-E\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(J\\)\n\n\n\\(-J\\)\n\n\n\\(K\\)\n\n\n\\(-K\\)\n\n\n\n\n\\(E\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-E\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(I\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-I\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(J\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-J\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(K\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-K\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#group-of-complex-numbers-under-multiplication",
-    "href": "classes/04/slides.html#group-of-complex-numbers-under-multiplication",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Group of Complex Numbers Under Multiplication",
-    "text": "Group of Complex Numbers Under Multiplication\nLet \\(\\mathbb C^\\ast\\) be the set of nonzero complex numbers.\nUnder multiplication, \\(\\mathbb C^\\ast\\) forms a group.\n\nIdentity: \\(1\\).\nIf \\(z=a+bi\\ne0\\), then\n\\(z^{-1}=\\dfrac{a-bi}{a^2+b^2}\\).\n\nThus every nonzero complex number has a multiplicative inverse.\nThe group \\(\\mathbb C^\\ast\\) is abelian.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.10-uniqueness-of-identity",
-    "href": "classes/04/slides.html#proposition-3.2.10-uniqueness-of-identity",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.10 — Uniqueness of Identity",
-    "text": "Proposition 3.2.10 — Uniqueness of Identity\nThe identity element in a group \\(G\\) is unique.\n\nSuppose \\(e\\) and \\(e'\\) are both identity elements.\nSince \\(e\\) is an identity, \\(ee'=e'\\).\nSince \\(e'\\) is an identity, \\(ee'=e\\).\nTherefore, \\(e=ee'=e'\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
-    "href": "classes/04/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.11 — Uniqueness of the Inverse",
-    "text": "Proposition 3.2.11 — Uniqueness of the Inverse\nIf \\(g\\) is any element in a group \\(G\\), then its inverse \\(g^{-1}\\) is unique.\n\nSuppose \\(g'\\) and \\(g''\\) are both inverses of \\(g\\).\nThen \\(gg'=g'g=e\\) and \\(gg''=g''g=e\\).\nTherefore, \\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.12-inverse-of-a-product",
-    "href": "classes/04/slides.html#proposition-3.2.12-inverse-of-a-product",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.12 — Inverse of a Product",
-    "text": "Proposition 3.2.12 — Inverse of a Product\nLet \\(G\\) be a group. If \\(a,b\\in G\\), then \\((ab)^{-1}=b^{-1}a^{-1}\\).\n\nIndeed,\n\\(abb^{-1}a^{-1}\n=aea^{-1}\n=aa^{-1}\n=e\\),\nand similarly,\n\\(b^{-1}a^{-1}ab=e\\).\nThus \\(b^{-1}a^{-1}\\) is the inverse of \\(ab\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.13-inverse-of-an-inverse",
-    "href": "classes/04/slides.html#proposition-3.2.13-inverse-of-an-inverse",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.13 — Inverse of an Inverse",
-    "text": "Proposition 3.2.13 — Inverse of an Inverse\nLet \\(G\\) be a group. For any \\(a\\in G\\), \\((a^{-1})^{-1}=a\\).\n\nSince\n\\(a^{-1}(a^{-1})^{-1}=e\\),\nwe obtain\n\\((a^{-1})^{-1}\n=e(a^{-1})^{-1}\n=aa^{-1}(a^{-1})^{-1}\n=ae\n=a\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.14",
-    "href": "classes/04/slides.html#proposition-3.2.14",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.14",
-    "text": "Proposition 3.2.14\nLet \\(G\\) be a group and let \\(a,b\\in G\\). Then the equations \\(ax=b\\) and \\(xa=b\\) have unique solutions in \\(G\\).\n\nFor \\(ax=b\\),\n\\(x=a^{-1}b\\).\nFor \\(xa=b\\),\n\\(x=ba^{-1}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#proposition-3.2.15",
-    "href": "classes/04/slides.html#proposition-3.2.15",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Proposition 3.2.15",
-    "text": "Proposition 3.2.15\nIf \\(G\\) is a group and \\(a,b,c\\in G\\), then\n\\(ba=ca\\quad\\Longrightarrow\\quad b=c\\)\nand\n\\(ab=ac\\quad\\Longrightarrow\\quad b=c\\).\n\nThese are the right and left cancellation laws for groups.\nFor example,\n\\(ba=ca\n\\quad\\Longrightarrow\\quad\nbaa^{-1}=caa^{-1}\n\\quad\\Longrightarrow\\quad\nb=c\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#defining-exponents",
-    "href": "classes/04/slides.html#defining-exponents",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Defining Exponents",
-    "text": "Defining Exponents\nFor \\(g\\in G\\), define\n\\(g^0=e\\),\n\\(g^n=\\underbrace{g\\cdot g\\cdots g}_{n\\text{ times}}\\),\nand\n\\(g^{-n}=\\underbrace{g^{-1}\\cdot g^{-1}\\cdots g^{-1}}_{n\\text{ times}}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
-    ]
-  },
-  {
-    "objectID": "classes/04/slides.html#theorem-3.2.16",
-    "href": "classes/04/slides.html#theorem-3.2.16",
-    "title": "Slides: Definitions and Examples of Groups",
-    "section": "Theorem 3.2.16",
-    "text": "Theorem 3.2.16\nFor all \\(g,h\\in G\\),\n\n\\(g^m g^n=g^{m+n}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((g^m)^n=g^{mn}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((gh)^n=(h^{-1}g^{-1})^{-n}\\) for all \\(n\\in\\mathbb Z\\).\n\nFurthermore, if \\(G\\) is abelian,\n\\((gh)^n=g^nh^n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Definitions and Examples of Groups"
+      "Slides: Equivalence Relations and Division Algorithm"
     ]
   },
   {
@@ -1142,224 +1066,765 @@
     ]
   },
   {
-    "objectID": "classes/02/slides.html#class-session-goals",
-    "href": "classes/02/slides.html#class-session-goals",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "objectID": "classes/04/slides.html#class-session-goals",
+    "href": "classes/04/slides.html#class-session-goals",
+    "title": "Slides: Definitions and Examples of Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nLearn about Equivalence Relations and see examples\nPractice determining whether a relation is an equivalence relation\nProve the Division Algorithm",
+    "text": "Class Session Goals\n\nDefine groups\nExplore examples of groups\nEstablish basic properties of groups",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#relations",
-    "href": "classes/02/slides.html#relations",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Relations",
-    "text": "Relations\nA relation between sets \\(A\\) and \\(B\\) is a subset \\(R \\subset A \\times B\\).\nIf \\(R \\subset X \\times X\\), then \\(R\\) is a relation on \\(X\\).",
+    "objectID": "classes/04/slides.html#definition-of-a-group",
+    "href": "classes/04/slides.html#definition-of-a-group",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\circ)\\) is a set \\(G\\) together with a law of composition \\((a,b)\\mapsto a\\circ b\\) satisfying:\n\nAssociativity:\n\\((a\\circ b)\\circ c=a\\circ(b\\circ c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\circ a=a\\circ e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\circ a^{-1}=a^{-1}\\circ a=e\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#functions",
-    "href": "classes/02/slides.html#functions",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Functions",
-    "text": "Functions\nA function \\(f\\) from a set \\(A\\) to a set \\(B\\) is a relation from \\(A\\) to \\(B\\) such that each \\(a \\in A\\) is related to exactly one element \\(b \\in B\\).\nWe write\n\\[\nf:A\\to B\n\\]",
+    "objectID": "classes/04/slides.html#additional-definitions",
+    "href": "classes/04/slides.html#additional-definitions",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Additional Definitions",
+    "text": "Additional Definitions\nA group is abelian (or commutative) if \\(a\\circ b=b\\circ a\\) for all \\(a,b\\in G\\).\nA Cayley table is a table that shows the result of the group operation for all pairs of elements in the group. We use it to verify that every element has an inverse. If the Caley table is symmetric about the diagonal, then the group is abelian.\nThe order of a group is the number of elements in the group. Groups can be finite or infinite.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#functions-1",
-    "href": "classes/02/slides.html#functions-1",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Functions",
-    "text": "Functions\nWe write \\(f(a)=b\\) if \\(b\\) is the unique element of \\(B\\) associated with \\(a\\).\n\n\\(A\\) is the domain of \\(f\\).\n\\(B\\) is the range or codomain of \\(f\\).\nThe set \\[\nf(A)=\\{f(a):a\\in A\\}\n\\] is the image of \\(f\\).",
+    "objectID": "classes/04/slides.html#cayley-table-for-mathbb-z_6",
+    "href": "classes/04/slides.html#cayley-table-for-mathbb-z_6",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Cayley Table for \\(\\mathbb Z_6\\)",
+    "text": "Cayley Table for \\(\\mathbb Z_6\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\([0]\\)\n\n\n\\([1]\\)\n\n\n\\([2]\\)\n\n\n\\([3]\\)\n\n\n\\([4]\\)\n\n\n\\([5]\\)\n\n\n\n\n\\([0]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([1]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([2]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([3]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([4]\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\([5]\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#surjective-functions",
-    "href": "classes/02/slides.html#surjective-functions",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Surjective Functions",
-    "text": "Surjective Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is onto or surjective if every element in \\(B\\) is the image of some element in \\(A\\).\nThat is, for every \\(b\\in B\\), there exists an \\(a\\in A\\) such that \\(f(a)=b\\).\nSometimes you will this way of expressing onto functions, \\(f(A)=B\\).",
+    "objectID": "classes/04/slides.html#cayley-table-for-the-symmetry-group-of-the-equilateral-triangle",
+    "href": "classes/04/slides.html#cayley-table-for-the-symmetry-group-of-the-equilateral-triangle",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Cayley Table for the symmetry group of the equilateral triangle",
+    "text": "Cayley Table for the symmetry group of the equilateral triangle\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\circ\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\n\n\\(e\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\n\n\\(r_1\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(f_b\\)\n\n\n\\(f_c\\)\n\n\n\\(f_a\\)\n\n\n\n\n\\(r_2\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(f_c\\)\n\n\n\\(f_a\\)\n\n\n\\(f_b\\)\n\n\n\n\n\\(f_a\\)\n\n\n\\(f_a\\)\n\n\n\\(f_c\\)\n\n\n\\(f_b\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\n\n\\(f_b\\)\n\n\n\\(f_b\\)\n\n\n\\(f_a\\)\n\n\n\\(f_c\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\n\n\\(f_c\\)\n\n\n\\(f_c\\)\n\n\n\\(f_b\\)\n\n\n\\(f_a\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#one-to-one-functions",
-    "href": "classes/02/slides.html#one-to-one-functions",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "One-to-One Functions",
-    "text": "One-to-One Functions\nLet \\(f:A\\to B\\) be a function.\nThe function \\(f\\) is one-to-one or injective if \\(f(a_1)=f(a_2)\\) implies \\(a_1=a_2\\).\nThat is each element in the image comes from a unique element in the domain.",
+    "objectID": "classes/04/slides.html#integers-are-a-group",
+    "href": "classes/04/slides.html#integers-are-a-group",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Integers are a Group",
+    "text": "Integers are a Group\nConsider \\((\\mathbb Z,+)\\).\n\nThe sum of two integers is an integer.\nAddition is associative: \\((m+n)+k=m+(n+k)\\).\nThe identity is \\(0\\): \\(0+n=n+0=n\\).\nThe inverse of \\(n\\) is \\(-n\\): \\(n+(-n)=(-n)+n=0\\).\n\nSince \\(m+n=n+m\\), \\((\\mathbb Z,+)\\) is an abelian group.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#definition-of-equivalence-relation",
-    "href": "classes/02/slides.html#definition-of-equivalence-relation",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Definition of Equivalence Relation",
-    "text": "Definition of Equivalence Relation\nLet \\(R \\subset X \\times X\\) be a relation on \\(X\\).\nThe relation \\(R\\) is an equivalence relation when:\n\nReflexive: \\((x,x) \\in R\\) for all \\(x \\in X\\).\nSymmetric: If \\((x,y) \\in R\\), then \\((y,x) \\in R\\).\nTransitive: If \\((x,y) \\in R\\) and \\((y,z) \\in R\\), then \\((x,z) \\in R\\).",
+    "objectID": "classes/04/slides.html#activity",
+    "href": "classes/04/slides.html#activity",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Activity",
+    "text": "Activity\nIs \\((\\mathbb N,+)\\) a group? Why or why not?\nWhy is \\((\\mathbb Z,\\cdot)\\) not a group? In your group come up with two reasons why this is not a group.\nWhat about \\(M_2(\\mathbb R)\\), the set of all \\(2\\times 2\\) matrices with real entries, under matrix addition? Is this a group? Why or why not?",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#examples",
-    "href": "classes/02/slides.html#examples",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Examples",
-    "text": "Examples\n\nSimilar Matrices\nEquivalent Fractions",
+    "objectID": "classes/04/slides.html#mathbb-z_n-is-a-group-under-addition",
+    "href": "classes/04/slides.html#mathbb-z_n-is-a-group-under-addition",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "\\(\\mathbb Z_n\\) is a Group Under Addition",
+    "text": "\\(\\mathbb Z_n\\) is a Group Under Addition\nThe integers mod \\(n\\) form a group under addition modulo \\(n\\).\nThe identity is \\(0\\), and every element has an additive inverse.\nFor example in \\(\\mathbb Z_5\\),\n\\([2]+[3]=[3+2]=[0]\\). In general, \\([n]+[n-5]=[n-5]+[n]=[0]\\).\n\\([m]+[n]=[n]+[m]\\) so \\((\\mathbb Z_n,+)\\) is an abelian group.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#equivalence-classes",
-    "href": "classes/02/slides.html#equivalence-classes",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Equivalence Classes",
-    "text": "Equivalence Classes\nLet \\(\\sim\\) be an equivalence relation on a set \\(X\\).\nFor \\(x\\in X\\), the equivalence class of \\(x\\) is \\([x]=\\{y\\in X:y\\sim x\\}\\).\nEquivalence classes have two important properties:\n\n\\([x]=[y]\\), or\n\\([x]\\cap[y]=\\emptyset\\).",
+    "objectID": "classes/04/slides.html#the-units-un-are-a-group-under-multiplication",
+    "href": "classes/04/slides.html#the-units-un-are-a-group-under-multiplication",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "The Units \\(U(n)\\) are a Group Under Multiplication",
+    "text": "The Units \\(U(n)\\) are a Group Under Multiplication\nDefine \\(U(n)=\\{k\\in\\mathbb Z_n:\\gcd(k,n)=1\\}\\). This is the group of units of \\(\\mathbb Z_n\\)\nFor example, \\(U(8)=\\{1,3,5,7\\}\\).\n\n\n\n\\(\\cdot\\)\n\n\n1\n\n\n3\n\n\n5\n\n\n7\n\n\n\n\n1\n\n\n1\n\n\n3\n\n\n5\n\n\n7\n\n\n\n\n3\n\n\n3\n\n\n1\n\n\n7\n\n\n5\n\n\n\n\n5\n\n\n5\n\n\n7\n\n\n1\n\n\n3\n\n\n\n\n7\n\n\n7\n\n\n5\n\n\n3\n\n\n1",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#equivalence-classes-partition-sets",
-    "href": "classes/02/slides.html#equivalence-classes-partition-sets",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Equivalence Classes Partition sets",
-    "text": "Equivalence Classes Partition sets\nThus, the equivalence classes of \\(X\\) form a partition of \\(X\\):\n\\[\nX=\\bigcup_{x\\in X}[x].\n\\]\nEvery element of \\(X\\) belongs to exactly one equivalence class.",
+    "objectID": "classes/04/slides.html#caley-table-for-u9",
+    "href": "classes/04/slides.html#caley-table-for-u9",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Caley Table for \\(U(9)\\)",
+    "text": "Caley Table for \\(U(9)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#equivalence-relation-worksheet",
-    "href": "classes/02/slides.html#equivalence-relation-worksheet",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Equivalence Relation Worksheet",
-    "text": "Equivalence Relation Worksheet\n\n\nScan the QR code or click it to open the worksheet.\nhttps://gwb-ci.github.io/math393/classes/02/worksheet.html",
+    "objectID": "classes/04/slides.html#matrix-groups",
+    "href": "classes/04/slides.html#matrix-groups",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Matrix Groups",
+    "text": "Matrix Groups\nLet \\(M_2(\\mathbb R)\\) denote the set of all \\(2\\times 2\\) matrices with entries from the real numbers.\nThe general linear group \\(GL_2(\\mathbb R)\\) is the set of invertible matrices in \\(M_2(\\mathbb R)\\).\nThe identity is the \\(2\\times 2\\) identity matrix.\nFor \\(A=\\begin{pmatrix}a & b \\\\ c & d\\end{pmatrix}\\in GL_2(\\mathbb R)\\), the inverse is\n\\(A^{-1}=\\dfrac{1}{ad-bc}\\begin{pmatrix}d & -b \\\\ -c & a\\end{pmatrix}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#caution-functions-on-equivalence-classes",
-    "href": "classes/02/slides.html#caution-functions-on-equivalence-classes",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Caution: Functions on Equivalence Classes",
-    "text": "Caution: Functions on Equivalence Classes\nSuppose we want to define a function on equivalence classes by\n\\(f([x]) = \\text{some expression involving } x\\).\nBe careful! An equivalence class can have many different representatives.\n\nTo show that \\(f\\) is well-defined, we must check that the value of \\(f([x])\\) does not depend on the choice of representative.\nThat is, we need to prove:\n\nIf \\(x \\sim y\\), then \\(f([x])=f([y])\\).\n\n\n\nDefining a rule is not enough — check that it is well-defined!",
+    "objectID": "classes/04/slides.html#more-matrix-groups",
+    "href": "classes/04/slides.html#more-matrix-groups",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "More Matrix Groups",
+    "text": "More Matrix Groups\nIf we change what numbers we allow in the entries of the matrices, we can get different groups. For example, if we only allow elements of \\(\\mathbb Z_3\\), then we get the group \\(GL_2(\\mathbb Z_3)\\).\nThe orthonormal group \\(O_2(\\mathbb R)\\) is the set of matrices in \\(GL_2(\\mathbb R)\\) with determinant equal to \\(\\pm1\\).\nThe special linear group with entries in \\(\\mathbb R\\) \\(SL_2(\\mathbb R)\\) is the set of matrices in \\(GL_2(\\mathbb R)\\) with determinant equal to \\(1\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Definitions and Examples of Groups"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
-    "href": "classes/02/slides.html#well-ordering-of-the-natural-numbers",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "objectID": "classes/04/slides.html#quaternion-group",
+    "href": "classes/04/slides.html#quaternion-group",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(E=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(I=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(J=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(K=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q=\\{E, -E, I, -I, J, -J, K, -K \\}\\), where \\(i^2=-1\\) and \\(-E\\) is \\(-1 \\cdot E\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#caley-table-for-the-quaternion-group",
+    "href": "classes/04/slides.html#caley-table-for-the-quaternion-group",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Caley Table for the Quaternion Group",
+    "text": "Caley Table for the Quaternion Group\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(E\\)\n\n\n\\(-E\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(J\\)\n\n\n\\(-J\\)\n\n\n\\(K\\)\n\n\n\\(-K\\)\n\n\n\n\n\\(E\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-E\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(I\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-I\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(J\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-J\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(K\\)\n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n \n\n\n\n\n\\(-K\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#group-of-complex-numbers-under-multiplication",
+    "href": "classes/04/slides.html#group-of-complex-numbers-under-multiplication",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Group of Complex Numbers Under Multiplication",
+    "text": "Group of Complex Numbers Under Multiplication\nLet \\(\\mathbb C^\\ast\\) be the set of nonzero complex numbers.\nUnder multiplication, \\(\\mathbb C^\\ast\\) forms a group.\n\nIdentity: \\(1\\).\nIf \\(z=a+bi\\ne0\\), then\n\\(z^{-1}=\\dfrac{a-bi}{a^2+b^2}\\).\n\nThus every nonzero complex number has a multiplicative inverse.\nThe group \\(\\mathbb C^\\ast\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.10-uniqueness-of-identity",
+    "href": "classes/04/slides.html#proposition-3.2.10-uniqueness-of-identity",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.10 — Uniqueness of Identity",
+    "text": "Proposition 3.2.10 — Uniqueness of Identity\nThe identity element in a group \\(G\\) is unique.\n\nSuppose \\(e\\) and \\(e'\\) are both identity elements.\nSince \\(e\\) is an identity, \\(ee'=e'\\).\nSince \\(e'\\) is an identity, \\(ee'=e\\).\nTherefore, \\(e=ee'=e'\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
+    "href": "classes/04/slides.html#proposition-3.2.11-uniqueness-of-the-inverse",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.11 — Uniqueness of the Inverse",
+    "text": "Proposition 3.2.11 — Uniqueness of the Inverse\nIf \\(g\\) is any element in a group \\(G\\), then its inverse \\(g^{-1}\\) is unique.\n\nSuppose \\(g'\\) and \\(g''\\) are both inverses of \\(g\\).\nThen \\(gg'=g'g=e\\) and \\(gg''=g''g=e\\).\nTherefore, \\(g'=g'e=g'(gg'')=(g'g)g''=eg''=g''\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.12-inverse-of-a-product",
+    "href": "classes/04/slides.html#proposition-3.2.12-inverse-of-a-product",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.12 — Inverse of a Product",
+    "text": "Proposition 3.2.12 — Inverse of a Product\nLet \\(G\\) be a group. If \\(a,b\\in G\\), then \\((ab)^{-1}=b^{-1}a^{-1}\\).\n\nIndeed,\n\\(abb^{-1}a^{-1}\n=aea^{-1}\n=aa^{-1}\n=e\\),\nand similarly,\n\\(b^{-1}a^{-1}ab=e\\).\nThus \\(b^{-1}a^{-1}\\) is the inverse of \\(ab\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.13-inverse-of-an-inverse",
+    "href": "classes/04/slides.html#proposition-3.2.13-inverse-of-an-inverse",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.13 — Inverse of an Inverse",
+    "text": "Proposition 3.2.13 — Inverse of an Inverse\nLet \\(G\\) be a group. For any \\(a\\in G\\), \\((a^{-1})^{-1}=a\\).\n\nSince\n\\(a^{-1}(a^{-1})^{-1}=e\\),\nwe obtain\n\\((a^{-1})^{-1}\n=e(a^{-1})^{-1}\n=aa^{-1}(a^{-1})^{-1}\n=ae\n=a\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.14",
+    "href": "classes/04/slides.html#proposition-3.2.14",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.14",
+    "text": "Proposition 3.2.14\nLet \\(G\\) be a group and let \\(a,b\\in G\\). Then the equations \\(ax=b\\) and \\(xa=b\\) have unique solutions in \\(G\\).\n\nFor \\(ax=b\\),\n\\(x=a^{-1}b\\).\nFor \\(xa=b\\),\n\\(x=ba^{-1}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#proposition-3.2.15",
+    "href": "classes/04/slides.html#proposition-3.2.15",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Proposition 3.2.15",
+    "text": "Proposition 3.2.15\nIf \\(G\\) is a group and \\(a,b,c\\in G\\), then\n\\(ba=ca\\quad\\Longrightarrow\\quad b=c\\)\nand\n\\(ab=ac\\quad\\Longrightarrow\\quad b=c\\).\n\nThese are the right and left cancellation laws for groups.\nFor example,\n\\(ba=ca\n\\quad\\Longrightarrow\\quad\nbaa^{-1}=caa^{-1}\n\\quad\\Longrightarrow\\quad\nb=c\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#defining-exponents",
+    "href": "classes/04/slides.html#defining-exponents",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Defining Exponents",
+    "text": "Defining Exponents\nFor \\(g\\in G\\), define\n\\(g^0=e\\),\n\\(g^n=\\underbrace{g\\cdot g\\cdots g}_{n\\text{ times}}\\),\nand\n\\(g^{-n}=\\underbrace{g^{-1}\\cdot g^{-1}\\cdots g^{-1}}_{n\\text{ times}}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/04/slides.html#theorem-3.2.16",
+    "href": "classes/04/slides.html#theorem-3.2.16",
+    "title": "Slides: Definitions and Examples of Groups",
+    "section": "Theorem 3.2.16",
+    "text": "Theorem 3.2.16\nFor all \\(g,h\\in G\\),\n\n\\(g^m g^n=g^{m+n}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((g^m)^n=g^{mn}\\) for all \\(m,n\\in\\mathbb Z\\);\n\\((gh)^n=(h^{-1}g^{-1})^{-n}\\) for all \\(n\\in\\mathbb Z\\).\n\nFurthermore, if \\(G\\) is abelian,\n\\((gh)^n=g^nh^n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Definitions and Examples of Groups"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#class-session-goals",
+    "href": "classes/03/slides.html#class-session-goals",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nProve the Division Algorithm\nExplore the Integers Modulo \\(n\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
+    "href": "classes/03/slides.html#well-ordering-of-the-natural-numbers",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Well Ordering of the Natural Numbers",
     "text": "Well Ordering of the Natural Numbers\nA set \\(S\\) is well-ordered if every nonempty subset of \\(S\\) contains a least element.\nPrinciple of Well-Ordering. Every nonempty subset of the natural numbers is well-ordered.\nIn this class the natural numbers are \\(\\mathbb{N}=\\{0, 1, 2, 3, \\ldots\\}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#what-about-the-integers",
-    "href": "classes/02/slides.html#what-about-the-integers",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "objectID": "classes/03/slides.html#what-about-the-integers",
+    "href": "classes/03/slides.html#what-about-the-integers",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "What about the integers?",
     "text": "What about the integers?\nThe integers \\(\\mathbb{Z}\\) are not well-ordered.\nFor example,\n\\[\n\\{\\ldots,-4,-3,-2,-1\\}\n\\]\nhas no least element.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#division-algorithm",
-    "href": "classes/02/slides.html#division-algorithm",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
+    "objectID": "classes/03/slides.html#division-algorithm",
+    "href": "classes/03/slides.html#division-algorithm",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
     "section": "Division Algorithm",
-    "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\n\\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
+    "text": "Division Algorithm\nDivision Algorithm. Let \\(a\\) and \\(b\\) be integers, with \\(b&gt;0\\). Then there exist unique integers \\(q\\) and \\(r\\) such that \\(a=bq+r\\) where \\(0\\leq r&lt;b\\).\nThe proof has three parts:\n\nExistence: Show that \\(q\\) and \\(r\\) exist.\nVerify \\(0\\leq r&lt;b\\)\nUniqueness: Show that no other \\(q\\) and \\(r\\) can satisfy these conditions.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#division-algorithm-existence",
-    "href": "classes/02/slides.html#division-algorithm-existence",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Division Algorithm: Existence",
-    "text": "Division Algorithm: Existence\nLet \\(S=\\{a-bk:k\\in\\mathbb Z\\text{ and }a-bk\\geq 0\\}.\\) If \\(0\\in S\\), then \\(b\\) divides \\(a\\), and we can let\n\\[\nq=\\frac{a}{b}\n\\qquad\\text{and}\\qquad\nr=0.\n\\]\nSuppose \\(0\\notin S\\). We first show that \\(S\\) is nonempty. If \\(a&gt;0\\), then \\(a-b\\cdot 0\\in S\\). If \\(a&lt;0\\), then \\(a-b(2a)=a(1-2b)\\in S\\) Thus \\(S\\neq\\varnothing\\).",
+    "objectID": "classes/03/slides.html#theorem-2.2.2",
+    "href": "classes/03/slides.html#theorem-2.2.2",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Theorem 2.2.2",
+    "text": "Theorem 2.2.2\nLet \\(a\\) and \\(b\\) be nonzero integers. Then there exist integers \\(r\\) and \\(s\\) such that\n\\[\n\\gcd(a,b) = ar + bs.\n\\]\nFurthermore, the greatest common divisor of \\(a\\) and \\(b\\) is unique.\nIf \\(\\gcd(a,b) = 1\\), we say that \\(a\\) and \\(b\\) are relatively prime.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#division-algorithm-existence-1",
-    "href": "classes/02/slides.html#division-algorithm-existence-1",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Division Algorithm: Existence",
-    "text": "Division Algorithm: Existence\nBy the Principle of Well-Ordering, \\(S\\) has a smallest member, say\n\\[\nr=a-bq.\n\\]\nTherefore,\n\\[\na=bq+r\n\\]\nand \\(r\\geq 0\\).\nWe now show that \\(r&lt;b\\).\nSuppose that \\(r&gt;b\\). Then\n\\[\na-b(q+1)=a-bq-b=r-b&gt;0.\n\\]\nThus \\(a-b(q+1)\\in S\\), but\n\\[\na-b(q+1)&lt;a-bq=r,\n\\]\ncontradicting the fact that \\(r\\) is the smallest member of \\(S\\).\nHence \\(r\\leq b\\). Since \\(0\\notin S\\), \\(r\\neq b\\), and therefore\n\\[\n0\\leq r&lt;b.\n\\]",
+    "objectID": "classes/03/slides.html#integers-mod-n",
+    "href": "classes/03/slides.html#integers-mod-n",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Integers Mod n",
+    "text": "Integers Mod n\nEquivalence Relation: Two integers \\(a\\) and \\(b\\) are equivalent mod \\(n\\) if \\(n\\) divides \\(a-b\\).\nThe integers mod \\(n\\) partition \\(\\mathbb Z\\) into \\(n\\) different equivalence classes; we denote the set of these equivalence classes by \\(\\mathbb Z_n\\). \\(\\mathbb Z_n=\\{[0], [1], [2], \\ldots, [n-1]\\}\\). Recall \\([i]=\\{s \\in \\mathbb Z : s=nl+i \\text{ for some } l\\}\\).\nSometime we will get lazy and use \\(\\{ 0,1,\\ldots,n-1 \\}\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#division-algorithm-uniqueness",
-    "href": "classes/02/slides.html#division-algorithm-uniqueness",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Division Algorithm: Uniqueness",
-    "text": "Division Algorithm: Uniqueness\nSuppose there exist integers \\(r,r',q,q'\\) such that\n\\[\na=bq+r,\\qquad 0\\leq r&lt;b\n\\]\nand\n\\[\na=bq'+r',\\qquad 0\\leq r'&lt;b.\n\\]\nThen\n\\[\nbq+r=bq'+r'.\n\\]\nAssume that \\(r'\\geq r\\). Then\n\\[\nb(q-q')=r'-r.\n\\]\nTherefore \\(b\\) divides \\(r'-r\\), but\n\\[\n0\\leq r'-r\\leq r'&lt;b.\n\\]\nThis is possible only if\n\\[\nr'-r=0.\n\\]\nHence \\(r=r'\\) and \\(q=q'\\).",
+    "objectID": "classes/03/slides.html#extending-addintion-and-multiplication",
+    "href": "classes/03/slides.html#extending-addintion-and-multiplication",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Extending Addintion and Multiplication",
+    "text": "Extending Addintion and Multiplication\nFor two integers \\(a\\) and \\(b\\), define addition modulo \\(n\\) to be \\((a+b)\\pmod n\\); that is, the remainder when \\(a+b\\) is divided by \\(n\\).\nSimilarly, multiplication modulo \\(n\\) is defined as \\((ab)\\pmod n\\), the remainder when \\(ab\\) is divided by \\(n\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#invertible-function-theorem",
-    "href": "classes/02/slides.html#invertible-function-theorem",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Invertible Function Theorem",
-    "text": "Invertible Function Theorem\nTheorem 1.2.20.\nA mapping is invertible if and only if it is both one-to-one and onto.\n\nIn other words,\n\\[\nf \\text{ is invertible}\n\\quad\\Longleftrightarrow\\quad\nf \\text{ is injective and surjective}.\n\\]",
+    "objectID": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
+    "href": "classes/03/slides.html#note-on-defining-functions-and-operations-on-equivalence-classes.",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Note on defining functions and operations on equivalence classes.",
+    "text": "Note on defining functions and operations on equivalence classes.\nWhen defining functions or operations on equivalence classes we must verify that the are well defined. For example,\nWe must show that if\n\\[\n[a]=[a'] \\qquad \\text{and} \\qquad [b]=[b'],\n\\]\nthen\n\\[\n[a+b]=[a'+b'].\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
   },
   {
-    "objectID": "classes/02/slides.html#composition-of-mappings",
-    "href": "classes/02/slides.html#composition-of-mappings",
-    "title": "Slides: Equivalence Relations and Division Algorithm",
-    "section": "Composition of Mappings",
-    "text": "Composition of Mappings\nTheorem 1.2.15.\nLet \\(f:A\\to B\\), \\(g:B\\to C\\), and \\(h:C\\to D\\). Then\n\nThe composition of mappings is associative; that is, \\((h\\circ g)\\circ f=h\\circ(g\\circ f)\\).\nIf \\(f\\) and \\(g\\) are both one-to-one, then the mapping \\(g\\circ f\\) is one-to-one.\nIf \\(f\\) and \\(g\\) are both onto, then the mapping \\(g\\circ f\\) is onto.\nIf \\(f\\) and \\(g\\) are bijective, then so is \\(g\\circ f\\).",
+    "objectID": "classes/03/slides.html#checking",
+    "href": "classes/03/slides.html#checking",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Checking",
+    "text": "Checking\nI’ll check the first argument of the operation; the second argument is the same. Assume \\(a \\sim a'\\). I need to show that \\(a+b \\sim a'+b\\).\n\n\n\n\n\n\nImportant\n\n\nWhenever an operation is defined on equivalence classes, we must check that different representatives of the same classes give the same result.",
     "crumbs": [
       "Class Material",
-      "Slides: Equivalence Relations and Division Algorithm"
+      "Slides: Integer Equivalence Classes and Symmetries"
     ]
+  },
+  {
+    "objectID": "classes/03/slides.html#pathological-example",
+    "href": "classes/03/slides.html#pathological-example",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Pathological Example",
+    "text": "Pathological Example\nConsider the rational numbers \\(\\mathbb Q\\). Every rational number can be represented as a fraction\n\\[\n\\frac{a}{b}, \\qquad b\\neq 0.\n\\]\nSuppose we try to define a function \\(f:\\mathbb Q\\to\\mathbb Z\\) by\n\\[\nf\\left(\\frac{a}{b}\\right)=a+b.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_5",
+    "href": "classes/03/slides.html#addition-table-for-mathbb-z_5",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Addition table for \\(\\mathbb Z_5\\)",
+    "text": "Addition table for \\(\\mathbb Z_5\\)\n\\[\n\\begin{array}{c|ccccc}\n+ & 0 & 1 & 2 & 3 & 4 \\\\\n\\hline\n0 & 0 & 1 & 2 & 3 & 4 \\\\\n1 & 1 & 2 & 3 & 4 & 0 \\\\\n2 & 2 & 3 & 4 & 0 & 1 \\\\\n3 & 3 & 4 & 0 & 1 & 2 \\\\\n4 & 4 & 0 & 1 & 2 & 3\n\\end{array}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
+    "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_8",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Multiplication table for \\(\\mathbb Z_8\\):",
+    "text": "Multiplication table for \\(\\mathbb Z_8\\):\n\\[\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n1 & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n3 & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n5 & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n7 & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#units-of-mathbb-z_8",
+    "href": "classes/03/slides.html#units-of-mathbb-z_8",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Units of \\(\\mathbb Z_8\\)",
+    "text": "Units of \\(\\mathbb Z_8\\)\n\\[\n\\newcommand{\\blue}[1]{\\bbox[cyan]{#1}}\n\\begin{array}{c|cccccccc}\n\\cdot & 0 & \\blue{1} & 2 & \\blue{3} & 4 & \\blue{5} & 6 & \\blue{7} \\\\\n\\hline\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\\\\n\\blue{1} & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7 \\\\\n2 & 0 & 2 & 4 & 6 & 0 & 2 & 4 & 6 \\\\\n\\blue{3} & 0 & 3 & 6 & 1 & 4 & 7 & 2 & 5 \\\\\n4 & 0 & 4 & 0 & 4 & 0 & 4 & 0 & 4 \\\\\n\\blue{5} & 0 & 5 & 2 & 7 & 4 & 1 & 6 & 3 \\\\\n6 & 0 & 6 & 4 & 2 & 0 & 6 & 4 & 2 \\\\\n\\blue{7} & 0 & 7 & 6 & 5 & 4 & 3 & 2 & 1\n\\end{array}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#activity",
+    "href": "classes/03/slides.html#activity",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Activity",
+    "text": "Activity\nConstruct the multiplication tables for \\(\\mathbb Z_6\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#addition-table-for-mathbb-z_6",
+    "href": "classes/03/slides.html#addition-table-for-mathbb-z_6",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Addition Table for \\(\\mathbb Z_6\\)",
+    "text": "Addition Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n+ & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
+    "href": "classes/03/slides.html#multiplication-table-for-mathbb-z_6",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Multiplication Table for \\(\\mathbb Z_6\\)",
+    "text": "Multiplication Table for \\(\\mathbb Z_6\\)\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n\\cdot & 0 & 1 & 2 & 3 & 4 & 5  \\\\\n\\hline\n0 &  &  &  &  &  &  &  \\\\\n\\hline\n1 &  &  &  &  &  &  &  \\\\\n\\hline\n2 &  &  &  &  &  &  &  \\\\\n\\hline\n3 &  &  &  &  &  &  &  \\\\\n\\hline\n4 &  &  &  &  &  &  &  \\\\\n\\hline\n5 &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]\nWhat are the units?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#proposition-3.1.4.",
+    "href": "classes/03/slides.html#proposition-3.1.4.",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Proposition 3.1.4.",
+    "text": "Proposition 3.1.4.\nLet \\(\\mathbb Z_n\\) be the set of equivalence classes of the integers mod \\(n\\) and \\(a,b,c \\in \\mathbb Z_n\\).\n\nAddition and multiplication are commutative:\n\n\\[\n\\begin{aligned}\na+b &\\equiv b+a \\pmod n \\\\\nab &\\equiv ba \\pmod n.\n\\end{aligned}\n\\]\n\nAddition and multiplication are associative:\n\n\\[\n\\begin{aligned}\n(a+b)+c &\\equiv a+(b+c)\\pmod n \\\\\n(ab)c &\\equiv a(bc)\\pmod n.\n\\end{aligned}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#proposition-3.1.4.-continued",
+    "href": "classes/03/slides.html#proposition-3.1.4.-continued",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Proposition 3.1.4. Continued",
+    "text": "Proposition 3.1.4. Continued\n\nThere are both additive and multiplicative identities:\n\n\\[\n\\begin{aligned}\na+0 &\\equiv a \\pmod n \\\\\na\\cdot 1 &\\equiv a \\pmod n.\n\\end{aligned}\n\\]\n\nMultiplication distributes over addition:\n\n\\[\na(b+c)\\equiv ab+ac\\pmod n.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#proposition-3.1.4.-continued-more",
+    "href": "classes/03/slides.html#proposition-3.1.4.-continued-more",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Proposition 3.1.4. Continued More",
+    "text": "Proposition 3.1.4. Continued More\n\nFor every integer \\(a\\) there is an additive inverse \\(-a\\):\n\n\\[\na+(-a)\\equiv 0\\pmod n.\n\\]\n\nLet \\(a\\) be a nonzero integer. Then \\(\\gcd(a,n)=1\\) if and only if there exists a multiplicative inverse \\(b\\) for \\(a\\pmod n\\); that is, a nonzero integer \\(b\\) such that\n\n\\[\nab\\equiv 1\\pmod n.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/slides.html#polygonal-symmeteties-revisted",
+    "href": "classes/03/slides.html#polygonal-symmeteties-revisted",
+    "title": "Slides: Integer Equivalence Classes and Symmetries",
+    "section": "Polygonal Symmeteties Revisted",
+    "text": "Polygonal Symmeteties Revisted\n\\[\n\\begin{array}{c|c|c|c|c|c|c}\n& e & r_1 & r_2 & f_A & f_B & f_C  \\\\\n\\hline\ne &  &  &  &  &  &  &  \\\\\n\\hline\nr_1 &  &  &  &  &  &  &  \\\\\n\\hline\nr_2 &  &  &  &  &  &  &  \\\\\n\\hline\nf_A &  &  &  &  &  &  &  \\\\\n\\hline\nf_B &  &  &  &  &  &  &  \\\\\n\\hline\nf_C &  &  &  &  &  &  &  \\\\\n\\end{array}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integer Equivalence Classes and Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/03/worksheet.html",
+    "href": "classes/03/worksheet.html",
+    "title": "Polyigan Symmetries",
+    "section": "",
+    "text": "You have a few differnt object in front of you. Create a list of symmetries of the square and one additional item. How do you know your list is complete or your list does not have duplicates. You will need to think a little bit about how to name the symmetries to keep track of them.\nThen as a class we will try to create a composition table for the symmetries of the square. I’m going to call the set of symmetries of the square, \\(D_4\\). Each group is responisble for three rows of the composition table.",
+    "crumbs": [
+      "Class Material",
+      "Polyigan Symmetries"
+    ]
+  },
+  {
+    "objectID": "classes/02/worksheet.html",
+    "href": "classes/02/worksheet.html",
+    "title": "Equivalence Relations",
+    "section": "",
+    "text": "Define a relation \\(\\sim\\) on \\(\\mathbb{N}\\) via \\(a \\sim b\\) if and only if \\(a-b=3k\\), for some \\(k \\in \\mathbb{Z}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\{1,2,3,4,5,6,7\\}\\) via \\(a \\sim b\\) if and only if \\(a\\) and \\(b\\) are both even or both odd. Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(|a|=|b|\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nDefine a relation \\(\\sim\\) on \\(\\mathbb{Z}\\) via \\(a \\sim b\\) if and only if \\(ab&gt;0\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(T \\sim U\\) if and only if \\(T \\subseteq U\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(x \\ge y\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{R}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(x \\sim y\\) in \\(\\mathbb{R}\\) if \\(|x-y| \\le 4\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?\nLet \\(S\\) be the set of all subsets of \\(\\mathbb{Z}\\). Define a relation \\(\\sim\\) on \\(S\\) via \\(m \\sim n\\) in \\(\\mathbb{Z}\\) if \\(m \\equiv n \\pmod{6}\\). Is \\(\\sim\\) an equivalence relation? If so, what are the equivalence classes?",
+    "crumbs": [
+      "Class Material",
+      "Equivalence Relations"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#class-session-goals",
+    "href": "classes/07/slides.html#class-session-goals",
+    "title": "Slides: More Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups"
+  },
+  {
+    "objectID": "classes/07/slides.html#definition-of-a-group",
+    "href": "classes/07/slides.html#definition-of-a-group",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\)."
+  },
+  {
+    "objectID": "classes/07/slides.html#definition-of-a-subgroup",
+    "href": "classes/07/slides.html#definition-of-a-subgroup",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group."
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/07/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]"
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "href": "classes/07/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
+    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-u9",
+    "href": "classes/07/slides.html#subgroups-of-u9",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\)",
+    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups."
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-u9-lattice-diagram",
+    "href": "classes/07/slides.html#subgroups-of-u9-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
+    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/07/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\)."
+  },
+  {
+    "objectID": "classes/07/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "href": "classes/07/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
+    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E"
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/07/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/07/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "href": "classes/07/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "title": "Slides: More Groups",
+    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
+    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\)."
+  },
+  {
+    "objectID": "classes/07/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/07/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/07/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/07/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/07/slides.html#proof-of-second-subgroup-test",
+    "href": "classes/07/slides.html#proof-of-second-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proof of Second Subgroup Test",
+    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)"
+  },
+  {
+    "objectID": "classes/07/slides.html#example-of-using-the-subgroup-test",
+    "href": "classes/07/slides.html#example-of-using-the-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Example of using the Subgroup Test",
+    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/07/slides.html#quaternion-group",
+    "href": "classes/07/slides.html#quaternion-group",
+    "title": "Slides: More Groups",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)"
+  },
+  {
+    "objectID": "classes/07/slides.html#symmetries-of-the-square",
+    "href": "classes/07/slides.html#symmetries-of-the-square",
+    "title": "Slides: More Groups",
+    "section": "Symmetries of the Square",
+    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines."
+  },
+  {
+    "objectID": "classes/07/slides.html#u20",
+    "href": "classes/07/slides.html#u20",
+    "title": "Slides: More Groups",
+    "section": "\\(U(20)\\)",
+    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]"
+  },
+  {
+    "objectID": "classes/07/slides.html#group-activty",
+    "href": "classes/07/slides.html#group-activty",
+    "title": "Slides: More Groups",
+    "section": "Group Activty",
+    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups."
+  },
+  {
+    "objectID": "classes/08/slides.html#class-session-goals",
+    "href": "classes/08/slides.html#class-session-goals",
+    "title": "Slides: More Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups"
+  },
+  {
+    "objectID": "classes/08/slides.html#definition-of-a-group",
+    "href": "classes/08/slides.html#definition-of-a-group",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\)."
+  },
+  {
+    "objectID": "classes/08/slides.html#definition-of-a-subgroup",
+    "href": "classes/08/slides.html#definition-of-a-subgroup",
+    "title": "Slides: More Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group."
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/08/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]"
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "href": "classes/08/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
+    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-u9",
+    "href": "classes/08/slides.html#subgroups-of-u9",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\)",
+    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups."
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-u9-lattice-diagram",
+    "href": "classes/08/slides.html#subgroups-of-u9-lattice-diagram",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
+    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E"
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/08/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\)."
+  },
+  {
+    "objectID": "classes/08/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "href": "classes/08/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "title": "Slides: More Groups",
+    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
+    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E"
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/08/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: More Groups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/08/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "href": "classes/08/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "title": "Slides: More Groups",
+    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
+    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\)."
+  },
+  {
+    "objectID": "classes/08/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/08/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/08/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/08/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]"
+  },
+  {
+    "objectID": "classes/08/slides.html#proof-of-second-subgroup-test",
+    "href": "classes/08/slides.html#proof-of-second-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Proof of Second Subgroup Test",
+    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)"
+  },
+  {
+    "objectID": "classes/08/slides.html#example-of-using-the-subgroup-test",
+    "href": "classes/08/slides.html#example-of-using-the-subgroup-test",
+    "title": "Slides: More Groups",
+    "section": "Example of using the Subgroup Test",
+    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\)."
+  },
+  {
+    "objectID": "classes/08/slides.html#quaternion-group",
+    "href": "classes/08/slides.html#quaternion-group",
+    "title": "Slides: More Groups",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)"
+  },
+  {
+    "objectID": "classes/08/slides.html#symmetries-of-the-square",
+    "href": "classes/08/slides.html#symmetries-of-the-square",
+    "title": "Slides: More Groups",
+    "section": "Symmetries of the Square",
+    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines."
+  },
+  {
+    "objectID": "classes/08/slides.html#u20",
+    "href": "classes/08/slides.html#u20",
+    "title": "Slides: More Groups",
+    "section": "\\(U(20)\\)",
+    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]"
+  },
+  {
+    "objectID": "classes/08/slides.html#group-activty",
+    "href": "classes/08/slides.html#group-activty",
+    "title": "Slides: More Groups",
+    "section": "Group Activty",
+    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups."
   },
   {
     "objectID": "classes/01/slides.html#welcome-to-math-393",
