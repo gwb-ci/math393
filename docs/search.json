@@ -1642,7 +1642,7 @@
     "href": "classes/07/slides.html#quick-activty",
     "title": "Slides: Cyclic Groups",
     "section": "Quick Activty",
-    "text": "Quick Activty\nFor each element of \\(\\mathbb Z_{12}\\), classify each element as a generator of the cyclic group or not at generator.\nWhat to the generators have in common? What do the non-generators have in common?",
+    "text": "Quick Activty\nFor each element of \\(\\mathbb Z_{12}\\), classify each element as a generator of the cyclic group or not at generator. For the elements that do not generate \\(\\mathbb Z_{12}\\), what is their order?\nWhat to the generators have in common? What do the non-generators have in common?",
     "crumbs": [
       "Class Material",
       "Slides: Cyclic Groups"

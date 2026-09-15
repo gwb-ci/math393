@@ -157,7 +157,7 @@ flowchart TB
 
 ## Quick Activty
 
-For each element of $\mathbb Z_{12}$, classify each element as a generator of the cyclic group or not at generator.
+For each element of $\mathbb Z_{12}$, classify each element as a generator of the cyclic group or not at generator.  For the elements that do not generate $\mathbb Z_{12}$, what is their order?
 
 What to the generators have in common?  What do the non-generators have in common?
 
