@@ -370,11 +370,403 @@ $$\{ 1,3,7,9,11,13,17,19\}$$
 
 ---
 
-## Group Activty
+## Group Activity
 
-1. Choose either the Quaternions, the symmetries of the square, or $U(8)$
-2. Construct the Multiplication Table
-3. Find the Subgroups of the chosen group
-4. Create a lattice represendtion of the group and its subsgroups.
+1. Choose one of the following groups:
+   - $Q_8$ (medium)
+   - the symmetries of the square, $D_4$ (hard)
+   - $U(20)$ (easy)
+
+2. Construct the multiplication table for your group.
+
+3. Find all subgroups of your group.
+
+4. Create a lattice representation of the group and its subgroups.
+
+---
+
+## Cayley Table for $Q_8$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+<colgroup>
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+</colgroup>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\cdot$</th>
+<th style="border: 1px solid black; text-align: right;">$I$</th>
+<th style="border: 1px solid black; text-align: right;">$-I$</th>
+<th style="border: 1px solid black; text-align: right;">$A$</th>
+<th style="border: 1px solid black; text-align: right;">$-A$</th>
+<th style="border: 1px solid black; text-align: right;">$B$</th>
+<th style="border: 1px solid black; text-align: right;">$-B$</th>
+<th style="border: 1px solid black; text-align: right;">$C$</th>
+<th style="border: 1px solid black; text-align: right;">$-C$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$I$</th>
+<td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-C$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$-I$</th>
+<td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$C$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$A$</th>
+<td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$B$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$-A$</th>
+<td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$-B$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$B$</th>
+<td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-A$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$-B$</th>
+<td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$A$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$C$</th>
+<td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-I$</td><td style="border: 1px solid black; text-align: right;">$I$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$-C$</th>
+<td style="border: 1px solid black; text-align: right;">$-C$</td><td style="border: 1px solid black; text-align: right;">$C$</td><td style="border: 1px solid black; text-align: right;">$-B$</td><td style="border: 1px solid black; text-align: right;">$B$</td><td style="border: 1px solid black; text-align: right;">$A$</td><td style="border: 1px solid black; text-align: right;">$-A$</td><td style="border: 1px solid black; text-align: right;">$I$</td><td style="border: 1px solid black; text-align: right;">$-I$</td>
+</tr>
+</table>
+
+---
+
+## Subgroup Lattice for $Q_8$
+
+```{mermaid}
+flowchart TB
+    Q["Q<sub>8</sub>"]
+    A["{I, -I, A, -A}"]
+    B["{I, -I, B, -B}"]
+    C["{I, -I, C, -C}"]
+    M["{I, -I}"]
+    E["{I}"]
+
+    Q --- A
+    Q --- B
+    Q --- C
+    A --- M
+    B --- M
+    C --- M
+    M --- E
+```
+
+---
+
+## Cayley Table for the Symmetries of the Square
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+<colgroup>
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+</colgroup>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\circ$</th>
+<th style="border: 1px solid black; text-align: right;">$e$</th>
+<th style="border: 1px solid black; text-align: right;">$r_1$</th>
+<th style="border: 1px solid black; text-align: right;">$r_2$</th>
+<th style="border: 1px solid black; text-align: right;">$r_3$</th>
+<th style="border: 1px solid black; text-align: right;">$f_v$</th>
+<th style="border: 1px solid black; text-align: right;">$f_h$</th>
+<th style="border: 1px solid black; text-align: right;">$f_{d_1}$</th>
+<th style="border: 1px solid black; text-align: right;">$f_{d_2}$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$e$</th>
+<td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$r_1$</th>
+<td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$r_2$</th>
+<td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$r_3$</th>
+<td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$f_v$</th>
+<td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$f_h$</th>
+<td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$f_{d_1}$</th>
+<td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$e$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$f_{d_2}$</th>
+<td style="border: 1px solid black; text-align: right;">$f_{d_2}$</td><td style="border: 1px solid black; text-align: right;">$f_v$</td><td style="border: 1px solid black; text-align: right;">$f_{d_1}$</td><td style="border: 1px solid black; text-align: right;">$f_h$</td><td style="border: 1px solid black; text-align: right;">$r_1$</td><td style="border: 1px solid black; text-align: right;">$r_3$</td><td style="border: 1px solid black; text-align: right;">$r_2$</td><td style="border: 1px solid black; text-align: right;">$e$</td>
+</tr>
+</table>
+
+---
+
+## Subgroup Lattice for the Symmetries of the Square
+
+```{mermaid}
+flowchart TB
+    D4["D<sub>4</sub>"]
+
+    R["{e, r<sub>1</sub>, r<sub>2</sub>, r<sub>3</sub>}"]
+    VH["{e, r<sub>2</sub>, f<sub>v</sub>, f<sub>h</sub>}"]
+    DD["{e, r<sub>2</sub>, f<sub>d1</sub>, f<sub>d2</sub>}"]
+
+    R2["{e, r<sub>2</sub>}"]
+    FV["{e, f<sub>v</sub>}"]
+    FH["{e, f<sub>h</sub>}"]
+    FD1["{e, f<sub>d1</sub>}"]
+    FD2["{e, f<sub>d2</sub>}"]
+
+    E["{e}"]
+
+    D4 --- R
+    D4 --- VH
+    D4 --- DD
+
+    R --- R2
+    VH --- R2
+    DD --- R2
+
+    VH --- FV
+    VH --- FH
+    DD --- FD1
+    DD --- FD2
+
+    R2 --- E
+    FV --- E
+    FH --- E
+    FD1 --- E
+    FD2 --- E
+```
+
+---
+
+## Cayley Table for $U(20)$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 630px;">
+<colgroup>
+<col style="width: 70px;"><col style="width: 70px;"><col style="width: 70px;">
+<col style="width: 70px;"><col style="width: 70px;"><col style="width: 70px;">
+<col style="width: 70px;"><col style="width: 70px;"><col style="width: 70px;">
+</colgroup>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\cdot$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$3$</th>
+<th style="border: 1px solid black; text-align: right;">$7$</th>
+<th style="border: 1px solid black; text-align: right;">$9$</th>
+<th style="border: 1px solid black; text-align: right;">$11$</th>
+<th style="border: 1px solid black; text-align: right;">$13$</th>
+<th style="border: 1px solid black; text-align: right;">$17$</th>
+<th style="border: 1px solid black; text-align: right;">$19$</th>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$19$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$3$</th>
+<td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$17$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$7$</th>
+<td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$13$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$9$</th>
+<td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$11$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$11$</th>
+<td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$9$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$13$</th>
+<td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$7$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$17$</th>
+<td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$3$</td>
+</tr>
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$19$</th>
+<td style="border: 1px solid black; text-align: right;">$19$</td><td style="border: 1px solid black; text-align: right;">$17$</td><td style="border: 1px solid black; text-align: right;">$13$</td><td style="border: 1px solid black; text-align: right;">$11$</td><td style="border: 1px solid black; text-align: right;">$9$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+</table>
+
+---
+
+## Subgroup Lattice for $U(20)$
+
+```{mermaid}
+flowchart TB
+    U["U(20)"]
+
+    H1["{1, 3, 7, 9}"]
+    H2["{1, 9, 13, 17}"]
+    H3["{1, 9, 11, 19}"]
+
+    K9["{1, 9}"]
+    K11["{1, 11}"]
+    K19["{1, 19}"]
+
+    E["{1}"]
+
+    U --- H1
+    U --- H2
+    U --- H3
+
+    H1 --- K9
+    H2 --- K9
+
+    H3 --- K9
+    H3 --- K11
+    H3 --- K19
+
+    K9 --- E
+    K11 --- E
+    K19 --- E
+```
+
+---
 
 
+## Cayley Table for $\mathbb{Z}_8$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+
+<colgroup>
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+<col style="width: 80px;"><col style="width: 80px;"><col style="width: 80px;">
+
+</colgroup>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$+$</th>
+
+<th style="border: 1px solid black; text-align: right;">$0$</th>
+
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+
+<th style="border: 1px solid black; text-align: right;">$2$</th>
+
+<th style="border: 1px solid black; text-align: right;">$3$</th>
+
+<th style="border: 1px solid black; text-align: right;">$4$</th>
+
+<th style="border: 1px solid black; text-align: right;">$5$</th>
+
+<th style="border: 1px solid black; text-align: right;">$6$</th>
+
+<th style="border: 1px solid black; text-align: right;">$7$</th>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$0$</th>
+
+<td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+
+<td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$2$</th>
+
+<td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$3$</th>
+
+<td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$4$</th>
+
+<td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$5$</th>
+
+<td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$6$</th>
+
+<td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td>
+
+</tr>
+
+<tr>
+
+<th style="border: 1px solid black; height: 45px; text-align: right;">$7$</th>
+
+<td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td>
+
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for $\mathbb{Z}_8$
+
+```{mermaid}
+flowchart TB
+
+    Z["ℤ<sub>8</sub> = {0, 1, 2, 3, 4, 5, 6, 7}"]
+
+    H4["⟨2⟩ = {0, 2, 4, 6}"]
+
+    H2["⟨4⟩ = {0, 4}"]
+
+    E["{0}"]
+
+    Z --- H4
+
+    H4 --- H2
+
+    H2 --- E
+```    

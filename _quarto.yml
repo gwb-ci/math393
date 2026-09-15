@@ -20,6 +20,8 @@ website:
           - file: classes/04/slides.qmd
           - file: classes/05/slides.qmd
           - file: classes/06/slides.qmd
+          - file: classes/07/slides.qmd
+          - file: classes/08/slides.qmd
   
 
 format:
