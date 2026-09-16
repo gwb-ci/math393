@@ -1,5 +1,5 @@
 ---
-title: "Slides: Permutation Groups"
+title: "Slides: More Groups"
 
 format:
   revealjs:

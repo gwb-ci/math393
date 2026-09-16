@@ -1,5 +1,5 @@
 ---
-title: "Slides: Multiplicative Group of Complex Numbers"
+title: "Slides: More Groups"
 
 format:
   revealjs:
