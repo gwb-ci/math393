@@ -49,332 +49,779 @@ A subgroup uses the **same operation** as the original group.
 
 
 
-## Subgroups of $\mathbb Z_6$
+## Complex Numbers and Operations
 
-Consider $\mathbb Z_6$ under addition.
-
-$\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.$
-
-Which subsets form subgroups?
-
-
+The complex numbers are defined as
 
 $$
-\{[0]\}
+\mathbb{C}=\{a+bi:a,b\in\mathbb{R}\},
+$$
+
+where $i^2=-1$. If $z=a+bi$, then $a$ is the **real part** of $z$ and $b$ is the **imaginary part** of $z$.
+
+If $z=a+bi$ and $w=c+di$, then
+
+$$
+z+w=(a+c)+(b+d)i.
+$$
+
+Multiplication is given by
+
+$$
+zw=(a+bi)(c+di)=(ac-bd)+(ad+bc)i.
+$$
+
+---
+
+## Multiplicative Inverses and Conjugates
+
+Every nonzero complex number $z=a+bi$ has a multiplicative inverse:
+
+$$
+z^{-1}=\frac{a-bi}{a^2+b^2}.
+$$
+
+The **complex conjugate** of $z=a+bi$ is
+
+$$
+\overline{z}=a-bi.
+$$
+
+The **absolute value** or **modulus** of $z=a+bi$ is $|z|=\sqrt{a^2+b^2}$.
+
+
+## Examples
+
+For example, if $z=2+3i$, then
+
+$$
+z^{-1}=\frac{2}{13}-\frac{3}{13}i,
+\qquad |z|=\sqrt{13},
+\qquad \overline{z}=2-3i.
+$$
+
+---
+
+## Polar representation of Complex Numbers
+
+Nonzero complex numbers can also be represented using **polar coordinates**.
+
+$z=a+bi=r(\cos\theta+i\sin\theta)$ where $a=r\cos\theta$ and $b=r\sin\theta$, and $r=|z|=\sqrt{a^2+b^2}$.
+
+
+Book abbreviates $r(\cos\theta+i\sin\theta)$ as $r\operatorname{cis}\theta$.
+
+We require $0\leq\theta<2\pi$.
+
+
+---
+
+## Activity: Find $z^{-1}$ in polar coordinates
+
+Find $z^{-1}$ for polar represenatation.  If $z=r (\cos \theta +i \sin \theta)$, what can you multiply it by to get 1?
+
+---
+
+## Proposition 4.2.5
+
+Let $z=r\operatorname{cis}\theta$ and $w=s\operatorname{cis}\phi$ be two nonzero complex numbers. Then
+
+$$
+zw=rs\operatorname{cis}(\theta+\phi).
 $$
 
 
+---
+
+## Example
+
+If
 
 $$
-\{[0],[3]\}
+z=3\operatorname{cis}\left(\frac{\pi}{3}\right)
+\qquad\text{and}\qquad
+w=2\operatorname{cis}\left(\frac{\pi}{6}\right),
 $$
 
-
-
-$$
-\{[0],[2],[4]\}
-$$
-
+then
 
 $$
-\mathbb Z_6
+zw
+=6\operatorname{cis}\left(\frac{\pi}{2}\right)
+=6i.
 $$
+
+---
+
+## DeMoivre's Theorem (4.2.7)
+
+Let $z=r\operatorname{cis}\theta$ be a nonzero complex number. Then
+
+$$
+[r\operatorname{cis}\theta]^n
+=r^n\operatorname{cis}(n\theta)
+$$
+
+for $n=1,2,\ldots$.
+
+---
+
+## Example
+
+If $z=1+i$, then
+
+$$
+z=\sqrt{2}\operatorname{cis}\left(\frac{\pi}{4}\right).
+$$
+
+Thus,
+
+$$
+z^{10}
+=(\sqrt{2})^{10}\operatorname{cis}\left(\frac{5\pi}{2}\right)
+=32\operatorname{cis}\left(\frac{\pi}{2}\right)
+=32i.
+$$
+
+---
+
+## Proposition 4.2.9
+
+
+The **circle group** is
+
+$\mathbb{T}=\{z\in\mathbb{C}:|z|=1\}.$
+
+is a subgroup of $\mathbb{C}^*$.
+
+---
+
+## Subgroups of $\mathbb{T}$
+
+Consider the complex numbers satisfying $z^4=1$.
+
+. . . 
+
+$H=\{1,-1,i,-i\}$ is a finite subgroup of the circle group.
+
 
 
 
 ---
 
+## $n^{\text{th}}$ Roots of Unity
 
-## Subgroups of $\mathbb{Z}_6$ Lattice Diagram
+The complex numbers satisfying the equation
 
-The subgroups of $\mathbb{Z}_6$ are
+$$
+z^n=1
+$$
 
-$\mathbb{Z}_6 = \langle 1 \rangle$, $\langle 2 \rangle = \{0,2,4\}$, 
-$\langle 3 \rangle = \{0,3\}$, and $\{0\}$.
+are called the **$n$th roots of unity**.
+
+They lie on the unit circle and are equally spaced around the circle.
+
+A generator for the group of the $n$th roots of unity is called a **primitive $n$th root of unity**.
+
+---
+
+## Theorem 4.2.10
+
+If $z^n=1$, then the $n$th roots of unity are
+
+$$
+z=\operatorname{cis}\left(\frac{2k\pi}{n}\right),
+$$
+
+where $k=0,1,\ldots,n-1$.
+
+Furthermore, the $n$th roots of unity form a **cyclic subgroup** of $\mathbb{T}$ of order $n$.
+
+
+## Proof
+
+By DeMoivre's Theorem,
+
+$$
+z^n
+=\operatorname{cis}\left(n\frac{2k\pi}{n}\right)
+=\operatorname{cis}(2k\pi)
+=1.
+$$
+
+---
+
+## Example 9th roots of unity
+
+The $9$th roots of unity satisfy
+
+$$
+z^9=1.
+$$
+
+By Theorem 4.2.10,
+
+$$
+z_k=\operatorname{cis}\left(\frac{2k\pi}{9}\right),
+\qquad k=0,1,\ldots,8.
+$$
+
+Thus the nine roots are
+
+$$
+1,\;
+\operatorname{cis}\left(\frac{2\pi}{9}\right),\;
+\operatorname{cis}\left(\frac{4\pi}{9}\right),\;
+\operatorname{cis}\left(\frac{6\pi}{9}\right),\;
+\ldots,\;
+\operatorname{cis}\left(\frac{16\pi}{9}\right).
+$$
+
+They form a cyclic subgroup of $\mathbb{T}$ of order $9$.
+
+For example,
+
+$$
+\omega=\operatorname{cis}\left(\frac{2\pi}{9}\right)
+$$
+
+is a primitive $9$th root of unity, and
+
+$$
+\langle\omega\rangle
+=\{1,\omega,\omega^2,\ldots,\omega^8\}.
+$$
+
+---
+
+## Activity 6th roots of unity
+
+Let $\omega=\operatorname{cis}\left(\frac{2\pi}{6}\right)$
+
+- Contruct the Cayley 
+- Indentify the primitive 6th roots of unity
+- Construct the Subgroup lattice of this group
+
+
+
+---
+
+## Cayley Table for the 6th roots of unity
+
+Let $\omega=\operatorname{cis}\left(\frac{2\pi}{6}\right)$.
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+
+<colgroup>
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\cdot$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^2$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^3$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^4$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^5$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^2$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^3$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^4$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^5$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for the 6th roots of unity
 
 ```{mermaid}
 flowchart TB
-    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
-    H2["⟨2⟩ = {0,2,4}"]
-    H3["⟨3⟩ = {0,3}"]
-    E["{0}"]
 
-    Z6 --- H2
-    Z6 --- H3
-    H2 --- E
-    H3 --- E
-```
+    G["⟨ω⟩ = {1, ω, ω², ω³, ω⁴, ω⁵}"]
 
+    H3["⟨ω²⟩ = {1, ω², ω⁴}"]
 
----
+    H2["⟨ω³⟩ = {1, ω³}"]
 
-
-## Subgroups of $U(9)$
-
-The group of units modulo $9$ is
-
-$U(9)=\{1,2,4,5,7,8\}$.
-
-The subgroups of $U(9)$ are
-
-$\{1\}$,
-
-$\langle 8\rangle=\{1,8\}$,
-
-$\langle 4\rangle=\{1,4,7\}$,
-
-and
-
-$U(9)=\{1,2,4,5,7,8\}$.
-
-Thus, $U(9)$ has four subgroups.
-
----
-
-## Subgroups of $U(9)$ Lattice Diagram
-
-```{mermaid}
-flowchart TB
-    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
-    H2["⟨8⟩ = {1, 8}"]
-    H3["⟨4⟩ = {1, 4, 7}"]
     E["{1}"]
 
-    U9 --- H2
-    U9 --- H3
+    G --- H3
+
+    G --- H2
+
+    H3 --- E
 
     H2 --- E
+```
+
+---
+
+## Cayley Table for $U(9)$
+
+$U(9)=\{1,2,4,5,7,8\}$ under multiplication modulo $9$.
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+
+<colgroup>
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\cdot$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$2$</th>
+<th style="border: 1px solid black; text-align: right;">$4$</th>
+<th style="border: 1px solid black; text-align: right;">$5$</th>
+<th style="border: 1px solid black; text-align: right;">$7$</th>
+<th style="border: 1px solid black; text-align: right;">$8$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$2$</th>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$4$</th>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$5$</th>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$7$</th>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$8$</th>
+<td style="border: 1px solid black; text-align: right;">$8$</td>
+<td style="border: 1px solid black; text-align: right;">$7$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for $U(9)$
+
+```{mermaid}
+flowchart TB
+
+    G["U(9) = {1, 2, 4, 5, 7, 8} = ⟨2⟩"]
+
+    H3["⟨4⟩ = {1, 4, 7}"]
+
+    H2["⟨8⟩ = {1, 8}"]
+
+    E["{1}"]
+
+    G --- H3
+
+    G --- H2
+
+    H3 --- E
+
+    H2 --- E
+```
+
+---
+
+## Cayley Table for $\mathbb Z_6$
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
+
+<colgroup>
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;"><col style="width: 102px;"><col style="width: 102px;">
+<col style="width: 102px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$+$</th>
+<th style="border: 1px solid black; text-align: right;">$0$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$2$</th>
+<th style="border: 1px solid black; text-align: right;">$3$</th>
+<th style="border: 1px solid black; text-align: right;">$4$</th>
+<th style="border: 1px solid black; text-align: right;">$5$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$0$</th>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$2$</th>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$3$</th>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$4$</th>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$5$</th>
+<td style="border: 1px solid black; text-align: right;">$5$</td>
+<td style="border: 1px solid black; text-align: right;">$0$</td>
+<td style="border: 1px solid black; text-align: right;">$1$</td>
+<td style="border: 1px solid black; text-align: right;">$2$</td>
+<td style="border: 1px solid black; text-align: right;">$3$</td>
+<td style="border: 1px solid black; text-align: right;">$4$</td>
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for $\mathbb Z_6$
+
+```{mermaid}
+flowchart TB
+
+    G["ℤ<sub>6</sub> = {0, 1, 2, 3, 4, 5}"]
+
+    H3["⟨2⟩ = {0, 2, 4}"]
+
+    H2["⟨3⟩ = {0, 3}"]
+
+    E["{0}"]
+
+    G --- H3
+
+    G --- H2
+
+    H3 --- E
+
+    H2 --- E
+```
+
+---
+
+
+## Cayley Table for the 9th roots of unity
+
+Let $\omega=\operatorname{cis}\left(\frac{2\pi}{9}\right)$.
+
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.68em;">
+
+<colgroup>
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;">
+</colgroup>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\cdot$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^2$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^3$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^4$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^5$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^6$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^7$</th>
+<th style="border: 1px solid black; text-align: right;">$\omega^8$</th>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^2$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^3$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^4$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^5$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^6$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^7$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^7$</td><td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$\omega^8$</th>
+<td style="border: 1px solid black; text-align: right;">$\omega^8$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$\omega$</td><td style="border: 1px solid black; text-align: right;">$\omega^2$</td><td style="border: 1px solid black; text-align: right;">$\omega^3$</td><td style="border: 1px solid black; text-align: right;">$\omega^4$</td><td style="border: 1px solid black; text-align: right;">$\omega^5$</td><td style="border: 1px solid black; text-align: right;">$\omega^6$</td><td style="border: 1px solid black; text-align: right;">$\omega^7$</td>
+</tr>
+
+</table>
+
+---
+
+## Subgroup Lattice for the 9th roots of unity
+
+```{mermaid}
+flowchart TB
+
+    Z["⟨ω⟩ = {1, ω, ω², ω³, ω⁴, ω⁵, ω⁶, ω⁷, ω⁸}"]
+
+    H3["⟨ω³⟩ = {1, ω³, ω⁶}"]
+
+    E["{1}"]
+
+    Z --- H3
+
     H3 --- E
 ```
 
 ---
 
-## Subgroups of the Symmetry Group of an Equilateral Triangle
+## Cayley Table for $\mathbb{Z}_9$
 
-Let $D_3=\{e,r_1,r_2,f_a,f_b,f_c\}$.
+<table style="border-collapse: collapse; table-layout: fixed; width: 720px; font-size: 0.72em;">
 
-Here $r_1,r_2$ are the nonidentity rotations and
-$f_a,f_b,f_c$ are the reflections.
+<colgroup>
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;"><col style="width: 72px;"><col style="width: 72px;">
+<col style="width: 72px;">
+</colgroup>
 
-The subgroups are: $\{e\}$
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$+$</th>
+<th style="border: 1px solid black; text-align: right;">$0$</th>
+<th style="border: 1px solid black; text-align: right;">$1$</th>
+<th style="border: 1px solid black; text-align: right;">$2$</th>
+<th style="border: 1px solid black; text-align: right;">$3$</th>
+<th style="border: 1px solid black; text-align: right;">$4$</th>
+<th style="border: 1px solid black; text-align: right;">$5$</th>
+<th style="border: 1px solid black; text-align: right;">$6$</th>
+<th style="border: 1px solid black; text-align: right;">$7$</th>
+<th style="border: 1px solid black; text-align: right;">$8$</th>
+</tr>
 
-$$
-\{e,f_a\},
-\qquad
-\{e,f_b\},
-\qquad
-\{e,f_c\},
-$$
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$0$</th>
+<td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td>
+</tr>
 
-$\{e,r_1,r_2\}$, and $D_3$.
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$1$</th>
+<td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td>
+</tr>
 
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$2$</th>
+<td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$3$</th>
+<td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$4$</th>
+<td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$5$</th>
+<td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$6$</th>
+<td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$7$</th>
+<td style="border: 1px solid black; text-align: right;">$7$</td><td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td>
+</tr>
+
+<tr>
+<th style="border: 1px solid black; height: 45px; text-align: right;">$8$</th>
+<td style="border: 1px solid black; text-align: right;">$8$</td><td style="border: 1px solid black; text-align: right;">$0$</td><td style="border: 1px solid black; text-align: right;">$1$</td><td style="border: 1px solid black; text-align: right;">$2$</td><td style="border: 1px solid black; text-align: right;">$3$</td><td style="border: 1px solid black; text-align: right;">$4$</td><td style="border: 1px solid black; text-align: right;">$5$</td><td style="border: 1px solid black; text-align: right;">$6$</td><td style="border: 1px solid black; text-align: right;">$7$</td>
+</tr>
+
+</table>
 
 ---
 
-## Group Lattice for the Symmetries of the Equilateral Triangle
+## Subgroup Lattice for $\mathbb{Z}_9$
 
 ```{mermaid}
 flowchart TB
-    D3["D<sub>3</sub>"]
-    R["{e, r<sub>1</sub>, r<sub>2</sub>}"]
-    Fa["{e, f<sub>a</sub>}"]
-    Fb["{e, f<sub>b</sub>}"]
-    Fc["{e, f<sub>c</sub>}"]
-    E["{e}"]
 
-    D3 --- R
-    D3 --- Fa
-    D3 --- Fb
-    D3 --- Fc
+    Z["ℤ<sub>9</sub> = {0, 1, 2, 3, 4, 5, 6, 7, 8}"]
 
-    R --- E
-    Fa --- E
-    Fb --- E
-    Fc --- E
+    H3["⟨3⟩ = {0, 3, 6}"]
+
+    E["{0}"]
+
+    Z --- H3
+
+    H3 --- E
 ```
 
 ---
 
+## Consider a function
 
-## Subgroups of $\mathbb Z$
-
-Consider $\mathbb Z$ under addition.
-
-For $n=0,1,2,\ldots$, define $n\mathbb Z=\{nk:k\in\mathbb Z\}$.
-
-Examples:
-
-$$
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-$$
-
-$$
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-$$
-
-
-For every $n\geq 0$, $n\mathbb Z \leq   \mathbb Z$.
-
+Suppose we define a function $f$ from the 9th roots of unity to $\mathbb Z_9$ by $f(\omega)=1$.
 
 ---
-
-
-## A Portion of the Subgroup Lattice of $\mathbb{Z}$
-
-Every subgroup of $\mathbb{Z}$ is of the form $n\mathbb{Z}$ for some nonnegative integer $n$.
-
-```{mermaid}
-flowchart TB
-    Z["Z"]
-    Z2["2Z"]
-    Z3["3Z"]
-    Z5["5Z"]
-    Z6["6Z"]
-    Z10["10Z"]
-    Z15["15Z"]
-    Z30["30Z"]
-
-    Z --- Z2
-    Z --- Z3
-    Z --- Z5
-
-    Z2 --- Z6
-    Z2 --- Z10
-
-    Z3 --- Z6
-    Z3 --- Z15
-
-    Z5 --- Z10
-    Z5 --- Z15
-
-    Z6 --- Z30
-    Z10 --- Z30
-    Z15 --- Z30
-```
-
-Here $m\mathbb{Z} \subseteq n\mathbb{Z}$ exactly when $n$ divides $m$.
-
-
----
-
-
-
-
-
-
-
-## Proposition 3.3.7 Subgroup Criterion
-
-A subset $H$ of $G$ is a subgroup if and only if it satisfies the following conditions.
-
-1. **Identity** The identity $e$ of $G$ is in $H$.
-
-
-
-2. **Closure** If $h_1,h_2\in H$, then
-
-   $$
-   h_1h_2\in H.
-   $$
-
-
-
-3. **Inverse** If $h\in H$, then
-
-   $$
-   h^{-1}\in H.
-   $$
-
-
-
-
-## Proposition 3.3.8 Another Subgroup Test
-
-Let $H$ be a subset of a group $G$.
-
-Then $H$ is a subgroup of $G$ if and only if
-
-$$
-H\neq\emptyset
-$$
-
-and whenever $g,h\in H$,
-
-$$
-gh^{-1}\in H.
-$$
-
-
-## Proof of Second Subgroup Test
-
-One condition gives us everything:
-
-- Identity: $gg^{-1}=e\in H$
-
-- Inverse: $eg^{-1}=g^{-1}\in H$
-
-- Closure:  $h_1(h_2^{-1})^{-1}=h_1h_2\in H$
-
----
-
-
-## Example of using the Subgroup Test
-
-
-
-Let $H=2\mathbb Z.$
-
-Since $0\in H$, we know $H\neq\emptyset$.
-
-If $a,b\in H$, then $a=2m,\qquad b=2n$ for some $m,n\in\mathbb Z$.
-
-Therefore $a-b=2m-2n=2(m-n)\in2\mathbb Z$.
-
-Hence $2\mathbb Z\leq\mathbb Z$.
-
----
-
-
-
-
-
-## Quaternion Group
-
-Let
-
-$I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$,
-
-$B=\begin{pmatrix}0&i\\i&0\end{pmatrix}$, $C=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$,
-
-$Q_8=\{I, -I, A, -A, B, -B, C, -C \}$,
-
-$Q_8 \leq M_2(\mathbb C)$
-
-
-
----
-
-
-
-## Symmetries of the Square
-
-Consider the symmetries of the square with four rotations $e, r_1, r_2, r_3$ and four flips $f_v$ flip across a vertical line, $f_h$ flip about a horizonal line, and $f_{d_1}$ and $f_{d_2}$ the flips about the diagonal lines.
-
-
----
-
-
-## $U(20)$
-
-$$\{ 1,3,7,9,11,13,17,19\}$$
-
----
-
-## Group Activty
-
-1. Choose either the Quaternions, the symmetries of the square, or $U(8)$
-2. Construct the Multiplication Table
-3. Find the Subgroups of the chosen group
-4. Create a lattice represendtion of the group and its subsgroups.
-
 

@@ -394,6 +394,435 @@
     ]
   },
   {
+    "objectID": "classes/01/slides.html#welcome-to-math-393",
+    "href": "classes/01/slides.html#welcome-to-math-393",
+    "title": "Slides: Course Introduction",
+    "section": "Welcome to Math 393",
+    "text": "Welcome to Math 393\nWelcome to Math 393 Abstract Algebra! I am Prof. Geoffrey Buhl, and I am you instructor for this semester. Buhl rhymes with fuel.\nClass Session Goals:\n\nMeet Classmates and work in small groups.\nLearn about this course and my expectations.\nWork on a first discrete mathematics problem.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#syllabus-activity",
+    "href": "classes/01/slides.html#syllabus-activity",
+    "title": "Slides: Course Introduction",
+    "section": "Syllabus Activity",
+    "text": "Syllabus Activity\n\nTake a few minutes to introduce yourselves and share what other courses you are taking this semester.\nAs a group, take 10–15 minutes to look over the syllabus and formulate four questions your group would like to ask about the course.\nAs a whole class, groups will ask questions and I will answer them.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#advice-for-students",
+    "href": "classes/01/slides.html#advice-for-students",
+    "title": "Slides: Course Introduction",
+    "section": "Advice for students",
+    "text": "Advice for students\n\nStart homework early, do it consistently, and redo missed or difficult problems since homework closely matches exam questions.\nAttend every lecture, pay attention, take clear notes, and ask questions to fully understand concepts and proofs.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#how-i-will-teach-this-course",
+    "href": "classes/01/slides.html#how-i-will-teach-this-course",
+    "title": "Slides: Course Introduction",
+    "section": "How I will teach this course",
+    "text": "How I will teach this course\nI cannot cover everything in the text or in a given chapter or section. I will focus on the most important concepts and proofs, and I will provide additional examples and exercises to help you understand the material. I will also provide additional resources and references for further study. Ask questions in class, during office hours, or via email. Part of you preparation for the class is to read the text beforehand.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#activity-symmetries",
+    "href": "classes/01/slides.html#activity-symmetries",
+    "title": "Slides: Course Introduction",
+    "section": "Activity: Symmetries",
+    "text": "Activity: Symmetries\n\nQR code for syllabus",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#activity-1",
+    "href": "classes/01/slides.html#activity-1",
+    "title": "Slides: Course Introduction",
+    "section": "Activity 1",
+    "text": "Activity 1\nTake a few moments to introduce yourselves to your group members.\nThen in small groups, work write out all the rotations of the square and pentagon. Then create a composition table for the rotations of the square and pentagon.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#activity-2",
+    "href": "classes/01/slides.html#activity-2",
+    "title": "Slides: Course Introduction",
+    "section": "Activity 2",
+    "text": "Activity 2\nTake a few moments to introduce yourselves to your group members.\nNow we will allow flips or reflections of the triangle and square. What are the addtional symmetries of the triangle and square? Then create a composition table for the symmetries of the triangle and square that includes both rotations and reflections.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#activity-3",
+    "href": "classes/01/slides.html#activity-3",
+    "title": "Slides: Course Introduction",
+    "section": "Activity 3",
+    "text": "Activity 3\nTake a few moments to introduce yourselves to your group members.\nWhat about a tetrahedron? You can rotate around a face/vertex or edge or vertex. List out the symmetries of the tetrahedron. Then create a composition table for the symmetries of the tetrahedron.\nWhat about a cube? You can rotate around a face, edge or vertex. List out the symmetries of the cube. Then create a composition table for the symmetries of the cube.\nwe’ll just label the faces of these objects because that is how the dice are labeled.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/01/slides.html#next-steps",
+    "href": "classes/01/slides.html#next-steps",
+    "title": "Slides: Course Introduction",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nLook over the “Welcome! Students - Start Here!” Module in CI Learn.\nLook at and work on the W1 (Week 1) Learner Survey Info Quiz on CI Learn.\nLook at and work on W1 Introduce yourself Assignment in CI Learn.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Course Introduction"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#class-session-goals",
+    "href": "classes/08/slides.html#class-session-goals",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#definition-of-a-group",
+    "href": "classes/08/slides.html#definition-of-a-group",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#definition-of-a-subgroup",
+    "href": "classes/08/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#complex-numbers-and-operations",
+    "href": "classes/08/slides.html#complex-numbers-and-operations",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Complex Numbers and Operations",
+    "text": "Complex Numbers and Operations\nThe complex numbers are defined as\n\\[\n\\mathbb{C}=\\{a+bi:a,b\\in\\mathbb{R}\\},\n\\]\nwhere \\(i^2=-1\\). If \\(z=a+bi\\), then \\(a\\) is the real part of \\(z\\) and \\(b\\) is the imaginary part of \\(z\\).\nIf \\(z=a+bi\\) and \\(w=c+di\\), then\n\\[\nz+w=(a+c)+(b+d)i.\n\\]\nMultiplication is given by\n\\[\nzw=(a+bi)(c+di)=(ac-bd)+(ad+bc)i.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#multiplicative-inverses-and-conjugates",
+    "href": "classes/08/slides.html#multiplicative-inverses-and-conjugates",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Multiplicative Inverses and Conjugates",
+    "text": "Multiplicative Inverses and Conjugates\nEvery nonzero complex number \\(z=a+bi\\) has a multiplicative inverse:\n\\[\nz^{-1}=\\frac{a-bi}{a^2+b^2}.\n\\]\nThe complex conjugate of \\(z=a+bi\\) is\n\\[\n\\overline{z}=a-bi.\n\\]\nThe absolute value or modulus of \\(z=a+bi\\) is \\(|z|=\\sqrt{a^2+b^2}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#examples",
+    "href": "classes/08/slides.html#examples",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Examples",
+    "text": "Examples\nFor example, if \\(z=2+3i\\), then\n\\[\nz^{-1}=\\frac{2}{13}-\\frac{3}{13}i,\n\\qquad |z|=\\sqrt{13},\n\\qquad \\overline{z}=2-3i.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#polar-representation-of-complex-numbers",
+    "href": "classes/08/slides.html#polar-representation-of-complex-numbers",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Polar representation of Complex Numbers",
+    "text": "Polar representation of Complex Numbers\nNonzero complex numbers can also be represented using polar coordinates.\n\\(z=a+bi=r(\\cos\\theta+i\\sin\\theta)\\) where \\(a=r\\cos\\theta\\) and \\(b=r\\sin\\theta\\), and \\(r=|z|=\\sqrt{a^2+b^2}\\).\nBook abbreviates \\(r(\\cos\\theta+i\\sin\\theta)\\) as \\(r\\operatorname{cis}\\theta\\).\nWe require \\(0\\leq\\theta&lt;2\\pi\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#activity-find-z-1-in-polar-coordinates",
+    "href": "classes/08/slides.html#activity-find-z-1-in-polar-coordinates",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Activity: Find z^{-1} in polar coordinates",
+    "text": "Activity: Find z^{-1} in polar coordinates\nFind \\(z^{-1}\\) for polar represenatation. If \\(z=r (\\cos \\theta +i \\sin \\theta)\\), what can you multiply it by to get 1?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#proposition-4.2.5",
+    "href": "classes/08/slides.html#proposition-4.2.5",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Proposition 4.2.5",
+    "text": "Proposition 4.2.5\nLet \\(z=r\\operatorname{cis}\\theta\\) and \\(w=s\\operatorname{cis}\\phi\\) be two nonzero complex numbers. Then\n\\[\nzw=rs\\operatorname{cis}(\\theta+\\phi).\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#example",
+    "href": "classes/08/slides.html#example",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Example",
+    "text": "Example\nIf\n\\[\nz=3\\operatorname{cis}\\left(\\frac{\\pi}{3}\\right)\n\\qquad\\text{and}\\qquad\nw=2\\operatorname{cis}\\left(\\frac{\\pi}{6}\\right),\n\\]\nthen\n\\[\nzw\n=6\\operatorname{cis}\\left(\\frac{\\pi}{2}\\right)\n=6i.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#demoivres-theorem-4.2.7",
+    "href": "classes/08/slides.html#demoivres-theorem-4.2.7",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "DeMoivre’s Theorem (4.2.7)",
+    "text": "DeMoivre’s Theorem (4.2.7)\nLet \\(z=r\\operatorname{cis}\\theta\\) be a nonzero complex number. Then\n\\[\n[r\\operatorname{cis}\\theta]^n\n=r^n\\operatorname{cis}(n\\theta)\n\\]\nfor \\(n=1,2,\\ldots\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#example-1",
+    "href": "classes/08/slides.html#example-1",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Example",
+    "text": "Example\nIf \\(z=1+i\\), then\n\\[\nz=\\sqrt{2}\\operatorname{cis}\\left(\\frac{\\pi}{4}\\right).\n\\]\nThus,\n\\[\nz^{10}\n=(\\sqrt{2})^{10}\\operatorname{cis}\\left(\\frac{5\\pi}{2}\\right)\n=32\\operatorname{cis}\\left(\\frac{\\pi}{2}\\right)\n=32i.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#circle-group",
+    "href": "classes/08/slides.html#circle-group",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Circle Group",
+    "text": "Circle Group\nThe multiplicative group of the complex numbers, \\(\\mathbb{C}^*\\), possesses many finite subgroups.\nThe circle group is\n\\[\n\\mathbb{T}=\\{z\\in\\mathbb{C}:|z|=1\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#proposition-4.2.9",
+    "href": "classes/08/slides.html#proposition-4.2.9",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Proposition 4.2.9",
+    "text": "Proposition 4.2.9\nThe circle group is a subgroup of \\(\\mathbb{C}^*\\).\nUse the subgroup criteria.\nThe circle group has many finite subgroups. For example, \\(H=\\{1,-1,i,-i\\}\\) is a subgroup of the circle group.\nThese are exactly the complex numbers satisfying \\(z^4=1\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#ntextth-roots-of-unity",
+    "href": "classes/08/slides.html#ntextth-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "\\(n^{\\text{th}}\\) Roots of Unity",
+    "text": "\\(n^{\\text{th}}\\) Roots of Unity\nThe complex numbers satisfying the equation\n\\[\nz^n=1\n\\]\nare called the \\(n\\)th roots of unity.\nThey lie on the unit circle and are equally spaced around the circle.\nA generator for the group of the \\(n\\)th roots of unity is called a primitive \\(n\\)th root of unity.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#theorem-4.2.10",
+    "href": "classes/08/slides.html#theorem-4.2.10",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Theorem 4.2.10",
+    "text": "Theorem 4.2.10\nIf \\(z^n=1\\), then the \\(n\\)th roots of unity are\n\\[\nz=\\operatorname{cis}\\left(\\frac{2k\\pi}{n}\\right),\n\\]\nwhere \\(k=0,1,\\ldots,n-1\\).\nFurthermore, the \\(n\\)th roots of unity form a cyclic subgroup of \\(\\mathbb{T}\\) of order \\(n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#proof",
+    "href": "classes/08/slides.html#proof",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Proof",
+    "text": "Proof\nBy DeMoivre’s Theorem,\n\\[\nz^n\n=\\operatorname{cis}\\left(n\\frac{2k\\pi}{n}\\right)\n=\\operatorname{cis}(2k\\pi)\n=1.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#example-9th-roots-of-unity",
+    "href": "classes/08/slides.html#example-9th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Example 9th roots of unity",
+    "text": "Example 9th roots of unity\nThe \\(9\\)th roots of unity satisfy\n\\[\nz^9=1.\n\\]\nBy Theorem 4.2.10,\n\\[\nz_k=\\operatorname{cis}\\left(\\frac{2k\\pi}{9}\\right),\n\\qquad k=0,1,\\ldots,8.\n\\]\nThus the nine roots are\n\\[\n1,\\;\n\\operatorname{cis}\\left(\\frac{2\\pi}{9}\\right),\\;\n\\operatorname{cis}\\left(\\frac{4\\pi}{9}\\right),\\;\n\\operatorname{cis}\\left(\\frac{6\\pi}{9}\\right),\\;\n\\ldots,\\;\n\\operatorname{cis}\\left(\\frac{16\\pi}{9}\\right).\n\\]\nThey form a cyclic subgroup of \\(\\mathbb{T}\\) of order \\(9\\).\nFor example,\n\\[\n\\omega=\\operatorname{cis}\\left(\\frac{2\\pi}{9}\\right)\n\\]\nis a primitive \\(9\\)th root of unity, and\n\\[\n\\langle\\omega\\rangle\n=\\{1,\\omega,\\omega^2,\\ldots,\\omega^8\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#activity-6th-roots-of-unity",
+    "href": "classes/08/slides.html#activity-6th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Activity 6th roots of unity",
+    "text": "Activity 6th roots of unity\nLet \\(\\omega=\\operatorname{cis}\\left(\\frac{2\\pi}{6}\\right)\\)\n\nContruct the Cayley\nIndentify the primitive 6th roots of unity\nConstruct the Subgroup lattice of this group",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#cayley-table-for-the-6th-roots-of-unity",
+    "href": "classes/08/slides.html#cayley-table-for-the-6th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Cayley Table for the 6th roots of unity",
+    "text": "Cayley Table for the 6th roots of unity\nLet \\(\\omega=\\operatorname{cis}\\left(\\frac{2\\pi}{6}\\right)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\n\n\\(\\omega\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(1\\)\n\n\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroup-lattice-for-the-6th-roots-of-unity",
+    "href": "classes/08/slides.html#subgroup-lattice-for-the-6th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Subgroup Lattice for the 6th roots of unity",
+    "text": "Subgroup Lattice for the 6th roots of unity\n\n\n\n\n\nflowchart TB\n\n    G[\"⟨ω⟩ = {1, ω, ω², ω³, ω⁴, ω⁵}\"]\n\n    H3[\"⟨ω²⟩ = {1, ω², ω⁴}\"]\n\n    H2[\"⟨ω³⟩ = {1, ω³}\"]\n\n    E[\"{1}\"]\n\n    G --- H3\n\n    G --- H2\n\n    H3 --- E\n\n    H2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#cayley-table-for-u9",
+    "href": "classes/08/slides.html#cayley-table-for-u9",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Cayley Table for \\(U(9)\\)",
+    "text": "Cayley Table for \\(U(9)\\)\n\\(U(9)=\\{1,2,4,5,7,8\\}\\) under multiplication modulo \\(9\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\n\n\\(2\\)\n\n\n\\(2\\)\n\n\n\\(4\\)\n\n\n\\(8\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\n\n\\(4\\)\n\n\n\\(4\\)\n\n\n\\(8\\)\n\n\n\\(7\\)\n\n\n\\(2\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(4\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\\(1\\)\n\n\n\\(8\\)\n\n\n\\(4\\)\n\n\n\\(2\\)\n\n\n\n\n\\(8\\)\n\n\n\\(8\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\\(4\\)\n\n\n\\(2\\)\n\n\n\\(1\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroup-lattice-for-u9",
+    "href": "classes/08/slides.html#subgroup-lattice-for-u9",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Subgroup Lattice for \\(U(9)\\)",
+    "text": "Subgroup Lattice for \\(U(9)\\)\n\n\n\n\n\nflowchart TB\n\n    G[\"U(9) = {1, 2, 4, 5, 7, 8} = ⟨2⟩\"]\n\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n\n    H2[\"⟨8⟩ = {1, 8}\"]\n\n    E[\"{1}\"]\n\n    G --- H3\n\n    G --- H2\n\n    H3 --- E\n\n    H2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#cayley-table-for-mathbb-z_6",
+    "href": "classes/08/slides.html#cayley-table-for-mathbb-z_6",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Cayley Table for \\(\\mathbb Z_6\\)",
+    "text": "Cayley Table for \\(\\mathbb Z_6\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\n\n\\(0\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(0\\)\n\n\n\n\n\\(2\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\n\n\\(4\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroup-lattice-for-mathbb-z_6",
+    "href": "classes/08/slides.html#subgroup-lattice-for-mathbb-z_6",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Subgroup Lattice for \\(\\mathbb Z_6\\)",
+    "text": "Subgroup Lattice for \\(\\mathbb Z_6\\)\n\n\n\n\n\nflowchart TB\n\n    G[\"ℤ&lt;sub&gt;6&lt;/sub&gt; = {0, 1, 2, 3, 4, 5}\"]\n\n    H3[\"⟨2⟩ = {0, 2, 4}\"]\n\n    H2[\"⟨3⟩ = {0, 3}\"]\n\n    E[\"{0}\"]\n\n    G --- H3\n\n    G --- H2\n\n    H3 --- E\n\n    H2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#cayley-table-for-the-9th-roots-of-unity",
+    "href": "classes/08/slides.html#cayley-table-for-the-9th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Cayley Table for the 9th roots of unity",
+    "text": "Cayley Table for the 9th roots of unity\nLet \\(\\omega=\\operatorname{cis}\\left(\\frac{2\\pi}{9}\\right)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\n\n\\(\\omega\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^7\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\n\n\\(\\omega^8\\)\n\n\n\\(\\omega^8\\)\n\n\n\\(1\\)\n\n\n\\(\\omega\\)\n\n\n\\(\\omega^2\\)\n\n\n\\(\\omega^3\\)\n\n\n\\(\\omega^4\\)\n\n\n\\(\\omega^5\\)\n\n\n\\(\\omega^6\\)\n\n\n\\(\\omega^7\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroup-lattice-for-the-9th-roots-of-unity",
+    "href": "classes/08/slides.html#subgroup-lattice-for-the-9th-roots-of-unity",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Subgroup Lattice for the 9th roots of unity",
+    "text": "Subgroup Lattice for the 9th roots of unity\n\n\n\n\n\nflowchart TB\n\n    Z[\"⟨ω⟩ = {1, ω, ω², ω³, ω⁴, ω⁵, ω⁶, ω⁷, ω⁸}\"]\n\n    H3[\"⟨ω³⟩ = {1, ω³, ω⁶}\"]\n\n    E[\"{1}\"]\n\n    Z --- H3\n\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#cayley-table-for-mathbbz_9",
+    "href": "classes/08/slides.html#cayley-table-for-mathbbz_9",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Cayley Table for \\(\\mathbb{Z}_9\\)",
+    "text": "Cayley Table for \\(\\mathbb{Z}_9\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\n\n\\(0\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\n\n\\(2\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\n\n\\(4\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\n\n\\(6\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\n\n\\(8\\)\n\n\n\\(8\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#subgroup-lattice-for-mathbbz_9",
+    "href": "classes/08/slides.html#subgroup-lattice-for-mathbbz_9",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Subgroup Lattice for \\(\\mathbb{Z}_9\\)",
+    "text": "Subgroup Lattice for \\(\\mathbb{Z}_9\\)\n\n\n\n\n\nflowchart TB\n\n    Z[\"ℤ&lt;sub&gt;9&lt;/sub&gt; = {0, 1, 2, 3, 4, 5, 6, 7, 8}\"]\n\n    H3[\"⟨3⟩ = {0, 3, 6}\"]\n\n    E[\"{0}\"]\n\n    Z --- H3\n\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#consider-a-function",
+    "href": "classes/08/slides.html#consider-a-function",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Consider a function",
+    "text": "Consider a function\nSuppose we define a function \\(f\\) from the 9th roots of unity to \\(\\mathbb Z_9\\) by \\(f(\\omega)=1\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
     "objectID": "classes/09/slides.html#class-session-goals",
     "href": "classes/09/slides.html#class-session-goals",
     "title": "Slides: Permutation Groups",
@@ -525,6 +954,215 @@
     "title": "Slides: Permutation Groups",
     "section": "Group Activty",
     "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups."
+  },
+  {
+    "objectID": "classes/07/slides.html#class-session-goals",
+    "href": "classes/07/slides.html#class-session-goals",
+    "title": "Slides: Cyclic Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand the structure of groups generated by a single element\nDetermine when an element generates a group\nDescribe the subgroups of a cyclic group\nRelate the order of an element to the order of the cyclic subgroup it generates",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#generator-notation-and-order",
+    "href": "classes/07/slides.html#generator-notation-and-order",
+    "title": "Slides: Cyclic Groups",
+    "section": "Generator, Notation, and Order",
+    "text": "Generator, Notation, and Order\nLet \\(G\\) be a group and let \\(a \\in G\\). The subgroup generated by \\(a\\) is \\(\\langle a \\rangle = \\{a^n : n \\in \\mathbb{Z}\\}\\).\nA group \\(G\\) is cyclic if there exists an element \\(a \\in G\\) such that \\(G = \\langle a \\rangle\\).\nIn this case, \\(a\\) is called a generator of \\(G\\).\nThe order of \\(a\\) is the smallest positive integer \\(n\\) such that \\(a^n=e\\), if such an integer exists.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#examples-of-groups-generated-by-one-element",
+    "href": "classes/07/slides.html#examples-of-groups-generated-by-one-element",
+    "title": "Slides: Cyclic Groups",
+    "section": "Examples of Groups Generated by one element",
+    "text": "Examples of Groups Generated by one element\nThe group of integers under addition is cyclic:\n\\[\n\\mathbb{Z}=\\langle 1\\rangle=\\langle -1\\rangle.\n\\]\nThe group \\(\\mathbb{Z}_n\\) under addition is cyclic:\n\\[\n\\mathbb{Z}_n=\\langle 1\\rangle.\n\\]\nIn \\(U(18)\\), \\(\\langle 5\\rangle\\) and \\(\\langle 11\\rangle\\) are generators, but \\(\\langle 7\\rangle\\) is not.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#cayley-table-for-u18",
+    "href": "classes/07/slides.html#cayley-table-for-u18",
+    "title": "Slides: Cyclic Groups",
+    "section": "Cayley Table for \\(U(18)\\)",
+    "text": "Cayley Table for \\(U(18)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(17\\)\n\n\n\\(1\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(5\\)\n\n\n\\(1\\)\n\n\n\\(11\\)\n\n\n\n\n\\(11\\)\n\n\n\\(11\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(7\\)\n\n\n\n\n\\(13\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(1\\)\n\n\n\\(17\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\n\n\\(17\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\\(1\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroup-lattice-for-u18",
+    "href": "classes/07/slides.html#subgroup-lattice-for-u18",
+    "title": "Slides: Cyclic Groups",
+    "section": "Subgroup Lattice for \\(U(18)\\)",
+    "text": "Subgroup Lattice for \\(U(18)\\)\n\n\n\n\n\nflowchart TB\n\n    U[\"U(18) = {1, 5, 7, 11, 13, 17}\"]\n\n    H3[\"{1, 7, 13}\"]\n\n    H2[\"{1, 17}\"]\n\n    E[\"{1}\"]\n\n    U --- H3\n\n    U --- H2\n\n    H3 --- E\n\n    H2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#quick-activty",
+    "href": "classes/07/slides.html#quick-activty",
+    "title": "Slides: Cyclic Groups",
+    "section": "Quick Activty",
+    "text": "Quick Activty\nFor each element of \\(\\mathbb Z_{12}\\), classify each element as a generator of the cyclic group or not at generator.\nWhat to the generators have in common? What do the non-generators have in common?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#theorem-4.1.3",
+    "href": "classes/07/slides.html#theorem-4.1.3",
+    "title": "Slides: Cyclic Groups",
+    "section": "Theorem 4.1.3",
+    "text": "Theorem 4.1.3\nTheorem. Let \\(G\\) be a group and \\(a \\in G\\). Then \\(\\langle a \\rangle = \\{a^k : k \\in \\mathbb{Z}\\}\\) is a subgroup of \\(G\\).\nProof Use Subgroup Criteria.\n\nFurthermore, \\(\\langle a \\rangle\\) is the smallest subgroup of \\(G\\) that contains \\(a\\). The subgroup \\(\\langle a \\rangle\\) is called the cyclic subgroup generated by \\(a\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#theorem-4.1.9",
+    "href": "classes/07/slides.html#theorem-4.1.9",
+    "title": "Slides: Cyclic Groups",
+    "section": "Theorem 4.1.9",
+    "text": "Theorem 4.1.9\nTheorem. Every cyclic group is abelian.\nProof. Let \\(G\\) be cyclic. Then \\(G=\\langle a\\rangle\\) for some \\(a\\in G\\).\nIf \\(g,h\\in G\\), then there exist integers \\(r\\) and \\(s\\) such that\n\\(g=a^r\\) and \\(h=a^s\\).\nTherefore,\n\\[\ngh=a^ra^s=a^{r+s}=a^{s+r}=a^sa^r=hg.\n\\]\nHence \\(G\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#theorem-4.1.10",
+    "href": "classes/07/slides.html#theorem-4.1.10",
+    "title": "Slides: Cyclic Groups",
+    "section": "Theorem 4.1.10",
+    "text": "Theorem 4.1.10\nTheorem. Every subgroup of a cyclic group is cyclic.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#theorem-4.1.12",
+    "href": "classes/07/slides.html#theorem-4.1.12",
+    "title": "Slides: Cyclic Groups",
+    "section": "Theorem 4.1.12",
+    "text": "Theorem 4.1.12\nTheorem. Let \\(G=\\langle a\\rangle\\) be a cyclic group of order \\(n\\). THen \\(a^k=e\\) if and only if \\(n\\) divides \\(k\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#theorem-4.1.13",
+    "href": "classes/07/slides.html#theorem-4.1.13",
+    "title": "Slides: Cyclic Groups",
+    "section": "Theorem 4.1.13",
+    "text": "Theorem 4.1.13\nTheorem. Let \\(G=\\langle a\\rangle\\) be a cyclic group of order \\(n\\). If \\(b=a^k\\) then the order of \\(b\\) is \\(\\frac{n}{d}\\) where \\(d=gcd(k,n)\\).\n\nThus the possible orders of elements in a finite cyclic group are precisely the positive divisors of the order of the group. If \\(k\\) is relatively prime to \\(n\\) then \\(G=\\langle b\\rangle\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#cayley-table-for-u20",
+    "href": "classes/07/slides.html#cayley-table-for-u20",
+    "title": "Slides: Cyclic Groups",
+    "section": "Cayley Table for \\(U(20)\\)",
+    "text": "Cayley Table for \\(U(20)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\n\n\\(9\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\n\n\\(11\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\n\n\\(13\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\n\n\\(17\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\n\n\\(19\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroup-lattice-for-u20",
+    "href": "classes/07/slides.html#subgroup-lattice-for-u20",
+    "title": "Slides: Cyclic Groups",
+    "section": "Subgroup Lattice for \\(U(20)\\)",
+    "text": "Subgroup Lattice for \\(U(20)\\)\n\n\n\n\n\nflowchart TB\n    U[\"U(20)\"]\n\n    H1[\"{1, 3, 7, 9}\"]\n    H2[\"{1, 9, 13, 17}\"]\n    H3[\"{1, 9, 11, 19}\"]\n\n    K9[\"{1, 9}\"]\n    K11[\"{1, 11}\"]\n    K19[\"{1, 19}\"]\n\n    E[\"{1}\"]\n\n    U --- H1\n    U --- H2\n    U --- H3\n\n    H1 --- K9\n    H2 --- K9\n\n    H3 --- K9\n    H3 --- K11\n    H3 --- K19\n\n    K9 --- E\n    K11 --- E\n    K19 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#cayley-table-for-q_8",
+    "href": "classes/07/slides.html#cayley-table-for-q_8",
+    "title": "Slides: Cyclic Groups",
+    "section": "Cayley Table for \\(Q_8\\)",
+    "text": "Cayley Table for \\(Q_8\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(I\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(-I\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\n\n\\(A\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\n\n\\(-A\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\n\n\\(B\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\n\n\\(-B\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\n\n\\(C\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\n\n\\(-C\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroup-lattice-for-q_8",
+    "href": "classes/07/slides.html#subgroup-lattice-for-q_8",
+    "title": "Slides: Cyclic Groups",
+    "section": "Subgroup Lattice for \\(Q_8\\)",
+    "text": "Subgroup Lattice for \\(Q_8\\)\n\n\n\n\n\nflowchart TB\n    Q[\"Q&lt;sub&gt;8&lt;/sub&gt;\"]\n    A[\"{I, -I, A, -A}\"]\n    B[\"{I, -I, B, -B}\"]\n    C[\"{I, -I, C, -C}\"]\n    M[\"{I, -I}\"]\n    E[\"{I}\"]\n\n    Q --- A\n    Q --- B\n    Q --- C\n    A --- M\n    B --- M\n    C --- M\n    M --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#cayley-table-for-the-symmetries-of-the-square",
+    "href": "classes/07/slides.html#cayley-table-for-the-symmetries-of-the-square",
+    "title": "Slides: Cyclic Groups",
+    "section": "Cayley Table for the Symmetries of the Square",
+    "text": "Cayley Table for the Symmetries of the Square\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\circ\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(e\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(r_1\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\n\n\\(r_2\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\n\n\\(r_3\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\n\n\\(f_v\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\n\n\\(f_h\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
+    "href": "classes/07/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
+    "title": "Slides: Cyclic Groups",
+    "section": "Subgroup Lattice for the Symmetries of the Square",
+    "text": "Subgroup Lattice for the Symmetries of the Square\n\n\n\n\n\nflowchart TB\n    D4[\"D&lt;sub&gt;4&lt;/sub&gt;\"]\n\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;, r&lt;sub&gt;3&lt;/sub&gt;}\"]\n    VH[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;v&lt;/sub&gt;, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    DD[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;d1&lt;/sub&gt;, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    R2[\"{e, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    FV[\"{e, f&lt;sub&gt;v&lt;/sub&gt;}\"]\n    FH[\"{e, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    FD1[\"{e, f&lt;sub&gt;d1&lt;/sub&gt;}\"]\n    FD2[\"{e, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    E[\"{e}\"]\n\n    D4 --- R\n    D4 --- VH\n    D4 --- DD\n\n    R --- R2\n    VH --- R2\n    DD --- R2\n\n    VH --- FV\n    VH --- FH\n    DD --- FD1\n    DD --- FD2\n\n    R2 --- E\n    FV --- E\n    FH --- E\n    FD1 --- E\n    FD2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#cayley-table-for-mathbbz_8",
+    "href": "classes/07/slides.html#cayley-table-for-mathbbz_8",
+    "title": "Slides: Cyclic Groups",
+    "section": "Cayley Table for \\(\\mathbb{Z}_8\\)",
+    "text": "Cayley Table for \\(\\mathbb{Z}_8\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\n\n\\(0\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\n\n\\(2\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\n\n\\(4\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\n\n\\(6\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/07/slides.html#subgroup-lattice-for-mathbbz_8",
+    "href": "classes/07/slides.html#subgroup-lattice-for-mathbbz_8",
+    "title": "Slides: Cyclic Groups",
+    "section": "Subgroup Lattice for \\(\\mathbb{Z}_8\\)",
+    "text": "Subgroup Lattice for \\(\\mathbb{Z}_8\\)\n\n\n\n\n\nflowchart TB\n\n    Z[\"ℤ&lt;sub&gt;8&lt;/sub&gt; = {0, 1, 2, 3, 4, 5, 6, 7}\"]\n\n    H4[\"⟨2⟩ = {0, 2, 4, 6}\"]\n\n    H2[\"⟨4⟩ = {0, 4}\"]\n\n    E[\"{0}\"]\n\n    Z --- H4\n\n    H4 --- H2\n\n    H2 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cyclic Groups"
+    ]
   },
   {
     "objectID": "classes/02/slides.html#class-session-goals",
@@ -1580,523 +2218,6 @@
     "crumbs": [
       "Class Material",
       "Equivalence Relations"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#class-session-goals",
-    "href": "classes/07/slides.html#class-session-goals",
-    "title": "Slides: Cyclic Groups",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nUnderstand the structure of groups generated by a single element\nDetermine when an element generates a group\nDescribe the subgroups of a cyclic group\nRelate the order of an element to the order of the cyclic subgroup it generates",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#generator-notation-and-order",
-    "href": "classes/07/slides.html#generator-notation-and-order",
-    "title": "Slides: Cyclic Groups",
-    "section": "Generator, Notation, and Order",
-    "text": "Generator, Notation, and Order\nLet \\(G\\) be a group and let \\(a \\in G\\). The subgroup generated by \\(a\\) is \\(\\langle a \\rangle = \\{a^n : n \\in \\mathbb{Z}\\}\\).\nA group \\(G\\) is cyclic if there exists an element \\(a \\in G\\) such that \\(G = \\langle a \\rangle\\).\nIn this case, \\(a\\) is called a generator of \\(G\\).\nThe order of \\(a\\) is the smallest positive integer \\(n\\) such that \\(a^n=e\\), if such an integer exists.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#examples-of-groups-generated-by-one-element",
-    "href": "classes/07/slides.html#examples-of-groups-generated-by-one-element",
-    "title": "Slides: Cyclic Groups",
-    "section": "Examples of Groups Generated by one element",
-    "text": "Examples of Groups Generated by one element\nThe group of integers under addition is cyclic:\n\\[\n\\mathbb{Z}=\\langle 1\\rangle=\\langle -1\\rangle.\n\\]\nThe group \\(\\mathbb{Z}_n\\) under addition is cyclic:\n\\[\n\\mathbb{Z}_n=\\langle 1\\rangle.\n\\]\nIn \\(U(18)\\), \\(\\langle 5\\rangle\\) and \\(\\langle 11\\rangle\\) are generators, but \\(\\langle 7\\rangle\\) is not.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#cayley-table-for-u18",
-    "href": "classes/07/slides.html#cayley-table-for-u18",
-    "title": "Slides: Cyclic Groups",
-    "section": "Cayley Table for \\(U(18)\\)",
-    "text": "Cayley Table for \\(U(18)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(7\\)\n\n\n\\(17\\)\n\n\n\\(1\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(5\\)\n\n\n\\(1\\)\n\n\n\\(11\\)\n\n\n\n\n\\(11\\)\n\n\n\\(11\\)\n\n\n\\(1\\)\n\n\n\\(5\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(7\\)\n\n\n\n\n\\(13\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(1\\)\n\n\n\\(17\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\n\n\\(17\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(7\\)\n\n\n\\(5\\)\n\n\n\\(1\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#subgroup-lattice-for-u18",
-    "href": "classes/07/slides.html#subgroup-lattice-for-u18",
-    "title": "Slides: Cyclic Groups",
-    "section": "Subgroup Lattice for \\(U(18)\\)",
-    "text": "Subgroup Lattice for \\(U(18)\\)\n\n\n\n\n\nflowchart TB\n\n    U[\"U(18) = {1, 5, 7, 11, 13, 17}\"]\n\n    H3[\"{1, 7, 13}\"]\n\n    H2[\"{1, 17}\"]\n\n    E[\"{1}\"]\n\n    U --- H3\n\n    U --- H2\n\n    H3 --- E\n\n    H2 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#quick-activty",
-    "href": "classes/07/slides.html#quick-activty",
-    "title": "Slides: Cyclic Groups",
-    "section": "Quick Activty",
-    "text": "Quick Activty\nFor each element of \\(\\mathbb Z_{12}\\), classify each element as a generator of the cyclic group or not at generator.\nWhat to the generators have in common? What do the non-generators have in common?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#theorem-4.1.3",
-    "href": "classes/07/slides.html#theorem-4.1.3",
-    "title": "Slides: Cyclic Groups",
-    "section": "Theorem 4.1.3",
-    "text": "Theorem 4.1.3\nTheorem. Let \\(G\\) be a group and \\(a \\in G\\). Then \\(\\langle a \\rangle = \\{a^k : k \\in \\mathbb{Z}\\}\\) is a subgroup of \\(G\\).\nProof Use Subgroup Criteria.\n\nFurthermore, \\(\\langle a \\rangle\\) is the smallest subgroup of \\(G\\) that contains \\(a\\). The subgroup \\(\\langle a \\rangle\\) is called the cyclic subgroup generated by \\(a\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#theorem-4.1.9",
-    "href": "classes/07/slides.html#theorem-4.1.9",
-    "title": "Slides: Cyclic Groups",
-    "section": "Theorem 4.1.9",
-    "text": "Theorem 4.1.9\nTheorem. Every cyclic group is abelian.\nProof. Let \\(G\\) be cyclic. Then \\(G=\\langle a\\rangle\\) for some \\(a\\in G\\).\nIf \\(g,h\\in G\\), then there exist integers \\(r\\) and \\(s\\) such that\n\\(g=a^r\\) and \\(h=a^s\\).\nTherefore,\n\\[\ngh=a^ra^s=a^{r+s}=a^{s+r}=a^sa^r=hg.\n\\]\nHence \\(G\\) is abelian.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#theorem-4.1.10",
-    "href": "classes/07/slides.html#theorem-4.1.10",
-    "title": "Slides: Cyclic Groups",
-    "section": "Theorem 4.1.10",
-    "text": "Theorem 4.1.10\nTheorem. Every subgroup of a cyclic group is cyclic.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#theorem-4.1.12",
-    "href": "classes/07/slides.html#theorem-4.1.12",
-    "title": "Slides: Cyclic Groups",
-    "section": "Theorem 4.1.12",
-    "text": "Theorem 4.1.12\nTheorem. Let \\(G=\\langle a\\rangle\\) be a cyclic group of order \\(n\\). THen \\(a^k=e\\) if and only if \\(n\\) divides \\(k\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#theorem-4.1.13",
-    "href": "classes/07/slides.html#theorem-4.1.13",
-    "title": "Slides: Cyclic Groups",
-    "section": "Theorem 4.1.13",
-    "text": "Theorem 4.1.13\nTheorem. Let \\(G=\\langle a\\rangle\\) be a cyclic group of order \\(n\\). If \\(b=a^k\\) then the order of \\(b\\) is \\(\\frac{n}{d}\\) where \\(d=gcd(k,n)\\).\n\nThus the possible orders of elements in a finite cyclic group are precisely the positive divisors of the order of the group. If \\(k\\) is relatively prime to \\(n\\) then \\(G=\\langle b\\rangle\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#cayley-table-for-u20",
-    "href": "classes/07/slides.html#cayley-table-for-u20",
-    "title": "Slides: Cyclic Groups",
-    "section": "Cayley Table for \\(U(20)\\)",
-    "text": "Cayley Table for \\(U(20)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\n\n\\(9\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\n\n\\(11\\)\n\n\n\\(11\\)\n\n\n\\(13\\)\n\n\n\\(17\\)\n\n\n\\(19\\)\n\n\n\\(1\\)\n\n\n\\(3\\)\n\n\n\\(7\\)\n\n\n\\(9\\)\n\n\n\n\n\\(13\\)\n\n\n\\(13\\)\n\n\n\\(19\\)\n\n\n\\(11\\)\n\n\n\\(17\\)\n\n\n\\(3\\)\n\n\n\\(9\\)\n\n\n\\(1\\)\n\n\n\\(7\\)\n\n\n\n\n\\(17\\)\n\n\n\\(17\\)\n\n\n\\(11\\)\n\n\n\\(19\\)\n\n\n\\(13\\)\n\n\n\\(7\\)\n\n\n\\(1\\)\n\n\n\\(9\\)\n\n\n\\(3\\)\n\n\n\n\n\\(19\\)\n\n\n\\(19\\)\n\n\n\\(17\\)\n\n\n\\(13\\)\n\n\n\\(11\\)\n\n\n\\(9\\)\n\n\n\\(7\\)\n\n\n\\(3\\)\n\n\n\\(1\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#subgroup-lattice-for-u20",
-    "href": "classes/07/slides.html#subgroup-lattice-for-u20",
-    "title": "Slides: Cyclic Groups",
-    "section": "Subgroup Lattice for \\(U(20)\\)",
-    "text": "Subgroup Lattice for \\(U(20)\\)\n\n\n\n\n\nflowchart TB\n    U[\"U(20)\"]\n\n    H1[\"{1, 3, 7, 9}\"]\n    H2[\"{1, 9, 13, 17}\"]\n    H3[\"{1, 9, 11, 19}\"]\n\n    K9[\"{1, 9}\"]\n    K11[\"{1, 11}\"]\n    K19[\"{1, 19}\"]\n\n    E[\"{1}\"]\n\n    U --- H1\n    U --- H2\n    U --- H3\n\n    H1 --- K9\n    H2 --- K9\n\n    H3 --- K9\n    H3 --- K11\n    H3 --- K19\n\n    K9 --- E\n    K11 --- E\n    K19 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#cayley-table-for-q_8",
-    "href": "classes/07/slides.html#cayley-table-for-q_8",
-    "title": "Slides: Cyclic Groups",
-    "section": "Cayley Table for \\(Q_8\\)",
-    "text": "Cayley Table for \\(Q_8\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(I\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\n\n\\(-I\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\n\n\\(A\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\n\n\\(-A\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\n\n\\(B\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\n\n\\(-B\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\n\n\\(C\\)\n\n\n\\(C\\)\n\n\n\\(-C\\)\n\n\n\\(B\\)\n\n\n\\(-B\\)\n\n\n\\(-A\\)\n\n\n\\(A\\)\n\n\n\\(-I\\)\n\n\n\\(I\\)\n\n\n\n\n\\(-C\\)\n\n\n\\(-C\\)\n\n\n\\(C\\)\n\n\n\\(-B\\)\n\n\n\\(B\\)\n\n\n\\(A\\)\n\n\n\\(-A\\)\n\n\n\\(I\\)\n\n\n\\(-I\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#subgroup-lattice-for-q_8",
-    "href": "classes/07/slides.html#subgroup-lattice-for-q_8",
-    "title": "Slides: Cyclic Groups",
-    "section": "Subgroup Lattice for \\(Q_8\\)",
-    "text": "Subgroup Lattice for \\(Q_8\\)\n\n\n\n\n\nflowchart TB\n    Q[\"Q&lt;sub&gt;8&lt;/sub&gt;\"]\n    A[\"{I, -I, A, -A}\"]\n    B[\"{I, -I, B, -B}\"]\n    C[\"{I, -I, C, -C}\"]\n    M[\"{I, -I}\"]\n    E[\"{I}\"]\n\n    Q --- A\n    Q --- B\n    Q --- C\n    A --- M\n    B --- M\n    C --- M\n    M --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#cayley-table-for-the-symmetries-of-the-square",
-    "href": "classes/07/slides.html#cayley-table-for-the-symmetries-of-the-square",
-    "title": "Slides: Cyclic Groups",
-    "section": "Cayley Table for the Symmetries of the Square",
-    "text": "Cayley Table for the Symmetries of the Square\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(\\circ\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(e\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\n\n\\(r_1\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_h\\)\n\n\n\n\n\\(r_2\\)\n\n\n\\(r_2\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\n\n\\(r_3\\)\n\n\n\\(r_3\\)\n\n\n\\(e\\)\n\n\n\\(r_1\\)\n\n\n\\(r_2\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_v\\)\n\n\n\n\n\\(f_v\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\n\n\\(f_h\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(r_3\\)\n\n\n\\(r_1\\)\n\n\n\\(e\\)\n\n\n\\(r_2\\)\n\n\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_{d_2}\\)\n\n\n\\(f_v\\)\n\n\n\\(f_{d_1}\\)\n\n\n\\(f_h\\)\n\n\n\\(r_1\\)\n\n\n\\(r_3\\)\n\n\n\\(r_2\\)\n\n\n\\(e\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
-    "href": "classes/07/slides.html#subgroup-lattice-for-the-symmetries-of-the-square",
-    "title": "Slides: Cyclic Groups",
-    "section": "Subgroup Lattice for the Symmetries of the Square",
-    "text": "Subgroup Lattice for the Symmetries of the Square\n\n\n\n\n\nflowchart TB\n    D4[\"D&lt;sub&gt;4&lt;/sub&gt;\"]\n\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;, r&lt;sub&gt;3&lt;/sub&gt;}\"]\n    VH[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;v&lt;/sub&gt;, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    DD[\"{e, r&lt;sub&gt;2&lt;/sub&gt;, f&lt;sub&gt;d1&lt;/sub&gt;, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    R2[\"{e, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    FV[\"{e, f&lt;sub&gt;v&lt;/sub&gt;}\"]\n    FH[\"{e, f&lt;sub&gt;h&lt;/sub&gt;}\"]\n    FD1[\"{e, f&lt;sub&gt;d1&lt;/sub&gt;}\"]\n    FD2[\"{e, f&lt;sub&gt;d2&lt;/sub&gt;}\"]\n\n    E[\"{e}\"]\n\n    D4 --- R\n    D4 --- VH\n    D4 --- DD\n\n    R --- R2\n    VH --- R2\n    DD --- R2\n\n    VH --- FV\n    VH --- FH\n    DD --- FD1\n    DD --- FD2\n\n    R2 --- E\n    FV --- E\n    FH --- E\n    FD1 --- E\n    FD2 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#cayley-table-for-mathbbz_8",
-    "href": "classes/07/slides.html#cayley-table-for-mathbbz_8",
-    "title": "Slides: Cyclic Groups",
-    "section": "Cayley Table for \\(\\mathbb{Z}_8\\)",
-    "text": "Cayley Table for \\(\\mathbb{Z}_8\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\n\n\\(0\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\n\n\\(1\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\n\n\\(2\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\n\n\\(3\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\n\n\\(4\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\n\n\\(5\\)\n\n\n\\(5\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\n\n\\(6\\)\n\n\n\\(6\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\n\n\\(7\\)\n\n\n\\(7\\)\n\n\n\\(0\\)\n\n\n\\(1\\)\n\n\n\\(2\\)\n\n\n\\(3\\)\n\n\n\\(4\\)\n\n\n\\(5\\)\n\n\n\\(6\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/07/slides.html#subgroup-lattice-for-mathbbz_8",
-    "href": "classes/07/slides.html#subgroup-lattice-for-mathbbz_8",
-    "title": "Slides: Cyclic Groups",
-    "section": "Subgroup Lattice for \\(\\mathbb{Z}_8\\)",
-    "text": "Subgroup Lattice for \\(\\mathbb{Z}_8\\)\n\n\n\n\n\nflowchart TB\n\n    Z[\"ℤ&lt;sub&gt;8&lt;/sub&gt; = {0, 1, 2, 3, 4, 5, 6, 7}\"]\n\n    H4[\"⟨2⟩ = {0, 2, 4, 6}\"]\n\n    H2[\"⟨4⟩ = {0, 4}\"]\n\n    E[\"{0}\"]\n\n    Z --- H4\n\n    H4 --- H2\n\n    H2 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cyclic Groups"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#class-session-goals",
-    "href": "classes/08/slides.html#class-session-goals",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#definition-of-a-group",
-    "href": "classes/08/slides.html#definition-of-a-group",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#definition-of-a-subgroup",
-    "href": "classes/08/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-mathbb-z_6",
-    "href": "classes/08/slides.html#subgroups-of-mathbb-z_6",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of \\(\\mathbb Z_6\\)",
-    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
-    "href": "classes/08/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
-    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-u9",
-    "href": "classes/08/slides.html#subgroups-of-u9",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of \\(U(9)\\)",
-    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-u9-lattice-diagram",
-    "href": "classes/08/slides.html#subgroups-of-u9-lattice-diagram",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
-    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
-    "href": "classes/08/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
-    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
-    "href": "classes/08/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
-    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#subgroups-of-mathbb-z",
-    "href": "classes/08/slides.html#subgroups-of-mathbb-z",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Subgroups of \\(\\mathbb Z\\)",
-    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
-    "href": "classes/08/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
-    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#proposition-3.3.7-subgroup-criterion",
-    "href": "classes/08/slides.html#proposition-3.3.7-subgroup-criterion",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Proposition 3.3.7 Subgroup Criterion",
-    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#proposition-3.3.8-another-subgroup-test",
-    "href": "classes/08/slides.html#proposition-3.3.8-another-subgroup-test",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Proposition 3.3.8 Another Subgroup Test",
-    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#proof-of-second-subgroup-test",
-    "href": "classes/08/slides.html#proof-of-second-subgroup-test",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Proof of Second Subgroup Test",
-    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#example-of-using-the-subgroup-test",
-    "href": "classes/08/slides.html#example-of-using-the-subgroup-test",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Example of using the Subgroup Test",
-    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#quaternion-group",
-    "href": "classes/08/slides.html#quaternion-group",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Quaternion Group",
-    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#symmetries-of-the-square",
-    "href": "classes/08/slides.html#symmetries-of-the-square",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Symmetries of the Square",
-    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#u20",
-    "href": "classes/08/slides.html#u20",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "\\(U(20)\\)",
-    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/08/slides.html#group-activty",
-    "href": "classes/08/slides.html#group-activty",
-    "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Group Activty",
-    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Multiplicative Group of Complex Numbers"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#welcome-to-math-393",
-    "href": "classes/01/slides.html#welcome-to-math-393",
-    "title": "Slides: Course Introduction",
-    "section": "Welcome to Math 393",
-    "text": "Welcome to Math 393\nWelcome to Math 393 Abstract Algebra! I am Prof. Geoffrey Buhl, and I am you instructor for this semester. Buhl rhymes with fuel.\nClass Session Goals:\n\nMeet Classmates and work in small groups.\nLearn about this course and my expectations.\nWork on a first discrete mathematics problem.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#syllabus-activity",
-    "href": "classes/01/slides.html#syllabus-activity",
-    "title": "Slides: Course Introduction",
-    "section": "Syllabus Activity",
-    "text": "Syllabus Activity\n\nTake a few minutes to introduce yourselves and share what other courses you are taking this semester.\nAs a group, take 10–15 minutes to look over the syllabus and formulate four questions your group would like to ask about the course.\nAs a whole class, groups will ask questions and I will answer them.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#advice-for-students",
-    "href": "classes/01/slides.html#advice-for-students",
-    "title": "Slides: Course Introduction",
-    "section": "Advice for students",
-    "text": "Advice for students\n\nStart homework early, do it consistently, and redo missed or difficult problems since homework closely matches exam questions.\nAttend every lecture, pay attention, take clear notes, and ask questions to fully understand concepts and proofs.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#how-i-will-teach-this-course",
-    "href": "classes/01/slides.html#how-i-will-teach-this-course",
-    "title": "Slides: Course Introduction",
-    "section": "How I will teach this course",
-    "text": "How I will teach this course\nI cannot cover everything in the text or in a given chapter or section. I will focus on the most important concepts and proofs, and I will provide additional examples and exercises to help you understand the material. I will also provide additional resources and references for further study. Ask questions in class, during office hours, or via email. Part of you preparation for the class is to read the text beforehand.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#activity-symmetries",
-    "href": "classes/01/slides.html#activity-symmetries",
-    "title": "Slides: Course Introduction",
-    "section": "Activity: Symmetries",
-    "text": "Activity: Symmetries\n\nQR code for syllabus",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#activity-1",
-    "href": "classes/01/slides.html#activity-1",
-    "title": "Slides: Course Introduction",
-    "section": "Activity 1",
-    "text": "Activity 1\nTake a few moments to introduce yourselves to your group members.\nThen in small groups, work write out all the rotations of the square and pentagon. Then create a composition table for the rotations of the square and pentagon.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#activity-2",
-    "href": "classes/01/slides.html#activity-2",
-    "title": "Slides: Course Introduction",
-    "section": "Activity 2",
-    "text": "Activity 2\nTake a few moments to introduce yourselves to your group members.\nNow we will allow flips or reflections of the triangle and square. What are the addtional symmetries of the triangle and square? Then create a composition table for the symmetries of the triangle and square that includes both rotations and reflections.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#activity-3",
-    "href": "classes/01/slides.html#activity-3",
-    "title": "Slides: Course Introduction",
-    "section": "Activity 3",
-    "text": "Activity 3\nTake a few moments to introduce yourselves to your group members.\nWhat about a tetrahedron? You can rotate around a face/vertex or edge or vertex. List out the symmetries of the tetrahedron. Then create a composition table for the symmetries of the tetrahedron.\nWhat about a cube? You can rotate around a face, edge or vertex. List out the symmetries of the cube. Then create a composition table for the symmetries of the cube.\nwe’ll just label the faces of these objects because that is how the dice are labeled.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
-    ]
-  },
-  {
-    "objectID": "classes/01/slides.html#next-steps",
-    "href": "classes/01/slides.html#next-steps",
-    "title": "Slides: Course Introduction",
-    "section": "Next Steps",
-    "text": "Next Steps\n\nLook over the “Welcome! Students - Start Here!” Module in CI Learn.\nLook at and work on the W1 (Week 1) Learner Survey Info Quiz on CI Learn.\nLook at and work on W1 Introduce yourself Assignment in CI Learn.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Course Introduction"
     ]
   },
   {
