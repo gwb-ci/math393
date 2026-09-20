@@ -497,7 +497,7 @@
     "href": "classes/08/slides.html#class-session-goals",
     "title": "Slides: Multiplicative Group of Complex Numbers",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups",
+    "text": "Class Session Goals\n\nExplore the group of complex number and its subgroups",
     "crumbs": [
       "Class Material",
       "Slides: Multiplicative Group of Complex Numbers"
@@ -573,8 +573,19 @@
     "objectID": "classes/08/slides.html#activity-find-z-1-in-polar-coordinates",
     "href": "classes/08/slides.html#activity-find-z-1-in-polar-coordinates",
     "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Activity: Find z^{-1} in polar coordinates",
-    "text": "Activity: Find z^{-1} in polar coordinates\nFind \\(z^{-1}\\) for polar represenatation. If \\(z=r (\\cos \\theta +i \\sin \\theta)\\), what can you multiply it by to get 1?",
+    "section": "Activity: Find \\(z^{-1}\\) in polar coordinates",
+    "text": "Activity: Find \\(z^{-1}\\) in polar coordinates\nFind \\(z^{-1}\\) for polar represenatation. If \\(z=r (\\cos \\theta +i \\sin \\theta)\\), what can you multiply it by to get 1?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Multiplicative Group of Complex Numbers"
+    ]
+  },
+  {
+    "objectID": "classes/08/slides.html#angle-addition-formulas",
+    "href": "classes/08/slides.html#angle-addition-formulas",
+    "title": "Slides: Multiplicative Group of Complex Numbers",
+    "section": "Angle Addition Formulas",
+    "text": "Angle Addition Formulas\nFor \\(\\theta, \\phi \\in \\mathbb{R}\\),\n\\[\n\\sin(\\theta+\\phi)\n=\\sin\\theta\\cos\\phi+\\cos\\theta\\sin\\phi\n\\]\nand\n\\[\n\\cos(\\theta+\\phi)\n=\\cos\\theta\\cos\\phi-\\sin\\theta\\sin\\phi.\n\\]\nSimilarly,\n\\[\n\\sin(\\theta-\\phi)\n=\\sin\\theta\\cos\\phi-\\cos\\theta\\sin\\phi\n\\]\nand\n\\[\n\\cos(\\theta-\\phi)\n=\\cos\\theta\\cos\\phi+\\sin\\theta\\sin\\phi.\n\\]",
     "crumbs": [
       "Class Material",
       "Slides: Multiplicative Group of Complex Numbers"
@@ -625,22 +636,22 @@
     ]
   },
   {
-    "objectID": "classes/08/slides.html#circle-group",
-    "href": "classes/08/slides.html#circle-group",
+    "objectID": "classes/08/slides.html#proposition-4.2.9",
+    "href": "classes/08/slides.html#proposition-4.2.9",
     "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Circle Group",
-    "text": "Circle Group\nThe multiplicative group of the complex numbers, \\(\\mathbb{C}^*\\), possesses many finite subgroups.\nThe circle group is\n\\[\n\\mathbb{T}=\\{z\\in\\mathbb{C}:|z|=1\\}.\n\\]",
+    "section": "Proposition 4.2.9",
+    "text": "Proposition 4.2.9\nThe circle group is\n\\(\\mathbb{T}=\\{z\\in\\mathbb{C}:|z|=1\\}.\\)\nis a subgroup of \\(\\mathbb{C}^*\\).",
     "crumbs": [
       "Class Material",
       "Slides: Multiplicative Group of Complex Numbers"
     ]
   },
   {
-    "objectID": "classes/08/slides.html#proposition-4.2.9",
-    "href": "classes/08/slides.html#proposition-4.2.9",
+    "objectID": "classes/08/slides.html#subgroups-of-mathbbt",
+    "href": "classes/08/slides.html#subgroups-of-mathbbt",
     "title": "Slides: Multiplicative Group of Complex Numbers",
-    "section": "Proposition 4.2.9",
-    "text": "Proposition 4.2.9\nThe circle group is a subgroup of \\(\\mathbb{C}^*\\).\nUse the subgroup criteria.\nThe circle group has many finite subgroups. For example, \\(H=\\{1,-1,i,-i\\}\\) is a subgroup of the circle group.\nThese are exactly the complex numbers satisfying \\(z^4=1\\).",
+    "section": "Subgroups of \\(\\mathbb{T}\\)",
+    "text": "Subgroups of \\(\\mathbb{T}\\)\nConsider the complex numbers satisfying \\(z^4=1\\).\n\n\\(H=\\{1,-1,i,-i\\}\\) is a finite subgroup of the circle group.",
     "crumbs": [
       "Class Material",
       "Slides: Multiplicative Group of Complex Numbers"

@@ -9,9 +9,7 @@ format:
 
 ## Class Session Goals
 
-- Understand subgroup tests
-- Find Subgroups of given groups
-- Graphically represent Groups and Subgroups
+- Explore the group of complex number and its subgroups
 
 ---
 
@@ -121,6 +119,41 @@ We require $0\leq\theta<2\pi$.
 Find $z^{-1}$ for polar represenatation.  If $z=r (\cos \theta +i \sin \theta)$, what can you multiply it by to get 1?
 
 ---
+
+
+## Angle Addition Formulas
+
+For $\theta, \phi \in \mathbb{R}$,
+
+$$
+\sin(\theta+\phi)
+=\sin\theta\cos\phi+\cos\theta\sin\phi
+$$
+
+and
+
+$$
+\cos(\theta+\phi)
+=\cos\theta\cos\phi-\sin\theta\sin\phi.
+$$
+
+Similarly,
+
+$$
+\sin(\theta-\phi)
+=\sin\theta\cos\phi-\cos\theta\sin\phi
+$$
+
+and
+
+$$
+\cos(\theta-\phi)
+=\cos\theta\cos\phi+\sin\theta\sin\phi.
+$$
+
+---
+
+
 
 ## Proposition 4.2.5
 
