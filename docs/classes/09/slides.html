@@ -275,12 +275,7 @@ X=\{1,2,\ldots,n\}.
 </section>
 <section id="cycle-notation-multiplication" class="slide level2">
 <h2>Cycle Notation Multiplication</h2>
-<p>Let</p>
-<p><span class="math display">\[
-\sigma=(1\,3\,5)(2\,4),
-\qquad
-\tau=(1\,2\,6)(3\,4).
-\]</span></p>
+<p>Let <span class="math inline">\(\sigma=(1\,3\,5)(2\,4),\qquad\tau=(1\,2\,6)(3\,4)\)</span>.</p>
 <p>Compute <span class="math inline">\(\sigma\tau\)</span> <strong>right to left</strong>:</p>
 <p><span class="math display">\[
 1\xrightarrow{\tau}2\xrightarrow{\sigma}4
@@ -289,8 +284,7 @@ X=\{1,2,\ldots,n\}.
 \quad
 5\xrightarrow{\tau}5\xrightarrow{\sigma}1
 \]</span></p>
-<p>so we get <span class="math inline">\((1\,4\,5)\)</span>.</p>
-<p>Starting with <span class="math inline">\(2\)</span>:</p>
+<p>so we get <span class="math inline">\((1\,4\,5)\)</span>. Starting with <span class="math inline">\(2\)</span>:</p>
 <p><span class="math display">\[
 2\xrightarrow{\tau}6\xrightarrow{\sigma}6
 \quad
@@ -299,10 +293,7 @@ X=\{1,2,\ldots,n\}.
 3\xrightarrow{\tau}4\xrightarrow{\sigma}2
 \]</span></p>
 <p>so we get <span class="math inline">\((2\,6\,3)\)</span>.</p>
-<p>Therefore,</p>
-<p><span class="math display">\[
-\boxed{\sigma\tau=(1\,4\,5)(2\,6\,3)}.
-\]</span></p>
+<p>Therefore, <span class="math inline">\(\sigma\tau=(1\,4\,5)(2\,6\,3)\)</span>.</p>
 </section>
 <section id="proposition-5.1.8" class="slide level2">
 <h2>Proposition 5.1.8</h2>
@@ -342,11 +333,38 @@ X=\{1,2,\ldots,n\}.
 <p>Then sort all <span class="math inline">\(24\)</span> tiles into two groups: odd permutation and even permutations.</p>
 <p>Ponderings: How many permutations are even? How many permutations are odd? What types of cycles appear in each group?</p>
 </section>
+<section class="slide level2">
+
+</section>
+<section id="lemma-5.1.14" class="slide level2">
+<h2>Lemma 5.1.14</h2>
+<p>If the identity is written as the product of <span class="math inline">\(r\)</span> transpositions,</p>
+<p><span class="math display">\[
+\operatorname{id}=\tau_1\tau_2\cdots\tau_r,
+\]</span></p>
+<p>then <span class="math inline">\(r\)</span> is an even number.</p>
+</section>
+<section id="proof-of-lemma-5.1.14" class="slide level2">
+<h2>Proof of Lemma 5.1.14</h2>
+<p>We use induction on <span class="math inline">\(r\)</span> the number of transpositions. A transposition cannot be the identity, so <span class="math inline">\(r&gt;1\)</span>. If <span class="math inline">\(r=2\)</span>, we are done.</p>
+<p>For <span class="math inline">\(r&gt;2\)</span>, consider the last two transpositions. Up to relabeling, we have</p>
+<p><span class="math display">\[
+\begin{aligned}
+(a\,b)(a\,b)&amp;=\operatorname{id},\\
+(b\,c)(a\,b)&amp;=(a\,c)(b\,c),\\
+(c\,d)(a\,b)&amp;=(a\,b)(c\,d),\\
+(a\,c)(a\,b)&amp;=(a\,b)(b\,c).
+\end{aligned}
+\]</span></p>
+<p>Use these identities to move the last occurrence of <span class="math inline">\(a\)</span> to the left.</p>
+<p>Eventually either two identical adjacent transpositions cancel, leaving <span class="math inline">\(r-2\)</span> transpositions, or <span class="math inline">\(a\)</span> occurs only in the first transposition.</p>
+<p>The second case is impossible since the product is the identity and must fix <span class="math inline">\(a\)</span>.</p>
+<p>Thus the identity is a product of <span class="math inline">\(r-2\)</span> transpositions. By induction, <span class="math inline">\(r-2\)</span> is even, so <strong><span class="math inline">\(r\)</span> is even</strong>.</p>
+</section>
 <section id="theorem-5.1.15" class="slide level2">
 <h2>Theorem 5.1.15</h2>
-<p><strong>Theorem.</strong> If a permutation <span class="math inline">\(\sigma\)</span> can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an even number of transpositions.</p>
+<p>If a permutation <span class="math inline">\(\sigma\)</span> can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an even number of transpositions.</p>
 <p>Similarly, if <span class="math inline">\(\sigma\)</span> can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an odd number of transpositions.</p>
-<p>Thus, although a permutation may have many different representations as products of transpositions, its <strong>parity is well-defined</strong>.</p>
 </section>
 <section id="alternating-group" class="slide level2">
 <h2>Alternating Group</h2>
@@ -368,15 +386,9 @@ A_n=\{\sigma\in S_n:\sigma\text{ is even}\}.
 </section>
 <section id="proposition-5.1.17" class="slide level2">
 <h2>Proposition 5.1.17</h2>
-<p><strong>Proposition.</strong> The number of even permutations in <span class="math inline">\(S_n\)</span>, <span class="math inline">\(n\geq2\)</span>, is equal to the number of odd permutations; hence,</p>
-<p><span class="math display">\[
-|A_n|=\frac{n!}{2}.
-\]</span></p>
+<p>The number of even permutations in <span class="math inline">\(S_n\)</span>, <span class="math inline">\(n\geq2\)</span>, is equal to the number of odd permutations. So $ |A_n|=.$</p>
 <p>Let <span class="math inline">\(A_n\)</span> be the set of even permutations and <span class="math inline">\(B_n\)</span> the set of odd permutations.</p>
-<p>Fix a transposition <span class="math inline">\(\sigma\in S_n\)</span> and define</p>
-<p><span class="math display">\[
-\lambda_\sigma:A_n\longrightarrow B_n
-\]</span></p>
+<p>Fix a transposition <span class="math inline">\(\sigma\in S_n\)</span> and define <span class="math inline">\(\lambda_\sigma:A_n\longrightarrow B_n\)</span></p>
 <p>by <span class="math inline">\(\lambda_\sigma(\tau)=\sigma\tau\)</span>. Multiplication by a transposition changes the parity of a permutation. The map <span class="math inline">\(\lambda_\sigma\)</span> is a bijection, so <span class="math inline">\(A_n\)</span> and <span class="math inline">\(B_n\)</span> contain the same number of elements.</p>
 </section>
 <section id="alternating-group-example" class="slide level2">

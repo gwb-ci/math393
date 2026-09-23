@@ -1003,7 +1003,7 @@
     "href": "classes/09/slides.html#cycle-notation-multiplication",
     "title": "Slides: Permutation Groups",
     "section": "Cycle Notation Multiplication",
-    "text": "Cycle Notation Multiplication\nLet\n\\[\n\\sigma=(1\\,3\\,5)(2\\,4),\n\\qquad\n\\tau=(1\\,2\\,6)(3\\,4).\n\\]\nCompute \\(\\sigma\\tau\\) right to left:\n\\[\n1\\xrightarrow{\\tau}2\\xrightarrow{\\sigma}4\n\\quad\n4\\xrightarrow{\\tau}3\\xrightarrow{\\sigma}5\n\\quad\n5\\xrightarrow{\\tau}5\\xrightarrow{\\sigma}1\n\\]\nso we get \\((1\\,4\\,5)\\).\nStarting with \\(2\\):\n\\[\n2\\xrightarrow{\\tau}6\\xrightarrow{\\sigma}6\n\\quad\n6\\xrightarrow{\\tau}1\\xrightarrow{\\sigma}3\n\\quad\n3\\xrightarrow{\\tau}4\\xrightarrow{\\sigma}2\n\\]\nso we get \\((2\\,6\\,3)\\).\nTherefore,\n\\[\n\\boxed{\\sigma\\tau=(1\\,4\\,5)(2\\,6\\,3)}.\n\\]",
+    "text": "Cycle Notation Multiplication\nLet \\(\\sigma=(1\\,3\\,5)(2\\,4),\\qquad\\tau=(1\\,2\\,6)(3\\,4)\\).\nCompute \\(\\sigma\\tau\\) right to left:\n\\[\n1\\xrightarrow{\\tau}2\\xrightarrow{\\sigma}4\n\\quad\n4\\xrightarrow{\\tau}3\\xrightarrow{\\sigma}5\n\\quad\n5\\xrightarrow{\\tau}5\\xrightarrow{\\sigma}1\n\\]\nso we get \\((1\\,4\\,5)\\). Starting with \\(2\\):\n\\[\n2\\xrightarrow{\\tau}6\\xrightarrow{\\sigma}6\n\\quad\n6\\xrightarrow{\\tau}1\\xrightarrow{\\sigma}3\n\\quad\n3\\xrightarrow{\\tau}4\\xrightarrow{\\sigma}2\n\\]\nso we get \\((2\\,6\\,3)\\).\nTherefore, \\(\\sigma\\tau=(1\\,4\\,5)(2\\,6\\,3)\\).",
     "crumbs": [
       "Class Material",
       "Slides: Permutation Groups"
@@ -1065,11 +1065,33 @@
     ]
   },
   {
+    "objectID": "classes/09/slides.html#lemma-5.1.14",
+    "href": "classes/09/slides.html#lemma-5.1.14",
+    "title": "Slides: Permutation Groups",
+    "section": "Lemma 5.1.14",
+    "text": "Lemma 5.1.14\nIf the identity is written as the product of \\(r\\) transpositions,\n\\[\n\\operatorname{id}=\\tau_1\\tau_2\\cdots\\tau_r,\n\\]\nthen \\(r\\) is an even number.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#proof-of-lemma-5.1.14",
+    "href": "classes/09/slides.html#proof-of-lemma-5.1.14",
+    "title": "Slides: Permutation Groups",
+    "section": "Proof of Lemma 5.1.14",
+    "text": "Proof of Lemma 5.1.14\nWe use induction on \\(r\\) the number of transpositions. A transposition cannot be the identity, so \\(r&gt;1\\). If \\(r=2\\), we are done.\nFor \\(r&gt;2\\), consider the last two transpositions. Up to relabeling, we have\n\\[\n\\begin{aligned}\n(a\\,b)(a\\,b)&=\\operatorname{id},\\\\\n(b\\,c)(a\\,b)&=(a\\,c)(b\\,c),\\\\\n(c\\,d)(a\\,b)&=(a\\,b)(c\\,d),\\\\\n(a\\,c)(a\\,b)&=(a\\,b)(b\\,c).\n\\end{aligned}\n\\]\nUse these identities to move the last occurrence of \\(a\\) to the left.\nEventually either two identical adjacent transpositions cancel, leaving \\(r-2\\) transpositions, or \\(a\\) occurs only in the first transposition.\nThe second case is impossible since the product is the identity and must fix \\(a\\).\nThus the identity is a product of \\(r-2\\) transpositions. By induction, \\(r-2\\) is even, so \\(r\\) is even.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
     "objectID": "classes/09/slides.html#theorem-5.1.15",
     "href": "classes/09/slides.html#theorem-5.1.15",
     "title": "Slides: Permutation Groups",
     "section": "Theorem 5.1.15",
-    "text": "Theorem 5.1.15\nTheorem. If a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\nThus, although a permutation may have many different representations as products of transpositions, its parity is well-defined.",
+    "text": "Theorem 5.1.15\nIf a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.",
     "crumbs": [
       "Class Material",
       "Slides: Permutation Groups"
@@ -1102,7 +1124,7 @@
     "href": "classes/09/slides.html#proposition-5.1.17",
     "title": "Slides: Permutation Groups",
     "section": "Proposition 5.1.17",
-    "text": "Proposition 5.1.17\nProposition. The number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations; hence,\n\\[\n|A_n|=\\frac{n!}{2}.\n\\]\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define\n\\[\n\\lambda_\\sigma:A_n\\longrightarrow B_n\n\\]\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
+    "text": "Proposition 5.1.17\nThe number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations. So $ |A_n|=.$\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define \\(\\lambda_\\sigma:A_n\\longrightarrow B_n\\)\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
     "crumbs": [
       "Class Material",
       "Slides: Permutation Groups"
