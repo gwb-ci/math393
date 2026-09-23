@@ -22,7 +22,9 @@ website:
           - file: classes/06/slides.qmd
           - file: classes/07/slides.qmd
           - file: classes/08/slides.qmd
-          - file: classes/08/slides.qmd
+          - file: classes/09/slides.qmd
+          - file: classes/10/slides.qmd
+          - file: classes/11/slides.qmd
   
 
 format:

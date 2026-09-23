@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="180" viewBox="0 0 700 180">
+<style>
+.node{fill:#fff;stroke:#000;stroke-width:2}
+.edge{stroke:#000;stroke-width:2}
+.label{font-family:serif;font-size:22px;text-anchor:middle;dominant-baseline:middle}
+</style>
+
+<line class="edge" x1="70" y1="45" x2="350" y2="135"/>
+<line class="edge" x1="210" y1="45" x2="70" y2="135"/>
+<line class="edge" x1="350" y1="45" x2="630" y2="135"/>
+<line class="edge" x1="490" y1="45" x2="490" y2="135"/>
+<line class="edge" x1="630" y1="45" x2="210" y2="135"/>
+
+<g class="node">
+<circle cx="70" cy="45" r="21"/><circle cx="210" cy="45" r="21"/>
+<circle cx="350" cy="45" r="21"/><circle cx="490" cy="45" r="21"/>
+<circle cx="630" cy="45" r="21"/>
+<circle cx="70" cy="135" r="21"/><circle cx="210" cy="135" r="21"/>
+<circle cx="350" cy="135" r="21"/><circle cx="490" cy="135" r="21"/>
+<circle cx="630" cy="135" r="21"/>
+</g>
+
+<g class="label">
+<text x="70" y="45">1</text><text x="210" y="45">2</text>
+<text x="350" y="45">3</text><text x="490" y="45">4</text>
+<text x="630" y="45">5</text>
+<text x="70" y="135">1</text><text x="210" y="135">2</text>
+<text x="350" y="135">3</text><text x="490" y="135">4</text>
+<text x="630" y="135">5</text>
+</g>
+</svg>

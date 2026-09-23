@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="8.5in"
+     height="11in"
+     viewBox="0 0 816 1056">
+
+  <defs>
+    <style>
+      .cut {
+        fill: none;
+        stroke: black;
+        stroke-width: 1.4;
+        stroke-dasharray: 7 5;
+      }
+
+      .node {
+        fill: white;
+        stroke: black;
+        stroke-width: 1.6;
+      }
+
+      .label {
+        font-family: "Times New Roman", serif;
+        font-size: 15px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        fill: black;
+      }
+    </style>
+
+    <g id="tile6">
+
+      <!-- cut boundary -->
+      <rect class="cut"
+            x="1"
+            y="1"
+            width="378"
+            height="196"/>
+
+      <!-- TOP ROW -->
+      <circle class="node" cx="22"  cy="50" r="11"/>
+      <circle class="node" cx="54"  cy="50" r="11"/>
+      <circle class="node" cx="86"  cy="50" r="11"/>
+      <circle class="node" cx="118" cy="50" r="11"/>
+      <circle class="node" cx="150" cy="50" r="11"/>
+      <circle class="node" cx="182" cy="50" r="11"/>
+
+      <text class="label" x="22"  y="50">1</text>
+      <text class="label" x="54"  y="50">2</text>
+      <text class="label" x="86"  y="50">3</text>
+      <text class="label" x="118" y="50">4</text>
+      <text class="label" x="150" y="50">5</text>
+      <text class="label" x="182" y="50">6</text>
+
+      <!-- BOTTOM ROW -->
+      <circle class="node" cx="22"  cy="146" r="11"/>
+      <circle class="node" cx="54"  cy="146" r="11"/>
+      <circle class="node" cx="86"  cy="146" r="11"/>
+      <circle class="node" cx="118" cy="146" r="11"/>
+      <circle class="node" cx="150" cy="146" r="11"/>
+      <circle class="node" cx="182" cy="146" r="11"/>
+
+      <text class="label" x="22"  y="146">1</text>
+      <text class="label" x="54"  y="146">2</text>
+      <text class="label" x="86"  y="146">3</text>
+      <text class="label" x="118" y="146">4</text>
+      <text class="label" x="150" y="146">5</text>
+      <text class="label" x="182" y="146">6</text>
+
+      <!-- divider -->
+      <line x1="205"
+            y1="20"
+            x2="205"
+            y2="176"
+            stroke="black"
+            stroke-width="0.7"
+            stroke-dasharray="3 4"/>
+
+    </g>
+  </defs>
+
+  <!-- row 1 -->
+  <use href="#tile6" x="24"  y="24"/>
+  <use href="#tile6" x="414" y="24"/>
+
+  <!-- row 2 -->
+  <use href="#tile6" x="24"  y="230"/>
+  <use href="#tile6" x="414" y="230"/>
+
+  <!-- row 3 -->
+  <use href="#tile6" x="24"  y="436"/>
+  <use href="#tile6" x="414" y="436"/>
+
+  <!-- row 4 -->
+  <use href="#tile6" x="24"  y="642"/>
+  <use href="#tile6" x="414" y="642"/>
+
+  <!-- row 5 -->
+  <use href="#tile6" x="24"  y="848"/>
+  <use href="#tile6" x="414" y="848"/>
+
+</svg>

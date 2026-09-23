@@ -838,133 +838,286 @@
     "href": "classes/09/slides.html#class-session-goals",
     "title": "Slides: Permutation Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups"
+    "text": "Class Session Goals\n\nDefine the symmetric group \\(S_n\\).\nRepresent permutations using cycle notation.\nCompute products of permutations.\nWrite permutations as products of disjoint cycles and transpositions.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#definition-of-a-group",
-    "href": "classes/09/slides.html#definition-of-a-group",
+    "objectID": "classes/09/slides.html#what-is-the-symmetric-group",
+    "href": "classes/09/slides.html#what-is-the-symmetric-group",
     "title": "Slides: Permutation Groups",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\)."
+    "section": "What is the Symmetric Group?",
+    "text": "What is the Symmetric Group?\nA permutation of a set \\(X\\) is a one-to-one and onto function\n\\[\n\\sigma:X\\longrightarrow X.\n\\]\nThe permutations of a set \\(X\\) form a group \\(S_X\\).\nIf \\(X\\) is finite, we can assume\n\\[\nX=\\{1,2,\\ldots,n\\}.\n\\]\nIn this case, we write \\(S_n\\) instead of \\(S_X\\).\nThe group \\(S_n\\) is called the symmetric group on \\(n\\) letters.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#definition-of-a-subgroup",
-    "href": "classes/09/slides.html#definition-of-a-subgroup",
+    "objectID": "classes/09/slides.html#permutation-drawings",
+    "href": "classes/09/slides.html#permutation-drawings",
     "title": "Slides: Permutation Groups",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group."
+    "section": "Permutation Drawings",
+    "text": "Permutation Drawings\nA permutation describes a rearrangement of a set.\nWe can represent a permutation by drawing where each element is sent.\n\nFollow the lines in the drawing:\n\\[\n1\\mapsto2,\\qquad\n2\\mapsto3,\\qquad\n3\\mapsto1,\\qquad\n4\\mapsto5,\\qquad\n5\\mapsto4.\n\\]\nEvery element is sent to exactly one element, and every element is the image of exactly one element.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-mathbb-z_6",
-    "href": "classes/09/slides.html#subgroups-of-mathbb-z_6",
+    "objectID": "classes/09/slides.html#from-drawings-to-permutation-notation",
+    "href": "classes/09/slides.html#from-drawings-to-permutation-notation",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of \\(\\mathbb Z_6\\)",
-    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]"
+    "section": "From Drawings to Permutation Notation",
+    "text": "From Drawings to Permutation Notation\nWe can record the same permutation without the drawing.\nThe top row lists the elements.\nThe bottom row records where each element is sent.\n\\[\n\\begin{pmatrix}\n1&2&3&4&5\\\\\n2&3&1&5&4\n\\end{pmatrix}\n\\]\nThe drawing and the two-line notation represent the same permutation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
-    "href": "classes/09/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "objectID": "classes/09/slides.html#activity-build-s_4",
+    "href": "classes/09/slides.html#activity-build-s_4",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
-    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E"
+    "section": "Activity: Build \\(S_4\\)",
+    "text": "Activity: Build \\(S_4\\)\nToday we are going to construct every element of \\(S_4\\).\nThere are $|S_4|=4!=24 permutations to construct.\nFor each card:\n\nDraw the permutation by connecting the top row to the bottom row.\nOn the top half of the blank side, write the permutation in two-line notation.\nLeave the bottom half blank — we will add different notation later.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-u9",
-    "href": "classes/09/slides.html#subgroups-of-u9",
+    "objectID": "classes/09/slides.html#we-have-a-set-now-we-need-an-operation",
+    "href": "classes/09/slides.html#we-have-a-set-now-we-need-an-operation",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of \\(U(9)\\)",
-    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups."
+    "section": "We Have a Set — Now We Need an Operation",
+    "text": "We Have a Set — Now We Need an Operation\nWe have constructed the \\(24\\) elements of \\(S_4\\). How should we multiply two permutations?\nPlace one permutation drawing on top of another and follow the paths from top to bottom.\nIf \\(\\sigma\\) is on the bottom and \\(\\tau\\) is on the top, we write \\(\\sigma\\tau\\).\nApply the function \\(\\tau\\) first, then \\(\\sigma\\).\n\\[\\sigma\\tau(x)=\\sigma(\\tau(x))\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-u9-lattice-diagram",
-    "href": "classes/09/slides.html#subgroups-of-u9-lattice-diagram",
+    "objectID": "classes/09/slides.html#activity-explore-multiplication-in-s_4",
+    "href": "classes/09/slides.html#activity-explore-multiplication-in-s_4",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
-    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E"
+    "section": "Activity: Explore Multiplication in \\(S_4\\)",
+    "text": "Activity: Explore Multiplication in \\(S_4\\)\nChoose several pairs of tiles and calculate their products.\nFor each pair, stack the two permutation drawings. Follow \\(1,2,3,4\\) through both drawings. Find the tile representing the product.\nPonderings: Does your product always correspond to another tile in \\(S_4\\)? Can you find an indentity tile \\(e\\)? Can you find inverses?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
-    "href": "classes/09/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "objectID": "classes/09/slides.html#activity-what-about-associativity",
+    "href": "classes/09/slides.html#activity-what-about-associativity",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
-    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\)."
+    "section": "Activity: What About Associativity?",
+    "text": "Activity: What About Associativity?\nChoose three permutation tiles and call them \\(\\sigma,\\qquad\\tau,\\qquad\\rho\\).\nCalculate \\((\\sigma\\tau)\\rho\\). Find the corresponding tile in \\(S_4\\) for \\((\\sigma\\tau)\\).\nCalculate \\(\\sigma(\\tau\\rho)\\). Find the corresponding tile in \\(S_4\\) for \\((\\tau\\rho)\\).\nCompare your results are the two resulting mappings the same or different?\n–",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
-    "href": "classes/09/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "objectID": "classes/09/slides.html#theorem-5.1.1",
+    "href": "classes/09/slides.html#theorem-5.1.1",
     "title": "Slides: Permutation Groups",
-    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
-    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E"
+    "section": "Theorem 5.1.1",
+    "text": "Theorem 5.1.1\nThe symmetric group on \\(n\\) letters, \\(S_n\\), is a group with \\(n!\\) elements, where the binary operation is the composition of maps.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#subgroups-of-mathbb-z",
-    "href": "classes/09/slides.html#subgroups-of-mathbb-z",
+    "objectID": "classes/09/slides.html#proof",
+    "href": "classes/09/slides.html#proof",
     "title": "Slides: Permutation Groups",
-    "section": "Subgroups of \\(\\mathbb Z\\)",
-    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\)."
+    "section": "Proof",
+    "text": "Proof\nIdentity: Consider the permutation \\(\\pi(i)=i\\).\nInverse: If \\(\\pi(i)=j\\), define \\(\\tau(j)=i\\).\nAssociativity: Composition of maps is associative.\nThe order of \\(S_n\\) is an exercise.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
-    "href": "classes/09/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "objectID": "classes/09/slides.html#activity-what-about-communitivity",
+    "href": "classes/09/slides.html#activity-what-about-communitivity",
     "title": "Slides: Permutation Groups",
-    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
-    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\)."
+    "section": "Activity: What about Communitivity?",
+    "text": "Activity: What about Communitivity?\nChoose two permutation tiles and call them \\(\\sigma\\) and \\(\\tau\\).\nCalculate both \\(\\sigma\\tau\\) and \\(\\tau\\sigma\\).\nFind pairs of tiles that do commute and pairs of tiles that don’t communte.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#proposition-3.3.7-subgroup-criterion",
-    "href": "classes/09/slides.html#proposition-3.3.7-subgroup-criterion",
+    "objectID": "classes/09/slides.html#cycle-notation",
+    "href": "classes/09/slides.html#cycle-notation",
     "title": "Slides: Permutation Groups",
-    "section": "Proposition 3.3.7 Subgroup Criterion",
-    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]"
+    "section": "Cycle Notation",
+    "text": "Cycle Notation\nPermutation drawings show us where every element goes. Instead of recording every mapping, we can follow an element until we return to where we started.\n\nFor example, \\(1\\mapsto2\\mapsto3\\mapsto1\\) is written \\((1\\,2\\,3)\\).\nThe other set of elements satisfies \\(4\\mapsto5\\mapsto4\\). We write \\((4\\,5)\\).\nTogether, the permutation is \\((1\\,2\\,3)(4\\,5)\\). This is called cycle notation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#proposition-3.3.8-another-subgroup-test",
-    "href": "classes/09/slides.html#proposition-3.3.8-another-subgroup-test",
+    "objectID": "classes/09/slides.html#reading-cycle-notation",
+    "href": "classes/09/slides.html#reading-cycle-notation",
     "title": "Slides: Permutation Groups",
-    "section": "Proposition 3.3.8 Another Subgroup Test",
-    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]"
+    "section": "Reading Cycle Notation",
+    "text": "Reading Cycle Notation\nIn the cycle \\((1\\,3\\,4\\,2)\\) we read from left to right:\n\\[\n1\\mapsto3,\\qquad\n3\\mapsto4,\\qquad\n4\\mapsto2,\\qquad\n2\\mapsto1.\n\\]\nElements that do not appear in a cycle are fixed.\nFor example, in \\(S_6\\) \\((1\\,3\\,4\\,2)\\)\nalso means \\(5\\mapsto5 \\qquad\\text{and}\\qquad6\\mapsto6\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#proof-of-second-subgroup-test",
-    "href": "classes/09/slides.html#proof-of-second-subgroup-test",
+    "objectID": "classes/09/slides.html#activity-add-cycle-notation-to-s_4",
+    "href": "classes/09/slides.html#activity-add-cycle-notation-to-s_4",
     "title": "Slides: Permutation Groups",
-    "section": "Proof of Second Subgroup Test",
-    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)"
+    "section": "Activity: Add Cycle Notation to \\(S_4\\)",
+    "text": "Activity: Add Cycle Notation to \\(S_4\\)\nReturn to your \\(S_4\\) permutation tiles.\nFor each tile, write the result in cycle notation in the remaining blank space.\nPonderings: Which permutations consist of one cycle? Which have more than one cycle? Which elements are fixed?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#example-of-using-the-subgroup-test",
-    "href": "classes/09/slides.html#example-of-using-the-subgroup-test",
+    "objectID": "classes/09/slides.html#activity-cycle-notation-in-s_6",
+    "href": "classes/09/slides.html#activity-cycle-notation-in-s_6",
     "title": "Slides: Permutation Groups",
-    "section": "Example of using the Subgroup Test",
-    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\)."
+    "section": "Activity: Cycle Notation in \\(S_6\\)",
+    "text": "Activity: Cycle Notation in \\(S_6\\)\nNow return to the \\(S_6\\) tiles you constructed.\nFor each tile write the permutation in cycle notation.\nThen compare your tiles with others in your group.\nPonderings: Can you find a permutation with fixed points, a \\(2\\)-cycle, a \\(3\\)-cycle, a \\(4\\)-cycle, a \\(5\\)-cycle, a \\(6\\)-cycle, and a permutation containing two disjoint cycles?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#quaternion-group",
-    "href": "classes/09/slides.html#quaternion-group",
+    "objectID": "classes/09/slides.html#cycle-notation-multiplication",
+    "href": "classes/09/slides.html#cycle-notation-multiplication",
     "title": "Slides: Permutation Groups",
-    "section": "Quaternion Group",
-    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)"
+    "section": "Cycle Notation Multiplication",
+    "text": "Cycle Notation Multiplication\nLet\n\\[\n\\sigma=(1\\,3\\,5)(2\\,4),\n\\qquad\n\\tau=(1\\,2\\,6)(3\\,4).\n\\]\nCompute \\(\\sigma\\tau\\) right to left:\n\\[\n1\\xrightarrow{\\tau}2\\xrightarrow{\\sigma}4\n\\quad\n4\\xrightarrow{\\tau}3\\xrightarrow{\\sigma}5\n\\quad\n5\\xrightarrow{\\tau}5\\xrightarrow{\\sigma}1\n\\]\nso we get \\((1\\,4\\,5)\\).\nStarting with \\(2\\):\n\\[\n2\\xrightarrow{\\tau}6\\xrightarrow{\\sigma}6\n\\quad\n6\\xrightarrow{\\tau}1\\xrightarrow{\\sigma}3\n\\quad\n3\\xrightarrow{\\tau}4\\xrightarrow{\\sigma}2\n\\]\nso we get \\((2\\,6\\,3)\\).\nTherefore,\n\\[\n\\boxed{\\sigma\\tau=(1\\,4\\,5)(2\\,6\\,3)}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#symmetries-of-the-square",
-    "href": "classes/09/slides.html#symmetries-of-the-square",
+    "objectID": "classes/09/slides.html#proposition-5.1.8",
+    "href": "classes/09/slides.html#proposition-5.1.8",
     "title": "Slides: Permutation Groups",
-    "section": "Symmetries of the Square",
-    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines."
+    "section": "Proposition 5.1.8",
+    "text": "Proposition 5.1.8\nLet \\(\\sigma\\) and \\(\\tau\\) be two disjoint cycles in \\(S_X\\). Then \\(\\sigma\\tau=\\tau\\sigma\\).\nIf \\(x\\) occurs in \\(\\sigma\\), then \\(\\tau\\) fixes \\(x\\) and every element to which \\(\\sigma\\) sends \\(x\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#u20",
-    "href": "classes/09/slides.html#u20",
+    "objectID": "classes/09/slides.html#theorem-5.1.9",
+    "href": "classes/09/slides.html#theorem-5.1.9",
     "title": "Slides: Permutation Groups",
-    "section": "\\(U(20)\\)",
-    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]"
+    "section": "Theorem 5.1.9",
+    "text": "Theorem 5.1.9\nEvery permutation in \\(S_n\\) can be written as the product of disjoint cycles.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
-    "objectID": "classes/09/slides.html#group-activty",
-    "href": "classes/09/slides.html#group-activty",
+    "objectID": "classes/09/slides.html#proof-1",
+    "href": "classes/09/slides.html#proof-1",
     "title": "Slides: Permutation Groups",
-    "section": "Group Activty",
-    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups."
+    "section": "Proof",
+    "text": "Proof\nStart with \\(1\\) and repeatedly apply \\(\\sigma\\):\n\\[\n1,\\sigma(1),\\sigma^2(1),\\ldots\n\\]\nSince the set is finite, we eventually return to \\(1\\), producing a cycle.\nNext, choose an element not appearing in that cycle and repeat the process.\nContinuing in this manner produces disjoint cycles \\(\\sigma_1,\\sigma_2,\\ldots,\\sigma_r\\)\nsuch that\\(\\sigma=\\sigma_1\\sigma_2\\cdots\\sigma_r\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#transpositions",
+    "href": "classes/09/slides.html#transpositions",
+    "title": "Slides: Permutation Groups",
+    "section": "Transpositions",
+    "text": "Transpositions\nA cycle of length \\(2\\) is called a transposition.\nFor example,\\((2\\,5)\\) is a transposition. Any cycle can be written as a product of transpositions:\n\\[\n(a_1\\,a_2\\,\\ldots\\,a_n)\n=\n(a_1\\,a_n)(a_1\\,a_{n-1})\\cdots(a_1\\,a_3)(a_1\\,a_2).\n\\]\nA permutation is even if it can be expressed as an even number of transpositions.\nA permutation is odd if it can be expressed as an odd number of transpositions.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#activity-even-and-odd-permutations-in-s_4",
+    "href": "classes/09/slides.html#activity-even-and-odd-permutations-in-s_4",
+    "title": "Slides: Permutation Groups",
+    "section": "Activity: Even and Odd Permutations in \\(S_4\\)",
+    "text": "Activity: Even and Odd Permutations in \\(S_4\\)\nReturn to the 24 permutation tiles that make up \\(S_4\\).\nThen sort all \\(24\\) tiles into two groups: odd permutation and even permutations.\nPonderings: How many permutations are even? How many permutations are odd? What types of cycles appear in each group?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#theorem-5.1.15",
+    "href": "classes/09/slides.html#theorem-5.1.15",
+    "title": "Slides: Permutation Groups",
+    "section": "Theorem 5.1.15",
+    "text": "Theorem 5.1.15\nTheorem. If a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\nThus, although a permutation may have many different representations as products of transpositions, its parity is well-defined.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#alternating-group",
+    "href": "classes/09/slides.html#alternating-group",
+    "title": "Slides: Permutation Groups",
+    "section": "Alternating Group",
+    "text": "Alternating Group\nThe set of all even permutations in \\(S_n\\) is denoted by \\(A_n\\).\nThe group \\(A_n\\) is called the alternating group on \\(n\\) letters.\n\\[\nA_n=\\{\\sigma\\in S_n:\\sigma\\text{ is even}\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#theorem-5.1.16",
+    "href": "classes/09/slides.html#theorem-5.1.16",
+    "title": "Slides: Permutation Groups",
+    "section": "Theorem 5.1.16",
+    "text": "Theorem 5.1.16\nThe set \\(A_n\\) is a subgroup of \\(S_n\\).\nWhy?\n\nThe product of two even permutations is even.\nThe identity is even.\nThe inverse of an even permutation is even.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#proposition-5.1.17",
+    "href": "classes/09/slides.html#proposition-5.1.17",
+    "title": "Slides: Permutation Groups",
+    "section": "Proposition 5.1.17",
+    "text": "Proposition 5.1.17\nProposition. The number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations; hence,\n\\[\n|A_n|=\\frac{n!}{2}.\n\\]\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define\n\\[\n\\lambda_\\sigma:A_n\\longrightarrow B_n\n\\]\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
+  },
+  {
+    "objectID": "classes/09/slides.html#alternating-group-example",
+    "href": "classes/09/slides.html#alternating-group-example",
+    "title": "Slides: Permutation Groups",
+    "section": "Alternating Group Example",
+    "text": "Alternating Group Example\n\\[\n|A_4|=\\frac{4!}{2}=12,\n\\]\nthere are twelve elements:\n\\[\n\\begin{aligned}\n&(1), &(1\\,2)(3\\,4), &(1\\,3)(2\\,4), &(1\\,4)(2\\,3),\\\\\n&(1\\,2\\,3), &(1\\,3\\,2), &(1\\,2\\,4), &(1\\,4\\,2),\\\\\n&(1\\,3\\,4), &(1\\,4\\,3), &(2\\,3\\,4), &(2\\,4\\,3).\n\\end{aligned}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Permutation Groups"
+    ]
   },
   {
     "objectID": "classes/07/slides.html#class-session-goals",
@@ -1173,6 +1326,424 @@
     "crumbs": [
       "Class Material",
       "Slides: Cyclic Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#class-session-goals",
+    "href": "classes/10/slides.html#class-session-goals",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDetermine whether a permutation is even or odd.\nDefine the alternating group \\(A_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-group",
+    "href": "classes/10/slides.html#definition-of-a-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-subgroup",
+    "href": "classes/10/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/10/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "href": "classes/10/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
+    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-u9",
+    "href": "classes/10/slides.html#subgroups-of-u9",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of \\(U(9)\\)",
+    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-u9-lattice-diagram",
+    "href": "classes/10/slides.html#subgroups-of-u9-lattice-diagram",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
+    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/10/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "href": "classes/10/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
+    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/10/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "href": "classes/10/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
+    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/10/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/10/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proof-of-second-subgroup-test",
+    "href": "classes/10/slides.html#proof-of-second-subgroup-test",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proof of Second Subgroup Test",
+    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#example-of-using-the-subgroup-test",
+    "href": "classes/10/slides.html#example-of-using-the-subgroup-test",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Example of using the Subgroup Test",
+    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#quaternion-group",
+    "href": "classes/10/slides.html#quaternion-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#symmetries-of-the-square",
+    "href": "classes/10/slides.html#symmetries-of-the-square",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Symmetries of the Square",
+    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#u20",
+    "href": "classes/10/slides.html#u20",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "\\(U(20)\\)",
+    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#group-activty",
+    "href": "classes/10/slides.html#group-activty",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Group Activty",
+    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#class-session-goals",
+    "href": "classes/11/slides.html#class-session-goals",
+    "title": "Slides: Cosets",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand subgroup tests\nFind Subgroups of given groups\nGraphically represent Groups and Subgroups",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#definition-of-a-group",
+    "href": "classes/11/slides.html#definition-of-a-group",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#definition-of-a-subgroup",
+    "href": "classes/11/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-mathbb-z_6",
+    "href": "classes/11/slides.html#subgroups-of-mathbb-z_6",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of \\(\\mathbb Z_6\\)",
+    "text": "Subgroups of \\(\\mathbb Z_6\\)\nConsider \\(\\mathbb Z_6\\) under addition.\n\\(\\mathbb Z_6 = \\{[0],[1],[2],[3],[4],[5]\\}.\\)\nWhich subsets form subgroups?\n\\[\n\\{[0]\\}\n\\]\n\\[\n\\{[0],[3]\\}\n\\]\n\\[\n\\{[0],[2],[4]\\}\n\\]\n\\[\n\\mathbb Z_6\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "href": "classes/11/slides.html#subgroups-of-mathbbz_6-lattice-diagram",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram",
+    "text": "Subgroups of \\(\\mathbb{Z}_6\\) Lattice Diagram\nThe subgroups of \\(\\mathbb{Z}_6\\) are\n\\(\\mathbb{Z}_6 = \\langle 1 \\rangle\\), \\(\\langle 2 \\rangle = \\{0,2,4\\}\\), \\(\\langle 3 \\rangle = \\{0,3\\}\\), and \\(\\{0\\}\\).\n\n\n\n\n\nflowchart TB\n    Z6[\"Z₆ = ⟨1⟩ = {0,1,2,3,4,5}\"]\n    H2[\"⟨2⟩ = {0,2,4}\"]\n    H3[\"⟨3⟩ = {0,3}\"]\n    E[\"{0}\"]\n\n    Z6 --- H2\n    Z6 --- H3\n    H2 --- E\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-u9",
+    "href": "classes/11/slides.html#subgroups-of-u9",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of \\(U(9)\\)",
+    "text": "Subgroups of \\(U(9)\\)\nThe group of units modulo \\(9\\) is\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThe subgroups of \\(U(9)\\) are\n\\(\\{1\\}\\),\n\\(\\langle 8\\rangle=\\{1,8\\}\\),\n\\(\\langle 4\\rangle=\\{1,4,7\\}\\),\nand\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nThus, \\(U(9)\\) has four subgroups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-u9-lattice-diagram",
+    "href": "classes/11/slides.html#subgroups-of-u9-lattice-diagram",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of \\(U(9)\\) Lattice Diagram",
+    "text": "Subgroups of \\(U(9)\\) Lattice Diagram\n\n\n\n\n\nflowchart TB\n    U9[\"U(9) = {1, 2, 4, 5, 7, 8}\"]\n    H2[\"⟨8⟩ = {1, 8}\"]\n    H3[\"⟨4⟩ = {1, 4, 7}\"]\n    E[\"{1}\"]\n\n    U9 --- H2\n    U9 --- H3\n\n    H2 --- E\n    H3 --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "href": "classes/11/slides.html#subgroups-of-the-symmetry-group-of-an-equilateral-triangle",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of the Symmetry Group of an Equilateral Triangle",
+    "text": "Subgroups of the Symmetry Group of an Equilateral Triangle\nLet \\(D_3=\\{e,r_1,r_2,f_a,f_b,f_c\\}\\).\nHere \\(r_1,r_2\\) are the nonidentity rotations and \\(f_a,f_b,f_c\\) are the reflections.\nThe subgroups are: \\(\\{e\\}\\)\n\\[\n\\{e,f_a\\},\n\\qquad\n\\{e,f_b\\},\n\\qquad\n\\{e,f_c\\},\n\\]\n\\(\\{e,r_1,r_2\\}\\), and \\(D_3\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "href": "classes/11/slides.html#group-lattice-for-the-symmetries-of-the-equilateral-triangle",
+    "title": "Slides: Cosets",
+    "section": "Group Lattice for the Symmetries of the Equilateral Triangle",
+    "text": "Group Lattice for the Symmetries of the Equilateral Triangle\n\n\n\n\n\nflowchart TB\n    D3[\"D&lt;sub&gt;3&lt;/sub&gt;\"]\n    R[\"{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}\"]\n    Fa[\"{e, f&lt;sub&gt;a&lt;/sub&gt;}\"]\n    Fb[\"{e, f&lt;sub&gt;b&lt;/sub&gt;}\"]\n    Fc[\"{e, f&lt;sub&gt;c&lt;/sub&gt;}\"]\n    E[\"{e}\"]\n\n    D3 --- R\n    D3 --- Fa\n    D3 --- Fb\n    D3 --- Fc\n\n    R --- E\n    Fa --- E\n    Fb --- E\n    Fc --- E",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#subgroups-of-mathbb-z",
+    "href": "classes/11/slides.html#subgroups-of-mathbb-z",
+    "title": "Slides: Cosets",
+    "section": "Subgroups of \\(\\mathbb Z\\)",
+    "text": "Subgroups of \\(\\mathbb Z\\)\nConsider \\(\\mathbb Z\\) under addition.\nFor \\(n=0,1,2,\\ldots\\), define \\(n\\mathbb Z=\\{nk:k\\in\\mathbb Z\\}\\).\nExamples:\n\\[\n2\\mathbb Z=\\{\\ldots,-4,-2,0,2,4,\\ldots\\}\n\\]\n\\[\n3\\mathbb Z=\\{\\ldots,-6,-3,0,3,6,\\ldots\\}.\n\\]\nFor every \\(n\\geq 0\\), \\(n\\mathbb Z \\leq   \\mathbb Z\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "href": "classes/11/slides.html#a-portion-of-the-subgroup-lattice-of-mathbbz",
+    "title": "Slides: Cosets",
+    "section": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)",
+    "text": "A Portion of the Subgroup Lattice of \\(\\mathbb{Z}\\)\nEvery subgroup of \\(\\mathbb{Z}\\) is of the form \\(n\\mathbb{Z}\\) for some nonnegative integer \\(n\\).\n\n\n\n\n\nflowchart TB\n    Z[\"Z\"]\n    Z2[\"2Z\"]\n    Z3[\"3Z\"]\n    Z5[\"5Z\"]\n    Z6[\"6Z\"]\n    Z10[\"10Z\"]\n    Z15[\"15Z\"]\n    Z30[\"30Z\"]\n\n    Z --- Z2\n    Z --- Z3\n    Z --- Z5\n\n    Z2 --- Z6\n    Z2 --- Z10\n\n    Z3 --- Z6\n    Z3 --- Z15\n\n    Z5 --- Z10\n    Z5 --- Z15\n\n    Z6 --- Z30\n    Z10 --- Z30\n    Z15 --- Z30\n\n\n\n\n\n\nHere \\(m\\mathbb{Z} \\subseteq n\\mathbb{Z}\\) exactly when \\(n\\) divides \\(m\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#proposition-3.3.7-subgroup-criterion",
+    "href": "classes/11/slides.html#proposition-3.3.7-subgroup-criterion",
+    "title": "Slides: Cosets",
+    "section": "Proposition 3.3.7 Subgroup Criterion",
+    "text": "Proposition 3.3.7 Subgroup Criterion\nA subset \\(H\\) of \\(G\\) is a subgroup if and only if it satisfies the following conditions.\n\nIdentity The identity \\(e\\) of \\(G\\) is in \\(H\\).\nClosure If \\(h_1,h_2\\in H\\), then\n\\[\nh_1h_2\\in H.\n\\]\nInverse If \\(h\\in H\\), then\n\\[\nh^{-1}\\in H.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#proposition-3.3.8-another-subgroup-test",
+    "href": "classes/11/slides.html#proposition-3.3.8-another-subgroup-test",
+    "title": "Slides: Cosets",
+    "section": "Proposition 3.3.8 Another Subgroup Test",
+    "text": "Proposition 3.3.8 Another Subgroup Test\nLet \\(H\\) be a subset of a group \\(G\\).\nThen \\(H\\) is a subgroup of \\(G\\) if and only if\n\\[\nH\\neq\\emptyset\n\\]\nand whenever \\(g,h\\in H\\),\n\\[\ngh^{-1}\\in H.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#proof-of-second-subgroup-test",
+    "href": "classes/11/slides.html#proof-of-second-subgroup-test",
+    "title": "Slides: Cosets",
+    "section": "Proof of Second Subgroup Test",
+    "text": "Proof of Second Subgroup Test\nOne condition gives us everything:\n\nIdentity: \\(gg^{-1}=e\\in H\\)\nInverse: \\(eg^{-1}=g^{-1}\\in H\\)\nClosure: \\(h_1(h_2^{-1})^{-1}=h_1h_2\\in H\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#example-of-using-the-subgroup-test",
+    "href": "classes/11/slides.html#example-of-using-the-subgroup-test",
+    "title": "Slides: Cosets",
+    "section": "Example of using the Subgroup Test",
+    "text": "Example of using the Subgroup Test\nLet \\(H=2\\mathbb Z.\\)\nSince \\(0\\in H\\), we know \\(H\\neq\\emptyset\\).\nIf \\(a,b\\in H\\), then \\(a=2m,\\qquad b=2n\\) for some \\(m,n\\in\\mathbb Z\\).\nTherefore \\(a-b=2m-2n=2(m-n)\\in2\\mathbb Z\\).\nHence \\(2\\mathbb Z\\leq\\mathbb Z\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#quaternion-group",
+    "href": "classes/11/slides.html#quaternion-group",
+    "title": "Slides: Cosets",
+    "section": "Quaternion Group",
+    "text": "Quaternion Group\nLet\n\\(I=\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\), \\(A=\\begin{pmatrix}0&1\\\\-1&0\\end{pmatrix}\\),\n\\(B=\\begin{pmatrix}0&i\\\\i&0\\end{pmatrix}\\), \\(C=\\begin{pmatrix}i&0\\\\0&-i\\end{pmatrix}\\),\n\\(Q_8=\\{I, -I, A, -A, B, -B, C, -C \\}\\),\n\\(Q_8 \\leq M_2(\\mathbb C)\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#symmetries-of-the-square",
+    "href": "classes/11/slides.html#symmetries-of-the-square",
+    "title": "Slides: Cosets",
+    "section": "Symmetries of the Square",
+    "text": "Symmetries of the Square\nConsider the symmetries of the square with four rotations \\(e, r_1, r_2, r_3\\) and four flips \\(f_v\\) flip across a vertical line, \\(f_h\\) flip about a horizonal line, and \\(f_{d_1}\\) and \\(f_{d_2}\\) the flips about the diagonal lines.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#u20",
+    "href": "classes/11/slides.html#u20",
+    "title": "Slides: Cosets",
+    "section": "\\(U(20)\\)",
+    "text": "\\(U(20)\\)\n\\[\\{ 1,3,7,9,11,13,17,19\\}\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#group-activty",
+    "href": "classes/11/slides.html#group-activty",
+    "title": "Slides: Cosets",
+    "section": "Group Activty",
+    "text": "Group Activty\n\nChoose either the Quaternions, the symmetries of the square, or \\(U(8)\\)\nConstruct the Multiplication Table\nFind the Subgroups of the chosen group\nCreate a lattice represendtion of the group and its subsgroups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
     ]
   },
   {

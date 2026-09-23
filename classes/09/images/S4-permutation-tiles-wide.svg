@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="8.5in"
+     height="11in"
+     viewBox="0 0 816 1056">
+
+  <defs>
+    <style>
+      .cut {
+        fill: none;
+        stroke: black;
+        stroke-width: 1.4;
+        stroke-dasharray: 7 5;
+      }
+
+      .node {
+        fill: white;
+        stroke: black;
+        stroke-width: 1.6;
+      }
+
+      .label {
+        font-family: "Times New Roman", serif;
+        font-size: 17px;
+        text-anchor: middle;
+        dominant-baseline: middle;
+        fill: black;
+      }
+    </style>
+
+    <g id="tile4">
+
+      <!-- cut boundary -->
+      <rect class="cut"
+            x="1"
+            y="1"
+            width="378"
+            height="158"/>
+
+      <!-- TOP ROW -->
+      <circle class="node" cx="35"  cy="42" r="13"/>
+      <circle class="node" cx="82"  cy="42" r="13"/>
+      <circle class="node" cx="129" cy="42" r="13"/>
+      <circle class="node" cx="176" cy="42" r="13"/>
+
+      <text class="label" x="35"  y="42">1</text>
+      <text class="label" x="82"  y="42">2</text>
+      <text class="label" x="129" y="42">3</text>
+      <text class="label" x="176" y="42">4</text>
+
+      <!-- BOTTOM ROW -->
+      <circle class="node" cx="35"  cy="118" r="13"/>
+      <circle class="node" cx="82"  cy="118" r="13"/>
+      <circle class="node" cx="129" cy="118" r="13"/>
+      <circle class="node" cx="176" cy="118" r="13"/>
+
+      <text class="label" x="35"  y="118">1</text>
+      <text class="label" x="82"  y="118">2</text>
+      <text class="label" x="129" y="118">3</text>
+      <text class="label" x="176" y="118">4</text>
+
+      <!-- subtle divider between drawing and writing area -->
+      <line x1="205"
+            y1="18"
+            x2="205"
+            y2="142"
+            stroke="black"
+            stroke-width="0.7"
+            stroke-dasharray="3 4"/>
+
+    </g>
+  </defs>
+
+  <!-- row 1 -->
+  <use href="#tile4" x="24"  y="24"/>
+  <use href="#tile4" x="414" y="24"/>
+
+  <!-- row 2 -->
+  <use href="#tile4" x="24"  y="192"/>
+  <use href="#tile4" x="414" y="192"/>
+
+  <!-- row 3 -->
+  <use href="#tile4" x="24"  y="360"/>
+  <use href="#tile4" x="414" y="360"/>
+
+  <!-- row 4 -->
+  <use href="#tile4" x="24"  y="528"/>
+  <use href="#tile4" x="414" y="528"/>
+
+  <!-- row 5 -->
+  <use href="#tile4" x="24"  y="696"/>
+  <use href="#tile4" x="414" y="696"/>
+
+  <!-- row 6 -->
+  <use href="#tile4" x="24"  y="864"/>
+  <use href="#tile4" x="414" y="864"/>
+
+</svg>

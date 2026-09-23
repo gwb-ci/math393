@@ -123,9 +123,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -141,280 +138,263 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Understand subgroup tests</li>
-<li>Find Subgroups of given groups</li>
-<li>Graphically represent Groups and Subgroups</li>
+<li>Define the symmetric group <span class="math inline">\(S_n\)</span>.</li>
+<li>Represent permutations using cycle notation.</li>
+<li>Compute products of permutations.</li>
+<li>Write permutations as products of disjoint cycles and transpositions.</li>
 </ul>
 </section>
-<section id="definition-of-a-group" class="slide level2">
-<h2>Definition of a Group</h2>
-<p>A <strong>group</strong> <span class="math inline">\((G,\cdot)\)</span> is a set <span class="math inline">\(G\)</span> together with a law of composition</p>
-<p><span class="math inline">\((a,b)\mapsto a\cdot b\)</span> satisfying:</p>
+<section id="what-is-the-symmetric-group" class="slide level2">
+<h2>What is the Symmetric Group?</h2>
+<p>A <strong>permutation</strong> of a set <span class="math inline">\(X\)</span> is a one-to-one and onto function</p>
+<p><span class="math display">\[
+\sigma:X\longrightarrow X.
+\]</span></p>
+<p>The permutations of a set <span class="math inline">\(X\)</span> form a group <span class="math inline">\(S_X\)</span>.</p>
+<p>If <span class="math inline">\(X\)</span> is finite, we can assume</p>
+<p><span class="math display">\[
+X=\{1,2,\ldots,n\}.
+\]</span></p>
+<p>In this case, we write <span class="math inline">\(S_n\)</span> instead of <span class="math inline">\(S_X\)</span>.</p>
+<p>The group <span class="math inline">\(S_n\)</span> is called the <strong>symmetric group on <span class="math inline">\(n\)</span> letters</strong>.</p>
+</section>
+<section id="permutation-drawings" class="slide level2">
+<h2>Permutation Drawings</h2>
+<p>A permutation describes a rearrangement of a set.</p>
+<p>We can represent a permutation by drawing where each element is sent.</p>
+
+<img data-src="images/read-permutation-drawing.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:48.0%"><p>Follow the lines in the drawing:</p>
+<p><span class="math display">\[
+1\mapsto2,\qquad
+2\mapsto3,\qquad
+3\mapsto1,\qquad
+4\mapsto5,\qquad
+5\mapsto4.
+\]</span></p>
+<p>Every element is sent to exactly one element, and every element is the image of exactly one element.</p>
+</section>
+<section id="from-drawings-to-permutation-notation" class="slide level2">
+<h2>From Drawings to Permutation Notation</h2>
+<p>We can record the same permutation without the drawing.</p>
+<p>The <strong>top row</strong> lists the elements.</p>
+<p>The <strong>bottom row</strong> records where each element is sent.</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+1&amp;2&amp;3&amp;4&amp;5\\
+2&amp;3&amp;1&amp;5&amp;4
+\end{pmatrix}
+\]</span></p>
+<p>The drawing and the two-line notation represent the same permutation.</p>
+</section>
+<section id="activity-build-s_4" class="slide level2">
+<h2>Activity: Build <span class="math inline">\(S_4\)</span></h2>
+<p>Today we are going to construct <strong>every element of <span class="math inline">\(S_4\)</span></strong>.</p>
+<p>There are $|S_4|=4!=24 permutations to construct.</p>
+<p>For each card:</p>
 <ol type="1">
-<li><p><strong>Associativity:</strong><br>
-<span class="math inline">\((a\cdot b)\cdot c=a\cdot(b\cdot c)\)</span> for <span class="math inline">\(a,b,c\in G\)</span>.</p></li>
-<li><p><strong>Identity:</strong><br>
-There exists <span class="math inline">\(e\in G\)</span> such that <span class="math inline">\(e\cdot a=a\cdot e=a\)</span> for every <span class="math inline">\(a\in G\)</span>.</p></li>
-<li><p><strong>Inverses:</strong><br>
-For each <span class="math inline">\(a\in G\)</span>, there exists <span class="math inline">\(a^{-1}\in G\)</span> such that <span class="math inline">\(a\cdot a^{-1}=a^{-1}\cdot a=e\)</span>.</p></li>
+<li>Draw the permutation by connecting the top row to the bottom row.</li>
+<li>On the top half of the blank side, write the permutation in two-line notation.</li>
+<li>Leave the bottom half blank — we will add different notation later.</li>
 </ol>
 </section>
-<section id="definition-of-a-subgroup" class="slide level2">
-<h2>Definition of a Subgroup</h2>
-<p>Let <span class="math inline">\(G\)</span> be a group.</p>
-<p>A <strong>subgroup</strong> <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> such that when the group operation of <span class="math inline">\(G\)</span> is restricted to <span class="math inline">\(H\)</span>, <span class="math inline">\(H\)</span> is a group in its own right.</p>
-<p>We write <span class="math inline">\(H \leq G\)</span>.</p>
-<p>A subgroup uses the <strong>same operation</strong> as the original group.</p>
+<section id="we-have-a-set-now-we-need-an-operation" class="slide level2">
+<h2>We Have a Set — Now We Need an Operation</h2>
+<p>We have constructed the <span class="math inline">\(24\)</span> elements of <span class="math inline">\(S_4\)</span>. How should we <strong>multiply</strong> two permutations?</p>
+<p>Place one permutation drawing <strong>on top of another</strong> and follow the paths from top to bottom.</p>
+<p>If <span class="math inline">\(\sigma\)</span> is on the bottom and <span class="math inline">\(\tau\)</span> is on the top, we write <span class="math inline">\(\sigma\tau\)</span>.</p>
+<p>Apply the function <span class="math inline">\(\tau\)</span> first, then <span class="math inline">\(\sigma\)</span>.</p>
+<p><span class="math display">\[\sigma\tau(x)=\sigma(\tau(x))\]</span></p>
 </section>
-<section id="subgroups-of-mathbb-z_6" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z_6\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z_6\)</span> under addition.</p>
-<p><span class="math inline">\(\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.\)</span></p>
-<p>Which subsets form subgroups?</p>
+<section id="activity-explore-multiplication-in-s_4" class="slide level2">
+<h2>Activity: Explore Multiplication in <span class="math inline">\(S_4\)</span></h2>
+<p>Choose several pairs of tiles and calculate their products.</p>
+<p>For each pair, stack the two permutation drawings. Follow <span class="math inline">\(1,2,3,4\)</span> through both drawings. Find the tile representing the product.</p>
+<p>Ponderings: Does your product always correspond to another tile in <span class="math inline">\(S_4\)</span>? Can you find an indentity tile <span class="math inline">\(e\)</span>? Can you find inverses?</p>
+</section>
+<section id="activity-what-about-associativity" class="slide level2">
+<h2>Activity: What About Associativity?</h2>
+<p>Choose three permutation tiles and call them <span class="math inline">\(\sigma,\qquad\tau,\qquad\rho\)</span>.</p>
+<p>Calculate <span class="math inline">\((\sigma\tau)\rho\)</span>. Find the corresponding tile in <span class="math inline">\(S_4\)</span> for <span class="math inline">\((\sigma\tau)\)</span>.</p>
+<p>Calculate <span class="math inline">\(\sigma(\tau\rho)\)</span>. Find the corresponding tile in <span class="math inline">\(S_4\)</span> for <span class="math inline">\((\tau\rho)\)</span>.</p>
+<p>Compare your results are the two resulting mappings the same or different?</p>
+<p>–</p>
+</section>
+<section id="theorem-5.1.1" class="slide level2">
+<h2>Theorem 5.1.1</h2>
+<p>The symmetric group on <span class="math inline">\(n\)</span> letters, <span class="math inline">\(S_n\)</span>, is a group with <span class="math inline">\(n!\)</span> elements, where the binary operation is the composition of maps.</p>
+</section>
+<section id="proof" class="slide level2">
+<h2>Proof</h2>
+<p><strong>Identity:</strong> Consider the permutation <span class="math inline">\(\pi(i)=i\)</span>.</p>
+<p><strong>Inverse:</strong> If <span class="math inline">\(\pi(i)=j\)</span>, define <span class="math inline">\(\tau(j)=i\)</span>.</p>
+<p><strong>Associativity:</strong> Composition of maps is associative.</p>
+<p>The order of <span class="math inline">\(S_n\)</span> is an exercise.</p>
+</section>
+<section id="activity-what-about-communitivity" class="slide level2">
+<h2>Activity: What about Communitivity?</h2>
+<p>Choose two permutation tiles and call them <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(\tau\)</span>.</p>
+<p>Calculate both <span class="math inline">\(\sigma\tau\)</span> and <span class="math inline">\(\tau\sigma\)</span>.</p>
+<p>Find pairs of tiles that do commute and pairs of tiles that don’t communte.</p>
+</section>
+<section id="cycle-notation" class="slide level2">
+<h2>Cycle Notation</h2>
+<p>Permutation drawings show us where every element goes. Instead of recording every mapping, we can follow an element until we return to where we started.</p>
+
+<img data-src="images/read-permutation-drawing.svg" class="quarto-figure quarto-figure-center r-stretch" style="width:60.0%"><p>For example, <span class="math inline">\(1\mapsto2\mapsto3\mapsto1\)</span> is written <span class="math inline">\((1\,2\,3)\)</span>.</p>
+<p>The other set of elements satisfies <span class="math inline">\(4\mapsto5\mapsto4\)</span>. We write <span class="math inline">\((4\,5)\)</span>.</p>
+<p>Together, the permutation is <span class="math inline">\((1\,2\,3)(4\,5)\)</span>. This is called <strong>cycle notation</strong>.</p>
+</section>
+<section id="reading-cycle-notation" class="slide level2">
+<h2>Reading Cycle Notation</h2>
+<p>In the cycle <span class="math inline">\((1\,3\,4\,2)\)</span> we read from left to right:</p>
 <p><span class="math display">\[
-\{[0]\}
+1\mapsto3,\qquad
+3\mapsto4,\qquad
+4\mapsto2,\qquad
+2\mapsto1.
 \]</span></p>
-<p><span class="math display">\[
-\{[0],[3]\}
-\]</span></p>
-<p><span class="math display">\[
-\{[0],[2],[4]\}
-\]</span></p>
-<p><span class="math display">\[
-\mathbb Z_6
-\]</span></p>
+<p>Elements that do not appear in a cycle are fixed.</p>
+<p>For example, in <span class="math inline">\(S_6\)</span> <span class="math inline">\((1\,3\,4\,2)\)</span></p>
+<p>also means <span class="math inline">\(5\mapsto5 \qquad\text{and}\qquad6\mapsto6\)</span>.</p>
 </section>
-<section id="subgroups-of-mathbbz_6-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> Lattice Diagram</h2>
-<p>The subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> are</p>
-<p><span class="math inline">\(\mathbb{Z}_6 = \langle 1 \rangle\)</span>, <span class="math inline">\(\langle 2 \rangle = \{0,2,4\}\)</span>, <span class="math inline">\(\langle 3 \rangle = \{0,3\}\)</span>, and <span class="math inline">\(\{0\}\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
-    H2["⟨2⟩ = {0,2,4}"]
-    H3["⟨3⟩ = {0,3}"]
-    E["{0}"]
+<section id="activity-add-cycle-notation-to-s_4" class="slide level2">
+<h2>Activity: Add Cycle Notation to <span class="math inline">\(S_4\)</span></h2>
+<p>Return to your <span class="math inline">\(S_4\)</span> permutation tiles.</p>
+<p>For each tile, write the result in cycle notation in the remaining blank space.</p>
+<p>Ponderings: Which permutations consist of one cycle? Which have more than one cycle? Which elements are fixed?</p>
+</section>
+<section id="activity-cycle-notation-in-s_6" class="slide level2">
+<h2>Activity: Cycle Notation in <span class="math inline">\(S_6\)</span></h2>
+<p>Now return to the <span class="math inline">\(S_6\)</span> tiles you constructed.</p>
+<p>For each tile write the permutation in cycle notation.</p>
+<p>Then compare your tiles with others in your group.</p>
+<p>Ponderings: Can you find a permutation with fixed points, a <span class="math inline">\(2\)</span>-cycle, a <span class="math inline">\(3\)</span>-cycle, a <span class="math inline">\(4\)</span>-cycle, a <span class="math inline">\(5\)</span>-cycle, a <span class="math inline">\(6\)</span>-cycle, and a permutation containing two disjoint cycles?</p>
+</section>
+<section class="slide level2">
 
-    Z6 --- H2
-    Z6 --- H3
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
 </section>
-<section id="subgroups-of-u9" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span></h2>
-<p>The group of units modulo <span class="math inline">\(9\)</span> is</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>The subgroups of <span class="math inline">\(U(9)\)</span> are</p>
-<p><span class="math inline">\(\{1\}\)</span>,</p>
-<p><span class="math inline">\(\langle 8\rangle=\{1,8\}\)</span>,</p>
-<p><span class="math inline">\(\langle 4\rangle=\{1,4,7\}\)</span>,</p>
-<p>and</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>Thus, <span class="math inline">\(U(9)\)</span> has four subgroups.</p>
-</section>
-<section id="subgroups-of-u9-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span> Lattice Diagram</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
-    H2["⟨8⟩ = {1, 8}"]
-    H3["⟨4⟩ = {1, 4, 7}"]
-    E["{1}"]
-
-    U9 --- H2
-    U9 --- H3
-
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
-<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
-<p>Let <span class="math inline">\(D_3=\{e,r_1,r_2,f_a,f_b,f_c\}\)</span>.</p>
-<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
-<p>The subgroups are: <span class="math inline">\(\{e\}\)</span></p>
-<p><span class="math display">\[
-\{e,f_a\},
-\qquad
-\{e,f_b\},
-\qquad
-\{e,f_c\},
-\]</span></p>
-<p><span class="math inline">\(\{e,r_1,r_2\}\)</span>, and <span class="math inline">\(D_3\)</span>.</p>
-</section>
-<section id="group-lattice-for-the-symmetries-of-the-equilateral-triangle" class="slide level2">
-<h2>Group Lattice for the Symmetries of the Equilateral Triangle</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    D3["D&lt;sub&gt;3&lt;/sub&gt;"]
-    R["{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}"]
-    Fa["{e, f&lt;sub&gt;a&lt;/sub&gt;}"]
-    Fb["{e, f&lt;sub&gt;b&lt;/sub&gt;}"]
-    Fc["{e, f&lt;sub&gt;c&lt;/sub&gt;}"]
-    E["{e}"]
-
-    D3 --- R
-    D3 --- Fa
-    D3 --- Fb
-    D3 --- Fc
-
-    R --- E
-    Fa --- E
-    Fb --- E
-    Fc --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-mathbb-z" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z\)</span> under addition.</p>
-<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define <span class="math inline">\(n\mathbb Z=\{nk:k\in\mathbb Z\}\)</span>.</p>
-<p>Examples:</p>
-<p><span class="math display">\[
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-\]</span></p>
-<p><span class="math display">\[
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-\]</span></p>
-<p>For every <span class="math inline">\(n\geq 0\)</span>, <span class="math inline">\(n\mathbb Z \leq   \mathbb Z\)</span>.</p>
-</section>
-<section id="a-portion-of-the-subgroup-lattice-of-mathbbz" class="slide level2">
-<h2>A Portion of the Subgroup Lattice of <span class="math inline">\(\mathbb{Z}\)</span></h2>
-<p>Every subgroup of <span class="math inline">\(\mathbb{Z}\)</span> is of the form <span class="math inline">\(n\mathbb{Z}\)</span> for some nonnegative integer <span class="math inline">\(n\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z["Z"]
-    Z2["2Z"]
-    Z3["3Z"]
-    Z5["5Z"]
-    Z6["6Z"]
-    Z10["10Z"]
-    Z15["15Z"]
-    Z30["30Z"]
-
-    Z --- Z2
-    Z --- Z3
-    Z --- Z5
-
-    Z2 --- Z6
-    Z2 --- Z10
-
-    Z3 --- Z6
-    Z3 --- Z15
-
-    Z5 --- Z10
-    Z5 --- Z15
-
-    Z6 --- Z30
-    Z10 --- Z30
-    Z15 --- Z30
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p>Here <span class="math inline">\(m\mathbb{Z} \subseteq n\mathbb{Z}\)</span> exactly when <span class="math inline">\(n\)</span> divides <span class="math inline">\(m\)</span>.</p>
-</section>
-<section id="proposition-3.3.7-subgroup-criterion" class="slide level2">
-<h2>Proposition 3.3.7 Subgroup Criterion</h2>
-<p>A subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subgroup if and only if it satisfies the following conditions.</p>
-<ol type="1">
-<li><p><strong>Identity</strong> The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</p></li>
-<li><p><strong>Closure</strong> If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
-<p><span class="math display">\[
-h_1h_2\in H.
-\]</span></p></li>
-<li><p><strong>Inverse</strong> If <span class="math inline">\(h\in H\)</span>, then</p>
-<p><span class="math display">\[
-h^{-1}\in H.
-\]</span></p></li>
-</ol>
-</section>
-<section id="proposition-3.3.8-another-subgroup-test" class="slide level2">
-<h2>Proposition 3.3.8 Another Subgroup Test</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subset of a group <span class="math inline">\(G\)</span>.</p>
-<p>Then <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(G\)</span> if and only if</p>
-<p><span class="math display">\[
-H\neq\emptyset
-\]</span></p>
-<p>and whenever <span class="math inline">\(g,h\in H\)</span>,</p>
-<p><span class="math display">\[
-gh^{-1}\in H.
-\]</span></p>
-</section>
-<section id="proof-of-second-subgroup-test" class="slide level2">
-<h2>Proof of Second Subgroup Test</h2>
-<p>One condition gives us everything:</p>
-<ul>
-<li><p>Identity: <span class="math inline">\(gg^{-1}=e\in H\)</span></p></li>
-<li><p>Inverse: <span class="math inline">\(eg^{-1}=g^{-1}\in H\)</span></p></li>
-<li><p>Closure: <span class="math inline">\(h_1(h_2^{-1})^{-1}=h_1h_2\in H\)</span></p></li>
-</ul>
-</section>
-<section id="example-of-using-the-subgroup-test" class="slide level2">
-<h2>Example of using the Subgroup Test</h2>
-<p>Let <span class="math inline">\(H=2\mathbb Z.\)</span></p>
-<p>Since <span class="math inline">\(0\in H\)</span>, we know <span class="math inline">\(H\neq\emptyset\)</span>.</p>
-<p>If <span class="math inline">\(a,b\in H\)</span>, then <span class="math inline">\(a=2m,\qquad b=2n\)</span> for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
-<p>Therefore <span class="math inline">\(a-b=2m-2n=2(m-n)\in2\mathbb Z\)</span>.</p>
-<p>Hence <span class="math inline">\(2\mathbb Z\leq\mathbb Z\)</span>.</p>
-</section>
-<section id="quaternion-group" class="slide level2">
-<h2>Quaternion Group</h2>
+<section id="cycle-notation-multiplication" class="slide level2">
+<h2>Cycle Notation Multiplication</h2>
 <p>Let</p>
-<p><span class="math inline">\(I=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>, <span class="math inline">\(A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(B=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}\)</span>, <span class="math inline">\(C=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(Q_8=\{I, -I, A, -A, B, -B, C, -C \}\)</span>,</p>
-<p><span class="math inline">\(Q_8 \leq M_2(\mathbb C)\)</span></p>
+<p><span class="math display">\[
+\sigma=(1\,3\,5)(2\,4),
+\qquad
+\tau=(1\,2\,6)(3\,4).
+\]</span></p>
+<p>Compute <span class="math inline">\(\sigma\tau\)</span> <strong>right to left</strong>:</p>
+<p><span class="math display">\[
+1\xrightarrow{\tau}2\xrightarrow{\sigma}4
+\quad
+4\xrightarrow{\tau}3\xrightarrow{\sigma}5
+\quad
+5\xrightarrow{\tau}5\xrightarrow{\sigma}1
+\]</span></p>
+<p>so we get <span class="math inline">\((1\,4\,5)\)</span>.</p>
+<p>Starting with <span class="math inline">\(2\)</span>:</p>
+<p><span class="math display">\[
+2\xrightarrow{\tau}6\xrightarrow{\sigma}6
+\quad
+6\xrightarrow{\tau}1\xrightarrow{\sigma}3
+\quad
+3\xrightarrow{\tau}4\xrightarrow{\sigma}2
+\]</span></p>
+<p>so we get <span class="math inline">\((2\,6\,3)\)</span>.</p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+\boxed{\sigma\tau=(1\,4\,5)(2\,6\,3)}.
+\]</span></p>
 </section>
-<section id="symmetries-of-the-square" class="slide level2">
-<h2>Symmetries of the Square</h2>
-<p>Consider the symmetries of the square with four rotations <span class="math inline">\(e, r_1, r_2, r_3\)</span> and four flips <span class="math inline">\(f_v\)</span> flip across a vertical line, <span class="math inline">\(f_h\)</span> flip about a horizonal line, and <span class="math inline">\(f_{d_1}\)</span> and <span class="math inline">\(f_{d_2}\)</span> the flips about the diagonal lines.</p>
+<section id="proposition-5.1.8" class="slide level2">
+<h2>Proposition 5.1.8</h2>
+<p>Let <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(\tau\)</span> be two disjoint cycles in <span class="math inline">\(S_X\)</span>. Then <span class="math inline">\(\sigma\tau=\tau\sigma\)</span>.</p>
+<p>If <span class="math inline">\(x\)</span> occurs in <span class="math inline">\(\sigma\)</span>, then <span class="math inline">\(\tau\)</span> fixes <span class="math inline">\(x\)</span> and every element to which <span class="math inline">\(\sigma\)</span> sends <span class="math inline">\(x\)</span>.</p>
 </section>
-<section id="u20" class="slide level2">
-<h2><span class="math inline">\(U(20)\)</span></h2>
-<p><span class="math display">\[\{ 1,3,7,9,11,13,17,19\}\]</span></p>
+<section id="theorem-5.1.9" class="slide level2">
+<h2>Theorem 5.1.9</h2>
+<p>Every permutation in <span class="math inline">\(S_n\)</span> can be written as the product of disjoint cycles.</p>
 </section>
-<section id="group-activty" class="slide level2">
-<h2>Group Activty</h2>
-<ol type="1">
-<li>Choose either the Quaternions, the symmetries of the square, or <span class="math inline">\(U(8)\)</span></li>
-<li>Construct the Multiplication Table</li>
-<li>Find the Subgroups of the chosen group</li>
-<li>Create a lattice represendtion of the group and its subsgroups.</li>
-</ol>
+<section id="proof-1" class="slide level2">
+<h2>Proof</h2>
+<p>Start with <span class="math inline">\(1\)</span> and repeatedly apply <span class="math inline">\(\sigma\)</span>:</p>
+<p><span class="math display">\[
+1,\sigma(1),\sigma^2(1),\ldots
+\]</span></p>
+<p>Since the set is finite, we eventually return to <span class="math inline">\(1\)</span>, producing a cycle.</p>
+<p>Next, choose an element not appearing in that cycle and repeat the process.</p>
+<p>Continuing in this manner produces disjoint cycles <span class="math inline">\(\sigma_1,\sigma_2,\ldots,\sigma_r\)</span></p>
+<p>such that<span class="math inline">\(\sigma=\sigma_1\sigma_2\cdots\sigma_r\)</span>.</p>
+</section>
+<section id="transpositions" class="slide level2">
+<h2>Transpositions</h2>
+<p>A cycle of length <span class="math inline">\(2\)</span> is called a <strong>transposition</strong>.</p>
+<p>For example,<span class="math inline">\((2\,5)\)</span> is a transposition. Any cycle can be written as a product of transpositions:</p>
+<p><span class="math display">\[
+(a_1\,a_2\,\ldots\,a_n)
+=
+(a_1\,a_n)(a_1\,a_{n-1})\cdots(a_1\,a_3)(a_1\,a_2).
+\]</span></p>
+<p>A permutation is <strong>even</strong> if it can be expressed as an even number of transpositions.</p>
+<p>A permutation is <strong>odd</strong> if it can be expressed as an odd number of transpositions.</p>
+</section>
+<section id="activity-even-and-odd-permutations-in-s_4" class="slide level2">
+<h2>Activity: Even and Odd Permutations in <span class="math inline">\(S_4\)</span></h2>
+<p>Return to the <strong>24 permutation tiles</strong> that make up <span class="math inline">\(S_4\)</span>.</p>
+<p>Then sort all <span class="math inline">\(24\)</span> tiles into two groups: odd permutation and even permutations.</p>
+<p>Ponderings: How many permutations are even? How many permutations are odd? What types of cycles appear in each group?</p>
+</section>
+<section id="theorem-5.1.15" class="slide level2">
+<h2>Theorem 5.1.15</h2>
+<p><strong>Theorem.</strong> If a permutation <span class="math inline">\(\sigma\)</span> can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an even number of transpositions.</p>
+<p>Similarly, if <span class="math inline">\(\sigma\)</span> can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an odd number of transpositions.</p>
+<p>Thus, although a permutation may have many different representations as products of transpositions, its <strong>parity is well-defined</strong>.</p>
+</section>
+<section id="alternating-group" class="slide level2">
+<h2>Alternating Group</h2>
+<p>The set of all even permutations in <span class="math inline">\(S_n\)</span> is denoted by <span class="math inline">\(A_n\)</span>.</p>
+<p>The group <span class="math inline">\(A_n\)</span> is called the <strong>alternating group on <span class="math inline">\(n\)</span> letters</strong>.</p>
+<p><span class="math display">\[
+A_n=\{\sigma\in S_n:\sigma\text{ is even}\}.
+\]</span></p>
+</section>
+<section id="theorem-5.1.16" class="slide level2">
+<h2>Theorem 5.1.16</h2>
+<p>The set <span class="math inline">\(A_n\)</span> is a subgroup of <span class="math inline">\(S_n\)</span>.</p>
+<p>Why?</p>
+<ul>
+<li>The product of two even permutations is even.</li>
+<li>The identity is even.</li>
+<li>The inverse of an even permutation is even.</li>
+</ul>
+</section>
+<section id="proposition-5.1.17" class="slide level2">
+<h2>Proposition 5.1.17</h2>
+<p><strong>Proposition.</strong> The number of even permutations in <span class="math inline">\(S_n\)</span>, <span class="math inline">\(n\geq2\)</span>, is equal to the number of odd permutations; hence,</p>
+<p><span class="math display">\[
+|A_n|=\frac{n!}{2}.
+\]</span></p>
+<p>Let <span class="math inline">\(A_n\)</span> be the set of even permutations and <span class="math inline">\(B_n\)</span> the set of odd permutations.</p>
+<p>Fix a transposition <span class="math inline">\(\sigma\in S_n\)</span> and define</p>
+<p><span class="math display">\[
+\lambda_\sigma:A_n\longrightarrow B_n
+\]</span></p>
+<p>by <span class="math inline">\(\lambda_\sigma(\tau)=\sigma\tau\)</span>. Multiplication by a transposition changes the parity of a permutation. The map <span class="math inline">\(\lambda_\sigma\)</span> is a bijection, so <span class="math inline">\(A_n\)</span> and <span class="math inline">\(B_n\)</span> contain the same number of elements.</p>
+</section>
+<section id="alternating-group-example" class="slide level2">
+<h2>Alternating Group Example</h2>
+<p><span class="math display">\[
+|A_4|=\frac{4!}{2}=12,
+\]</span></p>
+<p>there are twelve elements:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;(1), &amp;(1\,2)(3\,4), &amp;(1\,3)(2\,4), &amp;(1\,4)(2\,3),\\
+&amp;(1\,2\,3), &amp;(1\,3\,2), &amp;(1\,2\,4), &amp;(1\,4\,2),\\
+&amp;(1\,3\,4), &amp;(1\,4\,3), &amp;(2\,3\,4), &amp;(2\,4\,3).
+\end{aligned}
+\]</span></p>
+</section>
+<section class="slide level2">
+
 
 
 </section>
