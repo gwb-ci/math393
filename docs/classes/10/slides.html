@@ -123,9 +123,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -142,7 +139,8 @@
 <h2>Class Session Goals</h2>
 <ul>
 <li>Determine whether a permutation is even or odd.</li>
-<li>Define the alternating group <span class="math inline">\(A_n\)</span>.</li>
+<li>Explore the alternating group <span class="math inline">\(A_n\)</span>.</li>
+<li>Explore the alternating group <span class="math inline">\(D_n\)</span>.</li>
 </ul>
 </section>
 <section id="definition-of-a-group" class="slide level2">
@@ -165,255 +163,168 @@ For each <span class="math inline">\(a\in G\)</span>, there exists <span class="
 <p>We write <span class="math inline">\(H \leq G\)</span>.</p>
 <p>A subgroup uses the <strong>same operation</strong> as the original group.</p>
 </section>
-<section id="subgroups-of-mathbb-z_6" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z_6\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z_6\)</span> under addition.</p>
-<p><span class="math inline">\(\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.\)</span></p>
-<p>Which subsets form subgroups?</p>
+<section id="transpositions" class="slide level2">
+<h2>Transpositions</h2>
+<p>A cycle of length <span class="math inline">\(2\)</span> is called a <strong>transposition</strong>.</p>
+<p>For example,<span class="math inline">\((2\,5)\)</span> is a transposition. Any cycle can be written as a product of transpositions:</p>
 <p><span class="math display">\[
-\{[0]\}
+(a_1\,a_2\,\ldots\,a_n)
+=
+(a_1\,a_n)(a_1\,a_{n-1})\cdots(a_1\,a_3)(a_1\,a_2).
 \]</span></p>
+<p>A permutation is <strong>even</strong> if it can be expressed as an even number of transpositions.</p>
+<p>A permutation is <strong>odd</strong> if it can be expressed as an odd number of transpositions.</p>
+</section>
+<section id="lemma-5.1.14" class="slide level2">
+<h2>Lemma 5.1.14</h2>
+<p>If the identity is written as the product of <span class="math inline">\(r\)</span> transpositions,</p>
 <p><span class="math display">\[
-\{[0],[3]\}
+\operatorname{id}=\tau_1\tau_2\cdots\tau_r,
 \]</span></p>
-<p><span class="math display">\[
-\{[0],[2],[4]\}
-\]</span></p>
-<p><span class="math display">\[
-\mathbb Z_6
-\]</span></p>
+<p>then <span class="math inline">\(r\)</span> is an even number.</p>
 </section>
-<section id="subgroups-of-mathbbz_6-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> Lattice Diagram</h2>
-<p>The subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> are</p>
-<p><span class="math inline">\(\mathbb{Z}_6 = \langle 1 \rangle\)</span>, <span class="math inline">\(\langle 2 \rangle = \{0,2,4\}\)</span>, <span class="math inline">\(\langle 3 \rangle = \{0,3\}\)</span>, and <span class="math inline">\(\{0\}\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
-    H2["⟨2⟩ = {0,2,4}"]
-    H3["⟨3⟩ = {0,3}"]
-    E["{0}"]
-
-    Z6 --- H2
-    Z6 --- H3
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-u9" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span></h2>
-<p>The group of units modulo <span class="math inline">\(9\)</span> is</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>The subgroups of <span class="math inline">\(U(9)\)</span> are</p>
-<p><span class="math inline">\(\{1\}\)</span>,</p>
-<p><span class="math inline">\(\langle 8\rangle=\{1,8\}\)</span>,</p>
-<p><span class="math inline">\(\langle 4\rangle=\{1,4,7\}\)</span>,</p>
-<p>and</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>Thus, <span class="math inline">\(U(9)\)</span> has four subgroups.</p>
-</section>
-<section id="subgroups-of-u9-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span> Lattice Diagram</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
-    H2["⟨8⟩ = {1, 8}"]
-    H3["⟨4⟩ = {1, 4, 7}"]
-    E["{1}"]
-
-    U9 --- H2
-    U9 --- H3
-
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
-<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
-<p>Let <span class="math inline">\(D_3=\{e,r_1,r_2,f_a,f_b,f_c\}\)</span>.</p>
-<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
-<p>The subgroups are: <span class="math inline">\(\{e\}\)</span></p>
+<section id="proof-of-lemma-5.1.14" class="slide level2">
+<h2>Proof of Lemma 5.1.14</h2>
+<p>We use induction on <span class="math inline">\(r\)</span> the number of transpositions. A transposition cannot be the identity, so <span class="math inline">\(r&gt;1\)</span>. If <span class="math inline">\(r=2\)</span>, we are done.</p>
+<p>For <span class="math inline">\(r&gt;2\)</span>, consider the last two transpositions. Up to relabeling, we have</p>
 <p><span class="math display">\[
-\{e,f_a\},
-\qquad
-\{e,f_b\},
-\qquad
-\{e,f_c\},
-\]</span></p>
-<p><span class="math inline">\(\{e,r_1,r_2\}\)</span>, and <span class="math inline">\(D_3\)</span>.</p>
-</section>
-<section id="group-lattice-for-the-symmetries-of-the-equilateral-triangle" class="slide level2">
-<h2>Group Lattice for the Symmetries of the Equilateral Triangle</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    D3["D&lt;sub&gt;3&lt;/sub&gt;"]
-    R["{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}"]
-    Fa["{e, f&lt;sub&gt;a&lt;/sub&gt;}"]
-    Fb["{e, f&lt;sub&gt;b&lt;/sub&gt;}"]
-    Fc["{e, f&lt;sub&gt;c&lt;/sub&gt;}"]
-    E["{e}"]
-
-    D3 --- R
-    D3 --- Fa
-    D3 --- Fb
-    D3 --- Fc
-
-    R --- E
-    Fa --- E
-    Fb --- E
-    Fc --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-mathbb-z" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z\)</span> under addition.</p>
-<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define <span class="math inline">\(n\mathbb Z=\{nk:k\in\mathbb Z\}\)</span>.</p>
-<p>Examples:</p>
-<p><span class="math display">\[
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-\]</span></p>
-<p><span class="math display">\[
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-\]</span></p>
-<p>For every <span class="math inline">\(n\geq 0\)</span>, <span class="math inline">\(n\mathbb Z \leq   \mathbb Z\)</span>.</p>
-</section>
-<section id="a-portion-of-the-subgroup-lattice-of-mathbbz" class="slide level2">
-<h2>A Portion of the Subgroup Lattice of <span class="math inline">\(\mathbb{Z}\)</span></h2>
-<p>Every subgroup of <span class="math inline">\(\mathbb{Z}\)</span> is of the form <span class="math inline">\(n\mathbb{Z}\)</span> for some nonnegative integer <span class="math inline">\(n\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z["Z"]
-    Z2["2Z"]
-    Z3["3Z"]
-    Z5["5Z"]
-    Z6["6Z"]
-    Z10["10Z"]
-    Z15["15Z"]
-    Z30["30Z"]
-
-    Z --- Z2
-    Z --- Z3
-    Z --- Z5
-
-    Z2 --- Z6
-    Z2 --- Z10
-
-    Z3 --- Z6
-    Z3 --- Z15
-
-    Z5 --- Z10
-    Z5 --- Z15
-
-    Z6 --- Z30
-    Z10 --- Z30
-    Z15 --- Z30
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p>Here <span class="math inline">\(m\mathbb{Z} \subseteq n\mathbb{Z}\)</span> exactly when <span class="math inline">\(n\)</span> divides <span class="math inline">\(m\)</span>.</p>
-</section>
-<section id="proposition-3.3.7-subgroup-criterion" class="slide level2">
-<h2>Proposition 3.3.7 Subgroup Criterion</h2>
-<p>A subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subgroup if and only if it satisfies the following conditions.</p>
-<ol type="1">
-<li><p><strong>Identity</strong> The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</p></li>
-<li><p><strong>Closure</strong> If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
-<p><span class="math display">\[
-h_1h_2\in H.
-\]</span></p></li>
-<li><p><strong>Inverse</strong> If <span class="math inline">\(h\in H\)</span>, then</p>
-<p><span class="math display">\[
-h^{-1}\in H.
-\]</span></p></li>
-</ol>
-</section>
-<section id="proposition-3.3.8-another-subgroup-test" class="slide level2">
-<h2>Proposition 3.3.8 Another Subgroup Test</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subset of a group <span class="math inline">\(G\)</span>.</p>
-<p>Then <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(G\)</span> if and only if</p>
-<p><span class="math display">\[
-H\neq\emptyset
-\]</span></p>
-<p>and whenever <span class="math inline">\(g,h\in H\)</span>,</p>
-<p><span class="math display">\[
-gh^{-1}\in H.
+\begin{aligned}
+(a\,b)(a\,b)&amp;=\operatorname{id},\\
+(b\,c)(a\,b)&amp;=(a\,c)(b\,c),\\
+(c\,d)(a\,b)&amp;=(a\,b)(c\,d),\\
+(a\,c)(a\,b)&amp;=(a\,b)(b\,c).
+\end{aligned}
 \]</span></p>
 </section>
-<section id="proof-of-second-subgroup-test" class="slide level2">
-<h2>Proof of Second Subgroup Test</h2>
-<p>One condition gives us everything:</p>
+<section id="theorem-5.1.15" class="slide level2">
+<h2>Theorem 5.1.15</h2>
+<p>If a permutation <span class="math inline">\(\sigma\)</span> can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an even number of transpositions.</p>
+<p>Similarly, if <span class="math inline">\(\sigma\)</span> can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling <span class="math inline">\(\sigma\)</span> must also contain an odd number of transpositions.</p>
+<div class="fragment">
+<p>This means that oddness and evenness of permutations is well-defined.</p>
+</div>
+</section>
+<section id="alternating-group" class="slide level2">
+<h2>Alternating Group</h2>
+<p>The set of all even permutations in <span class="math inline">\(S_n\)</span> is denoted by <span class="math inline">\(A_n\)</span>.</p>
+<p>The group <span class="math inline">\(A_n\)</span> is called the <strong>alternating group on <span class="math inline">\(n\)</span> letters</strong>.</p>
+<p><span class="math display">\[
+A_n=\{\sigma\in S_n:\sigma\text{ is even}\}.
+\]</span></p>
+</section>
+<section id="theorem-5.1.16" class="slide level2">
+<h2>Theorem 5.1.16</h2>
+<p>The set <span class="math inline">\(A_n\)</span> is a subgroup of <span class="math inline">\(S_n\)</span>.</p>
+<div class="fragment">
+<p>Why?</p>
 <ul>
-<li><p>Identity: <span class="math inline">\(gg^{-1}=e\in H\)</span></p></li>
-<li><p>Inverse: <span class="math inline">\(eg^{-1}=g^{-1}\in H\)</span></p></li>
-<li><p>Closure: <span class="math inline">\(h_1(h_2^{-1})^{-1}=h_1h_2\in H\)</span></p></li>
+<li>The product of two even permutations is even.</li>
+<li>The identity is even.</li>
+<li>The inverse of an even permutation is even.</li>
 </ul>
+</div>
 </section>
-<section id="example-of-using-the-subgroup-test" class="slide level2">
-<h2>Example of using the Subgroup Test</h2>
-<p>Let <span class="math inline">\(H=2\mathbb Z.\)</span></p>
-<p>Since <span class="math inline">\(0\in H\)</span>, we know <span class="math inline">\(H\neq\emptyset\)</span>.</p>
-<p>If <span class="math inline">\(a,b\in H\)</span>, then <span class="math inline">\(a=2m,\qquad b=2n\)</span> for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
-<p>Therefore <span class="math inline">\(a-b=2m-2n=2(m-n)\in2\mathbb Z\)</span>.</p>
-<p>Hence <span class="math inline">\(2\mathbb Z\leq\mathbb Z\)</span>.</p>
+<section id="proposition-5.1.17" class="slide level2">
+<h2>Proposition 5.1.17</h2>
+<p>The number of even permutations in <span class="math inline">\(S_n\)</span>, <span class="math inline">\(n\geq2\)</span>, is equal to the number of odd permutations. So <span class="math inline">\(|A_n|=\frac{n!}{2}\)</span>.</p>
 </section>
-<section id="quaternion-group" class="slide level2">
-<h2>Quaternion Group</h2>
-<p>Let</p>
-<p><span class="math inline">\(I=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>, <span class="math inline">\(A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(B=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}\)</span>, <span class="math inline">\(C=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(Q_8=\{I, -I, A, -A, B, -B, C, -C \}\)</span>,</p>
-<p><span class="math inline">\(Q_8 \leq M_2(\mathbb C)\)</span></p>
+<section id="proposition-5.1.17-proof" class="slide level2">
+<h2>Proposition 5.1.17 Proof</h2>
+<p>Let <span class="math inline">\(A_n\)</span> be the set of even permutations and <span class="math inline">\(B_n\)</span> the set of odd permutations.</p>
+<p>Fix a transposition <span class="math inline">\(\sigma\in S_n\)</span> and define <span class="math inline">\(\lambda_\sigma:A_n\longrightarrow B_n\)</span></p>
+<p>by <span class="math inline">\(\lambda_\sigma(\tau)=\sigma\tau\)</span>. Multiplication by a transposition changes the parity of a permutation. The map <span class="math inline">\(\lambda_\sigma\)</span> is a bijection, so <span class="math inline">\(A_n\)</span> and <span class="math inline">\(B_n\)</span> contain the same number of elements.</p>
 </section>
-<section id="symmetries-of-the-square" class="slide level2">
-<h2>Symmetries of the Square</h2>
-<p>Consider the symmetries of the square with four rotations <span class="math inline">\(e, r_1, r_2, r_3\)</span> and four flips <span class="math inline">\(f_v\)</span> flip across a vertical line, <span class="math inline">\(f_h\)</span> flip about a horizonal line, and <span class="math inline">\(f_{d_1}\)</span> and <span class="math inline">\(f_{d_2}\)</span> the flips about the diagonal lines.</p>
+<section id="activity-find-the-alternating-group-a_4" class="slide level2">
+<h2>Activity: Find the Alternating Group <span class="math inline">\(A_4\)</span></h2>
+<p>For your <span class="math inline">\(S_4\)</span> tiles:</p>
+<p>Label and sort the tiles into two piles:</p>
+<ul>
+<li>even permutations,</li>
+<li>odd permutations.</li>
+</ul>
+<p>The even pile is <span class="math inline">\(A_4\)</span>.</p>
 </section>
-<section id="u20" class="slide level2">
-<h2><span class="math inline">\(U(20)\)</span></h2>
-<p><span class="math display">\[\{ 1,3,7,9,11,13,17,19\}\]</span></p>
+<section id="dihedral-group-as-a-subgroup-of-s_n" class="slide level2">
+<h2>Dihedral Group as a Subgroup of <span class="math inline">\(S_n\)</span></h2>
+<p>The dihedral group <span class="math inline">\(D_n\)</span> consists of the rigid motions of a regular <span class="math inline">\(n\)</span>-gon.</p>
+<p>Label the vertices</p>
+<p><span class="math display">\[
+1,2,\ldots,n.
+\]</span></p>
+<p>Every rigid motion permutes these vertices, so each symmetry gives an element of <span class="math inline">\(S_n\)</span>.</p>
+<p>Thus we can view</p>
+<p><span class="math display">\[
+D_n\leq S_n.
+\]</span></p>
 </section>
-<section id="group-activty" class="slide level2">
-<h2>Group Activty</h2>
-<ol type="1">
-<li>Choose either the Quaternions, the symmetries of the square, or <span class="math inline">\(U(8)\)</span></li>
-<li>Construct the Multiplication Table</li>
-<li>Find the Subgroups of the chosen group</li>
-<li>Create a lattice represendtion of the group and its subsgroups.</li>
-</ol>
+<section id="activity-construct-d_5" class="slide level2">
+<h2>Activity: Construct <span class="math inline">\(D_5\)</span></h2>
+<p>Use the <span class="math inline">\(S_5\)</span> permutation-drawing tiles.</p>
+<p>Begin with the two tiles representing</p>
+<p><span class="math display">\[
+r=(1\,2\,3\,4\,5)
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+s=(2\,5)(3\,4).
+\]</span></p>
+<p>Use multiplication to construct new tiles from these two. Record these products on the empty tiles. Try to find all possible products of these two elements. Label each tile as a reflection or a rotation of the pentagon.</p>
+</section>
+<section id="activity-conjugating-cycles-by-reflections" class="slide level2">
+<h2>Activity: Conjugating Cycles by Reflections</h2>
+<p>Given two group elements <span class="math inline">\(\sigma\)</span> and <span class="math inline">\(\tau\)</span>, the congugate of <span class="math inline">\(\sigma\)</span> by <span class="math inline">\(\tau\)</span> is <span class="math inline">\(\tau \sigma \tau^{-1}\)</span>.</p>
+<p>Go back to you <span class="math inline">\(D_5\)</span> tiles. Choose a non-idenity rotation <span class="math inline">\(r\)</span> and a reflection <span class="math inline">\(s\)</span>. Calculate <span class="math inline">\(srs\)</span>. Do this for a few choices of <span class="math inline">\(r\)</span> and a few choices of <span class="math inline">\(s\)</span>. Can you for an conjecture about what the <span class="math inline">\(srs\)</span> is in general?</p>
+</section>
+<section id="another-construction-of-d_n" class="slide level2">
+<h2>Another Construction of <span class="math inline">\(D_n\)</span></h2>
+<p>Instead of starting with a geometric <span class="math inline">\(n\)</span>-gon, we can describe <span class="math inline">\(D_n\)</span> using two generators.</p>
+<p>Let <span class="math inline">\(r\)</span> represent a rotation and <span class="math inline">\(s\)</span> represent a reflection.</p>
+<p>They satisfy:</p>
+<ul>
+<li><span class="math inline">\(r^n=e\)</span></li>
+<li><span class="math inline">\(s^2=e\)</span></li>
+<li><span class="math inline">\(srs=r^{-1}\)</span></li>
+</ul>
+<p>These are called <strong>relations</strong>.</p>
+</section>
+<section id="d_4-by-generators-and-relations" class="slide level2">
+<h2><span class="math inline">\(D_4\)</span> by Generators and Relations</h2>
+<p>We write</p>
+<p><span class="math display">\[
+D_n=\langle r,s\mid r^n=e,\ s^2=e,\ srs=r^{-1}\rangle.
+\]</span></p>
+<p>Every element can be written in one of the forms</p>
+<p><span class="math display">\[
+r^k
+\qquad\text{or}\qquad
+r^ks,
+\]</span></p>
+<p>where <span class="math inline">\(0\leq k&lt;n\)</span>.</p>
+</section>
+<section id="activity-find-a-copy-of-d_4" class="slide level2">
+<h2>Activity: Find a Copy of <span class="math inline">\(D_4\)</span></h2>
+<p>Return to your <span class="math inline">\(S_4\)</span> tiles. Find a copy of <span class="math inline">\(D_4\)</span> in your tiles. What is <span class="math inline">\(D_4 \cap A_4\)</span>?</p>
+<div class="fragment">
+<p>This is called the Klein 4-group.</p>
+</div>
+</section>
+<section id="theorem-5.2.2" class="slide level2">
+<h2>Theorem 5.2.2</h2>
+<p>The dihedral group, <span class="math inline">\(D_n\)</span>, is a subgroup of <span class="math inline">\(S_n\)</span> of order <span class="math inline">\(2n\)</span>.</p>
+</section>
+<section id="theorem-5.2.3" class="slide level2">
+<h2>Theorem 5.2.3</h2>
+<p>The group <span class="math inline">\(D_n\)</span>, <span class="math inline">\(n\geq3\)</span>, consists of all products of two elements <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, where <span class="math inline">\(r\)</span> has order <span class="math inline">\(n\)</span> and <span class="math inline">\(s\)</span> has order <span class="math inline">\(2\)</span>, and <span class="math inline">\(srs=r^{-1}\)</span>.</p>
+<div class="fragment">
+<p><span class="math display">\[
+D_n=
+\{e,r,r^2,\ldots,r^{n-1},
+s,rs,r^2s,\ldots,r^{n-1}s\}.
+\]</span></p>
+</div>
+</section>
+<section class="slide level2">
+
 
 
 </section>

@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="8.5in"
+     height="11in"
+     viewBox="0 0 816 1056">
+
+  <!-- (1 3 2) -->
+  <rect x="25" y="25" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="79" x2="149" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="79" x2="69" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="79" x2="109" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="79" x2="189" y2="129" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="72" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="72" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="72" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="72" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="146" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="146" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="146" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="146" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="110" text-anchor="middle" font-family="serif" font-size="18">(1 3 2)</text>
+
+
+  <!-- (1 3 4 2) -->
+  <rect x="415" y="25" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="79" x2="539" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="79" x2="459" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="79" x2="579" y2="129" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="79" x2="499" y2="129" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="67" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="141" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="72" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="72" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="72" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="72" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="146" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="146" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="146" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="146" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="110" text-anchor="middle" font-family="serif" font-size="18">(1 3 4 2)</text>
+
+
+  <!-- (1 3) -->
+  <rect x="25" y="193" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="247" x2="149" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="247" x2="109" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="247" x2="69" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="247" x2="189" y2="297" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="240" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="240" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="240" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="240" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="314" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="314" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="314" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="314" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="278" text-anchor="middle" font-family="serif" font-size="18">(1 3)</text>
+
+
+  <!-- (1 3 4) -->
+  <rect x="415" y="193" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="247" x2="539" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="247" x2="499" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="247" x2="579" y2="297" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="247" x2="459" y2="297" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="235" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="309" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="240" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="240" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="240" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="240" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="314" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="314" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="314" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="314" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="278" text-anchor="middle" font-family="serif" font-size="18">(1 3 4)</text>
+
+
+  <!-- (1 3)(2 4) -->
+  <rect x="25" y="361" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="415" x2="149" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="415" x2="189" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="415" x2="69" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="415" x2="109" y2="465" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="408" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="408" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="408" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="408" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="482" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="482" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="482" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="482" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="446" text-anchor="middle" font-family="serif" font-size="18">(1 3)(2 4)</text>
+
+
+  <!-- (1 3 2 4) -->
+  <rect x="415" y="361" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="415" x2="539" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="415" x2="579" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="415" x2="499" y2="465" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="415" x2="459" y2="465" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="403" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="477" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="408" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="408" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="408" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="408" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="482" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="482" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="482" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="482" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="446" text-anchor="middle" font-family="serif" font-size="18">(1 3 2 4)</text>
+
+
+  <!-- (1 4 3 2) -->
+  <rect x="25" y="529" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="583" x2="189" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="583" x2="69" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="583" x2="109" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="583" x2="149" y2="633" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="576" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="576" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="576" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="576" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="650" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="650" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="650" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="650" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="614" text-anchor="middle" font-family="serif" font-size="18">(1 4 3 2)</text>
+
+
+  <!-- (1 4 2) -->
+  <rect x="415" y="529" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="583" x2="579" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="583" x2="459" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="583" x2="539" y2="633" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="583" x2="499" y2="633" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="571" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="645" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="576" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="576" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="576" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="576" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="650" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="650" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="650" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="650" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="614" text-anchor="middle" font-family="serif" font-size="18">(1 4 2)</text>
+
+
+  <!-- (1 4 3) -->
+  <rect x="25" y="697" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="751" x2="189" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="751" x2="109" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="751" x2="69" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="751" x2="149" y2="801" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="744" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="744" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="744" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="744" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="818" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="818" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="818" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="818" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="782" text-anchor="middle" font-family="serif" font-size="18">(1 4 3)</text>
+
+
+  <!-- (1 4) -->
+  <rect x="415" y="697" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="751" x2="579" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="751" x2="499" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="751" x2="539" y2="801" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="751" x2="459" y2="801" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="739" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="813" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="744" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="744" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="744" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="744" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="818" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="818" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="818" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="818" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="782" text-anchor="middle" font-family="serif" font-size="18">(1 4)</text>
+
+
+  <!-- (1 4 2 3) -->
+  <rect x="25" y="865" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="69" y1="919" x2="189" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="109" y1="919" x2="149" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="149" y1="919" x2="69" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="189" y1="919" x2="109" y2="969" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="69" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="69" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="109" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="149" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="189" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="69" y="912" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="912" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="912" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="912" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="69" y="986" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="109" y="986" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="149" y="986" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="189" y="986" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="310" y="950" text-anchor="middle" font-family="serif" font-size="18">(1 4 2 3)</text>
+
+
+  <!-- (1 4)(2 3) -->
+  <rect x="415" y="865" width="378" height="158"
+        fill="none" stroke="black" stroke-width="1.2"
+        stroke-dasharray="7,5"/>
+
+  <line x1="459" y1="919" x2="579" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="499" y1="919" x2="539" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="539" y1="919" x2="499" y2="969" stroke="black" stroke-width="1.8"/>
+  <line x1="579" y1="919" x2="459" y2="969" stroke="black" stroke-width="1.8"/>
+
+  <circle cx="459" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="907" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <circle cx="459" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="499" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="539" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+  <circle cx="579" cy="981" r="12" fill="white" stroke="black" stroke-width="1.6"/>
+
+  <text x="459" y="912" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="912" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="912" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="912" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="459" y="986" text-anchor="middle" font-family="serif" font-size="15">1</text>
+  <text x="499" y="986" text-anchor="middle" font-family="serif" font-size="15">2</text>
+  <text x="539" y="986" text-anchor="middle" font-family="serif" font-size="15">3</text>
+  <text x="579" y="986" text-anchor="middle" font-family="serif" font-size="15">4</text>
+
+  <text x="700" y="950" text-anchor="middle" font-family="serif" font-size="18">(1 4)(2 3)</text>
+
+</svg>
