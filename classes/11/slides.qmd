@@ -9,9 +9,7 @@ format:
 
 ## Class Session Goals
 
-- Understand subgroup tests
-- Find Subgroups of given groups
-- Graphically represent Groups and Subgroups
+- Define and Explore Cosets
 
 ---
 
@@ -49,332 +47,171 @@ A subgroup uses the **same operation** as the original group.
 
 
 
-## Subgroups of $\mathbb Z_6$
+## Definition of Cosets
 
-Consider $\mathbb Z_6$ under addition.
+Let $G$ be a group and $H$ a subgroup of $G$.
 
-$\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.$
+A **left coset** of $H$ with representative $g \in G$ is the set
 
-Which subsets form subgroups?
+$gH = \{gh : h \in H\}$.
 
+A **right coset** is defined similarly by
 
+$Hg = \{hg : h \in H\}$.
 
-$$
-\{[0]\}
-$$
-
-
-
-$$
-\{[0],[3]\}
-$$
-
-
-
-$$
-\{[0],[2],[4]\}
-$$
-
-
-$$
-\mathbb Z_6
-$$
-
+If left and right cosets coincide, or if it is clear from context which type
+of coset is meant, we simply use the word **coset**.
 
 
 ---
 
+## Example of Coset 1
 
-## Subgroups of $\mathbb{Z}_6$ Lattice Diagram
+Let $H$ be the subgroup of $\mathbb{Z}_6$ consisting of the elements $0$ and $3$.
 
-The subgroups of $\mathbb{Z}_6$ are
+The cosets are
 
-$\mathbb{Z}_6 = \langle 1 \rangle$, $\langle 2 \rangle = \{0,2,4\}$, 
-$\langle 3 \rangle = \{0,3\}$, and $\{0\}$.
+- $0+H=3+H=\{0,3\}$
+- $1+H=4+H=\{1,4\}$
+- $2+H=5+H=\{2,5\}$
 
-```{mermaid}
-flowchart TB
-    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
-    H2["⟨2⟩ = {0,2,4}"]
-    H3["⟨3⟩ = {0,3}"]
-    E["{0}"]
-
-    Z6 --- H2
-    Z6 --- H3
-    H2 --- E
-    H3 --- E
-```
+In a commutative group, left and right cosets are always identical.
 
 
 ---
 
-
-## Subgroups of $U(9)$
-
-The group of units modulo $9$ is
-
-$U(9)=\{1,2,4,5,7,8\}$.
-
-The subgroups of $U(9)$ are
-
-$\{1\}$,
-
-$\langle 8\rangle=\{1,8\}$,
-
-$\langle 4\rangle=\{1,4,7\}$,
-
-and
-
-$U(9)=\{1,2,4,5,7,8\}$.
-
-Thus, $U(9)$ has four subgroups.
-
----
-
-## Subgroups of $U(9)$ Lattice Diagram
-
-```{mermaid}
-flowchart TB
-    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
-    H2["⟨8⟩ = {1, 8}"]
-    H3["⟨4⟩ = {1, 4, 7}"]
-    E["{1}"]
-
-    U9 --- H2
-    U9 --- H3
-
-    H2 --- E
-    H3 --- E
-```
-
----
-
-## Subgroups of the Symmetry Group of an Equilateral Triangle
-
-Let $D_3=\{e,r_1,r_2,f_a,f_b,f_c\}$.
-
-Here $r_1,r_2$ are the nonidentity rotations and
-$f_a,f_b,f_c$ are the reflections.
-
-The subgroups are: $\{e\}$
-
-$$
-\{e,f_a\},
-\qquad
-\{e,f_b\},
-\qquad
-\{e,f_c\},
-$$
-
-$\{e,r_1,r_2\}$, and $D_3$.
-
-
----
-
-## Group Lattice for the Symmetries of the Equilateral Triangle
-
-```{mermaid}
-flowchart TB
-    D3["D<sub>3</sub>"]
-    R["{e, r<sub>1</sub>, r<sub>2</sub>}"]
-    Fa["{e, f<sub>a</sub>}"]
-    Fb["{e, f<sub>b</sub>}"]
-    Fc["{e, f<sub>c</sub>}"]
-    E["{e}"]
-
-    D3 --- R
-    D3 --- Fa
-    D3 --- Fb
-    D3 --- Fc
-
-    R --- E
-    Fa --- E
-    Fb --- E
-    Fc --- E
-```
-
----
-
-
-## Subgroups of $\mathbb Z$
-
-Consider $\mathbb Z$ under addition.
-
-For $n=0,1,2,\ldots$, define $n\mathbb Z=\{nk:k\in\mathbb Z\}$.
-
-Examples:
-
-$$
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-$$
-
-$$
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-$$
-
-
-For every $n\geq 0$, $n\mathbb Z \leq   \mathbb Z$.
-
-
----
-
-
-## A Portion of the Subgroup Lattice of $\mathbb{Z}$
-
-Every subgroup of $\mathbb{Z}$ is of the form $n\mathbb{Z}$ for some nonnegative integer $n$.
-
-```{mermaid}
-flowchart TB
-    Z["Z"]
-    Z2["2Z"]
-    Z3["3Z"]
-    Z5["5Z"]
-    Z6["6Z"]
-    Z10["10Z"]
-    Z15["15Z"]
-    Z30["30Z"]
-
-    Z --- Z2
-    Z --- Z3
-    Z --- Z5
-
-    Z2 --- Z6
-    Z2 --- Z10
-
-    Z3 --- Z6
-    Z3 --- Z15
-
-    Z5 --- Z10
-    Z5 --- Z15
-
-    Z6 --- Z30
-    Z10 --- Z30
-    Z15 --- Z30
-```
-
-Here $m\mathbb{Z} \subseteq n\mathbb{Z}$ exactly when $n$ divides $m$.
-
-
----
-
-
-
-
-
-
-
-## Proposition 3.3.7 Subgroup Criterion
-
-A subset $H$ of $G$ is a subgroup if and only if it satisfies the following conditions.
-
-1. **Identity** The identity $e$ of $G$ is in $H$.
-
-
-
-2. **Closure** If $h_1,h_2\in H$, then
-
-   $$
-   h_1h_2\in H.
-   $$
-
-
-
-3. **Inverse** If $h\in H$, then
-
-   $$
-   h^{-1}\in H.
-   $$
-
-
-
-
-## Proposition 3.3.8 Another Subgroup Test
-
-Let $H$ be a subset of a group $G$.
-
-Then $H$ is a subgroup of $G$ if and only if
-
-$$
-H\neq\emptyset
-$$
-
-and whenever $g,h\in H$,
-
-$$
-gh^{-1}\in H.
-$$
-
-
-## Proof of Second Subgroup Test
-
-One condition gives us everything:
-
-- Identity: $gg^{-1}=e\in H$
-
-- Inverse: $eg^{-1}=g^{-1}\in H$
-
-- Closure:  $h_1(h_2^{-1})^{-1}=h_1h_2\in H$
-
----
-
-
-## Example of using the Subgroup Test
-
-
-
-Let $H=2\mathbb Z.$
-
-Since $0\in H$, we know $H\neq\emptyset$.
-
-If $a,b\in H$, then $a=2m,\qquad b=2n$ for some $m,n\in\mathbb Z$.
-
-Therefore $a-b=2m-2n=2(m-n)\in2\mathbb Z$.
-
-Hence $2\mathbb Z\leq\mathbb Z$.
-
----
-
-
-
-
-
-## Quaternion Group
+## Example of Cosets 2
 
 Let
 
-$I=\begin{pmatrix}1&0\\0&1\end{pmatrix}$, $A=\begin{pmatrix}0&1\\-1&0\end{pmatrix}$,
+$H=\{(1),(1\,2\,3),(1\,3\,2)\}$
 
-$B=\begin{pmatrix}0&i\\i&0\end{pmatrix}$, $C=\begin{pmatrix}i&0\\0&-i\end{pmatrix}$,
+be a subgroup of $S_3$.
 
-$Q_8=\{I, -I, A, -A, B, -B, C, -C \}$,
+The left cosets of $H$ are
 
-$Q_8 \leq M_2(\mathbb C)$
+- $(1)H=(1\,2\,3)H=(1\,3\,2)H
+  =\{(1),(1\,2\,3),(1\,3\,2)\}$
+- $(1\,2)H=(1\,3)H=(2\,3)H
+  =\{(1\,2),(1\,3),(2\,3)\}$
+
+The right cosets of $H$ are the same as the left cosets.
+
+
+---
+
+## Activity: Cosets in $U(9)$
+
+Recall
+
+$U(9)=\{1,2,4,5,7,8\}$.
+
+Let
+
+$H=\{1,8\}$.
+
+Find all of the distinct cosets of $H$ in $U(9)$.
+
+Compute $1H$. Then choose an element not contained in $1H$ and compute its coset. Continue until every element of $U(9)$ is used. How many distinct cosets are there?
+
+
+---
+
+## Activity: Cosets in $S_4$
+
+Regard $D_4$ as the subgroup of $S_4$ consisting of the symmetries of a square:
+
+$D_4=\{e,(1\,2\,3\,4),(1\,3)(2\,4),(1\,4\,3\,2),
+(1\,2)(3\,4),(1\,4)(2\,3),(1\,3),(2\,4)\}$.
+
+Find the cosets of $D_4$ in $S_4$.
+
+
+---
+
+## Activity: Cosets in $S_4$
+
+Let
+
+$K=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}$.
+
+
+- Find the cosets of $K$ in $D_4$.
+- Find the cosets of $K$ in $S_4$.
 
 
 
 ---
 
+## Lemma 6.1.3.
 
+Let $H$ be a subgroup of a group $G$ and suppose that $g_1,g_2\in G$.
 
-## Symmetries of the Square
+The following conditions are equivalent.
 
-Consider the symmetries of the square with four rotations $e, r_1, r_2, r_3$ and four flips $f_v$ flip across a vertical line, $f_h$ flip about a horizonal line, and $f_{d_1}$ and $f_{d_2}$ the flips about the diagonal lines.
+1. $g_1H=g_2H$;
+2. $Hg_1^{-1}=Hg_2^{-1}$;
+3. $g_1H\subset g_2H$;
+4. $g_2\in g_1H$;
+5. $g_1^{-1}g_2\in H$.
+
+. . . 
+
+Proof is part of the homework.  I will show  $1 \iff 5$.
+
+---
+
+## Theorem 6.1.4
+
+Let $H$ be a subgroup of a group $G$.
+
+Then the left cosets of $H$ in $G$ partition $G$.
+
+. . . 
+
+That is, the group $G$ is the disjoint union of the left cosets of $H$ in $G$.
+
+---
+
+## Proof of  6.1.4
+
+Different proof from the book.  Define a relation on $G$ by $g_1 \sim g_2$ if and only if $g_1^{-1}g_2 \in H$.  I will show this is an equivalence relation.
 
 
 ---
 
+## Remark 6.1.5
 
-## $U(20)$
+There is nothing special about left cosets. Right cosets also partition $G$.
 
-$$\{ 1,3,7,9,11,13,17,19\}$$
+The proof is the same as for left cosets, except that all group
+multiplications are done on the opposite side of $H$.
+
 
 ---
 
-## Group Activty
+## Theorem 6.1.8
 
-1. Choose either the Quaternions, the symmetries of the square, or $U(8)$
-2. Construct the Multiplication Table
-3. Find the Subgroups of the chosen group
-4. Create a lattice represendtion of the group and its subsgroups.
+Let $H$ be a subgroup of a group $G$.
+
+The number of left cosets of $H$ in $G$ is the same as the number of
+right cosets of $H$ in $G$.
+
+---
+
+## Proof Idea
+
+Let $L_H$ and $R_H$ denote the sets of left and right
+cosets of $H$, respectively.
+
+Define $\phi:L_H\to R_H$ by $\phi(gH)=Hg^{-1}$.
+
+Lemma 6.1.3 shows that $\phi$ is well-defined and one-to-one.
+
+It is onto since $\phi(g^{-1}H)=Hg$.
+
+Therefore $\phi$ is a bijection, so the number of left and right cosets
+is the same.
 
 
+---

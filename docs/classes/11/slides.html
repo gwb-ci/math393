@@ -123,9 +123,6 @@
       margin-right: 0; 
     }
   </style>
-  <script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
-  <script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
-  <link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -141,9 +138,7 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Understand subgroup tests</li>
-<li>Find Subgroups of given groups</li>
-<li>Graphically represent Groups and Subgroups</li>
+<li>Define and Explore Cosets</li>
 </ul>
 </section>
 <section id="definition-of-a-group" class="slide level2">
@@ -166,255 +161,112 @@ For each <span class="math inline">\(a\in G\)</span>, there exists <span class="
 <p>We write <span class="math inline">\(H \leq G\)</span>.</p>
 <p>A subgroup uses the <strong>same operation</strong> as the original group.</p>
 </section>
-<section id="subgroups-of-mathbb-z_6" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z_6\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z_6\)</span> under addition.</p>
-<p><span class="math inline">\(\mathbb Z_6 = \{[0],[1],[2],[3],[4],[5]\}.\)</span></p>
-<p>Which subsets form subgroups?</p>
-<p><span class="math display">\[
-\{[0]\}
-\]</span></p>
-<p><span class="math display">\[
-\{[0],[3]\}
-\]</span></p>
-<p><span class="math display">\[
-\{[0],[2],[4]\}
-\]</span></p>
-<p><span class="math display">\[
-\mathbb Z_6
-\]</span></p>
+<section id="definition-of-cosets" class="slide level2">
+<h2>Definition of Cosets</h2>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span class="math inline">\(H\)</span> a subgroup of <span class="math inline">\(G\)</span>.</p>
+<p>A <strong>left coset</strong> of <span class="math inline">\(H\)</span> with representative <span class="math inline">\(g \in G\)</span> is the set</p>
+<p><span class="math inline">\(gH = \{gh : h \in H\}\)</span>.</p>
+<p>A <strong>right coset</strong> is defined similarly by</p>
+<p><span class="math inline">\(Hg = \{hg : h \in H\}\)</span>.</p>
+<p>If left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word <strong>coset</strong>.</p>
 </section>
-<section id="subgroups-of-mathbbz_6-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> Lattice Diagram</h2>
-<p>The subgroups of <span class="math inline">\(\mathbb{Z}_6\)</span> are</p>
-<p><span class="math inline">\(\mathbb{Z}_6 = \langle 1 \rangle\)</span>, <span class="math inline">\(\langle 2 \rangle = \{0,2,4\}\)</span>, <span class="math inline">\(\langle 3 \rangle = \{0,3\}\)</span>, and <span class="math inline">\(\{0\}\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z6["Z₆ = ⟨1⟩ = {0,1,2,3,4,5}"]
-    H2["⟨2⟩ = {0,2,4}"]
-    H3["⟨3⟩ = {0,3}"]
-    E["{0}"]
-
-    Z6 --- H2
-    Z6 --- H3
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-u9" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span></h2>
-<p>The group of units modulo <span class="math inline">\(9\)</span> is</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>The subgroups of <span class="math inline">\(U(9)\)</span> are</p>
-<p><span class="math inline">\(\{1\}\)</span>,</p>
-<p><span class="math inline">\(\langle 8\rangle=\{1,8\}\)</span>,</p>
-<p><span class="math inline">\(\langle 4\rangle=\{1,4,7\}\)</span>,</p>
-<p>and</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>Thus, <span class="math inline">\(U(9)\)</span> has four subgroups.</p>
-</section>
-<section id="subgroups-of-u9-lattice-diagram" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(U(9)\)</span> Lattice Diagram</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    U9["U(9) = {1, 2, 4, 5, 7, 8}"]
-    H2["⟨8⟩ = {1, 8}"]
-    H3["⟨4⟩ = {1, 4, 7}"]
-    E["{1}"]
-
-    U9 --- H2
-    U9 --- H3
-
-    H2 --- E
-    H3 --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-the-symmetry-group-of-an-equilateral-triangle" class="slide level2">
-<h2>Subgroups of the Symmetry Group of an Equilateral Triangle</h2>
-<p>Let <span class="math inline">\(D_3=\{e,r_1,r_2,f_a,f_b,f_c\}\)</span>.</p>
-<p>Here <span class="math inline">\(r_1,r_2\)</span> are the nonidentity rotations and <span class="math inline">\(f_a,f_b,f_c\)</span> are the reflections.</p>
-<p>The subgroups are: <span class="math inline">\(\{e\}\)</span></p>
-<p><span class="math display">\[
-\{e,f_a\},
-\qquad
-\{e,f_b\},
-\qquad
-\{e,f_c\},
-\]</span></p>
-<p><span class="math inline">\(\{e,r_1,r_2\}\)</span>, and <span class="math inline">\(D_3\)</span>.</p>
-</section>
-<section id="group-lattice-for-the-symmetries-of-the-equilateral-triangle" class="slide level2">
-<h2>Group Lattice for the Symmetries of the Equilateral Triangle</h2>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    D3["D&lt;sub&gt;3&lt;/sub&gt;"]
-    R["{e, r&lt;sub&gt;1&lt;/sub&gt;, r&lt;sub&gt;2&lt;/sub&gt;}"]
-    Fa["{e, f&lt;sub&gt;a&lt;/sub&gt;}"]
-    Fb["{e, f&lt;sub&gt;b&lt;/sub&gt;}"]
-    Fc["{e, f&lt;sub&gt;c&lt;/sub&gt;}"]
-    E["{e}"]
-
-    D3 --- R
-    D3 --- Fa
-    D3 --- Fb
-    D3 --- Fc
-
-    R --- E
-    Fa --- E
-    Fb --- E
-    Fc --- E
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-</section>
-<section id="subgroups-of-mathbb-z" class="slide level2">
-<h2>Subgroups of <span class="math inline">\(\mathbb Z\)</span></h2>
-<p>Consider <span class="math inline">\(\mathbb Z\)</span> under addition.</p>
-<p>For <span class="math inline">\(n=0,1,2,\ldots\)</span>, define <span class="math inline">\(n\mathbb Z=\{nk:k\in\mathbb Z\}\)</span>.</p>
-<p>Examples:</p>
-<p><span class="math display">\[
-2\mathbb Z=\{\ldots,-4,-2,0,2,4,\ldots\}
-\]</span></p>
-<p><span class="math display">\[
-3\mathbb Z=\{\ldots,-6,-3,0,3,6,\ldots\}.
-\]</span></p>
-<p>For every <span class="math inline">\(n\geq 0\)</span>, <span class="math inline">\(n\mathbb Z \leq   \mathbb Z\)</span>.</p>
-</section>
-<section id="a-portion-of-the-subgroup-lattice-of-mathbbz" class="slide level2">
-<h2>A Portion of the Subgroup Lattice of <span class="math inline">\(\mathbb{Z}\)</span></h2>
-<p>Every subgroup of <span class="math inline">\(\mathbb{Z}\)</span> is of the form <span class="math inline">\(n\mathbb{Z}\)</span> for some nonnegative integer <span class="math inline">\(n\)</span>.</p>
-<div class="cell" data-reveal="true" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class=""><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart TB
-    Z["Z"]
-    Z2["2Z"]
-    Z3["3Z"]
-    Z5["5Z"]
-    Z6["6Z"]
-    Z10["10Z"]
-    Z15["15Z"]
-    Z30["30Z"]
-
-    Z --- Z2
-    Z --- Z3
-    Z --- Z5
-
-    Z2 --- Z6
-    Z2 --- Z10
-
-    Z3 --- Z6
-    Z3 --- Z15
-
-    Z5 --- Z10
-    Z5 --- Z15
-
-    Z6 --- Z30
-    Z10 --- Z30
-    Z15 --- Z30
-</pre>
-</div>
-<p></p></figure><p></p>
-</div>
-</div>
-</div>
-<p>Here <span class="math inline">\(m\mathbb{Z} \subseteq n\mathbb{Z}\)</span> exactly when <span class="math inline">\(n\)</span> divides <span class="math inline">\(m\)</span>.</p>
-</section>
-<section id="proposition-3.3.7-subgroup-criterion" class="slide level2">
-<h2>Proposition 3.3.7 Subgroup Criterion</h2>
-<p>A subset <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> is a subgroup if and only if it satisfies the following conditions.</p>
-<ol type="1">
-<li><p><strong>Identity</strong> The identity <span class="math inline">\(e\)</span> of <span class="math inline">\(G\)</span> is in <span class="math inline">\(H\)</span>.</p></li>
-<li><p><strong>Closure</strong> If <span class="math inline">\(h_1,h_2\in H\)</span>, then</p>
-<p><span class="math display">\[
-h_1h_2\in H.
-\]</span></p></li>
-<li><p><strong>Inverse</strong> If <span class="math inline">\(h\in H\)</span>, then</p>
-<p><span class="math display">\[
-h^{-1}\in H.
-\]</span></p></li>
-</ol>
-</section>
-<section id="proposition-3.3.8-another-subgroup-test" class="slide level2">
-<h2>Proposition 3.3.8 Another Subgroup Test</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subset of a group <span class="math inline">\(G\)</span>.</p>
-<p>Then <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(G\)</span> if and only if</p>
-<p><span class="math display">\[
-H\neq\emptyset
-\]</span></p>
-<p>and whenever <span class="math inline">\(g,h\in H\)</span>,</p>
-<p><span class="math display">\[
-gh^{-1}\in H.
-\]</span></p>
-</section>
-<section id="proof-of-second-subgroup-test" class="slide level2">
-<h2>Proof of Second Subgroup Test</h2>
-<p>One condition gives us everything:</p>
+<section id="example-of-coset-1" class="slide level2">
+<h2>Example of Coset 1</h2>
+<p>Let <span class="math inline">\(H\)</span> be the subgroup of <span class="math inline">\(\mathbb{Z}_6\)</span> consisting of the elements <span class="math inline">\(0\)</span> and <span class="math inline">\(3\)</span>.</p>
+<p>The cosets are</p>
 <ul>
-<li><p>Identity: <span class="math inline">\(gg^{-1}=e\in H\)</span></p></li>
-<li><p>Inverse: <span class="math inline">\(eg^{-1}=g^{-1}\in H\)</span></p></li>
-<li><p>Closure: <span class="math inline">\(h_1(h_2^{-1})^{-1}=h_1h_2\in H\)</span></p></li>
+<li><span class="math inline">\(0+H=3+H=\{0,3\}\)</span></li>
+<li><span class="math inline">\(1+H=4+H=\{1,4\}\)</span></li>
+<li><span class="math inline">\(2+H=5+H=\{2,5\}\)</span></li>
+</ul>
+<p>In a commutative group, left and right cosets are always identical.</p>
+</section>
+<section id="example-of-cosets-2" class="slide level2">
+<h2>Example of Cosets 2</h2>
+<p>Let</p>
+<p><span class="math inline">\(H=\{(1),(1\,2\,3),(1\,3\,2)\}\)</span></p>
+<p>be a subgroup of <span class="math inline">\(S_3\)</span>.</p>
+<p>The left cosets of <span class="math inline">\(H\)</span> are</p>
+<ul>
+<li><span class="math inline">\((1)H=(1\,2\,3)H=(1\,3\,2)H
+=\{(1),(1\,2\,3),(1\,3\,2)\}\)</span></li>
+<li><span class="math inline">\((1\,2)H=(1\,3)H=(2\,3)H
+=\{(1\,2),(1\,3),(2\,3)\}\)</span></li>
+</ul>
+<p>The right cosets of <span class="math inline">\(H\)</span> are the same as the left cosets.</p>
+</section>
+<section id="activity-cosets-in-u9" class="slide level2">
+<h2>Activity: Cosets in <span class="math inline">\(U(9)\)</span></h2>
+<p>Recall</p>
+<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
+<p>Let</p>
+<p><span class="math inline">\(H=\{1,8\}\)</span>.</p>
+<p>Find all of the distinct cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(U(9)\)</span>.</p>
+<p>Compute <span class="math inline">\(1H\)</span>. Then choose an element not contained in <span class="math inline">\(1H\)</span> and compute its coset. Continue until every element of <span class="math inline">\(U(9)\)</span> is used. How many distinct cosets are there?</p>
+</section>
+<section id="activity-cosets-in-s_4" class="slide level2">
+<h2>Activity: Cosets in <span class="math inline">\(S_4\)</span></h2>
+<p>Regard <span class="math inline">\(D_4\)</span> as the subgroup of <span class="math inline">\(S_4\)</span> consisting of the symmetries of a square:</p>
+<p><span class="math inline">\(D_4=\{e,(1\,2\,3\,4),(1\,3)(2\,4),(1\,4\,3\,2),
+(1\,2)(3\,4),(1\,4)(2\,3),(1\,3),(2\,4)\}\)</span>.</p>
+<p>Find the cosets of <span class="math inline">\(D_4\)</span> in <span class="math inline">\(S_4\)</span>.</p>
+</section>
+<section id="activity-cosets-in-s_4-1" class="slide level2">
+<h2>Activity: Cosets in <span class="math inline">\(S_4\)</span></h2>
+<p>Let</p>
+<p><span class="math inline">\(K=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}\)</span>.</p>
+<ul>
+<li>Find the cosets of <span class="math inline">\(K\)</span> in <span class="math inline">\(D_4\)</span>.</li>
+<li>Find the cosets of <span class="math inline">\(K\)</span> in <span class="math inline">\(S_4\)</span>.</li>
 </ul>
 </section>
-<section id="example-of-using-the-subgroup-test" class="slide level2">
-<h2>Example of using the Subgroup Test</h2>
-<p>Let <span class="math inline">\(H=2\mathbb Z.\)</span></p>
-<p>Since <span class="math inline">\(0\in H\)</span>, we know <span class="math inline">\(H\neq\emptyset\)</span>.</p>
-<p>If <span class="math inline">\(a,b\in H\)</span>, then <span class="math inline">\(a=2m,\qquad b=2n\)</span> for some <span class="math inline">\(m,n\in\mathbb Z\)</span>.</p>
-<p>Therefore <span class="math inline">\(a-b=2m-2n=2(m-n)\in2\mathbb Z\)</span>.</p>
-<p>Hence <span class="math inline">\(2\mathbb Z\leq\mathbb Z\)</span>.</p>
-</section>
-<section id="quaternion-group" class="slide level2">
-<h2>Quaternion Group</h2>
-<p>Let</p>
-<p><span class="math inline">\(I=\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span>, <span class="math inline">\(A=\begin{pmatrix}0&amp;1\\-1&amp;0\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(B=\begin{pmatrix}0&amp;i\\i&amp;0\end{pmatrix}\)</span>, <span class="math inline">\(C=\begin{pmatrix}i&amp;0\\0&amp;-i\end{pmatrix}\)</span>,</p>
-<p><span class="math inline">\(Q_8=\{I, -I, A, -A, B, -B, C, -C \}\)</span>,</p>
-<p><span class="math inline">\(Q_8 \leq M_2(\mathbb C)\)</span></p>
-</section>
-<section id="symmetries-of-the-square" class="slide level2">
-<h2>Symmetries of the Square</h2>
-<p>Consider the symmetries of the square with four rotations <span class="math inline">\(e, r_1, r_2, r_3\)</span> and four flips <span class="math inline">\(f_v\)</span> flip across a vertical line, <span class="math inline">\(f_h\)</span> flip about a horizonal line, and <span class="math inline">\(f_{d_1}\)</span> and <span class="math inline">\(f_{d_2}\)</span> the flips about the diagonal lines.</p>
-</section>
-<section id="u20" class="slide level2">
-<h2><span class="math inline">\(U(20)\)</span></h2>
-<p><span class="math display">\[\{ 1,3,7,9,11,13,17,19\}\]</span></p>
-</section>
-<section id="group-activty" class="slide level2">
-<h2>Group Activty</h2>
+<section id="lemma-6.1.3." class="slide level2">
+<h2>Lemma 6.1.3.</h2>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span> and suppose that <span class="math inline">\(g_1,g_2\in G\)</span>.</p>
+<p>The following conditions are equivalent.</p>
 <ol type="1">
-<li>Choose either the Quaternions, the symmetries of the square, or <span class="math inline">\(U(8)\)</span></li>
-<li>Construct the Multiplication Table</li>
-<li>Find the Subgroups of the chosen group</li>
-<li>Create a lattice represendtion of the group and its subsgroups.</li>
+<li><span class="math inline">\(g_1H=g_2H\)</span>;</li>
+<li><span class="math inline">\(Hg_1^{-1}=Hg_2^{-1}\)</span>;</li>
+<li><span class="math inline">\(g_1H\subset g_2H\)</span>;</li>
+<li><span class="math inline">\(g_2\in g_1H\)</span>;</li>
+<li><span class="math inline">\(g_1^{-1}g_2\in H\)</span>.</li>
 </ol>
+<div class="fragment">
+<p>Proof is part of the homework. I will show <span class="math inline">\(1 \iff 5\)</span>.</p>
+</div>
+</section>
+<section id="theorem-6.1.4" class="slide level2">
+<h2>Theorem 6.1.4</h2>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span>.</p>
+<p>Then the left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span> partition <span class="math inline">\(G\)</span>.</p>
+<div class="fragment">
+<p>That is, the group <span class="math inline">\(G\)</span> is the disjoint union of the left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span>.</p>
+</div>
+</section>
+<section id="proof-of-6.1.4" class="slide level2">
+<h2>Proof of 6.1.4</h2>
+<p>Different proof from the book. Define a relation on <span class="math inline">\(G\)</span> by <span class="math inline">\(g_1 \sim g_2\)</span> if and only if <span class="math inline">\(g_1^{-1}g_2 \in H\)</span>. I will show this is an equivalence relation.</p>
+</section>
+<section id="remark-6.1.5" class="slide level2">
+<h2>Remark 6.1.5</h2>
+<p>There is nothing special about left cosets. Right cosets also partition <span class="math inline">\(G\)</span>.</p>
+<p>The proof is the same as for left cosets, except that all group multiplications are done on the opposite side of <span class="math inline">\(H\)</span>.</p>
+</section>
+<section id="theorem-6.1.8" class="slide level2">
+<h2>Theorem 6.1.8</h2>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span>.</p>
+<p>The number of left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span> is the same as the number of right cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span>.</p>
+</section>
+<section id="proof-idea" class="slide level2">
+<h2>Proof Idea</h2>
+<p>Let <span class="math inline">\(L_H\)</span> and <span class="math inline">\(R_H\)</span> denote the sets of left and right cosets of <span class="math inline">\(H\)</span>, respectively.</p>
+<p>Define <span class="math inline">\(\phi:L_H\to R_H\)</span> by <span class="math inline">\(\phi(gH)=Hg^{-1}\)</span>.</p>
+<p>Lemma 6.1.3 shows that <span class="math inline">\(\phi\)</span> is well-defined and one-to-one.</p>
+<p>It is onto since <span class="math inline">\(\phi(g^{-1}H)=Hg\)</span>.</p>
+<p>Therefore <span class="math inline">\(\phi\)</span> is a bijection, so the number of left and right cosets is the same.</p>
+</section>
+<section class="slide level2">
+
 
 
 </section>
