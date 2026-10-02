@@ -97,6 +97,402 @@
     ]
   },
   {
+    "objectID": "classes/13/slides.html#class-session-goals",
+    "href": "classes/13/slides.html#class-session-goals",
+    "title": "Slides: Cosets",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine and Explore Cosets",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#definition-of-a-group",
+    "href": "classes/13/slides.html#definition-of-a-group",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#definition-of-a-subgroup",
+    "href": "classes/13/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#definition-of-cosets",
+    "href": "classes/13/slides.html#definition-of-cosets",
+    "title": "Slides: Cosets",
+    "section": "Definition of Cosets",
+    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#example-of-coset-1",
+    "href": "classes/13/slides.html#example-of-coset-1",
+    "title": "Slides: Cosets",
+    "section": "Example of Coset 1",
+    "text": "Example of Coset 1\nLet \\(H\\) be the subgroup of \\(\\mathbb{Z}_6\\) consisting of the elements \\(0\\) and \\(3\\).\nThe cosets are\n\n\\(0+H=3+H=\\{0,3\\}\\)\n\\(1+H=4+H=\\{1,4\\}\\)\n\\(2+H=5+H=\\{2,5\\}\\)\n\nIn a commutative group, left and right cosets are always identical.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#example-of-cosets-2",
+    "href": "classes/13/slides.html#example-of-cosets-2",
+    "title": "Slides: Cosets",
+    "section": "Example of Cosets 2",
+    "text": "Example of Cosets 2\nLet\n\\(H=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\nbe a subgroup of \\(S_3\\).\nThe left cosets of \\(H\\) are\n\n\\((1)H=(1\\,2\\,3)H=(1\\,3\\,2)H\n=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\n\\((1\\,2)H=(1\\,3)H=(2\\,3)H\n=\\{(1\\,2),(1\\,3),(2\\,3)\\}\\)\n\nThe right cosets of \\(H\\) are the same as the left cosets.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-cosets-in-u9",
+    "href": "classes/13/slides.html#activity-cosets-in-u9",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(U(9)\\)",
+    "text": "Activity: Cosets in \\(U(9)\\)\nRecall\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nLet\n\\(H=\\{1,8\\}\\).\nFind all of the distinct cosets of \\(H\\) in \\(U(9)\\).\nCompute \\(1H\\). Then choose an element not contained in \\(1H\\) and compute its coset. Continue until every element of \\(U(9)\\) is used. How many distinct cosets are there?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-cosets-in-s_4",
+    "href": "classes/13/slides.html#activity-cosets-in-s_4",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(S_4\\)",
+    "text": "Activity: Cosets in \\(S_4\\)\nRegard \\(D_4\\) as the subgroup of \\(S_4\\) consisting of the symmetries of a square:\n\\(D_4=\\{e,(1\\,2\\,3\\,4),(1\\,3)(2\\,4),(1\\,4\\,3\\,2),\n(1\\,2)(3\\,4),(1\\,4)(2\\,3),(1\\,3),(2\\,4)\\}\\).\nFind the cosets of \\(D_4\\) in \\(S_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-cosets-in-s_4-1",
+    "href": "classes/13/slides.html#activity-cosets-in-s_4-1",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(S_4\\)",
+    "text": "Activity: Cosets in \\(S_4\\)\nLet\n\\(K=\\{e,(1\\,2)(3\\,4),(1\\,3)(2\\,4),(1\\,4)(2\\,3)\\}\\).\n\nFind the cosets of \\(K\\) in \\(D_4\\).\nFind the cosets of \\(K\\) in \\(S_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#lemma-6.1.3.",
+    "href": "classes/13/slides.html#lemma-6.1.3.",
+    "title": "Slides: Cosets",
+    "section": "Lemma 6.1.3.",
+    "text": "Lemma 6.1.3.\nLet \\(H\\) be a subgroup of a group \\(G\\) and suppose that \\(g_1,g_2\\in G\\).\nThe following conditions are equivalent.\n\n\\(g_1H=g_2H\\);\n\\(Hg_1^{-1}=Hg_2^{-1}\\);\n\\(g_1H\\subset g_2H\\);\n\\(g_2\\in g_1H\\);\n\\(g_1^{-1}g_2\\in H\\).\n\n\nProof is part of the homework. I will show \\(1 \\iff 5\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#theorem-6.1.4",
+    "href": "classes/13/slides.html#theorem-6.1.4",
+    "title": "Slides: Cosets",
+    "section": "Theorem 6.1.4",
+    "text": "Theorem 6.1.4\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThen the left cosets of \\(H\\) in \\(G\\) partition \\(G\\).\n\nThat is, the group \\(G\\) is the disjoint union of the left cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#proof-of-6.1.4",
+    "href": "classes/13/slides.html#proof-of-6.1.4",
+    "title": "Slides: Cosets",
+    "section": "Proof of 6.1.4",
+    "text": "Proof of 6.1.4\nDifferent proof from the book. Define a relation on \\(G\\) by \\(g_1 \\sim g_2\\) if and only if \\(g_1^{-1}g_2 \\in H\\). I will show this is an equivalence relation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#remark-6.1.5",
+    "href": "classes/13/slides.html#remark-6.1.5",
+    "title": "Slides: Cosets",
+    "section": "Remark 6.1.5",
+    "text": "Remark 6.1.5\nThere is nothing special about left cosets. Right cosets also partition \\(G\\).\nThe proof is the same as for left cosets, except that all group multiplications are done on the opposite side of \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#theorem-6.1.8",
+    "href": "classes/13/slides.html#theorem-6.1.8",
+    "title": "Slides: Cosets",
+    "section": "Theorem 6.1.8",
+    "text": "Theorem 6.1.8\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThe number of left cosets of \\(H\\) in \\(G\\) is the same as the number of right cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#proof-idea",
+    "href": "classes/13/slides.html#proof-idea",
+    "title": "Slides: Cosets",
+    "section": "Proof Idea",
+    "text": "Proof Idea\nLet \\(L_H\\) and \\(R_H\\) denote the sets of left and right cosets of \\(H\\), respectively.\nDefine \\(\\phi:L_H\\to R_H\\) by \\(\\phi(gH)=Hg^{-1}\\).\nLemma 6.1.3 shows that \\(\\phi\\) is well-defined and one-to-one.\nIt is onto since \\(\\phi(g^{-1}H)=Hg\\).\nTherefore \\(\\phi\\) is a bijection, so the number of left and right cosets is the same.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#class-session-goals",
+    "href": "classes/12/slides.html#class-session-goals",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nEat coset vegetables and unlock truths about the structure of groups\nDifferent from eating magic mushrooms to unlock truths about reality\nBut still probably a good trade",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#definition-of-a-group",
+    "href": "classes/12/slides.html#definition-of-a-group",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#definition-of-a-subgroup",
+    "href": "classes/12/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#definition-of-cosets",
+    "href": "classes/12/slides.html#definition-of-cosets",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Definition of Cosets",
+    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#example-left-and-right-cosets-of-d_4-in-s_4",
+    "href": "classes/12/slides.html#example-left-and-right-cosets-of-d_4-in-s_4",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Example: Left and Right Cosets of \\(D_4\\) in \\(S_4\\)",
+    "text": "Example: Left and Right Cosets of \\(D_4\\) in \\(S_4\\)\nLabel the square’s vertices \\(1,2,3,4\\) consecutively. Compose permutations right to left.\n\\(D_4=\\{(1),(1234),(13)(24),(1432),(13),(24),(12)(34),(14)(23)\\}\\).\n\n\nLeft cosets\n\\(D_4\\), \\((12)D_4=\\) \\(\\{(12),(34),(124),(132),\\) \\(\\quad (143),(234),(1324),(1423)\\}\\),\n\\((14)D_4=\\) \\(\\{(14),(23),(123),(134),\\) \\(\\quad (142),(243),(1243),(1342)\\}\\).\n\nRight cosets\n\\(D_4\\),\\(D_4(12)=\\) \\(\\{(12),(34),(123),(134),\\) \\(\\quad (142),(243),(1324),(1423)\\}\\),\n\\(D_4(14)=\\) \\(\\{(14),(23),(124),(132),\\) \\(\\quad (143),(234),(1243),(1342)\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#example-right-cosets-of-k-in-s_4",
+    "href": "classes/12/slides.html#example-right-cosets-of-k-in-s_4",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Example: Right cosets of \\(K\\) in \\(S_4\\)",
+    "text": "Example: Right cosets of \\(K\\) in \\(S_4\\)\nLet \\(K=\\{(1),(12)(34),(13)(24),(14)(23)\\}\\), the Klein four-group.\n\n\n\nCoset\nElements\n\n\n\n\n\\(K\\)\n\\(\\{(1),(12)(34),(13)(24),(14)(23)\\}\\)\n\n\n\\(K(12)\\)\n\\(\\{(12),(34),(1324),(1423)\\}\\)\n\n\n\\(K(13)\\)\n\\(\\{(13),(24),(1234),(1432)\\}\\)\n\n\n\\(K(14)\\)\n\\(\\{(14),(23),(1243),(1342)\\}\\)\n\n\n\\(K(123)\\)\n\\(\\{(123),(134),(142),(243)\\}\\)\n\n\n\\(K(132)\\)\n\\(\\{(132),(124),(143),(234)\\}\\)\n\n\n\nThese six sets partition the \\(24\\) elements of \\(S_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#lemma-6.1.3.",
+    "href": "classes/12/slides.html#lemma-6.1.3.",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Lemma 6.1.3.",
+    "text": "Lemma 6.1.3.\nLet \\(H\\) be a subgroup of a group \\(G\\) and suppose that \\(g_1,g_2\\in G\\).\nThe following conditions are equivalent.\n\n\\(g_1H=g_2H\\);\n\\(Hg_1^{-1}=Hg_2^{-1}\\);\n\\(g_1H\\subset g_2H\\);\n\\(g_2\\in g_1H\\);\n\\(g_1^{-1}g_2\\in H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#theorem-6.1.4",
+    "href": "classes/12/slides.html#theorem-6.1.4",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Theorem 6.1.4",
+    "text": "Theorem 6.1.4\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThen the left cosets of \\(H\\) in \\(G\\) partition \\(G\\).\n\nThat is, the group \\(G\\) is the disjoint union of the left cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#proof-of-6.1.4",
+    "href": "classes/12/slides.html#proof-of-6.1.4",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Proof of 6.1.4",
+    "text": "Proof of 6.1.4\nDifferent proof from the book. Define a relation on \\(G\\) by \\(g_1 \\sim g_2\\) if and only if \\(g_1^{-1}g_2 \\in H\\). I will show this is an equivalence relation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#remark-6.1.5",
+    "href": "classes/12/slides.html#remark-6.1.5",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Remark 6.1.5",
+    "text": "Remark 6.1.5\nThere is nothing special about left cosets. Right cosets also partition \\(G\\). The proof is the same as for left cosets, except that all group multiplications are done on the opposite side of \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#theorem-6.1.8",
+    "href": "classes/12/slides.html#theorem-6.1.8",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Theorem 6.1.8",
+    "text": "Theorem 6.1.8\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThe number of left cosets of \\(H\\) in \\(G\\) is the same as the number of\nright cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#proof-idea",
+    "href": "classes/12/slides.html#proof-idea",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Proof Idea",
+    "text": "Proof Idea\nLet \\(L_H\\) and \\(R_H\\) denote the sets of left and right\ncosets of \\(H\\), respectively.\nDefine \\(\\phi\\:L_H\\to R_H\\) by \\(\\phi(gH)=Hg^{-1}\\).\nLemma 6.1.3 shows that \\(\\phi\\) is well-defined and one-to-one.\nIt is onto since \\(\\phi(g^{-1}H)=Hg\\).\nTherefore \\(\\phi\\) is a bijection, so the number of left and right cosets\nis the same.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#proposition-6.2.1",
+    "href": "classes/12/slides.html#proposition-6.2.1",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Proposition 6.2.1",
+    "text": "Proposition 6.2.1\nLet \\(H\\) be a subgroup of \\(G\\) with \\(g\\in G\\) and define a map \\(\\phi:H\\rightarrow gH\\) by \\(\\phi(h)=gh\\).\nThe map \\(\\phi\\) is bijective; hence, the number of elements in \\(H\\) is the same as the number of elements in \\(gH\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#proposition-6.2.1-proof",
+    "href": "classes/12/slides.html#proposition-6.2.1-proof",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Proposition 6.2.1 Proof",
+    "text": "Proposition 6.2.1 Proof\nWe first show that the map \\(\\phi\\) is one-to-one.\nSuppose that \\(\\phi(h_1)=\\phi(h_2)\\) for elements \\(h_1,h_2\\in H\\).\nWe must show that \\(h_1=h_2\\), but \\(\\phi(h_1)=gh_1\\) and \\(\\phi(h_2)=gh_2\\).\nSo \\(gh_1=gh_2\\), and by left cancellation \\(h_1=h_2\\).\n\nTo show that \\(\\phi\\) is onto is easy.\nBy definition every element of \\(gH\\) is of the form \\(gh\\) for some \\(h\\in H\\) and \\(\\phi(h)=gh\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#lagranges-theorem",
+    "href": "classes/12/slides.html#lagranges-theorem",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Lagrange’s Theorem",
+    "text": "Lagrange’s Theorem\nLet \\(G\\) be a finite group and let \\(H\\) be a subgroup of \\(G\\).\nThen \\(|G|/|H|=[G:H]\\) is the number of distinct left cosets of \\(H\\) in \\(G\\).\nIn particular, the number of elements in \\(H\\) must divide the number of elements in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#lagranges-theorem-proof",
+    "href": "classes/12/slides.html#lagranges-theorem-proof",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Lagrange’s Theorem Proof",
+    "text": "Lagrange’s Theorem Proof\nThe group \\(G\\) is partitioned into \\([G:H]\\) distinct left cosets.\nEach left coset has \\(|H|\\) elements; therefore,\n\\[\n|G|=[G:H]|H|.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#corollary-6.2.3",
+    "href": "classes/12/slides.html#corollary-6.2.3",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Corollary 6.2.3",
+    "text": "Corollary 6.2.3\nSuppose that \\(G\\) is a finite group and \\(g\\in G\\).\nThen the order of \\(g\\) must divide the number of elements in \\(G\\).\n\nProof. Apply Lagrange’s Theorem to the subgroup \\(\\langle g\\rangle\\).\nThe order of \\(g\\) is \\(|\\langle g\\rangle|\\), so \\(|\\langle g\\rangle|\\) divides \\(|G|\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#corollary-6.2.4",
+    "href": "classes/12/slides.html#corollary-6.2.4",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Corollary 6.2.4",
+    "text": "Corollary 6.2.4\nLet \\(|G|=p\\) with \\(p\\) a prime number.\nThen \\(G\\) is cyclic and any \\(g\\in G\\) such that \\(g\\neq e\\) is a generator.\n\nProof. Let \\(g\\) be in \\(G\\) such that \\(g\\neq e\\).\nThen by Corollary 6.2.3, the order of \\(g\\) must divide the order of the group.\nSince \\(|\\langle g\\rangle|&gt;1\\), it must be \\(p\\).\nHence, \\(g\\) generates \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#corollary-6.2.5",
+    "href": "classes/12/slides.html#corollary-6.2.5",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Corollary 6.2.5",
+    "text": "Corollary 6.2.5\nLet \\(H\\) and \\(K\\) be subgroups of a finite group \\(G\\) such that \\(G\\supset H\\supset K\\).\nThen \\([G:K]=[G:H][H:K]\\).\n\nProof. Observe that\n\\[\n[G:K]\n=\\frac{|G|}{|K|}\n=\\frac{|G|}{|H|}\\cdot\\frac{|H|}{|K|}\n=[G:H][H:K].\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#proposition-6.2.7",
+    "href": "classes/12/slides.html#proposition-6.2.7",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Proposition 6.2.7",
+    "text": "Proposition 6.2.7\nThe group \\(A_4\\) has no subgroup of order \\(6\\).\n\nThe converse of Lagrange’s Theorem is false.\nAlthough \\(6\\) divides \\(|A_4|=12\\), there is no subgroup of \\(A_4\\) of order \\(6\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
+    "objectID": "classes/12/slides.html#conjugation",
+    "href": "classes/12/slides.html#conjugation",
+    "title": "Slides: Coset flavored vegetables",
+    "section": "Conjugation",
+    "text": "Conjugation\nFor \\(g,h\\in G\\), the element \\(ghg^{-1}\\) is the conjugate of \\(h\\) by \\(g\\).\nFor a subgroup \\(H\\) of \\(G\\), write \\(gHg^{-1}=\\{ghg^{-1}:h\\in H\\}\\).\n\nConjugating a cycle applies the conjugating permutation to each entry:\n\\[\n\\sigma(a_1\\,a_2\\,\\ldots\\,a_k)\\sigma^{-1}\n=(\\sigma(a_1)\\,\\sigma(a_2)\\,\\ldots\\,\\sigma(a_k)).\n\\]\nFor example, \\((124)(123)(124)^{-1}=(243)\\).\n\n\nTwo cycles \\(\\tau\\) and \\(\\mu\\) in \\(S_n\\) have the same length if and only if there exists a \\(\\sigma\\in S_n\\) such that \\(\\mu=\\sigma\\tau\\sigma^{-1}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Coset flavored vegetables"
+    ]
+  },
+  {
     "objectID": "classes/06/slides.html#class-session-goals",
     "href": "classes/06/slides.html#class-session-goals",
     "title": "Slides: More Groups",

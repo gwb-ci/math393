@@ -1,0 +1,327 @@
+---
+title: "Slides: Coset flavored vegetables"
+
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+## Class Session Goals
+
+- Eat coset vegetables and unlock truths about the structure of groups
+- Different from eating magic mushrooms to unlock truths about reality
+- But still probably a good trade
+
+---
+
+
+## Definition of a Group
+
+A **group** $(G,\cdot)$ is a set $G$ together with a law of composition
+
+$(a,b)\mapsto a\cdot b$ satisfying:
+
+1. **Associativity:**  
+   $(a\cdot b)\cdot c=a\cdot(b\cdot c)$ for $a,b,c\in G$.
+
+2. **Identity:**  
+   There exists $e\in G$ such that
+   $e\cdot a=a\cdot e=a$ for every $a\in G$.
+
+3. **Inverses:**  
+   For each $a\in G$, there exists $a^{-1}\in G$ such that
+   $a\cdot a^{-1}=a^{-1}\cdot a=e$.
+
+---
+
+## Definition of a Subgroup
+
+Let $G$ be a group.
+
+A **subgroup** $H$ of $G$ is a subset $H$ of $G$ such that when the group operation of $G$ is restricted to $H$, $H$ is a group in its own right.
+
+We write $H \leq G$.
+
+A subgroup uses the **same operation** as the original group.
+
+---
+
+
+
+## Definition of Cosets
+
+Let $G$ be a group and $H$ a subgroup of $G$.
+
+A **left coset** of $H$ with representative $g \in G$ is the set
+
+$gH = \{gh : h \in H\}$.
+
+A **right coset** is defined similarly by
+
+$Hg = \{hg : h \in H\}$.
+
+If left and right cosets coincide, or if it is clear from context which type
+of coset is meant, we simply use the word **coset**.
+
+
+---
+
+## Example: Left and Right Cosets of $D_4$ in $S_4$
+
+Label the square's vertices $1,2,3,4$ consecutively. Compose permutations right to left.
+
+$D_4=\{(1),(1234),(13)(24),(1432),(13),(24),(12)(34),(14)(23)\}$.
+
+::: {.columns}
+::: {.column width="50%"}
+
+**Left cosets**
+
+$D_4$, $(12)D_4=$
+$\{(12),(34),(124),(132),$
+$\quad (143),(234),(1324),(1423)\}$,
+
+$(14)D_4=$
+$\{(14),(23),(123),(134),$
+$\quad (142),(243),(1243),(1342)\}$.
+
+:::
+::: {.column width="50%"}
+
+**Right cosets**
+
+$D_4$,$D_4(12)=$
+$\{(12),(34),(123),(134),$
+$\quad (142),(243),(1324),(1423)\}$,
+
+$D_4(14)=$
+$\{(14),(23),(124),(132),$
+$\quad (143),(234),(1243),(1342)\}$.
+
+:::
+:::
+
+
+---
+
+## Example: Right cosets of $K$ in $S_4$
+
+Let $K=\{(1),(12)(34),(13)(24),(14)(23)\}$, the Klein four-group.
+
+| Coset | Elements |
+|:---|:---|
+| $K$ | $\{(1),(12)(34),(13)(24),(14)(23)\}$ |
+| $K(12)$ | $\{(12),(34),(1324),(1423)\}$ |
+| $K(13)$ | $\{(13),(24),(1234),(1432)\}$ |
+| $K(14)$ | $\{(14),(23),(1243),(1342)\}$ |
+| $K(123)$ | $\{(123),(134),(142),(243)\}$ |
+| $K(132)$ | $\{(132),(124),(143),(234)\}$ |
+
+These six sets partition the $24$ elements of $S_4$.
+
+---
+
+## Lemma 6.1.3.
+
+Let $H$ be a subgroup of a group $G$ and suppose that $g_1,g_2\in G$.
+
+The following conditions are equivalent.
+
+1. $g_1H=g_2H$;
+
+2. $Hg_1^{-1}=Hg_2^{-1}$;
+
+3. $g_1H\subset g_2H$;
+
+4. $g_2\in g_1H$;
+
+5. $g_1^{-1}g_2\in H$.
+
+---
+
+## Theorem 6.1.4
+
+Let $H$ be a subgroup of a group $G$.
+
+Then the left cosets of $H$ in $G$ partition $G$.
+
+. . . 
+
+That is, the group $G$ is the disjoint union of the left cosets of $H$ in $G$.
+
+---
+
+## Proof of  6.1.4
+
+Different proof from the book.  Define a relation on $G$ by $g_1 \sim g_2$ if and only if $g_1^{-1}g_2 \in H$.  I will show this is an equivalence relation.
+
+---
+
+## Remark 6.1.5
+
+There is nothing special about left cosets. Right cosets also partition $G$. The proof is the same as for left cosets, except that all group multiplications are done on the opposite side of $H$.
+
+---
+
+## Theorem 6.1.8
+
+Let $H$ be a subgroup of a group $G$.
+
+The number of left cosets of $H$ in $G$ is the same as the number of
+
+right cosets of $H$ in $G$.
+
+---
+
+## Proof Idea
+
+Let $L_H$ and $R_H$ denote the sets of left and right
+
+cosets of $H$, respectively.
+
+Define $\phi\:L_H\to R_H$ by $\phi(gH)=Hg^{-1}$.
+
+Lemma 6.1.3 shows that $\phi$ is well-defined and one-to-one.
+
+It is onto since $\phi(g^{-1}H)=Hg$.
+
+Therefore $\phi$ is a bijection, so the number of left and right cosets
+
+is the same.
+
+---
+
+## Proposition 6.2.1
+
+Let $H$ be a subgroup of $G$ with $g\in G$ and define a map $\phi:H\rightarrow gH$ by $\phi(h)=gh$.
+
+The map $\phi$ is bijective; hence, the number of elements in $H$ is the same as the number of elements in $gH$.
+
+---
+
+## Proposition 6.2.1 Proof
+
+We first show that the map $\phi$ is one-to-one.
+
+Suppose that $\phi(h_1)=\phi(h_2)$ for elements $h_1,h_2\in H$.
+
+We must show that $h_1=h_2$, but $\phi(h_1)=gh_1$ and $\phi(h_2)=gh_2$.
+
+So $gh_1=gh_2$, and by left cancellation $h_1=h_2$.
+
+. . .
+
+To show that $\phi$ is onto is easy.
+
+By definition every element of $gH$ is of the form $gh$ for some $h\in H$ and $\phi(h)=gh$.
+
+---
+
+## Lagrange's Theorem
+
+Let $G$ be a finite group and let $H$ be a subgroup of $G$.
+
+Then $|G|/|H|=[G:H]$ is the number of distinct left cosets of $H$ in $G$.
+
+In particular, the number of elements in $H$ must divide the number of elements in $G$.
+
+---
+
+## Lagrange's Theorem Proof
+
+The group $G$ is partitioned into $[G:H]$ distinct left cosets.
+
+Each left coset has $|H|$ elements; therefore,
+
+$$
+|G|=[G:H]|H|.
+$$
+
+---
+
+## Corollary 6.2.3
+
+Suppose that $G$ is a finite group and $g\in G$.
+
+Then the order of $g$ must divide the number of elements in $G$.
+
+. . .
+
+**Proof.** Apply Lagrange's Theorem to the subgroup $\langle g\rangle$.
+
+The order of $g$ is $|\langle g\rangle|$, so $|\langle g\rangle|$ divides $|G|$.
+
+---
+
+## Corollary 6.2.4
+
+Let $|G|=p$ with $p$ a prime number.
+
+Then $G$ is cyclic and any $g\in G$ such that $g\neq e$ is a generator.
+
+. . .
+
+**Proof.** Let $g$ be in $G$ such that $g\neq e$.
+
+Then by Corollary 6.2.3, the order of $g$ must divide the order of the group.
+
+Since $|\langle g\rangle|>1$, it must be $p$.
+
+Hence, $g$ generates $G$.
+
+---
+
+## Corollary 6.2.5
+
+Let $H$ and $K$ be subgroups of a finite group $G$ such that $G\supset H\supset K$.
+
+Then $[G:K]=[G:H][H:K]$.
+
+. . .
+
+**Proof.** Observe that
+
+$$
+[G:K]
+=\frac{|G|}{|K|}
+=\frac{|G|}{|H|}\cdot\frac{|H|}{|K|}
+=[G:H][H:K].
+$$
+
+---
+
+## Proposition 6.2.7
+
+The group $A_4$ has no subgroup of order $6$.
+
+. . .
+
+The converse of Lagrange's Theorem is false.
+
+Although $6$ divides $|A_4|=12$, there is no subgroup of $A_4$ of order $6$.
+
+---
+
+## Conjugation
+
+For $g,h\in G$, the element $ghg^{-1}$ is the **conjugate of $h$ by $g$**.
+
+For a subgroup $H$ of $G$, write $gHg^{-1}=\{ghg^{-1}:h\in H\}$.
+
+. . .
+
+Conjugating a cycle applies the conjugating permutation to each entry:
+
+$$
+\sigma(a_1\,a_2\,\ldots\,a_k)\sigma^{-1}
+=(\sigma(a_1)\,\sigma(a_2)\,\ldots\,\sigma(a_k)).
+$$
+
+For example, $(124)(123)(124)^{-1}=(243)$.
+
+. . .
+
+Two cycles $\tau$ and $\mu$ in $S_n$ have the same length if and only if there exists a $\sigma\in S_n$ such that $\mu=\sigma\tau\sigma^{-1}$.
+
+---
