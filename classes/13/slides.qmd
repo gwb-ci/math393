@@ -9,7 +9,9 @@ format:
 
 ## Class Session Goals
 
-- Define and Explore Cosets
+- Explain why a subgroup of index $2$ is stable under conjugation.
+- Use Lagrange's Theorem to derive Euler's Theorem and Fermat's Little Theorem.
+- Find conjugacy classes in $S_4$ and $A_4$.
 
 ---
 
@@ -65,153 +67,286 @@ of coset is meant, we simply use the word **coset**.
 
 ---
 
-## Example of Coset 1
+## Subgroups of Index 2
 
-Let $H$ be the subgroup of $\mathbb{Z}_6$ consisting of the elements $0$ and $3$.
+Let $H$ be a subgroup of $G$ with $[G:H]=2$. There are only two left cosets and two right cosets: $H$ and its complement in $G$.
 
-The cosets are
+Thus $gH=Hg$ for every $g\in G$, or equivalently,
 
-- $0+H=3+H=\{0,3\}$
-- $1+H=4+H=\{1,4\}$
-- $2+H=5+H=\{2,5\}$
+$$
+gHg^{-1}=H.
+$$
 
-In a commutative group, left and right cosets are always identical.
+---
+
+## Proposition 6.2.7
+
+The group $A_4$ has no subgroup of order $6$.
+
+. . .
+
+Suppose $|H|=6$. Then $[A_4:H]=2$, so $gHg^{-1}=H$ for every $g\in A_4$.
+
+Of the eight $3$-cycles in $A_4$, at least one lies in $H$. We may take it to be $(123)$. Its inverse $(132)$ also lies in $H$.
+
+Conjugating by elements of $A_4$ gives $(243)$ and $(142)$. Their inverses must also lie in $H$. Together with the identity, these are seven distinct elements, contradicting $|H|=6$.
+
+. . .
+
+The converse of Lagrange's Theorem is false: $6$ divides $|A_4|=12$, but $A_4$ has no subgroup of order $6$.
+
+---
+
+## Corollary
+
+If $G$ is a finite group and $g\in G$, then
+
+$$
+g^{|G|}=e.
+$$
+
+The order of $g$ divides $|G|$, so $|G|=k|g|$ for some integer $k$. Hence $g^{|G|}=(g^{|g|})^k=e$.
+
+---
+
+
+## The Group $U(n)$
+
+$U(n)$ is the group of units in $\mathbb{Z}_n$ under multiplication modulo $n$:
+
+$$
+U(n)=\{[a]\in\mathbb{Z}_n:\gcd(a,n)=1\}.
+$$
+
+For example, $U(12)=\{[1],[5],[7],[11]\}$.
+
+Each element has a multiplicative inverse modulo $n$. For instance, $[5][5]=[1]$ in $\mathbb{Z}_{12}$.
+
+---
+
+## Euler's Phi Function
+
+The Euler $\phi$-function is the map $\phi:\mathbb{N}\to\mathbb{N}$ defined by $\phi(1)=1$ and, for $n>1$,
+
+$$
+\phi(n)=|\{m:1\leq m<n,\ \gcd(m,n)=1\}|.
+$$
+
+For example, $\phi(12)=4$ because $1,5,7,11$ are relatively prime to $12$.
+
+
+
+If $p$ is prime, then $\phi(p)=p-1$.
+
+---
+
+## Theorem 6.3.1
+
+Let $U(n)$ be the group of units in $\mathbb{Z}_n$. Then
+
+$$
+|U(n)|=\phi(n).
+$$
+
+The units are precisely the residue classes represented by integers relatively prime to $n$.
+
+---
+
+## Euler's Theorem
+
+Let $a$ and $n$ be integers such that $n>0$ and $\gcd(a,n)=1$. Then
+
+$$
+a^{\phi(n)}\equiv 1\pmod n.
+$$
+
+. . .
+
+The residue class of $a$ belongs to $U(n)$, which has order $\phi(n)$. Applying the preceding corollary in $U(n)$ proves the congruence.
+
+---
+
+## Fermat's Little Theorem
+
+Let $p$ be prime. If $p\nmid a$, then
+
+$$
+a^{p-1}\equiv 1\pmod p.
+$$
+
+Furthermore, for any integer $b$,
+
+$$
+b^p\equiv b\pmod p.
+$$
 
 
 ---
 
-## Example of Cosets 2
+## Conjugation
 
-Let
+For $g,h\in G$, the element $ghg^{-1}$ is the **conjugate of $h$ by $g$**.
 
-$H=\{(1),(1\,2\,3),(1\,3\,2)\}$
+For a subgroup $H$ of $G$, write $gHg^{-1}=\{ghg^{-1}:h\in H\}$.
 
-be a subgroup of $S_3$.
+. . .
 
-The left cosets of $H$ are
+Conjugating a cycle applies the conjugating permutation to each entry:
 
-- $(1)H=(1\,2\,3)H=(1\,3\,2)H
-  =\{(1),(1\,2\,3),(1\,3\,2)\}$
-- $(1\,2)H=(1\,3)H=(2\,3)H
-  =\{(1\,2),(1\,3),(2\,3)\}$
+$$
+\sigma(a_1\,a_2\,\ldots\,a_k)\sigma^{-1}
+=(\sigma(a_1)\,\sigma(a_2)\,\ldots\,\sigma(a_k)).
+$$
 
-The right cosets of $H$ are the same as the left cosets.
-
-
----
-
-## Activity: Cosets in $U(9)$
-
-Recall
-
-$U(9)=\{1,2,4,5,7,8\}$.
-
-Let
-
-$H=\{1,8\}$.
-
-Find all of the distinct cosets of $H$ in $U(9)$.
-
-Compute $1H$. Then choose an element not contained in $1H$ and compute its coset. Continue until every element of $U(9)$ is used. How many distinct cosets are there?
-
+For example, $(124)(123)(124)^{-1}=(243)$.
 
 ---
 
-## Activity: Cosets in $S_4$
+## Theorem 6.2.8
 
-Regard $D_4$ as the subgroup of $S_4$ consisting of the symmetries of a square:
+Two cycles $\tau$ and $\mu$ in $S_n$ have the same length if and only if there exists a $\sigma\in S_n$ such that
 
-$D_4=\{e,(1\,2\,3\,4),(1\,3)(2\,4),(1\,4\,3\,2),
-(1\,2)(3\,4),(1\,4)(2\,3),(1\,3),(2\,4)\}$.
+$$
+\mu=\sigma\tau\sigma^{-1}.
+$$
 
-Find the cosets of $D_4$ in $S_4$.
+. . .
 
+If $\tau=(a_1\,\ldots\,a_k)$ and $\mu=(b_1\,\ldots\,b_k)$, choose $\sigma$ with $\sigma(a_i)=b_i$ for each $i$, then extend it to a permutation of the remaining symbols.
 
----
-
-## Activity: Cosets in $S_4$
-
-Let
-
-$K=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}$.
-
-
-- Find the cosets of $K$ in $D_4$.
-- Find the cosets of $K$ in $S_4$.
-
-
+Conversely, conjugating $\tau$ replaces its entries by their images under $\sigma$, preserving the cycle length.
 
 ---
 
-## Lemma 6.1.3.
+## Conjugation Is an Equivalence Relation
 
-Let $H$ be a subgroup of a group $G$ and suppose that $g_1,g_2\in G$.
+Define $h\sim k$ when $k=ghg^{-1}$ for some $g\in G$.
 
-The following conditions are equivalent.
+- **Reflexive:** $h=ehe^{-1}$.
+- **Symmetric:** If $k=ghg^{-1}$, then $h=g^{-1}kg$.
+- **Transitive:** If $k=ghg^{-1}$ and $\ell=aka^{-1}$, then $\ell=(ag)h(ag)^{-1}$.
 
-1. $g_1H=g_2H$;
-2. $Hg_1^{-1}=Hg_2^{-1}$;
-3. $g_1H\subset g_2H$;
-4. $g_2\in g_1H$;
-5. $g_1^{-1}g_2\in H$.
-
-. . . 
-
-Proof is part of the homework.  I will show  $1 \iff 5$.
+The equivalence classes are called **conjugacy classes**.
 
 ---
 
-## Theorem 6.1.4
+## Activity: Conjugacy Classes of $S_4$
 
-Let $H$ be a subgroup of a group $G$.
+Conjugation in $S_4$ preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to $|S_4|$.
 
-Then the left cosets of $H$ in $G$ partition $G$.
+. . .
 
-. . . 
+| Cycle type | Representative | Class size |
+|:--|:--|--:|
+| Identity | $(1)$ | $1$ |
+| Transposition | $(12)$ | $6$ |
+| Two disjoint transpositions | $(12)(34)$ | $3$ |
+| $3$-cycle | $(123)$ | $8$ |
+| $4$-cycle | $(1234)$ | $6$ |
 
-That is, the group $G$ is the disjoint union of the left cosets of $H$ in $G$.
-
----
-
-## Proof of  6.1.4
-
-Different proof from the book.  Define a relation on $G$ by $g_1 \sim g_2$ if and only if $g_1^{-1}g_2 \in H$.  I will show this is an equivalence relation.
-
-
----
-
-## Remark 6.1.5
-
-There is nothing special about left cosets. Right cosets also partition $G$.
-
-The proof is the same as for left cosets, except that all group
-multiplications are done on the opposite side of $H$.
-
+$1+6+3+8+6=24$.
 
 ---
 
-## Theorem 6.1.8
+## Activity: Conjugacy Classes of $A_4$
 
-Let $H$ be a subgroup of a group $G$.
+List the elements of $A_4$ by cycle type. Which $S_4$ conjugacy classes split when conjugation is restricted to elements of $A_4$?
 
-The number of left cosets of $H$ in $G$ is the same as the number of
-right cosets of $H$ in $G$.
+. . .
+
+The identity forms one class. The three double transpositions form another. The eight $3$-cycles split into two classes of four:
+
+$$
+\begin{aligned}
+[(123)]_{A_4}&=\{(123),(142),(134),(243)\},\\
+[(132)]_{A_4}&=\{(132),(124),(143),(234)\}.
+\end{aligned}
+$$
+
+Thus the class sizes are $1+3+4+4=12$.
+
+
+## Conjugacy Classes and the Center of a Group
+
+The center of a group $G$ is the set $Z(G)=\{g\in G:gh=hg\text{ for all }h\in G\}$.
+
+What is can you say about the conjugacy classes of elements in $Z(G)$?
 
 ---
 
-## Proof Idea
+## Class Equation and Conjugacy Classes in $S_n$
 
-Let $L_H$ and $R_H$ denote the sets of left and right
-cosets of $H$, respectively.
+Conjugacy classes partition a finite group $G$. If $x_1,\ldots,x_k$ represent its classes outside the center, the **class equation** is
 
-Define $\phi:L_H\to R_H$ by $\phi(gH)=Hg^{-1}$.
+$$
+|G|=|Z(G)|+|[x_1]|+\cdots+|[x_k]|.
+$$
 
-Lemma 6.1.3 shows that $\phi$ is well-defined and one-to-one.
+. . .
 
-It is onto since $\phi(g^{-1}H)=Hg$.
+In $S_n$, permutations are conjugate exactly when they have the same cycle type. If a permutation has $m_j$ cycles of length $j$, including fixed points, then
 
-Therefore $\phi$ is a bijection, so the number of left and right cosets
-is the same.
+$$
+|[\sigma]|=\frac{n!}{\prod_{j=1}^{n}j^{m_j}m_j!}.
+$$
 
+For example, $(12)(34)\in S_4$ has $m_2=2$, so its class contains $\dfrac{4!}{2^2\,2!}=3$ elements.
 
 ---
+
+## Activity: Class Equation for $D_5$
+
+---
+
+## Class Sizes and Centralizers
+
+For $x\in G$, its centralizer is
+$C_G(x)=\{g\in G:gx=xg\}$.
+
+The conjugacy class of $x$ has size
+
+$$
+|[x]|=[G:C_G(x)]=\frac{|G|}{|C_G(x)|}.
+$$
+
+. . .
+
+In $S_4$, the permutations commuting with $(123)$ are
+$(1)$, $(123)$, and $(132)$. Thus
+
+$$
+|[(123)]|=\frac{24}{3}=8.
+$$
+
+---
+
+## The Center of a Finite $p$-Group
+
+**Theorem.** If $|G|=p^n$ for a prime $p$, then $Z(G)$ contains an element other than the identity.
+
+. . .
+
+Each conjugacy class outside $Z(G)$ has size greater than $1$ and divides $p^n$. Its size is therefore divisible by $p$.
+
+The class equation gives
+
+$$
+p^n=|Z(G)|+\sum_i |[x_i]|.
+$$
+
+It follows that $p$ divides $|Z(G)|$. Since $e\in Z(G)$, we have $|Z(G)|\geq p$.
+
+---
+
+## Groups of Order $p^2$
+
+**Corollary.** Every group of order $p^2$ is abelian.
+
+. . .
+
+The preceding theorem and Lagrange's Theorem give
+$|Z(G)|=p$ or $p^2$.
+
+Suppose $|Z(G)|=p$ and choose $x\notin Z(G)$. The centralizer $C_G(x)$ contains both $Z(G)$ and $x$, so it has more than $p$ elements. Its order divides $p^2$, forcing $C_G(x)=G$.
+
+But then $x\in Z(G)$, a contradiction. Hence $Z(G)=G$, so $G$ is abelian.

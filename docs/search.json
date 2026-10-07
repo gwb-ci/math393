@@ -99,166 +99,254 @@
   {
     "objectID": "classes/13/slides.html#class-session-goals",
     "href": "classes/13/slides.html#class-session-goals",
-    "title": "Slides: Cosets",
+    "title": "Slides: Fermat and Euler’s Theorems",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine and Explore Cosets",
+    "text": "Class Session Goals\n\nExplain why a subgroup of index \\(2\\) is stable under conjugation.\nUse Lagrange’s Theorem to derive Euler’s Theorem and Fermat’s Little Theorem.\nFind conjugacy classes in \\(S_4\\) and \\(A_4\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
     "objectID": "classes/13/slides.html#definition-of-a-group",
     "href": "classes/13/slides.html#definition-of-a-group",
-    "title": "Slides: Cosets",
+    "title": "Slides: Fermat and Euler’s Theorems",
     "section": "Definition of a Group",
     "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
     "objectID": "classes/13/slides.html#definition-of-a-subgroup",
     "href": "classes/13/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Cosets",
+    "title": "Slides: Fermat and Euler’s Theorems",
     "section": "Definition of a Subgroup",
     "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
     "objectID": "classes/13/slides.html#definition-of-cosets",
     "href": "classes/13/slides.html#definition-of-cosets",
-    "title": "Slides: Cosets",
+    "title": "Slides: Fermat and Euler’s Theorems",
     "section": "Definition of Cosets",
     "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#example-of-coset-1",
-    "href": "classes/13/slides.html#example-of-coset-1",
-    "title": "Slides: Cosets",
-    "section": "Example of Coset 1",
-    "text": "Example of Coset 1\nLet \\(H\\) be the subgroup of \\(\\mathbb{Z}_6\\) consisting of the elements \\(0\\) and \\(3\\).\nThe cosets are\n\n\\(0+H=3+H=\\{0,3\\}\\)\n\\(1+H=4+H=\\{1,4\\}\\)\n\\(2+H=5+H=\\{2,5\\}\\)\n\nIn a commutative group, left and right cosets are always identical.",
+    "objectID": "classes/13/slides.html#subgroups-of-index-2",
+    "href": "classes/13/slides.html#subgroups-of-index-2",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Subgroups of Index 2",
+    "text": "Subgroups of Index 2\nLet \\(H\\) be a subgroup of \\(G\\) with \\([G:H]=2\\). There are only two left cosets and two right cosets: \\(H\\) and its complement in \\(G\\).\nThus \\(gH=Hg\\) for every \\(g\\in G\\), or equivalently,\n\\[\ngHg^{-1}=H.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#example-of-cosets-2",
-    "href": "classes/13/slides.html#example-of-cosets-2",
-    "title": "Slides: Cosets",
-    "section": "Example of Cosets 2",
-    "text": "Example of Cosets 2\nLet\n\\(H=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\nbe a subgroup of \\(S_3\\).\nThe left cosets of \\(H\\) are\n\n\\((1)H=(1\\,2\\,3)H=(1\\,3\\,2)H\n=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\n\\((1\\,2)H=(1\\,3)H=(2\\,3)H\n=\\{(1\\,2),(1\\,3),(2\\,3)\\}\\)\n\nThe right cosets of \\(H\\) are the same as the left cosets.",
+    "objectID": "classes/13/slides.html#proposition-6.2.7",
+    "href": "classes/13/slides.html#proposition-6.2.7",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Proposition 6.2.7",
+    "text": "Proposition 6.2.7\nThe group \\(A_4\\) has no subgroup of order \\(6\\).\n\nSuppose \\(|H|=6\\). Then \\([A_4:H]=2\\), so \\(gHg^{-1}=H\\) for every \\(g\\in A_4\\).\nOf the eight \\(3\\)-cycles in \\(A_4\\), at least one lies in \\(H\\). We may take it to be \\((123)\\). Its inverse \\((132)\\) also lies in \\(H\\).\nConjugating by elements of \\(A_4\\) gives \\((243)\\) and \\((142)\\). Their inverses must also lie in \\(H\\). Together with the identity, these are seven distinct elements, contradicting \\(|H|=6\\).\n\n\nThe converse of Lagrange’s Theorem is false: \\(6\\) divides \\(|A_4|=12\\), but \\(A_4\\) has no subgroup of order \\(6\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#activity-cosets-in-u9",
-    "href": "classes/13/slides.html#activity-cosets-in-u9",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(U(9)\\)",
-    "text": "Activity: Cosets in \\(U(9)\\)\nRecall\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nLet\n\\(H=\\{1,8\\}\\).\nFind all of the distinct cosets of \\(H\\) in \\(U(9)\\).\nCompute \\(1H\\). Then choose an element not contained in \\(1H\\) and compute its coset. Continue until every element of \\(U(9)\\) is used. How many distinct cosets are there?",
+    "objectID": "classes/13/slides.html#corollary",
+    "href": "classes/13/slides.html#corollary",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Corollary",
+    "text": "Corollary\nIf \\(G\\) is a finite group and \\(g\\in G\\), then\n\\[\ng^{|G|}=e.\n\\]\nThe order of \\(g\\) divides \\(|G|\\), so \\(|G|=k|g|\\) for some integer \\(k\\). Hence \\(g^{|G|}=(g^{|g|})^k=e\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#activity-cosets-in-s_4",
-    "href": "classes/13/slides.html#activity-cosets-in-s_4",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(S_4\\)",
-    "text": "Activity: Cosets in \\(S_4\\)\nRegard \\(D_4\\) as the subgroup of \\(S_4\\) consisting of the symmetries of a square:\n\\(D_4=\\{e,(1\\,2\\,3\\,4),(1\\,3)(2\\,4),(1\\,4\\,3\\,2),\n(1\\,2)(3\\,4),(1\\,4)(2\\,3),(1\\,3),(2\\,4)\\}\\).\nFind the cosets of \\(D_4\\) in \\(S_4\\).",
+    "objectID": "classes/13/slides.html#the-group-un",
+    "href": "classes/13/slides.html#the-group-un",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "The Group \\(U(n)\\)",
+    "text": "The Group \\(U(n)\\)\n\\(U(n)\\) is the group of units in \\(\\mathbb{Z}_n\\) under multiplication modulo \\(n\\):\n\\[\nU(n)=\\{[a]\\in\\mathbb{Z}_n:\\gcd(a,n)=1\\}.\n\\]\nFor example, \\(U(12)=\\{[1],[5],[7],[11]\\}\\).\nEach element has a multiplicative inverse modulo \\(n\\). For instance, \\([5][5]=[1]\\) in \\(\\mathbb{Z}_{12}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#activity-cosets-in-s_4-1",
-    "href": "classes/13/slides.html#activity-cosets-in-s_4-1",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(S_4\\)",
-    "text": "Activity: Cosets in \\(S_4\\)\nLet\n\\(K=\\{e,(1\\,2)(3\\,4),(1\\,3)(2\\,4),(1\\,4)(2\\,3)\\}\\).\n\nFind the cosets of \\(K\\) in \\(D_4\\).\nFind the cosets of \\(K\\) in \\(S_4\\).",
+    "objectID": "classes/13/slides.html#eulers-phi-function",
+    "href": "classes/13/slides.html#eulers-phi-function",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Euler’s Phi Function",
+    "text": "Euler’s Phi Function\nThe Euler \\(\\phi\\)-function is the map \\(\\phi:\\mathbb{N}\\to\\mathbb{N}\\) defined by \\(\\phi(1)=1\\) and, for \\(n&gt;1\\),\n\\[\n\\phi(n)=|\\{m:1\\leq m&lt;n,\\ \\gcd(m,n)=1\\}|.\n\\]\nFor example, \\(\\phi(12)=4\\) because \\(1,5,7,11\\) are relatively prime to \\(12\\).\nIf \\(p\\) is prime, then \\(\\phi(p)=p-1\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#lemma-6.1.3.",
-    "href": "classes/13/slides.html#lemma-6.1.3.",
-    "title": "Slides: Cosets",
-    "section": "Lemma 6.1.3.",
-    "text": "Lemma 6.1.3.\nLet \\(H\\) be a subgroup of a group \\(G\\) and suppose that \\(g_1,g_2\\in G\\).\nThe following conditions are equivalent.\n\n\\(g_1H=g_2H\\);\n\\(Hg_1^{-1}=Hg_2^{-1}\\);\n\\(g_1H\\subset g_2H\\);\n\\(g_2\\in g_1H\\);\n\\(g_1^{-1}g_2\\in H\\).\n\n\nProof is part of the homework. I will show \\(1 \\iff 5\\).",
+    "objectID": "classes/13/slides.html#theorem-6.3.1",
+    "href": "classes/13/slides.html#theorem-6.3.1",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Theorem 6.3.1",
+    "text": "Theorem 6.3.1\nLet \\(U(n)\\) be the group of units in \\(\\mathbb{Z}_n\\). Then\n\\[\n|U(n)|=\\phi(n).\n\\]\nThe units are precisely the residue classes represented by integers relatively prime to \\(n\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#theorem-6.1.4",
-    "href": "classes/13/slides.html#theorem-6.1.4",
-    "title": "Slides: Cosets",
-    "section": "Theorem 6.1.4",
-    "text": "Theorem 6.1.4\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThen the left cosets of \\(H\\) in \\(G\\) partition \\(G\\).\n\nThat is, the group \\(G\\) is the disjoint union of the left cosets of \\(H\\) in \\(G\\).",
+    "objectID": "classes/13/slides.html#eulers-theorem",
+    "href": "classes/13/slides.html#eulers-theorem",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Euler’s Theorem",
+    "text": "Euler’s Theorem\nLet \\(a\\) and \\(n\\) be integers such that \\(n&gt;0\\) and \\(\\gcd(a,n)=1\\). Then\n\\[\na^{\\phi(n)}\\equiv 1\\pmod n.\n\\]\n\nThe residue class of \\(a\\) belongs to \\(U(n)\\), which has order \\(\\phi(n)\\). Applying the preceding corollary in \\(U(n)\\) proves the congruence.",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#proof-of-6.1.4",
-    "href": "classes/13/slides.html#proof-of-6.1.4",
-    "title": "Slides: Cosets",
-    "section": "Proof of 6.1.4",
-    "text": "Proof of 6.1.4\nDifferent proof from the book. Define a relation on \\(G\\) by \\(g_1 \\sim g_2\\) if and only if \\(g_1^{-1}g_2 \\in H\\). I will show this is an equivalence relation.",
+    "objectID": "classes/13/slides.html#fermats-little-theorem",
+    "href": "classes/13/slides.html#fermats-little-theorem",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Fermat’s Little Theorem",
+    "text": "Fermat’s Little Theorem\nLet \\(p\\) be prime. If \\(p\\nmid a\\), then\n\\[\na^{p-1}\\equiv 1\\pmod p.\n\\]\nFurthermore, for any integer \\(b\\),\n\\[\nb^p\\equiv b\\pmod p.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#remark-6.1.5",
-    "href": "classes/13/slides.html#remark-6.1.5",
-    "title": "Slides: Cosets",
-    "section": "Remark 6.1.5",
-    "text": "Remark 6.1.5\nThere is nothing special about left cosets. Right cosets also partition \\(G\\).\nThe proof is the same as for left cosets, except that all group multiplications are done on the opposite side of \\(H\\).",
+    "objectID": "classes/13/slides.html#conjugation",
+    "href": "classes/13/slides.html#conjugation",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugation",
+    "text": "Conjugation\nFor \\(g,h\\in G\\), the element \\(ghg^{-1}\\) is the conjugate of \\(h\\) by \\(g\\).\nFor a subgroup \\(H\\) of \\(G\\), write \\(gHg^{-1}=\\{ghg^{-1}:h\\in H\\}\\).\n\nConjugating a cycle applies the conjugating permutation to each entry:\n\\[\n\\sigma(a_1\\,a_2\\,\\ldots\\,a_k)\\sigma^{-1}\n=(\\sigma(a_1)\\,\\sigma(a_2)\\,\\ldots\\,\\sigma(a_k)).\n\\]\nFor example, \\((124)(123)(124)^{-1}=(243)\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#theorem-6.1.8",
-    "href": "classes/13/slides.html#theorem-6.1.8",
-    "title": "Slides: Cosets",
-    "section": "Theorem 6.1.8",
-    "text": "Theorem 6.1.8\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThe number of left cosets of \\(H\\) in \\(G\\) is the same as the number of right cosets of \\(H\\) in \\(G\\).",
+    "objectID": "classes/13/slides.html#theorem-6.2.8",
+    "href": "classes/13/slides.html#theorem-6.2.8",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Theorem 6.2.8",
+    "text": "Theorem 6.2.8\nTwo cycles \\(\\tau\\) and \\(\\mu\\) in \\(S_n\\) have the same length if and only if there exists a \\(\\sigma\\in S_n\\) such that\n\\[\n\\mu=\\sigma\\tau\\sigma^{-1}.\n\\]\n\nIf \\(\\tau=(a_1\\,\\ldots\\,a_k)\\) and \\(\\mu=(b_1\\,\\ldots\\,b_k)\\), choose \\(\\sigma\\) with \\(\\sigma(a_i)=b_i\\) for each \\(i\\), then extend it to a permutation of the remaining symbols.\nConversely, conjugating \\(\\tau\\) replaces its entries by their images under \\(\\sigma\\), preserving the cycle length.",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/13/slides.html#proof-idea",
-    "href": "classes/13/slides.html#proof-idea",
-    "title": "Slides: Cosets",
-    "section": "Proof Idea",
-    "text": "Proof Idea\nLet \\(L_H\\) and \\(R_H\\) denote the sets of left and right cosets of \\(H\\), respectively.\nDefine \\(\\phi:L_H\\to R_H\\) by \\(\\phi(gH)=Hg^{-1}\\).\nLemma 6.1.3 shows that \\(\\phi\\) is well-defined and one-to-one.\nIt is onto since \\(\\phi(g^{-1}H)=Hg\\).\nTherefore \\(\\phi\\) is a bijection, so the number of left and right cosets is the same.",
+    "objectID": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
+    "href": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugation Is an Equivalence Relation",
+    "text": "Conjugation Is an Equivalence Relation\nDefine \\(h\\sim k\\) when \\(k=ghg^{-1}\\) for some \\(g\\in G\\).\n\nReflexive: \\(h=ehe^{-1}\\).\nSymmetric: If \\(k=ghg^{-1}\\), then \\(h=g^{-1}kg\\).\nTransitive: If \\(k=ghg^{-1}\\) and \\(\\ell=aka^{-1}\\), then \\(\\ell=(ag)h(ag)^{-1}\\).\n\nThe equivalence classes are called conjugacy classes.",
     "crumbs": [
       "Class Material",
-      "Slides: Cosets"
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
+    "href": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Conjugacy Classes of \\(S_4\\)",
+    "text": "Activity: Conjugacy Classes of \\(S_4\\)\nConjugation in \\(S_4\\) preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to \\(|S_4|\\).\n\n\n\n\nCycle type\nRepresentative\nClass size\n\n\n\n\nIdentity\n\\((1)\\)\n\\(1\\)\n\n\nTransposition\n\\((12)\\)\n\\(6\\)\n\n\nTwo disjoint transpositions\n\\((12)(34)\\)\n\\(3\\)\n\n\n\\(3\\)-cycle\n\\((123)\\)\n\\(8\\)\n\n\n\\(4\\)-cycle\n\\((1234)\\)\n\\(6\\)\n\n\n\n\\(1+6+3+8+6=24\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
+    "href": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Conjugacy Classes of \\(A_4\\)",
+    "text": "Activity: Conjugacy Classes of \\(A_4\\)\nList the elements of \\(A_4\\) by cycle type. Which \\(S_4\\) conjugacy classes split when conjugation is restricted to elements of \\(A_4\\)?\n\nThe identity forms one class. The three double transpositions form another. The eight \\(3\\)-cycles split into two classes of four:\n\\[\n\\begin{aligned}\n[(123)]_{A_4}&=\\{(123),(142),(134),(243)\\},\\\\\n[(132)]_{A_4}&=\\{(132),(124),(143),(234)\\}.\n\\end{aligned}\n\\]\nThus the class sizes are \\(1+3+4+4=12\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
+    "href": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugacy Classes and the Center of a Group",
+    "text": "Conjugacy Classes and the Center of a Group\nThe center of a group \\(G\\) is the set \\(Z(G)=\\{g\\in G:gh=hg\\text{ for all }h\\in G\\}\\).\nWhat is can you say about the conjugacy classes of elements in \\(Z(G)\\)?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
+    "href": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Class Equation and Conjugacy Classes in \\(S_n\\)",
+    "text": "Class Equation and Conjugacy Classes in \\(S_n\\)\nConjugacy classes partition a finite group \\(G\\). If \\(x_1,\\ldots,x_k\\) represent its classes outside the center, the class equation is\n\\[\n|G|=|Z(G)|+|[x_1]|+\\cdots+|[x_k]|.\n\\]\n\nIn \\(S_n\\), permutations are conjugate exactly when they have the same cycle type. If a permutation has \\(m_j\\) cycles of length \\(j\\), including fixed points, then\n\\[\n|[\\sigma]|=\\frac{n!}{\\prod_{j=1}^{n}j^{m_j}m_j!}.\n\\]\nFor example, \\((12)(34)\\in S_4\\) has \\(m_2=2\\), so its class contains \\(\\dfrac{4!}{2^2\\,2!}=3\\) elements.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#activity-class-equation-for-d_5",
+    "href": "classes/13/slides.html#activity-class-equation-for-d_5",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Class Equation for \\(D_5\\)",
+    "text": "Activity: Class Equation for \\(D_5\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#class-sizes-and-centralizers",
+    "href": "classes/13/slides.html#class-sizes-and-centralizers",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Class Sizes and Centralizers",
+    "text": "Class Sizes and Centralizers\nFor \\(x\\in G\\), its centralizer is \\(C_G(x)=\\{g\\in G:gx=xg\\}\\).\nThe conjugacy class of \\(x\\) has size\n\\[\n|[x]|=[G:C_G(x)]=\\frac{|G|}{|C_G(x)|}.\n\\]\n\nIn \\(S_4\\), the permutations commuting with \\((123)\\) are \\((1)\\), \\((123)\\), and \\((132)\\). Thus\n\\[\n|[(123)]|=\\frac{24}{3}=8.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#the-center-of-a-finite-p-group",
+    "href": "classes/13/slides.html#the-center-of-a-finite-p-group",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "The Center of a Finite \\(p\\)-Group",
+    "text": "The Center of a Finite \\(p\\)-Group\nTheorem. If \\(|G|=p^n\\) for a prime \\(p\\), then \\(Z(G)\\) contains an element other than the identity.\n\nEach conjugacy class outside \\(Z(G)\\) has size greater than \\(1\\) and divides \\(p^n\\). Its size is therefore divisible by \\(p\\).\nThe class equation gives\n\\[\np^n=|Z(G)|+\\sum_i |[x_i]|.\n\\]\nIt follows that \\(p\\) divides \\(|Z(G)|\\). Since \\(e\\in Z(G)\\), we have \\(|Z(G)|\\geq p\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/13/slides.html#groups-of-order-p2",
+    "href": "classes/13/slides.html#groups-of-order-p2",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Groups of Order \\(p^2\\)",
+    "text": "Groups of Order \\(p^2\\)\nCorollary. Every group of order \\(p^2\\) is abelian.\n\nThe preceding theorem and Lagrange’s Theorem give \\(|Z(G)|=p\\) or \\(p^2\\).\nSuppose \\(|Z(G)|=p\\) and choose \\(x\\notin Z(G)\\). The centralizer \\(C_G(x)\\) contains both \\(Z(G)\\) and \\(x\\), so it has more than \\(p\\) elements. Its order divides \\(p^2\\), forcing \\(C_G(x)=G\\).\nBut then \\(x\\in Z(G)\\), a contradiction. Hence \\(Z(G)=G\\), so \\(G\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {

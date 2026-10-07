@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Cosets</title>
+  <title>Math 393 - Abstract Algebra – Slides: Fermat and Euler’s Theorems</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Cosets</h1>
+  <h1 class="title">Slides: Fermat and Euler’s Theorems</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -138,7 +138,9 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Define and Explore Cosets</li>
+<li>Explain why a subgroup of index <span class="math inline">\(2\)</span> is stable under conjugation.</li>
+<li>Use Lagrange’s Theorem to derive Euler’s Theorem and Fermat’s Little Theorem.</li>
+<li>Find conjugacy classes in <span class="math inline">\(S_4\)</span> and <span class="math inline">\(A_4\)</span>.</li>
 </ul>
 </section>
 <section id="definition-of-a-group" class="slide level2">
@@ -170,105 +172,230 @@ For each <span class="math inline">\(a\in G\)</span>, there exists <span class="
 <p><span class="math inline">\(Hg = \{hg : h \in H\}\)</span>.</p>
 <p>If left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word <strong>coset</strong>.</p>
 </section>
-<section id="example-of-coset-1" class="slide level2">
-<h2>Example of Coset 1</h2>
-<p>Let <span class="math inline">\(H\)</span> be the subgroup of <span class="math inline">\(\mathbb{Z}_6\)</span> consisting of the elements <span class="math inline">\(0\)</span> and <span class="math inline">\(3\)</span>.</p>
-<p>The cosets are</p>
-<ul>
-<li><span class="math inline">\(0+H=3+H=\{0,3\}\)</span></li>
-<li><span class="math inline">\(1+H=4+H=\{1,4\}\)</span></li>
-<li><span class="math inline">\(2+H=5+H=\{2,5\}\)</span></li>
-</ul>
-<p>In a commutative group, left and right cosets are always identical.</p>
+<section id="subgroups-of-index-2" class="slide level2">
+<h2>Subgroups of Index 2</h2>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of <span class="math inline">\(G\)</span> with <span class="math inline">\([G:H]=2\)</span>. There are only two left cosets and two right cosets: <span class="math inline">\(H\)</span> and its complement in <span class="math inline">\(G\)</span>.</p>
+<p>Thus <span class="math inline">\(gH=Hg\)</span> for every <span class="math inline">\(g\in G\)</span>, or equivalently,</p>
+<p><span class="math display">\[
+gHg^{-1}=H.
+\]</span></p>
 </section>
-<section id="example-of-cosets-2" class="slide level2">
-<h2>Example of Cosets 2</h2>
-<p>Let</p>
-<p><span class="math inline">\(H=\{(1),(1\,2\,3),(1\,3\,2)\}\)</span></p>
-<p>be a subgroup of <span class="math inline">\(S_3\)</span>.</p>
-<p>The left cosets of <span class="math inline">\(H\)</span> are</p>
-<ul>
-<li><span class="math inline">\((1)H=(1\,2\,3)H=(1\,3\,2)H
-=\{(1),(1\,2\,3),(1\,3\,2)\}\)</span></li>
-<li><span class="math inline">\((1\,2)H=(1\,3)H=(2\,3)H
-=\{(1\,2),(1\,3),(2\,3)\}\)</span></li>
-</ul>
-<p>The right cosets of <span class="math inline">\(H\)</span> are the same as the left cosets.</p>
-</section>
-<section id="activity-cosets-in-u9" class="slide level2">
-<h2>Activity: Cosets in <span class="math inline">\(U(9)\)</span></h2>
-<p>Recall</p>
-<p><span class="math inline">\(U(9)=\{1,2,4,5,7,8\}\)</span>.</p>
-<p>Let</p>
-<p><span class="math inline">\(H=\{1,8\}\)</span>.</p>
-<p>Find all of the distinct cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(U(9)\)</span>.</p>
-<p>Compute <span class="math inline">\(1H\)</span>. Then choose an element not contained in <span class="math inline">\(1H\)</span> and compute its coset. Continue until every element of <span class="math inline">\(U(9)\)</span> is used. How many distinct cosets are there?</p>
-</section>
-<section id="activity-cosets-in-s_4" class="slide level2">
-<h2>Activity: Cosets in <span class="math inline">\(S_4\)</span></h2>
-<p>Regard <span class="math inline">\(D_4\)</span> as the subgroup of <span class="math inline">\(S_4\)</span> consisting of the symmetries of a square:</p>
-<p><span class="math inline">\(D_4=\{e,(1\,2\,3\,4),(1\,3)(2\,4),(1\,4\,3\,2),
-(1\,2)(3\,4),(1\,4)(2\,3),(1\,3),(2\,4)\}\)</span>.</p>
-<p>Find the cosets of <span class="math inline">\(D_4\)</span> in <span class="math inline">\(S_4\)</span>.</p>
-</section>
-<section id="activity-cosets-in-s_4-1" class="slide level2">
-<h2>Activity: Cosets in <span class="math inline">\(S_4\)</span></h2>
-<p>Let</p>
-<p><span class="math inline">\(K=\{e,(1\,2)(3\,4),(1\,3)(2\,4),(1\,4)(2\,3)\}\)</span>.</p>
-<ul>
-<li>Find the cosets of <span class="math inline">\(K\)</span> in <span class="math inline">\(D_4\)</span>.</li>
-<li>Find the cosets of <span class="math inline">\(K\)</span> in <span class="math inline">\(S_4\)</span>.</li>
-</ul>
-</section>
-<section id="lemma-6.1.3." class="slide level2">
-<h2>Lemma 6.1.3.</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span> and suppose that <span class="math inline">\(g_1,g_2\in G\)</span>.</p>
-<p>The following conditions are equivalent.</p>
-<ol type="1">
-<li><span class="math inline">\(g_1H=g_2H\)</span>;</li>
-<li><span class="math inline">\(Hg_1^{-1}=Hg_2^{-1}\)</span>;</li>
-<li><span class="math inline">\(g_1H\subset g_2H\)</span>;</li>
-<li><span class="math inline">\(g_2\in g_1H\)</span>;</li>
-<li><span class="math inline">\(g_1^{-1}g_2\in H\)</span>.</li>
-</ol>
+<section id="proposition-6.2.7" class="slide level2">
+<h2>Proposition 6.2.7</h2>
+<p>The group <span class="math inline">\(A_4\)</span> has no subgroup of order <span class="math inline">\(6\)</span>.</p>
 <div class="fragment">
-<p>Proof is part of the homework. I will show <span class="math inline">\(1 \iff 5\)</span>.</p>
+<p>Suppose <span class="math inline">\(|H|=6\)</span>. Then <span class="math inline">\([A_4:H]=2\)</span>, so <span class="math inline">\(gHg^{-1}=H\)</span> for every <span class="math inline">\(g\in A_4\)</span>.</p>
+<p>Of the eight <span class="math inline">\(3\)</span>-cycles in <span class="math inline">\(A_4\)</span>, at least one lies in <span class="math inline">\(H\)</span>. We may take it to be <span class="math inline">\((123)\)</span>. Its inverse <span class="math inline">\((132)\)</span> also lies in <span class="math inline">\(H\)</span>.</p>
+<p>Conjugating by elements of <span class="math inline">\(A_4\)</span> gives <span class="math inline">\((243)\)</span> and <span class="math inline">\((142)\)</span>. Their inverses must also lie in <span class="math inline">\(H\)</span>. Together with the identity, these are seven distinct elements, contradicting <span class="math inline">\(|H|=6\)</span>.</p>
+</div>
+<div class="fragment">
+<p>The converse of Lagrange’s Theorem is false: <span class="math inline">\(6\)</span> divides <span class="math inline">\(|A_4|=12\)</span>, but <span class="math inline">\(A_4\)</span> has no subgroup of order <span class="math inline">\(6\)</span>.</p>
 </div>
 </section>
-<section id="theorem-6.1.4" class="slide level2">
-<h2>Theorem 6.1.4</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span>.</p>
-<p>Then the left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span> partition <span class="math inline">\(G\)</span>.</p>
+<section id="corollary" class="slide level2">
+<h2>Corollary</h2>
+<p>If <span class="math inline">\(G\)</span> is a finite group and <span class="math inline">\(g\in G\)</span>, then</p>
+<p><span class="math display">\[
+g^{|G|}=e.
+\]</span></p>
+<p>The order of <span class="math inline">\(g\)</span> divides <span class="math inline">\(|G|\)</span>, so <span class="math inline">\(|G|=k|g|\)</span> for some integer <span class="math inline">\(k\)</span>. Hence <span class="math inline">\(g^{|G|}=(g^{|g|})^k=e\)</span>.</p>
+</section>
+<section id="the-group-un" class="slide level2">
+<h2>The Group <span class="math inline">\(U(n)\)</span></h2>
+<p><span class="math inline">\(U(n)\)</span> is the group of units in <span class="math inline">\(\mathbb{Z}_n\)</span> under multiplication modulo <span class="math inline">\(n\)</span>:</p>
+<p><span class="math display">\[
+U(n)=\{[a]\in\mathbb{Z}_n:\gcd(a,n)=1\}.
+\]</span></p>
+<p>For example, <span class="math inline">\(U(12)=\{[1],[5],[7],[11]\}\)</span>.</p>
+<p>Each element has a multiplicative inverse modulo <span class="math inline">\(n\)</span>. For instance, <span class="math inline">\([5][5]=[1]\)</span> in <span class="math inline">\(\mathbb{Z}_{12}\)</span>.</p>
+</section>
+<section id="eulers-phi-function" class="slide level2">
+<h2>Euler’s Phi Function</h2>
+<p>The Euler <span class="math inline">\(\phi\)</span>-function is the map <span class="math inline">\(\phi:\mathbb{N}\to\mathbb{N}\)</span> defined by <span class="math inline">\(\phi(1)=1\)</span> and, for <span class="math inline">\(n&gt;1\)</span>,</p>
+<p><span class="math display">\[
+\phi(n)=|\{m:1\leq m&lt;n,\ \gcd(m,n)=1\}|.
+\]</span></p>
+<p>For example, <span class="math inline">\(\phi(12)=4\)</span> because <span class="math inline">\(1,5,7,11\)</span> are relatively prime to <span class="math inline">\(12\)</span>.</p>
+<p>If <span class="math inline">\(p\)</span> is prime, then <span class="math inline">\(\phi(p)=p-1\)</span>.</p>
+</section>
+<section id="theorem-6.3.1" class="slide level2">
+<h2>Theorem 6.3.1</h2>
+<p>Let <span class="math inline">\(U(n)\)</span> be the group of units in <span class="math inline">\(\mathbb{Z}_n\)</span>. Then</p>
+<p><span class="math display">\[
+|U(n)|=\phi(n).
+\]</span></p>
+<p>The units are precisely the residue classes represented by integers relatively prime to <span class="math inline">\(n\)</span>.</p>
+</section>
+<section id="eulers-theorem" class="slide level2">
+<h2>Euler’s Theorem</h2>
+<p>Let <span class="math inline">\(a\)</span> and <span class="math inline">\(n\)</span> be integers such that <span class="math inline">\(n&gt;0\)</span> and <span class="math inline">\(\gcd(a,n)=1\)</span>. Then</p>
+<p><span class="math display">\[
+a^{\phi(n)}\equiv 1\pmod n.
+\]</span></p>
 <div class="fragment">
-<p>That is, the group <span class="math inline">\(G\)</span> is the disjoint union of the left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span>.</p>
+<p>The residue class of <span class="math inline">\(a\)</span> belongs to <span class="math inline">\(U(n)\)</span>, which has order <span class="math inline">\(\phi(n)\)</span>. Applying the preceding corollary in <span class="math inline">\(U(n)\)</span> proves the congruence.</p>
 </div>
 </section>
-<section id="proof-of-6.1.4" class="slide level2">
-<h2>Proof of 6.1.4</h2>
-<p>Different proof from the book. Define a relation on <span class="math inline">\(G\)</span> by <span class="math inline">\(g_1 \sim g_2\)</span> if and only if <span class="math inline">\(g_1^{-1}g_2 \in H\)</span>. I will show this is an equivalence relation.</p>
+<section id="fermats-little-theorem" class="slide level2">
+<h2>Fermat’s Little Theorem</h2>
+<p>Let <span class="math inline">\(p\)</span> be prime. If <span class="math inline">\(p\nmid a\)</span>, then</p>
+<p><span class="math display">\[
+a^{p-1}\equiv 1\pmod p.
+\]</span></p>
+<p>Furthermore, for any integer <span class="math inline">\(b\)</span>,</p>
+<p><span class="math display">\[
+b^p\equiv b\pmod p.
+\]</span></p>
 </section>
-<section id="remark-6.1.5" class="slide level2">
-<h2>Remark 6.1.5</h2>
-<p>There is nothing special about left cosets. Right cosets also partition <span class="math inline">\(G\)</span>.</p>
-<p>The proof is the same as for left cosets, except that all group multiplications are done on the opposite side of <span class="math inline">\(H\)</span>.</p>
+<section id="conjugation" class="slide level2">
+<h2>Conjugation</h2>
+<p>For <span class="math inline">\(g,h\in G\)</span>, the element <span class="math inline">\(ghg^{-1}\)</span> is the <strong>conjugate of <span class="math inline">\(h\)</span> by <span class="math inline">\(g\)</span></strong>.</p>
+<p>For a subgroup <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span>, write <span class="math inline">\(gHg^{-1}=\{ghg^{-1}:h\in H\}\)</span>.</p>
+<div class="fragment">
+<p>Conjugating a cycle applies the conjugating permutation to each entry:</p>
+<p><span class="math display">\[
+\sigma(a_1\,a_2\,\ldots\,a_k)\sigma^{-1}
+=(\sigma(a_1)\,\sigma(a_2)\,\ldots\,\sigma(a_k)).
+\]</span></p>
+<p>For example, <span class="math inline">\((124)(123)(124)^{-1}=(243)\)</span>.</p>
+</div>
 </section>
-<section id="theorem-6.1.8" class="slide level2">
-<h2>Theorem 6.1.8</h2>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span>.</p>
-<p>The number of left cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span> is the same as the number of right cosets of <span class="math inline">\(H\)</span> in <span class="math inline">\(G\)</span>.</p>
+<section id="theorem-6.2.8" class="slide level2">
+<h2>Theorem 6.2.8</h2>
+<p>Two cycles <span class="math inline">\(\tau\)</span> and <span class="math inline">\(\mu\)</span> in <span class="math inline">\(S_n\)</span> have the same length if and only if there exists a <span class="math inline">\(\sigma\in S_n\)</span> such that</p>
+<p><span class="math display">\[
+\mu=\sigma\tau\sigma^{-1}.
+\]</span></p>
+<div class="fragment">
+<p>If <span class="math inline">\(\tau=(a_1\,\ldots\,a_k)\)</span> and <span class="math inline">\(\mu=(b_1\,\ldots\,b_k)\)</span>, choose <span class="math inline">\(\sigma\)</span> with <span class="math inline">\(\sigma(a_i)=b_i\)</span> for each <span class="math inline">\(i\)</span>, then extend it to a permutation of the remaining symbols.</p>
+<p>Conversely, conjugating <span class="math inline">\(\tau\)</span> replaces its entries by their images under <span class="math inline">\(\sigma\)</span>, preserving the cycle length.</p>
+</div>
 </section>
-<section id="proof-idea" class="slide level2">
-<h2>Proof Idea</h2>
-<p>Let <span class="math inline">\(L_H\)</span> and <span class="math inline">\(R_H\)</span> denote the sets of left and right cosets of <span class="math inline">\(H\)</span>, respectively.</p>
-<p>Define <span class="math inline">\(\phi:L_H\to R_H\)</span> by <span class="math inline">\(\phi(gH)=Hg^{-1}\)</span>.</p>
-<p>Lemma 6.1.3 shows that <span class="math inline">\(\phi\)</span> is well-defined and one-to-one.</p>
-<p>It is onto since <span class="math inline">\(\phi(g^{-1}H)=Hg\)</span>.</p>
-<p>Therefore <span class="math inline">\(\phi\)</span> is a bijection, so the number of left and right cosets is the same.</p>
+<section id="conjugation-is-an-equivalence-relation" class="slide level2">
+<h2>Conjugation Is an Equivalence Relation</h2>
+<p>Define <span class="math inline">\(h\sim k\)</span> when <span class="math inline">\(k=ghg^{-1}\)</span> for some <span class="math inline">\(g\in G\)</span>.</p>
+<ul>
+<li><strong>Reflexive:</strong> <span class="math inline">\(h=ehe^{-1}\)</span>.</li>
+<li><strong>Symmetric:</strong> If <span class="math inline">\(k=ghg^{-1}\)</span>, then <span class="math inline">\(h=g^{-1}kg\)</span>.</li>
+<li><strong>Transitive:</strong> If <span class="math inline">\(k=ghg^{-1}\)</span> and <span class="math inline">\(\ell=aka^{-1}\)</span>, then <span class="math inline">\(\ell=(ag)h(ag)^{-1}\)</span>.</li>
+</ul>
+<p>The equivalence classes are called <strong>conjugacy classes</strong>.</p>
 </section>
-<section class="slide level2">
+<section id="activity-conjugacy-classes-of-s_4" class="slide level2">
+<h2>Activity: Conjugacy Classes of <span class="math inline">\(S_4\)</span></h2>
+<p>Conjugation in <span class="math inline">\(S_4\)</span> preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to <span class="math inline">\(|S_4|\)</span>.</p>
+<div class="fragment">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Cycle type</th>
+<th style="text-align: left;">Representative</th>
+<th style="text-align: right;">Class size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Identity</td>
+<td style="text-align: left;"><span class="math inline">\((1)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(1\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Transposition</td>
+<td style="text-align: left;"><span class="math inline">\((12)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(6\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Two disjoint transpositions</td>
+<td style="text-align: left;"><span class="math inline">\((12)(34)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(3\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(3\)</span>-cycle</td>
+<td style="text-align: left;"><span class="math inline">\((123)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(8\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(4\)</span>-cycle</td>
+<td style="text-align: left;"><span class="math inline">\((1234)\)</span></td>
+<td style="text-align: right;"><span class="math inline">\(6\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span class="math inline">\(1+6+3+8+6=24\)</span>.</p>
+</div>
+</section>
+<section id="activity-conjugacy-classes-of-a_4" class="slide level2">
+<h2>Activity: Conjugacy Classes of <span class="math inline">\(A_4\)</span></h2>
+<p>List the elements of <span class="math inline">\(A_4\)</span> by cycle type. Which <span class="math inline">\(S_4\)</span> conjugacy classes split when conjugation is restricted to elements of <span class="math inline">\(A_4\)</span>?</p>
+<div class="fragment">
+<p>The identity forms one class. The three double transpositions form another. The eight <span class="math inline">\(3\)</span>-cycles split into two classes of four:</p>
+<p><span class="math display">\[
+\begin{aligned}
+[(123)]_{A_4}&amp;=\{(123),(142),(134),(243)\},\\
+[(132)]_{A_4}&amp;=\{(132),(124),(143),(234)\}.
+\end{aligned}
+\]</span></p>
+<p>Thus the class sizes are <span class="math inline">\(1+3+4+4=12\)</span>.</p>
+</div>
+</section>
+<section id="conjugacy-classes-and-the-center-of-a-group" class="slide level2">
+<h2>Conjugacy Classes and the Center of a Group</h2>
+<p>The center of a group <span class="math inline">\(G\)</span> is the set <span class="math inline">\(Z(G)=\{g\in G:gh=hg\text{ for all }h\in G\}\)</span>.</p>
+<p>What is can you say about the conjugacy classes of elements in <span class="math inline">\(Z(G)\)</span>?</p>
+</section>
+<section id="class-equation-and-conjugacy-classes-in-s_n" class="slide level2">
+<h2>Class Equation and Conjugacy Classes in <span class="math inline">\(S_n\)</span></h2>
+<p>Conjugacy classes partition a finite group <span class="math inline">\(G\)</span>. If <span class="math inline">\(x_1,\ldots,x_k\)</span> represent its classes outside the center, the <strong>class equation</strong> is</p>
+<p><span class="math display">\[
+|G|=|Z(G)|+|[x_1]|+\cdots+|[x_k]|.
+\]</span></p>
+<div class="fragment">
+<p>In <span class="math inline">\(S_n\)</span>, permutations are conjugate exactly when they have the same cycle type. If a permutation has <span class="math inline">\(m_j\)</span> cycles of length <span class="math inline">\(j\)</span>, including fixed points, then</p>
+<p><span class="math display">\[
+|[\sigma]|=\frac{n!}{\prod_{j=1}^{n}j^{m_j}m_j!}.
+\]</span></p>
+<p>For example, <span class="math inline">\((12)(34)\in S_4\)</span> has <span class="math inline">\(m_2=2\)</span>, so its class contains <span class="math inline">\(\dfrac{4!}{2^2\,2!}=3\)</span> elements.</p>
+</div>
+</section>
+<section id="activity-class-equation-for-d_5" class="slide level2">
+<h2>Activity: Class Equation for <span class="math inline">\(D_5\)</span></h2>
+</section>
+<section id="class-sizes-and-centralizers" class="slide level2">
+<h2>Class Sizes and Centralizers</h2>
+<p>For <span class="math inline">\(x\in G\)</span>, its centralizer is <span class="math inline">\(C_G(x)=\{g\in G:gx=xg\}\)</span>.</p>
+<p>The conjugacy class of <span class="math inline">\(x\)</span> has size</p>
+<p><span class="math display">\[
+|[x]|=[G:C_G(x)]=\frac{|G|}{|C_G(x)|}.
+\]</span></p>
+<div class="fragment">
+<p>In <span class="math inline">\(S_4\)</span>, the permutations commuting with <span class="math inline">\((123)\)</span> are <span class="math inline">\((1)\)</span>, <span class="math inline">\((123)\)</span>, and <span class="math inline">\((132)\)</span>. Thus</p>
+<p><span class="math display">\[
+|[(123)]|=\frac{24}{3}=8.
+\]</span></p>
+</div>
+</section>
+<section id="the-center-of-a-finite-p-group" class="slide level2">
+<h2>The Center of a Finite <span class="math inline">\(p\)</span>-Group</h2>
+<p><strong>Theorem.</strong> If <span class="math inline">\(|G|=p^n\)</span> for a prime <span class="math inline">\(p\)</span>, then <span class="math inline">\(Z(G)\)</span> contains an element other than the identity.</p>
+<div class="fragment">
+<p>Each conjugacy class outside <span class="math inline">\(Z(G)\)</span> has size greater than <span class="math inline">\(1\)</span> and divides <span class="math inline">\(p^n\)</span>. Its size is therefore divisible by <span class="math inline">\(p\)</span>.</p>
+<p>The class equation gives</p>
+<p><span class="math display">\[
+p^n=|Z(G)|+\sum_i |[x_i]|.
+\]</span></p>
+<p>It follows that <span class="math inline">\(p\)</span> divides <span class="math inline">\(|Z(G)|\)</span>. Since <span class="math inline">\(e\in Z(G)\)</span>, we have <span class="math inline">\(|Z(G)|\geq p\)</span>.</p>
+</div>
+</section>
+<section id="groups-of-order-p2" class="slide level2">
+<h2>Groups of Order <span class="math inline">\(p^2\)</span></h2>
+<p><strong>Corollary.</strong> Every group of order <span class="math inline">\(p^2\)</span> is abelian.</p>
+<div class="fragment">
+<p>The preceding theorem and Lagrange’s Theorem give <span class="math inline">\(|Z(G)|=p\)</span> or <span class="math inline">\(p^2\)</span>.</p>
+<p>Suppose <span class="math inline">\(|Z(G)|=p\)</span> and choose <span class="math inline">\(x\notin Z(G)\)</span>. The centralizer <span class="math inline">\(C_G(x)\)</span> contains both <span class="math inline">\(Z(G)\)</span> and <span class="math inline">\(x\)</span>, so it has more than <span class="math inline">\(p\)</span> elements. Its order divides <span class="math inline">\(p^2\)</span>, forcing <span class="math inline">\(C_G(x)=G\)</span>.</p>
+<p>But then <span class="math inline">\(x\in Z(G)\)</span>, a contradiction. Hence <span class="math inline">\(Z(G)=G\)</span>, so <span class="math inline">\(G\)</span> is abelian.</p>
 
 
-
+</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
