@@ -1,0 +1,308 @@
+---
+title: "Slides: Centralizers, Centers, and Conjugacy Classes"
+
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+## Class Session Goals
+
+- Determine conjugacy classes in finite groups.
+- Use centralizers to compute conjugacy class sizes.
+- Apply the class equation to finite groups.
+- Use the class equation to prove structural results about finite $p$-groups.
+
+---
+
+
+## Definition of a Group
+
+A **group** $(G,\cdot)$ is a set $G$ together with a law of composition
+
+$(a,b)\mapsto a\cdot b$ satisfying:
+
+1. **Associativity:**  
+   $(a\cdot b)\cdot c=a\cdot(b\cdot c)$ for $a,b,c\in G$.
+
+2. **Identity:**  
+   There exists $e\in G$ such that
+   $e\cdot a=a\cdot e=a$ for every $a\in G$.
+
+3. **Inverses:**  
+   For each $a\in G$, there exists $a^{-1}\in G$ such that
+   $a\cdot a^{-1}=a^{-1}\cdot a=e$.
+
+---
+
+## Definition of a Subgroup
+
+Let $G$ be a group.
+
+A **subgroup** $H$ of $G$ is a subset $H$ of $G$ such that when the group operation of $G$ is restricted to $H$, $H$ is a group in its own right.
+
+We write $H \leq G$.
+
+A subgroup uses the **same operation** as the original group.
+
+
+
+
+## Centers
+
+**Definition:** The *center* of a group $G$ is the set
+
+$Z(G) = \{x \in G : gx = xg \text{ for all } g \in G\}$.
+
+- The center consists of all elements that commute with every element of $G$.
+- $Z(G)$ is a subgroup of $G$. (homework problem)
+- If $G$ is abelian, then $Z(G) = G$.
+
+---
+
+## Examples of Centers
+
+**Example 1:** If $G$ is abelian, then $Z(G) = G$.
+
+**Example 2:** Consider the symmetric group $S_3$.
+
+- The only element that commutes with every element of $S_3$ is the identity.
+- Therefore, $Z(S_3) = \{(1)\}$.
+
+---
+
+## Example 3: $Z(D_4)$
+
+Using the cycle notation for the elements of $D_4$, can you find a second element of the center of $D_4$?
+
+---
+
+## Centralizers
+
+**Definition:** Let $H$ be a subgroup of $G$. The *centralizer* of $H$ in $G$ is
+
+$C_G(H) = \{g \in G : gh = hg \text{ for all } h \in H\}$.
+
+- if $H = \{x\}$, we write $C_G(x)$ for $C_G(H)$.
+- $C_G(G) = Z(G)$.
+
+
+
+## Centralizers Are Subgroups
+
+**Proposition:** Let $H$ be a subgroup of $G$. Then $C_G(H)$ is a subgroup of $G$.
+
+. . . 
+
+**Proof:**
+
+- Since $eh = he$ for every $h \in H$, we have $e \in C_G(H)$.
+- Suppose $a,b \in C_G(H)$. For every $h \in H$,
+
+  $$(ab)h = a(bh) = a(hb) = (ah)b = (ha)b = h(ab).$$
+
+
+- Suppose $a \in C_G(H)$. Since $ah = ha$ for every $h \in H$, we have $a^{-1}h = ha^{-1}$.
+
+
+
+---
+
+
+
+## Group Activity: Centers and Centralizers
+
+
+If $G = S_3$ and $x = (1 2 3)$, determine $C_G(x)$.
+
+
+---
+
+
+## Conjugation
+
+For $g,h\in G$, the element $ghg^{-1}$ is the **conjugate of $h$ by $g$**.
+
+For a subgroup $H$ of $G$, write $gHg^{-1}=\{ghg^{-1}:h\in H\}$.
+
+
+Conjugation is a an equivalence relation on $G$ where $x \sim y$ if and only if $y = g^{-1}xg$ for some $g \in G$.
+
+
+The equivalence classes are called **conjugacy classes**
+
+---
+
+## Class Equation
+
+
+$$G=Z(G)\cup [x_1]\cup [x_2]\cup\cdots\cup [x_k],$$
+
+where $[x_i]$ are the conjugacy classes of $G$ outside the center.
+
+If $x\in Z(G)$, then $[x]=\{x\}$, since $gxg^{-1}=x$ for all $g\in G$.
+
+---
+
+
+## Class Sizes and Centralizers
+
+**Proposition:** For $x\in G$, its centralizer is $C_G(x)=\{g\in G:gx=xg\}$.
+
+The conjugacy class of $x$ has size
+
+$$
+|[x]|=[G:C_G(x)]=\frac{|G|}{|C_G(x)|}.
+$$
+
+
+
+---
+
+
+
+## Proof of Class Size Formula
+
+Consider the map $\phi$ from the set of cosets of $C_G(x)$ in $G$ to the conjugacy class of $x$ defined by
+$$
+\phi(gC_G(x))=g x g^{-1}.
+$$
+
+
+Need to show that $\phi$ is well-defined, injective, and surjective.
+
+---
+
+## Class Equation Updated
+
+$$|G|=|Z(G)|+\sum_i |G:C_G(x_i)|=|Z(G)|+\sum_i \frac{|G|}{|C_G(x_i)|}$$
+
+where $x_i$ are representatives of the conjugacy classes outside the center.
+
+---
+
+
+
+## The Center of a Finite $p$-Group
+
+**Theorem.** If $|G|=p^n$ for a prime $p$, then $Z(G)$ contains an element other than the identity.
+
+. . .
+
+Each conjugacy class outside $Z(G)$ has size greater than $1$ and divides $p^n$. Its size is therefore divisible by $p$.
+
+The class equation gives
+
+$$
+p^n=|Z(G)|+\sum_i |[x_i]|.
+$$
+
+It follows that $p$ divides $|Z(G)|$. Since $e\in Z(G)$, we have $|Z(G)|\geq p$.
+
+---
+
+## Groups of Order $p^2$
+
+**Corollary.** Every group of order $p^2$ is abelian.
+
+. . .
+
+The preceding theorem and Lagrange's Theorem give
+$|Z(G)|=p$ or $p^2$.
+
+Suppose $|Z(G)|=p$ and choose $x\notin Z(G)$. The centralizer $C_G(x)$ contains both $Z(G)$ and $x$, so it has more than $p$ elements. Its order divides $p^2$, forcing $C_G(x)=G$.
+
+But then $x\in Z(G)$, a contradiction. Hence $Z(G)=G$, so $G$ is abelian.
+
+
+---
+
+## Activity: Conjugacy Classes of $S_4$
+
+Conjugation in $S_4$ preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to $|S_4|$.
+
+. . .
+
+| Cycle type | Representative | Class size |
+|:--|:--|--:|
+| Identity | $(1)$ | $1$ |
+| Transposition | $(12)$ | $6$ |
+| Two disjoint transpositions | $(12)(34)$ | $3$ |
+| $3$-cycle | $(123)$ | $8$ |
+| $4$-cycle | $(1234)$ | $6$ |
+
+$1+6+3+8+6=24$.
+
+---
+
+## Activity: Conjugacy Classes of $A_4$
+
+List the elements of $A_4$ by cycle type. Which $S_4$ conjugacy classes split when conjugation is restricted to elements of $A_4$?
+
+. . .
+
+The identity forms one class. The three double transpositions form another. The eight $3$-cycles split into two classes of four:
+
+$$
+\begin{aligned}
+[(123)]_{A_4}&=\{(123),(142),(134),(243)\},\\
+[(132)]_{A_4}&=\{(132),(124),(143),(234)\}.
+\end{aligned}
+$$
+
+Thus the class sizes are $1+3+4+4=12$.
+
+
+
+---
+
+
+
+## Activity: Class Equation for $D_5$
+
+Let
+
+$$
+D_5=\langle r,s:r^5=s^2=e,\;srs=r^{-1}\rangle.
+$$
+
+Find the conjugacy classes of $D_5$ and write its class equation.
+
+. . .
+
+Therefore the conjugacy classes are
+
+$$
+\{e\},\qquad
+\{r,r^4\},\qquad
+\{r^2,r^3\},\qquad
+\{s,rs,r^2s,r^3s,r^4s\},
+$$
+
+and the class equation is
+
+$$
+10=1+2+2+5.
+$$
+
+
+## Class Equation and Conjugacy Classes in $S_n$
+
+Conjugacy classes partition a finite group $G$. If $x_1,\ldots,x_k$ represent its classes outside the center, the **class equation** is
+
+$$
+|G|=|Z(G)|+|[x_1]|+\cdots+|[x_k]|.
+$$
+
+. . .
+
+In $S_n$, permutations are conjugate exactly when they have the same cycle type. If a permutation has $m_j$ cycles of length $j$, including fixed points, then
+
+$$
+|[\sigma]|=\frac{n!}{\prod_{j=1}^{n}j^{m_j}m_j!}.
+$$
+
+
+
+---

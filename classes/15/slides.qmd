@@ -1,0 +1,14 @@
+---
+title: "Slides: Midterm"
+
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+---
+
+## Class Session Goals
+
+- Do well on your midterm.

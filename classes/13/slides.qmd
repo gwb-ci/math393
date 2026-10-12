@@ -290,11 +290,13 @@ $$
 |[\sigma]|=\frac{n!}{\prod_{j=1}^{n}j^{m_j}m_j!}.
 $$
 
-For example, $(12)(34)\in S_4$ has $m_2=2$, so its class contains $\dfrac{4!}{2^2\,2!}=3$ elements.
+
 
 ---
 
 ## Activity: Class Equation for $D_5$
+
+Find the conjugacy classes of $D_5$ and write the class equation.
 
 ---
 

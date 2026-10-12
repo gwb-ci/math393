@@ -1,0 +1,12 @@
+---
+title: "Slides: Direct Products"
+
+format:
+  revealjs:
+    theme: solarized
+    slide-number: true
+---
+
+## Class Session Goals
+
+- Do well on your midterm.
