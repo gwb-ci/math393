@@ -127,7 +127,7 @@ For $g,h\in G$, the element $ghg^{-1}$ is the **conjugate of $h$ by $g$**.
 For a subgroup $H$ of $G$, write $gHg^{-1}=\{ghg^{-1}:h\in H\}$.
 
 
-Conjugation is a an equivalence relation on $G$ where $x \sim y$ if and only if $y = g^{-1}xg$ for some $g \in G$.
+Conjugation is a an equivalence relation on $G$ where $x \sim y$ if and only if $y = gxg^{-1}$ for some $g \in G$.
 
 
 The equivalence classes are called **conjugacy classes**
@@ -139,7 +139,7 @@ The equivalence classes are called **conjugacy classes**
 
 $$G=Z(G)\cup [x_1]\cup [x_2]\cup\cdots\cup [x_k],$$
 
-where $[x_i]$ are the conjugacy classes of $G$ outside the center.
+where $[x_i]$ are the conjugacy classes of $G$ outside the center. $[x_i]=\{gx_ig^{-1}:g\in G\}$
 
 If $x\in Z(G)$, then $[x]=\{x\}$, since $gxg^{-1}=x$ for all $g\in G$.
 
