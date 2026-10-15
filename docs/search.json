@@ -1322,7 +1322,7 @@
     "href": "classes/16/slides.html#class-session-goals",
     "title": "Slides: Isomorphisms",
     "section": "Class Session Goals",
-    "text": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nConstruct isomorphisms between familiar groups.\nIdentify properties preserved by isomorphisms.\nClassify cyclic groups up to isomorphism.\nExplain the construction in Cayley’s Theorem.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
@@ -1333,238 +1333,150 @@
     "href": "classes/16/slides.html#definition-of-a-group",
     "title": "Slides: Isomorphisms",
     "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) with a law of composition \\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity: \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for all \\(a,b,c\\in G\\).\nIdentity: There is an \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses: For each \\(a\\in G\\), there is an \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#definition-of-a-subgroup",
-    "href": "classes/16/slides.html#definition-of-a-subgroup",
+    "objectID": "classes/16/slides.html#definition-of-a-group-isomorphism",
+    "href": "classes/16/slides.html#definition-of-a-group-isomorphism",
     "title": "Slides: Isomorphisms",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "section": "Definition of a Group Isomorphism",
+    "text": "Definition of a Group Isomorphism\nGroups \\((G,\\cdot)\\) and \\((H,\\circ)\\) are isomorphic if there is a bijection \\(\\phi:G\\to H\\) satisfying\n\\(\\phi(a\\cdot b)=\\phi(a)\\circ\\phi(b)\\)\nfor every \\(a,b\\in G\\).\nThe map \\(\\phi\\) is an isomorphism, and we write \\(G\\cong H\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#definition-of-cosets",
-    "href": "classes/16/slides.html#definition-of-cosets",
+    "objectID": "classes/16/slides.html#example-1",
+    "href": "classes/16/slides.html#example-1",
     "title": "Slides: Isomorphisms",
-    "section": "Definition of Cosets",
-    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
+    "section": "Example 1",
+    "text": "Example 1\nShow that \\(\\mathbb Z_4\\cong\\langle i\\rangle\\), where \\(\\langle i\\rangle=\\{1,i,-1,-i\\}\\) under multiplication.\nDefine \\(\\phi:\\mathbb Z_4\\to\\langle i\\rangle\\) by \\(\\phi(n)=i^n\\):\n\n\n\n\\(n\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(3\\)\n\n\n\n\n\\(\\phi(n)\\)\n\\(1\\)\n\\(i\\)\n\\(-1\\)\n\\(-i\\)\n\n\n\nThe table shows that \\(\\phi\\) is bijective. It also preserves the operation:\n\\(\\phi(m+n)=i^{m+n}=i^mi^n=\\phi(m)\\phi(n).\\)",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#subgroups-of-index-2",
-    "href": "classes/16/slides.html#subgroups-of-index-2",
+    "objectID": "classes/16/slides.html#example-2",
+    "href": "classes/16/slides.html#example-2",
     "title": "Slides: Isomorphisms",
-    "section": "Subgroups of Index 2",
-    "text": "Subgroups of Index 2\nLet \\(H\\) be a subgroup of \\(G\\) with \\([G:H]=2\\). There are only two left cosets and two right cosets: \\(H\\) and its complement in \\(G\\).\nThus \\(gH=Hg\\) for every \\(g\\in G\\), or equivalently,\n\\[\ngHg^{-1}=H.\n\\]",
+    "section": "Example 2",
+    "text": "Example 2\nThe exponential map gives an isomorphism\n\\(\\phi:(\\mathbb R,+)\\longrightarrow(\\mathbb R^+,\\cdot),\\qquad \\phi(x)=e^x.\\)\nIt preserves the operations because\n\\(\\phi(x+y)=e^{x+y}=e^xe^y=\\phi(x)\\phi(y).\\)\nThe function \\(e^x\\) is one-to-one and maps \\(\\mathbb R\\) onto \\(\\mathbb R^+\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#proposition-6.2.7",
-    "href": "classes/16/slides.html#proposition-6.2.7",
+    "objectID": "classes/16/slides.html#example-3",
+    "href": "classes/16/slides.html#example-3",
     "title": "Slides: Isomorphisms",
-    "section": "Proposition 6.2.7",
-    "text": "Proposition 6.2.7\nThe group \\(A_4\\) has no subgroup of order \\(6\\).\n\nSuppose \\(|H|=6\\). Then \\([A_4:H]=2\\), so \\(gHg^{-1}=H\\) for every \\(g\\in A_4\\).\nOf the eight \\(3\\)-cycles in \\(A_4\\), at least one lies in \\(H\\). We may take it to be \\((123)\\). Its inverse \\((132)\\) also lies in \\(H\\).\nConjugating by elements of \\(A_4\\) gives \\((243)\\) and \\((142)\\). Their inverses must also lie in \\(H\\). Together with the identity, these are seven distinct elements, contradicting \\(|H|=6\\).\n\n\nThe converse of Lagrange’s Theorem is false: \\(6\\) divides \\(|A_4|=12\\), but \\(A_4\\) has no subgroup of order \\(6\\).",
+    "section": "Example 3",
+    "text": "Example 3\nUnder multiplication modulo the indicated integer,\n\\(U(8)=\\{1,3,5,7\\},\\qquad U(12)=\\{1,5,7,11\\}.\\)\nAn isomorphism \\(\\phi:U(8)\\to U(12)\\) is\n\n\n\n\\(u\\in U(8)\\)\n\\(1\\)\n\\(3\\)\n\\(5\\)\n\\(7\\)\n\n\n\n\n\\(\\phi(u)\\in U(12)\\)\n\\(1\\)\n\\(5\\)\n\\(7\\)\n\\(11\\)",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#corollary",
-    "href": "classes/16/slides.html#corollary",
+    "objectID": "classes/16/slides.html#theorem-9.1.6",
+    "href": "classes/16/slides.html#theorem-9.1.6",
     "title": "Slides: Isomorphisms",
-    "section": "Corollary",
-    "text": "Corollary\nIf \\(G\\) is a finite group and \\(g\\in G\\), then\n\\[\ng^{|G|}=e.\n\\]\nThe order of \\(g\\) divides \\(|G|\\), so \\(|G|=k|g|\\) for some integer \\(k\\). Hence \\(g^{|G|}=(g^{|g|})^k=e\\).",
+    "section": "Theorem 9.1.6",
+    "text": "Theorem 9.1.6\nSuppose \\(\\phi:G\\to H\\) is a group isomorphism. Then:\n\n\\(\\phi^{-1}:H\\to G\\) is an isomorphism.\n\\(|G|=|H|\\).\nIf \\(G\\) is abelian, so is \\(H\\).\nIf \\(G\\) is cyclic, so is \\(H\\).\nIf \\(G\\) has a subgroup of order \\(n\\), so does \\(H\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#the-group-un",
-    "href": "classes/16/slides.html#the-group-un",
+    "objectID": "classes/16/slides.html#theorem-9.1.6-proof",
+    "href": "classes/16/slides.html#theorem-9.1.6-proof",
     "title": "Slides: Isomorphisms",
-    "section": "The Group \\(U(n)\\)",
-    "text": "The Group \\(U(n)\\)\n\\(U(n)\\) is the group of units in \\(\\mathbb{Z}_n\\) under multiplication modulo \\(n\\):\n\\[\nU(n)=\\{[a]\\in\\mathbb{Z}_n:\\gcd(a,n)=1\\}.\n\\]\nFor example, \\(U(12)=\\{[1],[5],[7],[11]\\}\\).\nEach element has a multiplicative inverse modulo \\(n\\). For instance, \\([5][5]=[1]\\) in \\(\\mathbb{Z}_{12}\\).",
+    "section": "Theorem 9.1.6 Proof",
+    "text": "Theorem 9.1.6 Proof\nPartial proof: assertions (1)–(3).\nBecause \\(\\phi\\) is a bijection, it has an inverse and \\(|G|=|H|\\). To check that its inverse preserves the operation, write \\(h_1=\\phi(g_1)\\) and \\(h_2=\\phi(g_2)\\). Then\n\\(\\phi^{-1}(h_1h_2)=\\phi^{-1}(\\phi(g_1g_2))=g_1g_2\n=\\phi^{-1}(h_1)\\phi^{-1}(h_2).\\)\nNow suppose \\(G\\) is abelian. Every \\(h_1,h_2\\in H\\) have the form \\(\\phi(g_1),\\phi(g_2)\\), so\n\\(h_1h_2=\\phi(g_1g_2)=\\phi(g_2g_1)=h_2h_1.\\)\nThus \\(H\\) is abelian.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#eulers-phi-function",
-    "href": "classes/16/slides.html#eulers-phi-function",
+    "objectID": "classes/16/slides.html#theorems",
+    "href": "classes/16/slides.html#theorems",
     "title": "Slides: Isomorphisms",
-    "section": "Euler’s Phi Function",
-    "text": "Euler’s Phi Function\nThe Euler \\(\\phi\\)-function is the map \\(\\phi:\\mathbb{N}\\to\\mathbb{N}\\) defined by \\(\\phi(1)=1\\) and, for \\(n&gt;1\\),\n\\[\n\\phi(n)=|\\{m:1\\leq m&lt;n,\\ \\gcd(m,n)=1\\}|.\n\\]\nFor example, \\(\\phi(12)=4\\) because \\(1,5,7,11\\) are relatively prime to \\(12\\).\nIf \\(p\\) is prime, then \\(\\phi(p)=p-1\\).",
+    "section": "Theorems",
+    "text": "Theorems\nTheorem 9.1.7 Every infinite cyclic group is isomorphic to \\((\\mathbb Z,+)\\).\nTheorem 9.1.8 A cyclic group of order \\(n\\) is isomorphic to \\(\\mathbb Z_n\\).\nCorollary 9.1.9 If \\(p\\) is prime and \\(|G|=p\\), then \\(G\\cong\\mathbb Z_p\\).\nTheorem 9.1.10 Group isomorphism is an equivalence relation on the class of groups.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#theorem-6.3.1",
-    "href": "classes/16/slides.html#theorem-6.3.1",
+    "objectID": "classes/16/slides.html#cayleys-theorem",
+    "href": "classes/16/slides.html#cayleys-theorem",
     "title": "Slides: Isomorphisms",
-    "section": "Theorem 6.3.1",
-    "text": "Theorem 6.3.1\nLet \\(U(n)\\) be the group of units in \\(\\mathbb{Z}_n\\). Then\n\\[\n|U(n)|=\\phi(n).\n\\]\nThe units are precisely the residue classes represented by integers relatively prime to \\(n\\).",
+    "section": "Cayley’s Theorem",
+    "text": "Cayley’s Theorem\nTheorem 9.1.12 (Cayley). Every group is isomorphic to a group of permutations.\nIn particular, a group \\(G\\) acts by permutations on its own underlying set.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#eulers-theorem",
-    "href": "classes/16/slides.html#eulers-theorem",
+    "objectID": "classes/16/slides.html#cayleys-theorem-proof",
+    "href": "classes/16/slides.html#cayleys-theorem-proof",
     "title": "Slides: Isomorphisms",
-    "section": "Euler’s Theorem",
-    "text": "Euler’s Theorem\nLet \\(a\\) and \\(n\\) be integers such that \\(n&gt;0\\) and \\(\\gcd(a,n)=1\\). Then\n\\[\na^{\\phi(n)}\\equiv 1\\pmod n.\n\\]\n\nThe residue class of \\(a\\) belongs to \\(U(n)\\), which has order \\(\\phi(n)\\). Applying the preceding corollary in \\(U(n)\\) proves the congruence.",
+    "section": "Cayley’s Theorem Proof",
+    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#fermats-little-theorem",
-    "href": "classes/16/slides.html#fermats-little-theorem",
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms",
     "title": "Slides: Isomorphisms",
-    "section": "Fermat’s Little Theorem",
-    "text": "Fermat’s Little Theorem\nLet \\(p\\) be prime. If \\(p\\nmid a\\), then\n\\[\na^{p-1}\\equiv 1\\pmod p.\n\\]\nFurthermore, for any integer \\(b\\),\n\\[\nb^p\\equiv b\\pmod p.\n\\]",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g) \\in H\\) for every \\(g \\in G\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.\n\nRecall that an isomorphism is a bijective homomorphism.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#conjugation",
-    "href": "classes/16/slides.html#conjugation",
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms-1",
     "title": "Slides: Isomorphisms",
-    "section": "Conjugation",
-    "text": "Conjugation\nFor \\(g,h\\in G\\), the element \\(ghg^{-1}\\) is the conjugate of \\(h\\) by \\(g\\).\nFor a subgroup \\(H\\) of \\(G\\), write \\(gHg^{-1}=\\{ghg^{-1}:h\\in H\\}\\).\n\nConjugating a cycle applies the conjugating permutation to each entry:\n\\[\n\\sigma(a_1\\,a_2\\,\\ldots\\,a_k)\\sigma^{-1}\n=(\\sigma(a_1)\\,\\sigma(a_2)\\,\\ldots\\,\\sigma(a_k)).\n\\]\nFor example, \\((124)(123)(124)^{-1}=(243)\\).",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nConstruct a bijective map between the following sets and verify that it is an isomorphism.\n\n\\(\\mathbb C^*\\) and \\[\nG=\\left\\{\n\\begin{pmatrix}\na & -b\\\\\nb & a\n\\end{pmatrix}\n:a,b\\in\\mathbb R,\\ a^2+b^2\\ne 0\n\\right\\}\n\\]\n\nof \\(GL_2(\\mathbb R)\\).\n\n\\(U(5)\\) and \\(U(10)\\)\n\\(U(8)\\) and \\(\\mathbb Z_2\\times\\mathbb Z_2\\).",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#theorem-6.2.8",
-    "href": "classes/16/slides.html#theorem-6.2.8",
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms",
     "title": "Slides: Isomorphisms",
-    "section": "Theorem 6.2.8",
-    "text": "Theorem 6.2.8\nTwo cycles \\(\\tau\\) and \\(\\mu\\) in \\(S_n\\) have the same length if and only if there exists a \\(\\sigma\\in S_n\\) such that\n\\[\n\\mu=\\sigma\\tau\\sigma^{-1}.\n\\]\n\nIf \\(\\tau=(a_1\\,\\ldots\\,a_k)\\) and \\(\\mu=(b_1\\,\\ldots\\,b_k)\\), choose \\(\\sigma\\) with \\(\\sigma(a_i)=b_i\\) for each \\(i\\), then extend it to a permutation of the remaining symbols.\nConversely, conjugating \\(\\tau\\) replaces its entries by their images under \\(\\sigma\\), preserving the cycle length.",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\(S_3\\) and\n\n\\[\n\\left\\{\n\\begin{gathered}\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\\\[1em]\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\end{gathered}\n\\right\\}\n\\]",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
     ]
   },
   {
-    "objectID": "classes/16/slides.html#conjugation-is-an-equivalence-relation",
-    "href": "classes/16/slides.html#conjugation-is-an-equivalence-relation",
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
     "title": "Slides: Isomorphisms",
-    "section": "Conjugation Is an Equivalence Relation",
-    "text": "Conjugation Is an Equivalence Relation\nDefine \\(h\\sim k\\) when \\(k=ghg^{-1}\\) for some \\(g\\in G\\).\n\nReflexive: \\(h=ehe^{-1}\\).\nSymmetric: If \\(k=ghg^{-1}\\), then \\(h=g^{-1}kg\\).\nTransitive: If \\(k=ghg^{-1}\\) and \\(\\ell=aka^{-1}\\), then \\(\\ell=(ag)h(ag)^{-1}\\).\n\nThe equivalence classes are called conjugacy classes.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-conjugacy-classes-of-s_4",
-    "href": "classes/16/slides.html#activity-conjugacy-classes-of-s_4",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Conjugacy Classes of \\(S_4\\)",
-    "text": "Activity: Conjugacy Classes of \\(S_4\\)\nConjugation in \\(S_4\\) preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to \\(|S_4|\\).\n\n\n\n\nCycle type\nRepresentative\nClass size\n\n\n\n\nIdentity\n\\((1)\\)\n\\(1\\)\n\n\nTransposition\n\\((12)\\)\n\\(6\\)\n\n\nTwo disjoint transpositions\n\\((12)(34)\\)\n\\(3\\)\n\n\n\\(3\\)-cycle\n\\((123)\\)\n\\(8\\)\n\n\n\\(4\\)-cycle\n\\((1234)\\)\n\\(6\\)\n\n\n\n\\(1+6+3+8+6=24\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-conjugacy-classes-of-a_4",
-    "href": "classes/16/slides.html#activity-conjugacy-classes-of-a_4",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Conjugacy Classes of \\(A_4\\)",
-    "text": "Activity: Conjugacy Classes of \\(A_4\\)\nList the elements of \\(A_4\\) by cycle type. Which \\(S_4\\) conjugacy classes split when conjugation is restricted to elements of \\(A_4\\)?\n\nThe identity forms one class. The three double transpositions form another. The eight \\(3\\)-cycles split into two classes of four:\n\\[\n\\begin{aligned}\n[(123)]_{A_4}&=\\{(123),(142),(134),(243)\\},\\\\\n[(132)]_{A_4}&=\\{(132),(124),(143),(234)\\}.\n\\end{aligned}\n\\]\nThus the class sizes are \\(1+3+4+4=12\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#conjugacy-classes-and-the-center-of-a-group",
-    "href": "classes/16/slides.html#conjugacy-classes-and-the-center-of-a-group",
-    "title": "Slides: Isomorphisms",
-    "section": "Conjugacy Classes and the Center of a Group",
-    "text": "Conjugacy Classes and the Center of a Group\nThe center of a group \\(G\\) is the set \\(Z(G)=\\{g\\in G:gh=hg\\text{ for all }h\\in G\\}\\).\nWhat is can you say about the conjugacy classes of elements in \\(Z(G)\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#class-equation-and-conjugacy-classes-in-s_n",
-    "href": "classes/16/slides.html#class-equation-and-conjugacy-classes-in-s_n",
-    "title": "Slides: Isomorphisms",
-    "section": "Class Equation and Conjugacy Classes in \\(S_n\\)",
-    "text": "Class Equation and Conjugacy Classes in \\(S_n\\)\nConjugacy classes partition a finite group \\(G\\). If \\(x_1,\\ldots,x_k\\) represent its classes outside the center, the class equation is\n\\[\n|G|=|Z(G)|+|[x_1]|+\\cdots+|[x_k]|.\n\\]\n\nIn \\(S_n\\), permutations are conjugate exactly when they have the same cycle type. If a permutation has \\(m_j\\) cycles of length \\(j\\), including fixed points, then\n\\[\n|[\\sigma]|=\\frac{n!}{\\prod_{j=1}^{n}j^{m_j}m_j!}.\n\\]\nFor example, \\((12)(34)\\in S_4\\) has \\(m_2=2\\), so its class contains \\(\\dfrac{4!}{2^2\\,2!}=3\\) elements.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-class-equation-for-d_5",
-    "href": "classes/16/slides.html#activity-class-equation-for-d_5",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Class Equation for \\(D_5\\)",
-    "text": "Activity: Class Equation for \\(D_5\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#class-sizes-and-centralizers",
-    "href": "classes/16/slides.html#class-sizes-and-centralizers",
-    "title": "Slides: Isomorphisms",
-    "section": "Class Sizes and Centralizers",
-    "text": "Class Sizes and Centralizers\nFor \\(x\\in G\\), its centralizer is \\(C_G(x)=\\{g\\in G:gx=xg\\}\\).\nThe conjugacy class of \\(x\\) has size\n\\[\n|[x]|=[G:C_G(x)]=\\frac{|G|}{|C_G(x)|}.\n\\]\n\nIn \\(S_4\\), the permutations commuting with \\((123)\\) are \\((1)\\), \\((123)\\), and \\((132)\\). Thus\n\\[\n|[(123)]|=\\frac{24}{3}=8.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#the-center-of-a-finite-p-group",
-    "href": "classes/16/slides.html#the-center-of-a-finite-p-group",
-    "title": "Slides: Isomorphisms",
-    "section": "The Center of a Finite \\(p\\)-Group",
-    "text": "The Center of a Finite \\(p\\)-Group\nTheorem. If \\(|G|=p^n\\) for a prime \\(p\\), then \\(Z(G)\\) contains an element other than the identity.\n\nEach conjugacy class outside \\(Z(G)\\) has size greater than \\(1\\) and divides \\(p^n\\). Its size is therefore divisible by \\(p\\).\nThe class equation gives\n\\[\np^n=|Z(G)|+\\sum_i |[x_i]|.\n\\]\nIt follows that \\(p\\) divides \\(|Z(G)|\\). Since \\(e\\in Z(G)\\), we have \\(|Z(G)|\\geq p\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#groups-of-order-p2",
-    "href": "classes/16/slides.html#groups-of-order-p2",
-    "title": "Slides: Isomorphisms",
-    "section": "Groups of Order \\(p^2\\)",
-    "text": "Groups of Order \\(p^2\\)\nCorollary. Every group of order \\(p^2\\) is abelian.\n\nThe preceding theorem and Lagrange’s Theorem give \\(|Z(G)|=p\\) or \\(p^2\\).\nSuppose \\(|Z(G)|=p\\) and choose \\(x\\notin Z(G)\\). The centralizer \\(C_G(x)\\) contains both \\(Z(G)\\) and \\(x\\), so it has more than \\(p\\) elements. Its order divides \\(p^2\\), forcing \\(C_G(x)=G\\).\nBut then \\(x\\in Z(G)\\), a contradiction. Hence \\(Z(G)=G\\), so \\(G\\) is abelian.",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\((\\mathbb R^2,+)\\) and the group\n\\(G=\\left\\{\\begin{pmatrix}1&a&b\\\\0&1&0\\\\0&0&1\\end{pmatrix}:a,b\\in\\mathbb R\\right\\}\\)\n\\((\\mathbb Z_3,+)\\) and the subgroup\n\n\\[H=\\left\\{\n   \\begin{pmatrix}\n   1&0&0\\\\0&1&0\\\\0&0&1\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&0&1\\\\1&0&0\\\\0&1&0\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&1&0\\\\0&0&1\\\\1&0&0\n   \\end{pmatrix}\n   \\right\\}\\]",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
