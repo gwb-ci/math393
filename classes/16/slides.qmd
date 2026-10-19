@@ -10,10 +10,8 @@ format:
 ## Class Session Goals
 
 - Define a group isomorphism and test whether a map is one.
-- Construct isomorphisms between familiar groups.
-- Identify properties preserved by isomorphisms.
-- Classify cyclic groups up to isomorphism.
 - Explain the construction in Cayley’s Theorem.
+- Construct isomorphisms between familiar groups.
 
 ---
 
@@ -158,11 +156,10 @@ $\phi : G \to H$.
 
 Verify that your map satisfies:
 
-1. **Well-defined:** $\phi(g) \in H$ for every $g \in G$.
+1. **Well-defined:** $\phi(g)=h$ and $\phi(g)=h'$ the $h=h'$.
 2. **Homomorphism:** $\phi(g_1g_2)=\phi(g_1)\phi(g_2)$ for all $g_1,g_2\in G$.
 3. **Bijective:** $\phi$ is both one-to-one and onto.
 
-Recall that an **isomorphism** is a bijective homomorphism.
 
 ---
 

@@ -1153,6 +1153,230 @@
     ]
   },
   {
+    "objectID": "classes/20/slides.html#class-session-goals",
+    "href": "classes/20/slides.html#class-session-goals",
+    "title": "Slides: Direct Products",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
+  },
+  {
+    "objectID": "classes/20/slides.html#external-direct-product-definition",
+    "href": "classes/20/slides.html#external-direct-product-definition",
+    "title": "Slides: Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
+  },
+  {
+    "objectID": "classes/20/slides.html#proposition-9.2.1",
+    "href": "classes/20/slides.html#proposition-9.2.1",
+    "title": "Slides: Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
+  },
+  {
+    "objectID": "classes/20/slides.html#examples-of-direct-products",
+    "href": "classes/20/slides.html#examples-of-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.5",
+    "href": "classes/20/slides.html#theorem-9.2.5",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.5-proof",
+    "href": "classes/20/slides.html#theorem-9.2.5-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5 Proof",
+    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
+  },
+  {
+    "objectID": "classes/20/slides.html#corollary-9.2.6",
+    "href": "classes/20/slides.html#corollary-9.2.6",
+    "title": "Slides: Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.9",
+    "href": "classes/20/slides.html#theorem-9.2.9",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.9-proof",
+    "href": "classes/20/slides.html#theorem-9.2.9-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9 Proof",
+    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/20/slides.html#corollaries",
+    "href": "classes/20/slides.html#corollaries",
+    "title": "Slides: Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
+  },
+  {
+    "objectID": "classes/20/slides.html#definition-of-internal-direct-product",
+    "href": "classes/20/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
+  },
+  {
+    "objectID": "classes/20/slides.html#examples",
+    "href": "classes/20/slides.html#examples",
+    "title": "Slides: Direct Products",
+    "section": "Examples",
+    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.15",
+    "href": "classes/20/slides.html#theorem-9.2.15",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.15-proof",
+    "href": "classes/20/slides.html#theorem-9.2.15-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15 Proof",
+    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/20/slides.html#theorem-9.2.17",
+    "href": "classes/20/slides.html#theorem-9.2.17",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
+  },
+  {
+    "objectID": "classes/20/slides.html#activity-direct-products",
+    "href": "classes/20/slides.html#activity-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#class-session-goals",
+    "href": "classes/18/slides.html#class-session-goals",
+    "title": "Slides: Direct Products",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
+  },
+  {
+    "objectID": "classes/18/slides.html#external-direct-product-definition",
+    "href": "classes/18/slides.html#external-direct-product-definition",
+    "title": "Slides: Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
+  },
+  {
+    "objectID": "classes/18/slides.html#proposition-9.2.1",
+    "href": "classes/18/slides.html#proposition-9.2.1",
+    "title": "Slides: Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
+  },
+  {
+    "objectID": "classes/18/slides.html#examples-of-direct-products",
+    "href": "classes/18/slides.html#examples-of-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.5",
+    "href": "classes/18/slides.html#theorem-9.2.5",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.5-proof",
+    "href": "classes/18/slides.html#theorem-9.2.5-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5 Proof",
+    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
+  },
+  {
+    "objectID": "classes/18/slides.html#corollary-9.2.6",
+    "href": "classes/18/slides.html#corollary-9.2.6",
+    "title": "Slides: Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.9",
+    "href": "classes/18/slides.html#theorem-9.2.9",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.9-proof",
+    "href": "classes/18/slides.html#theorem-9.2.9-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9 Proof",
+    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/18/slides.html#corollaries",
+    "href": "classes/18/slides.html#corollaries",
+    "title": "Slides: Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#definition-of-internal-direct-product",
+    "href": "classes/18/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
+  },
+  {
+    "objectID": "classes/18/slides.html#examples",
+    "href": "classes/18/slides.html#examples",
+    "title": "Slides: Direct Products",
+    "section": "Examples",
+    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.15",
+    "href": "classes/18/slides.html#theorem-9.2.15",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.15-proof",
+    "href": "classes/18/slides.html#theorem-9.2.15-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15 Proof",
+    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.17",
+    "href": "classes/18/slides.html#theorem-9.2.17",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
+  },
+  {
+    "objectID": "classes/18/slides.html#activity-direct-products",
+    "href": "classes/18/slides.html#activity-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
+  },
+  {
     "objectID": "classes/11/slides.html#class-session-goals",
     "href": "classes/11/slides.html#class-session-goals",
     "title": "Slides: Cosets",
@@ -1322,7 +1546,7 @@
     "href": "classes/16/slides.html#class-session-goals",
     "title": "Slides: Isomorphisms",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nConstruct isomorphisms between familiar groups.\nIdentify properties preserved by isomorphisms.\nClassify cyclic groups up to isomorphism.\nExplain the construction in Cayley’s Theorem.",
+    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nExplain the construction in Cayley’s Theorem.\nConstruct isomorphisms between familiar groups.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
@@ -1443,7 +1667,7 @@
     "href": "classes/16/slides.html#activity-constructing-isomorphisms",
     "title": "Slides: Isomorphisms",
     "section": "Activity: Constructing Isomorphisms",
-    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g) \\in H\\) for every \\(g \\in G\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.\n\nRecall that an isomorphism is a bijective homomorphism.",
+    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g)=h\\) and \\(\\phi(g)=h'\\) the \\(h=h'\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.",
     "crumbs": [
       "Class Material",
       "Slides: Isomorphisms"
@@ -1487,7 +1711,172 @@
     "href": "classes/17/slides.html#class-session-goals",
     "title": "Slides: Direct Products",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDo well on your midterm.",
+    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#external-direct-product-definition",
+    "href": "classes/17/slides.html#external-direct-product-definition",
+    "title": "Slides: Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#proposition-9.2.1",
+    "href": "classes/17/slides.html#proposition-9.2.1",
+    "title": "Slides: Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#examples-of-direct-products",
+    "href": "classes/17/slides.html#examples-of-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.5",
+    "href": "classes/17/slides.html#theorem-9.2.5",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.5-proof",
+    "href": "classes/17/slides.html#theorem-9.2.5-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5 Proof",
+    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#corollary-9.2.6",
+    "href": "classes/17/slides.html#corollary-9.2.6",
+    "title": "Slides: Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.9",
+    "href": "classes/17/slides.html#theorem-9.2.9",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.9-proof",
+    "href": "classes/17/slides.html#theorem-9.2.9-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9 Proof",
+    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#corollaries",
+    "href": "classes/17/slides.html#corollaries",
+    "title": "Slides: Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#definition-of-internal-direct-product",
+    "href": "classes/17/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#examples",
+    "href": "classes/17/slides.html#examples",
+    "title": "Slides: Direct Products",
+    "section": "Examples",
+    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.15",
+    "href": "classes/17/slides.html#theorem-9.2.15",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.15-proof",
+    "href": "classes/17/slides.html#theorem-9.2.15-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15 Proof",
+    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.17",
+    "href": "classes/17/slides.html#theorem-9.2.17",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#activity-direct-products",
+    "href": "classes/17/slides.html#activity-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\).",
     "crumbs": [
       "Class Material",
       "Slides: Direct Products"
@@ -1712,6 +2101,118 @@
       "Class Material",
       "Slides: Alternating and Dihedral Groups"
     ]
+  },
+  {
+    "objectID": "classes/19/slides.html#class-session-goals",
+    "href": "classes/19/slides.html#class-session-goals",
+    "title": "Slides: Direct Products",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
+  },
+  {
+    "objectID": "classes/19/slides.html#external-direct-product-definition",
+    "href": "classes/19/slides.html#external-direct-product-definition",
+    "title": "Slides: Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
+  },
+  {
+    "objectID": "classes/19/slides.html#proposition-9.2.1",
+    "href": "classes/19/slides.html#proposition-9.2.1",
+    "title": "Slides: Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
+  },
+  {
+    "objectID": "classes/19/slides.html#examples-of-direct-products",
+    "href": "classes/19/slides.html#examples-of-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.5",
+    "href": "classes/19/slides.html#theorem-9.2.5",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.5-proof",
+    "href": "classes/19/slides.html#theorem-9.2.5-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5 Proof",
+    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#corollary-9.2.6",
+    "href": "classes/19/slides.html#corollary-9.2.6",
+    "title": "Slides: Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.9",
+    "href": "classes/19/slides.html#theorem-9.2.9",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.9-proof",
+    "href": "classes/19/slides.html#theorem-9.2.9-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9 Proof",
+    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#corollaries",
+    "href": "classes/19/slides.html#corollaries",
+    "title": "Slides: Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#definition-of-internal-direct-product",
+    "href": "classes/19/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
+  },
+  {
+    "objectID": "classes/19/slides.html#examples",
+    "href": "classes/19/slides.html#examples",
+    "title": "Slides: Direct Products",
+    "section": "Examples",
+    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.15",
+    "href": "classes/19/slides.html#theorem-9.2.15",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.15-proof",
+    "href": "classes/19/slides.html#theorem-9.2.15-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15 Proof",
+    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.17",
+    "href": "classes/19/slides.html#theorem-9.2.17",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
+  },
+  {
+    "objectID": "classes/19/slides.html#activity-direct-products",
+    "href": "classes/19/slides.html#activity-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
   },
   {
     "objectID": "classes/07/slides.html#class-session-goals",
