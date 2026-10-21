@@ -1,5 +1,5 @@
 ---
-title: "Slides: Direct Products"
+title: "Slides: Cayley’s Theorem and Direct Products"
 
 format:
   revealjs:
@@ -10,11 +10,33 @@ format:
 
 ## Class Session Goals
 
+- Prove Cayley's Theorem
 - Define the external direct product of groups and verify that it forms a group.
-- Determine the order of an element in a direct product.
 - Determine when a direct product of cyclic groups is cyclic.
-- Define internal direct products and recognize examples.
 - Prove that an internal direct product is isomorphic to an external direct product.
+
+---
+
+## Cayley’s Theorem
+
+Every group is isomorphic to a group of permutations.
+
+
+
+---
+
+## Cayley’s Theorem Proof
+
+For each $g\in G$, define $\lambda_g:G\to G$ by $\lambda_g(a)=ga$.
+
+- $\lambda_g$ is a permutation: its inverse is $\lambda_{g^{-1}}$.
+- Let $\overline G=\{\lambda_g:g\in G\}$. Composition satisfies
+  $(\lambda_g\circ\lambda_h)(a)=g(ha)=(gh)a=\lambda_{gh}(a)$.
+- Define $\phi:G\to\overline G$ by $\phi(g)=\lambda_g$. Then
+  $\phi(gh)=\lambda_{gh}=\lambda_g\circ\lambda_h$.
+- If $\lambda_g=\lambda_h$, evaluating both at $e$ gives $g=h$. Thus $\phi$ is injective; it is surjective by the definition of $\overline G$.
+
+Therefore $G\cong\overline G$, a group of permutations of $G$.
 
 ---
 
@@ -22,82 +44,80 @@ format:
 
 Let $(G,\cdot)$ and $(H,\circ)$ be groups.
 
-The **external direct product** of $G$ and $H$ is the Cartesian product
-
-$G\times H=\{(g,h):g\in G,\ h\in H\}$
+The **external direct product** of $G$ and $H$ is the Cartesian product $G\times H=\{(g,h):g\in G,\ h\in H\}$
 
 with the group operation defined componentwise by
 
 $$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).$$
 
-More generally, for groups $G_1,\ldots,G_n$, the direct product is
-
-$G_1\times G_2\times\cdots\times G_n$
-
-with multiplication defined componentwise.
+More generally, for groups $G_1,\ldots,G_n$, the direct product is $G_1\times G_2\times\cdots\times G_n$ with multiplication defined componentwise.
 
 ---
 
 ## Proposition 9.2.1
 
-**Proposition 9.2.1.** Let $G$ and $H$ be groups. The set $G\times H$ is a group under the operation
+Let $G$ and $H$ be groups. The set $G\times H$ is a group under the operation
 
 $$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),$$
 
 where $g_1,g_2\in G$ and $h_1,h_2\in H$.
 
-**Proof.**
+---
 
-- **Closure:** Products are in $G\times H$ by closure in $G$ and $H$.
-- **Associativity:** Follows from associativity in $G$ and $H$.
+## Proof 9.2.1
+
+
+
+
 - **Identity:** The identity is $(e_G,e_H)$.
 - **Inverses:** The inverse of $(g,h)$ is $(g^{-1},h^{-1})$.
+- **Associativity:** Follows from associativity in $G$ and $H$.
 
-Therefore, $G\times H$ is a group.
 
 ---
 
 ## Examples of Direct Products
 
-**Example 9.2.2.** The group $\mathbb R\times\mathbb R=\mathbb R^2$ under addition:
+The group $\mathbb R\times\mathbb R=\mathbb R^2$ under addition: $(a,b)+(c,d)=(a+c,b+d)$.  The identity is $(0,0)$ and the inverse of $(a,b)$ is $(-a,-b)$.
 
-$(a,b)+(c,d)=(a+c,b+d)$.
+Consider $\mathbb Z_2\times\mathbb Z_2=\{(0,0),(0,1),(1,0),(1,1)\}$.
 
-The identity is $(0,0)$ and the inverse of $(a,b)$ is $(-a,-b)$.
-
-**Example 9.2.3.** Consider
-
-$\mathbb Z_2\times\mathbb Z_2=\{(0,0),(0,1),(1,0),(1,1)\}$.
-
-- Every nonidentity element has order $2$.
-- $\mathbb Z_4$ has an element of order $4$.
+- What is the order of each element in $\mathbb Z_2\times\mathbb Z_2$?
+- Is $\mathbb Z_2\times\mathbb Z_2$ cyclic?
+- Create an argument that $\mathbb Z_2\times\mathbb Z_2$ cannot be isomorphic to $\mathbb Z_4$
 
 Thus, $\mathbb Z_2\times\mathbb Z_2\not\cong\mathbb Z_4$.
 
-**Question:** Does having the same number of elements guarantee that two groups are isomorphic?
+
+---
+
+## Activity
+
+Choose a group and calculate the orders of the elements in the group.
+
+- $\mathbb Z_3\times\mathbb Z_3$
+- $\mathbb Z_5\times\mathbb Z_2$
+- $\mathbb Z_4\times\mathbb Z_4$
+
+Are any of these groups cyclic?
+
+
+
 
 ---
 
 ## Theorem 9.2.5
 
-**Theorem 9.2.5.** Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
+Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
 
 $$|(g,h)|=\operatorname{lcm}(r,s).$$
 
-**Example 9.2.7.** Find the order of $(8,56)$ in $\mathbb Z_{12}\times\mathbb Z_{60}$.
-
-- $|8|=12/\gcd(8,12)=3$.
-- $|56|=60/\gcd(56,60)=15$.
-
-Therefore,
-
-$|(8,56)|=\operatorname{lcm}(3,15)=15$.
 
 ---
 
-## Theorem 9.2.5 Proof
+## Theorem 9.2.5 Proof 1
 
-**Proof.** Suppose that $m=\operatorname{lcm}(r,s)$ and let $n=|(g,h)|$.
+Suppose that $m=\operatorname{lcm}(r,s)$ and let $n=|(g,h)|$.
 
 Since $r\mid m$ and $s\mid m$,
 
@@ -105,7 +125,9 @@ $$(g,h)^m=(g^m,h^m)=(e_G,e_H).$$
 
 Thus, $n\mid m$, so $n\le m$.
 
-On the other hand,
+## Theorem 9.2.5 Proof 2
+
+
 
 $$(g,h)^n=(g^n,h^n)=(e_G,e_H).$$
 
@@ -121,48 +143,29 @@ $$|(g,h)|=\operatorname{lcm}(r,s).\qquad\blacksquare$$
 
 ## Corollary 9.2.6
 
-**Corollary 9.2.6.** Let $(g_1,\ldots,g_n)\in\prod_{i=1}^n G_i$. If $g_i$ has finite order $r_i$ in $G_i$, then
+Let $(g_1,\ldots,g_n)\in\prod_{i=1}^n G_i$. If $g_i$ has finite order $r_i$ in $G_i$, then
 
 $$|(g_1,\ldots,g_n)|=\operatorname{lcm}(r_1,\ldots,r_n).$$
 
-**Example.** Find the order of $(2,3,4)$ in
-
-$\mathbb Z_6\times\mathbb Z_8\times\mathbb Z_{10}$.
-
-We have
-
-- $|2|=3$ in $\mathbb Z_6$.
-- $|3|=8$ in $\mathbb Z_8$.
-- $|4|=5$ in $\mathbb Z_{10}$.
-
-Therefore,
-
-$|(2,3,4)|=\operatorname{lcm}(3,8,5)=120$.
 
 ---
 
 ## Theorem 9.2.9
 
-**Theorem 9.2.9.** The group $\mathbb Z_m\times\mathbb Z_n$ is isomorphic to $\mathbb Z_{mn}$ if and only if $\gcd(m,n)=1$.
+The group $\mathbb Z_m\times\mathbb Z_n$ is isomorphic to $\mathbb Z_{mn}$ if and only if $\gcd(m,n)=1$.
 
 $$\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}
 \iff \gcd(m,n)=1.$$
 
-**Examples.**
 
-- $\mathbb Z_2\times\mathbb Z_3\cong\mathbb Z_6$.
-- $\mathbb Z_3\times\mathbb Z_4\cong\mathbb Z_{12}$.
-- $\mathbb Z_2\times\mathbb Z_4\not\cong\mathbb Z_8$.
-
-**Question:** Why does the greatest common divisor determine whether the direct product is cyclic?
 
 ---
 
-## Theorem 9.2.9 Proof
+## Theorem 9.2.9 Proof 1
 
-**Proof.**
 
-($\Rightarrow$) Suppose $\gcd(m,n)=d>1$.
+
+Suppose $\gcd(m,n)=d>1$.
 
 For every $(a,b)\in\mathbb Z_m\times\mathbb Z_n$,
 
@@ -174,9 +177,13 @@ Thus, every element has order at most $mn/d<mn$.
 
 Therefore, $\mathbb Z_m\times\mathbb Z_n$ is not cyclic and cannot be isomorphic to $\mathbb Z_{mn}$.
 
-($\Leftarrow$) Suppose $\gcd(m,n)=1$.
 
-By Theorem 9.2.5,
+
+---
+
+## Theorem 9.2.9 Proof 2
+
+Suppose $\gcd(m,n)=1$. By Theorem 9.2.5,
 
 $$|(1,1)|=\operatorname{lcm}(m,n)=mn.$$
 
@@ -188,23 +195,19 @@ $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
 
 ## Corollaries
 
-**Corollary 9.2.10.** Let $n_1,\ldots,n_k$ be positive integers. Then
+**Corollary 9.2.10.** 
+Let $n_1,\ldots,n_k$ be positive integers. Then
 
 $$\prod_{i=1}^k\mathbb Z_{n_i}\cong\mathbb Z_{n_1\cdots n_k}$$
 
 if and only if $\gcd(n_i,n_j)=1$ for $i\ne j$.
 
-**Corollary 9.2.11.** If
-
-$m=p_1^{e_1}\cdots p_k^{e_k}$,
-
-where the $p_i$ are distinct primes, then
+**Corollary 9.2.11.** 
+If $m=p_1^{e_1}\cdots p_k^{e_k}$, where the $p_i$ are distinct primes, then
 
 $$\mathbb Z_m\cong\mathbb Z_{p_1^{e_1}}\times\cdots\times\mathbb Z_{p_k^{e_k}}.$$
 
-**Example.** Since $60=4\cdot3\cdot5$,
 
-$\mathbb Z_{60}\cong\mathbb Z_4\times\mathbb Z_3\times\mathbb Z_5$.
 
 ---
 
@@ -220,41 +223,27 @@ We say that $G$ is the **internal direct product** of $H$ and $K$ if:
 
 3. $hk=kh$ for all $h\in H$ and $k\in K$.
 
-**Interpretation:**
 
-- Every element of $G$ is a product of elements from $H$ and $K$.
-- The subgroups intersect only in the identity.
-- Elements of the two subgroups commute.
 
 ---
 
 ## Examples
 
-**Example 9.2.12.** The group $U(8)=\{1,3,5,7\}$ is the internal direct product of
+The group $U(8)=\{1,3,5,7\}$ is the internal direct product of $H=\{1,3\}$ and $K=\{1,5\}$.
 
-$H=\{1,3\}$ and $K=\{1,5\}$.
 
-Indeed,
-
-- $HK=\{1,3,5,7\}=U(8)$.
-- $H\cap K=\{1\}$.
-- $U(8)$ is abelian.
-
-**Example 9.2.14.** The group $S_3$ cannot be written as an internal direct product of two proper subgroups.
-
-A subgroup of order $3$ and a subgroup of order $2$ do not commute elementwise.
-
-**Discussion:** Why is the condition $hk=kh$ necessary?
 
 ---
 
 ## Theorem 9.2.15
 
-**Theorem 9.2.15.** Let $G$ be the internal direct product of subgroups $H$ and $K$. Then $G$ is isomorphic to $H\times K$.
+Let $G$ be the internal direct product of subgroups $H$ and $K$. Then $G$ is isomorphic to $H\times K$.
 
 $$G\cong H\times K.$$
 
-**Idea of the proof:**
+---
+
+## Theorem 9.2.15 Proof 1
 
 Since $G=HK$, every element $g\in G$ can be written as
 
@@ -268,9 +257,8 @@ We need to show that $\phi$ is well-defined, bijective, and preserves the group 
 
 ---
 
-## Theorem 9.2.15 Proof
+## Theorem 9.2.15 Proof 2
 
-**Proof.** Since $G=HK$, write $g=hk$ and define $\phi(g)=(h,k)$.
 
 **Well-defined:** Suppose $hk=h'k'$. Then
 
@@ -278,7 +266,7 @@ $h^{-1}h'=k(k')^{-1}\in H\cap K=\{e\}$.
 
 Thus $h=h'$ and $k=k'$.
 
-**Homomorphism:** For $g_1=h_1k_1$ and $g_2=h_2k_2$,
+**Group Action:** For $g_1=h_1k_1$ and $g_2=h_2k_2$,
 
 $\phi(g_1g_2)=\phi(h_1k_1h_2k_2)$
 
@@ -294,43 +282,23 @@ Therefore, $G\cong H\times K$. $\blacksquare$
 
 ## Theorem 9.2.17
 
-**Theorem 9.2.17.** Let $G$ be the internal direct product of subgroups $H_i$, where $i=1,2,\ldots,n$. Then $G$ is isomorphic to
+Let $G$ be the internal direct product of subgroups $H_i$, where $i=1,2,\ldots,n$. Then $G$ is isomorphic to
 
 $$\prod_{i=1}^n H_i.$$
 
-The internal direct product requires:
 
-1. $G=H_1H_2\cdots H_n$.
-
-2. $H_i\cap\langle\bigcup_{j\ne i}H_j\rangle=\{e\}$.
-
-3. $h_ih_j=h_jh_i$ for all $h_i\in H_i$ and $h_j\in H_j$.
-
-The isomorphism is given by
-
-$\phi(h_1h_2\cdots h_n)=(h_1,h_2,\ldots,h_n)$.
-
-**Exercise:** Extend the proof of Theorem 9.2.15 to prove this theorem.
 
 ---
 
 ## Activity: Direct Products
 
-1. Find the order of $(3,4)$ in $\mathbb Z_{12}\times\mathbb Z_{15}$.
 
-2. Determine whether each group is cyclic:
 
-   - $\mathbb Z_4\times\mathbb Z_5$
-   - $\mathbb Z_4\times\mathbb Z_6$
-   - $\mathbb Z_3\times\mathbb Z_5\times\mathbb Z_7$
-
-3. Find a direct product decomposition of $\mathbb Z_{90}$ using cyclic groups of prime-power order.
-
-4. Show that $\mathbb Z_{12}$ is the internal direct product of
+1. Show that $\mathbb Z_{12}$ is the internal direct product of
 
    $H=\{0,4,8\}$ and $K=\{0,3,6,9\}$.
 
-5. Construct an explicit isomorphism between $\mathbb Z_{12}$ and $H\times K$.
+2. Construct an explicit isomorphism between $\mathbb Z_{12}$ and $H\times K$.
 
 
 
