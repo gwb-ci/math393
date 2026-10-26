@@ -141,18 +141,20 @@
 <li>Determine when a direct product of cyclic groups is cyclic.</li>
 <li>Prove that an internal direct product is isomorphic to an external direct product.</li>
 <li>Explain why normality is needed to define multiplication on cosets.</li>
-<li>Define a normal subgroup and use equivalent conditions to check normality.</li>
-<li>Explain why every subgroup of an abelian group is normal.</li>
 <li>Define a factor group and verify that coset multiplication is well-defined.</li>
-<li>Compute with factor groups arising from <span class="math inline">\(S_3\)</span>, <span class="math inline">\(\mathbb{Z}\)</span>, and <span class="math inline">\(D_n\)</span>.</li>
 </ul>
 </section>
-<section class="slide level2">
-
+<section id="two-results" class="slide level2">
+<h2>Two results</h2>
+<p>Last time we showed that:</p>
+<ul>
+<li><span class="math inline">\(\mathbb Z_2\times\mathbb Z_2\)</span> is not cyclic</li>
+<li><span class="math inline">\(\mathbb Z_5\times\mathbb Z_2\)</span> is cyclic and therefore is isomorphic to <span class="math inline">\(\mathbb Z_{10}\)</span></li>
+</ul>
+<p>When is a product group cyclic?</p>
 </section>
-<section>
-<section id="theorem-9.2.5" class="title-slide slide level1 center">
-<h1>Theorem 9.2.5</h1>
+<section id="theorem-9.2.5" class="slide level2">
+<h2>Theorem 9.2.5</h2>
 <p>Let <span class="math inline">\((g,h)\in G\times H\)</span>. If <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span> have finite orders <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, respectively, then the order of <span class="math inline">\((g,h)\)</span> in <span class="math inline">\(G\times H\)</span> is the least common multiple of <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>.</p>
 <p><span class="math display">\[|(g,h)|=\operatorname{lcm}(r,s).\]</span></p>
 </section>
@@ -254,9 +256,8 @@
 <h2>Motivation for Normal Subgroups</h2>
 <p>What do we need to make multiplication work on the set of cosets?</p>
 <p>We would like to define <span class="math inline">\((aH)(bH)=abH\)</span>.</p>
-<p>The product must be <strong>well-defined</strong>: changing representatives must not change the resulting coset.</p>
+<p>The product must be <strong>well-defined</strong>. Changing representatives must not change the resulting coset.</p>
 <p>If <span class="math inline">\(aH=a'H\)</span> and <span class="math inline">\(bH=b'H\)</span>, we need <span class="math inline">\(abH=a'b'H\)</span>.</p>
-<p><strong>Key condition:</strong> <span class="math inline">\(gH=Hg\)</span> for every <span class="math inline">\(g\in G\)</span>.</p>
 </section>
 <section id="definition-of-normal-subgroup" class="slide level2">
 <h2>Definition of Normal Subgroup</h2>
@@ -268,7 +269,7 @@
 <p>Let <span class="math inline">\(G\)</span> be abelian and let <span class="math inline">\(H\)</span> be a subgroup of <span class="math inline">\(G\)</span>.</p>
 <p>For every <span class="math inline">\(g\in G\)</span> and <span class="math inline">\(h\in H\)</span>, we have <span class="math inline">\(gh=hg\)</span>. Hence,</p>
 <p><span class="math inline">\(gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg\)</span>.</p>
-<p><strong>Every subgroup of an abelian group is normal.</strong></p>
+<p>Every subgroup of an abelian group is normal.</p>
 </section>
 <section id="theorem-10.1.3" class="slide level2">
 <h2>Theorem 10.1.3</h2>
@@ -347,7 +348,6 @@ acN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.
 </tbody>
 </table>
 <p>Thus <span class="math inline">\(S_3/N\cong\mathbb{Z}_2\)</span>.</p>
-<p>The cosets record <strong>parity</strong>: <span class="math inline">\(N\)</span> contains the even permutations, and <span class="math inline">\((1\,2)N\)</span> contains the odd permutations.</p>
 </section>
 <section id="example-2" class="slide level2 smaller">
 <h2>Example 2</h2>
@@ -409,7 +409,7 @@ acN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.
 
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

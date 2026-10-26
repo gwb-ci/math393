@@ -10,333 +10,272 @@ format:
 
 ## Class Session Goals
 
+By the end of this session, you should be able to:
+
+- Define a simple group and identify examples and nonexamples.
+- Prove that $\mathbb{Z}_p$ is simple when $p$ is prime.
+- Describe the classification of finite simple groups and its historical significance.
+- Explain how $3$-cycles generate $A_n$.
+- Use normality and cycle calculations to prove that $A_n$ is simple for $n\geq 5$.
 
 ---
 
 ## Definition of Simple Groups
 
----
+A nontrivial group $G$ is **simple** if its only normal subgroups are $\{e\}$ and $G$.
 
-## Example: $\mathbb Z_p$
+Thus, if $N$ is normal in $G$, then
 
+$N=\{e\}$ or $N=G$.
 
----
-
-## Other Noteworthy Examples
-
-- Alternating Group
-- $PSL_2(\mathbb F_3)$
--
-- Conway Groups
-- The Monster
-
-
-## Historical Notes:  The Enormous Theorem
-
-statement
+A simple group may have proper nontrivial subgroups; none of them can be normal.
 
 ---
 
-## Historical Notes:  The Enormous Theorem
+## Example: $\mathbb{Z}_p$
 
-size and context
+Let $p$ be prime.
 
----
+If $H$ is a subgroup of $\mathbb{Z}_p$, Lagrange's Theorem gives $|H|\mid p$.
 
+Therefore, $|H|=1$ or $|H|=p$, so
 
-## Proposition 9.2.1
+$H=\{0\}$ or $H=\mathbb{Z}_p$.
 
-**Proposition 9.2.1.** Let $G$ and $H$ be groups. The set $G\times H$ is a group under the operation
+Consequently, $\mathbb{Z}_p$ is simple.
 
-$$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),$$
-
-where $g_1,g_2\in G$ and $h_1,h_2\in H$.
-
-**Proof.**
-
-- **Closure:** Products are in $G\times H$ by closure in $G$ and $H$.
-- **Associativity:** Follows from associativity in $G$ and $H$.
-- **Identity:** The identity is $(e_G,e_H)$.
-- **Inverses:** The inverse of $(g,h)$ is $(g^{-1},h^{-1})$.
-
-Therefore, $G\times H$ is a group.
+**More generally:** A finite cyclic group is simple if and only if its order is prime.
 
 ---
 
-## Examples of Direct Products
+## Other Noteworthy Examples {.smaller}
 
-**Example 9.2.2.** The group $\mathbb R\times\mathbb R=\mathbb R^2$ under addition:
+- **Alternating groups:** $A_n$ is simple for $n\geq 5$.
+- **Projective special linear groups:** $\mathrm{PSL}_2(\mathbb{F}_5)\cong A_5$ is simple.
+- **Mathieu groups:** $M_{11},M_{12},M_{22},M_{23},M_{24}$ are sporadic simple groups.
+- **Conway groups:** $\mathrm{Co}_1,\mathrm{Co}_2,\mathrm{Co}_3$ are sporadic simple groups.
+- **The Monster:** $\mathbb{M}$ is the largest sporadic simple group, with order approximately $8.08\times 10^{53}$.
 
-$(a,b)+(c,d)=(a+c,b+d)$.
+**Nonexample:** $\mathrm{PSL}_2(\mathbb{F}_3)\cong A_4$ is not simple: it has the proper nontrivial normal subgroup
 
-The identity is $(0,0)$ and the inverse of $(a,b)$ is $(-a,-b)$.
-
-**Example 9.2.3.** Consider
-
-$\mathbb Z_2\times\mathbb Z_2=\{(0,0),(0,1),(1,0),(1,1)\}$.
-
-- Every nonidentity element has order $2$.
-- $\mathbb Z_4$ has an element of order $4$.
-
-Thus, $\mathbb Z_2\times\mathbb Z_2\not\cong\mathbb Z_4$.
-
-**Question:** Does having the same number of elements guarantee that two groups are isomorphic?
+$V_4=\{(1),(1\,2)(3\,4),(1\,3)(2\,4)\}$.
 
 ---
 
-## Theorem 9.2.5
+## Historical Notes: The Enormous Theorem
 
-**Theorem 9.2.5.** Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
+**Classification of Finite Simple Groups**
 
-$$|(g,h)|=\operatorname{lcm}(r,s).$$
+Every finite simple group is isomorphic to one of the following:
 
-**Example 9.2.7.** Find the order of $(8,56)$ in $\mathbb Z_{12}\times\mathbb Z_{60}$.
+1. A cyclic group $\mathbb{Z}_p$, where $p$ is prime.
+2. An alternating group $A_n$, where $n\geq 5$.
+3. A finite simple group of Lie type.
+4. One of the $26$ sporadic simple groups.
 
-- $|8|=12/\gcd(8,12)=3$.
-- $|56|=60/\gcd(56,60)=15$.
-
-Therefore,
-
-$|(8,56)|=\operatorname{lcm}(3,15)=15$.
+The theorem gives a complete list, up to isomorphism.
 
 ---
 
-## Theorem 9.2.5 Proof
+## Historical Notes: The Enormous Theorem
 
-**Proof.** Suppose that $m=\operatorname{lcm}(r,s)$ and let $n=|(g,h)|$.
+**Size and context**
 
-Since $r\mid m$ and $s\mid m$,
+- The original classification involved roughly $100$ mathematicians, about $500$ papers, and approximately $10{,}000$ pages.
+- Much of the work was completed by about $1983$; the remaining quasithin case appeared in $2004$.
+- Gorenstein, Lyons, and Solomon began a project to organize and simplify the proof.
 
-$$(g,h)^m=(g^m,h^m)=(e_G,e_H).$$
+**Why it matters:** Every finite group has a composition series whose factors are simple.
 
-Thus, $n\mid m$, so $n\le m$.
-
-On the other hand,
-
-$$(g,h)^n=(g^n,h^n)=(e_G,e_H).$$
-
-Hence, $r\mid n$ and $s\mid n$.
-
-Therefore, $n$ is a common multiple of $r$ and $s$, so $m\le n$.
-
-Consequently, $m=n$ and
-
-$$|(g,h)|=\operatorname{lcm}(r,s).\qquad\blacksquare$$
+These factors are the “building blocks” of finite groups, although they do not uniquely determine the original group.
 
 ---
 
-## Corollary 9.2.6
+## Lemma 10.2.1
 
-**Corollary 9.2.6.** Let $(g_1,\ldots,g_n)\in\prod_{i=1}^n G_i$. If $g_i$ has finite order $r_i$ in $G_i$, then
-
-$$|(g_1,\ldots,g_n)|=\operatorname{lcm}(r_1,\ldots,r_n).$$
-
-**Example.** Find the order of $(2,3,4)$ in
-
-$\mathbb Z_6\times\mathbb Z_8\times\mathbb Z_{10}$.
-
-We have
-
-- $|2|=3$ in $\mathbb Z_6$.
-- $|3|=8$ in $\mathbb Z_8$.
-- $|4|=5$ in $\mathbb Z_{10}$.
-
-Therefore,
-
-$|(2,3,4)|=\operatorname{lcm}(3,8,5)=120$.
+The alternating group $A_n$ is generated by $3$-cycles for $n\geq 3$.
 
 ---
 
-## Theorem 9.2.9
+## Proof of 10.2.1
 
-**Theorem 9.2.9.** The group $\mathbb Z_m\times\mathbb Z_n$ is isomorphic to $\mathbb Z_{mn}$ if and only if $\gcd(m,n)=1$.
+An even permutation is a product of pairs of transpositions.
 
-$$\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}
-\iff \gcd(m,n)=1.$$
+Each pair can be rewritten using $3$-cycles:
 
-**Examples.**
+$$
+\begin{aligned}
+(a,b)(a,b)&=\mathrm{id},\\
+(a,b)(c,d)&=(a,c,b)(a,c,d),\\
+(a,b)(a,c)&=(a,c,b).
+\end{aligned}
+$$
 
-- $\mathbb Z_2\times\mathbb Z_3\cong\mathbb Z_6$.
-- $\mathbb Z_3\times\mathbb Z_4\cong\mathbb Z_{12}$.
-- $\mathbb Z_2\times\mathbb Z_4\not\cong\mathbb Z_8$.
+These cover identical, disjoint, and overlapping transpositions.
 
-**Question:** Why does the greatest common divisor determine whether the direct product is cyclic?
-
----
-
-## Theorem 9.2.9 Proof
-
-**Proof.**
-
-($\Rightarrow$) Suppose $\gcd(m,n)=d>1$.
-
-For every $(a,b)\in\mathbb Z_m\times\mathbb Z_n$,
-
-$$\frac{mn}{d}(a,b)=(0,0),$$
-
-since $mn/d$ is divisible by both $m$ and $n$.
-
-Thus, every element has order at most $mn/d<mn$.
-
-Therefore, $\mathbb Z_m\times\mathbb Z_n$ is not cyclic and cannot be isomorphic to $\mathbb Z_{mn}$.
-
-($\Leftarrow$) Suppose $\gcd(m,n)=1$.
-
-By Theorem 9.2.5,
-
-$$|(1,1)|=\operatorname{lcm}(m,n)=mn.$$
-
-Hence, $\mathbb Z_m\times\mathbb Z_n$ is cyclic of order $mn$, so
-
-$\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
+Every $3$-cycle is even, so the $3$-cycles generate exactly $A_n$. $\square$
 
 ---
 
-## Corollaries
+## Lemma 10.2.2
 
-**Corollary 9.2.10.** Let $n_1,\ldots,n_k$ be positive integers. Then
+Let $N$ be a normal subgroup of $A_n$, where $n\geq 3$.
 
-$$\prod_{i=1}^k\mathbb Z_{n_i}\cong\mathbb Z_{n_1\cdots n_k}$$
-
-if and only if $\gcd(n_i,n_j)=1$ for $i\ne j$.
-
-**Corollary 9.2.11.** If
-
-$m=p_1^{e_1}\cdots p_k^{e_k}$,
-
-where the $p_i$ are distinct primes, then
-
-$$\mathbb Z_m\cong\mathbb Z_{p_1^{e_1}}\times\cdots\times\mathbb Z_{p_k^{e_k}}.$$
-
-**Example.** Since $60=4\cdot3\cdot5$,
-
-$\mathbb Z_{60}\cong\mathbb Z_4\times\mathbb Z_3\times\mathbb Z_5$.
+If $N$ contains a $3$-cycle, then $N=A_n$.
 
 ---
 
-## Definition of Internal Direct Product
+## Proof of 10.2.2 {.smaller}
 
-Let $G$ be a group with subgroups $H$ and $K$.
+**Step 1: Fix two symbols $i$ and $j$.**
 
-We say that $G$ is the **internal direct product** of $H$ and $K$ if:
+The cycles $(i,j,k)$ generate all $3$-cycles, using
 
-1. $G=HK=\{hk:h\in H,\ k\in K\}$.
+$$
+\begin{aligned}
+(i,a,j)&=(i,j,a)^2,\\
+(i,a,b)&=(i,j,b)(i,j,a)^2,\\
+(j,a,b)&=(i,j,b)^2(i,j,a),\\
+(a,b,c)&=(i,j,a)^2(i,j,c)(i,j,b)^2(i,j,a).
+\end{aligned}
+$$
 
-2. $H\cap K=\{e\}$.
+Here the symbols in each identity are distinct.
 
-3. $hk=kh$ for all $h\in H$ and $k\in K$.
-
-**Interpretation:**
-
-- Every element of $G$ is a product of elements from $H$ and $K$.
-- The subgroups intersect only in the identity.
-- Elements of the two subgroups commute.
-
----
-
-## Examples
-
-**Example 9.2.12.** The group $U(8)=\{1,3,5,7\}$ is the internal direct product of
-
-$H=\{1,3\}$ and $K=\{1,5\}$.
-
-Indeed,
-
-- $HK=\{1,3,5,7\}=U(8)$.
-- $H\cap K=\{1\}$.
-- $U(8)$ is abelian.
-
-**Example 9.2.14.** The group $S_3$ cannot be written as an internal direct product of two proper subgroups.
-
-A subgroup of order $3$ and a subgroup of order $2$ do not commute elementwise.
-
-**Discussion:** Why is the condition $hk=kh$ necessary?
+By Lemma 10.2.1, these cycles therefore generate $A_n$.
 
 ---
 
-## Theorem 9.2.15
+## Proof of 10.2.2: Continued
 
-**Theorem 9.2.15.** Let $G$ be the internal direct product of subgroups $H$ and $K$. Then $G$ is isomorphic to $H\times K$.
+**Step 2: Use normality.**
 
-$$G\cong H\times K.$$
+Suppose $(i,j,a)\in N$. Its inverse $(i,j,a)^2$ also belongs to $N$.
 
-**Idea of the proof:**
+For $k\notin\{i,j,a\}$, let $\rho=(i,j)(a,k)\in A_n$.
 
-Since $G=HK$, every element $g\in G$ can be written as
+Normality gives
 
-$g=hk$, where $h\in H$ and $k\in K$.
+$\rho(i,j,a)^2\rho^{-1}=(i,j,k)\in N$.
 
-Define
+Thus $N$ contains every generator $(i,j,k)$ with $k\neq i,j$, including the original $(i,j,a)$.
 
-$$\phi:G\to H\times K,\qquad \phi(hk)=(h,k).$$
-
-We need to show that $\phi$ is well-defined, bijective, and preserves the group operation.
+Therefore, $N=A_n$. $\square$
 
 ---
 
-## Theorem 9.2.15 Proof
+## Lemma 10.2.3
 
-**Proof.** Since $G=HK$, write $g=hk$ and define $\phi(g)=(h,k)$.
-
-**Well-defined:** Suppose $hk=h'k'$. Then
-
-$h^{-1}h'=k(k')^{-1}\in H\cap K=\{e\}$.
-
-Thus $h=h'$ and $k=k'$.
-
-**Homomorphism:** For $g_1=h_1k_1$ and $g_2=h_2k_2$,
-
-$\phi(g_1g_2)=\phi(h_1k_1h_2k_2)$
-
-$=\phi(h_1h_2k_1k_2)$
-
-$=(h_1h_2,k_1k_2)=\phi(g_1)\phi(g_2)$.
-
-**Bijective:** Uniqueness of the factorization gives injectivity. Every $(h,k)\in H\times K$ equals $\phi(hk)$, giving surjectivity.
-
-Therefore, $G\cong H\times K$. $\blacksquare$
+For $n\geq 5$, every nontrivial normal subgroup $N$ of $A_n$ contains a $3$-cycle.
 
 ---
 
-## Theorem 9.2.17
+## Proof of 10.2.3: Setup
 
-**Theorem 9.2.17.** Let $G$ be the internal direct product of subgroups $H_i$, where $i=1,2,\ldots,n$. Then $G$ is isomorphic to
+Choose $\sigma\in N$ with $\sigma\neq\mathrm{id}$.
 
-$$\prod_{i=1}^n H_i.$$
+For any $\alpha\in A_n$, normality gives
 
-The internal direct product requires:
+$\alpha\sigma\alpha^{-1}\in N$,
 
-1. $G=H_1H_2\cdots H_n$.
+and hence
 
-2. $H_i\cap\langle\bigcup_{j\ne i}H_j\rangle=\{e\}$.
+$\sigma^{-1}\alpha\sigma\alpha^{-1}\in N$.
 
-3. $h_ih_j=h_jh_i$ for all $h_i\in H_i$ and $h_j\in H_j$.
+We use this construction to obtain simpler cycle structures.
 
-The isomorphism is given by
-
-$\phi(h_1h_2\cdots h_n)=(h_1,h_2,\ldots,h_n)$.
-
-**Exercise:** Extend the proof of Theorem 9.2.15 to prove this theorem.
+In the following cases, $\tau$ denotes the product of the remaining disjoint cycles.
 
 ---
 
-## Activity: Direct Products
+## Proof of 10.2.3: Long Cycles
 
-1. Find the order of $(3,4)$ in $\mathbb Z_{12}\times\mathbb Z_{15}$.
+**Case 1:** $\sigma$ contains a cycle of length $r>3$.
 
-2. Determine whether each group is cyclic:
+Write $\sigma=\tau(a_1,a_2,\ldots,a_r)$ and take $\alpha=(a_1,a_2,a_3)$.
 
-   - $\mathbb Z_4\times\mathbb Z_5$
-   - $\mathbb Z_4\times\mathbb Z_6$
-   - $\mathbb Z_3\times\mathbb Z_5\times\mathbb Z_7$
+Then
 
-3. Find a direct product decomposition of $\mathbb Z_{90}$ using cyclic groups of prime-power order.
+$$
+\begin{aligned}
+\sigma^{-1}\alpha\sigma\alpha^{-1}
+&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\
+&=(a_1,a_3,a_r)\in N.
+\end{aligned}
+$$
 
-4. Show that $\mathbb Z_{12}$ is the internal direct product of
+Thus $N$ contains a $3$-cycle.
 
-   $H=\{0,4,8\}$ and $K=\{0,3,6,9\}$.
+---
 
-5. Construct an explicit isomorphism between $\mathbb Z_{12}$ and $H\times K$.
+## Proof of 10.2.3: Two $3$-Cycles
 
+**Case 2:** $\sigma=\tau(a_1,a_2,a_3)(a_4,a_5,a_6)$.
 
+Take $\alpha=(a_1,a_2,a_4)$. Then
 
+$$
+\begin{aligned}
+\sigma^{-1}\alpha\sigma\alpha^{-1}
+&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\
+&=(a_1,a_4,a_2,a_6,a_3)\in N.
+\end{aligned}
+$$
+
+This is a $5$-cycle.
+
+Case 1 now produces a $3$-cycle in $N$.
+
+---
+
+## Proof of 10.2.3: One $3$-Cycle
+
+**Case 3:** $\sigma=\tau(a_1,a_2,a_3)$, where $\tau$ consists of disjoint $2$-cycles.
+
+Because $\tau^2=\mathrm{id}$ and the cycles are disjoint,
+
+$\sigma^2=\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\in N$.
+
+Thus $N$ contains a $3$-cycle.
+
+This includes the case where $\sigma$ itself is a $3$-cycle.
+
+---
+
+## Proof of 10.2.3: Only $2$-Cycles {.smaller}
+
+**Case 4:** $\sigma=\tau(a_1,a_2)(a_3,a_4)$, where $\tau$ consists of an even number of disjoint $2$-cycles.
+
+Take $\alpha=(a_1,a_2,a_3)$. Then
+
+$\delta=\sigma^{-1}\alpha\sigma\alpha^{-1}=(a_1,a_3)(a_2,a_4)\in N$.
+
+Since $n\geq 5$, choose $b\notin\{a_1,a_2,a_3,a_4\}$ and put $\mu=(a_1,a_3,b)$.
+
+Normality gives
+
+$\mu^{-1}\delta\mu\delta=(a_1,a_3,b)\in N$.
+
+Every possible nonidentity cycle structure has now been covered. Thus $N$ contains a $3$-cycle. $\square$
+
+---
+
+## Theorem 10.2.4
+
+The alternating group, $A_n$, is simple for $n\geq 5$.
+
+---
+
+## Proof of 10.2.4
+
+Let $N$ be a **nontrivial** normal subgroup of $A_n$, where $n\geq 5$.
+
+By Lemma 10.2.3, $N$ contains a $3$-cycle.
+
+By Lemma 10.2.2, $N=A_n$.
+
+Therefore, the only normal subgroups of $A_n$ are $\{\mathrm{id}\}$ and $A_n$.
+
+Hence $A_n$ is simple. $\square$
+
+---

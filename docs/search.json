@@ -101,7 +101,29 @@
     "href": "classes/19/slides.html#class-session-goals",
     "title": "Slides: Group Products and Factor Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDetermine when a direct product of cyclic groups is cyclic.\nProve that an internal direct product is isomorphic to an external direct product.\nExplain why normality is needed to define multiplication on cosets.\nDefine a normal subgroup and use equivalent conditions to check normality.\nExplain why every subgroup of an abelian group is normal.\nDefine a factor group and verify that coset multiplication is well-defined.\nCompute with factor groups arising from \\(S_3\\), \\(\\mathbb{Z}\\), and \\(D_n\\).",
+    "text": "Class Session Goals\n\nDetermine when a direct product of cyclic groups is cyclic.\nProve that an internal direct product is isomorphic to an external direct product.\nExplain why normality is needed to define multiplication on cosets.\nDefine a factor group and verify that coset multiplication is well-defined.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Group Products and Factor Groups"
+    ]
+  },
+  {
+    "objectID": "classes/19/slides.html#two-results",
+    "href": "classes/19/slides.html#two-results",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Two results",
+    "text": "Two results\nLast time we showed that:\n\n\\(\\mathbb Z_2\\times\\mathbb Z_2\\) is not cyclic\n\\(\\mathbb Z_5\\times\\mathbb Z_2\\) is cyclic and therefore is isomorphic to \\(\\mathbb Z_{10}\\)\n\nWhen is a product group cyclic?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Group Products and Factor Groups"
+    ]
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.5",
+    "href": "classes/19/slides.html#theorem-9.2.5",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nLet \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]",
     "crumbs": [
       "Class Material",
       "Slides: Group Products and Factor Groups"
@@ -255,7 +277,7 @@
     "href": "classes/19/slides.html#motivation-for-normal-subgroups",
     "title": "Slides: Group Products and Factor Groups",
     "section": "Motivation for Normal Subgroups",
-    "text": "Motivation for Normal Subgroups\nWhat do we need to make multiplication work on the set of cosets?\nWe would like to define \\((aH)(bH)=abH\\).\nThe product must be well-defined: changing representatives must not change the resulting coset.\nIf \\(aH=a'H\\) and \\(bH=b'H\\), we need \\(abH=a'b'H\\).\nKey condition: \\(gH=Hg\\) for every \\(g\\in G\\).",
+    "text": "Motivation for Normal Subgroups\nWhat do we need to make multiplication work on the set of cosets?\nWe would like to define \\((aH)(bH)=abH\\).\nThe product must be well-defined. Changing representatives must not change the resulting coset.\nIf \\(aH=a'H\\) and \\(bH=b'H\\), we need \\(abH=a'b'H\\).",
     "crumbs": [
       "Class Material",
       "Slides: Group Products and Factor Groups"
@@ -343,7 +365,7 @@
     "href": "classes/19/slides.html#example-1",
     "title": "Slides: Group Products and Factor Groups",
     "section": "Example 1",
-    "text": "Example 1\nTake \\(N=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}=A_3\\) in \\(S_3\\).\nThe two cosets are \\(N\\) and \\((1\\,2)N\\).\n\n\n\n\\(\\cdot\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\n\n\\(N\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\\((1\\,2)N\\)\n\\((1\\,2)N\\)\n\\(N\\)\n\n\n\nThus \\(S_3/N\\cong\\mathbb{Z}_2\\).\nThe cosets record parity: \\(N\\) contains the even permutations, and \\((1\\,2)N\\) contains the odd permutations.",
+    "text": "Example 1\nTake \\(N=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}=A_3\\) in \\(S_3\\).\nThe two cosets are \\(N\\) and \\((1\\,2)N\\).\n\n\n\n\\(\\cdot\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\n\n\\(N\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\\((1\\,2)N\\)\n\\((1\\,2)N\\)\n\\(N\\)\n\n\n\nThus \\(S_3/N\\cong\\mathbb{Z}_2\\).",
     "crumbs": [
       "Class Material",
       "Slides: Group Products and Factor Groups"
@@ -2411,7 +2433,7 @@
     "href": "classes/20/slides.html#class-session-goals",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals",
+    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nDefine a simple group and identify examples and nonexamples.\nProve that \\(\\mathbb{Z}_p\\) is simple when \\(p\\) is prime.\nDescribe the classification of finite simple groups and its historical significance.\nExplain how \\(3\\)-cycles generate \\(A_n\\).\nUse normality and cycle calculations to prove that \\(A_n\\) is simple for \\(n\\geq 5\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
@@ -2422,18 +2444,18 @@
     "href": "classes/20/slides.html#definition-of-simple-groups",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Definition of Simple Groups",
-    "text": "Definition of Simple Groups",
+    "text": "Definition of Simple Groups\nA nontrivial group \\(G\\) is simple if its only normal subgroups are \\(\\{e\\}\\) and \\(G\\).\nThus, if \\(N\\) is normal in \\(G\\), then\n\\(N=\\{e\\}\\) or \\(N=G\\).\nA simple group may have proper nontrivial subgroups; none of them can be normal.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#example-mathbb-z_p",
-    "href": "classes/20/slides.html#example-mathbb-z_p",
+    "objectID": "classes/20/slides.html#example-mathbbz_p",
+    "href": "classes/20/slides.html#example-mathbbz_p",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Example: \\(\\mathbb Z_p\\)",
-    "text": "Example: \\(\\mathbb Z_p\\)",
+    "section": "Example: \\(\\mathbb{Z}_p\\)",
+    "text": "Example: \\(\\mathbb{Z}_p\\)\nLet \\(p\\) be prime.\nIf \\(H\\) is a subgroup of \\(\\mathbb{Z}_p\\), Lagrange’s Theorem gives \\(|H|\\mid p\\).\nTherefore, \\(|H|=1\\) or \\(|H|=p\\), so\n\\(H=\\{0\\}\\) or \\(H=\\mathbb{Z}_p\\).\nConsequently, \\(\\mathbb{Z}_p\\) is simple.\nMore generally: A finite cyclic group is simple if and only if its order is prime.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
@@ -2444,7 +2466,7 @@
     "href": "classes/20/slides.html#other-noteworthy-examples",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Other Noteworthy Examples",
-    "text": "Other Noteworthy Examples\n\nAlternating Group\n\\(PSL_2(\\mathbb F_3)\\)\n\nConway Groups\nThe Monster",
+    "text": "Other Noteworthy Examples\n\nAlternating groups: \\(A_n\\) is simple for \\(n\\geq 5\\).\nProjective special linear groups: \\(\\mathrm{PSL}_2(\\mathbb{F}_5)\\cong A_5\\) is simple.\nMathieu groups: \\(M_{11},M_{12},M_{22},M_{23},M_{24}\\) are sporadic simple groups.\nConway groups: \\(\\mathrm{Co}_1,\\mathrm{Co}_2,\\mathrm{Co}_3\\) are sporadic simple groups.\nThe Monster: \\(\\mathbb{M}\\) is the largest sporadic simple group, with order approximately \\(8.08\\times 10^{53}\\).\n\nNonexample: \\(\\mathrm{PSL}_2(\\mathbb{F}_3)\\cong A_4\\) is not simple: it has the proper nontrivial normal subgroup\n\\(V_4=\\{(1),(1\\,2)(3\\,4),(1\\,3)(2\\,4)\\}\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
@@ -2455,7 +2477,7 @@
     "href": "classes/20/slides.html#historical-notes-the-enormous-theorem",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Historical Notes: The Enormous Theorem",
-    "text": "Historical Notes: The Enormous Theorem\nstatement",
+    "text": "Historical Notes: The Enormous Theorem\nClassification of Finite Simple Groups\nEvery finite simple group is isomorphic to one of the following:\n\nA cyclic group \\(\\mathbb{Z}_p\\), where \\(p\\) is prime.\nAn alternating group \\(A_n\\), where \\(n\\geq 5\\).\nA finite simple group of Lie type.\nOne of the \\(26\\) sporadic simple groups.\n\nThe theorem gives a complete list, up to isomorphism.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
@@ -2466,161 +2488,150 @@
     "href": "classes/20/slides.html#historical-notes-the-enormous-theorem-1",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Historical Notes: The Enormous Theorem",
-    "text": "Historical Notes: The Enormous Theorem\nsize and context",
+    "text": "Historical Notes: The Enormous Theorem\nSize and context\n\nThe original classification involved roughly \\(100\\) mathematicians, about \\(500\\) papers, and approximately \\(10{,}000\\) pages.\nMuch of the work was completed by about \\(1983\\); the remaining quasithin case appeared in \\(2004\\).\nGorenstein, Lyons, and Solomon began a project to organize and simplify the proof.\n\nWhy it matters: Every finite group has a composition series whose factors are simple.\nThese factors are the “building blocks” of finite groups, although they do not uniquely determine the original group.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#proposition-9.2.1",
-    "href": "classes/20/slides.html#proposition-9.2.1",
+    "objectID": "classes/20/slides.html#lemma-10.2.1",
+    "href": "classes/20/slides.html#lemma-10.2.1",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proposition 9.2.1",
-    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group.",
+    "section": "Lemma 10.2.1",
+    "text": "Lemma 10.2.1\nThe alternating group \\(A_n\\) is generated by \\(3\\)-cycles for \\(n\\geq 3\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#examples-of-direct-products",
-    "href": "classes/20/slides.html#examples-of-direct-products",
+    "objectID": "classes/20/slides.html#proof-of-10.2.1",
+    "href": "classes/20/slides.html#proof-of-10.2.1",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Examples of Direct Products",
-    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?",
+    "section": "Proof of 10.2.1",
+    "text": "Proof of 10.2.1\nAn even permutation is a product of pairs of transpositions.\nEach pair can be rewritten using \\(3\\)-cycles:\n\\[\n\\begin{aligned}\n(a,b)(a,b)&=\\mathrm{id},\\\\\n(a,b)(c,d)&=(a,c,b)(a,c,d),\\\\\n(a,b)(a,c)&=(a,c,b).\n\\end{aligned}\n\\]\nThese cover identical, disjoint, and overlapping transpositions.\nEvery \\(3\\)-cycle is even, so the \\(3\\)-cycles generate exactly \\(A_n\\). \\(\\square\\)",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.5",
-    "href": "classes/20/slides.html#theorem-9.2.5",
+    "objectID": "classes/20/slides.html#lemma-10.2.2",
+    "href": "classes/20/slides.html#lemma-10.2.2",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.5",
-    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\).",
+    "section": "Lemma 10.2.2",
+    "text": "Lemma 10.2.2\nLet \\(N\\) be a normal subgroup of \\(A_n\\), where \\(n\\geq 3\\).\nIf \\(N\\) contains a \\(3\\)-cycle, then \\(N=A_n\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.5-proof",
-    "href": "classes/20/slides.html#theorem-9.2.5-proof",
+    "objectID": "classes/20/slides.html#proof-of-10.2.2",
+    "href": "classes/20/slides.html#proof-of-10.2.2",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.5 Proof",
-    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]",
+    "section": "Proof of 10.2.2",
+    "text": "Proof of 10.2.2\nStep 1: Fix two symbols \\(i\\) and \\(j\\).\nThe cycles \\((i,j,k)\\) generate all \\(3\\)-cycles, using\n\\[\n\\begin{aligned}\n(i,a,j)&=(i,j,a)^2,\\\\\n(i,a,b)&=(i,j,b)(i,j,a)^2,\\\\\n(j,a,b)&=(i,j,b)^2(i,j,a),\\\\\n(a,b,c)&=(i,j,a)^2(i,j,c)(i,j,b)^2(i,j,a).\n\\end{aligned}\n\\]\nHere the symbols in each identity are distinct.\nBy Lemma 10.2.1, these cycles therefore generate \\(A_n\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#corollary-9.2.6",
-    "href": "classes/20/slides.html#corollary-9.2.6",
+    "objectID": "classes/20/slides.html#proof-of-10.2.2-continued",
+    "href": "classes/20/slides.html#proof-of-10.2.2-continued",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Corollary 9.2.6",
-    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\).",
+    "section": "Proof of 10.2.2: Continued",
+    "text": "Proof of 10.2.2: Continued\nStep 2: Use normality.\nSuppose \\((i,j,a)\\in N\\). Its inverse \\((i,j,a)^2\\) also belongs to \\(N\\).\nFor \\(k\\notin\\{i,j,a\\}\\), let \\(\\rho=(i,j)(a,k)\\in A_n\\).\nNormality gives\n\\(\\rho(i,j,a)^2\\rho^{-1}=(i,j,k)\\in N\\).\nThus \\(N\\) contains every generator \\((i,j,k)\\) with \\(k\\neq i,j\\), including the original \\((i,j,a)\\).\nTherefore, \\(N=A_n\\). \\(\\square\\)",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.9",
-    "href": "classes/20/slides.html#theorem-9.2.9",
+    "objectID": "classes/20/slides.html#lemma-10.2.3",
+    "href": "classes/20/slides.html#lemma-10.2.3",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.9",
-    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?",
+    "section": "Lemma 10.2.3",
+    "text": "Lemma 10.2.3\nFor \\(n\\geq 5\\), every nontrivial normal subgroup \\(N\\) of \\(A_n\\) contains a \\(3\\)-cycle.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.9-proof",
-    "href": "classes/20/slides.html#theorem-9.2.9-proof",
+    "objectID": "classes/20/slides.html#proof-of-10.2.3-setup",
+    "href": "classes/20/slides.html#proof-of-10.2.3-setup",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.9 Proof",
-    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)",
+    "section": "Proof of 10.2.3: Setup",
+    "text": "Proof of 10.2.3: Setup\nChoose \\(\\sigma\\in N\\) with \\(\\sigma\\neq\\mathrm{id}\\).\nFor any \\(\\alpha\\in A_n\\), normality gives\n\\(\\alpha\\sigma\\alpha^{-1}\\in N\\),\nand hence\n\\(\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\\in N\\).\nWe use this construction to obtain simpler cycle structures.\nIn the following cases, \\(\\tau\\) denotes the product of the remaining disjoint cycles.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#corollaries",
-    "href": "classes/20/slides.html#corollaries",
+    "objectID": "classes/20/slides.html#proof-of-10.2.3-long-cycles",
+    "href": "classes/20/slides.html#proof-of-10.2.3-long-cycles",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Corollaries",
-    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\).",
+    "section": "Proof of 10.2.3: Long Cycles",
+    "text": "Proof of 10.2.3: Long Cycles\nCase 1: \\(\\sigma\\) contains a cycle of length \\(r&gt;3\\).\nWrite \\(\\sigma=\\tau(a_1,a_2,\\ldots,a_r)\\) and take \\(\\alpha=(a_1,a_2,a_3)\\).\nThen\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\\\\n&=(a_1,a_3,a_r)\\in N.\n\\end{aligned}\n\\]\nThus \\(N\\) contains a \\(3\\)-cycle.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#definition-of-internal-direct-product",
-    "href": "classes/20/slides.html#definition-of-internal-direct-product",
+    "objectID": "classes/20/slides.html#proof-of-10.2.3-two-3-cycles",
+    "href": "classes/20/slides.html#proof-of-10.2.3-two-3-cycles",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Definition of Internal Direct Product",
-    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute.",
+    "section": "Proof of 10.2.3: Two \\(3\\)-Cycles",
+    "text": "Proof of 10.2.3: Two \\(3\\)-Cycles\nCase 2: \\(\\sigma=\\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nTake \\(\\alpha=(a_1,a_2,a_4)\\). Then\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\\\\n&=(a_1,a_4,a_2,a_6,a_3)\\in N.\n\\end{aligned}\n\\]\nThis is a \\(5\\)-cycle.\nCase 1 now produces a \\(3\\)-cycle in \\(N\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#examples",
-    "href": "classes/20/slides.html#examples",
+    "objectID": "classes/20/slides.html#proof-of-10.2.3-one-3-cycle",
+    "href": "classes/20/slides.html#proof-of-10.2.3-one-3-cycle",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Examples",
-    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?",
+    "section": "Proof of 10.2.3: One \\(3\\)-Cycle",
+    "text": "Proof of 10.2.3: One \\(3\\)-Cycle\nCase 3: \\(\\sigma=\\tau(a_1,a_2,a_3)\\), where \\(\\tau\\) consists of disjoint \\(2\\)-cycles.\nBecause \\(\\tau^2=\\mathrm{id}\\) and the cycles are disjoint,\n\\(\\sigma^2=\\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\\in N\\).\nThus \\(N\\) contains a \\(3\\)-cycle.\nThis includes the case where \\(\\sigma\\) itself is a \\(3\\)-cycle.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.15",
-    "href": "classes/20/slides.html#theorem-9.2.15",
+    "objectID": "classes/20/slides.html#proof-of-10.2.3-only-2-cycles",
+    "href": "classes/20/slides.html#proof-of-10.2.3-only-2-cycles",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.15",
-    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation.",
+    "section": "Proof of 10.2.3: Only \\(2\\)-Cycles",
+    "text": "Proof of 10.2.3: Only \\(2\\)-Cycles\nCase 4: \\(\\sigma=\\tau(a_1,a_2)(a_3,a_4)\\), where \\(\\tau\\) consists of an even number of disjoint \\(2\\)-cycles.\nTake \\(\\alpha=(a_1,a_2,a_3)\\). Then\n\\(\\delta=\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}=(a_1,a_3)(a_2,a_4)\\in N\\).\nSince \\(n\\geq 5\\), choose \\(b\\notin\\{a_1,a_2,a_3,a_4\\}\\) and put \\(\\mu=(a_1,a_3,b)\\).\nNormality gives\n\\(\\mu^{-1}\\delta\\mu\\delta=(a_1,a_3,b)\\in N\\).\nEvery possible nonidentity cycle structure has now been covered. Thus \\(N\\) contains a \\(3\\)-cycle. \\(\\square\\)",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.15-proof",
-    "href": "classes/20/slides.html#theorem-9.2.15-proof",
+    "objectID": "classes/20/slides.html#theorem-10.2.4",
+    "href": "classes/20/slides.html#theorem-10.2.4",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.15 Proof",
-    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)",
+    "section": "Theorem 10.2.4",
+    "text": "Theorem 10.2.4\nThe alternating group, \\(A_n\\), is simple for \\(n\\geq 5\\).",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
     ]
   },
   {
-    "objectID": "classes/20/slides.html#theorem-9.2.17",
-    "href": "classes/20/slides.html#theorem-9.2.17",
+    "objectID": "classes/20/slides.html#proof-of-10.2.4",
+    "href": "classes/20/slides.html#proof-of-10.2.4",
     "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 9.2.17",
-    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Factor Groups and Simple Groups"
-    ]
-  },
-  {
-    "objectID": "classes/20/slides.html#activity-direct-products",
-    "href": "classes/20/slides.html#activity-direct-products",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Activity: Direct Products",
-    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\).",
+    "section": "Proof of 10.2.4",
+    "text": "Proof of 10.2.4\nLet \\(N\\) be a nontrivial normal subgroup of \\(A_n\\), where \\(n\\geq 5\\).\nBy Lemma 10.2.3, \\(N\\) contains a \\(3\\)-cycle.\nBy Lemma 10.2.2, \\(N=A_n\\).\nTherefore, the only normal subgroups of \\(A_n\\) are \\(\\{\\mathrm{id}\\}\\) and \\(A_n\\).\nHence \\(A_n\\) is simple. \\(\\square\\)",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"

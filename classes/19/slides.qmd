@@ -14,14 +14,23 @@ format:
 - Determine when a direct product of cyclic groups is cyclic.
 - Prove that an internal direct product is isomorphic to an external direct product.
 - Explain why normality is needed to define multiplication on cosets.
-- Define a normal subgroup and use equivalent conditions to check normality.
-- Explain why every subgroup of an abelian group is normal.
 - Define a factor group and verify that coset multiplication is well-defined.
-- Compute with factor groups arising from $S_3$, $\mathbb{Z}$, and $D_n$.
+
+
+## Two results
+
+Last time we showed that:
+
+- $\mathbb Z_2\times\mathbb Z_2$ is not cyclic
+- $\mathbb Z_5\times\mathbb Z_2$ is cyclic and therefore is isomorphic to $\mathbb Z_{10}$
+
+When is a product group cyclic?
+
+
 
 ---
 
-# Theorem 9.2.5
+## Theorem 9.2.5
 
 Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
 
@@ -213,11 +222,11 @@ What do we need to make multiplication work on the set of cosets?
 
 We would like to define $(aH)(bH)=abH$.
 
-The product must be **well-defined**: changing representatives must not change the resulting coset.
+The product must be **well-defined**. Changing representatives must not change the resulting coset.
 
 If $aH=a'H$ and $bH=b'H$, we need $abH=a'b'H$.
 
-**Key condition:** $gH=Hg$ for every $g\in G$.
+
 
 ---
 
@@ -237,7 +246,7 @@ For every $g\in G$ and $h\in H$, we have $gh=hg$. Hence,
 
 $gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg$.
 
-**Every subgroup of an abelian group is normal.**
+Every subgroup of an abelian group is normal.
 
 ---
 
@@ -337,7 +346,7 @@ The two cosets are $N$ and $(1\,2)N$.
 
 Thus $S_3/N\cong\mathbb{Z}_2$.
 
-The cosets record **parity**: $N$ contains the even permutations, and $(1\,2)N$ contains the odd permutations.
+
 
 ---
 
