@@ -97,6 +97,1096 @@
     ]
   },
   {
+    "objectID": "classes/19/slides.html#class-session-goals",
+    "href": "classes/19/slides.html#class-session-goals",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDetermine when a direct product of cyclic groups is cyclic.\nProve that an internal direct product is isomorphic to an external direct product.\nExplain why normality is needed to define multiplication on cosets.\nDefine a normal subgroup and use equivalent conditions to check normality.\nExplain why every subgroup of an abelian group is normal.\nDefine a factor group and verify that coset multiplication is well-defined.\nCompute with factor groups arising from \\(S_3\\), \\(\\mathbb{Z}\\), and \\(D_n\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.5-proof-1",
+    "href": "classes/19/slides.html#theorem-9.2.5-proof-1",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.5 Proof 1",
+    "text": "Theorem 9.2.5 Proof 1\nSuppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.5-proof-2",
+    "href": "classes/19/slides.html#theorem-9.2.5-proof-2",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.5 Proof 2",
+    "text": "Theorem 9.2.5 Proof 2\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#corollary-9.2.6",
+    "href": "classes/19/slides.html#corollary-9.2.6",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nLet \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.9",
+    "href": "classes/19/slides.html#theorem-9.2.9",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nThe group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.9-proof-1",
+    "href": "classes/19/slides.html#theorem-9.2.9-proof-1",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.9 Proof 1",
+    "text": "Theorem 9.2.9 Proof 1\nSuppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.9-proof-2",
+    "href": "classes/19/slides.html#theorem-9.2.9-proof-2",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.9 Proof 2",
+    "text": "Theorem 9.2.9 Proof 2\nSuppose \\(\\gcd(m,n)=1\\). By Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#corollaries",
+    "href": "classes/19/slides.html#corollaries",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If \\(m=p_1^{e_1}\\cdots p_k^{e_k}\\), where the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#definition-of-internal-direct-product",
+    "href": "classes/19/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#examples",
+    "href": "classes/19/slides.html#examples",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Examples",
+    "text": "Examples\nThe group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of \\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.15",
+    "href": "classes/19/slides.html#theorem-9.2.15",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nLet \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.15-proof-1",
+    "href": "classes/19/slides.html#theorem-9.2.15-proof-1",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.15 Proof 1",
+    "text": "Theorem 9.2.15 Proof 1\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.15-proof-2",
+    "href": "classes/19/slides.html#theorem-9.2.15-proof-2",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.15 Proof 2",
+    "text": "Theorem 9.2.15 Proof 2\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nGroup Action: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-9.2.17",
+    "href": "classes/19/slides.html#theorem-9.2.17",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nLet \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]"
+  },
+  {
+    "objectID": "classes/19/slides.html#motivation-for-normal-subgroups",
+    "href": "classes/19/slides.html#motivation-for-normal-subgroups",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Motivation for Normal Subgroups",
+    "text": "Motivation for Normal Subgroups\nWhat do we need to make multiplication work on the set of cosets?\nWe would like to define \\((aH)(bH)=abH\\).\nThe product must be well-defined: changing representatives must not change the resulting coset.\nIf \\(aH=a'H\\) and \\(bH=b'H\\), we need \\(abH=a'b'H\\).\nKey condition: \\(gH=Hg\\) for every \\(g\\in G\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#definition-of-normal-subgroup",
+    "href": "classes/19/slides.html#definition-of-normal-subgroup",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Definition of Normal Subgroup",
+    "text": "Definition of Normal Subgroup\nA subgroup \\(H\\) of a group \\(G\\) is normal in \\(G\\) if \\(gH=Hg\\) for all \\(g\\in G\\).\nFor each \\(g\\), the left coset \\(gH\\) and the right coset \\(Hg\\) must be equal."
+  },
+  {
+    "objectID": "classes/19/slides.html#left-and-right-cosets-in-an-abelian-group",
+    "href": "classes/19/slides.html#left-and-right-cosets-in-an-abelian-group",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Left and Right Cosets in an Abelian Group",
+    "text": "Left and Right Cosets in an Abelian Group\nLet \\(G\\) be abelian and let \\(H\\) be a subgroup of \\(G\\).\nFor every \\(g\\in G\\) and \\(h\\in H\\), we have \\(gh=hg\\). Hence,\n\\(gH=\\{gh:h\\in H\\}=\\{hg:h\\in H\\}=Hg\\).\nEvery subgroup of an abelian group is normal."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-10.1.3",
+    "href": "classes/19/slides.html#theorem-10.1.3",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 10.1.3",
+    "text": "Theorem 10.1.3\nLet \\(G\\) be a group and \\(N\\) be a subgroup of \\(G\\). Then the following statements are equivalent.\n\nThe subgroup \\(N\\) is normal in \\(G\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}\\subset N\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}=N\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#proof-of-10.1.3",
+    "href": "classes/19/slides.html#proof-of-10.1.3",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Proof of 10.1.3",
+    "text": "Proof of 10.1.3\n\\((1)\\Rightarrow(2)\\). Normality gives \\(gN=Ng\\). For \\(g\\in G\\) and \\(n\\in N\\), write \\(gn=n'g\\) with \\(n'\\in N\\). Then \\(gng^{-1}=n'\\in N\\), so \\(gNg^{-1}\\subset N\\).\n\\((2)\\Rightarrow(3)\\). Fix \\(g\\in G\\). We already have \\(gNg^{-1}\\subset N\\). For \\(n\\in N\\), apply (2) to \\(g^{-1}\\):\n\\(g^{-1}ng=g^{-1}n(g^{-1})^{-1}\\in N\\).\nWriting \\(n'=g^{-1}ng\\) gives \\(n=gn'g^{-1}\\in gNg^{-1}\\). Thus \\(N\\subset gNg^{-1}\\), establishing equality.\n\\((3)\\Rightarrow(1)\\). If \\(gNg^{-1}=N\\), then for each \\(n\\in N\\), \\(gng^{-1}=n'\\) for some \\(n'\\in N\\). Hence \\(gn=n'g\\), giving \\(gN\\subset Ng\\).\nApplying (3) to \\(g^{-1}\\) also gives \\(g^{-1}ng\\in N\\), so \\(ng=g(g^{-1}ng)\\in gN\\). Therefore \\(Ng\\subset gN\\).\nConsequently, \\(gN=Ng\\) for every \\(g\\in G\\), and \\(N\\) is normal in \\(G\\). \\(\\square\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#factor-groups",
+    "href": "classes/19/slides.html#factor-groups",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Factor Groups",
+    "text": "Factor Groups\nLet \\(N\\) be normal in \\(G\\).\nThe factor group, or quotient group, is the set of cosets\n\\(G/N=\\{aN:a\\in G\\}\\),\nwith multiplication defined by\n\\((aN)(bN)=abN\\).\nThe elements of \\(G/N\\) are cosets, each of which is a set of elements of \\(G\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#theorem-10.1.4",
+    "href": "classes/19/slides.html#theorem-10.1.4",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Theorem 10.1.4",
+    "text": "Theorem 10.1.4\nLet \\(N\\) be a normal subgroup of a group \\(G\\). The cosets of \\(N\\) in \\(G\\) form a group \\(G/N\\) of order \\([G:N]\\).\nThe operation is \\((aN)(bN)=abN\\).\n\nIdentity: \\(eN=N\\).\nInverse of \\(gN\\): \\(g^{-1}N\\).\nOrder: the number of distinct cosets of \\(N\\) in \\(G\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#proof-10.1.4",
+    "href": "classes/19/slides.html#proof-10.1.4",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Proof 10.1.4",
+    "text": "Proof 10.1.4\nWell-defined: Suppose \\(aN=bN\\) and \\(cN=dN\\).\nWrite \\(a=bn_1\\) and \\(c=dn_2\\), where \\(n_1,n_2\\in N\\). Then\n\\[\nacN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.\n\\]\nHere \\(dN=Nd\\) because \\(N\\) is normal.\nAssociativity: \\(((aN)(bN))(cN)=(ab)cN=a(bc)N=(aN)((bN)(cN))\\).\nIdentity: \\((eN)(gN)=gN=(gN)(eN)\\).\nInverses: \\((gN)(g^{-1}N)=N=(g^{-1}N)(gN)\\).\nFinally, \\(|G/N|=[G:N]\\). \\(\\square\\)"
+  },
+  {
+    "objectID": "classes/19/slides.html#example-1",
+    "href": "classes/19/slides.html#example-1",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Example 1",
+    "text": "Example 1\nTake \\(N=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}=A_3\\) in \\(S_3\\).\nThe two cosets are \\(N\\) and \\((1\\,2)N\\).\n\n\n\n\\(\\cdot\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\n\n\\(N\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\\((1\\,2)N\\)\n\\((1\\,2)N\\)\n\\(N\\)\n\n\n\nThus \\(S_3/N\\cong\\mathbb{Z}_2\\).\nThe cosets record parity: \\(N\\) contains the even permutations, and \\((1\\,2)N\\) contains the odd permutations."
+  },
+  {
+    "objectID": "classes/19/slides.html#example-2",
+    "href": "classes/19/slides.html#example-2",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Example 2",
+    "text": "Example 2\nThe subgroup \\(3\\mathbb{Z}\\) is normal in \\(\\mathbb{Z}\\). Its cosets are\n\n\\(0+3\\mathbb{Z}=\\{\\ldots,-3,0,3,6,\\ldots\\}\\).\n\\(1+3\\mathbb{Z}=\\{\\ldots,-2,1,4,7,\\ldots\\}\\).\n\\(2+3\\mathbb{Z}=\\{\\ldots,-1,2,5,8,\\ldots\\}\\).\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\n\n\n\n\\(0+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\n\n\\(1+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\n\n\\(2+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\n\n\nIn general, \\((k+n\\mathbb{Z})+(l+n\\mathbb{Z})=k+l+n\\mathbb{Z}\\)."
+  },
+  {
+    "objectID": "classes/19/slides.html#example-3",
+    "href": "classes/19/slides.html#example-3",
+    "title": "Slides: Group Products and Factor Groups",
+    "section": "Example 3",
+    "text": "Example 3\nThe dihedral group \\(D_n\\) has generators \\(r\\) and \\(s\\) satisfying\n\\(r^n=\\mathrm{id}\\), \\(\\quad s^2=\\mathrm{id}\\), \\(\\quad srs=r^{-1}\\).\nThe rotations form the cyclic subgroup \\(R_n=\\langle r\\rangle\\).\nConjugation by \\(r\\) preserves \\(R_n\\), and \\(srs^{-1}=srs=r^{-1}\\in R_n\\).\nThus \\(R_n\\) is normal in \\(D_n\\).\nThere are two cosets: \\(R_n\\) and \\(sR_n\\). Therefore,\n\\(D_n/R_n\\cong\\mathbb{Z}_2\\)."
+  },
+  {
+    "objectID": "classes/10/slides.html#class-session-goals",
+    "href": "classes/10/slides.html#class-session-goals",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDetermine whether a permutation is even or odd.\nExplore the alternating group \\(A_n\\).\nExplore the alternating group \\(D_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-group",
+    "href": "classes/10/slides.html#definition-of-a-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-subgroup",
+    "href": "classes/10/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#transpositions",
+    "href": "classes/10/slides.html#transpositions",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Transpositions",
+    "text": "Transpositions\nA cycle of length \\(2\\) is called a transposition.\nFor example,\\((2\\,5)\\) is a transposition. Any cycle can be written as a product of transpositions:\n\\[\n(a_1\\,a_2\\,\\ldots\\,a_n)\n=\n(a_1\\,a_n)(a_1\\,a_{n-1})\\cdots(a_1\\,a_3)(a_1\\,a_2).\n\\]\nA permutation is even if it can be expressed as an even number of transpositions.\nA permutation is odd if it can be expressed as an odd number of transpositions.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#lemma-5.1.14",
+    "href": "classes/10/slides.html#lemma-5.1.14",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Lemma 5.1.14",
+    "text": "Lemma 5.1.14\nIf the identity is written as the product of \\(r\\) transpositions,\n\\[\n\\operatorname{id}=\\tau_1\\tau_2\\cdots\\tau_r,\n\\]\nthen \\(r\\) is an even number.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proof-of-lemma-5.1.14",
+    "href": "classes/10/slides.html#proof-of-lemma-5.1.14",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proof of Lemma 5.1.14",
+    "text": "Proof of Lemma 5.1.14\nWe use induction on \\(r\\) the number of transpositions. A transposition cannot be the identity, so \\(r&gt;1\\). If \\(r=2\\), we are done.\nFor \\(r&gt;2\\), consider the last two transpositions. Up to relabeling, we have\n\\[\n\\begin{aligned}\n(a\\,b)(a\\,b)&=\\operatorname{id},\\\\\n(b\\,c)(a\\,b)&=(a\\,c)(b\\,c),\\\\\n(c\\,d)(a\\,b)&=(a\\,b)(c\\,d),\\\\\n(a\\,c)(a\\,b)&=(a\\,b)(b\\,c).\n\\end{aligned}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.1.15",
+    "href": "classes/10/slides.html#theorem-5.1.15",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.1.15",
+    "text": "Theorem 5.1.15\nIf a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\n\nThis means that oddness and evenness of permutations is well-defined.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#alternating-group",
+    "href": "classes/10/slides.html#alternating-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Alternating Group",
+    "text": "Alternating Group\nThe set of all even permutations in \\(S_n\\) is denoted by \\(A_n\\).\nThe group \\(A_n\\) is called the alternating group on \\(n\\) letters.\n\\[\nA_n=\\{\\sigma\\in S_n:\\sigma\\text{ is even}\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.1.16",
+    "href": "classes/10/slides.html#theorem-5.1.16",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.1.16",
+    "text": "Theorem 5.1.16\nThe set \\(A_n\\) is a subgroup of \\(S_n\\).\n\nWhy?\n\nThe product of two even permutations is even.\nThe identity is even.\nThe inverse of an even permutation is even.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-5.1.17",
+    "href": "classes/10/slides.html#proposition-5.1.17",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 5.1.17",
+    "text": "Proposition 5.1.17\nThe number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations. So \\(|A_n|=\\frac{n!}{2}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-5.1.17-proof",
+    "href": "classes/10/slides.html#proposition-5.1.17-proof",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 5.1.17 Proof",
+    "text": "Proposition 5.1.17 Proof\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define \\(\\lambda_\\sigma:A_n\\longrightarrow B_n\\)\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
+    "href": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Find the Alternating Group \\(A_4\\)",
+    "text": "Activity: Find the Alternating Group \\(A_4\\)\nFor your \\(S_4\\) tiles:\nLabel and sort the tiles into two piles:\n\neven permutations,\nodd permutations.\n\nThe even pile is \\(A_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
+    "href": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Dihedral Group as a Subgroup of \\(S_n\\)",
+    "text": "Dihedral Group as a Subgroup of \\(S_n\\)\nThe dihedral group \\(D_n\\) consists of the rigid motions of a regular \\(n\\)-gon.\nLabel the vertices\n\\[\n1,2,\\ldots,n.\n\\]\nEvery rigid motion permutes these vertices, so each symmetry gives an element of \\(S_n\\).\nThus we can view\n\\[\nD_n\\leq S_n.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-construct-d_5",
+    "href": "classes/10/slides.html#activity-construct-d_5",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Construct \\(D_5\\)",
+    "text": "Activity: Construct \\(D_5\\)\nUse the \\(S_5\\) permutation-drawing tiles.\nBegin with the two tiles representing\n\\[\nr=(1\\,2\\,3\\,4\\,5)\n\\]\nand\n\\[\ns=(2\\,5)(3\\,4).\n\\]\nUse multiplication to construct new tiles from these two. Record these products on the empty tiles. Try to find all possible products of these two elements. Label each tile as a reflection or a rotation of the pentagon.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
+    "href": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Conjugating Cycles by Reflections",
+    "text": "Activity: Conjugating Cycles by Reflections\nGiven two group elements \\(\\sigma\\) and \\(\\tau\\), the congugate of \\(\\sigma\\) by \\(\\tau\\) is \\(\\tau \\sigma \\tau^{-1}\\).\nGo back to you \\(D_5\\) tiles. Choose a non-idenity rotation \\(r\\) and a reflection \\(s\\). Calculate \\(srs\\). Do this for a few choices of \\(r\\) and a few choices of \\(s\\). Can you for an conjecture about what the \\(srs\\) is in general?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#another-construction-of-d_n",
+    "href": "classes/10/slides.html#another-construction-of-d_n",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Another Construction of \\(D_n\\)",
+    "text": "Another Construction of \\(D_n\\)\nInstead of starting with a geometric \\(n\\)-gon, we can describe \\(D_n\\) using two generators.\nLet \\(r\\) represent a rotation and \\(s\\) represent a reflection.\nThey satisfy:\n\n\\(r^n=e\\)\n\\(s^2=e\\)\n\\(srs=r^{-1}\\)\n\nThese are called relations.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#d_4-by-generators-and-relations",
+    "href": "classes/10/slides.html#d_4-by-generators-and-relations",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "\\(D_4\\) by Generators and Relations",
+    "text": "\\(D_4\\) by Generators and Relations\nWe write\n\\[\nD_n=\\langle r,s\\mid r^n=e,\\ s^2=e,\\ srs=r^{-1}\\rangle.\n\\]\nEvery element can be written in one of the forms\n\\[\nr^k\n\\qquad\\text{or}\\qquad\nr^ks,\n\\]\nwhere \\(0\\leq k&lt;n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-find-a-copy-of-d_4",
+    "href": "classes/10/slides.html#activity-find-a-copy-of-d_4",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Find a Copy of \\(D_4\\)",
+    "text": "Activity: Find a Copy of \\(D_4\\)\nReturn to your \\(S_4\\) tiles. Find a copy of \\(D_4\\) in your tiles. What is \\(D_4 \\cap A_4\\)?\n\nThis is called the Klein 4-group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.2.2",
+    "href": "classes/10/slides.html#theorem-5.2.2",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.2.2",
+    "text": "Theorem 5.2.2\nThe dihedral group, \\(D_n\\), is a subgroup of \\(S_n\\) of order \\(2n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.2.3",
+    "href": "classes/10/slides.html#theorem-5.2.3",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.2.3",
+    "text": "Theorem 5.2.3\nThe group \\(D_n\\), \\(n\\geq3\\), consists of all products of two elements \\(r\\) and \\(s\\), where \\(r\\) has order \\(n\\) and \\(s\\) has order \\(2\\), and \\(srs=r^{-1}\\).\n\n\\[\nD_n=\n\\{e,r,r^2,\\ldots,r^{n-1},\ns,rs,r^2s,\\ldots,r^{n-1}s\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#class-session-goals",
+    "href": "classes/17/slides.html#class-session-goals",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nProve Cayley’s Theorem\nDefine the external direct product of groups and verify that it forms a group.\nDetermine when a direct product of cyclic groups is cyclic.\nProve that an internal direct product is isomorphic to an external direct product.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#cayleys-theorem",
+    "href": "classes/17/slides.html#cayleys-theorem",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Cayley’s Theorem",
+    "text": "Cayley’s Theorem\nEvery group is isomorphic to a group of permutations.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#cayleys-theorem-proof",
+    "href": "classes/17/slides.html#cayleys-theorem-proof",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Cayley’s Theorem Proof",
+    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#external-direct-product-definition",
+    "href": "classes/17/slides.html#external-direct-product-definition",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product \\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is \\(G_1\\times G_2\\times\\cdots\\times G_n\\) with multiplication defined componentwise.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#proposition-9.2.1",
+    "href": "classes/17/slides.html#proposition-9.2.1",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nLet \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#proof-9.2.1",
+    "href": "classes/17/slides.html#proof-9.2.1",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Proof 9.2.1",
+    "text": "Proof 9.2.1\n\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#examples-of-direct-products",
+    "href": "classes/17/slides.html#examples-of-direct-products",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nThe group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition: \\((a,b)+(c,d)=(a+c,b+d)\\). The identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nConsider \\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nWhat is the order of each element in \\(\\mathbb Z_2\\times\\mathbb Z_2\\)?\nIs \\(\\mathbb Z_2\\times\\mathbb Z_2\\) cyclic?\nCreate an argument that \\(\\mathbb Z_2\\times\\mathbb Z_2\\) cannot be isomorphic to \\(\\mathbb Z_4\\)\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#activity",
+    "href": "classes/17/slides.html#activity",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Activity",
+    "text": "Activity\nChoose a group and calculate the orders of the elements in the group.\n\n\\(\\mathbb Z_3\\times\\mathbb Z_3\\)\n\\(\\mathbb Z_5\\times\\mathbb Z_2\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_4\\)\n\nAre any of these groups cyclic?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.5",
+    "href": "classes/17/slides.html#theorem-9.2.5",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nLet \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.5-proof-1",
+    "href": "classes/17/slides.html#theorem-9.2.5-proof-1",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.5 Proof 1",
+    "text": "Theorem 9.2.5 Proof 1\nSuppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.5-proof-2",
+    "href": "classes/17/slides.html#theorem-9.2.5-proof-2",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.5 Proof 2",
+    "text": "Theorem 9.2.5 Proof 2\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#corollary-9.2.6",
+    "href": "classes/17/slides.html#corollary-9.2.6",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nLet \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.9",
+    "href": "classes/17/slides.html#theorem-9.2.9",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nThe group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.9-proof-1",
+    "href": "classes/17/slides.html#theorem-9.2.9-proof-1",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.9 Proof 1",
+    "text": "Theorem 9.2.9 Proof 1\nSuppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.9-proof-2",
+    "href": "classes/17/slides.html#theorem-9.2.9-proof-2",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.9 Proof 2",
+    "text": "Theorem 9.2.9 Proof 2\nSuppose \\(\\gcd(m,n)=1\\). By Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#corollaries",
+    "href": "classes/17/slides.html#corollaries",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If \\(m=p_1^{e_1}\\cdots p_k^{e_k}\\), where the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#definition-of-internal-direct-product",
+    "href": "classes/17/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#examples",
+    "href": "classes/17/slides.html#examples",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Examples",
+    "text": "Examples\nThe group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of \\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.15",
+    "href": "classes/17/slides.html#theorem-9.2.15",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nLet \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.15-proof-1",
+    "href": "classes/17/slides.html#theorem-9.2.15-proof-1",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.15 Proof 1",
+    "text": "Theorem 9.2.15 Proof 1\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.15-proof-2",
+    "href": "classes/17/slides.html#theorem-9.2.15-proof-2",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.15 Proof 2",
+    "text": "Theorem 9.2.15 Proof 2\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nGroup Action: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#theorem-9.2.17",
+    "href": "classes/17/slides.html#theorem-9.2.17",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nLet \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/17/slides.html#activity-direct-products",
+    "href": "classes/17/slides.html#activity-direct-products",
+    "title": "Slides: Cayley’s Theorem and Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cayley’s Theorem and Direct Products"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#class-session-goals",
+    "href": "classes/16/slides.html#class-session-goals",
+    "title": "Slides: Isomorphisms",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nExplain the construction in Cayley’s Theorem.\nConstruct isomorphisms between familiar groups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#definition-of-a-group",
+    "href": "classes/16/slides.html#definition-of-a-group",
+    "title": "Slides: Isomorphisms",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) with a law of composition \\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity: \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for all \\(a,b,c\\in G\\).\nIdentity: There is an \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses: For each \\(a\\in G\\), there is an \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#definition-of-a-group-isomorphism",
+    "href": "classes/16/slides.html#definition-of-a-group-isomorphism",
+    "title": "Slides: Isomorphisms",
+    "section": "Definition of a Group Isomorphism",
+    "text": "Definition of a Group Isomorphism\nGroups \\((G,\\cdot)\\) and \\((H,\\circ)\\) are isomorphic if there is a bijection \\(\\phi:G\\to H\\) satisfying\n\\(\\phi(a\\cdot b)=\\phi(a)\\circ\\phi(b)\\)\nfor every \\(a,b\\in G\\).\nThe map \\(\\phi\\) is an isomorphism, and we write \\(G\\cong H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-1",
+    "href": "classes/16/slides.html#example-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 1",
+    "text": "Example 1\nShow that \\(\\mathbb Z_4\\cong\\langle i\\rangle\\), where \\(\\langle i\\rangle=\\{1,i,-1,-i\\}\\) under multiplication.\nDefine \\(\\phi:\\mathbb Z_4\\to\\langle i\\rangle\\) by \\(\\phi(n)=i^n\\):\n\n\n\n\\(n\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(3\\)\n\n\n\n\n\\(\\phi(n)\\)\n\\(1\\)\n\\(i\\)\n\\(-1\\)\n\\(-i\\)\n\n\n\nThe table shows that \\(\\phi\\) is bijective. It also preserves the operation:\n\\(\\phi(m+n)=i^{m+n}=i^mi^n=\\phi(m)\\phi(n).\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-2",
+    "href": "classes/16/slides.html#example-2",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 2",
+    "text": "Example 2\nThe exponential map gives an isomorphism\n\\(\\phi:(\\mathbb R,+)\\longrightarrow(\\mathbb R^+,\\cdot),\\qquad \\phi(x)=e^x.\\)\nIt preserves the operations because\n\\(\\phi(x+y)=e^{x+y}=e^xe^y=\\phi(x)\\phi(y).\\)\nThe function \\(e^x\\) is one-to-one and maps \\(\\mathbb R\\) onto \\(\\mathbb R^+\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-3",
+    "href": "classes/16/slides.html#example-3",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 3",
+    "text": "Example 3\nUnder multiplication modulo the indicated integer,\n\\(U(8)=\\{1,3,5,7\\},\\qquad U(12)=\\{1,5,7,11\\}.\\)\nAn isomorphism \\(\\phi:U(8)\\to U(12)\\) is\n\n\n\n\\(u\\in U(8)\\)\n\\(1\\)\n\\(3\\)\n\\(5\\)\n\\(7\\)\n\n\n\n\n\\(\\phi(u)\\in U(12)\\)\n\\(1\\)\n\\(5\\)\n\\(7\\)\n\\(11\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorem-9.1.6",
+    "href": "classes/16/slides.html#theorem-9.1.6",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorem 9.1.6",
+    "text": "Theorem 9.1.6\nSuppose \\(\\phi:G\\to H\\) is a group isomorphism. Then:\n\n\\(\\phi^{-1}:H\\to G\\) is an isomorphism.\n\\(|G|=|H|\\).\nIf \\(G\\) is abelian, so is \\(H\\).\nIf \\(G\\) is cyclic, so is \\(H\\).\nIf \\(G\\) has a subgroup of order \\(n\\), so does \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorem-9.1.6-proof",
+    "href": "classes/16/slides.html#theorem-9.1.6-proof",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorem 9.1.6 Proof",
+    "text": "Theorem 9.1.6 Proof\nPartial proof: assertions (1)–(3).\nBecause \\(\\phi\\) is a bijection, it has an inverse and \\(|G|=|H|\\). To check that its inverse preserves the operation, write \\(h_1=\\phi(g_1)\\) and \\(h_2=\\phi(g_2)\\). Then\n\\(\\phi^{-1}(h_1h_2)=\\phi^{-1}(\\phi(g_1g_2))=g_1g_2\n=\\phi^{-1}(h_1)\\phi^{-1}(h_2).\\)\nNow suppose \\(G\\) is abelian. Every \\(h_1,h_2\\in H\\) have the form \\(\\phi(g_1),\\phi(g_2)\\), so\n\\(h_1h_2=\\phi(g_1g_2)=\\phi(g_2g_1)=h_2h_1.\\)\nThus \\(H\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorems",
+    "href": "classes/16/slides.html#theorems",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorems",
+    "text": "Theorems\nTheorem 9.1.7 Every infinite cyclic group is isomorphic to \\((\\mathbb Z,+)\\).\nTheorem 9.1.8 A cyclic group of order \\(n\\) is isomorphic to \\(\\mathbb Z_n\\).\nCorollary 9.1.9 If \\(p\\) is prime and \\(|G|=p\\), then \\(G\\cong\\mathbb Z_p\\).\nTheorem 9.1.10 Group isomorphism is an equivalence relation on the class of groups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#cayleys-theorem",
+    "href": "classes/16/slides.html#cayleys-theorem",
+    "title": "Slides: Isomorphisms",
+    "section": "Cayley’s Theorem",
+    "text": "Cayley’s Theorem\nTheorem 9.1.12 (Cayley). Every group is isomorphic to a group of permutations.\nIn particular, a group \\(G\\) acts by permutations on its own underlying set.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#cayleys-theorem-proof",
+    "href": "classes/16/slides.html#cayleys-theorem-proof",
+    "title": "Slides: Isomorphisms",
+    "section": "Cayley’s Theorem Proof",
+    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g)=h\\) and \\(\\phi(g)=h'\\) the \\(h=h'\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nConstruct a bijective map between the following sets and verify that it is an isomorphism.\n\n\\(\\mathbb C^*\\) and \\[\nG=\\left\\{\n\\begin{pmatrix}\na & -b\\\\\nb & a\n\\end{pmatrix}\n:a,b\\in\\mathbb R,\\ a^2+b^2\\ne 0\n\\right\\}\n\\]\n\nof \\(GL_2(\\mathbb R)\\).\n\n\\(U(5)\\) and \\(U(10)\\)\n\\(U(8)\\) and \\(\\mathbb Z_2\\times\\mathbb Z_2\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\(S_3\\) and\n\n\\[\n\\left\\{\n\\begin{gathered}\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\\\[1em]\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\end{gathered}\n\\right\\}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\((\\mathbb R^2,+)\\) and the group\n\\(G=\\left\\{\\begin{pmatrix}1&a&b\\\\0&1&0\\\\0&0&1\\end{pmatrix}:a,b\\in\\mathbb R\\right\\}\\)\n\\((\\mathbb Z_3,+)\\) and the subgroup\n\n\\[H=\\left\\{\n   \\begin{pmatrix}\n   1&0&0\\\\0&1&0\\\\0&0&1\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&0&1\\\\1&0&0\\\\0&1&0\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&1&0\\\\0&0&1\\\\1&0&0\n   \\end{pmatrix}\n   \\right\\}\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#class-session-goals",
+    "href": "classes/11/slides.html#class-session-goals",
+    "title": "Slides: Cosets",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine and Explore Cosets",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#definition-of-a-group",
+    "href": "classes/11/slides.html#definition-of-a-group",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#definition-of-a-subgroup",
+    "href": "classes/11/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Cosets",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#definition-of-cosets",
+    "href": "classes/11/slides.html#definition-of-cosets",
+    "title": "Slides: Cosets",
+    "section": "Definition of Cosets",
+    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#example-of-coset-1",
+    "href": "classes/11/slides.html#example-of-coset-1",
+    "title": "Slides: Cosets",
+    "section": "Example of Coset 1",
+    "text": "Example of Coset 1\nLet \\(H\\) be the subgroup of \\(\\mathbb{Z}_6\\) consisting of the elements \\(0\\) and \\(3\\).\nThe cosets are\n\n\\(0+H=3+H=\\{0,3\\}\\)\n\\(1+H=4+H=\\{1,4\\}\\)\n\\(2+H=5+H=\\{2,5\\}\\)\n\nIn a commutative group, left and right cosets are always identical.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#example-of-cosets-2",
+    "href": "classes/11/slides.html#example-of-cosets-2",
+    "title": "Slides: Cosets",
+    "section": "Example of Cosets 2",
+    "text": "Example of Cosets 2\nLet\n\\(H=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\nbe a subgroup of \\(S_3\\).\nThe left cosets of \\(H\\) are\n\n\\((1)H=(1\\,2\\,3)H=(1\\,3\\,2)H\n=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\n\\((1\\,2)H=(1\\,3)H=(2\\,3)H\n=\\{(1\\,2),(1\\,3),(2\\,3)\\}\\)\n\nThe right cosets of \\(H\\) are the same as the left cosets.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#activity-cosets-in-u9",
+    "href": "classes/11/slides.html#activity-cosets-in-u9",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(U(9)\\)",
+    "text": "Activity: Cosets in \\(U(9)\\)\nRecall\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nLet\n\\(H=\\{1,8\\}\\).\nFind all of the distinct cosets of \\(H\\) in \\(U(9)\\).\nCompute \\(1H\\). Then choose an element not contained in \\(1H\\) and compute its coset. Continue until every element of \\(U(9)\\) is used. How many distinct cosets are there?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#activity-cosets-in-s_4",
+    "href": "classes/11/slides.html#activity-cosets-in-s_4",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(S_4\\)",
+    "text": "Activity: Cosets in \\(S_4\\)\nRegard \\(D_4\\) as the subgroup of \\(S_4\\) consisting of the symmetries of a square:\n\\(D_4=\\{e,(1\\,2\\,3\\,4),(1\\,3)(2\\,4),(1\\,4\\,3\\,2),\n(1\\,2)(3\\,4),(1\\,4)(2\\,3),(1\\,3),(2\\,4)\\}\\).\nFind the cosets of \\(D_4\\) in \\(S_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#activity-cosets-in-s_4-1",
+    "href": "classes/11/slides.html#activity-cosets-in-s_4-1",
+    "title": "Slides: Cosets",
+    "section": "Activity: Cosets in \\(S_4\\)",
+    "text": "Activity: Cosets in \\(S_4\\)\nLet\n\\(K=\\{e,(1\\,2)(3\\,4),(1\\,3)(2\\,4),(1\\,4)(2\\,3)\\}\\).\n\nFind the cosets of \\(K\\) in \\(D_4\\).\nFind the cosets of \\(K\\) in \\(S_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#lemma-6.1.3.",
+    "href": "classes/11/slides.html#lemma-6.1.3.",
+    "title": "Slides: Cosets",
+    "section": "Lemma 6.1.3.",
+    "text": "Lemma 6.1.3.\nLet \\(H\\) be a subgroup of a group \\(G\\) and suppose that \\(g_1,g_2\\in G\\).\nThe following conditions are equivalent.\n\n\\(g_1H=g_2H\\);\n\\(Hg_1^{-1}=Hg_2^{-1}\\);\n\\(g_1H\\subset g_2H\\);\n\\(g_2\\in g_1H\\);\n\\(g_1^{-1}g_2\\in H\\).\n\n\nProof is part of the homework. I will show \\(1 \\iff 5\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#theorem-6.1.4",
+    "href": "classes/11/slides.html#theorem-6.1.4",
+    "title": "Slides: Cosets",
+    "section": "Theorem 6.1.4",
+    "text": "Theorem 6.1.4\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThen the left cosets of \\(H\\) in \\(G\\) partition \\(G\\).\n\nThat is, the group \\(G\\) is the disjoint union of the left cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#proof-of-6.1.4",
+    "href": "classes/11/slides.html#proof-of-6.1.4",
+    "title": "Slides: Cosets",
+    "section": "Proof of 6.1.4",
+    "text": "Proof of 6.1.4\nDifferent proof from the book. Define a relation on \\(G\\) by \\(g_1 \\sim g_2\\) if and only if \\(g_1^{-1}g_2 \\in H\\). I will show this is an equivalence relation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#remark-6.1.5",
+    "href": "classes/11/slides.html#remark-6.1.5",
+    "title": "Slides: Cosets",
+    "section": "Remark 6.1.5",
+    "text": "Remark 6.1.5\nThere is nothing special about left cosets. Right cosets also partition \\(G\\).\nThe proof is the same as for left cosets, except that all group multiplications are done on the opposite side of \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#theorem-6.1.8",
+    "href": "classes/11/slides.html#theorem-6.1.8",
+    "title": "Slides: Cosets",
+    "section": "Theorem 6.1.8",
+    "text": "Theorem 6.1.8\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThe number of left cosets of \\(H\\) in \\(G\\) is the same as the number of right cosets of \\(H\\) in \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/11/slides.html#proof-idea",
+    "href": "classes/11/slides.html#proof-idea",
+    "title": "Slides: Cosets",
+    "section": "Proof Idea",
+    "text": "Proof Idea\nLet \\(L_H\\) and \\(R_H\\) denote the sets of left and right cosets of \\(H\\), respectively.\nDefine \\(\\phi:L_H\\to R_H\\) by \\(\\phi(gH)=Hg^{-1}\\).\nLemma 6.1.3 shows that \\(\\phi\\) is well-defined and one-to-one.\nIt is onto since \\(\\phi(g^{-1}H)=Hg\\).\nTherefore \\(\\phi\\) is a bijection, so the number of left and right cosets is the same.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cosets"
+    ]
+  },
+  {
+    "objectID": "classes/18/slides.html#class-session-goals",
+    "href": "classes/18/slides.html#class-session-goals",
+    "title": "Slides: Direct Products",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
+  },
+  {
+    "objectID": "classes/18/slides.html#external-direct-product-definition",
+    "href": "classes/18/slides.html#external-direct-product-definition",
+    "title": "Slides: Direct Products",
+    "section": "External Direct Product Definition",
+    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
+  },
+  {
+    "objectID": "classes/18/slides.html#proposition-9.2.1",
+    "href": "classes/18/slides.html#proposition-9.2.1",
+    "title": "Slides: Direct Products",
+    "section": "Proposition 9.2.1",
+    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
+  },
+  {
+    "objectID": "classes/18/slides.html#examples-of-direct-products",
+    "href": "classes/18/slides.html#examples-of-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Examples of Direct Products",
+    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.5",
+    "href": "classes/18/slides.html#theorem-9.2.5",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5",
+    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.5-proof",
+    "href": "classes/18/slides.html#theorem-9.2.5-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.5 Proof",
+    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
+  },
+  {
+    "objectID": "classes/18/slides.html#corollary-9.2.6",
+    "href": "classes/18/slides.html#corollary-9.2.6",
+    "title": "Slides: Direct Products",
+    "section": "Corollary 9.2.6",
+    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.9",
+    "href": "classes/18/slides.html#theorem-9.2.9",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9",
+    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.9-proof",
+    "href": "classes/18/slides.html#theorem-9.2.9-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.9 Proof",
+    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/18/slides.html#corollaries",
+    "href": "classes/18/slides.html#corollaries",
+    "title": "Slides: Direct Products",
+    "section": "Corollaries",
+    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
+  },
+  {
+    "objectID": "classes/18/slides.html#definition-of-internal-direct-product",
+    "href": "classes/18/slides.html#definition-of-internal-direct-product",
+    "title": "Slides: Direct Products",
+    "section": "Definition of Internal Direct Product",
+    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
+  },
+  {
+    "objectID": "classes/18/slides.html#examples",
+    "href": "classes/18/slides.html#examples",
+    "title": "Slides: Direct Products",
+    "section": "Examples",
+    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.15",
+    "href": "classes/18/slides.html#theorem-9.2.15",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15",
+    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.15-proof",
+    "href": "classes/18/slides.html#theorem-9.2.15-proof",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.15 Proof",
+    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
+  },
+  {
+    "objectID": "classes/18/slides.html#theorem-9.2.17",
+    "href": "classes/18/slides.html#theorem-9.2.17",
+    "title": "Slides: Direct Products",
+    "section": "Theorem 9.2.17",
+    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
+  },
+  {
+    "objectID": "classes/18/slides.html#activity-direct-products",
+    "href": "classes/18/slides.html#activity-direct-products",
+    "title": "Slides: Direct Products",
+    "section": "Activity: Direct Products",
+    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
+  },
+  {
     "objectID": "classes/02/worksheet.html",
     "href": "classes/02/worksheet.html",
     "title": "Equivalence Relations",
@@ -1155,1139 +2245,140 @@
   {
     "objectID": "classes/20/slides.html#class-session-goals",
     "href": "classes/20/slides.html#class-session-goals",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
+    "text": "Class Session Goals"
   },
   {
-    "objectID": "classes/20/slides.html#external-direct-product-definition",
-    "href": "classes/20/slides.html#external-direct-product-definition",
-    "title": "Slides: Direct Products",
-    "section": "External Direct Product Definition",
-    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
+    "objectID": "classes/20/slides.html#definition-of-simple-groups",
+    "href": "classes/20/slides.html#definition-of-simple-groups",
+    "title": "Slides: Factor Groups and Simple Groups",
+    "section": "Definition of Simple Groups",
+    "text": "Definition of Simple Groups"
+  },
+  {
+    "objectID": "classes/20/slides.html#example-mathbb-z_p",
+    "href": "classes/20/slides.html#example-mathbb-z_p",
+    "title": "Slides: Factor Groups and Simple Groups",
+    "section": "Example: \\(\\mathbb Z_p\\)",
+    "text": "Example: \\(\\mathbb Z_p\\)"
+  },
+  {
+    "objectID": "classes/20/slides.html#other-noteworthy-examples",
+    "href": "classes/20/slides.html#other-noteworthy-examples",
+    "title": "Slides: Factor Groups and Simple Groups",
+    "section": "Other Noteworthy Examples",
+    "text": "Other Noteworthy Examples\n\nAlternating Group\n\\(PSL_2(\\mathbb F_3)\\)\n\nConway Groups\nThe Monster"
+  },
+  {
+    "objectID": "classes/20/slides.html#historical-notes-the-enormous-theorem",
+    "href": "classes/20/slides.html#historical-notes-the-enormous-theorem",
+    "title": "Slides: Factor Groups and Simple Groups",
+    "section": "Historical Notes: The Enormous Theorem",
+    "text": "Historical Notes: The Enormous Theorem\nstatement"
+  },
+  {
+    "objectID": "classes/20/slides.html#historical-notes-the-enormous-theorem-1",
+    "href": "classes/20/slides.html#historical-notes-the-enormous-theorem-1",
+    "title": "Slides: Factor Groups and Simple Groups",
+    "section": "Historical Notes: The Enormous Theorem",
+    "text": "Historical Notes: The Enormous Theorem\nsize and context"
   },
   {
     "objectID": "classes/20/slides.html#proposition-9.2.1",
     "href": "classes/20/slides.html#proposition-9.2.1",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Proposition 9.2.1",
     "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
   },
   {
     "objectID": "classes/20/slides.html#examples-of-direct-products",
     "href": "classes/20/slides.html#examples-of-direct-products",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Examples of Direct Products",
     "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.5",
     "href": "classes/20/slides.html#theorem-9.2.5",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.5",
     "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.5-proof",
     "href": "classes/20/slides.html#theorem-9.2.5-proof",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.5 Proof",
     "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
   },
   {
     "objectID": "classes/20/slides.html#corollary-9.2.6",
     "href": "classes/20/slides.html#corollary-9.2.6",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Corollary 9.2.6",
     "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.9",
     "href": "classes/20/slides.html#theorem-9.2.9",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.9",
     "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.9-proof",
     "href": "classes/20/slides.html#theorem-9.2.9-proof",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.9 Proof",
     "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
   },
   {
     "objectID": "classes/20/slides.html#corollaries",
     "href": "classes/20/slides.html#corollaries",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Corollaries",
     "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
   },
   {
     "objectID": "classes/20/slides.html#definition-of-internal-direct-product",
     "href": "classes/20/slides.html#definition-of-internal-direct-product",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Definition of Internal Direct Product",
     "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
   },
   {
     "objectID": "classes/20/slides.html#examples",
     "href": "classes/20/slides.html#examples",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Examples",
     "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.15",
     "href": "classes/20/slides.html#theorem-9.2.15",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.15",
     "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.15-proof",
     "href": "classes/20/slides.html#theorem-9.2.15-proof",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.15 Proof",
     "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
   },
   {
     "objectID": "classes/20/slides.html#theorem-9.2.17",
     "href": "classes/20/slides.html#theorem-9.2.17",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Theorem 9.2.17",
     "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
   },
   {
     "objectID": "classes/20/slides.html#activity-direct-products",
     "href": "classes/20/slides.html#activity-direct-products",
-    "title": "Slides: Direct Products",
-    "section": "Activity: Direct Products",
-    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
-  },
-  {
-    "objectID": "classes/18/slides.html#class-session-goals",
-    "href": "classes/18/slides.html#class-session-goals",
-    "title": "Slides: Direct Products",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
-  },
-  {
-    "objectID": "classes/18/slides.html#external-direct-product-definition",
-    "href": "classes/18/slides.html#external-direct-product-definition",
-    "title": "Slides: Direct Products",
-    "section": "External Direct Product Definition",
-    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
-  },
-  {
-    "objectID": "classes/18/slides.html#proposition-9.2.1",
-    "href": "classes/18/slides.html#proposition-9.2.1",
-    "title": "Slides: Direct Products",
-    "section": "Proposition 9.2.1",
-    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
-  },
-  {
-    "objectID": "classes/18/slides.html#examples-of-direct-products",
-    "href": "classes/18/slides.html#examples-of-direct-products",
-    "title": "Slides: Direct Products",
-    "section": "Examples of Direct Products",
-    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.5",
-    "href": "classes/18/slides.html#theorem-9.2.5",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.5",
-    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.5-proof",
-    "href": "classes/18/slides.html#theorem-9.2.5-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.5 Proof",
-    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
-  },
-  {
-    "objectID": "classes/18/slides.html#corollary-9.2.6",
-    "href": "classes/18/slides.html#corollary-9.2.6",
-    "title": "Slides: Direct Products",
-    "section": "Corollary 9.2.6",
-    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.9",
-    "href": "classes/18/slides.html#theorem-9.2.9",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.9",
-    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.9-proof",
-    "href": "classes/18/slides.html#theorem-9.2.9-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.9 Proof",
-    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
-  },
-  {
-    "objectID": "classes/18/slides.html#corollaries",
-    "href": "classes/18/slides.html#corollaries",
-    "title": "Slides: Direct Products",
-    "section": "Corollaries",
-    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
-  },
-  {
-    "objectID": "classes/18/slides.html#definition-of-internal-direct-product",
-    "href": "classes/18/slides.html#definition-of-internal-direct-product",
-    "title": "Slides: Direct Products",
-    "section": "Definition of Internal Direct Product",
-    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
-  },
-  {
-    "objectID": "classes/18/slides.html#examples",
-    "href": "classes/18/slides.html#examples",
-    "title": "Slides: Direct Products",
-    "section": "Examples",
-    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.15",
-    "href": "classes/18/slides.html#theorem-9.2.15",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.15",
-    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.15-proof",
-    "href": "classes/18/slides.html#theorem-9.2.15-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.15 Proof",
-    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
-  },
-  {
-    "objectID": "classes/18/slides.html#theorem-9.2.17",
-    "href": "classes/18/slides.html#theorem-9.2.17",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.17",
-    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
-  },
-  {
-    "objectID": "classes/18/slides.html#activity-direct-products",
-    "href": "classes/18/slides.html#activity-direct-products",
-    "title": "Slides: Direct Products",
-    "section": "Activity: Direct Products",
-    "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
-  },
-  {
-    "objectID": "classes/11/slides.html#class-session-goals",
-    "href": "classes/11/slides.html#class-session-goals",
-    "title": "Slides: Cosets",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine and Explore Cosets",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#definition-of-a-group",
-    "href": "classes/11/slides.html#definition-of-a-group",
-    "title": "Slides: Cosets",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#definition-of-a-subgroup",
-    "href": "classes/11/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Cosets",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#definition-of-cosets",
-    "href": "classes/11/slides.html#definition-of-cosets",
-    "title": "Slides: Cosets",
-    "section": "Definition of Cosets",
-    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#example-of-coset-1",
-    "href": "classes/11/slides.html#example-of-coset-1",
-    "title": "Slides: Cosets",
-    "section": "Example of Coset 1",
-    "text": "Example of Coset 1\nLet \\(H\\) be the subgroup of \\(\\mathbb{Z}_6\\) consisting of the elements \\(0\\) and \\(3\\).\nThe cosets are\n\n\\(0+H=3+H=\\{0,3\\}\\)\n\\(1+H=4+H=\\{1,4\\}\\)\n\\(2+H=5+H=\\{2,5\\}\\)\n\nIn a commutative group, left and right cosets are always identical.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#example-of-cosets-2",
-    "href": "classes/11/slides.html#example-of-cosets-2",
-    "title": "Slides: Cosets",
-    "section": "Example of Cosets 2",
-    "text": "Example of Cosets 2\nLet\n\\(H=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\nbe a subgroup of \\(S_3\\).\nThe left cosets of \\(H\\) are\n\n\\((1)H=(1\\,2\\,3)H=(1\\,3\\,2)H\n=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}\\)\n\\((1\\,2)H=(1\\,3)H=(2\\,3)H\n=\\{(1\\,2),(1\\,3),(2\\,3)\\}\\)\n\nThe right cosets of \\(H\\) are the same as the left cosets.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#activity-cosets-in-u9",
-    "href": "classes/11/slides.html#activity-cosets-in-u9",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(U(9)\\)",
-    "text": "Activity: Cosets in \\(U(9)\\)\nRecall\n\\(U(9)=\\{1,2,4,5,7,8\\}\\).\nLet\n\\(H=\\{1,8\\}\\).\nFind all of the distinct cosets of \\(H\\) in \\(U(9)\\).\nCompute \\(1H\\). Then choose an element not contained in \\(1H\\) and compute its coset. Continue until every element of \\(U(9)\\) is used. How many distinct cosets are there?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#activity-cosets-in-s_4",
-    "href": "classes/11/slides.html#activity-cosets-in-s_4",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(S_4\\)",
-    "text": "Activity: Cosets in \\(S_4\\)\nRegard \\(D_4\\) as the subgroup of \\(S_4\\) consisting of the symmetries of a square:\n\\(D_4=\\{e,(1\\,2\\,3\\,4),(1\\,3)(2\\,4),(1\\,4\\,3\\,2),\n(1\\,2)(3\\,4),(1\\,4)(2\\,3),(1\\,3),(2\\,4)\\}\\).\nFind the cosets of \\(D_4\\) in \\(S_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#activity-cosets-in-s_4-1",
-    "href": "classes/11/slides.html#activity-cosets-in-s_4-1",
-    "title": "Slides: Cosets",
-    "section": "Activity: Cosets in \\(S_4\\)",
-    "text": "Activity: Cosets in \\(S_4\\)\nLet\n\\(K=\\{e,(1\\,2)(3\\,4),(1\\,3)(2\\,4),(1\\,4)(2\\,3)\\}\\).\n\nFind the cosets of \\(K\\) in \\(D_4\\).\nFind the cosets of \\(K\\) in \\(S_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#lemma-6.1.3.",
-    "href": "classes/11/slides.html#lemma-6.1.3.",
-    "title": "Slides: Cosets",
-    "section": "Lemma 6.1.3.",
-    "text": "Lemma 6.1.3.\nLet \\(H\\) be a subgroup of a group \\(G\\) and suppose that \\(g_1,g_2\\in G\\).\nThe following conditions are equivalent.\n\n\\(g_1H=g_2H\\);\n\\(Hg_1^{-1}=Hg_2^{-1}\\);\n\\(g_1H\\subset g_2H\\);\n\\(g_2\\in g_1H\\);\n\\(g_1^{-1}g_2\\in H\\).\n\n\nProof is part of the homework. I will show \\(1 \\iff 5\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#theorem-6.1.4",
-    "href": "classes/11/slides.html#theorem-6.1.4",
-    "title": "Slides: Cosets",
-    "section": "Theorem 6.1.4",
-    "text": "Theorem 6.1.4\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThen the left cosets of \\(H\\) in \\(G\\) partition \\(G\\).\n\nThat is, the group \\(G\\) is the disjoint union of the left cosets of \\(H\\) in \\(G\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#proof-of-6.1.4",
-    "href": "classes/11/slides.html#proof-of-6.1.4",
-    "title": "Slides: Cosets",
-    "section": "Proof of 6.1.4",
-    "text": "Proof of 6.1.4\nDifferent proof from the book. Define a relation on \\(G\\) by \\(g_1 \\sim g_2\\) if and only if \\(g_1^{-1}g_2 \\in H\\). I will show this is an equivalence relation.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#remark-6.1.5",
-    "href": "classes/11/slides.html#remark-6.1.5",
-    "title": "Slides: Cosets",
-    "section": "Remark 6.1.5",
-    "text": "Remark 6.1.5\nThere is nothing special about left cosets. Right cosets also partition \\(G\\).\nThe proof is the same as for left cosets, except that all group multiplications are done on the opposite side of \\(H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#theorem-6.1.8",
-    "href": "classes/11/slides.html#theorem-6.1.8",
-    "title": "Slides: Cosets",
-    "section": "Theorem 6.1.8",
-    "text": "Theorem 6.1.8\nLet \\(H\\) be a subgroup of a group \\(G\\).\nThe number of left cosets of \\(H\\) in \\(G\\) is the same as the number of right cosets of \\(H\\) in \\(G\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/11/slides.html#proof-idea",
-    "href": "classes/11/slides.html#proof-idea",
-    "title": "Slides: Cosets",
-    "section": "Proof Idea",
-    "text": "Proof Idea\nLet \\(L_H\\) and \\(R_H\\) denote the sets of left and right cosets of \\(H\\), respectively.\nDefine \\(\\phi:L_H\\to R_H\\) by \\(\\phi(gH)=Hg^{-1}\\).\nLemma 6.1.3 shows that \\(\\phi\\) is well-defined and one-to-one.\nIt is onto since \\(\\phi(g^{-1}H)=Hg\\).\nTherefore \\(\\phi\\) is a bijection, so the number of left and right cosets is the same.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cosets"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#class-session-goals",
-    "href": "classes/16/slides.html#class-session-goals",
-    "title": "Slides: Isomorphisms",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nExplain the construction in Cayley’s Theorem.\nConstruct isomorphisms between familiar groups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#definition-of-a-group",
-    "href": "classes/16/slides.html#definition-of-a-group",
-    "title": "Slides: Isomorphisms",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) with a law of composition \\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity: \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for all \\(a,b,c\\in G\\).\nIdentity: There is an \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses: For each \\(a\\in G\\), there is an \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#definition-of-a-group-isomorphism",
-    "href": "classes/16/slides.html#definition-of-a-group-isomorphism",
-    "title": "Slides: Isomorphisms",
-    "section": "Definition of a Group Isomorphism",
-    "text": "Definition of a Group Isomorphism\nGroups \\((G,\\cdot)\\) and \\((H,\\circ)\\) are isomorphic if there is a bijection \\(\\phi:G\\to H\\) satisfying\n\\(\\phi(a\\cdot b)=\\phi(a)\\circ\\phi(b)\\)\nfor every \\(a,b\\in G\\).\nThe map \\(\\phi\\) is an isomorphism, and we write \\(G\\cong H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-1",
-    "href": "classes/16/slides.html#example-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 1",
-    "text": "Example 1\nShow that \\(\\mathbb Z_4\\cong\\langle i\\rangle\\), where \\(\\langle i\\rangle=\\{1,i,-1,-i\\}\\) under multiplication.\nDefine \\(\\phi:\\mathbb Z_4\\to\\langle i\\rangle\\) by \\(\\phi(n)=i^n\\):\n\n\n\n\\(n\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(3\\)\n\n\n\n\n\\(\\phi(n)\\)\n\\(1\\)\n\\(i\\)\n\\(-1\\)\n\\(-i\\)\n\n\n\nThe table shows that \\(\\phi\\) is bijective. It also preserves the operation:\n\\(\\phi(m+n)=i^{m+n}=i^mi^n=\\phi(m)\\phi(n).\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-2",
-    "href": "classes/16/slides.html#example-2",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 2",
-    "text": "Example 2\nThe exponential map gives an isomorphism\n\\(\\phi:(\\mathbb R,+)\\longrightarrow(\\mathbb R^+,\\cdot),\\qquad \\phi(x)=e^x.\\)\nIt preserves the operations because\n\\(\\phi(x+y)=e^{x+y}=e^xe^y=\\phi(x)\\phi(y).\\)\nThe function \\(e^x\\) is one-to-one and maps \\(\\mathbb R\\) onto \\(\\mathbb R^+\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-3",
-    "href": "classes/16/slides.html#example-3",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 3",
-    "text": "Example 3\nUnder multiplication modulo the indicated integer,\n\\(U(8)=\\{1,3,5,7\\},\\qquad U(12)=\\{1,5,7,11\\}.\\)\nAn isomorphism \\(\\phi:U(8)\\to U(12)\\) is\n\n\n\n\\(u\\in U(8)\\)\n\\(1\\)\n\\(3\\)\n\\(5\\)\n\\(7\\)\n\n\n\n\n\\(\\phi(u)\\in U(12)\\)\n\\(1\\)\n\\(5\\)\n\\(7\\)\n\\(11\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorem-9.1.6",
-    "href": "classes/16/slides.html#theorem-9.1.6",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorem 9.1.6",
-    "text": "Theorem 9.1.6\nSuppose \\(\\phi:G\\to H\\) is a group isomorphism. Then:\n\n\\(\\phi^{-1}:H\\to G\\) is an isomorphism.\n\\(|G|=|H|\\).\nIf \\(G\\) is abelian, so is \\(H\\).\nIf \\(G\\) is cyclic, so is \\(H\\).\nIf \\(G\\) has a subgroup of order \\(n\\), so does \\(H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorem-9.1.6-proof",
-    "href": "classes/16/slides.html#theorem-9.1.6-proof",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorem 9.1.6 Proof",
-    "text": "Theorem 9.1.6 Proof\nPartial proof: assertions (1)–(3).\nBecause \\(\\phi\\) is a bijection, it has an inverse and \\(|G|=|H|\\). To check that its inverse preserves the operation, write \\(h_1=\\phi(g_1)\\) and \\(h_2=\\phi(g_2)\\). Then\n\\(\\phi^{-1}(h_1h_2)=\\phi^{-1}(\\phi(g_1g_2))=g_1g_2\n=\\phi^{-1}(h_1)\\phi^{-1}(h_2).\\)\nNow suppose \\(G\\) is abelian. Every \\(h_1,h_2\\in H\\) have the form \\(\\phi(g_1),\\phi(g_2)\\), so\n\\(h_1h_2=\\phi(g_1g_2)=\\phi(g_2g_1)=h_2h_1.\\)\nThus \\(H\\) is abelian.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorems",
-    "href": "classes/16/slides.html#theorems",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorems",
-    "text": "Theorems\nTheorem 9.1.7 Every infinite cyclic group is isomorphic to \\((\\mathbb Z,+)\\).\nTheorem 9.1.8 A cyclic group of order \\(n\\) is isomorphic to \\(\\mathbb Z_n\\).\nCorollary 9.1.9 If \\(p\\) is prime and \\(|G|=p\\), then \\(G\\cong\\mathbb Z_p\\).\nTheorem 9.1.10 Group isomorphism is an equivalence relation on the class of groups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#cayleys-theorem",
-    "href": "classes/16/slides.html#cayleys-theorem",
-    "title": "Slides: Isomorphisms",
-    "section": "Cayley’s Theorem",
-    "text": "Cayley’s Theorem\nTheorem 9.1.12 (Cayley). Every group is isomorphic to a group of permutations.\nIn particular, a group \\(G\\) acts by permutations on its own underlying set.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#cayleys-theorem-proof",
-    "href": "classes/16/slides.html#cayleys-theorem-proof",
-    "title": "Slides: Isomorphisms",
-    "section": "Cayley’s Theorem Proof",
-    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms",
-    "href": "classes/16/slides.html#activity-constructing-isomorphisms",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Constructing Isomorphisms",
-    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g)=h\\) and \\(\\phi(g)=h'\\) the \\(h=h'\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms-1",
-    "href": "classes/16/slides.html#activity-constructing-isomorphisms-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Constructing Isomorphisms",
-    "text": "Activity: Constructing Isomorphisms\nConstruct a bijective map between the following sets and verify that it is an isomorphism.\n\n\\(\\mathbb C^*\\) and \\[\nG=\\left\\{\n\\begin{pmatrix}\na & -b\\\\\nb & a\n\\end{pmatrix}\n:a,b\\in\\mathbb R,\\ a^2+b^2\\ne 0\n\\right\\}\n\\]\n\nof \\(GL_2(\\mathbb R)\\).\n\n\\(U(5)\\) and \\(U(10)\\)\n\\(U(8)\\) and \\(\\mathbb Z_2\\times\\mathbb Z_2\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms",
-    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: More Constructing Isomorphisms",
-    "text": "Activity: More Constructing Isomorphisms\n\n\\(S_3\\) and\n\n\\[\n\\left\\{\n\\begin{gathered}\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\\\[1em]\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\end{gathered}\n\\right\\}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
-    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: More Constructing Isomorphisms",
-    "text": "Activity: More Constructing Isomorphisms\n\n\\((\\mathbb R^2,+)\\) and the group\n\\(G=\\left\\{\\begin{pmatrix}1&a&b\\\\0&1&0\\\\0&0&1\\end{pmatrix}:a,b\\in\\mathbb R\\right\\}\\)\n\\((\\mathbb Z_3,+)\\) and the subgroup\n\n\\[H=\\left\\{\n   \\begin{pmatrix}\n   1&0&0\\\\0&1&0\\\\0&0&1\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&0&1\\\\1&0&0\\\\0&1&0\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&1&0\\\\0&0&1\\\\1&0&0\n   \\end{pmatrix}\n   \\right\\}\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#class-session-goals",
-    "href": "classes/17/slides.html#class-session-goals",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nProve Cayley’s Theorem\nDefine the external direct product of groups and verify that it forms a group.\nDetermine when a direct product of cyclic groups is cyclic.\nProve that an internal direct product is isomorphic to an external direct product.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#cayleys-theorem",
-    "href": "classes/17/slides.html#cayleys-theorem",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Cayley’s Theorem",
-    "text": "Cayley’s Theorem\nEvery group is isomorphic to a group of permutations.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#cayleys-theorem-proof",
-    "href": "classes/17/slides.html#cayleys-theorem-proof",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Cayley’s Theorem Proof",
-    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#external-direct-product-definition",
-    "href": "classes/17/slides.html#external-direct-product-definition",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "External Direct Product Definition",
-    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product \\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is \\(G_1\\times G_2\\times\\cdots\\times G_n\\) with multiplication defined componentwise.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#proposition-9.2.1",
-    "href": "classes/17/slides.html#proposition-9.2.1",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Proposition 9.2.1",
-    "text": "Proposition 9.2.1\nLet \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#proof-9.2.1",
-    "href": "classes/17/slides.html#proof-9.2.1",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Proof 9.2.1",
-    "text": "Proof 9.2.1\n\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#examples-of-direct-products",
-    "href": "classes/17/slides.html#examples-of-direct-products",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Examples of Direct Products",
-    "text": "Examples of Direct Products\nThe group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition: \\((a,b)+(c,d)=(a+c,b+d)\\). The identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nConsider \\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nWhat is the order of each element in \\(\\mathbb Z_2\\times\\mathbb Z_2\\)?\nIs \\(\\mathbb Z_2\\times\\mathbb Z_2\\) cyclic?\nCreate an argument that \\(\\mathbb Z_2\\times\\mathbb Z_2\\) cannot be isomorphic to \\(\\mathbb Z_4\\)\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#activity",
-    "href": "classes/17/slides.html#activity",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Activity",
-    "text": "Activity\nChoose a group and calculate the orders of the elements in the group.\n\n\\(\\mathbb Z_3\\times\\mathbb Z_3\\)\n\\(\\mathbb Z_5\\times\\mathbb Z_2\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_4\\)\n\nAre any of these groups cyclic?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.5",
-    "href": "classes/17/slides.html#theorem-9.2.5",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.5",
-    "text": "Theorem 9.2.5\nLet \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.5-proof-1",
-    "href": "classes/17/slides.html#theorem-9.2.5-proof-1",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.5 Proof 1",
-    "text": "Theorem 9.2.5 Proof 1\nSuppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.5-proof-2",
-    "href": "classes/17/slides.html#theorem-9.2.5-proof-2",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.5 Proof 2",
-    "text": "Theorem 9.2.5 Proof 2\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#corollary-9.2.6",
-    "href": "classes/17/slides.html#corollary-9.2.6",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Corollary 9.2.6",
-    "text": "Corollary 9.2.6\nLet \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.9",
-    "href": "classes/17/slides.html#theorem-9.2.9",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.9",
-    "text": "Theorem 9.2.9\nThe group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.9-proof-1",
-    "href": "classes/17/slides.html#theorem-9.2.9-proof-1",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.9 Proof 1",
-    "text": "Theorem 9.2.9 Proof 1\nSuppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.9-proof-2",
-    "href": "classes/17/slides.html#theorem-9.2.9-proof-2",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.9 Proof 2",
-    "text": "Theorem 9.2.9 Proof 2\nSuppose \\(\\gcd(m,n)=1\\). By Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#corollaries",
-    "href": "classes/17/slides.html#corollaries",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Corollaries",
-    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If \\(m=p_1^{e_1}\\cdots p_k^{e_k}\\), where the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#definition-of-internal-direct-product",
-    "href": "classes/17/slides.html#definition-of-internal-direct-product",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Definition of Internal Direct Product",
-    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#examples",
-    "href": "classes/17/slides.html#examples",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Examples",
-    "text": "Examples\nThe group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of \\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.15",
-    "href": "classes/17/slides.html#theorem-9.2.15",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.15",
-    "text": "Theorem 9.2.15\nLet \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.15-proof-1",
-    "href": "classes/17/slides.html#theorem-9.2.15-proof-1",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.15 Proof 1",
-    "text": "Theorem 9.2.15 Proof 1\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.15-proof-2",
-    "href": "classes/17/slides.html#theorem-9.2.15-proof-2",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.15 Proof 2",
-    "text": "Theorem 9.2.15 Proof 2\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nGroup Action: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#theorem-9.2.17",
-    "href": "classes/17/slides.html#theorem-9.2.17",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Theorem 9.2.17",
-    "text": "Theorem 9.2.17\nLet \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/17/slides.html#activity-direct-products",
-    "href": "classes/17/slides.html#activity-direct-products",
-    "title": "Slides: Cayley’s Theorem and Direct Products",
-    "section": "Activity: Direct Products",
-    "text": "Activity: Direct Products\n\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#class-session-goals",
-    "href": "classes/10/slides.html#class-session-goals",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDetermine whether a permutation is even or odd.\nExplore the alternating group \\(A_n\\).\nExplore the alternating group \\(D_n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#definition-of-a-group",
-    "href": "classes/10/slides.html#definition-of-a-group",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#definition-of-a-subgroup",
-    "href": "classes/10/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#transpositions",
-    "href": "classes/10/slides.html#transpositions",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Transpositions",
-    "text": "Transpositions\nA cycle of length \\(2\\) is called a transposition.\nFor example,\\((2\\,5)\\) is a transposition. Any cycle can be written as a product of transpositions:\n\\[\n(a_1\\,a_2\\,\\ldots\\,a_n)\n=\n(a_1\\,a_n)(a_1\\,a_{n-1})\\cdots(a_1\\,a_3)(a_1\\,a_2).\n\\]\nA permutation is even if it can be expressed as an even number of transpositions.\nA permutation is odd if it can be expressed as an odd number of transpositions.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#lemma-5.1.14",
-    "href": "classes/10/slides.html#lemma-5.1.14",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Lemma 5.1.14",
-    "text": "Lemma 5.1.14\nIf the identity is written as the product of \\(r\\) transpositions,\n\\[\n\\operatorname{id}=\\tau_1\\tau_2\\cdots\\tau_r,\n\\]\nthen \\(r\\) is an even number.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proof-of-lemma-5.1.14",
-    "href": "classes/10/slides.html#proof-of-lemma-5.1.14",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proof of Lemma 5.1.14",
-    "text": "Proof of Lemma 5.1.14\nWe use induction on \\(r\\) the number of transpositions. A transposition cannot be the identity, so \\(r&gt;1\\). If \\(r=2\\), we are done.\nFor \\(r&gt;2\\), consider the last two transpositions. Up to relabeling, we have\n\\[\n\\begin{aligned}\n(a\\,b)(a\\,b)&=\\operatorname{id},\\\\\n(b\\,c)(a\\,b)&=(a\\,c)(b\\,c),\\\\\n(c\\,d)(a\\,b)&=(a\\,b)(c\\,d),\\\\\n(a\\,c)(a\\,b)&=(a\\,b)(b\\,c).\n\\end{aligned}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.1.15",
-    "href": "classes/10/slides.html#theorem-5.1.15",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.1.15",
-    "text": "Theorem 5.1.15\nIf a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\n\nThis means that oddness and evenness of permutations is well-defined.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#alternating-group",
-    "href": "classes/10/slides.html#alternating-group",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Alternating Group",
-    "text": "Alternating Group\nThe set of all even permutations in \\(S_n\\) is denoted by \\(A_n\\).\nThe group \\(A_n\\) is called the alternating group on \\(n\\) letters.\n\\[\nA_n=\\{\\sigma\\in S_n:\\sigma\\text{ is even}\\}.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.1.16",
-    "href": "classes/10/slides.html#theorem-5.1.16",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.1.16",
-    "text": "Theorem 5.1.16\nThe set \\(A_n\\) is a subgroup of \\(S_n\\).\n\nWhy?\n\nThe product of two even permutations is even.\nThe identity is even.\nThe inverse of an even permutation is even.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proposition-5.1.17",
-    "href": "classes/10/slides.html#proposition-5.1.17",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proposition 5.1.17",
-    "text": "Proposition 5.1.17\nThe number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations. So \\(|A_n|=\\frac{n!}{2}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proposition-5.1.17-proof",
-    "href": "classes/10/slides.html#proposition-5.1.17-proof",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proposition 5.1.17 Proof",
-    "text": "Proposition 5.1.17 Proof\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define \\(\\lambda_\\sigma:A_n\\longrightarrow B_n\\)\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
-    "href": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Find the Alternating Group \\(A_4\\)",
-    "text": "Activity: Find the Alternating Group \\(A_4\\)\nFor your \\(S_4\\) tiles:\nLabel and sort the tiles into two piles:\n\neven permutations,\nodd permutations.\n\nThe even pile is \\(A_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
-    "href": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Dihedral Group as a Subgroup of \\(S_n\\)",
-    "text": "Dihedral Group as a Subgroup of \\(S_n\\)\nThe dihedral group \\(D_n\\) consists of the rigid motions of a regular \\(n\\)-gon.\nLabel the vertices\n\\[\n1,2,\\ldots,n.\n\\]\nEvery rigid motion permutes these vertices, so each symmetry gives an element of \\(S_n\\).\nThus we can view\n\\[\nD_n\\leq S_n.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-construct-d_5",
-    "href": "classes/10/slides.html#activity-construct-d_5",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Construct \\(D_5\\)",
-    "text": "Activity: Construct \\(D_5\\)\nUse the \\(S_5\\) permutation-drawing tiles.\nBegin with the two tiles representing\n\\[\nr=(1\\,2\\,3\\,4\\,5)\n\\]\nand\n\\[\ns=(2\\,5)(3\\,4).\n\\]\nUse multiplication to construct new tiles from these two. Record these products on the empty tiles. Try to find all possible products of these two elements. Label each tile as a reflection or a rotation of the pentagon.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
-    "href": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Conjugating Cycles by Reflections",
-    "text": "Activity: Conjugating Cycles by Reflections\nGiven two group elements \\(\\sigma\\) and \\(\\tau\\), the congugate of \\(\\sigma\\) by \\(\\tau\\) is \\(\\tau \\sigma \\tau^{-1}\\).\nGo back to you \\(D_5\\) tiles. Choose a non-idenity rotation \\(r\\) and a reflection \\(s\\). Calculate \\(srs\\). Do this for a few choices of \\(r\\) and a few choices of \\(s\\). Can you for an conjecture about what the \\(srs\\) is in general?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#another-construction-of-d_n",
-    "href": "classes/10/slides.html#another-construction-of-d_n",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Another Construction of \\(D_n\\)",
-    "text": "Another Construction of \\(D_n\\)\nInstead of starting with a geometric \\(n\\)-gon, we can describe \\(D_n\\) using two generators.\nLet \\(r\\) represent a rotation and \\(s\\) represent a reflection.\nThey satisfy:\n\n\\(r^n=e\\)\n\\(s^2=e\\)\n\\(srs=r^{-1}\\)\n\nThese are called relations.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#d_4-by-generators-and-relations",
-    "href": "classes/10/slides.html#d_4-by-generators-and-relations",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "\\(D_4\\) by Generators and Relations",
-    "text": "\\(D_4\\) by Generators and Relations\nWe write\n\\[\nD_n=\\langle r,s\\mid r^n=e,\\ s^2=e,\\ srs=r^{-1}\\rangle.\n\\]\nEvery element can be written in one of the forms\n\\[\nr^k\n\\qquad\\text{or}\\qquad\nr^ks,\n\\]\nwhere \\(0\\leq k&lt;n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-find-a-copy-of-d_4",
-    "href": "classes/10/slides.html#activity-find-a-copy-of-d_4",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Find a Copy of \\(D_4\\)",
-    "text": "Activity: Find a Copy of \\(D_4\\)\nReturn to your \\(S_4\\) tiles. Find a copy of \\(D_4\\) in your tiles. What is \\(D_4 \\cap A_4\\)?\n\nThis is called the Klein 4-group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.2.2",
-    "href": "classes/10/slides.html#theorem-5.2.2",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.2.2",
-    "text": "Theorem 5.2.2\nThe dihedral group, \\(D_n\\), is a subgroup of \\(S_n\\) of order \\(2n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.2.3",
-    "href": "classes/10/slides.html#theorem-5.2.3",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.2.3",
-    "text": "Theorem 5.2.3\nThe group \\(D_n\\), \\(n\\geq3\\), consists of all products of two elements \\(r\\) and \\(s\\), where \\(r\\) has order \\(n\\) and \\(s\\) has order \\(2\\), and \\(srs=r^{-1}\\).\n\n\\[\nD_n=\n\\{e,r,r^2,\\ldots,r^{n-1},\ns,rs,r^2s,\\ldots,r^{n-1}s\\}.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/19/slides.html#class-session-goals",
-    "href": "classes/19/slides.html#class-session-goals",
-    "title": "Slides: Direct Products",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine the external direct product of groups and verify that it forms a group.\nDetermine the order of an element in a direct product.\nDetermine when a direct product of cyclic groups is cyclic.\nDefine internal direct products and recognize examples.\nProve that an internal direct product is isomorphic to an external direct product."
-  },
-  {
-    "objectID": "classes/19/slides.html#external-direct-product-definition",
-    "href": "classes/19/slides.html#external-direct-product-definition",
-    "title": "Slides: Direct Products",
-    "section": "External Direct Product Definition",
-    "text": "External Direct Product Definition\nLet \\((G,\\cdot)\\) and \\((H,\\circ)\\) be groups.\nThe external direct product of \\(G\\) and \\(H\\) is the Cartesian product\n\\(G\\times H=\\{(g,h):g\\in G,\\ h\\in H\\}\\)\nwith the group operation defined componentwise by\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\\]\nMore generally, for groups \\(G_1,\\ldots,G_n\\), the direct product is\n\\(G_1\\times G_2\\times\\cdots\\times G_n\\)\nwith multiplication defined componentwise."
-  },
-  {
-    "objectID": "classes/19/slides.html#proposition-9.2.1",
-    "href": "classes/19/slides.html#proposition-9.2.1",
-    "title": "Slides: Direct Products",
-    "section": "Proposition 9.2.1",
-    "text": "Proposition 9.2.1\nProposition 9.2.1. Let \\(G\\) and \\(H\\) be groups. The set \\(G\\times H\\) is a group under the operation\n\\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\\]\nwhere \\(g_1,g_2\\in G\\) and \\(h_1,h_2\\in H\\).\nProof.\n\nClosure: Products are in \\(G\\times H\\) by closure in \\(G\\) and \\(H\\).\nAssociativity: Follows from associativity in \\(G\\) and \\(H\\).\nIdentity: The identity is \\((e_G,e_H)\\).\nInverses: The inverse of \\((g,h)\\) is \\((g^{-1},h^{-1})\\).\n\nTherefore, \\(G\\times H\\) is a group."
-  },
-  {
-    "objectID": "classes/19/slides.html#examples-of-direct-products",
-    "href": "classes/19/slides.html#examples-of-direct-products",
-    "title": "Slides: Direct Products",
-    "section": "Examples of Direct Products",
-    "text": "Examples of Direct Products\nExample 9.2.2. The group \\(\\mathbb R\\times\\mathbb R=\\mathbb R^2\\) under addition:\n\\((a,b)+(c,d)=(a+c,b+d)\\).\nThe identity is \\((0,0)\\) and the inverse of \\((a,b)\\) is \\((-a,-b)\\).\nExample 9.2.3. Consider\n\\(\\mathbb Z_2\\times\\mathbb Z_2=\\{(0,0),(0,1),(1,0),(1,1)\\}\\).\n\nEvery nonidentity element has order \\(2\\).\n\\(\\mathbb Z_4\\) has an element of order \\(4\\).\n\nThus, \\(\\mathbb Z_2\\times\\mathbb Z_2\\not\\cong\\mathbb Z_4\\).\nQuestion: Does having the same number of elements guarantee that two groups are isomorphic?"
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.5",
-    "href": "classes/19/slides.html#theorem-9.2.5",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.5",
-    "text": "Theorem 9.2.5\nTheorem 9.2.5. Let \\((g,h)\\in G\\times H\\). If \\(g\\) and \\(h\\) have finite orders \\(r\\) and \\(s\\), respectively, then the order of \\((g,h)\\) in \\(G\\times H\\) is the least common multiple of \\(r\\) and \\(s\\).\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\]\nExample 9.2.7. Find the order of \\((8,56)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{60}\\).\n\n\\(|8|=12/\\gcd(8,12)=3\\).\n\\(|56|=60/\\gcd(56,60)=15\\).\n\nTherefore,\n\\(|(8,56)|=\\operatorname{lcm}(3,15)=15\\)."
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.5-proof",
-    "href": "classes/19/slides.html#theorem-9.2.5-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.5 Proof",
-    "text": "Theorem 9.2.5 Proof\nProof. Suppose that \\(m=\\operatorname{lcm}(r,s)\\) and let \\(n=|(g,h)|\\).\nSince \\(r\\mid m\\) and \\(s\\mid m\\),\n\\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\\]\nThus, \\(n\\mid m\\), so \\(n\\le m\\).\nOn the other hand,\n\\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\\]\nHence, \\(r\\mid n\\) and \\(s\\mid n\\).\nTherefore, \\(n\\) is a common multiple of \\(r\\) and \\(s\\), so \\(m\\le n\\).\nConsequently, \\(m=n\\) and\n\\[|(g,h)|=\\operatorname{lcm}(r,s).\\qquad\\blacksquare\\]"
-  },
-  {
-    "objectID": "classes/19/slides.html#corollary-9.2.6",
-    "href": "classes/19/slides.html#corollary-9.2.6",
-    "title": "Slides: Direct Products",
-    "section": "Corollary 9.2.6",
-    "text": "Corollary 9.2.6\nCorollary 9.2.6. Let \\((g_1,\\ldots,g_n)\\in\\prod_{i=1}^n G_i\\). If \\(g_i\\) has finite order \\(r_i\\) in \\(G_i\\), then\n\\[|(g_1,\\ldots,g_n)|=\\operatorname{lcm}(r_1,\\ldots,r_n).\\]\nExample. Find the order of \\((2,3,4)\\) in\n\\(\\mathbb Z_6\\times\\mathbb Z_8\\times\\mathbb Z_{10}\\).\nWe have\n\n\\(|2|=3\\) in \\(\\mathbb Z_6\\).\n\\(|3|=8\\) in \\(\\mathbb Z_8\\).\n\\(|4|=5\\) in \\(\\mathbb Z_{10}\\).\n\nTherefore,\n\\(|(2,3,4)|=\\operatorname{lcm}(3,8,5)=120\\)."
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.9",
-    "href": "classes/19/slides.html#theorem-9.2.9",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.9",
-    "text": "Theorem 9.2.9\nTheorem 9.2.9. The group \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is isomorphic to \\(\\mathbb Z_{mn}\\) if and only if \\(\\gcd(m,n)=1\\).\n\\[\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\n\\iff \\gcd(m,n)=1.\\]\nExamples.\n\n\\(\\mathbb Z_2\\times\\mathbb Z_3\\cong\\mathbb Z_6\\).\n\\(\\mathbb Z_3\\times\\mathbb Z_4\\cong\\mathbb Z_{12}\\).\n\\(\\mathbb Z_2\\times\\mathbb Z_4\\not\\cong\\mathbb Z_8\\).\n\nQuestion: Why does the greatest common divisor determine whether the direct product is cyclic?"
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.9-proof",
-    "href": "classes/19/slides.html#theorem-9.2.9-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.9 Proof",
-    "text": "Theorem 9.2.9 Proof\nProof.\n(\\(\\Rightarrow\\)) Suppose \\(\\gcd(m,n)=d&gt;1\\).\nFor every \\((a,b)\\in\\mathbb Z_m\\times\\mathbb Z_n\\),\n\\[\\frac{mn}{d}(a,b)=(0,0),\\]\nsince \\(mn/d\\) is divisible by both \\(m\\) and \\(n\\).\nThus, every element has order at most \\(mn/d&lt;mn\\).\nTherefore, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is not cyclic and cannot be isomorphic to \\(\\mathbb Z_{mn}\\).\n(\\(\\Leftarrow\\)) Suppose \\(\\gcd(m,n)=1\\).\nBy Theorem 9.2.5,\n\\[|(1,1)|=\\operatorname{lcm}(m,n)=mn.\\]\nHence, \\(\\mathbb Z_m\\times\\mathbb Z_n\\) is cyclic of order \\(mn\\), so\n\\(\\mathbb Z_m\\times\\mathbb Z_n\\cong\\mathbb Z_{mn}\\). \\(\\blacksquare\\)"
-  },
-  {
-    "objectID": "classes/19/slides.html#corollaries",
-    "href": "classes/19/slides.html#corollaries",
-    "title": "Slides: Direct Products",
-    "section": "Corollaries",
-    "text": "Corollaries\nCorollary 9.2.10. Let \\(n_1,\\ldots,n_k\\) be positive integers. Then\n\\[\\prod_{i=1}^k\\mathbb Z_{n_i}\\cong\\mathbb Z_{n_1\\cdots n_k}\\]\nif and only if \\(\\gcd(n_i,n_j)=1\\) for \\(i\\ne j\\).\nCorollary 9.2.11. If\n\\(m=p_1^{e_1}\\cdots p_k^{e_k}\\),\nwhere the \\(p_i\\) are distinct primes, then\n\\[\\mathbb Z_m\\cong\\mathbb Z_{p_1^{e_1}}\\times\\cdots\\times\\mathbb Z_{p_k^{e_k}}.\\]\nExample. Since \\(60=4\\cdot3\\cdot5\\),\n\\(\\mathbb Z_{60}\\cong\\mathbb Z_4\\times\\mathbb Z_3\\times\\mathbb Z_5\\)."
-  },
-  {
-    "objectID": "classes/19/slides.html#definition-of-internal-direct-product",
-    "href": "classes/19/slides.html#definition-of-internal-direct-product",
-    "title": "Slides: Direct Products",
-    "section": "Definition of Internal Direct Product",
-    "text": "Definition of Internal Direct Product\nLet \\(G\\) be a group with subgroups \\(H\\) and \\(K\\).\nWe say that \\(G\\) is the internal direct product of \\(H\\) and \\(K\\) if:\n\n\\(G=HK=\\{hk:h\\in H,\\ k\\in K\\}\\).\n\\(H\\cap K=\\{e\\}\\).\n\\(hk=kh\\) for all \\(h\\in H\\) and \\(k\\in K\\).\n\nInterpretation:\n\nEvery element of \\(G\\) is a product of elements from \\(H\\) and \\(K\\).\nThe subgroups intersect only in the identity.\nElements of the two subgroups commute."
-  },
-  {
-    "objectID": "classes/19/slides.html#examples",
-    "href": "classes/19/slides.html#examples",
-    "title": "Slides: Direct Products",
-    "section": "Examples",
-    "text": "Examples\nExample 9.2.12. The group \\(U(8)=\\{1,3,5,7\\}\\) is the internal direct product of\n\\(H=\\{1,3\\}\\) and \\(K=\\{1,5\\}\\).\nIndeed,\n\n\\(HK=\\{1,3,5,7\\}=U(8)\\).\n\\(H\\cap K=\\{1\\}\\).\n\\(U(8)\\) is abelian.\n\nExample 9.2.14. The group \\(S_3\\) cannot be written as an internal direct product of two proper subgroups.\nA subgroup of order \\(3\\) and a subgroup of order \\(2\\) do not commute elementwise.\nDiscussion: Why is the condition \\(hk=kh\\) necessary?"
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.15",
-    "href": "classes/19/slides.html#theorem-9.2.15",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.15",
-    "text": "Theorem 9.2.15\nTheorem 9.2.15. Let \\(G\\) be the internal direct product of subgroups \\(H\\) and \\(K\\). Then \\(G\\) is isomorphic to \\(H\\times K\\).\n\\[G\\cong H\\times K.\\]\nIdea of the proof:\nSince \\(G=HK\\), every element \\(g\\in G\\) can be written as\n\\(g=hk\\), where \\(h\\in H\\) and \\(k\\in K\\).\nDefine\n\\[\\phi:G\\to H\\times K,\\qquad \\phi(hk)=(h,k).\\]\nWe need to show that \\(\\phi\\) is well-defined, bijective, and preserves the group operation."
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.15-proof",
-    "href": "classes/19/slides.html#theorem-9.2.15-proof",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.15 Proof",
-    "text": "Theorem 9.2.15 Proof\nProof. Since \\(G=HK\\), write \\(g=hk\\) and define \\(\\phi(g)=(h,k)\\).\nWell-defined: Suppose \\(hk=h'k'\\). Then\n\\(h^{-1}h'=k(k')^{-1}\\in H\\cap K=\\{e\\}\\).\nThus \\(h=h'\\) and \\(k=k'\\).\nHomomorphism: For \\(g_1=h_1k_1\\) and \\(g_2=h_2k_2\\),\n\\(\\phi(g_1g_2)=\\phi(h_1k_1h_2k_2)\\)\n\\(=\\phi(h_1h_2k_1k_2)\\)\n\\(=(h_1h_2,k_1k_2)=\\phi(g_1)\\phi(g_2)\\).\nBijective: Uniqueness of the factorization gives injectivity. Every \\((h,k)\\in H\\times K\\) equals \\(\\phi(hk)\\), giving surjectivity.\nTherefore, \\(G\\cong H\\times K\\). \\(\\blacksquare\\)"
-  },
-  {
-    "objectID": "classes/19/slides.html#theorem-9.2.17",
-    "href": "classes/19/slides.html#theorem-9.2.17",
-    "title": "Slides: Direct Products",
-    "section": "Theorem 9.2.17",
-    "text": "Theorem 9.2.17\nTheorem 9.2.17. Let \\(G\\) be the internal direct product of subgroups \\(H_i\\), where \\(i=1,2,\\ldots,n\\). Then \\(G\\) is isomorphic to\n\\[\\prod_{i=1}^n H_i.\\]\nThe internal direct product requires:\n\n\\(G=H_1H_2\\cdots H_n\\).\n\\(H_i\\cap\\langle\\bigcup_{j\\ne i}H_j\\rangle=\\{e\\}\\).\n\\(h_ih_j=h_jh_i\\) for all \\(h_i\\in H_i\\) and \\(h_j\\in H_j\\).\n\nThe isomorphism is given by\n\\(\\phi(h_1h_2\\cdots h_n)=(h_1,h_2,\\ldots,h_n)\\).\nExercise: Extend the proof of Theorem 9.2.15 to prove this theorem."
-  },
-  {
-    "objectID": "classes/19/slides.html#activity-direct-products",
-    "href": "classes/19/slides.html#activity-direct-products",
-    "title": "Slides: Direct Products",
+    "title": "Slides: Factor Groups and Simple Groups",
     "section": "Activity: Direct Products",
     "text": "Activity: Direct Products\n\nFind the order of \\((3,4)\\) in \\(\\mathbb Z_{12}\\times\\mathbb Z_{15}\\).\nDetermine whether each group is cyclic:\n\n\\(\\mathbb Z_4\\times\\mathbb Z_5\\)\n\\(\\mathbb Z_4\\times\\mathbb Z_6\\)\n\\(\\mathbb Z_3\\times\\mathbb Z_5\\times\\mathbb Z_7\\)\n\nFind a direct product decomposition of \\(\\mathbb Z_{90}\\) using cyclic groups of prime-power order.\nShow that \\(\\mathbb Z_{12}\\) is the internal direct product of\n\\(H=\\{0,4,8\\}\\) and \\(K=\\{0,3,6,9\\}\\).\nConstruct an explicit isomorphism between \\(\\mathbb Z_{12}\\) and \\(H\\times K\\)."
   },

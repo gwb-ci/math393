@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Direct Products</title>
+  <title>Math 393 - Abstract Algebra – Slides: Group Products and Factor Groups</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Direct Products</h1>
+  <h1 class="title">Slides: Group Products and Factor Groups</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -138,71 +138,33 @@
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
 <ul>
-<li>Define the external direct product of groups and verify that it forms a group.</li>
-<li>Determine the order of an element in a direct product.</li>
 <li>Determine when a direct product of cyclic groups is cyclic.</li>
-<li>Define internal direct products and recognize examples.</li>
 <li>Prove that an internal direct product is isomorphic to an external direct product.</li>
+<li>Explain why normality is needed to define multiplication on cosets.</li>
+<li>Define a normal subgroup and use equivalent conditions to check normality.</li>
+<li>Explain why every subgroup of an abelian group is normal.</li>
+<li>Define a factor group and verify that coset multiplication is well-defined.</li>
+<li>Compute with factor groups arising from <span class="math inline">\(S_3\)</span>, <span class="math inline">\(\mathbb{Z}\)</span>, and <span class="math inline">\(D_n\)</span>.</li>
 </ul>
 </section>
-<section id="external-direct-product-definition" class="slide level2">
-<h2>External Direct Product Definition</h2>
-<p>Let <span class="math inline">\((G,\cdot)\)</span> and <span class="math inline">\((H,\circ)\)</span> be groups.</p>
-<p>The <strong>external direct product</strong> of <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span> is the Cartesian product</p>
-<p><span class="math inline">\(G\times H=\{(g,h):g\in G,\ h\in H\}\)</span></p>
-<p>with the group operation defined componentwise by</p>
-<p><span class="math display">\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).\]</span></p>
-<p>More generally, for groups <span class="math inline">\(G_1,\ldots,G_n\)</span>, the direct product is</p>
-<p><span class="math inline">\(G_1\times G_2\times\cdots\times G_n\)</span></p>
-<p>with multiplication defined componentwise.</p>
+<section class="slide level2">
+
 </section>
-<section id="proposition-9.2.1" class="slide level2">
-<h2>Proposition 9.2.1</h2>
-<p><strong>Proposition 9.2.1.</strong> Let <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span> be groups. The set <span class="math inline">\(G\times H\)</span> is a group under the operation</p>
-<p><span class="math display">\[(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),\]</span></p>
-<p>where <span class="math inline">\(g_1,g_2\in G\)</span> and <span class="math inline">\(h_1,h_2\in H\)</span>.</p>
-<p><strong>Proof.</strong></p>
-<ul>
-<li><strong>Closure:</strong> Products are in <span class="math inline">\(G\times H\)</span> by closure in <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span>.</li>
-<li><strong>Associativity:</strong> Follows from associativity in <span class="math inline">\(G\)</span> and <span class="math inline">\(H\)</span>.</li>
-<li><strong>Identity:</strong> The identity is <span class="math inline">\((e_G,e_H)\)</span>.</li>
-<li><strong>Inverses:</strong> The inverse of <span class="math inline">\((g,h)\)</span> is <span class="math inline">\((g^{-1},h^{-1})\)</span>.</li>
-</ul>
-<p>Therefore, <span class="math inline">\(G\times H\)</span> is a group.</p>
-</section>
-<section id="examples-of-direct-products" class="slide level2">
-<h2>Examples of Direct Products</h2>
-<p><strong>Example 9.2.2.</strong> The group <span class="math inline">\(\mathbb R\times\mathbb R=\mathbb R^2\)</span> under addition:</p>
-<p><span class="math inline">\((a,b)+(c,d)=(a+c,b+d)\)</span>.</p>
-<p>The identity is <span class="math inline">\((0,0)\)</span> and the inverse of <span class="math inline">\((a,b)\)</span> is <span class="math inline">\((-a,-b)\)</span>.</p>
-<p><strong>Example 9.2.3.</strong> Consider</p>
-<p><span class="math inline">\(\mathbb Z_2\times\mathbb Z_2=\{(0,0),(0,1),(1,0),(1,1)\}\)</span>.</p>
-<ul>
-<li>Every nonidentity element has order <span class="math inline">\(2\)</span>.</li>
-<li><span class="math inline">\(\mathbb Z_4\)</span> has an element of order <span class="math inline">\(4\)</span>.</li>
-</ul>
-<p>Thus, <span class="math inline">\(\mathbb Z_2\times\mathbb Z_2\not\cong\mathbb Z_4\)</span>.</p>
-<p><strong>Question:</strong> Does having the same number of elements guarantee that two groups are isomorphic?</p>
-</section>
-<section id="theorem-9.2.5" class="slide level2">
-<h2>Theorem 9.2.5</h2>
-<p><strong>Theorem 9.2.5.</strong> Let <span class="math inline">\((g,h)\in G\times H\)</span>. If <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span> have finite orders <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, respectively, then the order of <span class="math inline">\((g,h)\)</span> in <span class="math inline">\(G\times H\)</span> is the least common multiple of <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>.</p>
+<section>
+<section id="theorem-9.2.5" class="title-slide slide level1 center">
+<h1>Theorem 9.2.5</h1>
+<p>Let <span class="math inline">\((g,h)\in G\times H\)</span>. If <span class="math inline">\(g\)</span> and <span class="math inline">\(h\)</span> have finite orders <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, respectively, then the order of <span class="math inline">\((g,h)\)</span> in <span class="math inline">\(G\times H\)</span> is the least common multiple of <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>.</p>
 <p><span class="math display">\[|(g,h)|=\operatorname{lcm}(r,s).\]</span></p>
-<p><strong>Example 9.2.7.</strong> Find the order of <span class="math inline">\((8,56)\)</span> in <span class="math inline">\(\mathbb Z_{12}\times\mathbb Z_{60}\)</span>.</p>
-<ul>
-<li><span class="math inline">\(|8|=12/\gcd(8,12)=3\)</span>.</li>
-<li><span class="math inline">\(|56|=60/\gcd(56,60)=15\)</span>.</li>
-</ul>
-<p>Therefore,</p>
-<p><span class="math inline">\(|(8,56)|=\operatorname{lcm}(3,15)=15\)</span>.</p>
 </section>
-<section id="theorem-9.2.5-proof" class="slide level2">
-<h2>Theorem 9.2.5 Proof</h2>
-<p><strong>Proof.</strong> Suppose that <span class="math inline">\(m=\operatorname{lcm}(r,s)\)</span> and let <span class="math inline">\(n=|(g,h)|\)</span>.</p>
+<section id="theorem-9.2.5-proof-1" class="slide level2">
+<h2>Theorem 9.2.5 Proof 1</h2>
+<p>Suppose that <span class="math inline">\(m=\operatorname{lcm}(r,s)\)</span> and let <span class="math inline">\(n=|(g,h)|\)</span>.</p>
 <p>Since <span class="math inline">\(r\mid m\)</span> and <span class="math inline">\(s\mid m\)</span>,</p>
 <p><span class="math display">\[(g,h)^m=(g^m,h^m)=(e_G,e_H).\]</span></p>
 <p>Thus, <span class="math inline">\(n\mid m\)</span>, so <span class="math inline">\(n\le m\)</span>.</p>
-<p>On the other hand,</p>
+</section>
+<section id="theorem-9.2.5-proof-2" class="slide level2">
+<h2>Theorem 9.2.5 Proof 2</h2>
 <p><span class="math display">\[(g,h)^n=(g^n,h^n)=(e_G,e_H).\]</span></p>
 <p>Hence, <span class="math inline">\(r\mid n\)</span> and <span class="math inline">\(s\mid n\)</span>.</p>
 <p>Therefore, <span class="math inline">\(n\)</span> is a common multiple of <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span>, so <span class="math inline">\(m\le n\)</span>.</p>
@@ -211,43 +173,27 @@
 </section>
 <section id="corollary-9.2.6" class="slide level2">
 <h2>Corollary 9.2.6</h2>
-<p><strong>Corollary 9.2.6.</strong> Let <span class="math inline">\((g_1,\ldots,g_n)\in\prod_{i=1}^n G_i\)</span>. If <span class="math inline">\(g_i\)</span> has finite order <span class="math inline">\(r_i\)</span> in <span class="math inline">\(G_i\)</span>, then</p>
+<p>Let <span class="math inline">\((g_1,\ldots,g_n)\in\prod_{i=1}^n G_i\)</span>. If <span class="math inline">\(g_i\)</span> has finite order <span class="math inline">\(r_i\)</span> in <span class="math inline">\(G_i\)</span>, then</p>
 <p><span class="math display">\[|(g_1,\ldots,g_n)|=\operatorname{lcm}(r_1,\ldots,r_n).\]</span></p>
-<p><strong>Example.</strong> Find the order of <span class="math inline">\((2,3,4)\)</span> in</p>
-<p><span class="math inline">\(\mathbb Z_6\times\mathbb Z_8\times\mathbb Z_{10}\)</span>.</p>
-<p>We have</p>
-<ul>
-<li><span class="math inline">\(|2|=3\)</span> in <span class="math inline">\(\mathbb Z_6\)</span>.</li>
-<li><span class="math inline">\(|3|=8\)</span> in <span class="math inline">\(\mathbb Z_8\)</span>.</li>
-<li><span class="math inline">\(|4|=5\)</span> in <span class="math inline">\(\mathbb Z_{10}\)</span>.</li>
-</ul>
-<p>Therefore,</p>
-<p><span class="math inline">\(|(2,3,4)|=\operatorname{lcm}(3,8,5)=120\)</span>.</p>
 </section>
 <section id="theorem-9.2.9" class="slide level2">
 <h2>Theorem 9.2.9</h2>
-<p><strong>Theorem 9.2.9.</strong> The group <span class="math inline">\(\mathbb Z_m\times\mathbb Z_n\)</span> is isomorphic to <span class="math inline">\(\mathbb Z_{mn}\)</span> if and only if <span class="math inline">\(\gcd(m,n)=1\)</span>.</p>
+<p>The group <span class="math inline">\(\mathbb Z_m\times\mathbb Z_n\)</span> is isomorphic to <span class="math inline">\(\mathbb Z_{mn}\)</span> if and only if <span class="math inline">\(\gcd(m,n)=1\)</span>.</p>
 <p><span class="math display">\[\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}
 \iff \gcd(m,n)=1.\]</span></p>
-<p><strong>Examples.</strong></p>
-<ul>
-<li><span class="math inline">\(\mathbb Z_2\times\mathbb Z_3\cong\mathbb Z_6\)</span>.</li>
-<li><span class="math inline">\(\mathbb Z_3\times\mathbb Z_4\cong\mathbb Z_{12}\)</span>.</li>
-<li><span class="math inline">\(\mathbb Z_2\times\mathbb Z_4\not\cong\mathbb Z_8\)</span>.</li>
-</ul>
-<p><strong>Question:</strong> Why does the greatest common divisor determine whether the direct product is cyclic?</p>
 </section>
-<section id="theorem-9.2.9-proof" class="slide level2">
-<h2>Theorem 9.2.9 Proof</h2>
-<p><strong>Proof.</strong></p>
-<p>(<span class="math inline">\(\Rightarrow\)</span>) Suppose <span class="math inline">\(\gcd(m,n)=d&gt;1\)</span>.</p>
+<section id="theorem-9.2.9-proof-1" class="slide level2">
+<h2>Theorem 9.2.9 Proof 1</h2>
+<p>Suppose <span class="math inline">\(\gcd(m,n)=d&gt;1\)</span>.</p>
 <p>For every <span class="math inline">\((a,b)\in\mathbb Z_m\times\mathbb Z_n\)</span>,</p>
 <p><span class="math display">\[\frac{mn}{d}(a,b)=(0,0),\]</span></p>
 <p>since <span class="math inline">\(mn/d\)</span> is divisible by both <span class="math inline">\(m\)</span> and <span class="math inline">\(n\)</span>.</p>
 <p>Thus, every element has order at most <span class="math inline">\(mn/d&lt;mn\)</span>.</p>
 <p>Therefore, <span class="math inline">\(\mathbb Z_m\times\mathbb Z_n\)</span> is not cyclic and cannot be isomorphic to <span class="math inline">\(\mathbb Z_{mn}\)</span>.</p>
-<p>(<span class="math inline">\(\Leftarrow\)</span>) Suppose <span class="math inline">\(\gcd(m,n)=1\)</span>.</p>
-<p>By Theorem 9.2.5,</p>
+</section>
+<section id="theorem-9.2.9-proof-2" class="slide level2">
+<h2>Theorem 9.2.9 Proof 2</h2>
+<p>Suppose <span class="math inline">\(\gcd(m,n)=1\)</span>. By Theorem 9.2.5,</p>
 <p><span class="math display">\[|(1,1)|=\operatorname{lcm}(m,n)=mn.\]</span></p>
 <p>Hence, <span class="math inline">\(\mathbb Z_m\times\mathbb Z_n\)</span> is cyclic of order <span class="math inline">\(mn\)</span>, so</p>
 <p><span class="math inline">\(\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}\)</span>. <span class="math inline">\(\blacksquare\)</span></p>
@@ -257,12 +203,8 @@
 <p><strong>Corollary 9.2.10.</strong> Let <span class="math inline">\(n_1,\ldots,n_k\)</span> be positive integers. Then</p>
 <p><span class="math display">\[\prod_{i=1}^k\mathbb Z_{n_i}\cong\mathbb Z_{n_1\cdots n_k}\]</span></p>
 <p>if and only if <span class="math inline">\(\gcd(n_i,n_j)=1\)</span> for <span class="math inline">\(i\ne j\)</span>.</p>
-<p><strong>Corollary 9.2.11.</strong> If</p>
-<p><span class="math inline">\(m=p_1^{e_1}\cdots p_k^{e_k}\)</span>,</p>
-<p>where the <span class="math inline">\(p_i\)</span> are distinct primes, then</p>
+<p><strong>Corollary 9.2.11.</strong> If <span class="math inline">\(m=p_1^{e_1}\cdots p_k^{e_k}\)</span>, where the <span class="math inline">\(p_i\)</span> are distinct primes, then</p>
 <p><span class="math display">\[\mathbb Z_m\cong\mathbb Z_{p_1^{e_1}}\times\cdots\times\mathbb Z_{p_k^{e_k}}.\]</span></p>
-<p><strong>Example.</strong> Since <span class="math inline">\(60=4\cdot3\cdot5\)</span>,</p>
-<p><span class="math inline">\(\mathbb Z_{60}\cong\mathbb Z_4\times\mathbb Z_3\times\mathbb Z_5\)</span>.</p>
 </section>
 <section id="definition-of-internal-direct-product" class="slide level2">
 <h2>Definition of Internal Direct Product</h2>
@@ -273,45 +215,30 @@
 <li><p><span class="math inline">\(H\cap K=\{e\}\)</span>.</p></li>
 <li><p><span class="math inline">\(hk=kh\)</span> for all <span class="math inline">\(h\in H\)</span> and <span class="math inline">\(k\in K\)</span>.</p></li>
 </ol>
-<p><strong>Interpretation:</strong></p>
-<ul>
-<li>Every element of <span class="math inline">\(G\)</span> is a product of elements from <span class="math inline">\(H\)</span> and <span class="math inline">\(K\)</span>.</li>
-<li>The subgroups intersect only in the identity.</li>
-<li>Elements of the two subgroups commute.</li>
-</ul>
 </section>
 <section id="examples" class="slide level2">
 <h2>Examples</h2>
-<p><strong>Example 9.2.12.</strong> The group <span class="math inline">\(U(8)=\{1,3,5,7\}\)</span> is the internal direct product of</p>
-<p><span class="math inline">\(H=\{1,3\}\)</span> and <span class="math inline">\(K=\{1,5\}\)</span>.</p>
-<p>Indeed,</p>
-<ul>
-<li><span class="math inline">\(HK=\{1,3,5,7\}=U(8)\)</span>.</li>
-<li><span class="math inline">\(H\cap K=\{1\}\)</span>.</li>
-<li><span class="math inline">\(U(8)\)</span> is abelian.</li>
-</ul>
-<p><strong>Example 9.2.14.</strong> The group <span class="math inline">\(S_3\)</span> cannot be written as an internal direct product of two proper subgroups.</p>
-<p>A subgroup of order <span class="math inline">\(3\)</span> and a subgroup of order <span class="math inline">\(2\)</span> do not commute elementwise.</p>
-<p><strong>Discussion:</strong> Why is the condition <span class="math inline">\(hk=kh\)</span> necessary?</p>
+<p>The group <span class="math inline">\(U(8)=\{1,3,5,7\}\)</span> is the internal direct product of <span class="math inline">\(H=\{1,3\}\)</span> and <span class="math inline">\(K=\{1,5\}\)</span>.</p>
 </section>
 <section id="theorem-9.2.15" class="slide level2">
 <h2>Theorem 9.2.15</h2>
-<p><strong>Theorem 9.2.15.</strong> Let <span class="math inline">\(G\)</span> be the internal direct product of subgroups <span class="math inline">\(H\)</span> and <span class="math inline">\(K\)</span>. Then <span class="math inline">\(G\)</span> is isomorphic to <span class="math inline">\(H\times K\)</span>.</p>
+<p>Let <span class="math inline">\(G\)</span> be the internal direct product of subgroups <span class="math inline">\(H\)</span> and <span class="math inline">\(K\)</span>. Then <span class="math inline">\(G\)</span> is isomorphic to <span class="math inline">\(H\times K\)</span>.</p>
 <p><span class="math display">\[G\cong H\times K.\]</span></p>
-<p><strong>Idea of the proof:</strong></p>
+</section>
+<section id="theorem-9.2.15-proof-1" class="slide level2">
+<h2>Theorem 9.2.15 Proof 1</h2>
 <p>Since <span class="math inline">\(G=HK\)</span>, every element <span class="math inline">\(g\in G\)</span> can be written as</p>
 <p><span class="math inline">\(g=hk\)</span>, where <span class="math inline">\(h\in H\)</span> and <span class="math inline">\(k\in K\)</span>.</p>
 <p>Define</p>
 <p><span class="math display">\[\phi:G\to H\times K,\qquad \phi(hk)=(h,k).\]</span></p>
 <p>We need to show that <span class="math inline">\(\phi\)</span> is well-defined, bijective, and preserves the group operation.</p>
 </section>
-<section id="theorem-9.2.15-proof" class="slide level2">
-<h2>Theorem 9.2.15 Proof</h2>
-<p><strong>Proof.</strong> Since <span class="math inline">\(G=HK\)</span>, write <span class="math inline">\(g=hk\)</span> and define <span class="math inline">\(\phi(g)=(h,k)\)</span>.</p>
+<section id="theorem-9.2.15-proof-2" class="slide level2">
+<h2>Theorem 9.2.15 Proof 2</h2>
 <p><strong>Well-defined:</strong> Suppose <span class="math inline">\(hk=h'k'\)</span>. Then</p>
 <p><span class="math inline">\(h^{-1}h'=k(k')^{-1}\in H\cap K=\{e\}\)</span>.</p>
 <p>Thus <span class="math inline">\(h=h'\)</span> and <span class="math inline">\(k=k'\)</span>.</p>
-<p><strong>Homomorphism:</strong> For <span class="math inline">\(g_1=h_1k_1\)</span> and <span class="math inline">\(g_2=h_2k_2\)</span>,</p>
+<p><strong>Group Action:</strong> For <span class="math inline">\(g_1=h_1k_1\)</span> and <span class="math inline">\(g_2=h_2k_2\)</span>,</p>
 <p><span class="math inline">\(\phi(g_1g_2)=\phi(h_1k_1h_2k_2)\)</span></p>
 <p><span class="math inline">\(=\phi(h_1h_2k_1k_2)\)</span></p>
 <p><span class="math inline">\(=(h_1h_2,k_1k_2)=\phi(g_1)\phi(g_2)\)</span>.</p>
@@ -320,36 +247,169 @@
 </section>
 <section id="theorem-9.2.17" class="slide level2">
 <h2>Theorem 9.2.17</h2>
-<p><strong>Theorem 9.2.17.</strong> Let <span class="math inline">\(G\)</span> be the internal direct product of subgroups <span class="math inline">\(H_i\)</span>, where <span class="math inline">\(i=1,2,\ldots,n\)</span>. Then <span class="math inline">\(G\)</span> is isomorphic to</p>
+<p>Let <span class="math inline">\(G\)</span> be the internal direct product of subgroups <span class="math inline">\(H_i\)</span>, where <span class="math inline">\(i=1,2,\ldots,n\)</span>. Then <span class="math inline">\(G\)</span> is isomorphic to</p>
 <p><span class="math display">\[\prod_{i=1}^n H_i.\]</span></p>
-<p>The internal direct product requires:</p>
-<ol type="1">
-<li><p><span class="math inline">\(G=H_1H_2\cdots H_n\)</span>.</p></li>
-<li><p><span class="math inline">\(H_i\cap\langle\bigcup_{j\ne i}H_j\rangle=\{e\}\)</span>.</p></li>
-<li><p><span class="math inline">\(h_ih_j=h_jh_i\)</span> for all <span class="math inline">\(h_i\in H_i\)</span> and <span class="math inline">\(h_j\in H_j\)</span>.</p></li>
-</ol>
-<p>The isomorphism is given by</p>
-<p><span class="math inline">\(\phi(h_1h_2\cdots h_n)=(h_1,h_2,\ldots,h_n)\)</span>.</p>
-<p><strong>Exercise:</strong> Extend the proof of Theorem 9.2.15 to prove this theorem.</p>
 </section>
-<section id="activity-direct-products" class="slide level2">
-<h2>Activity: Direct Products</h2>
+<section id="motivation-for-normal-subgroups" class="slide level2">
+<h2>Motivation for Normal Subgroups</h2>
+<p>What do we need to make multiplication work on the set of cosets?</p>
+<p>We would like to define <span class="math inline">\((aH)(bH)=abH\)</span>.</p>
+<p>The product must be <strong>well-defined</strong>: changing representatives must not change the resulting coset.</p>
+<p>If <span class="math inline">\(aH=a'H\)</span> and <span class="math inline">\(bH=b'H\)</span>, we need <span class="math inline">\(abH=a'b'H\)</span>.</p>
+<p><strong>Key condition:</strong> <span class="math inline">\(gH=Hg\)</span> for every <span class="math inline">\(g\in G\)</span>.</p>
+</section>
+<section id="definition-of-normal-subgroup" class="slide level2">
+<h2>Definition of Normal Subgroup</h2>
+<p>A subgroup <span class="math inline">\(H\)</span> of a group <span class="math inline">\(G\)</span> is <strong>normal</strong> in <span class="math inline">\(G\)</span> if <span class="math inline">\(gH=Hg\)</span> for all <span class="math inline">\(g\in G\)</span>.</p>
+<p>For each <span class="math inline">\(g\)</span>, the left coset <span class="math inline">\(gH\)</span> and the right coset <span class="math inline">\(Hg\)</span> must be equal.</p>
+</section>
+<section id="left-and-right-cosets-in-an-abelian-group" class="slide level2">
+<h2>Left and Right Cosets in an Abelian Group</h2>
+<p>Let <span class="math inline">\(G\)</span> be abelian and let <span class="math inline">\(H\)</span> be a subgroup of <span class="math inline">\(G\)</span>.</p>
+<p>For every <span class="math inline">\(g\in G\)</span> and <span class="math inline">\(h\in H\)</span>, we have <span class="math inline">\(gh=hg\)</span>. Hence,</p>
+<p><span class="math inline">\(gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg\)</span>.</p>
+<p><strong>Every subgroup of an abelian group is normal.</strong></p>
+</section>
+<section id="theorem-10.1.3" class="slide level2">
+<h2>Theorem 10.1.3</h2>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span class="math inline">\(N\)</span> be a subgroup of <span class="math inline">\(G\)</span>. Then the following statements are equivalent.</p>
 <ol type="1">
-<li><p>Find the order of <span class="math inline">\((3,4)\)</span> in <span class="math inline">\(\mathbb Z_{12}\times\mathbb Z_{15}\)</span>.</p></li>
-<li><p>Determine whether each group is cyclic:</p>
+<li><p>The subgroup <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>.</p></li>
+<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}\subset N\)</span>.</p></li>
+<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}=N\)</span>.</p></li>
+</ol>
+</section>
+<section id="proof-of-10.1.3" class="slide level2 smaller">
+<h2>Proof of 10.1.3</h2>
+<p><strong><span class="math inline">\((1)\Rightarrow(2)\)</span>.</strong> Normality gives <span class="math inline">\(gN=Ng\)</span>. For <span class="math inline">\(g\in G\)</span> and <span class="math inline">\(n\in N\)</span>, write <span class="math inline">\(gn=n'g\)</span> with <span class="math inline">\(n'\in N\)</span>. Then <span class="math inline">\(gng^{-1}=n'\in N\)</span>, so <span class="math inline">\(gNg^{-1}\subset N\)</span>.</p>
+<p><strong><span class="math inline">\((2)\Rightarrow(3)\)</span>.</strong> Fix <span class="math inline">\(g\in G\)</span>. We already have <span class="math inline">\(gNg^{-1}\subset N\)</span>. For <span class="math inline">\(n\in N\)</span>, apply (2) to <span class="math inline">\(g^{-1}\)</span>:</p>
+<p><span class="math inline">\(g^{-1}ng=g^{-1}n(g^{-1})^{-1}\in N\)</span>.</p>
+<p>Writing <span class="math inline">\(n'=g^{-1}ng\)</span> gives <span class="math inline">\(n=gn'g^{-1}\in gNg^{-1}\)</span>. Thus <span class="math inline">\(N\subset gNg^{-1}\)</span>, establishing equality.</p>
+<p><strong><span class="math inline">\((3)\Rightarrow(1)\)</span>.</strong> If <span class="math inline">\(gNg^{-1}=N\)</span>, then for each <span class="math inline">\(n\in N\)</span>, <span class="math inline">\(gng^{-1}=n'\)</span> for some <span class="math inline">\(n'\in N\)</span>. Hence <span class="math inline">\(gn=n'g\)</span>, giving <span class="math inline">\(gN\subset Ng\)</span>.</p>
+<p>Applying (3) to <span class="math inline">\(g^{-1}\)</span> also gives <span class="math inline">\(g^{-1}ng\in N\)</span>, so <span class="math inline">\(ng=g(g^{-1}ng)\in gN\)</span>. Therefore <span class="math inline">\(Ng\subset gN\)</span>.</p>
+<p>Consequently, <span class="math inline">\(gN=Ng\)</span> for every <span class="math inline">\(g\in G\)</span>, and <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>. <span class="math inline">\(\square\)</span></p>
+</section>
+<section id="factor-groups" class="slide level2">
+<h2>Factor Groups</h2>
+<p>Let <span class="math inline">\(N\)</span> be normal in <span class="math inline">\(G\)</span>.</p>
+<p>The <strong>factor group</strong>, or <strong>quotient group</strong>, is the set of cosets</p>
+<p><span class="math inline">\(G/N=\{aN:a\in G\}\)</span>,</p>
+<p>with multiplication defined by</p>
+<p><span class="math inline">\((aN)(bN)=abN\)</span>.</p>
+<p>The elements of <span class="math inline">\(G/N\)</span> are cosets, each of which is a set of elements of <span class="math inline">\(G\)</span>.</p>
+</section>
+<section id="theorem-10.1.4" class="slide level2">
+<h2>Theorem 10.1.4</h2>
+<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of a group <span class="math inline">\(G\)</span>. The cosets of <span class="math inline">\(N\)</span> in <span class="math inline">\(G\)</span> form a group <span class="math inline">\(G/N\)</span> of order <span class="math inline">\([G:N]\)</span>.</p>
+<p>The operation is <span class="math inline">\((aN)(bN)=abN\)</span>.</p>
 <ul>
-<li><span class="math inline">\(\mathbb Z_4\times\mathbb Z_5\)</span></li>
-<li><span class="math inline">\(\mathbb Z_4\times\mathbb Z_6\)</span></li>
-<li><span class="math inline">\(\mathbb Z_3\times\mathbb Z_5\times\mathbb Z_7\)</span></li>
-</ul></li>
-<li><p>Find a direct product decomposition of <span class="math inline">\(\mathbb Z_{90}\)</span> using cyclic groups of prime-power order.</p></li>
-<li><p>Show that <span class="math inline">\(\mathbb Z_{12}\)</span> is the internal direct product of</p>
-<p><span class="math inline">\(H=\{0,4,8\}\)</span> and <span class="math inline">\(K=\{0,3,6,9\}\)</span>.</p></li>
-<li><p>Construct an explicit isomorphism between <span class="math inline">\(\mathbb Z_{12}\)</span> and <span class="math inline">\(H\times K\)</span>.</p></li>
-</ol>
-
-
+<li>Identity: <span class="math inline">\(eN=N\)</span>.</li>
+<li>Inverse of <span class="math inline">\(gN\)</span>: <span class="math inline">\(g^{-1}N\)</span>.</li>
+<li>Order: the number of distinct cosets of <span class="math inline">\(N\)</span> in <span class="math inline">\(G\)</span>.</li>
+</ul>
 </section>
+<section id="proof-10.1.4" class="slide level2">
+<h2>Proof 10.1.4</h2>
+<p><strong>Well-defined:</strong> Suppose <span class="math inline">\(aN=bN\)</span> and <span class="math inline">\(cN=dN\)</span>.</p>
+<p>Write <span class="math inline">\(a=bn_1\)</span> and <span class="math inline">\(c=dn_2\)</span>, where <span class="math inline">\(n_1,n_2\in N\)</span>. Then</p>
+<p><span class="math display">\[
+acN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.
+\]</span></p>
+<p>Here <span class="math inline">\(dN=Nd\)</span> because <span class="math inline">\(N\)</span> is normal.</p>
+<p><strong>Associativity:</strong> <span class="math inline">\(((aN)(bN))(cN)=(ab)cN=a(bc)N=(aN)((bN)(cN))\)</span>.</p>
+<p><strong>Identity:</strong> <span class="math inline">\((eN)(gN)=gN=(gN)(eN)\)</span>.</p>
+<p><strong>Inverses:</strong> <span class="math inline">\((gN)(g^{-1}N)=N=(g^{-1}N)(gN)\)</span>.</p>
+<p>Finally, <span class="math inline">\(|G/N|=[G:N]\)</span>. <span class="math inline">\(\square\)</span></p>
+</section>
+<section id="example-1" class="slide level2">
+<h2>Example 1</h2>
+<p>Take <span class="math inline">\(N=\{(1),(1\,2\,3),(1\,3\,2)\}=A_3\)</span> in <span class="math inline">\(S_3\)</span>.</p>
+<p>The two cosets are <span class="math inline">\(N\)</span> and <span class="math inline">\((1\,2)N\)</span>.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(\cdot\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(N\)</span></th>
+<th style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(N\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\((1\,2)N\)</span></td>
+<td style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Thus <span class="math inline">\(S_3/N\cong\mathbb{Z}_2\)</span>.</p>
+<p>The cosets record <strong>parity</strong>: <span class="math inline">\(N\)</span> contains the even permutations, and <span class="math inline">\((1\,2)N\)</span> contains the odd permutations.</p>
+</section>
+<section id="example-2" class="slide level2 smaller">
+<h2>Example 2</h2>
+<p>The subgroup <span class="math inline">\(3\mathbb{Z}\)</span> is normal in <span class="math inline">\(\mathbb{Z}\)</span>. Its cosets are</p>
+<ul>
+<li><span class="math inline">\(0+3\mathbb{Z}=\{\ldots,-3,0,3,6,\ldots\}\)</span>.</li>
+<li><span class="math inline">\(1+3\mathbb{Z}=\{\ldots,-2,1,4,7,\ldots\}\)</span>.</li>
+<li><span class="math inline">\(2+3\mathbb{Z}=\{\ldots,-1,2,5,8,\ldots\}\)</span>.</li>
+</ul>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">\(+\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>In general, <span class="math inline">\((k+n\mathbb{Z})+(l+n\mathbb{Z})=k+l+n\mathbb{Z}\)</span>.</p>
+</section>
+<section id="example-3" class="slide level2">
+<h2>Example 3</h2>
+<p>The dihedral group <span class="math inline">\(D_n\)</span> has generators <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span> satisfying</p>
+<p><span class="math inline">\(r^n=\mathrm{id}\)</span>, <span class="math inline">\(\quad s^2=\mathrm{id}\)</span>, <span class="math inline">\(\quad srs=r^{-1}\)</span>.</p>
+<p>The rotations form the cyclic subgroup <span class="math inline">\(R_n=\langle r\rangle\)</span>.</p>
+<p>Conjugation by <span class="math inline">\(r\)</span> preserves <span class="math inline">\(R_n\)</span>, and <span class="math inline">\(srs^{-1}=srs=r^{-1}\in R_n\)</span>.</p>
+<p>Thus <span class="math inline">\(R_n\)</span> is normal in <span class="math inline">\(D_n\)</span>.</p>
+<p>There are two cosets: <span class="math inline">\(R_n\)</span> and <span class="math inline">\(sR_n\)</span>. Therefore,</p>
+<p><span class="math inline">\(D_n/R_n\cong\mathbb{Z}_2\)</span>.</p>
+</section>
+<section class="slide level2">
+
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

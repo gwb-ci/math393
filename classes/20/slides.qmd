@@ -1,5 +1,5 @@
 ---
-title: "Slides: Direct Products"
+title: "Slides: Factor Groups and Simple Groups"
 
 format:
   revealjs:
@@ -10,33 +10,39 @@ format:
 
 ## Class Session Goals
 
-- Define the external direct product of groups and verify that it forms a group.
-- Determine the order of an element in a direct product.
-- Determine when a direct product of cyclic groups is cyclic.
-- Define internal direct products and recognize examples.
-- Prove that an internal direct product is isomorphic to an external direct product.
 
 ---
 
-## External Direct Product Definition
-
-Let $(G,\cdot)$ and $(H,\circ)$ be groups.
-
-The **external direct product** of $G$ and $H$ is the Cartesian product
-
-$G\times H=\{(g,h):g\in G,\ h\in H\}$
-
-with the group operation defined componentwise by
-
-$$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).$$
-
-More generally, for groups $G_1,\ldots,G_n$, the direct product is
-
-$G_1\times G_2\times\cdots\times G_n$
-
-with multiplication defined componentwise.
+## Definition of Simple Groups
 
 ---
+
+## Example: $\mathbb Z_p$
+
+
+---
+
+## Other Noteworthy Examples
+
+- Alternating Group
+- $PSL_2(\mathbb F_3)$
+-
+- Conway Groups
+- The Monster
+
+
+## Historical Notes:  The Enormous Theorem
+
+statement
+
+---
+
+## Historical Notes:  The Enormous Theorem
+
+size and context
+
+---
+
 
 ## Proposition 9.2.1
 

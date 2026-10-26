@@ -1,5 +1,5 @@
 ---
-title: "Slides: Direct Products"
+title: "Slides: Group Products and Factor Groups"
 
 format:
   revealjs:
@@ -10,94 +10,29 @@ format:
 
 ## Class Session Goals
 
-- Define the external direct product of groups and verify that it forms a group.
-- Determine the order of an element in a direct product.
+
 - Determine when a direct product of cyclic groups is cyclic.
-- Define internal direct products and recognize examples.
 - Prove that an internal direct product is isomorphic to an external direct product.
+- Explain why normality is needed to define multiplication on cosets.
+- Define a normal subgroup and use equivalent conditions to check normality.
+- Explain why every subgroup of an abelian group is normal.
+- Define a factor group and verify that coset multiplication is well-defined.
+- Compute with factor groups arising from $S_3$, $\mathbb{Z}$, and $D_n$.
 
 ---
 
-## External Direct Product Definition
+# Theorem 9.2.5
 
-Let $(G,\cdot)$ and $(H,\circ)$ be groups.
-
-The **external direct product** of $G$ and $H$ is the Cartesian product
-
-$G\times H=\{(g,h):g\in G,\ h\in H\}$
-
-with the group operation defined componentwise by
-
-$$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2).$$
-
-More generally, for groups $G_1,\ldots,G_n$, the direct product is
-
-$G_1\times G_2\times\cdots\times G_n$
-
-with multiplication defined componentwise.
-
----
-
-## Proposition 9.2.1
-
-**Proposition 9.2.1.** Let $G$ and $H$ be groups. The set $G\times H$ is a group under the operation
-
-$$(g_1,h_1)(g_2,h_2)=(g_1g_2,h_1h_2),$$
-
-where $g_1,g_2\in G$ and $h_1,h_2\in H$.
-
-**Proof.**
-
-- **Closure:** Products are in $G\times H$ by closure in $G$ and $H$.
-- **Associativity:** Follows from associativity in $G$ and $H$.
-- **Identity:** The identity is $(e_G,e_H)$.
-- **Inverses:** The inverse of $(g,h)$ is $(g^{-1},h^{-1})$.
-
-Therefore, $G\times H$ is a group.
-
----
-
-## Examples of Direct Products
-
-**Example 9.2.2.** The group $\mathbb R\times\mathbb R=\mathbb R^2$ under addition:
-
-$(a,b)+(c,d)=(a+c,b+d)$.
-
-The identity is $(0,0)$ and the inverse of $(a,b)$ is $(-a,-b)$.
-
-**Example 9.2.3.** Consider
-
-$\mathbb Z_2\times\mathbb Z_2=\{(0,0),(0,1),(1,0),(1,1)\}$.
-
-- Every nonidentity element has order $2$.
-- $\mathbb Z_4$ has an element of order $4$.
-
-Thus, $\mathbb Z_2\times\mathbb Z_2\not\cong\mathbb Z_4$.
-
-**Question:** Does having the same number of elements guarantee that two groups are isomorphic?
-
----
-
-## Theorem 9.2.5
-
-**Theorem 9.2.5.** Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
+Let $(g,h)\in G\times H$. If $g$ and $h$ have finite orders $r$ and $s$, respectively, then the order of $(g,h)$ in $G\times H$ is the least common multiple of $r$ and $s$.
 
 $$|(g,h)|=\operatorname{lcm}(r,s).$$
 
-**Example 9.2.7.** Find the order of $(8,56)$ in $\mathbb Z_{12}\times\mathbb Z_{60}$.
-
-- $|8|=12/\gcd(8,12)=3$.
-- $|56|=60/\gcd(56,60)=15$.
-
-Therefore,
-
-$|(8,56)|=\operatorname{lcm}(3,15)=15$.
 
 ---
 
-## Theorem 9.2.5 Proof
+## Theorem 9.2.5 Proof 1
 
-**Proof.** Suppose that $m=\operatorname{lcm}(r,s)$ and let $n=|(g,h)|$.
+Suppose that $m=\operatorname{lcm}(r,s)$ and let $n=|(g,h)|$.
 
 Since $r\mid m$ and $s\mid m$,
 
@@ -105,7 +40,9 @@ $$(g,h)^m=(g^m,h^m)=(e_G,e_H).$$
 
 Thus, $n\mid m$, so $n\le m$.
 
-On the other hand,
+## Theorem 9.2.5 Proof 2
+
+
 
 $$(g,h)^n=(g^n,h^n)=(e_G,e_H).$$
 
@@ -121,48 +58,29 @@ $$|(g,h)|=\operatorname{lcm}(r,s).\qquad\blacksquare$$
 
 ## Corollary 9.2.6
 
-**Corollary 9.2.6.** Let $(g_1,\ldots,g_n)\in\prod_{i=1}^n G_i$. If $g_i$ has finite order $r_i$ in $G_i$, then
+Let $(g_1,\ldots,g_n)\in\prod_{i=1}^n G_i$. If $g_i$ has finite order $r_i$ in $G_i$, then
 
 $$|(g_1,\ldots,g_n)|=\operatorname{lcm}(r_1,\ldots,r_n).$$
 
-**Example.** Find the order of $(2,3,4)$ in
-
-$\mathbb Z_6\times\mathbb Z_8\times\mathbb Z_{10}$.
-
-We have
-
-- $|2|=3$ in $\mathbb Z_6$.
-- $|3|=8$ in $\mathbb Z_8$.
-- $|4|=5$ in $\mathbb Z_{10}$.
-
-Therefore,
-
-$|(2,3,4)|=\operatorname{lcm}(3,8,5)=120$.
 
 ---
 
 ## Theorem 9.2.9
 
-**Theorem 9.2.9.** The group $\mathbb Z_m\times\mathbb Z_n$ is isomorphic to $\mathbb Z_{mn}$ if and only if $\gcd(m,n)=1$.
+The group $\mathbb Z_m\times\mathbb Z_n$ is isomorphic to $\mathbb Z_{mn}$ if and only if $\gcd(m,n)=1$.
 
 $$\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}
 \iff \gcd(m,n)=1.$$
 
-**Examples.**
 
-- $\mathbb Z_2\times\mathbb Z_3\cong\mathbb Z_6$.
-- $\mathbb Z_3\times\mathbb Z_4\cong\mathbb Z_{12}$.
-- $\mathbb Z_2\times\mathbb Z_4\not\cong\mathbb Z_8$.
-
-**Question:** Why does the greatest common divisor determine whether the direct product is cyclic?
 
 ---
 
-## Theorem 9.2.9 Proof
+## Theorem 9.2.9 Proof 1
 
-**Proof.**
 
-($\Rightarrow$) Suppose $\gcd(m,n)=d>1$.
+
+Suppose $\gcd(m,n)=d>1$.
 
 For every $(a,b)\in\mathbb Z_m\times\mathbb Z_n$,
 
@@ -174,9 +92,13 @@ Thus, every element has order at most $mn/d<mn$.
 
 Therefore, $\mathbb Z_m\times\mathbb Z_n$ is not cyclic and cannot be isomorphic to $\mathbb Z_{mn}$.
 
-($\Leftarrow$) Suppose $\gcd(m,n)=1$.
 
-By Theorem 9.2.5,
+
+---
+
+## Theorem 9.2.9 Proof 2
+
+Suppose $\gcd(m,n)=1$. By Theorem 9.2.5,
 
 $$|(1,1)|=\operatorname{lcm}(m,n)=mn.$$
 
@@ -188,23 +110,19 @@ $\mathbb Z_m\times\mathbb Z_n\cong\mathbb Z_{mn}$. $\blacksquare$
 
 ## Corollaries
 
-**Corollary 9.2.10.** Let $n_1,\ldots,n_k$ be positive integers. Then
+**Corollary 9.2.10.** 
+Let $n_1,\ldots,n_k$ be positive integers. Then
 
 $$\prod_{i=1}^k\mathbb Z_{n_i}\cong\mathbb Z_{n_1\cdots n_k}$$
 
 if and only if $\gcd(n_i,n_j)=1$ for $i\ne j$.
 
-**Corollary 9.2.11.** If
-
-$m=p_1^{e_1}\cdots p_k^{e_k}$,
-
-where the $p_i$ are distinct primes, then
+**Corollary 9.2.11.** 
+If $m=p_1^{e_1}\cdots p_k^{e_k}$, where the $p_i$ are distinct primes, then
 
 $$\mathbb Z_m\cong\mathbb Z_{p_1^{e_1}}\times\cdots\times\mathbb Z_{p_k^{e_k}}.$$
 
-**Example.** Since $60=4\cdot3\cdot5$,
 
-$\mathbb Z_{60}\cong\mathbb Z_4\times\mathbb Z_3\times\mathbb Z_5$.
 
 ---
 
@@ -220,41 +138,27 @@ We say that $G$ is the **internal direct product** of $H$ and $K$ if:
 
 3. $hk=kh$ for all $h\in H$ and $k\in K$.
 
-**Interpretation:**
 
-- Every element of $G$ is a product of elements from $H$ and $K$.
-- The subgroups intersect only in the identity.
-- Elements of the two subgroups commute.
 
 ---
 
 ## Examples
 
-**Example 9.2.12.** The group $U(8)=\{1,3,5,7\}$ is the internal direct product of
+The group $U(8)=\{1,3,5,7\}$ is the internal direct product of $H=\{1,3\}$ and $K=\{1,5\}$.
 
-$H=\{1,3\}$ and $K=\{1,5\}$.
 
-Indeed,
-
-- $HK=\{1,3,5,7\}=U(8)$.
-- $H\cap K=\{1\}$.
-- $U(8)$ is abelian.
-
-**Example 9.2.14.** The group $S_3$ cannot be written as an internal direct product of two proper subgroups.
-
-A subgroup of order $3$ and a subgroup of order $2$ do not commute elementwise.
-
-**Discussion:** Why is the condition $hk=kh$ necessary?
 
 ---
 
 ## Theorem 9.2.15
 
-**Theorem 9.2.15.** Let $G$ be the internal direct product of subgroups $H$ and $K$. Then $G$ is isomorphic to $H\times K$.
+Let $G$ be the internal direct product of subgroups $H$ and $K$. Then $G$ is isomorphic to $H\times K$.
 
 $$G\cong H\times K.$$
 
-**Idea of the proof:**
+---
+
+## Theorem 9.2.15 Proof 1
 
 Since $G=HK$, every element $g\in G$ can be written as
 
@@ -268,9 +172,8 @@ We need to show that $\phi$ is well-defined, bijective, and preserves the group 
 
 ---
 
-## Theorem 9.2.15 Proof
+## Theorem 9.2.15 Proof 2
 
-**Proof.** Since $G=HK$, write $g=hk$ and define $\phi(g)=(h,k)$.
 
 **Well-defined:** Suppose $hk=h'k'$. Then
 
@@ -278,7 +181,7 @@ $h^{-1}h'=k(k')^{-1}\in H\cap K=\{e\}$.
 
 Thus $h=h'$ and $k=k'$.
 
-**Homomorphism:** For $g_1=h_1k_1$ and $g_2=h_2k_2$,
+**Group Action:** For $g_1=h_1k_1$ and $g_2=h_2k_2$,
 
 $\phi(g_1g_2)=\phi(h_1k_1h_2k_2)$
 
@@ -294,43 +197,185 @@ Therefore, $G\cong H\times K$. $\blacksquare$
 
 ## Theorem 9.2.17
 
-**Theorem 9.2.17.** Let $G$ be the internal direct product of subgroups $H_i$, where $i=1,2,\ldots,n$. Then $G$ is isomorphic to
+Let $G$ be the internal direct product of subgroups $H_i$, where $i=1,2,\ldots,n$. Then $G$ is isomorphic to
 
 $$\prod_{i=1}^n H_i.$$
 
-The internal direct product requires:
 
-1. $G=H_1H_2\cdots H_n$.
-
-2. $H_i\cap\langle\bigcup_{j\ne i}H_j\rangle=\{e\}$.
-
-3. $h_ih_j=h_jh_i$ for all $h_i\in H_i$ and $h_j\in H_j$.
-
-The isomorphism is given by
-
-$\phi(h_1h_2\cdots h_n)=(h_1,h_2,\ldots,h_n)$.
-
-**Exercise:** Extend the proof of Theorem 9.2.15 to prove this theorem.
 
 ---
 
-## Activity: Direct Products
-
-1. Find the order of $(3,4)$ in $\mathbb Z_{12}\times\mathbb Z_{15}$.
-
-2. Determine whether each group is cyclic:
-
-   - $\mathbb Z_4\times\mathbb Z_5$
-   - $\mathbb Z_4\times\mathbb Z_6$
-   - $\mathbb Z_3\times\mathbb Z_5\times\mathbb Z_7$
-
-3. Find a direct product decomposition of $\mathbb Z_{90}$ using cyclic groups of prime-power order.
-
-4. Show that $\mathbb Z_{12}$ is the internal direct product of
-
-   $H=\{0,4,8\}$ and $K=\{0,3,6,9\}$.
-
-5. Construct an explicit isomorphism between $\mathbb Z_{12}$ and $H\times K$.
 
 
+## Motivation for Normal Subgroups
 
+What do we need to make multiplication work on the set of cosets?
+
+We would like to define $(aH)(bH)=abH$.
+
+The product must be **well-defined**: changing representatives must not change the resulting coset.
+
+If $aH=a'H$ and $bH=b'H$, we need $abH=a'b'H$.
+
+**Key condition:** $gH=Hg$ for every $g\in G$.
+
+---
+
+## Definition of Normal Subgroup
+
+A subgroup $H$ of a group $G$ is **normal** in $G$ if $gH=Hg$ for all $g\in G$.
+
+For each $g$, the left coset $gH$ and the right coset $Hg$ must be equal.
+
+---
+
+## Left and Right Cosets in an Abelian Group
+
+Let $G$ be abelian and let $H$ be a subgroup of $G$.
+
+For every $g\in G$ and $h\in H$, we have $gh=hg$. Hence,
+
+$gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg$.
+
+**Every subgroup of an abelian group is normal.**
+
+---
+
+## Theorem 10.1.3
+
+Let $G$ be a group and $N$ be a subgroup of $G$. Then the following statements are equivalent.
+
+1. The subgroup $N$ is normal in $G$.
+
+2. For all $g\in G$, $gNg^{-1}\subset N$.
+
+3. For all $g\in G$, $gNg^{-1}=N$.
+
+---
+
+
+## Proof of 10.1.3 {.smaller}
+
+**$(1)\Rightarrow(2)$.** Normality gives $gN=Ng$. For $g\in G$ and $n\in N$, write $gn=n'g$ with $n'\in N$. Then $gng^{-1}=n'\in N$, so $gNg^{-1}\subset N$.
+
+**$(2)\Rightarrow(3)$.** Fix $g\in G$. We already have $gNg^{-1}\subset N$. For $n\in N$, apply (2) to $g^{-1}$:
+
+$g^{-1}ng=g^{-1}n(g^{-1})^{-1}\in N$.
+
+Writing $n'=g^{-1}ng$ gives $n=gn'g^{-1}\in gNg^{-1}$. Thus $N\subset gNg^{-1}$, establishing equality.
+
+**$(3)\Rightarrow(1)$.** If $gNg^{-1}=N$, then for each $n\in N$, $gng^{-1}=n'$ for some $n'\in N$. Hence $gn=n'g$, giving $gN\subset Ng$.
+
+Applying (3) to $g^{-1}$ also gives $g^{-1}ng\in N$, so $ng=g(g^{-1}ng)\in gN$. Therefore $Ng\subset gN$.
+
+Consequently, $gN=Ng$ for every $g\in G$, and $N$ is normal in $G$. $\square$
+
+---
+
+## Factor Groups
+
+Let $N$ be normal in $G$.
+
+The **factor group**, or **quotient group**, is the set of cosets
+
+$G/N=\{aN:a\in G\}$,
+
+with multiplication defined by
+
+$(aN)(bN)=abN$.
+
+The elements of $G/N$ are cosets, each of which is a set of elements of $G$.
+
+---
+
+## Theorem 10.1.4
+
+Let $N$ be a normal subgroup of a group $G$. The cosets of $N$ in $G$ form a group $G/N$ of order $[G:N]$.
+
+The operation is $(aN)(bN)=abN$.
+
+- Identity: $eN=N$.
+- Inverse of $gN$: $g^{-1}N$.
+- Order: the number of distinct cosets of $N$ in $G$.
+
+---
+
+## Proof 10.1.4
+
+**Well-defined:** Suppose $aN=bN$ and $cN=dN$.
+
+Write $a=bn_1$ and $c=dn_2$, where $n_1,n_2\in N$. Then
+
+$$
+acN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.
+$$
+
+Here $dN=Nd$ because $N$ is normal.
+
+**Associativity:** $((aN)(bN))(cN)=(ab)cN=a(bc)N=(aN)((bN)(cN))$.
+
+**Identity:** $(eN)(gN)=gN=(gN)(eN)$.
+
+**Inverses:** $(gN)(g^{-1}N)=N=(g^{-1}N)(gN)$.
+
+Finally, $|G/N|=[G:N]$. $\square$
+
+---
+
+## Example 1
+
+
+
+Take $N=\{(1),(1\,2\,3),(1\,3\,2)\}=A_3$ in $S_3$.
+
+The two cosets are $N$ and $(1\,2)N$.
+
+| $\cdot$ | $N$ | $(1\,2)N$ |
+|:---|:---:|:---:|
+| $N$ | $N$ | $(1\,2)N$ |
+| $(1\,2)N$ | $(1\,2)N$ | $N$ |
+
+Thus $S_3/N\cong\mathbb{Z}_2$.
+
+The cosets record **parity**: $N$ contains the even permutations, and $(1\,2)N$ contains the odd permutations.
+
+---
+
+## Example 2 {.smaller}
+
+
+The subgroup $3\mathbb{Z}$ is normal in $\mathbb{Z}$. Its cosets are
+
+- $0+3\mathbb{Z}=\{\ldots,-3,0,3,6,\ldots\}$.
+- $1+3\mathbb{Z}=\{\ldots,-2,1,4,7,\ldots\}$.
+- $2+3\mathbb{Z}=\{\ldots,-1,2,5,8,\ldots\}$.
+
+| $+$ | $0+3\mathbb{Z}$ | $1+3\mathbb{Z}$ | $2+3\mathbb{Z}$ |
+|:---|:---:|:---:|:---:|
+| $0+3\mathbb{Z}$ | $0+3\mathbb{Z}$ | $1+3\mathbb{Z}$ | $2+3\mathbb{Z}$ |
+| $1+3\mathbb{Z}$ | $1+3\mathbb{Z}$ | $2+3\mathbb{Z}$ | $0+3\mathbb{Z}$ |
+| $2+3\mathbb{Z}$ | $2+3\mathbb{Z}$ | $0+3\mathbb{Z}$ | $1+3\mathbb{Z}$ |
+
+In general, $(k+n\mathbb{Z})+(l+n\mathbb{Z})=k+l+n\mathbb{Z}$.
+
+---
+
+## Example 3
+
+
+The dihedral group $D_n$ has generators $r$ and $s$ satisfying
+
+$r^n=\mathrm{id}$, $\quad s^2=\mathrm{id}$, $\quad srs=r^{-1}$.
+
+The rotations form the cyclic subgroup $R_n=\langle r\rangle$.
+
+Conjugation by $r$ preserves $R_n$, and
+$srs^{-1}=srs=r^{-1}\in R_n$.
+
+Thus $R_n$ is normal in $D_n$.
+
+There are two cosets: $R_n$ and $sR_n$. Therefore,
+
+$D_n/R_n\cong\mathbb{Z}_2$.
+
+---
