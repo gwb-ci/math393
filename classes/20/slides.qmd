@@ -15,20 +15,19 @@ By the end of this session, you should be able to:
 - Define a simple group and identify examples and nonexamples.
 - Prove that $\mathbb{Z}_p$ is simple when $p$ is prime.
 - Describe the classification of finite simple groups and its historical significance.
-- Explain how $3$-cycles generate $A_n$.
-- Use normality and cycle calculations to prove that $A_n$ is simple for $n\geq 5$.
+
 
 ---
 
 ## Motivation for Normal Subgroups
 
+Cosets of a group are a set, and they inherit a multiplication from the group.  A natural questions is:  "Is the set of cosets a group?"  What do we need to make that happen.
+
 What do we need to make multiplication work on the set of cosets?
 
 We would like to define $(aH)(bH)=abH$.
 
-The product must be **well-defined**. Changing representatives must not change the resulting coset.
-
-If $aH=a'H$ and $bH=b'H$, we need $abH=a'b'H$.
+The product must be well-defined because there a multiple representatives for each coset. We also need associativity, the identity and inverses.
 
 
 
@@ -38,7 +37,7 @@ If $aH=a'H$ and $bH=b'H$, we need $abH=a'b'H$.
 
 A subgroup $H$ of a group $G$ is **normal** in $G$ if $gH=Hg$ for all $g\in G$.
 
-For each $g$, the left coset $gH$ and the right coset $Hg$ must be equal.
+For each $g$, the left coset $gH$ and the right coset $Hg$ must be equal.  Another way to say this conditions is that given $g \in G$ there are elements $h$ and $h'$ in $H$ such that $gh=h'g$.
 
 ---
 
@@ -51,6 +50,20 @@ For every $g\in G$ and $h\in H$, we have $gh=hg$. Hence,
 $gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg$.
 
 Every subgroup of an abelian group is normal.
+
+---
+
+## Subgroups of index 2
+
+Homework problem from chapter 6 asked you to prove:
+
+**Claim**:  The left and right cosets of a subgroup of index two are equal.
+
+Left Cosets: $H$, $gH$
+
+Right Coset: $H$, $Hg$
+
+This shows that all subgoups of index 2 are normal.
 
 ---
 
@@ -68,20 +81,19 @@ Let $G$ be a group and $N$ be a subgroup of $G$. Then the following statements a
 
 
 ## Proof of 10.1.3 {.smaller}
+First implies second: Normality gives $gN=Ng$. For $g\in G$ and $n\in N$, write $gn=n'g$ with $n'\in N$. Then $gng^{-1}=n'\in N$, so $gNg^{-1}\subset N$.
 
-**$(1)\Rightarrow(2)$.** Normality gives $gN=Ng$. For $g\in G$ and $n\in N$, write $gn=n'g$ with $n'\in N$. Then $gng^{-1}=n'\in N$, so $gNg^{-1}\subset N$.
-
-**$(2)\Rightarrow(3)$.** Fix $g\in G$. We already have $gNg^{-1}\subset N$. For $n\in N$, apply (2) to $g^{-1}$:
+Second implies Third: Fix $g\in G$. We already have $gNg^{-1}\subset N$. For $n\in N$, apply (2) to $g^{-1}$:
 
 $g^{-1}ng=g^{-1}n(g^{-1})^{-1}\in N$.
 
 Writing $n'=g^{-1}ng$ gives $n=gn'g^{-1}\in gNg^{-1}$. Thus $N\subset gNg^{-1}$, establishing equality.
 
-**$(3)\Rightarrow(1)$.** If $gNg^{-1}=N$, then for each $n\in N$, $gng^{-1}=n'$ for some $n'\in N$. Hence $gn=n'g$, giving $gN\subset Ng$.
+Third implies first: If $gNg^{-1}=N$, then for each $n\in N$, $gng^{-1}=n'$ for some $n'\in N$. Hence $gn=n'g$, giving $gN\subset Ng$.
 
 Applying (3) to $g^{-1}$ also gives $g^{-1}ng\in N$, so $ng=g(g^{-1}ng)\in gN$. Therefore $Ng\subset gN$.
 
-Consequently, $gN=Ng$ for every $g\in G$, and $N$ is normal in $G$. $\square$
+Consequently, $gN=Ng$ for every $g\in G$, and $N$ is normal in $G$. 
 
 ---
 
@@ -91,7 +103,7 @@ Let $N$ be normal in $G$.
 
 The **factor group**, or **quotient group**, is the set of cosets
 
-$G/N=\{aN:a\in G\}$,
+$G/N=\{gN:g\in G\}$,
 
 with multiplication defined by
 
@@ -106,6 +118,8 @@ The elements of $G/N$ are cosets, each of which is a set of elements of $G$.
 Let $N$ be a normal subgroup of a group $G$. The cosets of $N$ in $G$ form a group $G/N$ of order $[G:N]$.
 
 The operation is $(aN)(bN)=abN$.
+
+What do we need to show?
 
 - Identity: $eN=N$.
 - Inverse of $gN$: $g^{-1}N$.
@@ -223,17 +237,13 @@ Consequently, $\mathbb{Z}_p$ is simple.
 
 ---
 
-## Other Noteworthy Examples {.smaller}
+## Other Noteworthy Examples 
 
 - **Alternating groups:** $A_n$ is simple for $n\geq 5$.
 - **Projective special linear groups:** $\mathrm{PSL}_2(\mathbb{F}_5)\cong A_5$ is simple.
 - **Mathieu groups:** $M_{11},M_{12},M_{22},M_{23},M_{24}$ are sporadic simple groups.
 - **Conway groups:** $\mathrm{Co}_1,\mathrm{Co}_2,\mathrm{Co}_3$ are sporadic simple groups.
 - **The Monster:** $\mathbb{M}$ is the largest sporadic simple group, with order approximately $8.08\times 10^{53}$.
-
-**Nonexample:** $\mathrm{PSL}_2(\mathbb{F}_3)\cong A_4$ is not simple: it has the proper nontrivial normal subgroup
-
-$V_4=\{(1),(1\,2)(3\,4),(1\,3)(2\,4)\}$.
 
 ---
 
@@ -254,17 +264,21 @@ The theorem gives a complete list, up to isomorphism.
 
 ## Historical Notes: The Enormous Theorem
 
-**Size and context**
 
-- The original classification involved roughly $100$ mathematicians, about $500$ papers, and approximately $10{,}000$ pages.
+- The original classification involved roughly $100$ mathematicians, about $500$ papers, and approximately $10{,}000$ pages.  Works started in 1832 and was completed in 2008.
 - Much of the work was completed by about $1983$; the remaining quasithin case appeared in $2004$.
 - Gorenstein, Lyons, and Solomon began a project to organize and simplify the proof.
-
-**Why it matters:** Every finite group has a composition series whose factors are simple.
-
-These factors are the “building blocks” of finite groups, although they do not uniquely determine the original group.
+- Every finite group has a composition series whose factors are simple.
+- Simple groups are the “building blocks” of finite groups.
 
 ---
+
+## All Known Simple Groups
+
+![](Classification_of_the_finite_simple_groups.jpg){fig-alt="Classification of the finite simple groups" fig-align="center" height="550px"}
+
+---
+
 
 ## Lemma 10.2.1
 
