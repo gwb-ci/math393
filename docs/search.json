@@ -477,7 +477,7 @@
     "href": "classes/20/slides.html#historical-notes-the-enormous-theorem-1",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Historical Notes: The Enormous Theorem",
-    "text": "Historical Notes: The Enormous Theorem\n\nThe original classification involved roughly \\(100\\) mathematicians, about \\(500\\) papers, and approximately \\(10{,}000\\) pages. Works started in 1832 and was completed in 2008.\nMuch of the work was completed by about \\(1983\\); the remaining quasithin case appeared in \\(2004\\).\nGorenstein, Lyons, and Solomon began a project to organize and simplify the proof.\nEvery finite group has a composition series whose factors are simple.\nSimple groups are the “building blocks” of finite groups.",
+    "text": "Historical Notes: The Enormous Theorem\n\nThe original classification involved roughly \\(100\\) mathematicians, about \\(500\\) papers, and approximately \\(10{,}000\\) pages.\n\nWorks started in 1832 and was completed in 2004, most work was completed by \\(1983\\).\nEvery finite group has a composition series whose factors are simple.\nSimple groups are the “building blocks” of finite groups.",
     "crumbs": [
       "Class Material",
       "Slides: Factor Groups and Simple Groups"
