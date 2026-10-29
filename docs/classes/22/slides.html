@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Factor Groups and Simple Groups</title>
+  <title>Math 393 - Abstract Algebra – Slides: Homomorphism Theorems</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Factor Groups and Simple Groups</h1>
+  <h1 class="title">Slides: Homomorphism Theorems</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -139,351 +139,110 @@
 <h2>Class Session Goals</h2>
 <p>By the end of this session, you should be able to:</p>
 <ul>
-<li>Define a simple group and identify examples and nonexamples.</li>
-<li>Prove that <span class="math inline">\(\mathbb{Z}_p\)</span> is simple when <span class="math inline">\(p\)</span> is prime.</li>
-<li>Describe the classification of finite simple groups and its historical significance.</li>
+<li></li>
+<li></li>
 </ul>
 </section>
-<section id="motivation-for-normal-subgroups" class="slide level2">
-<h2>Motivation for Normal Subgroups</h2>
-<p>Cosets of a group are a set, and they inherit a multiplication from the group. A natural questions is: “Is the set of cosets a group?” What do we need to make that happen.</p>
-<p>What do we need to make multiplication work on the set of cosets?</p>
-<p>We would like to define <span class="math inline">\((aH)(bH)=abH\)</span>.</p>
-<p>The product must be well-defined because there a multiple representatives for each coset. We also need associativity, the identity and inverses.</p>
-</section>
-<section id="definition-of-normal-subgroup" class="slide level2">
-<h2>Definition of Normal Subgroup</h2>
-<p>A subgroup <span class="math inline">\(H\)</span> of a group <span class="math inline">\(G\)</span> is <strong>normal</strong> in <span class="math inline">\(G\)</span> if <span class="math inline">\(gH=Hg\)</span> for all <span class="math inline">\(g\in G\)</span>.</p>
-<p>For each <span class="math inline">\(g\)</span>, the left coset <span class="math inline">\(gH\)</span> and the right coset <span class="math inline">\(Hg\)</span> must be equal. Another way to say this conditions is that given <span class="math inline">\(g \in G\)</span> there are elements <span class="math inline">\(h\)</span> and <span class="math inline">\(h'\)</span> in <span class="math inline">\(H\)</span> such that <span class="math inline">\(gh=h'g\)</span>.</p>
-</section>
-<section id="left-and-right-cosets-in-an-abelian-group" class="slide level2">
-<h2>Left and Right Cosets in an Abelian Group</h2>
-<p>Let <span class="math inline">\(G\)</span> be abelian and let <span class="math inline">\(H\)</span> be a subgroup of <span class="math inline">\(G\)</span>.</p>
-<p>For every <span class="math inline">\(g\in G\)</span> and <span class="math inline">\(h\in H\)</span>, we have <span class="math inline">\(gh=hg\)</span>. Hence,</p>
-<p><span class="math inline">\(gH=\{gh:h\in H\}=\{hg:h\in H\}=Hg\)</span>.</p>
-<p>Every subgroup of an abelian group is normal.</p>
-</section>
-<section id="subgroups-of-index-2" class="slide level2">
-<h2>Subgroups of index 2</h2>
-<p>Homework problem from chapter 6 asked you to prove:</p>
-<p><strong>Claim</strong>: The left and right cosets of a subgroup of index two are equal.</p>
-<p>Left Cosets: <span class="math inline">\(H\)</span>, <span class="math inline">\(gH\)</span></p>
-<p>Right Coset: <span class="math inline">\(H\)</span>, <span class="math inline">\(Hg\)</span></p>
-<p>This shows that all subgoups of index 2 are normal.</p>
-</section>
-<section id="theorem-10.1.3" class="slide level2">
-<h2>Theorem 10.1.3</h2>
-<p>Let <span class="math inline">\(G\)</span> be a group and <span class="math inline">\(N\)</span> be a subgroup of <span class="math inline">\(G\)</span>. Then the following statements are equivalent.</p>
-<ol type="1">
-<li><p>The subgroup <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>.</p></li>
-<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}\subset N\)</span>.</p></li>
-<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}=N\)</span>.</p></li>
-</ol>
-</section>
-<section id="proof-of-10.1.3" class="slide level2 smaller">
-<h2>Proof of 10.1.3</h2>
-<p>First implies second: Normality gives <span class="math inline">\(gN=Ng\)</span>. For <span class="math inline">\(g\in G\)</span> and <span class="math inline">\(n\in N\)</span>, write <span class="math inline">\(gn=n'g\)</span> with <span class="math inline">\(n'\in N\)</span>. Then <span class="math inline">\(gng^{-1}=n'\in N\)</span>, so <span class="math inline">\(gNg^{-1}\subset N\)</span>.</p>
-<p>Second implies Third: Fix <span class="math inline">\(g\in G\)</span>. We already have <span class="math inline">\(gNg^{-1}\subset N\)</span>. For <span class="math inline">\(n\in N\)</span>, apply (2) to <span class="math inline">\(g^{-1}\)</span>:</p>
-<p><span class="math inline">\(g^{-1}ng=g^{-1}n(g^{-1})^{-1}\in N\)</span>.</p>
-<p>Writing <span class="math inline">\(n'=g^{-1}ng\)</span> gives <span class="math inline">\(n=gn'g^{-1}\in gNg^{-1}\)</span>. Thus <span class="math inline">\(N\subset gNg^{-1}\)</span>, establishing equality.</p>
-<p>Third implies first: If <span class="math inline">\(gNg^{-1}=N\)</span>, then for each <span class="math inline">\(n\in N\)</span>, <span class="math inline">\(gng^{-1}=n'\)</span> for some <span class="math inline">\(n'\in N\)</span>. Hence <span class="math inline">\(gn=n'g\)</span>, giving <span class="math inline">\(gN\subset Ng\)</span>.</p>
-<p>Applying (3) to <span class="math inline">\(g^{-1}\)</span> also gives <span class="math inline">\(g^{-1}ng\in N\)</span>, so <span class="math inline">\(ng=g(g^{-1}ng)\in gN\)</span>. Therefore <span class="math inline">\(Ng\subset gN\)</span>.</p>
-<p>Consequently, <span class="math inline">\(gN=Ng\)</span> for every <span class="math inline">\(g\in G\)</span>, and <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>.</p>
-</section>
-<section id="factor-groups" class="slide level2">
-<h2>Factor Groups</h2>
-<p>Let <span class="math inline">\(N\)</span> be normal in <span class="math inline">\(G\)</span>.</p>
-<p>The <strong>factor group</strong>, or <strong>quotient group</strong>, is the set of cosets</p>
-<p><span class="math inline">\(G/N=\{gN:g\in G\}\)</span>,</p>
-<p>with multiplication defined by</p>
-<p><span class="math inline">\((aN)(bN)=abN\)</span>.</p>
-<p>The elements of <span class="math inline">\(G/N\)</span> are cosets, each of which is a set of elements of <span class="math inline">\(G\)</span>.</p>
-</section>
-<section id="theorem-10.1.4" class="slide level2">
-<h2>Theorem 10.1.4</h2>
-<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of a group <span class="math inline">\(G\)</span>. The cosets of <span class="math inline">\(N\)</span> in <span class="math inline">\(G\)</span> form a group <span class="math inline">\(G/N\)</span> of order <span class="math inline">\([G:N]\)</span>.</p>
-<p>The operation is <span class="math inline">\((aN)(bN)=abN\)</span>.</p>
-<p>What do we need to show?</p>
-<ul>
-<li>Identity: <span class="math inline">\(eN=N\)</span>.</li>
-<li>Inverse of <span class="math inline">\(gN\)</span>: <span class="math inline">\(g^{-1}N\)</span>.</li>
-<li>Order: the number of distinct cosets of <span class="math inline">\(N\)</span> in <span class="math inline">\(G\)</span>.</li>
-</ul>
-</section>
-<section id="proof-10.1.4" class="slide level2">
-<h2>Proof 10.1.4</h2>
-<p><strong>Well-defined:</strong> Suppose <span class="math inline">\(aN=bN\)</span> and <span class="math inline">\(cN=dN\)</span>.</p>
-<p>Write <span class="math inline">\(a=bn_1\)</span> and <span class="math inline">\(c=dn_2\)</span>, where <span class="math inline">\(n_1,n_2\in N\)</span>. Then</p>
+<section id="commutative-diagrams" class="slide level2">
+<h2>Commutative Diagrams</h2>
+<p>A diagram <strong>commutes</strong> when following different directed paths with the same starting and ending objects gives the same map.</p>
+<p>For a homomorphism <span class="math inline">\(\psi:G\rightarrow H\)</span>, let <span class="math inline">\(K=\ker\psi\)</span> and let <span class="math inline">\(\phi:G\rightarrow G/K\)</span> be the canonical homomorphism.</p>
 <p><span class="math display">\[
-acN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.
+\begin{array}{ccc}
+G &amp; \xrightarrow{\ \psi\ } &amp; \psi(G)\\
+&amp; {\scriptstyle\phi}\searrow\quad\nearrow{\scriptstyle\eta} &amp;\\
+&amp; G/K &amp;
+\end{array}
 \]</span></p>
-<p>Here <span class="math inline">\(dN=Nd\)</span> because <span class="math inline">\(N\)</span> is normal.</p>
-<p><strong>Associativity:</strong> <span class="math inline">\(((aN)(bN))(cN)=(ab)cN=a(bc)N=(aN)((bN)(cN))\)</span>.</p>
-<p><strong>Identity:</strong> <span class="math inline">\((eN)(gN)=gN=(gN)(eN)\)</span>.</p>
-<p><strong>Inverses:</strong> <span class="math inline">\((gN)(g^{-1}N)=N=(g^{-1}N)(gN)\)</span>.</p>
-<p>Finally, <span class="math inline">\(|G/N|=[G:N]\)</span>. <span class="math inline">\(\square\)</span></p>
+<p>This diagram commutes when <span class="math inline">\(\psi=\eta\phi\)</span>; that is, <span class="math inline">\(\psi(g)=\eta(\phi(g))\)</span> for every <span class="math inline">\(g\in G\)</span>.</p>
+<p>The First Isomorphism Theorem supplies the isomorphism <span class="math inline">\(\eta\)</span>.</p>
 </section>
-<section id="example-1" class="slide level2">
-<h2>Example 1</h2>
-<p>Take <span class="math inline">\(N=\{(1),(1\,2\,3),(1\,3\,2)\}=A_3\)</span> in <span class="math inline">\(S_3\)</span>.</p>
-<p>The two cosets are <span class="math inline">\(N\)</span> and <span class="math inline">\((1\,2)N\)</span>.</p>
-<table class="caption-top">
-<thead>
-<tr class="header">
-<th style="text-align: left;"><span class="math inline">\(\cdot\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(N\)</span></th>
-<th style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(N\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
-<td style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\((1\,2)N\)</span></td>
-<td style="text-align: center;"><span class="math inline">\((1\,2)N\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(N\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>Thus <span class="math inline">\(S_3/N\cong\mathbb{Z}_2\)</span>.</p>
+<section id="theorem-11.2.1" class="slide level2">
+<h2>Theorem 11.2.1</h2>
+<p><strong>First Isomorphism Theorem</strong></p>
+<p>If <span class="math inline">\(\psi:G\rightarrow H\)</span> is a group homomorphism with <span class="math inline">\(K=\ker\psi\)</span>, then <span class="math inline">\(K\)</span> is normal in <span class="math inline">\(G\)</span>.</p>
+<p>Let <span class="math inline">\(\phi:G\rightarrow G/K\)</span> be the canonical homomorphism.</p>
+<p>Then there exists a unique isomorphism <span class="math inline">\(\eta:G/K\rightarrow\psi(G)\)</span> such that <span class="math inline">\(\psi=\eta\phi\)</span>.</p>
+<p><span class="math display">\[
+G/\ker\psi\cong\psi(G).
+\]</span></p>
 </section>
-<section id="example-2" class="slide level2 smaller">
-<h2>Example 2</h2>
-<p>The subgroup <span class="math inline">\(3\mathbb{Z}\)</span> is normal in <span class="math inline">\(\mathbb{Z}\)</span>. Its cosets are</p>
+<section id="proof-of-theorem-11.2.1" class="slide level2 smaller">
+<h2>Proof of Theorem 11.2.1</h2>
+<p>We already know that <span class="math inline">\(K\)</span> is normal in <span class="math inline">\(G\)</span>. Define <span class="math inline">\(\eta:G/K\rightarrow\psi(G)\)</span> by <span class="math inline">\(\eta(gK)=\psi(g)\)</span>.</p>
 <ul>
-<li><span class="math inline">\(0+3\mathbb{Z}=\{\ldots,-3,0,3,6,\ldots\}\)</span>.</li>
-<li><span class="math inline">\(1+3\mathbb{Z}=\{\ldots,-2,1,4,7,\ldots\}\)</span>.</li>
-<li><span class="math inline">\(2+3\mathbb{Z}=\{\ldots,-1,2,5,8,\ldots\}\)</span>.</li>
-</ul>
-<table class="caption-top">
-<colgroup>
-<col style="width: 21%">
-<col style="width: 26%">
-<col style="width: 26%">
-<col style="width: 26%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"><span class="math inline">\(+\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></th>
-<th style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(2+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(0+3\mathbb{Z}\)</span></td>
-<td style="text-align: center;"><span class="math inline">\(1+3\mathbb{Z}\)</span></td>
-</tr>
-</tbody>
-</table>
-<p>In general, <span class="math inline">\((k+n\mathbb{Z})+(l+n\mathbb{Z})=k+l+n\mathbb{Z}\)</span>.</p>
-</section>
-<section id="example-3" class="slide level2">
-<h2>Example 3</h2>
-<p>The dihedral group <span class="math inline">\(D_n\)</span> has generators <span class="math inline">\(r\)</span> and <span class="math inline">\(s\)</span> satisfying</p>
-<p><span class="math inline">\(r^n=\mathrm{id}\)</span>, <span class="math inline">\(\quad s^2=\mathrm{id}\)</span>, <span class="math inline">\(\quad srs=r^{-1}\)</span>.</p>
-<p>The rotations form the cyclic subgroup <span class="math inline">\(R_n=\langle r\rangle\)</span>.</p>
-<p>Conjugation by <span class="math inline">\(r\)</span> preserves <span class="math inline">\(R_n\)</span>, and <span class="math inline">\(srs^{-1}=srs=r^{-1}\in R_n\)</span>.</p>
-<p>Thus <span class="math inline">\(R_n\)</span> is normal in <span class="math inline">\(D_n\)</span>.</p>
-<p>There are two cosets: <span class="math inline">\(R_n\)</span> and <span class="math inline">\(sR_n\)</span>. Therefore,</p>
-<p><span class="math inline">\(D_n/R_n\cong\mathbb{Z}_2\)</span>.</p>
-</section>
-<section id="definition-of-simple-groups" class="slide level2">
-<h2>Definition of Simple Groups</h2>
-<p>A nontrivial group <span class="math inline">\(G\)</span> is <strong>simple</strong> if its only normal subgroups are <span class="math inline">\(\{e\}\)</span> and <span class="math inline">\(G\)</span>.</p>
-<p>Thus, if <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>, then</p>
-<p><span class="math inline">\(N=\{e\}\)</span> or <span class="math inline">\(N=G\)</span>.</p>
-<p>A simple group may have proper nontrivial subgroups; none of them can be normal.</p>
-</section>
-<section id="example-mathbbz_p" class="slide level2">
-<h2>Example: <span class="math inline">\(\mathbb{Z}_p\)</span></h2>
-<p>Let <span class="math inline">\(p\)</span> be prime.</p>
-<p>If <span class="math inline">\(H\)</span> is a subgroup of <span class="math inline">\(\mathbb{Z}_p\)</span>, Lagrange’s Theorem gives <span class="math inline">\(|H|\mid p\)</span>.</p>
-<p>Therefore, <span class="math inline">\(|H|=1\)</span> or <span class="math inline">\(|H|=p\)</span>, so</p>
-<p><span class="math inline">\(H=\{0\}\)</span> or <span class="math inline">\(H=\mathbb{Z}_p\)</span>.</p>
-<p>Consequently, <span class="math inline">\(\mathbb{Z}_p\)</span> is simple.</p>
-<p><strong>More generally:</strong> A finite cyclic group is simple if and only if its order is prime.</p>
-</section>
-<section id="other-noteworthy-examples" class="slide level2">
-<h2>Other Noteworthy Examples</h2>
-<ul>
-<li><strong>Alternating groups:</strong> <span class="math inline">\(A_n\)</span> is simple for <span class="math inline">\(n\geq 5\)</span>.</li>
-<li><strong>Projective special linear groups:</strong> <span class="math inline">\(\mathrm{PSL}_2(\mathbb{F}_5)\cong A_5\)</span> is simple.</li>
-<li><strong>Mathieu groups:</strong> <span class="math inline">\(M_{11},M_{12},M_{22},M_{23},M_{24}\)</span> are sporadic simple groups.</li>
-<li><strong>Conway groups:</strong> <span class="math inline">\(\mathrm{Co}_1,\mathrm{Co}_2,\mathrm{Co}_3\)</span> are sporadic simple groups.</li>
-<li><strong>The Monster:</strong> <span class="math inline">\(\mathbb{M}\)</span> is the largest sporadic simple group, with order approximately <span class="math inline">\(8.08\times 10^{53}\)</span>.</li>
+<li><p><strong>Well-defined:</strong> If <span class="math inline">\(g_1K=g_2K\)</span>, then <span class="math inline">\(g_2=g_1k\)</span> for some <span class="math inline">\(k\in K\)</span>. Hence <span class="math inline">\(\psi(g_2)=\psi(g_1)\psi(k)=\psi(g_1)\)</span>.</p></li>
+<li><p><strong>Homomorphism:</strong> <span class="math inline">\(\eta(g_1K\,g_2K)=\psi(g_1g_2)=\psi(g_1)\psi(g_2)=\eta(g_1K)\eta(g_2K)\)</span>.</p></li>
+<li><p><strong>Onto:</strong> Every element <span class="math inline">\(\psi(g)\)</span> of <span class="math inline">\(\psi(G)\)</span> equals <span class="math inline">\(\eta(gK)\)</span>.</p></li>
+<li><p><strong>One-to-one:</strong> If <span class="math inline">\(\eta(g_1K)=\eta(g_2K)\)</span>, then <span class="math inline">\(\psi(g_1)=\psi(g_2)\)</span>. Thus <span class="math inline">\(\psi(g_1^{-1}g_2)=e\)</span>, so <span class="math inline">\(g_1^{-1}g_2\in K\)</span> and <span class="math inline">\(g_1K=g_2K\)</span>.</p></li>
+<li><p><strong>Factorization and uniqueness:</strong> <span class="math inline">\(\eta(\phi(g))=\eta(gK)=\psi(g)\)</span>. Any map satisfying this identity must send <span class="math inline">\(gK\)</span> to <span class="math inline">\(\psi(g)\)</span>. <span class="math inline">\(\square\)</span></p></li>
 </ul>
 </section>
-<section id="historical-notes-the-enormous-theorem" class="slide level2">
-<h2>Historical Notes: The Enormous Theorem</h2>
-<p><strong>Classification of Finite Simple Groups</strong></p>
-<p>Every finite simple group is isomorphic to one of the following:</p>
-<ol type="1">
-<li>A cyclic group <span class="math inline">\(\mathbb{Z}_p\)</span>, where <span class="math inline">\(p\)</span> is prime.</li>
-<li>An alternating group <span class="math inline">\(A_n\)</span>, where <span class="math inline">\(n\geq 5\)</span>.</li>
-<li>A finite simple group of Lie type.</li>
-<li>One of the <span class="math inline">\(26\)</span> sporadic simple groups.</li>
-</ol>
-<p>The theorem gives a complete list, up to isomorphism.</p>
+<section id="theorem-11.2.3" class="slide level2">
+<h2>Theorem 11.2.3</h2>
+<p><strong>Second Isomorphism Theorem</strong></p>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span> (not necessarily normal in <span class="math inline">\(G\)</span>) and <span class="math inline">\(N\)</span> a normal subgroup of <span class="math inline">\(G\)</span>.</p>
+<p>Then <span class="math inline">\(HN\)</span> is a subgroup of <span class="math inline">\(G\)</span>, <span class="math inline">\(H\cap N\)</span> is a normal subgroup of <span class="math inline">\(H\)</span>, and</p>
+<p><span class="math display">\[
+H/H\cap N\cong HN/N.
+\]</span></p>
 </section>
-<section id="historical-notes-the-enormous-theorem-1" class="slide level2">
-<h2>Historical Notes: The Enormous Theorem</h2>
-<ul>
-<li>The original classification involved roughly <span class="math inline">\(100\)</span> mathematicians, about <span class="math inline">\(500\)</span> papers, and approximately <span class="math inline">\(10{,}000\)</span> pages.<br>
-</li>
-<li>Works started in 1832 and was completed in 2004, most work was completed by <span class="math inline">\(1983\)</span>.</li>
-<li>Every finite group has a composition series whose factors are simple.</li>
-<li>Simple groups are the “building blocks” of finite groups.</li>
-</ul>
-</section>
-<section id="all-known-simple-groups" class="slide level2">
-<h2>All Known Simple Groups</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="Classification_of_the_finite_simple_groups.jpg" class="quarto-figure quarto-figure-center" alt="Classification of the finite simple groups" height="550"></p>
-</figure>
-</div>
-</section>
-<section id="lemma-10.2.1" class="slide level2">
-<h2>Lemma 10.2.1</h2>
-<p>The alternating group <span class="math inline">\(A_n\)</span> is generated by <span class="math inline">\(3\)</span>-cycles for <span class="math inline">\(n\geq 3\)</span>.</p>
-</section>
-<section id="proof-of-10.2.1" class="slide level2">
-<h2>Proof of 10.2.1</h2>
-<p>An even permutation is a product of pairs of transpositions.</p>
-<p>Each pair can be rewritten using <span class="math inline">\(3\)</span>-cycles:</p>
+<section id="proof-of-theorem-11.2.3" class="slide level2 smaller">
+<h2>Proof of Theorem 11.2.3</h2>
+<p>First, <span class="math inline">\(HN=\{hn:h\in H,n\in N\}\)</span> contains <span class="math inline">\(e\)</span>. Since <span class="math inline">\(N\)</span> is normal,</p>
 <p><span class="math display">\[
 \begin{aligned}
-(a,b)(a,b)&amp;=\mathrm{id},\\
-(a,b)(c,d)&amp;=(a,c,b)(a,c,d),\\
-(a,b)(a,c)&amp;=(a,c,b).
+(h_1n_1)(h_2n_2)
+&amp;=h_1h_2(h_2^{-1}n_1h_2)n_2\in HN,\\
+(hn)^{-1}
+&amp;=n^{-1}h^{-1}=h^{-1}(hn^{-1}h^{-1})\in HN.
 \end{aligned}
 \]</span></p>
-<p>These cover identical, disjoint, and overlapping transpositions.</p>
-<p>Every <span class="math inline">\(3\)</span>-cycle is even, so the <span class="math inline">\(3\)</span>-cycles generate exactly <span class="math inline">\(A_n\)</span>. <span class="math inline">\(\square\)</span></p>
+<p>Thus <span class="math inline">\(HN\)</span> is a subgroup of <span class="math inline">\(G\)</span>.</p>
+<p>For <span class="math inline">\(h\in H\)</span> and <span class="math inline">\(n\in H\cap N\)</span>, the element <span class="math inline">\(h^{-1}nh\)</span> belongs to both <span class="math inline">\(H\)</span> and <span class="math inline">\(N\)</span>. Hence <span class="math inline">\(H\cap N\)</span> is normal in <span class="math inline">\(H\)</span>.</p>
+<p>Define <span class="math inline">\(\phi:H\rightarrow HN/N\)</span> by <span class="math inline">\(\phi(h)=hN\)</span>. It is onto because <span class="math inline">\(hnN=hN\)</span>, and it is a homomorphism because <span class="math inline">\(\phi(hh')=hh'N=hNh'N=\phi(h)\phi(h')\)</span>.</p>
+<p>Since <span class="math inline">\(\ker\phi=\{h\in H:h\in N\}=H\cap N\)</span>, the First Isomorphism Theorem gives <span class="math inline">\(H/H\cap N\cong HN/N\)</span>. <span class="math inline">\(\square\)</span></p>
 </section>
-<section id="lemma-10.2.2" class="slide level2">
-<h2>Lemma 10.2.2</h2>
-<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(A_n\)</span>, where <span class="math inline">\(n\geq 3\)</span>.</p>
-<p>If <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle, then <span class="math inline">\(N=A_n\)</span>.</p>
+<section id="theorem-11.2.4" class="slide level2">
+<h2>Theorem 11.2.4</h2>
+<p><strong>Correspondence Theorem</strong></p>
+<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of a group <span class="math inline">\(G\)</span>.</p>
+<p>Then <span class="math inline">\(H\mapsto H/N\)</span> is a one-to-one correspondence between the set of subgroups <span class="math inline">\(H\)</span> of <span class="math inline">\(G\)</span> containing <span class="math inline">\(N\)</span> and the set of subgroups of <span class="math inline">\(G/N\)</span>.</p>
+<p>Furthermore, the normal subgroups of <span class="math inline">\(G\)</span> containing <span class="math inline">\(N\)</span> correspond to normal subgroups of <span class="math inline">\(G/N\)</span>.</p>
 </section>
-<section id="proof-of-10.2.2" class="slide level2 smaller">
-<h2>Proof of 10.2.2</h2>
-<p><strong>Step 1: Fix two symbols <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>.</strong></p>
-<p>The cycles <span class="math inline">\((i,j,k)\)</span> generate all <span class="math inline">\(3\)</span>-cycles, using</p>
-<p><span class="math display">\[
-\begin{aligned}
-(i,a,j)&amp;=(i,j,a)^2,\\
-(i,a,b)&amp;=(i,j,b)(i,j,a)^2,\\
-(j,a,b)&amp;=(i,j,b)^2(i,j,a),\\
-(a,b,c)&amp;=(i,j,a)^2(i,j,c)(i,j,b)^2(i,j,a).
-\end{aligned}
-\]</span></p>
-<p>Here the symbols in each identity are distinct.</p>
-<p>By Lemma 10.2.1, these cycles therefore generate <span class="math inline">\(A_n\)</span>.</p>
+<section id="proof-of-theorem-11.2.4" class="slide level2 smaller">
+<h2>Proof of Theorem 11.2.4</h2>
+<p>Let <span class="math inline">\(\pi:G\rightarrow G/N\)</span> be the canonical homomorphism.</p>
+<ul>
+<li><p><strong>Subgroups correspond:</strong> If <span class="math inline">\(N\subseteq H\leq G\)</span>, then <span class="math inline">\(H/N=\pi(H)\)</span> is a subgroup of <span class="math inline">\(G/N\)</span>. If <span class="math inline">\(S\leq G/N\)</span>, then <span class="math inline">\(H=\pi^{-1}(S)\)</span> is a subgroup containing <span class="math inline">\(N\)</span>, and <span class="math inline">\(H/N=S\)</span>.</p></li>
+<li><p><strong>The correspondence is one-to-one:</strong> For every subgroup <span class="math inline">\(H\)</span> containing <span class="math inline">\(N\)</span>, <span class="math inline">\(\pi^{-1}(H/N)=H\)</span>. Thus taking images and taking inverse images give inverse correspondences.</p></li>
+<li><p><strong>Normality passes to the quotient:</strong> If <span class="math inline">\(H\)</span> is normal in <span class="math inline">\(G\)</span>, the map <span class="math inline">\(G/N\rightarrow G/H\)</span> defined by <span class="math inline">\(gN\mapsto gH\)</span> is a homomorphism with kernel <span class="math inline">\(H/N\)</span>. Hence <span class="math inline">\(H/N\)</span> is normal in <span class="math inline">\(G/N\)</span>.</p></li>
+<li><p><strong>Normality lifts from the quotient:</strong> If <span class="math inline">\(H/N\)</span> is normal in <span class="math inline">\(G/N\)</span>, then <span class="math inline">\(H=\pi^{-1}(H/N)\)</span> is normal in <span class="math inline">\(G\)</span> by Proposition 11.1.4(4). <span class="math inline">\(\square\)</span></p></li>
+</ul>
 </section>
-<section id="proof-of-10.2.2-continued" class="slide level2">
-<h2>Proof of 10.2.2: Continued</h2>
-<p><strong>Step 2: Use normality.</strong></p>
-<p>Suppose <span class="math inline">\((i,j,a)\in N\)</span>. Its inverse <span class="math inline">\((i,j,a)^2\)</span> also belongs to <span class="math inline">\(N\)</span>.</p>
-<p>For <span class="math inline">\(k\notin\{i,j,a\}\)</span>, let <span class="math inline">\(\rho=(i,j)(a,k)\in A_n\)</span>.</p>
-<p>Normality gives</p>
-<p><span class="math inline">\(\rho(i,j,a)^2\rho^{-1}=(i,j,k)\in N\)</span>.</p>
-<p>Thus <span class="math inline">\(N\)</span> contains every generator <span class="math inline">\((i,j,k)\)</span> with <span class="math inline">\(k\neq i,j\)</span>, including the original <span class="math inline">\((i,j,a)\)</span>.</p>
-<p>Therefore, <span class="math inline">\(N=A_n\)</span>. <span class="math inline">\(\square\)</span></p>
-</section>
-<section id="lemma-10.2.3" class="slide level2">
-<h2>Lemma 10.2.3</h2>
-<p>For <span class="math inline">\(n\geq 5\)</span>, every nontrivial normal subgroup <span class="math inline">\(N\)</span> of <span class="math inline">\(A_n\)</span> contains a <span class="math inline">\(3\)</span>-cycle.</p>
-</section>
-<section id="proof-of-10.2.3-setup" class="slide level2">
-<h2>Proof of 10.2.3: Setup</h2>
-<p>Choose <span class="math inline">\(\sigma\in N\)</span> with <span class="math inline">\(\sigma\neq\mathrm{id}\)</span>.</p>
-<p>For any <span class="math inline">\(\alpha\in A_n\)</span>, normality gives</p>
-<p><span class="math inline">\(\alpha\sigma\alpha^{-1}\in N\)</span>,</p>
-<p>and hence</p>
-<p><span class="math inline">\(\sigma^{-1}\alpha\sigma\alpha^{-1}\in N\)</span>.</p>
-<p>We use this construction to obtain simpler cycle structures.</p>
-<p>In the following cases, <span class="math inline">\(\tau\)</span> denotes the product of the remaining disjoint cycles.</p>
-</section>
-<section id="proof-of-10.2.3-long-cycles" class="slide level2">
-<h2>Proof of 10.2.3: Long Cycles</h2>
-<p><strong>Case 1:</strong> <span class="math inline">\(\sigma\)</span> contains a cycle of length <span class="math inline">\(r&gt;3\)</span>.</p>
-<p>Write <span class="math inline">\(\sigma=\tau(a_1,a_2,\ldots,a_r)\)</span> and take <span class="math inline">\(\alpha=(a_1,a_2,a_3)\)</span>.</p>
+<section id="theorem-11.2.5" class="slide level2">
+<h2>Theorem 11.2.5</h2>
+<p><strong>Third Isomorphism Theorem</strong></p>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span class="math inline">\(N\)</span> and <span class="math inline">\(H\)</span> be normal subgroups of <span class="math inline">\(G\)</span> with <span class="math inline">\(N\subset H\)</span>.</p>
 <p>Then</p>
 <p><span class="math display">\[
-\begin{aligned}
-\sigma^{-1}\alpha\sigma\alpha^{-1}
-&amp;=(a_r,a_1,a_2)(a_1,a_3,a_2)\\
-&amp;=(a_1,a_3,a_r)\in N.
-\end{aligned}
+G/H\cong\frac{G/N}{H/N}.
 \]</span></p>
-<p>Thus <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle.</p>
 </section>
-<section id="proof-of-10.2.3-two-3-cycles" class="slide level2">
-<h2>Proof of 10.2.3: Two <span class="math inline">\(3\)</span>-Cycles</h2>
-<p><strong>Case 2:</strong> <span class="math inline">\(\sigma=\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\)</span>.</p>
-<p>Take <span class="math inline">\(\alpha=(a_1,a_2,a_4)\)</span>. Then</p>
+<section id="proof-of-theorem-11.2.5" class="slide level2 smaller">
+<h2>Proof of Theorem 11.2.5</h2>
+<p>Define <span class="math inline">\(\rho:G/N\rightarrow G/H\)</span> by <span class="math inline">\(\rho(gN)=gH\)</span>.</p>
+<ul>
+<li><p><strong>Well-defined:</strong> If <span class="math inline">\(g_1N=g_2N\)</span>, then <span class="math inline">\(g_1^{-1}g_2\in N\subseteq H\)</span>, so <span class="math inline">\(g_1H=g_2H\)</span>.</p></li>
+<li><p><strong>Homomorphism:</strong> <span class="math inline">\(\rho(g_1N\,g_2N)=g_1g_2H=(g_1H)(g_2H)\)</span>.</p></li>
+<li><p><strong>Onto:</strong> Every coset <span class="math inline">\(gH\)</span> is the image of <span class="math inline">\(gN\)</span>.</p></li>
+<li><p><strong>Kernel:</strong> <span class="math inline">\(\rho(gN)=H\)</span> exactly when <span class="math inline">\(g\in H\)</span>. Thus <span class="math inline">\(\ker\rho=H/N\)</span>.</p></li>
+</ul>
+<p>By the First Isomorphism Theorem,</p>
 <p><span class="math display">\[
-\begin{aligned}
-\sigma^{-1}\alpha\sigma\alpha^{-1}
-&amp;=(a_3,a_1,a_6)(a_1,a_4,a_2)\\
-&amp;=(a_1,a_4,a_2,a_6,a_3)\in N.
-\end{aligned}
+\frac{G/N}{H/N}\cong G/H.
 \]</span></p>
-<p>This is a <span class="math inline">\(5\)</span>-cycle.</p>
-<p>Case 1 now produces a <span class="math inline">\(3\)</span>-cycle in <span class="math inline">\(N\)</span>.</p>
-</section>
-<section id="proof-of-10.2.3-one-3-cycle" class="slide level2">
-<h2>Proof of 10.2.3: One <span class="math inline">\(3\)</span>-Cycle</h2>
-<p><strong>Case 3:</strong> <span class="math inline">\(\sigma=\tau(a_1,a_2,a_3)\)</span>, where <span class="math inline">\(\tau\)</span> consists of disjoint <span class="math inline">\(2\)</span>-cycles.</p>
-<p>Because <span class="math inline">\(\tau^2=\mathrm{id}\)</span> and the cycles are disjoint,</p>
-<p><span class="math inline">\(\sigma^2=\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\in N\)</span>.</p>
-<p>Thus <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle.</p>
-<p>This includes the case where <span class="math inline">\(\sigma\)</span> itself is a <span class="math inline">\(3\)</span>-cycle.</p>
-</section>
-<section id="proof-of-10.2.3-only-2-cycles" class="slide level2 smaller">
-<h2>Proof of 10.2.3: Only <span class="math inline">\(2\)</span>-Cycles</h2>
-<p><strong>Case 4:</strong> <span class="math inline">\(\sigma=\tau(a_1,a_2)(a_3,a_4)\)</span>, where <span class="math inline">\(\tau\)</span> consists of an even number of disjoint <span class="math inline">\(2\)</span>-cycles.</p>
-<p>Take <span class="math inline">\(\alpha=(a_1,a_2,a_3)\)</span>. Then</p>
-<p><span class="math inline">\(\delta=\sigma^{-1}\alpha\sigma\alpha^{-1}=(a_1,a_3)(a_2,a_4)\in N\)</span>.</p>
-<p>Since <span class="math inline">\(n\geq 5\)</span>, choose <span class="math inline">\(b\notin\{a_1,a_2,a_3,a_4\}\)</span> and put <span class="math inline">\(\mu=(a_1,a_3,b)\)</span>.</p>
-<p>Normality gives</p>
-<p><span class="math inline">\(\mu^{-1}\delta\mu\delta=(a_1,a_3,b)\in N\)</span>.</p>
-<p>Every possible nonidentity cycle structure has now been covered. Thus <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle. <span class="math inline">\(\square\)</span></p>
-</section>
-<section id="theorem-10.2.4" class="slide level2">
-<h2>Theorem 10.2.4</h2>
-<p>The alternating group, <span class="math inline">\(A_n\)</span>, is simple for <span class="math inline">\(n\geq 5\)</span>.</p>
-</section>
-<section id="proof-of-10.2.4" class="slide level2">
-<h2>Proof of 10.2.4</h2>
-<p>Let <span class="math inline">\(N\)</span> be a <strong>nontrivial</strong> normal subgroup of <span class="math inline">\(A_n\)</span>, where <span class="math inline">\(n\geq 5\)</span>.</p>
-<p>By Lemma 10.2.3, <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle.</p>
-<p>By Lemma 10.2.2, <span class="math inline">\(N=A_n\)</span>.</p>
-<p>Therefore, the only normal subgroups of <span class="math inline">\(A_n\)</span> are <span class="math inline">\(\{\mathrm{id}\}\)</span> and <span class="math inline">\(A_n\)</span>.</p>
-<p>Hence <span class="math inline">\(A_n\)</span> is simple. <span class="math inline">\(\square\)</span></p>
-</section>
-<section class="slide level2">
-
+<p>Therefore <span class="math inline">\(G/H\cong(G/N)/(H/N)\)</span>. <span class="math inline">\(\square\)</span></p>
 
 
 </section>

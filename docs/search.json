@@ -99,373 +99,244 @@
   {
     "objectID": "classes/22/slides.html#class-session-goals",
     "href": "classes/22/slides.html#class-session-goals",
-    "title": "Slides: Factor Groups and Simple Groups",
+    "title": "Slides: Homomorphism Theorems",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nDefine a simple group and identify examples and nonexamples.\nProve that \\(\\mathbb{Z}_p\\) is simple when \\(p\\) is prime.\nDescribe the classification of finite simple groups and its historical significance."
+    "text": "Class Session Goals\nBy the end of this session, you should be able to:",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#motivation-for-normal-subgroups",
-    "href": "classes/22/slides.html#motivation-for-normal-subgroups",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Motivation for Normal Subgroups",
-    "text": "Motivation for Normal Subgroups\nCosets of a group are a set, and they inherit a multiplication from the group. A natural questions is: “Is the set of cosets a group?” What do we need to make that happen.\nWhat do we need to make multiplication work on the set of cosets?\nWe would like to define \\((aH)(bH)=abH\\).\nThe product must be well-defined because there a multiple representatives for each coset. We also need associativity, the identity and inverses."
+    "objectID": "classes/22/slides.html#commutative-diagrams",
+    "href": "classes/22/slides.html#commutative-diagrams",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Commutative Diagrams",
+    "text": "Commutative Diagrams\nA diagram commutes when following different directed paths with the same starting and ending objects gives the same map.\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n& {\\scriptstyle\\phi}\\searrow\\quad\\nearrow{\\scriptstyle\\eta} &\\\\\n& G/K &\n\\end{array}\n\\]\nThis diagram commutes when \\(\\psi=\\eta\\phi\\); that is, \\(\\psi(g)=\\eta(\\phi(g))\\) for every \\(g\\in G\\).\nThe First Isomorphism Theorem supplies the isomorphism \\(\\eta\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#definition-of-normal-subgroup",
-    "href": "classes/22/slides.html#definition-of-normal-subgroup",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Definition of Normal Subgroup",
-    "text": "Definition of Normal Subgroup\nA subgroup \\(H\\) of a group \\(G\\) is normal in \\(G\\) if \\(gH=Hg\\) for all \\(g\\in G\\).\nFor each \\(g\\), the left coset \\(gH\\) and the right coset \\(Hg\\) must be equal. Another way to say this conditions is that given \\(g \\in G\\) there are elements \\(h\\) and \\(h'\\) in \\(H\\) such that \\(gh=h'g\\)."
+    "objectID": "classes/22/slides.html#theorem-11.2.1",
+    "href": "classes/22/slides.html#theorem-11.2.1",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.1",
+    "text": "Theorem 11.2.1\nFirst Isomorphism Theorem\nIf \\(\\psi:G\\rightarrow H\\) is a group homomorphism with \\(K=\\ker\\psi\\), then \\(K\\) is normal in \\(G\\).\nLet \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\nThen there exists a unique isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) such that \\(\\psi=\\eta\\phi\\).\n\\[\nG/\\ker\\psi\\cong\\psi(G).\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#left-and-right-cosets-in-an-abelian-group",
-    "href": "classes/22/slides.html#left-and-right-cosets-in-an-abelian-group",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Left and Right Cosets in an Abelian Group",
-    "text": "Left and Right Cosets in an Abelian Group\nLet \\(G\\) be abelian and let \\(H\\) be a subgroup of \\(G\\).\nFor every \\(g\\in G\\) and \\(h\\in H\\), we have \\(gh=hg\\). Hence,\n\\(gH=\\{gh:h\\in H\\}=\\{hg:h\\in H\\}=Hg\\).\nEvery subgroup of an abelian group is normal."
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.1",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.1",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.1",
+    "text": "Proof of Theorem 11.2.1\nWe already know that \\(K\\) is normal in \\(G\\). Define \\(\\eta:G/K\\rightarrow\\psi(G)\\) by \\(\\eta(gK)=\\psi(g)\\).\n\nWell-defined: If \\(g_1K=g_2K\\), then \\(g_2=g_1k\\) for some \\(k\\in K\\). Hence \\(\\psi(g_2)=\\psi(g_1)\\psi(k)=\\psi(g_1)\\).\nHomomorphism: \\(\\eta(g_1K\\,g_2K)=\\psi(g_1g_2)=\\psi(g_1)\\psi(g_2)=\\eta(g_1K)\\eta(g_2K)\\).\nOnto: Every element \\(\\psi(g)\\) of \\(\\psi(G)\\) equals \\(\\eta(gK)\\).\nOne-to-one: If \\(\\eta(g_1K)=\\eta(g_2K)\\), then \\(\\psi(g_1)=\\psi(g_2)\\). Thus \\(\\psi(g_1^{-1}g_2)=e\\), so \\(g_1^{-1}g_2\\in K\\) and \\(g_1K=g_2K\\).\nFactorization and uniqueness: \\(\\eta(\\phi(g))=\\eta(gK)=\\psi(g)\\). Any map satisfying this identity must send \\(gK\\) to \\(\\psi(g)\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#subgroups-of-index-2",
-    "href": "classes/22/slides.html#subgroups-of-index-2",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Subgroups of index 2",
-    "text": "Subgroups of index 2\nHomework problem from chapter 6 asked you to prove:\nClaim: The left and right cosets of a subgroup of index two are equal.\nLeft Cosets: \\(H\\), \\(gH\\)\nRight Coset: \\(H\\), \\(Hg\\)\nThis shows that all subgoups of index 2 are normal."
+    "objectID": "classes/22/slides.html#theorem-11.2.3",
+    "href": "classes/22/slides.html#theorem-11.2.3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.3",
+    "text": "Theorem 11.2.3\nSecond Isomorphism Theorem\nLet \\(H\\) be a subgroup of a group \\(G\\) (not necessarily normal in \\(G\\)) and \\(N\\) a normal subgroup of \\(G\\).\nThen \\(HN\\) is a subgroup of \\(G\\), \\(H\\cap N\\) is a normal subgroup of \\(H\\), and\n\\[\nH/H\\cap N\\cong HN/N.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-10.1.3",
-    "href": "classes/22/slides.html#theorem-10.1.3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 10.1.3",
-    "text": "Theorem 10.1.3\nLet \\(G\\) be a group and \\(N\\) be a subgroup of \\(G\\). Then the following statements are equivalent.\n\nThe subgroup \\(N\\) is normal in \\(G\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}\\subset N\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}=N\\)."
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.3",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.3",
+    "text": "Proof of Theorem 11.2.3\nFirst, \\(HN=\\{hn:h\\in H,n\\in N\\}\\) contains \\(e\\). Since \\(N\\) is normal,\n\\[\n\\begin{aligned}\n(h_1n_1)(h_2n_2)\n&=h_1h_2(h_2^{-1}n_1h_2)n_2\\in HN,\\\\\n(hn)^{-1}\n&=n^{-1}h^{-1}=h^{-1}(hn^{-1}h^{-1})\\in HN.\n\\end{aligned}\n\\]\nThus \\(HN\\) is a subgroup of \\(G\\).\nFor \\(h\\in H\\) and \\(n\\in H\\cap N\\), the element \\(h^{-1}nh\\) belongs to both \\(H\\) and \\(N\\). Hence \\(H\\cap N\\) is normal in \\(H\\).\nDefine \\(\\phi:H\\rightarrow HN/N\\) by \\(\\phi(h)=hN\\). It is onto because \\(hnN=hN\\), and it is a homomorphism because \\(\\phi(hh')=hh'N=hNh'N=\\phi(h)\\phi(h')\\).\nSince \\(\\ker\\phi=\\{h\\in H:h\\in N\\}=H\\cap N\\), the First Isomorphism Theorem gives \\(H/H\\cap N\\cong HN/N\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-of-10.1.3",
-    "href": "classes/22/slides.html#proof-of-10.1.3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.1.3",
-    "text": "Proof of 10.1.3\nFirst implies second: Normality gives \\(gN=Ng\\). For \\(g\\in G\\) and \\(n\\in N\\), write \\(gn=n'g\\) with \\(n'\\in N\\). Then \\(gng^{-1}=n'\\in N\\), so \\(gNg^{-1}\\subset N\\).\nSecond implies Third: Fix \\(g\\in G\\). We already have \\(gNg^{-1}\\subset N\\). For \\(n\\in N\\), apply (2) to \\(g^{-1}\\):\n\\(g^{-1}ng=g^{-1}n(g^{-1})^{-1}\\in N\\).\nWriting \\(n'=g^{-1}ng\\) gives \\(n=gn'g^{-1}\\in gNg^{-1}\\). Thus \\(N\\subset gNg^{-1}\\), establishing equality.\nThird implies first: If \\(gNg^{-1}=N\\), then for each \\(n\\in N\\), \\(gng^{-1}=n'\\) for some \\(n'\\in N\\). Hence \\(gn=n'g\\), giving \\(gN\\subset Ng\\).\nApplying (3) to \\(g^{-1}\\) also gives \\(g^{-1}ng\\in N\\), so \\(ng=g(g^{-1}ng)\\in gN\\). Therefore \\(Ng\\subset gN\\).\nConsequently, \\(gN=Ng\\) for every \\(g\\in G\\), and \\(N\\) is normal in \\(G\\)."
+    "objectID": "classes/22/slides.html#theorem-11.2.4",
+    "href": "classes/22/slides.html#theorem-11.2.4",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.4",
+    "text": "Theorem 11.2.4\nCorrespondence Theorem\nLet \\(N\\) be a normal subgroup of a group \\(G\\).\nThen \\(H\\mapsto H/N\\) is a one-to-one correspondence between the set of subgroups \\(H\\) of \\(G\\) containing \\(N\\) and the set of subgroups of \\(G/N\\).\nFurthermore, the normal subgroups of \\(G\\) containing \\(N\\) correspond to normal subgroups of \\(G/N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#factor-groups",
-    "href": "classes/22/slides.html#factor-groups",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Factor Groups",
-    "text": "Factor Groups\nLet \\(N\\) be normal in \\(G\\).\nThe factor group, or quotient group, is the set of cosets\n\\(G/N=\\{gN:g\\in G\\}\\),\nwith multiplication defined by\n\\((aN)(bN)=abN\\).\nThe elements of \\(G/N\\) are cosets, each of which is a set of elements of \\(G\\)."
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.4",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.4",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.4",
+    "text": "Proof of Theorem 11.2.4\nLet \\(\\pi:G\\rightarrow G/N\\) be the canonical homomorphism.\n\nSubgroups correspond: If \\(N\\subseteq H\\leq G\\), then \\(H/N=\\pi(H)\\) is a subgroup of \\(G/N\\). If \\(S\\leq G/N\\), then \\(H=\\pi^{-1}(S)\\) is a subgroup containing \\(N\\), and \\(H/N=S\\).\nThe correspondence is one-to-one: For every subgroup \\(H\\) containing \\(N\\), \\(\\pi^{-1}(H/N)=H\\). Thus taking images and taking inverse images give inverse correspondences.\nNormality passes to the quotient: If \\(H\\) is normal in \\(G\\), the map \\(G/N\\rightarrow G/H\\) defined by \\(gN\\mapsto gH\\) is a homomorphism with kernel \\(H/N\\). Hence \\(H/N\\) is normal in \\(G/N\\).\nNormality lifts from the quotient: If \\(H/N\\) is normal in \\(G/N\\), then \\(H=\\pi^{-1}(H/N)\\) is normal in \\(G\\) by Proposition 11.1.4(4). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-10.1.4",
-    "href": "classes/22/slides.html#theorem-10.1.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 10.1.4",
-    "text": "Theorem 10.1.4\nLet \\(N\\) be a normal subgroup of a group \\(G\\). The cosets of \\(N\\) in \\(G\\) form a group \\(G/N\\) of order \\([G:N]\\).\nThe operation is \\((aN)(bN)=abN\\).\nWhat do we need to show?\n\nIdentity: \\(eN=N\\).\nInverse of \\(gN\\): \\(g^{-1}N\\).\nOrder: the number of distinct cosets of \\(N\\) in \\(G\\)."
+    "objectID": "classes/22/slides.html#theorem-11.2.5",
+    "href": "classes/22/slides.html#theorem-11.2.5",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.5",
+    "text": "Theorem 11.2.5\nThird Isomorphism Theorem\nLet \\(G\\) be a group and \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subset H\\).\nThen\n\\[\nG/H\\cong\\frac{G/N}{H/N}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-10.1.4",
-    "href": "classes/22/slides.html#proof-10.1.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof 10.1.4",
-    "text": "Proof 10.1.4\nWell-defined: Suppose \\(aN=bN\\) and \\(cN=dN\\).\nWrite \\(a=bn_1\\) and \\(c=dn_2\\), where \\(n_1,n_2\\in N\\). Then\n\\[\nacN=bn_1dn_2N=bn_1dN=bn_1Nd=bNd=bdN.\n\\]\nHere \\(dN=Nd\\) because \\(N\\) is normal.\nAssociativity: \\(((aN)(bN))(cN)=(ab)cN=a(bc)N=(aN)((bN)(cN))\\).\nIdentity: \\((eN)(gN)=gN=(gN)(eN)\\).\nInverses: \\((gN)(g^{-1}N)=N=(g^{-1}N)(gN)\\).\nFinally, \\(|G/N|=[G:N]\\). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/22/slides.html#example-1",
-    "href": "classes/22/slides.html#example-1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Example 1",
-    "text": "Example 1\nTake \\(N=\\{(1),(1\\,2\\,3),(1\\,3\\,2)\\}=A_3\\) in \\(S_3\\).\nThe two cosets are \\(N\\) and \\((1\\,2)N\\).\n\n\n\n\\(\\cdot\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\n\n\\(N\\)\n\\(N\\)\n\\((1\\,2)N\\)\n\n\n\\((1\\,2)N\\)\n\\((1\\,2)N\\)\n\\(N\\)\n\n\n\nThus \\(S_3/N\\cong\\mathbb{Z}_2\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#example-2",
-    "href": "classes/22/slides.html#example-2",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Example 2",
-    "text": "Example 2\nThe subgroup \\(3\\mathbb{Z}\\) is normal in \\(\\mathbb{Z}\\). Its cosets are\n\n\\(0+3\\mathbb{Z}=\\{\\ldots,-3,0,3,6,\\ldots\\}\\).\n\\(1+3\\mathbb{Z}=\\{\\ldots,-2,1,4,7,\\ldots\\}\\).\n\\(2+3\\mathbb{Z}=\\{\\ldots,-1,2,5,8,\\ldots\\}\\).\n\n\n\n\n\n\n\n\n\n\n\\(+\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\n\n\n\n\\(0+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\n\n\\(1+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\n\n\\(2+3\\mathbb{Z}\\)\n\\(2+3\\mathbb{Z}\\)\n\\(0+3\\mathbb{Z}\\)\n\\(1+3\\mathbb{Z}\\)\n\n\n\nIn general, \\((k+n\\mathbb{Z})+(l+n\\mathbb{Z})=k+l+n\\mathbb{Z}\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#example-3",
-    "href": "classes/22/slides.html#example-3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Example 3",
-    "text": "Example 3\nThe dihedral group \\(D_n\\) has generators \\(r\\) and \\(s\\) satisfying\n\\(r^n=\\mathrm{id}\\), \\(\\quad s^2=\\mathrm{id}\\), \\(\\quad srs=r^{-1}\\).\nThe rotations form the cyclic subgroup \\(R_n=\\langle r\\rangle\\).\nConjugation by \\(r\\) preserves \\(R_n\\), and \\(srs^{-1}=srs=r^{-1}\\in R_n\\).\nThus \\(R_n\\) is normal in \\(D_n\\).\nThere are two cosets: \\(R_n\\) and \\(sR_n\\). Therefore,\n\\(D_n/R_n\\cong\\mathbb{Z}_2\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#definition-of-simple-groups",
-    "href": "classes/22/slides.html#definition-of-simple-groups",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Definition of Simple Groups",
-    "text": "Definition of Simple Groups\nA nontrivial group \\(G\\) is simple if its only normal subgroups are \\(\\{e\\}\\) and \\(G\\).\nThus, if \\(N\\) is normal in \\(G\\), then\n\\(N=\\{e\\}\\) or \\(N=G\\).\nA simple group may have proper nontrivial subgroups; none of them can be normal."
-  },
-  {
-    "objectID": "classes/22/slides.html#example-mathbbz_p",
-    "href": "classes/22/slides.html#example-mathbbz_p",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Example: \\(\\mathbb{Z}_p\\)",
-    "text": "Example: \\(\\mathbb{Z}_p\\)\nLet \\(p\\) be prime.\nIf \\(H\\) is a subgroup of \\(\\mathbb{Z}_p\\), Lagrange’s Theorem gives \\(|H|\\mid p\\).\nTherefore, \\(|H|=1\\) or \\(|H|=p\\), so\n\\(H=\\{0\\}\\) or \\(H=\\mathbb{Z}_p\\).\nConsequently, \\(\\mathbb{Z}_p\\) is simple.\nMore generally: A finite cyclic group is simple if and only if its order is prime."
-  },
-  {
-    "objectID": "classes/22/slides.html#other-noteworthy-examples",
-    "href": "classes/22/slides.html#other-noteworthy-examples",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Other Noteworthy Examples",
-    "text": "Other Noteworthy Examples\n\nAlternating groups: \\(A_n\\) is simple for \\(n\\geq 5\\).\nProjective special linear groups: \\(\\mathrm{PSL}_2(\\mathbb{F}_5)\\cong A_5\\) is simple.\nMathieu groups: \\(M_{11},M_{12},M_{22},M_{23},M_{24}\\) are sporadic simple groups.\nConway groups: \\(\\mathrm{Co}_1,\\mathrm{Co}_2,\\mathrm{Co}_3\\) are sporadic simple groups.\nThe Monster: \\(\\mathbb{M}\\) is the largest sporadic simple group, with order approximately \\(8.08\\times 10^{53}\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#historical-notes-the-enormous-theorem",
-    "href": "classes/22/slides.html#historical-notes-the-enormous-theorem",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Historical Notes: The Enormous Theorem",
-    "text": "Historical Notes: The Enormous Theorem\nClassification of Finite Simple Groups\nEvery finite simple group is isomorphic to one of the following:\n\nA cyclic group \\(\\mathbb{Z}_p\\), where \\(p\\) is prime.\nAn alternating group \\(A_n\\), where \\(n\\geq 5\\).\nA finite simple group of Lie type.\nOne of the \\(26\\) sporadic simple groups.\n\nThe theorem gives a complete list, up to isomorphism."
-  },
-  {
-    "objectID": "classes/22/slides.html#historical-notes-the-enormous-theorem-1",
-    "href": "classes/22/slides.html#historical-notes-the-enormous-theorem-1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Historical Notes: The Enormous Theorem",
-    "text": "Historical Notes: The Enormous Theorem\n\nThe original classification involved roughly \\(100\\) mathematicians, about \\(500\\) papers, and approximately \\(10{,}000\\) pages.\n\nWorks started in 1832 and was completed in 2004, most work was completed by \\(1983\\).\nEvery finite group has a composition series whose factors are simple.\nSimple groups are the “building blocks” of finite groups."
-  },
-  {
-    "objectID": "classes/22/slides.html#all-known-simple-groups",
-    "href": "classes/22/slides.html#all-known-simple-groups",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "All Known Simple Groups",
-    "text": "All Known Simple Groups"
-  },
-  {
-    "objectID": "classes/22/slides.html#lemma-10.2.1",
-    "href": "classes/22/slides.html#lemma-10.2.1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Lemma 10.2.1",
-    "text": "Lemma 10.2.1\nThe alternating group \\(A_n\\) is generated by \\(3\\)-cycles for \\(n\\geq 3\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.1",
-    "href": "classes/22/slides.html#proof-of-10.2.1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.1",
-    "text": "Proof of 10.2.1\nAn even permutation is a product of pairs of transpositions.\nEach pair can be rewritten using \\(3\\)-cycles:\n\\[\n\\begin{aligned}\n(a,b)(a,b)&=\\mathrm{id},\\\\\n(a,b)(c,d)&=(a,c,b)(a,c,d),\\\\\n(a,b)(a,c)&=(a,c,b).\n\\end{aligned}\n\\]\nThese cover identical, disjoint, and overlapping transpositions.\nEvery \\(3\\)-cycle is even, so the \\(3\\)-cycles generate exactly \\(A_n\\). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/22/slides.html#lemma-10.2.2",
-    "href": "classes/22/slides.html#lemma-10.2.2",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Lemma 10.2.2",
-    "text": "Lemma 10.2.2\nLet \\(N\\) be a normal subgroup of \\(A_n\\), where \\(n\\geq 3\\).\nIf \\(N\\) contains a \\(3\\)-cycle, then \\(N=A_n\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.2",
-    "href": "classes/22/slides.html#proof-of-10.2.2",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.2",
-    "text": "Proof of 10.2.2\nStep 1: Fix two symbols \\(i\\) and \\(j\\).\nThe cycles \\((i,j,k)\\) generate all \\(3\\)-cycles, using\n\\[\n\\begin{aligned}\n(i,a,j)&=(i,j,a)^2,\\\\\n(i,a,b)&=(i,j,b)(i,j,a)^2,\\\\\n(j,a,b)&=(i,j,b)^2(i,j,a),\\\\\n(a,b,c)&=(i,j,a)^2(i,j,c)(i,j,b)^2(i,j,a).\n\\end{aligned}\n\\]\nHere the symbols in each identity are distinct.\nBy Lemma 10.2.1, these cycles therefore generate \\(A_n\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.2-continued",
-    "href": "classes/22/slides.html#proof-of-10.2.2-continued",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.2: Continued",
-    "text": "Proof of 10.2.2: Continued\nStep 2: Use normality.\nSuppose \\((i,j,a)\\in N\\). Its inverse \\((i,j,a)^2\\) also belongs to \\(N\\).\nFor \\(k\\notin\\{i,j,a\\}\\), let \\(\\rho=(i,j)(a,k)\\in A_n\\).\nNormality gives\n\\(\\rho(i,j,a)^2\\rho^{-1}=(i,j,k)\\in N\\).\nThus \\(N\\) contains every generator \\((i,j,k)\\) with \\(k\\neq i,j\\), including the original \\((i,j,a)\\).\nTherefore, \\(N=A_n\\). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/22/slides.html#lemma-10.2.3",
-    "href": "classes/22/slides.html#lemma-10.2.3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Lemma 10.2.3",
-    "text": "Lemma 10.2.3\nFor \\(n\\geq 5\\), every nontrivial normal subgroup \\(N\\) of \\(A_n\\) contains a \\(3\\)-cycle."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.3-setup",
-    "href": "classes/22/slides.html#proof-of-10.2.3-setup",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.3: Setup",
-    "text": "Proof of 10.2.3: Setup\nChoose \\(\\sigma\\in N\\) with \\(\\sigma\\neq\\mathrm{id}\\).\nFor any \\(\\alpha\\in A_n\\), normality gives\n\\(\\alpha\\sigma\\alpha^{-1}\\in N\\),\nand hence\n\\(\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\\in N\\).\nWe use this construction to obtain simpler cycle structures.\nIn the following cases, \\(\\tau\\) denotes the product of the remaining disjoint cycles."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.3-long-cycles",
-    "href": "classes/22/slides.html#proof-of-10.2.3-long-cycles",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.3: Long Cycles",
-    "text": "Proof of 10.2.3: Long Cycles\nCase 1: \\(\\sigma\\) contains a cycle of length \\(r&gt;3\\).\nWrite \\(\\sigma=\\tau(a_1,a_2,\\ldots,a_r)\\) and take \\(\\alpha=(a_1,a_2,a_3)\\).\nThen\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\\\\n&=(a_1,a_3,a_r)\\in N.\n\\end{aligned}\n\\]\nThus \\(N\\) contains a \\(3\\)-cycle."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.3-two-3-cycles",
-    "href": "classes/22/slides.html#proof-of-10.2.3-two-3-cycles",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.3: Two \\(3\\)-Cycles",
-    "text": "Proof of 10.2.3: Two \\(3\\)-Cycles\nCase 2: \\(\\sigma=\\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nTake \\(\\alpha=(a_1,a_2,a_4)\\). Then\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\\\\n&=(a_1,a_4,a_2,a_6,a_3)\\in N.\n\\end{aligned}\n\\]\nThis is a \\(5\\)-cycle.\nCase 1 now produces a \\(3\\)-cycle in \\(N\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.3-one-3-cycle",
-    "href": "classes/22/slides.html#proof-of-10.2.3-one-3-cycle",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.3: One \\(3\\)-Cycle",
-    "text": "Proof of 10.2.3: One \\(3\\)-Cycle\nCase 3: \\(\\sigma=\\tau(a_1,a_2,a_3)\\), where \\(\\tau\\) consists of disjoint \\(2\\)-cycles.\nBecause \\(\\tau^2=\\mathrm{id}\\) and the cycles are disjoint,\n\\(\\sigma^2=\\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\\in N\\).\nThus \\(N\\) contains a \\(3\\)-cycle.\nThis includes the case where \\(\\sigma\\) itself is a \\(3\\)-cycle."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.3-only-2-cycles",
-    "href": "classes/22/slides.html#proof-of-10.2.3-only-2-cycles",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.3: Only \\(2\\)-Cycles",
-    "text": "Proof of 10.2.3: Only \\(2\\)-Cycles\nCase 4: \\(\\sigma=\\tau(a_1,a_2)(a_3,a_4)\\), where \\(\\tau\\) consists of an even number of disjoint \\(2\\)-cycles.\nTake \\(\\alpha=(a_1,a_2,a_3)\\). Then\n\\(\\delta=\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}=(a_1,a_3)(a_2,a_4)\\in N\\).\nSince \\(n\\geq 5\\), choose \\(b\\notin\\{a_1,a_2,a_3,a_4\\}\\) and put \\(\\mu=(a_1,a_3,b)\\).\nNormality gives\n\\(\\mu^{-1}\\delta\\mu\\delta=(a_1,a_3,b)\\in N\\).\nEvery possible nonidentity cycle structure has now been covered. Thus \\(N\\) contains a \\(3\\)-cycle. \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/22/slides.html#theorem-10.2.4",
-    "href": "classes/22/slides.html#theorem-10.2.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 10.2.4",
-    "text": "Theorem 10.2.4\nThe alternating group, \\(A_n\\), is simple for \\(n\\geq 5\\)."
-  },
-  {
-    "objectID": "classes/22/slides.html#proof-of-10.2.4",
-    "href": "classes/22/slides.html#proof-of-10.2.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of 10.2.4",
-    "text": "Proof of 10.2.4\nLet \\(N\\) be a nontrivial normal subgroup of \\(A_n\\), where \\(n\\geq 5\\).\nBy Lemma 10.2.3, \\(N\\) contains a \\(3\\)-cycle.\nBy Lemma 10.2.2, \\(N=A_n\\).\nTherefore, the only normal subgroups of \\(A_n\\) are \\(\\{\\mathrm{id}\\}\\) and \\(A_n\\).\nHence \\(A_n\\) is simple. \\(\\square\\)"
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.5",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.5",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.5",
+    "text": "Proof of Theorem 11.2.5\nDefine \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\n\nWell-defined: If \\(g_1N=g_2N\\), then \\(g_1^{-1}g_2\\in N\\subseteq H\\), so \\(g_1H=g_2H\\).\nHomomorphism: \\(\\rho(g_1N\\,g_2N)=g_1g_2H=(g_1H)(g_2H)\\).\nOnto: Every coset \\(gH\\) is the image of \\(gN\\).\nKernel: \\(\\rho(gN)=H\\) exactly when \\(g\\in H\\). Thus \\(\\ker\\rho=H/N\\).\n\nBy the First Isomorphism Theorem,\n\\[\n\\frac{G/N}{H/N}\\cong G/H.\n\\]\nTherefore \\(G/H\\cong(G/N)/(H/N)\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#class-session-goals",
     "href": "classes/21/slides.html#class-session-goals",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nVerify that a map between groups is a homomorphism.\nDetermine the kernel and image of a homomorphism.\nExplain how homomorphisms interact with identities, inverses, and subgroups.\nInterpret a commutative diagram.\nState and apply the isomorphism theorems and the Correspondence Theorem."
+    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nVerify that a map between groups is a homomorphism.\nDetermine the kernel and image of a homomorphism.\nExplain how homomorphisms interact with identities, inverses, and subgroups.\nInterpret a commutative diagram.\nState and apply the isomorphism theorems and the Correspondence Theorem.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#motivation-how-should-we-define-functions-between-groups",
     "href": "classes/21/slides.html#motivation-how-should-we-define-functions-between-groups",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Motivation: How should we define functions between groups",
-    "text": "Motivation: How should we define functions between groups\nTwo groups are related in the strongest possible way if they are isomorphic; however, a weaker relationship may exist between two groups.\nFor example, the symmetric group \\(S_n\\) and the group \\(\\mathbb{Z}_2\\) are related by the fact that \\(S_n\\) can be divided into even and odd permutations.\n\n\n\n\neven\nodd\n\n\n\n\neven\neven\nodd\n\n\nodd\nodd\neven\n\n\n\nWe use homomorphisms to study relationships such as the one we have just described."
+    "text": "Motivation: How should we define functions between groups\nTwo groups are related in the strongest possible way if they are isomorphic; however, a weaker relationship may exist between two groups.\nFor example, the symmetric group \\(S_n\\) and the group \\(\\mathbb{Z}_2\\) are related by the fact that \\(S_n\\) can be divided into even and odd permutations.\n\n\n\n\neven\nodd\n\n\n\n\neven\neven\nodd\n\n\nodd\nodd\neven\n\n\n\nWe use homomorphisms to study relationships such as the one we have just described.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#definition-of-homomorphism",
     "href": "classes/21/slides.html#definition-of-homomorphism",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Definition of Homomorphism",
-    "text": "Definition of Homomorphism\nA homomorphism between groups \\((G,\\cdot)\\) and \\((H,\\circ)\\) is a map \\(\\phi:G\\rightarrow H\\) such that\n\\[\n\\phi(g_1\\cdot g_2)=\\phi(g_1)\\circ\\phi(g_2)\n\\]\nfor \\(g_1,g_2\\in G\\).\nThe range of \\(\\phi\\) in \\(H\\) is called the homomorphic image of \\(\\phi\\)."
+    "text": "Definition of Homomorphism\nA homomorphism between groups \\((G,\\cdot)\\) and \\((H,\\circ)\\) is a map \\(\\phi:G\\rightarrow H\\) such that\n\\[\n\\phi(g_1\\cdot g_2)=\\phi(g_1)\\circ\\phi(g_2)\n\\]\nfor \\(g_1,g_2\\in G\\).\nThe range of \\(\\phi\\) in \\(H\\) is called the homomorphic image of \\(\\phi\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#homomorphism-example-1",
     "href": "classes/21/slides.html#homomorphism-example-1",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Homomorphism Example 1",
-    "text": "Homomorphism Example 1\nExample 11.1.1\nLet \\(G\\) be a group and \\(g\\in G\\). Define a map \\(\\phi:\\mathbb{Z}\\rightarrow G\\) by \\(\\phi(n)=g^n\\).\nThen \\(\\phi\\) is a group homomorphism, since\n\\[\n\\phi(m+n)=g^{m+n}=g^m g^n=\\phi(m)\\phi(n).\n\\]\nThis homomorphism maps \\(\\mathbb{Z}\\) onto the cyclic subgroup of \\(G\\) generated by \\(g\\)."
+    "text": "Homomorphism Example 1\nExample 11.1.1\nLet \\(G\\) be a group and \\(g\\in G\\). Define a map \\(\\phi:\\mathbb{Z}\\rightarrow G\\) by \\(\\phi(n)=g^n\\).\nThen \\(\\phi\\) is a group homomorphism, since\n\\[\n\\phi(m+n)=g^{m+n}=g^m g^n=\\phi(m)\\phi(n).\n\\]\nThis homomorphism maps \\(\\mathbb{Z}\\) onto the cyclic subgroup of \\(G\\) generated by \\(g\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#homomorphism-example-2",
     "href": "classes/21/slides.html#homomorphism-example-2",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Homomorphism Example 2",
-    "text": "Homomorphism Example 2\nExample 11.1.2\nLet \\(G=GL_2(\\mathbb{R})\\). If \\(A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\) is in \\(G\\), then the determinant is nonzero; that is, \\(\\det(A)=ad-bc\\neq 0\\).\nAlso, for any two elements \\(A\\) and \\(B\\) in \\(G\\),\n\\[\n\\det(AB)=\\det(A)\\det(B).\n\\]\nUsing the determinant, we can define a homomorphism \\(\\phi:GL_2(\\mathbb{R})\\rightarrow\\mathbb{R}^{\\ast}\\) by \\(A\\mapsto\\det(A)\\)."
+    "text": "Homomorphism Example 2\nExample 11.1.2\nLet \\(G=GL_2(\\mathbb{R})\\). If \\(A=\\begin{pmatrix}a&b\\\\c&d\\end{pmatrix}\\) is in \\(G\\), then the determinant is nonzero; that is, \\(\\det(A)=ad-bc\\neq 0\\).\nAlso, for any two elements \\(A\\) and \\(B\\) in \\(G\\),\n\\[\n\\det(AB)=\\det(A)\\det(B).\n\\]\nUsing the determinant, we can define a homomorphism \\(\\phi:GL_2(\\mathbb{R})\\rightarrow\\mathbb{R}^{\\ast}\\) by \\(A\\mapsto\\det(A)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#homomorphism-example-3",
     "href": "classes/21/slides.html#homomorphism-example-3",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Homomorphism Example 3",
-    "text": "Homomorphism Example 3\nExample 11.1.3\nRecall that the circle group \\(\\mathbb{T}\\) consists of all complex numbers \\(z\\) such that \\(|z|=1\\).\nWe can define a homomorphism \\(\\phi\\) from the additive group of real numbers \\(\\mathbb{R}\\) to \\(\\mathbb{T}\\) by \\(\\phi:\\theta\\mapsto\\cos\\theta+i\\sin\\theta\\). Indeed,\n\\[\n\\begin{aligned}\n\\phi(\\alpha+\\beta)\n&=\\cos(\\alpha+\\beta)+i\\sin(\\alpha+\\beta)\\\\\n&=(\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta)\\\\\n&\\qquad+i(\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta)\\\\\n&=(\\cos\\alpha+i\\sin\\alpha)(\\cos\\beta+i\\sin\\beta)\\\\\n&=\\phi(\\alpha)\\phi(\\beta).\n\\end{aligned}\n\\]\nGeometrically, we are simply wrapping the real line around the circle in a group-theoretic fashion."
+    "text": "Homomorphism Example 3\nExample 11.1.3\nRecall that the circle group \\(\\mathbb{T}\\) consists of all complex numbers \\(z\\) such that \\(|z|=1\\).\nWe can define a homomorphism \\(\\phi\\) from the additive group of real numbers \\(\\mathbb{R}\\) to \\(\\mathbb{T}\\) by \\(\\phi:\\theta\\mapsto\\cos\\theta+i\\sin\\theta\\). Indeed,\n\\[\n\\begin{aligned}\n\\phi(\\alpha+\\beta)\n&=\\cos(\\alpha+\\beta)+i\\sin(\\alpha+\\beta)\\\\\n&=(\\cos\\alpha\\cos\\beta-\\sin\\alpha\\sin\\beta)\\\\\n&\\qquad+i(\\sin\\alpha\\cos\\beta+\\cos\\alpha\\sin\\beta)\\\\\n&=(\\cos\\alpha+i\\sin\\alpha)(\\cos\\beta+i\\sin\\beta)\\\\\n&=\\phi(\\alpha)\\phi(\\beta).\n\\end{aligned}\n\\]\nGeometrically, we are simply wrapping the real line around the circle in a group-theoretic fashion.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#proposition-11.1.4",
     "href": "classes/21/slides.html#proposition-11.1.4",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Proposition 11.1.4",
-    "text": "Proposition 11.1.4\nLet \\(\\phi:G_1\\rightarrow G_2\\) be a homomorphism of groups. Then\n\nIf \\(e\\) is the identity of \\(G_1\\), then \\(\\phi(e)\\) is the identity of \\(G_2\\);\nFor any element \\(g\\in G_1\\), \\(\\phi(g^{-1})=[\\phi(g)]^{-1}\\);\nIf \\(H_1\\) is a subgroup of \\(G_1\\), then \\(\\phi(H_1)\\) is a subgroup of \\(G_2\\);\nIf \\(H_2\\) is a subgroup of \\(G_2\\), then \\(\\phi^{-1}(H_2)=\\{g\\in G_1:\\phi(g)\\in H_2\\}\\) is a subgroup of \\(G_1\\). Furthermore, if \\(H_2\\) is normal in \\(G_2\\), then \\(\\phi^{-1}(H_2)\\) is normal in \\(G_1\\)."
+    "text": "Proposition 11.1.4\nLet \\(\\phi:G_1\\rightarrow G_2\\) be a homomorphism of groups. Then\n\nIf \\(e\\) is the identity of \\(G_1\\), then \\(\\phi(e)\\) is the identity of \\(G_2\\);\nFor any element \\(g\\in G_1\\), \\(\\phi(g^{-1})=[\\phi(g)]^{-1}\\);\nIf \\(H_1\\) is a subgroup of \\(G_1\\), then \\(\\phi(H_1)\\) is a subgroup of \\(G_2\\);\nIf \\(H_2\\) is a subgroup of \\(G_2\\), then \\(\\phi^{-1}(H_2)=\\{g\\in G_1:\\phi(g)\\in H_2\\}\\) is a subgroup of \\(G_1\\). Furthermore, if \\(H_2\\) is normal in \\(G_2\\), then \\(\\phi^{-1}(H_2)\\) is normal in \\(G_1\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#proof-of-proposition-11.1.4",
     "href": "classes/21/slides.html#proof-of-proposition-11.1.4",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Proof of Proposition 11.1.4",
-    "text": "Proof of Proposition 11.1.4\nLet \\(e\\) and \\(e'\\) be the identities of \\(G_1\\) and \\(G_2\\), respectively.\n\nSince \\(e'\\phi(e)=\\phi(e)=\\phi(ee)=\\phi(e)\\phi(e)\\), cancellation gives \\(\\phi(e)=e'\\).\nSince \\(\\phi(g^{-1})\\phi(g)=\\phi(g^{-1}g)=\\phi(e)=e'\\), we have \\(\\phi(g^{-1})=[\\phi(g)]^{-1}\\).\nThe set \\(\\phi(H_1)\\) contains \\(e'\\). If \\(x=\\phi(a)\\) and \\(y=\\phi(b)\\) with \\(a,b\\in H_1\\), then \\(xy^{-1}=\\phi(a)[\\phi(b)]^{-1}=\\phi(ab^{-1})\\in\\phi(H_1)\\). Thus \\(\\phi(H_1)\\) is a subgroup.\nLet \\(H_1=\\phi^{-1}(H_2)\\). It contains \\(e\\). For \\(a,b\\in H_1\\), \\(\\phi(ab^{-1})=\\phi(a)[\\phi(b)]^{-1}\\in H_2\\), so \\(ab^{-1}\\in H_1\\). Thus \\(H_1\\) is a subgroup. If \\(H_2\\) is normal, then for \\(h\\in H_1\\) and \\(g\\in G_1\\), \\(\\phi(g^{-1}hg)=[\\phi(g)]^{-1}\\phi(h)\\phi(g)\\in H_2\\). Therefore \\(g^{-1}hg\\in H_1\\), proving normality. \\(\\square\\)"
+    "text": "Proof of Proposition 11.1.4\nLet \\(e\\) and \\(e'\\) be the identities of \\(G_1\\) and \\(G_2\\), respectively.\n\nSince \\(e'\\phi(e)=\\phi(e)=\\phi(ee)=\\phi(e)\\phi(e)\\), cancellation gives \\(\\phi(e)=e'\\).\nSince \\(\\phi(g^{-1})\\phi(g)=\\phi(g^{-1}g)=\\phi(e)=e'\\), we have \\(\\phi(g^{-1})=[\\phi(g)]^{-1}\\).\nThe set \\(\\phi(H_1)\\) contains \\(e'\\). If \\(x=\\phi(a)\\) and \\(y=\\phi(b)\\) with \\(a,b\\in H_1\\), then \\(xy^{-1}=\\phi(a)[\\phi(b)]^{-1}=\\phi(ab^{-1})\\in\\phi(H_1)\\). Thus \\(\\phi(H_1)\\) is a subgroup.\nLet \\(H_1=\\phi^{-1}(H_2)\\). It contains \\(e\\). For \\(a,b\\in H_1\\), \\(\\phi(ab^{-1})=\\phi(a)[\\phi(b)]^{-1}\\in H_2\\), so \\(ab^{-1}\\in H_1\\). Thus \\(H_1\\) is a subgroup. If \\(H_2\\) is normal, then for \\(h\\in H_1\\) and \\(g\\in G_1\\), \\(\\phi(g^{-1}hg)=[\\phi(g)]^{-1}\\phi(h)\\phi(g)\\in H_2\\). Therefore \\(g^{-1}hg\\in H_1\\), proving normality. \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#definition-of-kernel-and-theorem-11.1.5",
     "href": "classes/21/slides.html#definition-of-kernel-and-theorem-11.1.5",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Definition of Kernel and Theorem 11.1.5",
-    "text": "Definition of Kernel and Theorem 11.1.5\nLet \\(\\phi:G\\rightarrow H\\) be a group homomorphism and suppose that \\(e\\) is the identity of \\(H\\).\nThe subgroup \\(\\phi^{-1}(\\{e\\})\\) is called the kernel of \\(\\phi\\) and will be denoted by \\(\\ker\\phi\\).\n\\[\n\\ker\\phi=\\{g\\in G:\\phi(g)=e\\}.\n\\]\nTheorem 11.1.5\nLet \\(\\phi:G\\rightarrow H\\) be a group homomorphism. Then the kernel of \\(\\phi\\) is a normal subgroup of \\(G\\).\nReason: Apply Proposition 11.1.4(4) to the normal subgroup \\(\\{e\\}\\) of \\(H\\)."
+    "text": "Definition of Kernel and Theorem 11.1.5\nLet \\(\\phi:G\\rightarrow H\\) be a group homomorphism and suppose that \\(e\\) is the identity of \\(H\\).\nThe subgroup \\(\\phi^{-1}(\\{e\\})\\) is called the kernel of \\(\\phi\\) and will be denoted by \\(\\ker\\phi\\).\n\\[\n\\ker\\phi=\\{g\\in G:\\phi(g)=e\\}.\n\\]\nTheorem 11.1.5\nLet \\(\\phi:G\\rightarrow H\\) be a group homomorphism. Then the kernel of \\(\\phi\\) is a normal subgroup of \\(G\\).\nReason: Apply Proposition 11.1.4(4) to the normal subgroup \\(\\{e\\}\\) of \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#example-of-kernel-1",
     "href": "classes/21/slides.html#example-of-kernel-1",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Example of Kernel 1",
-    "text": "Example of Kernel 1\nExample 11.1.6\nLet us examine the homomorphism \\(\\phi:GL_2(\\mathbb{R})\\rightarrow\\mathbb{R}^{\\ast}\\) defined by \\(A\\mapsto\\det(A)\\).\nSince \\(1\\) is the identity of \\(\\mathbb{R}^{\\ast}\\), the kernel of this homomorphism is all \\(2\\times 2\\) matrices having determinant one.\nThat is,\n\\[\n\\ker\\phi=SL_2(\\mathbb{R}).\n\\]"
+    "text": "Example of Kernel 1\nExample 11.1.6\nLet us examine the homomorphism \\(\\phi:GL_2(\\mathbb{R})\\rightarrow\\mathbb{R}^{\\ast}\\) defined by \\(A\\mapsto\\det(A)\\).\nSince \\(1\\) is the identity of \\(\\mathbb{R}^{\\ast}\\), the kernel of this homomorphism is all \\(2\\times 2\\) matrices having determinant one.\nThat is,\n\\[\n\\ker\\phi=SL_2(\\mathbb{R}).\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#example-of-kernel-2",
     "href": "classes/21/slides.html#example-of-kernel-2",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Example of Kernel 2",
-    "text": "Example of Kernel 2\nExample 11.1.7\nThe kernel of the group homomorphism \\(\\phi:\\mathbb{R}\\rightarrow\\mathbb{C}^{\\ast}\\) defined by \\(\\phi(\\theta)=\\cos\\theta+i\\sin\\theta\\) is\n\\[\n\\{2\\pi n:n\\in\\mathbb{Z}\\}.\n\\]\nNotice that \\(\\ker\\phi\\cong\\mathbb{Z}\\)."
+    "text": "Example of Kernel 2\nExample 11.1.7\nThe kernel of the group homomorphism \\(\\phi:\\mathbb{R}\\rightarrow\\mathbb{C}^{\\ast}\\) defined by \\(\\phi(\\theta)=\\cos\\theta+i\\sin\\theta\\) is\n\\[\n\\{2\\pi n:n\\in\\mathbb{Z}\\}.\n\\]\nNotice that \\(\\ker\\phi\\cong\\mathbb{Z}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/21/slides.html#example-of-kernel-3",
     "href": "classes/21/slides.html#example-of-kernel-3",
     "title": "Slides: Factor Groups and Simple Groups",
     "section": "Example of Kernel 3",
-    "text": "Example of Kernel 3\nExample 11.1.8\nSuppose that we wish to determine all possible homomorphisms \\(\\phi\\) from \\(\\mathbb{Z}_7\\) to \\(\\mathbb{Z}_{12}\\).\nSince the kernel of \\(\\phi\\) must be a subgroup of \\(\\mathbb{Z}_7\\), there are only two possible kernels, \\(\\{0\\}\\) and all of \\(\\mathbb{Z}_7\\).\nThe image of a subgroup of \\(\\mathbb{Z}_7\\) must be a subgroup of \\(\\mathbb{Z}_{12}\\). Hence, there is no injective homomorphism; otherwise, \\(\\mathbb{Z}_{12}\\) would have a subgroup of order \\(7\\), which is impossible.\nConsequently, the only possible homomorphism from \\(\\mathbb{Z}_7\\) to \\(\\mathbb{Z}_{12}\\) is the one mapping all elements to zero."
-  },
-  {
-    "objectID": "classes/21/slides.html#commutative-diagrams",
-    "href": "classes/21/slides.html#commutative-diagrams",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Commutative Diagrams",
-    "text": "Commutative Diagrams\nA diagram commutes when following different directed paths with the same starting and ending objects gives the same map.\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n& {\\scriptstyle\\phi}\\searrow\\quad\\nearrow{\\scriptstyle\\eta} &\\\\\n& G/K &\n\\end{array}\n\\]\nThis diagram commutes when \\(\\psi=\\eta\\phi\\); that is, \\(\\psi(g)=\\eta(\\phi(g))\\) for every \\(g\\in G\\).\nThe First Isomorphism Theorem supplies the isomorphism \\(\\eta\\)."
-  },
-  {
-    "objectID": "classes/21/slides.html#theorem-11.2.1",
-    "href": "classes/21/slides.html#theorem-11.2.1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 11.2.1",
-    "text": "Theorem 11.2.1\nFirst Isomorphism Theorem\nIf \\(\\psi:G\\rightarrow H\\) is a group homomorphism with \\(K=\\ker\\psi\\), then \\(K\\) is normal in \\(G\\).\nLet \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\nThen there exists a unique isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) such that \\(\\psi=\\eta\\phi\\).\n\\[\nG/\\ker\\psi\\cong\\psi(G).\n\\]"
-  },
-  {
-    "objectID": "classes/21/slides.html#proof-of-theorem-11.2.1",
-    "href": "classes/21/slides.html#proof-of-theorem-11.2.1",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of Theorem 11.2.1",
-    "text": "Proof of Theorem 11.2.1\nWe already know that \\(K\\) is normal in \\(G\\). Define \\(\\eta:G/K\\rightarrow\\psi(G)\\) by \\(\\eta(gK)=\\psi(g)\\).\n\nWell-defined: If \\(g_1K=g_2K\\), then \\(g_2=g_1k\\) for some \\(k\\in K\\). Hence \\(\\psi(g_2)=\\psi(g_1)\\psi(k)=\\psi(g_1)\\).\nHomomorphism: \\(\\eta(g_1K\\,g_2K)=\\psi(g_1g_2)=\\psi(g_1)\\psi(g_2)=\\eta(g_1K)\\eta(g_2K)\\).\nOnto: Every element \\(\\psi(g)\\) of \\(\\psi(G)\\) equals \\(\\eta(gK)\\).\nOne-to-one: If \\(\\eta(g_1K)=\\eta(g_2K)\\), then \\(\\psi(g_1)=\\psi(g_2)\\). Thus \\(\\psi(g_1^{-1}g_2)=e\\), so \\(g_1^{-1}g_2\\in K\\) and \\(g_1K=g_2K\\).\nFactorization and uniqueness: \\(\\eta(\\phi(g))=\\eta(gK)=\\psi(g)\\). Any map satisfying this identity must send \\(gK\\) to \\(\\psi(g)\\). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/21/slides.html#theorem-11.2.3",
-    "href": "classes/21/slides.html#theorem-11.2.3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 11.2.3",
-    "text": "Theorem 11.2.3\nSecond Isomorphism Theorem\nLet \\(H\\) be a subgroup of a group \\(G\\) (not necessarily normal in \\(G\\)) and \\(N\\) a normal subgroup of \\(G\\).\nThen \\(HN\\) is a subgroup of \\(G\\), \\(H\\cap N\\) is a normal subgroup of \\(H\\), and\n\\[\nH/H\\cap N\\cong HN/N.\n\\]"
-  },
-  {
-    "objectID": "classes/21/slides.html#proof-of-theorem-11.2.3",
-    "href": "classes/21/slides.html#proof-of-theorem-11.2.3",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of Theorem 11.2.3",
-    "text": "Proof of Theorem 11.2.3\nFirst, \\(HN=\\{hn:h\\in H,n\\in N\\}\\) contains \\(e\\). Since \\(N\\) is normal,\n\\[\n\\begin{aligned}\n(h_1n_1)(h_2n_2)\n&=h_1h_2(h_2^{-1}n_1h_2)n_2\\in HN,\\\\\n(hn)^{-1}\n&=n^{-1}h^{-1}=h^{-1}(hn^{-1}h^{-1})\\in HN.\n\\end{aligned}\n\\]\nThus \\(HN\\) is a subgroup of \\(G\\).\nFor \\(h\\in H\\) and \\(n\\in H\\cap N\\), the element \\(h^{-1}nh\\) belongs to both \\(H\\) and \\(N\\). Hence \\(H\\cap N\\) is normal in \\(H\\).\nDefine \\(\\phi:H\\rightarrow HN/N\\) by \\(\\phi(h)=hN\\). It is onto because \\(hnN=hN\\), and it is a homomorphism because \\(\\phi(hh')=hh'N=hNh'N=\\phi(h)\\phi(h')\\).\nSince \\(\\ker\\phi=\\{h\\in H:h\\in N\\}=H\\cap N\\), the First Isomorphism Theorem gives \\(H/H\\cap N\\cong HN/N\\). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/21/slides.html#theorem-11.2.4",
-    "href": "classes/21/slides.html#theorem-11.2.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 11.2.4",
-    "text": "Theorem 11.2.4\nCorrespondence Theorem\nLet \\(N\\) be a normal subgroup of a group \\(G\\).\nThen \\(H\\mapsto H/N\\) is a one-to-one correspondence between the set of subgroups \\(H\\) of \\(G\\) containing \\(N\\) and the set of subgroups of \\(G/N\\).\nFurthermore, the normal subgroups of \\(G\\) containing \\(N\\) correspond to normal subgroups of \\(G/N\\)."
-  },
-  {
-    "objectID": "classes/21/slides.html#proof-of-theorem-11.2.4",
-    "href": "classes/21/slides.html#proof-of-theorem-11.2.4",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of Theorem 11.2.4",
-    "text": "Proof of Theorem 11.2.4\nLet \\(\\pi:G\\rightarrow G/N\\) be the canonical homomorphism.\n\nSubgroups correspond: If \\(N\\subseteq H\\leq G\\), then \\(H/N=\\pi(H)\\) is a subgroup of \\(G/N\\). If \\(S\\leq G/N\\), then \\(H=\\pi^{-1}(S)\\) is a subgroup containing \\(N\\), and \\(H/N=S\\).\nThe correspondence is one-to-one: For every subgroup \\(H\\) containing \\(N\\), \\(\\pi^{-1}(H/N)=H\\). Thus taking images and taking inverse images give inverse correspondences.\nNormality passes to the quotient: If \\(H\\) is normal in \\(G\\), the map \\(G/N\\rightarrow G/H\\) defined by \\(gN\\mapsto gH\\) is a homomorphism with kernel \\(H/N\\). Hence \\(H/N\\) is normal in \\(G/N\\).\nNormality lifts from the quotient: If \\(H/N\\) is normal in \\(G/N\\), then \\(H=\\pi^{-1}(H/N)\\) is normal in \\(G\\) by Proposition 11.1.4(4). \\(\\square\\)"
-  },
-  {
-    "objectID": "classes/21/slides.html#theorem-11.2.5",
-    "href": "classes/21/slides.html#theorem-11.2.5",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Theorem 11.2.5",
-    "text": "Theorem 11.2.5\nThird Isomorphism Theorem\nLet \\(G\\) be a group and \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subset H\\).\nThen\n\\[\nG/H\\cong\\frac{G/N}{H/N}.\n\\]"
-  },
-  {
-    "objectID": "classes/21/slides.html#proof-of-theorem-11.2.5",
-    "href": "classes/21/slides.html#proof-of-theorem-11.2.5",
-    "title": "Slides: Factor Groups and Simple Groups",
-    "section": "Proof of Theorem 11.2.5",
-    "text": "Proof of Theorem 11.2.5\nDefine \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\n\nWell-defined: If \\(g_1N=g_2N\\), then \\(g_1^{-1}g_2\\in N\\subseteq H\\), so \\(g_1H=g_2H\\).\nHomomorphism: \\(\\rho(g_1N\\,g_2N)=g_1g_2H=(g_1H)(g_2H)\\).\nOnto: Every coset \\(gH\\) is the image of \\(gN\\).\nKernel: \\(\\rho(gN)=H\\) exactly when \\(g\\in H\\). Thus \\(\\ker\\rho=H/N\\).\n\nBy the First Isomorphism Theorem,\n\\[\n\\frac{G/N}{H/N}\\cong G/H.\n\\]\nTherefore \\(G/H\\cong(G/N)/(H/N)\\). \\(\\square\\)"
+    "text": "Example of Kernel 3\nExample 11.1.8\nSuppose that we wish to determine all possible homomorphisms \\(\\phi\\) from \\(\\mathbb{Z}_7\\) to \\(\\mathbb{Z}_{12}\\).\nSince the kernel of \\(\\phi\\) must be a subgroup of \\(\\mathbb{Z}_7\\), there are only two possible kernels, \\(\\{0\\}\\) and all of \\(\\mathbb{Z}_7\\).\nThe image of a subgroup of \\(\\mathbb{Z}_7\\) must be a subgroup of \\(\\mathbb{Z}_{12}\\). Hence, there is no injective homomorphism; otherwise, \\(\\mathbb{Z}_{12}\\) would have a subgroup of order \\(7\\), which is impossible.\nConsequently, the only possible homomorphism from \\(\\mathbb{Z}_7\\) to \\(\\mathbb{Z}_{12}\\) is the one mapping all elements to zero.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Factor Groups and Simple Groups"
+    ]
   },
   {
     "objectID": "classes/19/slides.html#class-session-goals",
