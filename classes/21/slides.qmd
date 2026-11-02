@@ -195,3 +195,34 @@ Consequently, the only possible homomorphism from $\mathbb{Z}_7$ to $\mathbb{Z}_
 
 ---
 
+## Group Homomorphisms: Verify and Construct
+
+Use addition in $\mathbb{Z}_n$ and multiplication in $U(n)$.
+
+:::: {.columns}
+::: {.column width="50%"}
+
+### Verify
+
+1. Verify that $\phi:\mathbb{Z}_{12}\to\mathbb{Z}_4$,
+   defined by $\phi(a)=a\pmod{4}$, is a homomorphism.
+
+2. Verify that $\psi:U(15)\to U(5)$,
+   defined by $\psi(a)=a\pmod{5}$, is a homomorphism.
+
+:::
+::: {.column width="50%"}
+
+### Construct
+
+3. Construct a nontrivial homomorphism
+   $\alpha:\mathbb{Z}_6\to\mathbb{Z}_9$.
+
+4. Construct a surjective homomorphism
+   $\beta:\mathbb{Z}_4\to U(5)$.
+
+:::
+::::
+
+For each map, justify that it is well-defined and preserves
+the group operation.

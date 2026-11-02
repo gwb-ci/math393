@@ -350,6 +350,17 @@
     ]
   },
   {
+    "objectID": "classes/21/slides.html#group-homomorphisms-verify-and-construct",
+    "href": "classes/21/slides.html#group-homomorphisms-verify-and-construct",
+    "title": "Slides: Group Homomorphisms",
+    "section": "Group Homomorphisms: Verify and Construct",
+    "text": "Group Homomorphisms: Verify and Construct\nUse addition in \\(\\mathbb{Z}_n\\) and multiplication in \\(U(n)\\).\n\n\nVerify\n\nVerify that \\(\\phi:\\mathbb{Z}_{12}\\to\\mathbb{Z}_4\\), defined by \\(\\phi(a)=a\\pmod{4}\\), is a homomorphism.\nVerify that \\(\\psi:U(15)\\to U(5)\\), defined by \\(\\psi(a)=a\\pmod{5}\\), is a homomorphism.\n\n\nConstruct\n\nConstruct a nontrivial homomorphism \\(\\alpha:\\mathbb{Z}_6\\to\\mathbb{Z}_9\\).\nConstruct a surjective homomorphism \\(\\beta:\\mathbb{Z}_4\\to U(5)\\).\n\n\nFor each map, justify that it is well-defined and preserves the group operation.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Group Homomorphisms"
+    ]
+  },
+  {
     "objectID": "classes/19/slides.html#class-session-goals",
     "href": "classes/19/slides.html#class-session-goals",
     "title": "Slides: Group Products and Factor Groups",
