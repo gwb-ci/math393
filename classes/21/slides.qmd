@@ -138,7 +138,7 @@ Let $e$ and $e'$ be the identities of $G_1$ and $G_2$, respectively.
 
 ---
 
-## Definition of Kernel and Theorem 11.1.5
+## Theorem 11.1.5
 
 Let $\phi:G\rightarrow H$ be a group homomorphism and suppose that $e$ is the identity of $H$.
 
@@ -223,6 +223,3 @@ Use addition in $\mathbb{Z}_n$ and multiplication in $U(n)$.
 
 :::
 ::::
-
-For each map, justify that it is well-defined and preserves
-the group operation.
