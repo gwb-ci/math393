@@ -139,9 +139,53 @@
 <h2>Class Session Goals</h2>
 <p>By the end of this session, you should be able to:</p>
 <ul>
-<li></li>
-<li></li>
+<li>Define the natural homomorphism, identify its kernel and image, and interpret the commutative diagram in the First Isomorphism Theorem.</li>
+<li>Apply the First, Second, and Third Isomorphism Theorems and the Correspondence Theorem to relate groups, quotient groups, and subgroups.</li>
 </ul>
+</section>
+<section id="moving-from-understanding-groups-to-identifying-groups" class="slide level2">
+<h2>Moving from Understanding Groups to Identifying Groups</h2>
+<p>We now have a good understanding of what groups are and how they work.</p>
+<p>We next develop tools to:</p>
+<ul>
+<li>Identify groups by relating them to familiar groups.</li>
+<li>Find normal subgroups and understand the quotient groups they produce.</li>
+</ul>
+<p>Homomorphisms and the isomorphism theorems that we learn about are starting tools to identify groups.</p>
+</section>
+<section id="recall-theorem-10.1.3" class="slide level2">
+<h2>Recall Theorem 10.1.3</h2>
+<p>Let <span class="math inline">\(G\)</span> be a group and <span class="math inline">\(N\)</span> be a subgroup of <span class="math inline">\(G\)</span>. Then the following statements are equivalent.</p>
+<ol type="1">
+<li><p>The subgroup <span class="math inline">\(N\)</span> is normal in <span class="math inline">\(G\)</span>.</p></li>
+<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}\subset N\)</span>.</p></li>
+<li><p>For all <span class="math inline">\(g\in G\)</span>, <span class="math inline">\(gNg^{-1}=N\)</span>.</p></li>
+</ol>
+</section>
+<section id="natural-homomorphism" class="slide level2">
+<h2>Natural Homomorphism</h2>
+<p>Let <span class="math inline">\(H\)</span> be a normal subgroup of <span class="math inline">\(G\)</span>. The <strong>natural</strong> or <strong>canonical homomorphism</strong> <span class="math inline">\(\phi:G\rightarrow G/H\)</span> is defined by <span class="math inline">\(\phi(g)=gH\)</span>.</p>
+<p>This is a homomorphism because</p>
+<p><span class="math display">\[
+\phi(g_1)\phi(g_2)=(g_1H)(g_2H)=g_1g_2H=\phi(g_1g_2).
+\]</span></p>
+<ul>
+<li><strong>Onto:</strong> Every coset <span class="math inline">\(gH\)</span> is the image of <span class="math inline">\(g\)</span>.</li>
+<li><strong>Kernel:</strong> <span class="math inline">\(\phi(g)=H\)</span> exactly when <span class="math inline">\(g\in H\)</span>, so <span class="math inline">\(\ker\phi=H\)</span>.</li>
+</ul>
+<p>Thus every normal subgroup is the kernel of a homomorphism.</p>
+</section>
+<section id="two-images-of-a-group" class="slide level2">
+<h2>Two Images of a group</h2>
+<p>For a homomorphism <span class="math inline">\(\psi:G\rightarrow H\)</span>, let <span class="math inline">\(K=\ker\psi\)</span> and let <span class="math inline">\(\phi:G\rightarrow G/K\)</span> be the canonical homomorphism.</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+G &amp; \xrightarrow{\ \psi\ } &amp; \psi(G)\\
+{\scriptstyle\phi}\downarrow &amp;  &amp;\\
+G/K &amp; &amp;
+\end{array}
+\]</span></p>
+<p>What is the relationship between the two images <span class="math inline">\(\psi(G)\)</span> and <span class="math inline">\(G/K\)</span>?</p>
 </section>
 <section id="commutative-diagrams" class="slide level2">
 <h2>Commutative Diagrams</h2>
@@ -150,12 +194,25 @@
 <p><span class="math display">\[
 \begin{array}{ccc}
 G &amp; \xrightarrow{\ \psi\ } &amp; \psi(G)\\
-&amp; {\scriptstyle\phi}\searrow\quad\nearrow{\scriptstyle\eta} &amp;\\
-&amp; G/K &amp;
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+G/K &amp; &amp;
 \end{array}
 \]</span></p>
-<p>This diagram commutes when <span class="math inline">\(\psi=\eta\phi\)</span>; that is, <span class="math inline">\(\psi(g)=\eta(\phi(g))\)</span> for every <span class="math inline">\(g\in G\)</span>.</p>
-<p>The First Isomorphism Theorem supplies the isomorphism <span class="math inline">\(\eta\)</span>.</p>
+<p>Commutativity means <span class="math inline">\(\psi=\eta\phi\)</span>.</p>
+</section>
+<section id="following-the-paths" class="slide level2">
+<h2>Following the Paths</h2>
+<p>Start with any <span class="math inline">\(g\in G\)</span>. There are two directed paths from <span class="math inline">\(G\)</span> to <span class="math inline">\(\psi(G)\)</span>:</p>
+<ul>
+<li><strong>Direct path:</strong> <span class="math inline">\(g\mapsto\psi(g)\)</span>.</li>
+<li><strong>Path through the quotient:</strong> <span class="math inline">\(g\mapsto gK\mapsto\eta(gK)\)</span>.</li>
+</ul>
+<p>The First Isomorphism Theorem supplies the isomorphism <span class="math inline">\(\eta:G/K\rightarrow\psi(G)\)</span> defined by <span class="math inline">\(\eta(gK)=\psi(g)\)</span>.</p>
+<p>Therefore, both paths give the same result:</p>
+<p><span class="math display">\[
+\eta(\phi(g))=\eta(gK)=\psi(g).
+\]</span></p>
+<p>The diagram records how <span class="math inline">\(\psi\)</span> <strong>factors through</strong> the quotient group <span class="math inline">\(G/K\)</span>.</p>
 </section>
 <section id="theorem-11.2.1" class="slide level2">
 <h2>Theorem 11.2.1</h2>
@@ -167,6 +224,23 @@ G &amp; \xrightarrow{\ \psi\ } &amp; \psi(G)\\
 G/\ker\psi\cong\psi(G).
 \]</span></p>
 </section>
+<section id="first-isomorphism-theorem-commutative-diagram" class="slide level2">
+<h2>First Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(\psi:G\rightarrow H\)</span> be a group homomorphism and let <span class="math inline">\(K=\ker\psi\)</span>.</p>
+<p>The First Isomorphism Theorem gives:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+G &amp; \xrightarrow{\ \psi\ } &amp; \psi(G)\\
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+G/K &amp; &amp;
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Canonical homomorphism:</strong> <span class="math inline">\(\phi(g)=gK\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta(gK)=\psi(g)\)</span>.</li>
+</ul>
+<p>The diagram commutes because <span class="math inline">\(\eta(\phi(g))=\psi(g)\)</span>.</p>
+</section>
 <section id="proof-of-theorem-11.2.1" class="slide level2 smaller">
 <h2>Proof of Theorem 11.2.1</h2>
 <p>We already know that <span class="math inline">\(K\)</span> is normal in <span class="math inline">\(G\)</span>. Define <span class="math inline">\(\eta:G/K\rightarrow\psi(G)\)</span> by <span class="math inline">\(\eta(gK)=\psi(g)\)</span>.</p>
@@ -174,18 +248,91 @@ G/\ker\psi\cong\psi(G).
 <li><p><strong>Well-defined:</strong> If <span class="math inline">\(g_1K=g_2K\)</span>, then <span class="math inline">\(g_2=g_1k\)</span> for some <span class="math inline">\(k\in K\)</span>. Hence <span class="math inline">\(\psi(g_2)=\psi(g_1)\psi(k)=\psi(g_1)\)</span>.</p></li>
 <li><p><strong>Homomorphism:</strong> <span class="math inline">\(\eta(g_1K\,g_2K)=\psi(g_1g_2)=\psi(g_1)\psi(g_2)=\eta(g_1K)\eta(g_2K)\)</span>.</p></li>
 <li><p><strong>Onto:</strong> Every element <span class="math inline">\(\psi(g)\)</span> of <span class="math inline">\(\psi(G)\)</span> equals <span class="math inline">\(\eta(gK)\)</span>.</p></li>
-<li><p><strong>One-to-one:</strong> If <span class="math inline">\(\eta(g_1K)=\eta(g_2K)\)</span>, then <span class="math inline">\(\psi(g_1)=\psi(g_2)\)</span>. Thus <span class="math inline">\(\psi(g_1^{-1}g_2)=e\)</span>, so <span class="math inline">\(g_1^{-1}g_2\in K\)</span> and <span class="math inline">\(g_1K=g_2K\)</span>.</p></li>
-<li><p><strong>Factorization and uniqueness:</strong> <span class="math inline">\(\eta(\phi(g))=\eta(gK)=\psi(g)\)</span>. Any map satisfying this identity must send <span class="math inline">\(gK\)</span> to <span class="math inline">\(\psi(g)\)</span>. <span class="math inline">\(\square\)</span></p></li>
+<li><p><strong>One-to-one:</strong> If <span class="math inline">\(\eta(g_1K)=\eta(g_2K)\)</span>, then <span class="math inline">\(\psi(g_1)=\psi(g_2)\)</span>. Thus <span class="math inline">\(\psi(g_1^{-1}g_2)=e\)</span>, so <span class="math inline">\(g_1^{-1}g_2\in K\)</span> and <span class="math inline">\(g_1K=g_2K\)</span>. <span class="math inline">\(\square\)</span></p></li>
+</ul>
+</section>
+<section id="example-finite-cyclic-groups" class="slide level2">
+<h2>Example: Finite Cyclic Groups</h2>
+<p>Let <span class="math inline">\(G=\langle g\rangle\)</span> with <span class="math inline">\(|g|=m\)</span>. Define <span class="math inline">\(\psi:\mathbb Z\rightarrow G\)</span> by <span class="math inline">\(\psi(n)=g^n\)</span>.</p>
+<p>This is an onto homomorphism because every element of <span class="math inline">\(G\)</span> is a power of <span class="math inline">\(g\)</span>, and</p>
+<p><span class="math display">\[
+\psi(a)\psi(b)=g^ag^b=g^{a+b}=\psi(a+b).
+\]</span></p>
+<p>Since <span class="math inline">\(g^n=e\)</span> exactly when <span class="math inline">\(m\)</span> divides <span class="math inline">\(n\)</span>, we have <span class="math inline">\(\ker\psi=m\mathbb Z\)</span>.</p>
+<p>The First Isomorphism Theorem gives</p>
+<p><span class="math display">\[
+\mathbb Z/m\mathbb Z\cong G.
+\]</span></p>
+<p><strong>Every cyclic group of order <span class="math inline">\(m\)</span> is isomorphic to <span class="math inline">\(\mathbb Z_m\)</span>.</strong></p>
+</section>
+<section id="example-infinite-cyclic-groups" class="slide level2">
+<h2>Example: Infinite Cyclic Groups</h2>
+<p>Let <span class="math inline">\(G=\langle g\rangle\)</span>, where <span class="math inline">\(g\)</span> has infinite order. Again define <span class="math inline">\(\psi:\mathbb Z\rightarrow G\)</span> by <span class="math inline">\(\psi(n)=g^n\)</span>.</p>
+<ul>
+<li><span class="math inline">\(\psi\)</span> is an onto homomorphism.</li>
+<li>Since <span class="math inline">\(g\)</span> has infinite order, <span class="math inline">\(g^n=e\)</span> only when <span class="math inline">\(n=0\)</span>.</li>
+<li>Therefore, <span class="math inline">\(\ker\psi=\{0\}\)</span>.</li>
+</ul>
+<p>The First Isomorphism Theorem gives</p>
+<p><span class="math display">\[
+\mathbb Z/\{0\}\cong G,
+\qquad\text{so}\qquad
+\mathbb Z\cong G.
+\]</span></p>
+<p><strong>Up to isomorphism, the only cyclic groups are <span class="math inline">\(\mathbb Z\)</span> and <span class="math inline">\(\mathbb Z_m\)</span>.</strong></p>
+</section>
+<section id="example-identifying-s_3a_3" class="slide level2">
+<h2>Example: Identifying <span class="math inline">\(S_3/A_3\)</span></h2>
+<p>The sign homomorphism <span class="math inline">\(\psi:S_3\rightarrow\mathbb Z_2\)</span> sends even permutations to <span class="math inline">\(0\)</span> and odd permutations to <span class="math inline">\(1\)</span>. We showed this was a homomorphism previously.</p>
+<ul>
+<li><strong>Onto:</strong> The identity maps to <span class="math inline">\(0\)</span>, and a transposition maps to <span class="math inline">\(1\)</span>.</li>
+<li><strong>Kernel:</strong> <span class="math inline">\(\ker\psi=A_3=\{e,(123),(132)\}\)</span>.</li>
+</ul>
+<p>The First Isomorphism Theorem gives</p>
+<p><span class="math display">\[
+S_3/A_3\cong\mathbb Z_2.
+\]</span></p>
+</section>
+<section id="implications-a-strategy-for-identifying-groups" class="slide level2">
+<h2>Implications: A Strategy for Identifying Groups</h2>
+<p>To identify a quotient group <span class="math inline">\(G/N\)</span>:</p>
+<ol type="1">
+<li>Find a homomorphism <span class="math inline">\(\psi:G\rightarrow H\)</span> into a familiar group.</li>
+<li>Show that <span class="math inline">\(\ker\psi=N\)</span>.</li>
+<li>Identify the image <span class="math inline">\(\psi(G)\)</span>.</li>
+</ol>
+<p>Then the First Isomorphism Theorem gives <span class="math inline">\(G/N\cong\psi(G)\)</span>.</p>
+<ul>
+<li>Finding <span class="math inline">\(N\)</span> as a kernel also proves that <span class="math inline">\(N\)</span> is <strong>normal</strong>.</li>
+<li>If <span class="math inline">\(\psi\)</span> is onto, then <span class="math inline">\(G/N\cong H\)</span>.</li>
+<li>If <span class="math inline">\(\ker\psi=\{e\}\)</span>, then <span class="math inline">\(G\cong\psi(G)\)</span>.</li>
 </ul>
 </section>
 <section id="theorem-11.2.3" class="slide level2">
 <h2>Theorem 11.2.3</h2>
 <p><strong>Second Isomorphism Theorem</strong></p>
-<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span> (not necessarily normal in <span class="math inline">\(G\)</span>) and <span class="math inline">\(N\)</span> a normal subgroup of <span class="math inline">\(G\)</span>.</p>
+<p>Let <span class="math inline">\(H\)</span> be a subgroup of a group <span class="math inline">\(G\)</span>, not necessarily normal in <span class="math inline">\(G\)</span>, and <span class="math inline">\(N\)</span> a normal subgroup of <span class="math inline">\(G\)</span>.</p>
 <p>Then <span class="math inline">\(HN\)</span> is a subgroup of <span class="math inline">\(G\)</span>, <span class="math inline">\(H\cap N\)</span> is a normal subgroup of <span class="math inline">\(H\)</span>, and</p>
 <p><span class="math display">\[
 H/H\cap N\cong HN/N.
 \]</span></p>
+</section>
+<section id="second-isomorphism-theorem-commutative-diagram" class="slide level2 smaller">
+<h2>Second Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(H\leq G\)</span> and <span class="math inline">\(N\)</span> be normal in <span class="math inline">\(G\)</span>. Define <span class="math inline">\(\psi:H\rightarrow HN/N\)</span> by <span class="math inline">\(\psi(h)=hN\)</span>.</p>
+<p>Since <span class="math inline">\(\ker\psi=H\cap N\)</span>, the First Isomorphism Theorem gives:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+H &amp; \xrightarrow{\ \psi\ } &amp; HN/N\\
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+H/(H\cap N) &amp; &amp;
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Canonical homomorphism:</strong> <span class="math inline">\(\phi(h)=h(H\cap N)\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta(h(H\cap N))=hN\)</span>.</li>
+</ul>
+<p>The diagram commutes because <span class="math inline">\(\eta(\phi(h))=hN=\psi(h)\)</span>.</p>
 </section>
 <section id="proof-of-theorem-11.2.3" class="slide level2 smaller">
 <h2>Proof of Theorem 11.2.3</h2>
@@ -228,6 +375,23 @@ H/H\cap N\cong HN/N.
 <p><span class="math display">\[
 G/H\cong\frac{G/N}{H/N}.
 \]</span></p>
+</section>
+<section id="third-isomorphism-theorem-commutative-diagram" class="slide level2 smaller">
+<h2>Third Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(N\)</span> and <span class="math inline">\(H\)</span> be normal subgroups of <span class="math inline">\(G\)</span> with <span class="math inline">\(N\subseteq H\)</span>. Define <span class="math inline">\(\rho:G/N\rightarrow G/H\)</span> by <span class="math inline">\(\rho(gN)=gH\)</span>.</p>
+<p>Since <span class="math inline">\(\ker\rho=H/N\)</span>, the First Isomorphism Theorem gives:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+G/N &amp; \xrightarrow{\ \rho\ } &amp; G/H\\
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+(G/N)/(H/N) &amp; &amp;
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Canonical homomorphism:</strong> <span class="math inline">\(\phi(gN)=(gN)(H/N)\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta((gN)(H/N))=gH\)</span>.</li>
+</ul>
+<p>The diagram commutes because <span class="math inline">\(\eta(\phi(gN))=gH=\rho(gN)\)</span>.</p>
 </section>
 <section id="proof-of-theorem-11.2.5" class="slide level2 smaller">
 <h2>Proof of Theorem 11.2.5</h2>

@@ -12,8 +12,71 @@ format:
 
 By the end of this session, you should be able to:
 
-- 
-- 
+- Define the natural homomorphism, identify its kernel and image, and interpret the commutative diagram in the First Isomorphism Theorem.
+- Apply the First, Second, and Third Isomorphism Theorems and the Correspondence Theorem to relate groups, quotient groups, and subgroups.
+
+---
+
+
+
+## Moving from Understanding Groups to Identifying Groups
+
+We now have a good understanding of what groups are and how they work.
+
+We next develop tools to:
+
+- Identify groups by relating them to familiar groups.
+- Find normal subgroups and understand the quotient groups they produce.
+
+Homomorphisms and the isomorphism theorems that we learn about are starting tools to identify groups.
+
+
+
+---
+
+## Recall Theorem 10.1.3
+
+Let $G$ be a group and $N$ be a subgroup of $G$. Then the following statements are equivalent.
+
+1. The subgroup $N$ is normal in $G$.
+
+2. For all $g\in G$, $gNg^{-1}\subset N$.
+
+3. For all $g\in G$, $gNg^{-1}=N$.
+
+---
+
+
+## Natural Homomorphism
+
+Let $H$ be a normal subgroup of $G$. The **natural** or **canonical homomorphism** $\phi:G\rightarrow G/H$ is defined by $\phi(g)=gH$.
+
+This is a homomorphism because
+
+$$
+\phi(g_1)\phi(g_2)=(g_1H)(g_2H)=g_1g_2H=\phi(g_1g_2).
+$$
+
+- **Onto:** Every coset $gH$ is the image of $g$.
+- **Kernel:** $\phi(g)=H$ exactly when $g\in H$, so $\ker\phi=H$.
+
+Thus every normal subgroup is the kernel of a homomorphism.
+
+---
+
+## Two Images of a group
+
+For a homomorphism $\psi:G\rightarrow H$, let $K=\ker\psi$ and let $\phi:G\rightarrow G/K$ be the canonical homomorphism.
+
+$$
+\begin{array}{ccc}
+G & \xrightarrow{\ \psi\ } & \psi(G)\\
+{\scriptstyle\phi}\downarrow &  &\\
+G/K & &
+\end{array}
+$$
+
+What is the relationship between the two images $\psi(G)$ and $G/K$? 
 
 ---
 
@@ -26,14 +89,31 @@ For a homomorphism $\psi:G\rightarrow H$, let $K=\ker\psi$ and let $\phi:G\right
 $$
 \begin{array}{ccc}
 G & \xrightarrow{\ \psi\ } & \psi(G)\\
-& {\scriptstyle\phi}\searrow\quad\nearrow{\scriptstyle\eta} &\\
-& G/K &
+{\scriptstyle\phi}\downarrow & \nearrow{\scriptstyle\eta} &\\
+G/K & &
 \end{array}
 $$
 
-This diagram commutes when $\psi=\eta\phi$; that is, $\psi(g)=\eta(\phi(g))$ for every $g\in G$.
+Commutativity means $\psi=\eta\phi$.
 
-The First Isomorphism Theorem supplies the isomorphism $\eta$.
+---
+
+## Following the Paths
+
+Start with any $g\in G$. There are two directed paths from $G$ to $\psi(G)$:
+
+- **Direct path:** $g\mapsto\psi(g)$.
+- **Path through the quotient:** $g\mapsto gK\mapsto\eta(gK)$.
+
+The First Isomorphism Theorem supplies the isomorphism $\eta:G/K\rightarrow\psi(G)$ defined by $\eta(gK)=\psi(g)$.
+
+Therefore, both paths give the same result:
+
+$$
+\eta(\phi(g))=\eta(gK)=\psi(g).
+$$
+
+The diagram records how $\psi$ **factors through** the quotient group $G/K$.
 
 ---
 
@@ -53,6 +133,27 @@ $$
 
 ---
 
+## First Isomorphism Theorem: Commutative Diagram
+
+Let $\psi:G\rightarrow H$ be a group homomorphism and let $K=\ker\psi$.
+
+The First Isomorphism Theorem gives:
+
+$$
+\begin{array}{ccc}
+G & \xrightarrow{\ \psi\ } & \psi(G)\\
+{\scriptstyle\phi}\downarrow & \nearrow{\scriptstyle\eta} &\\
+G/K & &
+\end{array}
+$$
+
+- **Canonical homomorphism:** $\phi(g)=gK$.
+- **Induced isomorphism:** $\eta(gK)=\psi(g)$.
+
+The diagram commutes because $\eta(\phi(g))=\psi(g)$.
+
+---
+
 ## Proof of Theorem 11.2.1 {.smaller}
 
 We already know that $K$ is normal in $G$. Define $\eta:G/K\rightarrow\psi(G)$ by $\eta(gK)=\psi(g)$.
@@ -63,9 +164,83 @@ We already know that $K$ is normal in $G$. Define $\eta:G/K\rightarrow\psi(G)$ b
 
 - **Onto:** Every element $\psi(g)$ of $\psi(G)$ equals $\eta(gK)$.
 
-- **One-to-one:** If $\eta(g_1K)=\eta(g_2K)$, then $\psi(g_1)=\psi(g_2)$. Thus $\psi(g_1^{-1}g_2)=e$, so $g_1^{-1}g_2\in K$ and $g_1K=g_2K$.
+- **One-to-one:** If $\eta(g_1K)=\eta(g_2K)$, then $\psi(g_1)=\psi(g_2)$. Thus $\psi(g_1^{-1}g_2)=e$, so $g_1^{-1}g_2\in K$ and $g_1K=g_2K$. $\square$
 
-- **Factorization and uniqueness:** $\eta(\phi(g))=\eta(gK)=\psi(g)$. Any map satisfying this identity must send $gK$ to $\psi(g)$. $\square$
+---
+
+
+## Example: Finite Cyclic Groups
+
+Let $G=\langle g\rangle$ with $|g|=m$. Define $\psi:\mathbb Z\rightarrow G$ by $\psi(n)=g^n$.
+
+This is an onto homomorphism because every element of $G$ is a power of $g$, and
+
+$$
+\psi(a)\psi(b)=g^ag^b=g^{a+b}=\psi(a+b).
+$$
+
+Since $g^n=e$ exactly when $m$ divides $n$, we have $\ker\psi=m\mathbb Z$.
+
+The First Isomorphism Theorem gives
+
+$$
+\mathbb Z/m\mathbb Z\cong G.
+$$
+
+**Every cyclic group of order $m$ is isomorphic to $\mathbb Z_m$.**
+
+---
+
+## Example: Infinite Cyclic Groups
+
+Let $G=\langle g\rangle$, where $g$ has infinite order. Again define $\psi:\mathbb Z\rightarrow G$ by $\psi(n)=g^n$.
+
+- $\psi$ is an onto homomorphism.
+- Since $g$ has infinite order, $g^n=e$ only when $n=0$.
+- Therefore, $\ker\psi=\{0\}$.
+
+The First Isomorphism Theorem gives
+
+$$
+\mathbb Z/\{0\}\cong G,
+\qquad\text{so}\qquad
+\mathbb Z\cong G.
+$$
+
+**Up to isomorphism, the only cyclic groups are $\mathbb Z$ and $\mathbb Z_m$.**
+
+---
+
+## Example: Identifying $S_3/A_3$
+
+The sign homomorphism $\psi:S_3\rightarrow\mathbb Z_2$ sends even permutations to $0$ and odd permutations to $1$.  We showed this was a homomorphism previously.
+
+- **Onto:** The identity maps to $0$, and a transposition maps to $1$.
+- **Kernel:** $\ker\psi=A_3=\{e,(123),(132)\}$.
+
+The First Isomorphism Theorem gives
+
+$$
+S_3/A_3\cong\mathbb Z_2.
+$$
+
+
+
+---
+
+## Implications: A Strategy for Identifying Groups
+
+To identify a quotient group $G/N$:
+
+1. Find a homomorphism $\psi:G\rightarrow H$ into a familiar group.
+2. Show that $\ker\psi=N$.
+3. Identify the image $\psi(G)$.
+
+Then the First Isomorphism Theorem gives $G/N\cong\psi(G)$.
+
+- Finding $N$ as a kernel also proves that $N$ is **normal**.
+- If $\psi$ is onto, then $G/N\cong H$.
+- If $\ker\psi=\{e\}$, then $G\cong\psi(G)$.
 
 ---
 
@@ -73,7 +248,7 @@ We already know that $K$ is normal in $G$. Define $\eta:G/K\rightarrow\psi(G)$ b
 
 **Second Isomorphism Theorem**
 
-Let $H$ be a subgroup of a group $G$ (not necessarily normal in $G$) and $N$ a normal subgroup of $G$.
+Let $H$ be a subgroup of a group $G$, not necessarily normal in $G$, and $N$ a normal subgroup of $G$.
 
 Then $HN$ is a subgroup of $G$, $H\cap N$ is a normal subgroup of $H$, and
 
@@ -82,6 +257,30 @@ H/H\cap N\cong HN/N.
 $$
 
 ---
+
+
+## Second Isomorphism Theorem: Commutative Diagram {.smaller}
+
+Let $H\leq G$ and $N$ be normal in $G$. Define $\psi:H\rightarrow HN/N$ by $\psi(h)=hN$.
+
+Since $\ker\psi=H\cap N$, the First Isomorphism Theorem gives:
+
+$$
+\begin{array}{ccc}
+H & \xrightarrow{\ \psi\ } & HN/N\\
+{\scriptstyle\phi}\downarrow & \nearrow{\scriptstyle\eta} &\\
+H/(H\cap N) & &
+\end{array}
+$$
+
+- **Canonical homomorphism:** $\phi(h)=h(H\cap N)$.
+- **Induced isomorphism:** $\eta(h(H\cap N))=hN$.
+
+The diagram commutes because $\eta(\phi(h))=hN=\psi(h)$.
+
+---
+
+
 
 ## Proof of Theorem 11.2.3 {.smaller}
 
@@ -143,6 +342,27 @@ Then
 $$
 G/H\cong\frac{G/N}{H/N}.
 $$
+
+---
+
+## Third Isomorphism Theorem: Commutative Diagram {.smaller}
+
+Let $N$ and $H$ be normal subgroups of $G$ with $N\subseteq H$. Define $\rho:G/N\rightarrow G/H$ by $\rho(gN)=gH$.
+
+Since $\ker\rho=H/N$, the First Isomorphism Theorem gives:
+
+$$
+\begin{array}{ccc}
+G/N & \xrightarrow{\ \rho\ } & G/H\\
+{\scriptstyle\phi}\downarrow & \nearrow{\scriptstyle\eta} &\\
+(G/N)/(H/N) & &
+\end{array}
+$$
+
+- **Canonical homomorphism:** $\phi(gN)=(gN)(H/N)$.
+- **Induced isomorphism:** $\eta((gN)(H/N))=gH$.
+
+The diagram commutes because $\eta(\phi(gN))=gH=\rho(gN)$.
 
 ---
 
