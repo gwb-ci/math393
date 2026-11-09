@@ -51,9 +51,9 @@ Every $3$-cycle is even, so the $3$-cycles generate exactly $A_n$. $\square$
 
 ---
 
-## Activity: Some cycle calculations
+## Activity: Calculate the following products of $3$-cycles
 
-Calculate the following products of cycles.  Here $a,b,c$ are distinct and different from $1$ and $2$.
+Here $a,b,c$ are distinct and different from $1$ and $2$.
 $$
 \begin{array}{l}
 (1,2,a)^2 = ? \\[1em]
@@ -67,6 +67,12 @@ This shows that all 3-cycles can be generated from three cycles of the form $(1,
 
 ---
 
+## Recall
+
+In the symmetric group $S_n$, any element can be written as a product of disjoint cycles and disjoint cycles commute.  
+
+
+---
 
 ## Lemma 10.2.2
 
@@ -74,7 +80,7 @@ Let $N$ be a normal subgroup of $A_n$, where $n\geq 3$. If $N$ contains a $3$-cy
 
 ---
 
-## Proof of 10.2.2 {.smaller}
+## Proof of 10.2.2 
 
 
 Activity shows cycles of the form $(i,j,x)$ generate all $3$-cycles.

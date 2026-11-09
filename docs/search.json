@@ -383,11 +383,22 @@
     ]
   },
   {
-    "objectID": "classes/23/slides.html#activity-some-cycle-calculations",
-    "href": "classes/23/slides.html#activity-some-cycle-calculations",
+    "objectID": "classes/23/slides.html#activity-calculate-the-following-products-of-3-cycles",
+    "href": "classes/23/slides.html#activity-calculate-the-following-products-of-3-cycles",
     "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Activity: Some cycle calculations",
-    "text": "Activity: Some cycle calculations\nCalculate the following products of cycles. Here \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "section": "Activity: Calculate the following products of \\(3\\)-cycles",
+    "text": "Activity: Calculate the following products of \\(3\\)-cycles\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#recall",
+    "href": "classes/23/slides.html#recall",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Recall",
+    "text": "Recall\nIn the symmetric group \\(S_n\\), any element can be written as a product of disjoint cycles and disjoint cycles commute.",
     "crumbs": [
       "Class Material",
       "Slides: Simplicity of the Alternating Group"
