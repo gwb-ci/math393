@@ -51,7 +51,7 @@ Every $3$-cycle is even, so the $3$-cycles generate exactly $A_n$. $\square$
 
 ---
 
-## Activity: Calculate the following products of $3$-cycles
+## Activity: Calculate the following
 
 Here $a,b,c$ are distinct and different from $1$ and $2$.
 $$

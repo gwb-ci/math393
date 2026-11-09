@@ -383,11 +383,11 @@
     ]
   },
   {
-    "objectID": "classes/23/slides.html#activity-calculate-the-following-products-of-3-cycles",
-    "href": "classes/23/slides.html#activity-calculate-the-following-products-of-3-cycles",
+    "objectID": "classes/23/slides.html#activity-calculate-the-following",
+    "href": "classes/23/slides.html#activity-calculate-the-following",
     "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Activity: Calculate the following products of \\(3\\)-cycles",
-    "text": "Activity: Calculate the following products of \\(3\\)-cycles\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "section": "Activity: Calculate the following",
+    "text": "Activity: Calculate the following\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
     "crumbs": [
       "Class Material",
       "Slides: Simplicity of the Alternating Group"
