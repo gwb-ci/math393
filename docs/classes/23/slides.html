@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Homomorphism Theorems</title>
+  <title>Math 393 - Abstract Algebra – Slides: Simplicity of the Alternating Group</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,7 +129,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Homomorphism Theorems</h1>
+  <h1 class="title">Slides: Simplicity of the Alternating Group</h1>
 
 <div class="quarto-title-authors">
 </div>
@@ -137,6 +137,18 @@
 </section>
 <section id="class-session-goals" class="slide level2">
 <h2>Class Session Goals</h2>
+<ul>
+<li>Understand the Proof the <span class="math inline">\(A_n\)</span> is simple for n≥5</li>
+</ul>
+</section>
+<section id="whats-the-plan" class="slide level2">
+<h2>What’s the plan?</h2>
+<ul>
+<li>Any even permutation can be written as a product of 3-cycles.</li>
+<li>If there is one 3-cycle in a normal subgroup we can use it to generate all 3-cycles.</li>
+<li>Any nontrivial normal subgroup of <span class="math inline">\(A_n\)</span> contains a 3-cycle.</li>
+</ul>
+<p>Then if we find a 3-cylcle in a normal subgroup of <span class="math inline">\(A_n\)</span>. That normal subgroup is all of <span class="math inline">\(A_n\)</span>. If there are no three cycles in a normal subgroup, then it is trivial. The only normal subgroups of <span class="math inline">\(A_n\)</span> are the trivial subgroup and <span class="math inline">\(A_n\)</span> itself. Hence <span class="math inline">\(A_n\)</span> is simple.</p>
 </section>
 <section id="lemma-10.2.1" class="slide level2">
 <h2>Lemma 10.2.1</h2>
@@ -144,8 +156,7 @@
 </section>
 <section id="proof-of-10.2.1" class="slide level2">
 <h2>Proof of 10.2.1</h2>
-<p>An even permutation is a product of pairs of transpositions.</p>
-<p>Each pair can be rewritten using <span class="math inline">\(3\)</span>-cycles:</p>
+<p>We can rewrite any even permutation as a product of transpositions, and then pair the transpositions, and rewrite those pairs as products of <span class="math inline">\(3\)</span>-cycles.</p>
 <p><span class="math display">\[
 \begin{aligned}
 (a,b)(a,b)&amp;=\mathrm{id},\\
@@ -156,49 +167,53 @@
 <p>These cover identical, disjoint, and overlapping transpositions.</p>
 <p>Every <span class="math inline">\(3\)</span>-cycle is even, so the <span class="math inline">\(3\)</span>-cycles generate exactly <span class="math inline">\(A_n\)</span>. <span class="math inline">\(\square\)</span></p>
 </section>
+<section id="activity-some-cycle-calculations" class="slide level2">
+<h2>Activity: Some cycle calculations</h2>
+<p>Calculate the following products of cycles. Here <span class="math inline">\(a,b,c\)</span> are distinct and different from <span class="math inline">\(1\)</span> and <span class="math inline">\(2\)</span>. <span class="math display">\[
+\begin{array}{l}
+(1,2,a)^2 = ? \\[1em]
+(1,2,b)(1,2,a)^2 = ? \\[1em]
+(1,2,b)^2(1,2,a) = ? \\[1em]
+(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?
+\end{array}
+\]</span></p>
+<p>This shows that all 3-cycles can be generated from three cycles of the form <span class="math inline">\((1,2,x)\)</span> where <span class="math inline">\(x\in \{3, 4, 5,\ldots,n\}\)</span>.</p>
+</section>
 <section id="lemma-10.2.2" class="slide level2">
 <h2>Lemma 10.2.2</h2>
-<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(A_n\)</span>, where <span class="math inline">\(n\geq 3\)</span>.</p>
-<p>If <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle, then <span class="math inline">\(N=A_n\)</span>.</p>
+<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(A_n\)</span>, where <span class="math inline">\(n\geq 3\)</span>. If <span class="math inline">\(N\)</span> contains a <span class="math inline">\(3\)</span>-cycle, then <span class="math inline">\(N=A_n\)</span>.</p>
 </section>
 <section id="proof-of-10.2.2" class="slide level2 smaller">
 <h2>Proof of 10.2.2</h2>
-<p><strong>Step 1: Fix two symbols <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>.</strong></p>
-<p>The cycles <span class="math inline">\((i,j,k)\)</span> generate all <span class="math inline">\(3\)</span>-cycles, using</p>
+<p>Activity shows cycles of the form <span class="math inline">\((i,j,x)\)</span> generate all <span class="math inline">\(3\)</span>-cycles.</p>
+<p>Suppose <span class="math inline">\((i,j,a)\in N\)</span> for some <span class="math inline">\(a\notin\{i,j\}\)</span>. Calculate</p>
 <p><span class="math display">\[
-\begin{aligned}
-(i,a,j)&amp;=(i,j,a)^2,\\
-(i,a,b)&amp;=(i,j,b)(i,j,a)^2,\\
-(j,a,b)&amp;=(i,j,b)^2(i,j,a),\\
-(a,b,c)&amp;=(i,j,a)^2(i,j,c)(i,j,b)^2(i,j,a).
-\end{aligned}
+[(i, j)(a, k)](i, j, a)^2 [(i, j)(a, k)]^{-1} = (i, j, k)
 \]</span></p>
-<p>Here the symbols in each identity are distinct.</p>
-<p>By Lemma 10.2.1, these cycles therefore generate <span class="math inline">\(A_n\)</span>.</p>
+<p>where k is any element not in <span class="math inline">\(\{i,j,a\}\)</span>.</p>
+<p>So just one 3-cycle in <span class="math inline">\(N\)</span> gives all 3-cycles of the form <span class="math inline">\((i,j,x)\)</span> and hence all of <span class="math inline">\(A_n\)</span>.</p>
 </section>
-<section id="proof-of-10.2.2-continued" class="slide level2">
-<h2>Proof of 10.2.2: Continued</h2>
-<p><strong>Step 2: Use normality.</strong></p>
-<p>Suppose <span class="math inline">\((i,j,a)\in N\)</span>. Its inverse <span class="math inline">\((i,j,a)^2\)</span> also belongs to <span class="math inline">\(N\)</span>.</p>
-<p>For <span class="math inline">\(k\notin\{i,j,a\}\)</span>, let <span class="math inline">\(\rho=(i,j)(a,k)\in A_n\)</span>.</p>
-<p>Normality gives</p>
-<p><span class="math inline">\(\rho(i,j,a)^2\rho^{-1}=(i,j,k)\in N\)</span>.</p>
-<p>Thus <span class="math inline">\(N\)</span> contains every generator <span class="math inline">\((i,j,k)\)</span> with <span class="math inline">\(k\neq i,j\)</span>, including the original <span class="math inline">\((i,j,a)\)</span>.</p>
-<p>Therefore, <span class="math inline">\(N=A_n\)</span>. <span class="math inline">\(\square\)</span></p>
+<section id="lemma-about-normal-subgroups" class="slide level2">
+<h2>Lemma about Normal Subgroups</h2>
+<p>Let <span class="math inline">\(N\)</span> be a normal subgroup of <span class="math inline">\(G\)</span> and <span class="math inline">\(x\)</span> be an element of <span class="math inline">\(G\)</span> and <span class="math inline">\(y\in N\)</span>. Then <span class="math inline">\(y^{-1}xyx^{-1}\in N\)</span>.</p>
+<p><strong>Proof</strong>: <span class="math inline">\(xyx^{-1}\in N\)</span> since <span class="math inline">\(N\)</span> is normal and <span class="math inline">\(y^{-1}\in N\)</span> since <span class="math inline">\(N\)</span> is a subgroup. Hence <span class="math inline">\(y^{-1}xyx^{-1}\in N\)</span>.</p>
 </section>
 <section id="lemma-10.2.3" class="slide level2">
 <h2>Lemma 10.2.3</h2>
 <p>For <span class="math inline">\(n\geq 5\)</span>, every nontrivial normal subgroup <span class="math inline">\(N\)</span> of <span class="math inline">\(A_n\)</span> contains a <span class="math inline">\(3\)</span>-cycle.</p>
 </section>
-<section id="proof-of-10.2.3-setup" class="slide level2">
-<h2>Proof of 10.2.3: Setup</h2>
-<p>Choose <span class="math inline">\(\sigma\in N\)</span> with <span class="math inline">\(\sigma\neq\mathrm{id}\)</span>.</p>
-<p>For any <span class="math inline">\(\alpha\in A_n\)</span>, normality gives</p>
-<p><span class="math inline">\(\alpha\sigma\alpha^{-1}\in N\)</span>,</p>
-<p>and hence</p>
-<p><span class="math inline">\(\sigma^{-1}\alpha\sigma\alpha^{-1}\in N\)</span>.</p>
-<p>We use this construction to obtain simpler cycle structures.</p>
-<p>In the following cases, <span class="math inline">\(\tau\)</span> denotes the product of the remaining disjoint cycles.</p>
+<section id="proof-of-10.2.3-cases" class="slide level2">
+<h2>Proof of 10.2.3: Cases</h2>
+<p>What might an element <span class="math inline">\(\sigma\)</span> of a normal subgroup look like? It can be a product of disjoint cycles since it is a subgroup of the alternating group which is a subgroup of the symmetric group. What’s the longest cycle?</p>
+<ul>
+<li>longest cycle is more than 3, so <span class="math inline">\(\sigma=\tau (a_1,a_2,\ldots,a_r)\)</span> with <span class="math inline">\(r&gt;3\)</span>.</li>
+<li>longest cycle is 3, break this up into subcases:
+<ul>
+<li>Multiple 3-cycles <span class="math inline">\(\sigma=\tau (a_1,a_2,a_3)(a_4,a_5,a_6)\)</span>.</li>
+<li>One 3-cycle <span class="math inline">\(\sigma=\tau (a_1,a_2,a_3)\)</span>.</li>
+</ul></li>
+<li>longest cycle is 2, <span class="math inline">\(\sigma=\tau (a_1,a_2)(a_3,a_4)\)</span>.</li>
+</ul>
 </section>
 <section id="proof-of-10.2.3-long-cycles" class="slide level2">
 <h2>Proof of 10.2.3: Long Cycles</h2>
@@ -257,6 +272,13 @@
 <p>By Lemma 10.2.2, <span class="math inline">\(N=A_n\)</span>.</p>
 <p>Therefore, the only normal subgroups of <span class="math inline">\(A_n\)</span> are <span class="math inline">\(\{\mathrm{id}\}\)</span> and <span class="math inline">\(A_n\)</span>.</p>
 <p>Hence <span class="math inline">\(A_n\)</span> is simple. <span class="math inline">\(\square\)</span></p>
+</section>
+<section id="what-about-small-n" class="slide level2">
+<h2>what about small n?</h2>
+<p>For <span class="math inline">\(n=2\)</span> the only even transposition is the identity, so <span class="math inline">\(A_2=\{\mathrm{id}\}\)</span> is simple.</p>
+<p>For <span class="math inline">\(n=3\)</span>, the group <span class="math inline">\(A_3\)</span> has order <span class="math inline">\(3\)</span>, so it is cyclic and hence simple.</p>
+<p>For <span class="math inline">\(n=4\)</span>, the group <span class="math inline">\(A_4\)</span>, <span class="math inline">\(K_4=\{e,(12)(34),(13)(24),(14)(23)\}\)</span> and <span class="math inline">\(K_4\triangleleft A_4\)</span>, so <span class="math inline">\(A_4\)</span> is not simple.</p>
+<p>So <span class="math inline">\(A_4\)</span> is the only non-simple alternating group.</p>
 </section>
 <section id="recall-mathbbz_p" class="slide level2">
 <h2>Recall: <span class="math inline">\(\mathbb{Z}_p\)</span></h2>
