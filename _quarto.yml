@@ -37,6 +37,8 @@ website:
           - file: classes/21/slides.qmd
           - file: classes/22/slides.qmd
           - file: classes/23/slides.qmd
+          - file: classes/24/slides.qmd
+          - file: classes/25/slides.qmd
   
 
 format:

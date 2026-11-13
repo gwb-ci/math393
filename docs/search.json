@@ -97,476 +97,531 @@
     ]
   },
   {
-    "objectID": "classes/22/slides.html#class-session-goals",
-    "href": "classes/22/slides.html#class-session-goals",
-    "title": "Slides: Homomorphism Theorems",
+    "objectID": "classes/13/slides.html#class-session-goals",
+    "href": "classes/13/slides.html#class-session-goals",
+    "title": "Slides: Fermat and Euler’s Theorems",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nDefine the natural homomorphism, identify its kernel and image, and interpret the commutative diagram in the First Isomorphism Theorem.\nApply the First, Second, and Third Isomorphism Theorems and the Correspondence Theorem to relate groups, quotient groups, and subgroups.",
+    "text": "Class Session Goals\n\nExplain why a subgroup of index \\(2\\) is stable under conjugation.\nUse Lagrange’s Theorem to derive Euler’s Theorem and Fermat’s Little Theorem.\nFind conjugacy classes in \\(S_4\\) and \\(A_4\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#moving-from-understanding-groups-to-identifying-groups",
-    "href": "classes/22/slides.html#moving-from-understanding-groups-to-identifying-groups",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Moving from Understanding Groups to Identifying Groups",
-    "text": "Moving from Understanding Groups to Identifying Groups\nWe now have a good understanding of what groups are and how they work.\nWe next develop tools to:\n\nIdentify groups by relating them to familiar groups.\nFind normal subgroups and understand the quotient groups they produce.\n\nHomomorphisms and the isomorphism theorems that we learn about are starting tools to identify groups.",
+    "objectID": "classes/13/slides.html#definition-of-a-group",
+    "href": "classes/13/slides.html#definition-of-a-group",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#recall-theorem-10.1.3",
-    "href": "classes/22/slides.html#recall-theorem-10.1.3",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Recall Theorem 10.1.3",
-    "text": "Recall Theorem 10.1.3\nLet \\(G\\) be a group and \\(N\\) be a subgroup of \\(G\\). Then the following statements are equivalent.\n\nThe subgroup \\(N\\) is normal in \\(G\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}\\subset N\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}=N\\).",
+    "objectID": "classes/13/slides.html#definition-of-a-subgroup",
+    "href": "classes/13/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#natural-homomorphism",
-    "href": "classes/22/slides.html#natural-homomorphism",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Natural Homomorphism",
-    "text": "Natural Homomorphism\nLet \\(H\\) be a normal subgroup of \\(G\\). The natural or canonical homomorphism \\(\\phi:G\\rightarrow G/H\\) is defined by \\(\\phi(g)=gH\\).\nThis is a homomorphism because\n\\[\n\\phi(g_1)\\phi(g_2)=(g_1H)(g_2H)=g_1g_2H=\\phi(g_1g_2).\n\\]\n\nOnto: Every coset \\(gH\\) is the image of \\(g\\).\nKernel: \\(\\phi(g)=H\\) exactly when \\(g\\in H\\), so \\(\\ker\\phi=H\\).\n\nThus every normal subgroup is the kernel of a homomorphism.",
+    "objectID": "classes/13/slides.html#definition-of-cosets",
+    "href": "classes/13/slides.html#definition-of-cosets",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Definition of Cosets",
+    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#two-images-of-a-group",
-    "href": "classes/22/slides.html#two-images-of-a-group",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Two Images of a group",
-    "text": "Two Images of a group\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow &  &\\\\\nG/K & &\n\\end{array}\n\\]\nWhat is the relationship between the two images \\(\\psi(G)\\) and \\(G/K\\)?",
+    "objectID": "classes/13/slides.html#subgroups-of-index-2",
+    "href": "classes/13/slides.html#subgroups-of-index-2",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Subgroups of Index 2",
+    "text": "Subgroups of Index 2\nLet \\(H\\) be a subgroup of \\(G\\) with \\([G:H]=2\\). There are only two left cosets and two right cosets: \\(H\\) and its complement in \\(G\\).\nThus \\(gH=Hg\\) for every \\(g\\in G\\), or equivalently,\n\\[\ngHg^{-1}=H.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#commutative-diagrams",
-    "href": "classes/22/slides.html#commutative-diagrams",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Commutative Diagrams",
-    "text": "Commutative Diagrams\nA diagram commutes when following different directed paths with the same starting and ending objects gives the same map.\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nG/K & &\n\\end{array}\n\\]\nCommutativity means \\(\\psi=\\eta\\phi\\).",
+    "objectID": "classes/13/slides.html#proposition-6.2.7",
+    "href": "classes/13/slides.html#proposition-6.2.7",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Proposition 6.2.7",
+    "text": "Proposition 6.2.7\nThe group \\(A_4\\) has no subgroup of order \\(6\\).\n\nSuppose \\(|H|=6\\). Then \\([A_4:H]=2\\), so \\(gHg^{-1}=H\\) for every \\(g\\in A_4\\).\nOf the eight \\(3\\)-cycles in \\(A_4\\), at least one lies in \\(H\\). We may take it to be \\((123)\\). Its inverse \\((132)\\) also lies in \\(H\\).\nConjugating by elements of \\(A_4\\) gives \\((243)\\) and \\((142)\\). Their inverses must also lie in \\(H\\). Together with the identity, these are seven distinct elements, contradicting \\(|H|=6\\).\n\n\nThe converse of Lagrange’s Theorem is false: \\(6\\) divides \\(|A_4|=12\\), but \\(A_4\\) has no subgroup of order \\(6\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#following-the-paths",
-    "href": "classes/22/slides.html#following-the-paths",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Following the Paths",
-    "text": "Following the Paths\nStart with any \\(g\\in G\\). There are two directed paths from \\(G\\) to \\(\\psi(G)\\):\n\nDirect path: \\(g\\mapsto\\psi(g)\\).\nPath through the quotient: \\(g\\mapsto gK\\mapsto\\eta(gK)\\).\n\nThe First Isomorphism Theorem supplies the isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) defined by \\(\\eta(gK)=\\psi(g)\\).\nTherefore, both paths give the same result:\n\\[\n\\eta(\\phi(g))=\\eta(gK)=\\psi(g).\n\\]\nThe diagram records how \\(\\psi\\) factors through the quotient group \\(G/K\\).",
+    "objectID": "classes/13/slides.html#corollary",
+    "href": "classes/13/slides.html#corollary",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Corollary",
+    "text": "Corollary\nIf \\(G\\) is a finite group and \\(g\\in G\\), then\n\\[\ng^{|G|}=e.\n\\]\nThe order of \\(g\\) divides \\(|G|\\), so \\(|G|=k|g|\\) for some integer \\(k\\). Hence \\(g^{|G|}=(g^{|g|})^k=e\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-11.2.1",
-    "href": "classes/22/slides.html#theorem-11.2.1",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Theorem 11.2.1",
-    "text": "Theorem 11.2.1\nFirst Isomorphism Theorem\nIf \\(\\psi:G\\rightarrow H\\) is a group homomorphism with \\(K=\\ker\\psi\\), then \\(K\\) is normal in \\(G\\).\nLet \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\nThen there exists a unique isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) such that \\(\\psi=\\eta\\phi\\).\n\\[\nG/\\ker\\psi\\cong\\psi(G).\n\\]",
+    "objectID": "classes/13/slides.html#the-group-un",
+    "href": "classes/13/slides.html#the-group-un",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "The Group \\(U(n)\\)",
+    "text": "The Group \\(U(n)\\)\n\\(U(n)\\) is the group of units in \\(\\mathbb{Z}_n\\) under multiplication modulo \\(n\\):\n\\[\nU(n)=\\{[a]\\in\\mathbb{Z}_n:\\gcd(a,n)=1\\}.\n\\]\nFor example, \\(U(12)=\\{[1],[5],[7],[11]\\}\\).\nEach element has a multiplicative inverse modulo \\(n\\). For instance, \\([5][5]=[1]\\) in \\(\\mathbb{Z}_{12}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#first-isomorphism-theorem-commutative-diagram",
-    "href": "classes/22/slides.html#first-isomorphism-theorem-commutative-diagram",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "First Isomorphism Theorem: Commutative Diagram",
-    "text": "First Isomorphism Theorem: Commutative Diagram\nLet \\(\\psi:G\\rightarrow H\\) be a group homomorphism and let \\(K=\\ker\\psi\\).\nThe First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nG/K & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(g)=gK\\).\nInduced isomorphism: \\(\\eta(gK)=\\psi(g)\\).\n\nThe diagram commutes because \\(\\eta(\\phi(g))=\\psi(g)\\).",
+    "objectID": "classes/13/slides.html#eulers-phi-function",
+    "href": "classes/13/slides.html#eulers-phi-function",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Euler’s Phi Function",
+    "text": "Euler’s Phi Function\nThe Euler \\(\\phi\\)-function is the map \\(\\phi:\\mathbb{N}\\to\\mathbb{N}\\) defined by \\(\\phi(1)=1\\) and, for \\(n&gt;1\\),\n\\[\n\\phi(n)=|\\{m:1\\leq m&lt;n,\\ \\gcd(m,n)=1\\}|.\n\\]\nFor example, \\(\\phi(12)=4\\) because \\(1,5,7,11\\) are relatively prime to \\(12\\).\nIf \\(p\\) is prime, then \\(\\phi(p)=p-1\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.1",
-    "href": "classes/22/slides.html#proof-of-theorem-11.2.1",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Proof of Theorem 11.2.1",
-    "text": "Proof of Theorem 11.2.1\nWe already know that \\(K\\) is normal in \\(G\\). Define \\(\\eta:G/K\\rightarrow\\psi(G)\\) by \\(\\eta(gK)=\\psi(g)\\).\n\nWell-defined: If \\(g_1K=g_2K\\), then \\(g_2=g_1k\\) for some \\(k\\in K\\). Hence \\(\\psi(g_2)=\\psi(g_1)\\psi(k)=\\psi(g_1)\\).\nHomomorphism: \\(\\eta(g_1K\\,g_2K)=\\psi(g_1g_2)=\\psi(g_1)\\psi(g_2)=\\eta(g_1K)\\eta(g_2K)\\).\nOnto: Every element \\(\\psi(g)\\) of \\(\\psi(G)\\) equals \\(\\eta(gK)\\).\nOne-to-one: If \\(\\eta(g_1K)=\\eta(g_2K)\\), then \\(\\psi(g_1)=\\psi(g_2)\\). Thus \\(\\psi(g_1^{-1}g_2)=e\\), so \\(g_1^{-1}g_2\\in K\\) and \\(g_1K=g_2K\\). \\(\\square\\)",
+    "objectID": "classes/13/slides.html#theorem-6.3.1",
+    "href": "classes/13/slides.html#theorem-6.3.1",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Theorem 6.3.1",
+    "text": "Theorem 6.3.1\nLet \\(U(n)\\) be the group of units in \\(\\mathbb{Z}_n\\). Then\n\\[\n|U(n)|=\\phi(n).\n\\]\nThe units are precisely the residue classes represented by integers relatively prime to \\(n\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#example-finite-cyclic-groups",
-    "href": "classes/22/slides.html#example-finite-cyclic-groups",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Example: Finite Cyclic Groups",
-    "text": "Example: Finite Cyclic Groups\nLet \\(G=\\langle g\\rangle\\) with \\(|g|=m\\). Define \\(\\psi:\\mathbb Z\\rightarrow G\\) by \\(\\psi(n)=g^n\\).\nThis is an onto homomorphism because every element of \\(G\\) is a power of \\(g\\), and\n\\[\n\\psi(a)\\psi(b)=g^ag^b=g^{a+b}=\\psi(a+b).\n\\]\nSince \\(g^n=e\\) exactly when \\(m\\) divides \\(n\\), we have \\(\\ker\\psi=m\\mathbb Z\\).\nThe First Isomorphism Theorem gives\n\\[\n\\mathbb Z/m\\mathbb Z\\cong G.\n\\]\nEvery cyclic group of order \\(m\\) is isomorphic to \\(\\mathbb Z_m\\).",
+    "objectID": "classes/13/slides.html#eulers-theorem",
+    "href": "classes/13/slides.html#eulers-theorem",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Euler’s Theorem",
+    "text": "Euler’s Theorem\nLet \\(a\\) and \\(n\\) be integers such that \\(n&gt;0\\) and \\(\\gcd(a,n)=1\\). Then\n\\[\na^{\\phi(n)}\\equiv 1\\pmod n.\n\\]\n\nThe residue class of \\(a\\) belongs to \\(U(n)\\), which has order \\(\\phi(n)\\). Applying the preceding corollary in \\(U(n)\\) proves the congruence.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#example-infinite-cyclic-groups",
-    "href": "classes/22/slides.html#example-infinite-cyclic-groups",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Example: Infinite Cyclic Groups",
-    "text": "Example: Infinite Cyclic Groups\nLet \\(G=\\langle g\\rangle\\), where \\(g\\) has infinite order. Again define \\(\\psi:\\mathbb Z\\rightarrow G\\) by \\(\\psi(n)=g^n\\).\n\n\\(\\psi\\) is an onto homomorphism.\nSince \\(g\\) has infinite order, \\(g^n=e\\) only when \\(n=0\\).\nTherefore, \\(\\ker\\psi=\\{0\\}\\).\n\nThe First Isomorphism Theorem gives\n\\[\n\\mathbb Z/\\{0\\}\\cong G,\n\\qquad\\text{so}\\qquad\n\\mathbb Z\\cong G.\n\\]\nUp to isomorphism, the only cyclic groups are \\(\\mathbb Z\\) and \\(\\mathbb Z_m\\).",
+    "objectID": "classes/13/slides.html#fermats-little-theorem",
+    "href": "classes/13/slides.html#fermats-little-theorem",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Fermat’s Little Theorem",
+    "text": "Fermat’s Little Theorem\nLet \\(p\\) be prime. If \\(p\\nmid a\\), then\n\\[\na^{p-1}\\equiv 1\\pmod p.\n\\]\nFurthermore, for any integer \\(b\\),\n\\[\nb^p\\equiv b\\pmod p.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#example-identifying-s_3a_3",
-    "href": "classes/22/slides.html#example-identifying-s_3a_3",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Example: Identifying \\(S_3/A_3\\)",
-    "text": "Example: Identifying \\(S_3/A_3\\)\nThe sign homomorphism \\(\\psi:S_3\\rightarrow\\mathbb Z_2\\) sends even permutations to \\(0\\) and odd permutations to \\(1\\). We showed this was a homomorphism previously.\n\nOnto: The identity maps to \\(0\\), and a transposition maps to \\(1\\).\nKernel: \\(\\ker\\psi=A_3=\\{e,(123),(132)\\}\\).\n\nThe First Isomorphism Theorem gives\n\\[\nS_3/A_3\\cong\\mathbb Z_2.\n\\]",
+    "objectID": "classes/13/slides.html#conjugation",
+    "href": "classes/13/slides.html#conjugation",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugation",
+    "text": "Conjugation\nFor \\(g,h\\in G\\), the element \\(ghg^{-1}\\) is the conjugate of \\(h\\) by \\(g\\).\nFor a subgroup \\(H\\) of \\(G\\), write \\(gHg^{-1}=\\{ghg^{-1}:h\\in H\\}\\).\n\nConjugating a cycle applies the conjugating permutation to each entry:\n\\[\n\\sigma(a_1\\,a_2\\,\\ldots\\,a_k)\\sigma^{-1}\n=(\\sigma(a_1)\\,\\sigma(a_2)\\,\\ldots\\,\\sigma(a_k)).\n\\]\nFor example, \\((124)(123)(124)^{-1}=(243)\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#implications-a-strategy-for-identifying-groups",
-    "href": "classes/22/slides.html#implications-a-strategy-for-identifying-groups",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Implications: A Strategy for Identifying Groups",
-    "text": "Implications: A Strategy for Identifying Groups\nTo identify a quotient group \\(G/N\\):\n\nFind a homomorphism \\(\\psi:G\\rightarrow H\\) into a familiar group.\nShow that \\(\\ker\\psi=N\\).\nIdentify the image \\(\\psi(G)\\).\n\nThen the First Isomorphism Theorem gives \\(G/N\\cong\\psi(G)\\).\n\nFinding \\(N\\) as a kernel also proves that \\(N\\) is normal.\nIf \\(\\psi\\) is onto, then \\(G/N\\cong H\\).\nIf \\(\\ker\\psi=\\{e\\}\\), then \\(G\\cong\\psi(G)\\).",
+    "objectID": "classes/13/slides.html#theorem-6.2.8",
+    "href": "classes/13/slides.html#theorem-6.2.8",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Theorem 6.2.8",
+    "text": "Theorem 6.2.8\nTwo cycles \\(\\tau\\) and \\(\\mu\\) in \\(S_n\\) have the same length if and only if there exists a \\(\\sigma\\in S_n\\) such that\n\\[\n\\mu=\\sigma\\tau\\sigma^{-1}.\n\\]\n\nIf \\(\\tau=(a_1\\,\\ldots\\,a_k)\\) and \\(\\mu=(b_1\\,\\ldots\\,b_k)\\), choose \\(\\sigma\\) with \\(\\sigma(a_i)=b_i\\) for each \\(i\\), then extend it to a permutation of the remaining symbols.\nConversely, conjugating \\(\\tau\\) replaces its entries by their images under \\(\\sigma\\), preserving the cycle length.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-11.2.3",
-    "href": "classes/22/slides.html#theorem-11.2.3",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Theorem 11.2.3",
-    "text": "Theorem 11.2.3\nSecond Isomorphism Theorem\nLet \\(H\\) be a subgroup of a group \\(G\\), not necessarily normal in \\(G\\), and \\(N\\) a normal subgroup of \\(G\\).\nThen \\(HN\\) is a subgroup of \\(G\\), \\(H\\cap N\\) is a normal subgroup of \\(H\\), and\n\\[\nH/H\\cap N\\cong HN/N.\n\\]",
+    "objectID": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
+    "href": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugation Is an Equivalence Relation",
+    "text": "Conjugation Is an Equivalence Relation\nDefine \\(h\\sim k\\) when \\(k=ghg^{-1}\\) for some \\(g\\in G\\).\n\nReflexive: \\(h=ehe^{-1}\\).\nSymmetric: If \\(k=ghg^{-1}\\), then \\(h=g^{-1}kg\\).\nTransitive: If \\(k=ghg^{-1}\\) and \\(\\ell=aka^{-1}\\), then \\(\\ell=(ag)h(ag)^{-1}\\).\n\nThe equivalence classes are called conjugacy classes.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#second-isomorphism-theorem-commutative-diagram",
-    "href": "classes/22/slides.html#second-isomorphism-theorem-commutative-diagram",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Second Isomorphism Theorem: Commutative Diagram",
-    "text": "Second Isomorphism Theorem: Commutative Diagram\nLet \\(H\\leq G\\) and \\(N\\) be normal in \\(G\\). Define \\(\\psi:H\\rightarrow HN/N\\) by \\(\\psi(h)=hN\\).\nSince \\(\\ker\\psi=H\\cap N\\), the First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nH & \\xrightarrow{\\ \\psi\\ } & HN/N\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nH/(H\\cap N) & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(h)=h(H\\cap N)\\).\nInduced isomorphism: \\(\\eta(h(H\\cap N))=hN\\).\n\nThe diagram commutes because \\(\\eta(\\phi(h))=hN=\\psi(h)\\).",
+    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
+    "href": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Conjugacy Classes of \\(S_4\\)",
+    "text": "Activity: Conjugacy Classes of \\(S_4\\)\nConjugation in \\(S_4\\) preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to \\(|S_4|\\).\n\n\n\n\nCycle type\nRepresentative\nClass size\n\n\n\n\nIdentity\n\\((1)\\)\n\\(1\\)\n\n\nTransposition\n\\((12)\\)\n\\(6\\)\n\n\nTwo disjoint transpositions\n\\((12)(34)\\)\n\\(3\\)\n\n\n\\(3\\)-cycle\n\\((123)\\)\n\\(8\\)\n\n\n\\(4\\)-cycle\n\\((1234)\\)\n\\(6\\)\n\n\n\n\\(1+6+3+8+6=24\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.3",
-    "href": "classes/22/slides.html#proof-of-theorem-11.2.3",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Proof of Theorem 11.2.3",
-    "text": "Proof of Theorem 11.2.3\nFirst, \\(HN=\\{hn:h\\in H,n\\in N\\}\\) contains \\(e\\). Since \\(N\\) is normal,\n\\[\n\\begin{aligned}\n(h_1n_1)(h_2n_2)\n&=h_1h_2(h_2^{-1}n_1h_2)n_2\\in HN,\\\\\n(hn)^{-1}\n&=n^{-1}h^{-1}=h^{-1}(hn^{-1}h^{-1})\\in HN.\n\\end{aligned}\n\\]\nThus \\(HN\\) is a subgroup of \\(G\\).\nFor \\(h\\in H\\) and \\(n\\in H\\cap N\\), the element \\(h^{-1}nh\\) belongs to both \\(H\\) and \\(N\\). Hence \\(H\\cap N\\) is normal in \\(H\\).\nDefine \\(\\phi:H\\rightarrow HN/N\\) by \\(\\phi(h)=hN\\). It is onto because \\(hnN=hN\\), and it is a homomorphism because \\(\\phi(hh')=hh'N=hNh'N=\\phi(h)\\phi(h')\\).\nSince \\(\\ker\\phi=\\{h\\in H:h\\in N\\}=H\\cap N\\), the First Isomorphism Theorem gives \\(H/H\\cap N\\cong HN/N\\). \\(\\square\\)",
+    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
+    "href": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Conjugacy Classes of \\(A_4\\)",
+    "text": "Activity: Conjugacy Classes of \\(A_4\\)\nList the elements of \\(A_4\\) by cycle type. Which \\(S_4\\) conjugacy classes split when conjugation is restricted to elements of \\(A_4\\)?\n\nThe identity forms one class. The three double transpositions form another. The eight \\(3\\)-cycles split into two classes of four:\n\\[\n\\begin{aligned}\n[(123)]_{A_4}&=\\{(123),(142),(134),(243)\\},\\\\\n[(132)]_{A_4}&=\\{(132),(124),(143),(234)\\}.\n\\end{aligned}\n\\]\nThus the class sizes are \\(1+3+4+4=12\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-11.2.4",
-    "href": "classes/22/slides.html#theorem-11.2.4",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Theorem 11.2.4",
-    "text": "Theorem 11.2.4\nCorrespondence Theorem\nLet \\(N\\) be a normal subgroup of a group \\(G\\).\nThen \\(H\\mapsto H/N\\) is a one-to-one correspondence between the set of subgroups \\(H\\) of \\(G\\) containing \\(N\\) and the set of subgroups of \\(G/N\\).\nFurthermore, the normal subgroups of \\(G\\) containing \\(N\\) correspond to normal subgroups of \\(G/N\\).",
+    "objectID": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
+    "href": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Conjugacy Classes and the Center of a Group",
+    "text": "Conjugacy Classes and the Center of a Group\nThe center of a group \\(G\\) is the set \\(Z(G)=\\{g\\in G:gh=hg\\text{ for all }h\\in G\\}\\).\nWhat is can you say about the conjugacy classes of elements in \\(Z(G)\\)?",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.4",
-    "href": "classes/22/slides.html#proof-of-theorem-11.2.4",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Proof of Theorem 11.2.4",
-    "text": "Proof of Theorem 11.2.4\nLet \\(\\pi:G\\rightarrow G/N\\) be the canonical homomorphism.\n\nSubgroups correspond: If \\(N\\subseteq H\\leq G\\), then \\(H/N=\\pi(H)\\) is a subgroup of \\(G/N\\). If \\(S\\leq G/N\\), then \\(H=\\pi^{-1}(S)\\) is a subgroup containing \\(N\\), and \\(H/N=S\\).\nThe correspondence is one-to-one: For every subgroup \\(H\\) containing \\(N\\), \\(\\pi^{-1}(H/N)=H\\). Thus taking images and taking inverse images give inverse correspondences.\nNormality passes to the quotient: If \\(H\\) is normal in \\(G\\), the map \\(G/N\\rightarrow G/H\\) defined by \\(gN\\mapsto gH\\) is a homomorphism with kernel \\(H/N\\). Hence \\(H/N\\) is normal in \\(G/N\\).\nNormality lifts from the quotient: If \\(H/N\\) is normal in \\(G/N\\), then \\(H=\\pi^{-1}(H/N)\\) is normal in \\(G\\) by Proposition 11.1.4(4). \\(\\square\\)",
+    "objectID": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
+    "href": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Class Equation and Conjugacy Classes in \\(S_n\\)",
+    "text": "Class Equation and Conjugacy Classes in \\(S_n\\)\nConjugacy classes partition a finite group \\(G\\). If \\(x_1,\\ldots,x_k\\) represent its classes outside the center, the class equation is\n\\[\n|G|=|Z(G)|+|[x_1]|+\\cdots+|[x_k]|.\n\\]\n\nIn \\(S_n\\), permutations are conjugate exactly when they have the same cycle type. If a permutation has \\(m_j\\) cycles of length \\(j\\), including fixed points, then\n\\[\n|[\\sigma]|=\\frac{n!}{\\prod_{j=1}^{n}j^{m_j}m_j!}.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#theorem-11.2.5",
-    "href": "classes/22/slides.html#theorem-11.2.5",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Theorem 11.2.5",
-    "text": "Theorem 11.2.5\nThird Isomorphism Theorem\nLet \\(G\\) be a group and \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subset H\\).\nThen\n\\[\nG/H\\cong\\frac{G/N}{H/N}.\n\\]",
+    "objectID": "classes/13/slides.html#activity-class-equation-for-d_5",
+    "href": "classes/13/slides.html#activity-class-equation-for-d_5",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Activity: Class Equation for \\(D_5\\)",
+    "text": "Activity: Class Equation for \\(D_5\\)\nFind the conjugacy classes of \\(D_5\\) and write the class equation.",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#third-isomorphism-theorem-commutative-diagram",
-    "href": "classes/22/slides.html#third-isomorphism-theorem-commutative-diagram",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Third Isomorphism Theorem: Commutative Diagram",
-    "text": "Third Isomorphism Theorem: Commutative Diagram\nLet \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subseteq H\\). Define \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\nSince \\(\\ker\\rho=H/N\\), the First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nG/N & \\xrightarrow{\\ \\rho\\ } & G/H\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\n(G/N)/(H/N) & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(gN)=(gN)(H/N)\\).\nInduced isomorphism: \\(\\eta((gN)(H/N))=gH\\).\n\nThe diagram commutes because \\(\\eta(\\phi(gN))=gH=\\rho(gN)\\).",
+    "objectID": "classes/13/slides.html#class-sizes-and-centralizers",
+    "href": "classes/13/slides.html#class-sizes-and-centralizers",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Class Sizes and Centralizers",
+    "text": "Class Sizes and Centralizers\nFor \\(x\\in G\\), its centralizer is \\(C_G(x)=\\{g\\in G:gx=xg\\}\\).\nThe conjugacy class of \\(x\\) has size\n\\[\n|[x]|=[G:C_G(x)]=\\frac{|G|}{|C_G(x)|}.\n\\]\n\nIn \\(S_4\\), the permutations commuting with \\((123)\\) are \\((1)\\), \\((123)\\), and \\((132)\\). Thus\n\\[\n|[(123)]|=\\frac{24}{3}=8.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.5",
-    "href": "classes/22/slides.html#proof-of-theorem-11.2.5",
-    "title": "Slides: Homomorphism Theorems",
-    "section": "Proof of Theorem 11.2.5",
-    "text": "Proof of Theorem 11.2.5\nDefine \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\n\nWell-defined: If \\(g_1N=g_2N\\), then \\(g_1^{-1}g_2\\in N\\subseteq H\\), so \\(g_1H=g_2H\\).\nHomomorphism: \\(\\rho(g_1N\\,g_2N)=g_1g_2H=(g_1H)(g_2H)\\).\nOnto: Every coset \\(gH\\) is the image of \\(gN\\).\nKernel: \\(\\rho(gN)=H\\) exactly when \\(g\\in H\\). Thus \\(\\ker\\rho=H/N\\).\n\nBy the First Isomorphism Theorem,\n\\[\n\\frac{G/N}{H/N}\\cong G/H.\n\\]\nTherefore \\(G/H\\cong(G/N)/(H/N)\\). \\(\\square\\)",
+    "objectID": "classes/13/slides.html#the-center-of-a-finite-p-group",
+    "href": "classes/13/slides.html#the-center-of-a-finite-p-group",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "The Center of a Finite \\(p\\)-Group",
+    "text": "The Center of a Finite \\(p\\)-Group\nTheorem. If \\(|G|=p^n\\) for a prime \\(p\\), then \\(Z(G)\\) contains an element other than the identity.\n\nEach conjugacy class outside \\(Z(G)\\) has size greater than \\(1\\) and divides \\(p^n\\). Its size is therefore divisible by \\(p\\).\nThe class equation gives\n\\[\np^n=|Z(G)|+\\sum_i |[x_i]|.\n\\]\nIt follows that \\(p\\) divides \\(|Z(G)|\\). Since \\(e\\in Z(G)\\), we have \\(|Z(G)|\\geq p\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Homomorphism Theorems"
+      "Slides: Fermat and Euler's Theorems"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#class-session-goals",
-    "href": "classes/23/slides.html#class-session-goals",
-    "title": "Slides: Simplicity of the Alternating Group",
+    "objectID": "classes/13/slides.html#groups-of-order-p2",
+    "href": "classes/13/slides.html#groups-of-order-p2",
+    "title": "Slides: Fermat and Euler’s Theorems",
+    "section": "Groups of Order \\(p^2\\)",
+    "text": "Groups of Order \\(p^2\\)\nCorollary. Every group of order \\(p^2\\) is abelian.\n\nThe preceding theorem and Lagrange’s Theorem give \\(|Z(G)|=p\\) or \\(p^2\\).\nSuppose \\(|Z(G)|=p\\) and choose \\(x\\notin Z(G)\\). The centralizer \\(C_G(x)\\) contains both \\(Z(G)\\) and \\(x\\), so it has more than \\(p\\) elements. Its order divides \\(p^2\\), forcing \\(C_G(x)=G\\).\nBut then \\(x\\in Z(G)\\), a contradiction. Hence \\(Z(G)=G\\), so \\(G\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Fermat and Euler's Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/15/slides.html#class-session-goals",
+    "href": "classes/15/slides.html#class-session-goals",
+    "title": "Slides: Midterm",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nUnderstand the Proof the \\(A_n\\) is simple for n≥5",
+    "text": "Class Session Goals\n\nDo well on your midterm.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Midterm"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#whats-the-plan",
-    "href": "classes/23/slides.html#whats-the-plan",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "What’s the plan?",
-    "text": "What’s the plan?\n\nAny even permutation can be written as a product of 3-cycles.\nIf there is one 3-cycle in a normal subgroup we can use it to generate all 3-cycles.\nAny nontrivial normal subgroup of \\(A_n\\) contains a 3-cycle.\n\nThen if we find a 3-cylcle in a normal subgroup of \\(A_n\\). That normal subgroup is all of \\(A_n\\). If there are no three cycles in a normal subgroup, then it is trivial. The only normal subgroups of \\(A_n\\) are the trivial subgroup and \\(A_n\\) itself. Hence \\(A_n\\) is simple.",
+    "objectID": "classes/24/slides.html#class-session-goals",
+    "href": "classes/24/slides.html#class-session-goals",
+    "title": "Slides: Rings",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nState the definition of a ring.\nDistinguish commutative rings, rings with identity, integral domains, division rings, and fields.\nIdentify zero divisors and units in examples.\nUse ring axioms to establish basic identities.\nApply the subring test to determine whether a subset is a subring.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#lemma-10.2.1",
-    "href": "classes/23/slides.html#lemma-10.2.1",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Lemma 10.2.1",
-    "text": "Lemma 10.2.1\nThe alternating group \\(A_n\\) is generated by \\(3\\)-cycles for \\(n\\geq 3\\).",
+    "objectID": "classes/24/slides.html#algebra-questions",
+    "href": "classes/24/slides.html#algebra-questions",
+    "title": "Slides: Rings",
+    "section": "Algebra Questions",
+    "text": "Algebra Questions\n\nWhat is the object and it’d operations?\nWhat is a “sub” object?\nWhat is a homomorphism between objects?\nWhat properties does the kernel of a homomorphism have?\nWhat is a “factor” object?",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.1",
-    "href": "classes/23/slides.html#proof-of-10.2.1",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.1",
-    "text": "Proof of 10.2.1\nWe can rewrite any even permutation as a product of transpositions, and then pair the transpositions, and rewrite those pairs as products of \\(3\\)-cycles.\n\\[\n\\begin{aligned}\n(a,b)(a,b)&=\\mathrm{id},\\\\\n(a,b)(c,d)&=(a,c,b)(a,c,d),\\\\\n(a,b)(a,c)&=(a,c,b).\n\\end{aligned}\n\\]\nThese cover identical, disjoint, and overlapping transpositions.\nEvery \\(3\\)-cycle is even, so the \\(3\\)-cycles generate exactly \\(A_n\\). \\(\\square\\)",
+    "objectID": "classes/24/slides.html#mathbb-z-and-mathbb-r-as-motivations",
+    "href": "classes/24/slides.html#mathbb-z-and-mathbb-r-as-motivations",
+    "title": "Slides: Rings",
+    "section": "\\(\\mathbb Z\\) and \\(\\mathbb R\\) as motivations",
+    "text": "\\(\\mathbb Z\\) and \\(\\mathbb R\\) as motivations\n\n\\(\\mathbb Z\\): cancellation law \\(a \\cdot c=0\\) implies \\(a=0\\) or \\(c=0\\)\n\\(\\mathbb Z\\): primes\n\\(\\mathbb Z\\): division algorithm and greatest common divisors\n\\(\\mathbb R\\): every non-zero element has a multiplicative inverse\n\nWe have many examples of objects with both addtion and multiplication operations.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#activity-calculate-the-following",
-    "href": "classes/23/slides.html#activity-calculate-the-following",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Activity: Calculate the following",
-    "text": "Activity: Calculate the following\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "objectID": "classes/24/slides.html#definitin-of-a-ring",
+    "href": "classes/24/slides.html#definitin-of-a-ring",
+    "title": "Slides: Rings",
+    "section": "Definitin of a Ring",
+    "text": "Definitin of a Ring\nA nonempty set \\(R\\) is a ring if it has two closed binary operations, addition and multiplication, satisfying the following conditions.\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#recall",
-    "href": "classes/23/slides.html#recall",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Recall",
-    "text": "Recall\nIn the symmetric group \\(S_n\\), any element can be written as a product of disjoint cycles and disjoint cycles commute.",
+    "objectID": "classes/24/slides.html#keeping-track-of-things-in-rings",
+    "href": "classes/24/slides.html#keeping-track-of-things-in-rings",
+    "title": "Slides: Rings",
+    "section": "Keeping track of things in rings",
+    "text": "Keeping track of things in rings\nNot only are the two operations but there can be many flavors or rings.\nMany times the hard part of ring theory is keeping track of which properties a given ring has. Each property it has is a tool we can use for computations.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#lemma-10.2.2",
-    "href": "classes/23/slides.html#lemma-10.2.2",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Lemma 10.2.2",
-    "text": "Lemma 10.2.2\nLet \\(N\\) be a normal subgroup of \\(A_n\\), where \\(n\\geq 3\\). If \\(N\\) contains a \\(3\\)-cycle, then \\(N=A_n\\).",
+    "objectID": "classes/24/slides.html#notes-on-multiplication",
+    "href": "classes/24/slides.html#notes-on-multiplication",
+    "title": "Slides: Rings",
+    "section": "Notes on multiplication",
+    "text": "Notes on multiplication\n\nMultiplication does not need to be commutative\nNot every element needs to have a multiplicative inverse.\n\nEven worse, we don’t even need an identity element for multiplication\nCancellation law does not need to hold",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.2",
-    "href": "classes/23/slides.html#proof-of-10.2.2",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.2",
-    "text": "Proof of 10.2.2\nActivity shows cycles of the form \\((i,j,x)\\) generate all \\(3\\)-cycles.\nSuppose \\((i,j,a)\\in N\\) for some \\(a\\notin\\{i,j\\}\\). Calculate\n\\[\n[(i, j)(a, k)](i, j, a)^2 [(i, j)(a, k)]^{-1} = (i, j, k)\n\\]\nwhere k is any element not in \\(\\{i,j,a\\}\\).\nSo just one 3-cycle in \\(N\\) gives all 3-cycles of the form \\((i,j,x)\\) and hence all of \\(A_n\\).",
+    "objectID": "classes/24/slides.html#more-notes-on-multiplication",
+    "href": "classes/24/slides.html#more-notes-on-multiplication",
+    "title": "Slides: Rings",
+    "section": "More notes on multiplication",
+    "text": "More notes on multiplication\n\nIf multiplication is commutative, \\(ab=ba\\) for all \\(a\\) and \\(b\\) the ring is a commutative ring.\nIf the ring has an idenity \\(1\\) where \\(1\\cdot a = a= a\\cdot 1\\) the ring is a ring with idenity.\nIf an element \\(a\\) has an inverse \\(a \\cot a^{-1}=a \\cot a^{-1}\\) then \\(a\\) is a unit.\nIf the product of two non-zero elements is zero \\(a\\cdot c =0\\) they are zero-divisors.\nIf every non-zero element has an inverse, then the ring is a division ring",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#lemma-about-normal-subgroups",
-    "href": "classes/23/slides.html#lemma-about-normal-subgroups",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Lemma about Normal Subgroups",
-    "text": "Lemma about Normal Subgroups\nLet \\(N\\) be a normal subgroup of \\(G\\) and \\(x\\) be an element of \\(G\\) and \\(y\\in N\\). Then \\(y^{-1}xyx^{-1}\\in N\\).\nProof: \\(xyx^{-1}\\in N\\) since \\(N\\) is normal and \\(y^{-1}\\in N\\) since \\(N\\) is a subgroup. Hence \\(y^{-1}xyx^{-1}\\in N\\).",
+    "objectID": "classes/24/slides.html#example-of-non-commutative-ring-with-zero-divisors",
+    "href": "classes/24/slides.html#example-of-non-commutative-ring-with-zero-divisors",
+    "title": "Slides: Rings",
+    "section": "Example of non-commutative ring with zero divisors",
+    "text": "Example of non-commutative ring with zero divisors\nConside \\(M_2(\\mathbb R)\\), the set of \\(2 \\times 2\\) matrices with real entries. Under addition this is an abelian group. Multiplicatin is associative, and we do have the left and right distribuative law. So this is a ring. It has an multiplicative identity, I, so it is a ring with identity.\n\nIn general \\(AB \\ne BA\\)\nThere exist non-zero matricies when \\(AB=0\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#lemma-10.2.3",
-    "href": "classes/23/slides.html#lemma-10.2.3",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Lemma 10.2.3",
-    "text": "Lemma 10.2.3\nFor \\(n\\geq 5\\), every nontrivial normal subgroup \\(N\\) of \\(A_n\\) contains a \\(3\\)-cycle.",
+    "objectID": "classes/24/slides.html#examples-of-subrings-with-out-identities",
+    "href": "classes/24/slides.html#examples-of-subrings-with-out-identities",
+    "title": "Slides: Rings",
+    "section": "Examples of subrings with out identities",
+    "text": "Examples of subrings with out identities\nFor an integer \\(n\\geq2\\), consider \\(n\\mathbb Z\\subseteq\\mathbb Z\\).\n\n\\(na+nb=n(a+b)\\in n\\mathbb Z\\).\n\\(-(na)=n(-a)\\in n\\mathbb Z\\).\n\\((na)(nb)=n(nab)\\in n\\mathbb Z\\).\nAssociativity, commutativity of addition, and distributivity are inherited from \\(\\mathbb Z\\).\n\nAn identity \\(e\\in n\\mathbb Z\\) would satisfy \\(en=n\\), forcing \\(e=1\\notin n\\mathbb Z\\).\nThus \\(2\\mathbb Z\\), \\(3\\mathbb Z\\), and \\(7\\mathbb Z\\) are subrings without identities.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.3-cases",
-    "href": "classes/23/slides.html#proof-of-10.2.3-cases",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.3: Cases",
-    "text": "Proof of 10.2.3: Cases\nWhat might an element \\(\\sigma\\) of a normal subgroup look like? It can be a product of disjoint cycles since it is a subgroup of the alternating group which is a subgroup of the symmetric group. What’s the longest cycle?\n\nlongest cycle is more than 3, so \\(\\sigma=\\tau (a_1,a_2,\\ldots,a_r)\\) with \\(r&gt;3\\).\nlongest cycle is 3, break this up into subcases:\n\nMultiple 3-cycles \\(\\sigma=\\tau (a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nOne 3-cycle \\(\\sigma=\\tau (a_1,a_2,a_3)\\).\n\nlongest cycle is 2, \\(\\sigma=\\tau (a_1,a_2)(a_3,a_4)\\).",
+    "objectID": "classes/24/slides.html#example-of-ring-with-some-units",
+    "href": "classes/24/slides.html#example-of-ring-with-some-units",
+    "title": "Slides: Rings",
+    "section": "Example of Ring with some units",
+    "text": "Example of Ring with some units\n\\(\\mathbb Z_20\\)\n\\(U(20)=\\{1,3,7,9,11,13,17,19\\}\\)\nThe other elements are zero divisors. For example \\(2 \\cdot 10 =0\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.3-long-cycles",
-    "href": "classes/23/slides.html#proof-of-10.2.3-long-cycles",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.3: Long Cycles",
-    "text": "Proof of 10.2.3: Long Cycles\nCase 1: \\(\\sigma\\) contains a cycle of length \\(r&gt;3\\).\nWrite \\(\\sigma=\\tau(a_1,a_2,\\ldots,a_r)\\) and take \\(\\alpha=(a_1,a_2,a_3)\\).\nThen\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\\\\n&=(a_1,a_3,a_r)\\in N.\n\\end{aligned}\n\\]\nThus \\(N\\) contains a \\(3\\)-cycle.",
+    "objectID": "classes/24/slides.html#some-types-of-rings",
+    "href": "classes/24/slides.html#some-types-of-rings",
+    "title": "Slides: Rings",
+    "section": "Some Types of Rings",
+    "text": "Some Types of Rings\n\nRing with unity or identity: There is an element \\(1\\in R\\) such that \\(1\\neq 0\\) and \\(1a=a1=a\\) for each element \\(a\\in R\\).\nCommutative ring: \\(ab=ba\\) for all \\(a,b\\) in \\(R\\).\nDivision ring: A ring with an identity in which every nonzero element is a unit.\nField: A commutative division ring.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.3-two-3-cycles",
-    "href": "classes/23/slides.html#proof-of-10.2.3-two-3-cycles",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.3: Two \\(3\\)-Cycles",
-    "text": "Proof of 10.2.3: Two \\(3\\)-Cycles\nCase 2: \\(\\sigma=\\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nTake \\(\\alpha=(a_1,a_2,a_4)\\). Then\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\\\\n&=(a_1,a_4,a_2,a_6,a_3)\\in N.\n\\end{aligned}\n\\]\nThis is a \\(5\\)-cycle.\nCase 1 now produces a \\(3\\)-cycle in \\(N\\).",
+    "objectID": "classes/24/slides.html#ur-examples-of-commutative-rings-and-fields",
+    "href": "classes/24/slides.html#ur-examples-of-commutative-rings-and-fields",
+    "title": "Slides: Rings",
+    "section": "Ur-Examples of commutative rings and fields",
+    "text": "Ur-Examples of commutative rings and fields\n\n\\(\\mathbb Z\\) is a commutative ring with identity \\(1\\).\nIf \\(ab=0\\) for integers \\(a\\) and \\(b\\), then \\(a=0\\) or \\(b=0\\).\nThe only units in \\(\\mathbb Z\\) are \\(1\\) and \\(-1\\).\n\\(\\mathbb Z\\) is not a field: \\(2\\) has no multiplicative inverse in \\(\\mathbb Z\\).\n\\(\\mathbb Q\\), \\(\\mathbb R\\), and \\(\\mathbb C\\) are fields under ordinary addition and multiplication.",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.3-one-3-cycle",
-    "href": "classes/23/slides.html#proof-of-10.2.3-one-3-cycle",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.3: One \\(3\\)-Cycle",
-    "text": "Proof of 10.2.3: One \\(3\\)-Cycle\nCase 3: \\(\\sigma=\\tau(a_1,a_2,a_3)\\), where \\(\\tau\\) consists of disjoint \\(2\\)-cycles.\nBecause \\(\\tau^2=\\mathrm{id}\\) and the cycles are disjoint,\n\\(\\sigma^2=\\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\\in N\\).\nThus \\(N\\) contains a \\(3\\)-cycle.\nThis includes the case where \\(\\sigma\\) itself is a \\(3\\)-cycle.",
+    "objectID": "classes/24/slides.html#zero-divisors-integral-domains-and-cancellation-law",
+    "href": "classes/24/slides.html#zero-divisors-integral-domains-and-cancellation-law",
+    "title": "Slides: Rings",
+    "section": "Zero Divisors, Integral Domains, and Cancellation Law",
+    "text": "Zero Divisors, Integral Domains, and Cancellation Law\nA nonzero element \\(a\\) in a commutative ring \\(R\\) is called a zero divisor if there is a nonzero element \\(b\\) in \\(R\\) such that \\(ab=0\\).\nA commutative ring \\(R\\) with identity is called an integral domain if, for every \\(a,b\\in R\\) such that \\(ab=0\\), either \\(a=0\\) or \\(b=0\\).\n\n\\(\\mathbb Z\\) is an integral domain.\n\\(\\mathbb Z_{20}\\) is not an integral domain: \\(3\\cdot4=0\\).\nAn integral domain has no zero divisors.\n\nIf \\(ac=bc\\) and \\(c\\neq0\\) in an integral domain, must \\(a=b\\)?",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.3-only-2-cycles",
-    "href": "classes/23/slides.html#proof-of-10.2.3-only-2-cycles",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.3: Only \\(2\\)-Cycles",
-    "text": "Proof of 10.2.3: Only \\(2\\)-Cycles\nCase 4: \\(\\sigma=\\tau(a_1,a_2)(a_3,a_4)\\), where \\(\\tau\\) consists of an even number of disjoint \\(2\\)-cycles.\nTake \\(\\alpha=(a_1,a_2,a_3)\\). Then\n\\(\\delta=\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}=(a_1,a_3)(a_2,a_4)\\in N\\).\nSince \\(n\\geq 5\\), choose \\(b\\notin\\{a_1,a_2,a_3,a_4\\}\\) and put \\(\\mu=(a_1,a_3,b)\\).\nNormality gives\n\\(\\mu^{-1}\\delta\\mu\\delta=(a_1,a_3,b)\\in N\\).\nEvery possible nonidentity cycle structure has now been covered. Thus \\(N\\) contains a \\(3\\)-cycle. \\(\\square\\)",
+    "objectID": "classes/24/slides.html#proposition-16.1.8",
+    "href": "classes/24/slides.html#proposition-16.1.8",
+    "title": "Slides: Rings",
+    "section": "Proposition 16.1.8",
+    "text": "Proposition 16.1.8\nLet \\(R\\) be a ring with \\(a,b\\in R\\). Then\n\n\\(a0=0a=0\\);\n\\(a(-b)=(-a)b=-ab\\);\n\\((-a)(-b)=ab\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#theorem-10.2.4",
-    "href": "classes/23/slides.html#theorem-10.2.4",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Theorem 10.2.4",
-    "text": "Theorem 10.2.4\nThe alternating group, \\(A_n\\), is simple for \\(n\\geq 5\\).",
+    "objectID": "classes/24/slides.html#proof-of-16.1.8",
+    "href": "classes/24/slides.html#proof-of-16.1.8",
+    "title": "Slides: Rings",
+    "section": "Proof of 16.1.8",
+    "text": "Proof of 16.1.8\n\n\\(a0=a(0+0)=a0+a0\\); hence, \\(a0=0\\). Similarly, \\(0a=0\\).\n\\(ab+a(-b)=a(b-b)=a0=0\\); consequently, \\(-ab=a(-b)\\). Similarly, \\(-ab=(-a)b\\).\n\\((-a)(-b)=-(a(-b))=-(-ab)=ab\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#proof-of-10.2.4",
-    "href": "classes/23/slides.html#proof-of-10.2.4",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Proof of 10.2.4",
-    "text": "Proof of 10.2.4\nLet \\(N\\) be a nontrivial normal subgroup of \\(A_n\\), where \\(n\\geq 5\\).\nBy Lemma 10.2.3, \\(N\\) contains a \\(3\\)-cycle.\nBy Lemma 10.2.2, \\(N=A_n\\).\nTherefore, the only normal subgroups of \\(A_n\\) are \\(\\{\\mathrm{id}\\}\\) and \\(A_n\\).\nHence \\(A_n\\) is simple. \\(\\square\\)",
+    "objectID": "classes/24/slides.html#subrings",
+    "href": "classes/24/slides.html#subrings",
+    "title": "Slides: Rings",
+    "section": "Subrings",
+    "text": "Subrings\nA subring \\(S\\) of a ring \\(R\\) is a subset \\(S\\) of \\(R\\) such that \\(S\\) is also a ring under the inherited operations from \\(R\\).\n\nThe ring \\(n\\mathbb Z\\) is a subring of \\(\\mathbb Z\\).\nEven though the original ring may have an identity, we do not require that its subring have an identity.\nWe have the following chain of subrings:\n\\(\\mathbb Z\\subset\\mathbb Q\\subset\\mathbb R\\subset\\mathbb C\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#what-about-small-n",
-    "href": "classes/23/slides.html#what-about-small-n",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "what about small n?",
-    "text": "what about small n?\nFor \\(n=2\\) the only even transposition is the identity, so \\(A_2=\\{\\mathrm{id}\\}\\) is simple.\nFor \\(n=3\\), the group \\(A_3\\) has order \\(3\\), so it is cyclic and hence simple.\nFor \\(n=4\\), the group \\(A_4\\), \\(K_4=\\{e,(12)(34),(13)(24),(14)(23)\\}\\) and \\(K_4\\triangleleft A_4\\), so \\(A_4\\) is not simple.\nSo \\(A_4\\) is the only non-simple alternating group.",
+    "objectID": "classes/24/slides.html#proposition-16.1.10---subring-test",
+    "href": "classes/24/slides.html#proposition-16.1.10---subring-test",
+    "title": "Slides: Rings",
+    "section": "Proposition 16.1.10 - Subring Test",
+    "text": "Proposition 16.1.10 - Subring Test\nLet \\(R\\) be a ring and \\(S\\) a subset of \\(R\\). Then \\(S\\) is a subring of \\(R\\) if and only if the following conditions are satisfied.\n\n\\(S\\neq\\emptyset\\).\n\\(rs\\in S\\) for all \\(r,s\\in S\\).\n\\(r-s\\in S\\) for all \\(r,s\\in S\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#recall-mathbbz_p",
-    "href": "classes/23/slides.html#recall-mathbbz_p",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Recall: \\(\\mathbb{Z}_p\\)",
-    "text": "Recall: \\(\\mathbb{Z}_p\\)\nLet \\(p\\) be prime.\nIf \\(H\\) is a subgroup of \\(\\mathbb{Z}_p\\), Lagrange’s Theorem gives \\(|H|\\mid p\\).\nTherefore, \\(|H|=1\\) or \\(|H|=p\\), so\n\\(H=\\{0\\}\\) or \\(H=\\mathbb{Z}_p\\).\nConsequently, \\(\\mathbb{Z}_p\\) is simple.\nMore generally: A finite cyclic group is simple if and only if its order is prime.",
+    "objectID": "classes/24/slides.html#proof-of-16.1.10",
+    "href": "classes/24/slides.html#proof-of-16.1.10",
+    "title": "Slides: Rings",
+    "section": "Proof of 16.1.10",
+    "text": "Proof of 16.1.10\n\nChoose \\(s\\in S\\). Why does \\(s-s\\) show that \\(0\\in S\\)?\nFor \\(r\\in S\\), why is \\(-r\\in S\\)?\nHow does subtraction closure imply addition closure?\nWhich remaining ring axioms are inherited from \\(R\\)?",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#classification-theorem-for-finite-simple-groups",
-    "href": "classes/23/slides.html#classification-theorem-for-finite-simple-groups",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "Classification Theorem for Finite Simple Groups",
-    "text": "Classification Theorem for Finite Simple Groups\nEvery finite simple group is isomorphic to one of the following:\n\nA cyclic group \\(\\mathbb{Z}_p\\), where \\(p\\) is prime.\nAn alternating group \\(A_n\\), where \\(n\\geq 5\\).\nA finite simple group of Lie type.\nOne of the \\(26\\) sporadic simple groups.\n\nThe theorem gives a complete list, up to isomorphism.",
+    "objectID": "classes/24/slides.html#activity",
+    "href": "classes/24/slides.html#activity",
+    "title": "Slides: Rings",
+    "section": "Activity",
+    "text": "Activity\nDetermine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.\n\n\\(\\mathbb Q(\\sqrt{2})=\\{a+b\\sqrt{2}:a,b\\in\\mathbb Q\\}\\).\n\\(\\mathbb Z[\\sqrt{3}]=\\{a+b\\sqrt{3}:a,b\\in\\mathbb Z\\}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/23/slides.html#all-known-simple-groups",
-    "href": "classes/23/slides.html#all-known-simple-groups",
-    "title": "Slides: Simplicity of the Alternating Group",
-    "section": "All Known Simple Groups",
-    "text": "All Known Simple Groups",
+    "objectID": "classes/24/slides.html#quaternions",
+    "href": "classes/24/slides.html#quaternions",
+    "title": "Slides: Rings",
+    "section": "Quaternions",
+    "text": "Quaternions\nLet \\(\\mathbb H\\) consist of elements of the form \\(a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\), where \\(a,b,c,d\\) are real numbers.\nThe ring \\(\\mathbb H\\) is called the ring of quaternions.\n\nAdd by combining corresponding coefficients.\nMultiply by distributing and using the relationships between \\(\\mathbf i\\), \\(\\mathbf j\\), and \\(\\mathbf k\\).\n\nTry it: Compute \\((1+2\\mathbf i-\\mathbf j)+(3-\\mathbf i+2\\mathbf k)\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Simplicity of the Alternating Group"
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#quaternion-multiplication",
+    "href": "classes/24/slides.html#quaternion-multiplication",
+    "title": "Slides: Rings",
+    "section": "Quaternion Multiplication",
+    "text": "Quaternion Multiplication\nThe generators satisfy the following relations:\n\n\\(\\mathbf i^2=\\mathbf j^2=\\mathbf k^2=-1\\).\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf k=\\mathbf i\\).\n\\(\\mathbf k\\mathbf i=\\mathbf j\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\\(\\mathbf k\\mathbf j=-\\mathbf i\\).\n\\(\\mathbf i\\mathbf k=-\\mathbf j\\).\n\nTry it: Compute \\((1+\\mathbf i)(1+\\mathbf j)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#quaternions-are-noncommutative",
+    "href": "classes/24/slides.html#quaternions-are-noncommutative",
+    "title": "Slides: Rings",
+    "section": "Quaternions Are Noncommutative",
+    "text": "Quaternions Are Noncommutative\nCompare the products:\n\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\nTherefore, multiplication in \\(\\mathbb H\\) is not commutative.\nTry it: Expand and compare:\n\n\\((1+\\mathbf i)(1+\\mathbf j)\\).\n\\((1+\\mathbf j)(1+\\mathbf i)\\).\n\nDiscuss: Can \\(\\mathbb H\\) be a field?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#multiplicative-inverses-in-mathbb-h",
+    "href": "classes/24/slides.html#multiplicative-inverses-in-mathbb-h",
+    "title": "Slides: Rings",
+    "section": "Multiplicative Inverses in \\(\\mathbb H\\)",
+    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.\nTry it: Find \\((1+\\mathbf i)^{-1}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#examples-to-keep-in-mind",
+    "href": "classes/24/slides.html#examples-to-keep-in-mind",
+    "title": "Slides: Rings",
+    "section": "Examples to keep in mind",
+    "text": "Examples to keep in mind\n\nCommuntative Ring with Identity: \\(\\mathbb Z\\)\nField:\\(\\mathbb Q\\), \\(\\mathbb R\\), \\(\\mathbb C\\)\nNon-Commutative Ring with Identity: \\(M_(R)\\)\nNon-communative Division Ring: Quarterions",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
     ]
   },
   {
@@ -2121,226 +2176,6 @@
     ]
   },
   {
-    "objectID": "classes/10/slides.html#class-session-goals",
-    "href": "classes/10/slides.html#class-session-goals",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDetermine whether a permutation is even or odd.\nExplore the alternating group \\(A_n\\).\nExplore the alternating group \\(D_n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#definition-of-a-group",
-    "href": "classes/10/slides.html#definition-of-a-group",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#definition-of-a-subgroup",
-    "href": "classes/10/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#transpositions",
-    "href": "classes/10/slides.html#transpositions",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Transpositions",
-    "text": "Transpositions\nA cycle of length \\(2\\) is called a transposition.\nFor example,\\((2\\,5)\\) is a transposition. Any cycle can be written as a product of transpositions:\n\\[\n(a_1\\,a_2\\,\\ldots\\,a_n)\n=\n(a_1\\,a_n)(a_1\\,a_{n-1})\\cdots(a_1\\,a_3)(a_1\\,a_2).\n\\]\nA permutation is even if it can be expressed as an even number of transpositions.\nA permutation is odd if it can be expressed as an odd number of transpositions.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#lemma-5.1.14",
-    "href": "classes/10/slides.html#lemma-5.1.14",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Lemma 5.1.14",
-    "text": "Lemma 5.1.14\nIf the identity is written as the product of \\(r\\) transpositions,\n\\[\n\\operatorname{id}=\\tau_1\\tau_2\\cdots\\tau_r,\n\\]\nthen \\(r\\) is an even number.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proof-of-lemma-5.1.14",
-    "href": "classes/10/slides.html#proof-of-lemma-5.1.14",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proof of Lemma 5.1.14",
-    "text": "Proof of Lemma 5.1.14\nWe use induction on \\(r\\) the number of transpositions. A transposition cannot be the identity, so \\(r&gt;1\\). If \\(r=2\\), we are done.\nFor \\(r&gt;2\\), consider the last two transpositions. Up to relabeling, we have\n\\[\n\\begin{aligned}\n(a\\,b)(a\\,b)&=\\operatorname{id},\\\\\n(b\\,c)(a\\,b)&=(a\\,c)(b\\,c),\\\\\n(c\\,d)(a\\,b)&=(a\\,b)(c\\,d),\\\\\n(a\\,c)(a\\,b)&=(a\\,b)(b\\,c).\n\\end{aligned}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.1.15",
-    "href": "classes/10/slides.html#theorem-5.1.15",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.1.15",
-    "text": "Theorem 5.1.15\nIf a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\n\nThis means that oddness and evenness of permutations is well-defined.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#alternating-group",
-    "href": "classes/10/slides.html#alternating-group",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Alternating Group",
-    "text": "Alternating Group\nThe set of all even permutations in \\(S_n\\) is denoted by \\(A_n\\).\nThe group \\(A_n\\) is called the alternating group on \\(n\\) letters.\n\\[\nA_n=\\{\\sigma\\in S_n:\\sigma\\text{ is even}\\}.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.1.16",
-    "href": "classes/10/slides.html#theorem-5.1.16",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.1.16",
-    "text": "Theorem 5.1.16\nThe set \\(A_n\\) is a subgroup of \\(S_n\\).\n\nWhy?\n\nThe product of two even permutations is even.\nThe identity is even.\nThe inverse of an even permutation is even.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proposition-5.1.17",
-    "href": "classes/10/slides.html#proposition-5.1.17",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proposition 5.1.17",
-    "text": "Proposition 5.1.17\nThe number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations. So \\(|A_n|=\\frac{n!}{2}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#proposition-5.1.17-proof",
-    "href": "classes/10/slides.html#proposition-5.1.17-proof",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Proposition 5.1.17 Proof",
-    "text": "Proposition 5.1.17 Proof\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define \\(\\lambda_\\sigma:A_n\\longrightarrow B_n\\)\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
-    "href": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Find the Alternating Group \\(A_4\\)",
-    "text": "Activity: Find the Alternating Group \\(A_4\\)\nFor your \\(S_4\\) tiles:\nLabel and sort the tiles into two piles:\n\neven permutations,\nodd permutations.\n\nThe even pile is \\(A_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
-    "href": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Dihedral Group as a Subgroup of \\(S_n\\)",
-    "text": "Dihedral Group as a Subgroup of \\(S_n\\)\nThe dihedral group \\(D_n\\) consists of the rigid motions of a regular \\(n\\)-gon.\nLabel the vertices\n\\[\n1,2,\\ldots,n.\n\\]\nEvery rigid motion permutes these vertices, so each symmetry gives an element of \\(S_n\\).\nThus we can view\n\\[\nD_n\\leq S_n.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-construct-d_5",
-    "href": "classes/10/slides.html#activity-construct-d_5",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Construct \\(D_5\\)",
-    "text": "Activity: Construct \\(D_5\\)\nUse the \\(S_5\\) permutation-drawing tiles.\nBegin with the two tiles representing\n\\[\nr=(1\\,2\\,3\\,4\\,5)\n\\]\nand\n\\[\ns=(2\\,5)(3\\,4).\n\\]\nUse multiplication to construct new tiles from these two. Record these products on the empty tiles. Try to find all possible products of these two elements. Label each tile as a reflection or a rotation of the pentagon.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
-    "href": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Conjugating Cycles by Reflections",
-    "text": "Activity: Conjugating Cycles by Reflections\nGiven two group elements \\(\\sigma\\) and \\(\\tau\\), the congugate of \\(\\sigma\\) by \\(\\tau\\) is \\(\\tau \\sigma \\tau^{-1}\\).\nGo back to you \\(D_5\\) tiles. Choose a non-idenity rotation \\(r\\) and a reflection \\(s\\). Calculate \\(srs\\). Do this for a few choices of \\(r\\) and a few choices of \\(s\\). Can you for an conjecture about what the \\(srs\\) is in general?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#another-construction-of-d_n",
-    "href": "classes/10/slides.html#another-construction-of-d_n",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Another Construction of \\(D_n\\)",
-    "text": "Another Construction of \\(D_n\\)\nInstead of starting with a geometric \\(n\\)-gon, we can describe \\(D_n\\) using two generators.\nLet \\(r\\) represent a rotation and \\(s\\) represent a reflection.\nThey satisfy:\n\n\\(r^n=e\\)\n\\(s^2=e\\)\n\\(srs=r^{-1}\\)\n\nThese are called relations.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#d_4-by-generators-and-relations",
-    "href": "classes/10/slides.html#d_4-by-generators-and-relations",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "\\(D_4\\) by Generators and Relations",
-    "text": "\\(D_4\\) by Generators and Relations\nWe write\n\\[\nD_n=\\langle r,s\\mid r^n=e,\\ s^2=e,\\ srs=r^{-1}\\rangle.\n\\]\nEvery element can be written in one of the forms\n\\[\nr^k\n\\qquad\\text{or}\\qquad\nr^ks,\n\\]\nwhere \\(0\\leq k&lt;n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#activity-find-a-copy-of-d_4",
-    "href": "classes/10/slides.html#activity-find-a-copy-of-d_4",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Activity: Find a Copy of \\(D_4\\)",
-    "text": "Activity: Find a Copy of \\(D_4\\)\nReturn to your \\(S_4\\) tiles. Find a copy of \\(D_4\\) in your tiles. What is \\(D_4 \\cap A_4\\)?\n\nThis is called the Klein 4-group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.2.2",
-    "href": "classes/10/slides.html#theorem-5.2.2",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.2.2",
-    "text": "Theorem 5.2.2\nThe dihedral group, \\(D_n\\), is a subgroup of \\(S_n\\) of order \\(2n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
-    "objectID": "classes/10/slides.html#theorem-5.2.3",
-    "href": "classes/10/slides.html#theorem-5.2.3",
-    "title": "Slides: Alternating and Dihedral Groups",
-    "section": "Theorem 5.2.3",
-    "text": "Theorem 5.2.3\nThe group \\(D_n\\), \\(n\\geq3\\), consists of all products of two elements \\(r\\) and \\(s\\), where \\(r\\) has order \\(n\\) and \\(s\\) has order \\(2\\), and \\(srs=r^{-1}\\).\n\n\\[\nD_n=\n\\{e,r,r^2,\\ldots,r^{n-1},\ns,rs,r^2s,\\ldots,r^{n-1}s\\}.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Alternating and Dihedral Groups"
-    ]
-  },
-  {
     "objectID": "classes/17/slides.html#class-session-goals",
     "href": "classes/17/slides.html#class-session-goals",
     "title": "Slides: Cayley’s Theorem and Direct Products",
@@ -2591,171 +2426,6 @@
     "crumbs": [
       "Class Material",
       "Slides: Cayley’s Theorem and Direct Products"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#class-session-goals",
-    "href": "classes/16/slides.html#class-session-goals",
-    "title": "Slides: Isomorphisms",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nExplain the construction in Cayley’s Theorem.\nConstruct isomorphisms between familiar groups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#definition-of-a-group",
-    "href": "classes/16/slides.html#definition-of-a-group",
-    "title": "Slides: Isomorphisms",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) with a law of composition \\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity: \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for all \\(a,b,c\\in G\\).\nIdentity: There is an \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses: For each \\(a\\in G\\), there is an \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#definition-of-a-group-isomorphism",
-    "href": "classes/16/slides.html#definition-of-a-group-isomorphism",
-    "title": "Slides: Isomorphisms",
-    "section": "Definition of a Group Isomorphism",
-    "text": "Definition of a Group Isomorphism\nGroups \\((G,\\cdot)\\) and \\((H,\\circ)\\) are isomorphic if there is a bijection \\(\\phi:G\\to H\\) satisfying\n\\(\\phi(a\\cdot b)=\\phi(a)\\circ\\phi(b)\\)\nfor every \\(a,b\\in G\\).\nThe map \\(\\phi\\) is an isomorphism, and we write \\(G\\cong H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-1",
-    "href": "classes/16/slides.html#example-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 1",
-    "text": "Example 1\nShow that \\(\\mathbb Z_4\\cong\\langle i\\rangle\\), where \\(\\langle i\\rangle=\\{1,i,-1,-i\\}\\) under multiplication.\nDefine \\(\\phi:\\mathbb Z_4\\to\\langle i\\rangle\\) by \\(\\phi(n)=i^n\\):\n\n\n\n\\(n\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(3\\)\n\n\n\n\n\\(\\phi(n)\\)\n\\(1\\)\n\\(i\\)\n\\(-1\\)\n\\(-i\\)\n\n\n\nThe table shows that \\(\\phi\\) is bijective. It also preserves the operation:\n\\(\\phi(m+n)=i^{m+n}=i^mi^n=\\phi(m)\\phi(n).\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-2",
-    "href": "classes/16/slides.html#example-2",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 2",
-    "text": "Example 2\nThe exponential map gives an isomorphism\n\\(\\phi:(\\mathbb R,+)\\longrightarrow(\\mathbb R^+,\\cdot),\\qquad \\phi(x)=e^x.\\)\nIt preserves the operations because\n\\(\\phi(x+y)=e^{x+y}=e^xe^y=\\phi(x)\\phi(y).\\)\nThe function \\(e^x\\) is one-to-one and maps \\(\\mathbb R\\) onto \\(\\mathbb R^+\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#example-3",
-    "href": "classes/16/slides.html#example-3",
-    "title": "Slides: Isomorphisms",
-    "section": "Example 3",
-    "text": "Example 3\nUnder multiplication modulo the indicated integer,\n\\(U(8)=\\{1,3,5,7\\},\\qquad U(12)=\\{1,5,7,11\\}.\\)\nAn isomorphism \\(\\phi:U(8)\\to U(12)\\) is\n\n\n\n\\(u\\in U(8)\\)\n\\(1\\)\n\\(3\\)\n\\(5\\)\n\\(7\\)\n\n\n\n\n\\(\\phi(u)\\in U(12)\\)\n\\(1\\)\n\\(5\\)\n\\(7\\)\n\\(11\\)",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorem-9.1.6",
-    "href": "classes/16/slides.html#theorem-9.1.6",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorem 9.1.6",
-    "text": "Theorem 9.1.6\nSuppose \\(\\phi:G\\to H\\) is a group isomorphism. Then:\n\n\\(\\phi^{-1}:H\\to G\\) is an isomorphism.\n\\(|G|=|H|\\).\nIf \\(G\\) is abelian, so is \\(H\\).\nIf \\(G\\) is cyclic, so is \\(H\\).\nIf \\(G\\) has a subgroup of order \\(n\\), so does \\(H\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorem-9.1.6-proof",
-    "href": "classes/16/slides.html#theorem-9.1.6-proof",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorem 9.1.6 Proof",
-    "text": "Theorem 9.1.6 Proof\nPartial proof: assertions (1)–(3).\nBecause \\(\\phi\\) is a bijection, it has an inverse and \\(|G|=|H|\\). To check that its inverse preserves the operation, write \\(h_1=\\phi(g_1)\\) and \\(h_2=\\phi(g_2)\\). Then\n\\(\\phi^{-1}(h_1h_2)=\\phi^{-1}(\\phi(g_1g_2))=g_1g_2\n=\\phi^{-1}(h_1)\\phi^{-1}(h_2).\\)\nNow suppose \\(G\\) is abelian. Every \\(h_1,h_2\\in H\\) have the form \\(\\phi(g_1),\\phi(g_2)\\), so\n\\(h_1h_2=\\phi(g_1g_2)=\\phi(g_2g_1)=h_2h_1.\\)\nThus \\(H\\) is abelian.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#theorems",
-    "href": "classes/16/slides.html#theorems",
-    "title": "Slides: Isomorphisms",
-    "section": "Theorems",
-    "text": "Theorems\nTheorem 9.1.7 Every infinite cyclic group is isomorphic to \\((\\mathbb Z,+)\\).\nTheorem 9.1.8 A cyclic group of order \\(n\\) is isomorphic to \\(\\mathbb Z_n\\).\nCorollary 9.1.9 If \\(p\\) is prime and \\(|G|=p\\), then \\(G\\cong\\mathbb Z_p\\).\nTheorem 9.1.10 Group isomorphism is an equivalence relation on the class of groups.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#cayleys-theorem",
-    "href": "classes/16/slides.html#cayleys-theorem",
-    "title": "Slides: Isomorphisms",
-    "section": "Cayley’s Theorem",
-    "text": "Cayley’s Theorem\nTheorem 9.1.12 (Cayley). Every group is isomorphic to a group of permutations.\nIn particular, a group \\(G\\) acts by permutations on its own underlying set.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#cayleys-theorem-proof",
-    "href": "classes/16/slides.html#cayleys-theorem-proof",
-    "title": "Slides: Isomorphisms",
-    "section": "Cayley’s Theorem Proof",
-    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms",
-    "href": "classes/16/slides.html#activity-constructing-isomorphisms",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Constructing Isomorphisms",
-    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g)=h\\) and \\(\\phi(g)=h'\\) the \\(h=h'\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms-1",
-    "href": "classes/16/slides.html#activity-constructing-isomorphisms-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: Constructing Isomorphisms",
-    "text": "Activity: Constructing Isomorphisms\nConstruct a bijective map between the following sets and verify that it is an isomorphism.\n\n\\(\\mathbb C^*\\) and \\[\nG=\\left\\{\n\\begin{pmatrix}\na & -b\\\\\nb & a\n\\end{pmatrix}\n:a,b\\in\\mathbb R,\\ a^2+b^2\\ne 0\n\\right\\}\n\\]\n\nof \\(GL_2(\\mathbb R)\\).\n\n\\(U(5)\\) and \\(U(10)\\)\n\\(U(8)\\) and \\(\\mathbb Z_2\\times\\mathbb Z_2\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms",
-    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: More Constructing Isomorphisms",
-    "text": "Activity: More Constructing Isomorphisms\n\n\\(S_3\\) and\n\n\\[\n\\left\\{\n\\begin{gathered}\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\\\[1em]\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\end{gathered}\n\\right\\}\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
-    ]
-  },
-  {
-    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
-    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
-    "title": "Slides: Isomorphisms",
-    "section": "Activity: More Constructing Isomorphisms",
-    "text": "Activity: More Constructing Isomorphisms\n\n\\((\\mathbb R^2,+)\\) and the group\n\\(G=\\left\\{\\begin{pmatrix}1&a&b\\\\0&1&0\\\\0&0&1\\end{pmatrix}:a,b\\in\\mathbb R\\right\\}\\)\n\\((\\mathbb Z_3,+)\\) and the subgroup\n\n\\[H=\\left\\{\n   \\begin{pmatrix}\n   1&0&0\\\\0&1&0\\\\0&0&1\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&0&1\\\\1&0&0\\\\0&1&0\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&1&0\\\\0&0&1\\\\1&0&0\n   \\end{pmatrix}\n   \\right\\}\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Isomorphisms"
     ]
   },
   {
@@ -4641,6 +4311,391 @@
     ]
   },
   {
+    "objectID": "classes/16/slides.html#class-session-goals",
+    "href": "classes/16/slides.html#class-session-goals",
+    "title": "Slides: Isomorphisms",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDefine a group isomorphism and test whether a map is one.\nExplain the construction in Cayley’s Theorem.\nConstruct isomorphisms between familiar groups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#definition-of-a-group",
+    "href": "classes/16/slides.html#definition-of-a-group",
+    "title": "Slides: Isomorphisms",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) with a law of composition \\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity: \\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for all \\(a,b,c\\in G\\).\nIdentity: There is an \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses: For each \\(a\\in G\\), there is an \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#definition-of-a-group-isomorphism",
+    "href": "classes/16/slides.html#definition-of-a-group-isomorphism",
+    "title": "Slides: Isomorphisms",
+    "section": "Definition of a Group Isomorphism",
+    "text": "Definition of a Group Isomorphism\nGroups \\((G,\\cdot)\\) and \\((H,\\circ)\\) are isomorphic if there is a bijection \\(\\phi:G\\to H\\) satisfying\n\\(\\phi(a\\cdot b)=\\phi(a)\\circ\\phi(b)\\)\nfor every \\(a,b\\in G\\).\nThe map \\(\\phi\\) is an isomorphism, and we write \\(G\\cong H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-1",
+    "href": "classes/16/slides.html#example-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 1",
+    "text": "Example 1\nShow that \\(\\mathbb Z_4\\cong\\langle i\\rangle\\), where \\(\\langle i\\rangle=\\{1,i,-1,-i\\}\\) under multiplication.\nDefine \\(\\phi:\\mathbb Z_4\\to\\langle i\\rangle\\) by \\(\\phi(n)=i^n\\):\n\n\n\n\\(n\\)\n\\(0\\)\n\\(1\\)\n\\(2\\)\n\\(3\\)\n\n\n\n\n\\(\\phi(n)\\)\n\\(1\\)\n\\(i\\)\n\\(-1\\)\n\\(-i\\)\n\n\n\nThe table shows that \\(\\phi\\) is bijective. It also preserves the operation:\n\\(\\phi(m+n)=i^{m+n}=i^mi^n=\\phi(m)\\phi(n).\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-2",
+    "href": "classes/16/slides.html#example-2",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 2",
+    "text": "Example 2\nThe exponential map gives an isomorphism\n\\(\\phi:(\\mathbb R,+)\\longrightarrow(\\mathbb R^+,\\cdot),\\qquad \\phi(x)=e^x.\\)\nIt preserves the operations because\n\\(\\phi(x+y)=e^{x+y}=e^xe^y=\\phi(x)\\phi(y).\\)\nThe function \\(e^x\\) is one-to-one and maps \\(\\mathbb R\\) onto \\(\\mathbb R^+\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#example-3",
+    "href": "classes/16/slides.html#example-3",
+    "title": "Slides: Isomorphisms",
+    "section": "Example 3",
+    "text": "Example 3\nUnder multiplication modulo the indicated integer,\n\\(U(8)=\\{1,3,5,7\\},\\qquad U(12)=\\{1,5,7,11\\}.\\)\nAn isomorphism \\(\\phi:U(8)\\to U(12)\\) is\n\n\n\n\\(u\\in U(8)\\)\n\\(1\\)\n\\(3\\)\n\\(5\\)\n\\(7\\)\n\n\n\n\n\\(\\phi(u)\\in U(12)\\)\n\\(1\\)\n\\(5\\)\n\\(7\\)\n\\(11\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorem-9.1.6",
+    "href": "classes/16/slides.html#theorem-9.1.6",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorem 9.1.6",
+    "text": "Theorem 9.1.6\nSuppose \\(\\phi:G\\to H\\) is a group isomorphism. Then:\n\n\\(\\phi^{-1}:H\\to G\\) is an isomorphism.\n\\(|G|=|H|\\).\nIf \\(G\\) is abelian, so is \\(H\\).\nIf \\(G\\) is cyclic, so is \\(H\\).\nIf \\(G\\) has a subgroup of order \\(n\\), so does \\(H\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorem-9.1.6-proof",
+    "href": "classes/16/slides.html#theorem-9.1.6-proof",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorem 9.1.6 Proof",
+    "text": "Theorem 9.1.6 Proof\nPartial proof: assertions (1)–(3).\nBecause \\(\\phi\\) is a bijection, it has an inverse and \\(|G|=|H|\\). To check that its inverse preserves the operation, write \\(h_1=\\phi(g_1)\\) and \\(h_2=\\phi(g_2)\\). Then\n\\(\\phi^{-1}(h_1h_2)=\\phi^{-1}(\\phi(g_1g_2))=g_1g_2\n=\\phi^{-1}(h_1)\\phi^{-1}(h_2).\\)\nNow suppose \\(G\\) is abelian. Every \\(h_1,h_2\\in H\\) have the form \\(\\phi(g_1),\\phi(g_2)\\), so\n\\(h_1h_2=\\phi(g_1g_2)=\\phi(g_2g_1)=h_2h_1.\\)\nThus \\(H\\) is abelian.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#theorems",
+    "href": "classes/16/slides.html#theorems",
+    "title": "Slides: Isomorphisms",
+    "section": "Theorems",
+    "text": "Theorems\nTheorem 9.1.7 Every infinite cyclic group is isomorphic to \\((\\mathbb Z,+)\\).\nTheorem 9.1.8 A cyclic group of order \\(n\\) is isomorphic to \\(\\mathbb Z_n\\).\nCorollary 9.1.9 If \\(p\\) is prime and \\(|G|=p\\), then \\(G\\cong\\mathbb Z_p\\).\nTheorem 9.1.10 Group isomorphism is an equivalence relation on the class of groups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#cayleys-theorem",
+    "href": "classes/16/slides.html#cayleys-theorem",
+    "title": "Slides: Isomorphisms",
+    "section": "Cayley’s Theorem",
+    "text": "Cayley’s Theorem\nTheorem 9.1.12 (Cayley). Every group is isomorphic to a group of permutations.\nIn particular, a group \\(G\\) acts by permutations on its own underlying set.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#cayleys-theorem-proof",
+    "href": "classes/16/slides.html#cayleys-theorem-proof",
+    "title": "Slides: Isomorphisms",
+    "section": "Cayley’s Theorem Proof",
+    "text": "Cayley’s Theorem Proof\nFor each \\(g\\in G\\), define \\(\\lambda_g:G\\to G\\) by \\(\\lambda_g(a)=ga\\).\n\n\\(\\lambda_g\\) is a permutation: its inverse is \\(\\lambda_{g^{-1}}\\).\nLet \\(\\overline G=\\{\\lambda_g:g\\in G\\}\\). Composition satisfies \\((\\lambda_g\\circ\\lambda_h)(a)=g(ha)=(gh)a=\\lambda_{gh}(a)\\).\nDefine \\(\\phi:G\\to\\overline G\\) by \\(\\phi(g)=\\lambda_g\\). Then \\(\\phi(gh)=\\lambda_{gh}=\\lambda_g\\circ\\lambda_h\\).\nIf \\(\\lambda_g=\\lambda_h\\), evaluating both at \\(e\\) gives \\(g=h\\). Thus \\(\\phi\\) is injective; it is surjective by the definition of \\(\\overline G\\).\n\nTherefore \\(G\\cong\\overline G\\), a group of permutations of \\(G\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nFor each pair of groups below, construct an explicit isomorphism \\(\\phi : G \\to H\\).\nVerify that your map satisfies:\n\nWell-defined: \\(\\phi(g)=h\\) and \\(\\phi(g)=h'\\) the \\(h=h'\\).\nHomomorphism: \\(\\phi(g_1g_2)=\\phi(g_1)\\phi(g_2)\\) for all \\(g_1,g_2\\in G\\).\nBijective: \\(\\phi\\) is both one-to-one and onto.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-constructing-isomorphisms-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: Constructing Isomorphisms",
+    "text": "Activity: Constructing Isomorphisms\nConstruct a bijective map between the following sets and verify that it is an isomorphism.\n\n\\(\\mathbb C^*\\) and \\[\nG=\\left\\{\n\\begin{pmatrix}\na & -b\\\\\nb & a\n\\end{pmatrix}\n:a,b\\in\\mathbb R,\\ a^2+b^2\\ne 0\n\\right\\}\n\\]\n\nof \\(GL_2(\\mathbb R)\\).\n\n\\(U(5)\\) and \\(U(10)\\)\n\\(U(8)\\) and \\(\\mathbb Z_2\\times\\mathbb Z_2\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\(S_3\\) and\n\n\\[\n\\left\\{\n\\begin{gathered}\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 1 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n1 & 0 & 0 \\\\\n0 & 0 & 1 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n1 & 0 & 0 \\\\\n0 & 0 & 1\n\\end{pmatrix}\n\\\\[1em]\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n1 & 0 & 0 \\\\\n0 & 1 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 0 & 1 \\\\\n0 & 1 & 0 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\qquad\n\\begin{pmatrix}\n0 & 1 & 0 \\\\\n0 & 0 & 1 \\\\\n1 & 0 & 0\n\\end{pmatrix}\n\\end{gathered}\n\\right\\}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
+    "href": "classes/16/slides.html#activity-more-constructing-isomorphisms-1",
+    "title": "Slides: Isomorphisms",
+    "section": "Activity: More Constructing Isomorphisms",
+    "text": "Activity: More Constructing Isomorphisms\n\n\\((\\mathbb R^2,+)\\) and the group\n\\(G=\\left\\{\\begin{pmatrix}1&a&b\\\\0&1&0\\\\0&0&1\\end{pmatrix}:a,b\\in\\mathbb R\\right\\}\\)\n\\((\\mathbb Z_3,+)\\) and the subgroup\n\n\\[H=\\left\\{\n   \\begin{pmatrix}\n   1&0&0\\\\0&1&0\\\\0&0&1\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&0&1\\\\1&0&0\\\\0&1&0\n   \\end{pmatrix},\n   \\begin{pmatrix}\n   0&1&0\\\\0&0&1\\\\1&0&0\n   \\end{pmatrix}\n   \\right\\}\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Isomorphisms"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#class-session-goals",
+    "href": "classes/10/slides.html#class-session-goals",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nDetermine whether a permutation is even or odd.\nExplore the alternating group \\(A_n\\).\nExplore the alternating group \\(D_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-group",
+    "href": "classes/10/slides.html#definition-of-a-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Group",
+    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#definition-of-a-subgroup",
+    "href": "classes/10/slides.html#definition-of-a-subgroup",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Definition of a Subgroup",
+    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#transpositions",
+    "href": "classes/10/slides.html#transpositions",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Transpositions",
+    "text": "Transpositions\nA cycle of length \\(2\\) is called a transposition.\nFor example,\\((2\\,5)\\) is a transposition. Any cycle can be written as a product of transpositions:\n\\[\n(a_1\\,a_2\\,\\ldots\\,a_n)\n=\n(a_1\\,a_n)(a_1\\,a_{n-1})\\cdots(a_1\\,a_3)(a_1\\,a_2).\n\\]\nA permutation is even if it can be expressed as an even number of transpositions.\nA permutation is odd if it can be expressed as an odd number of transpositions.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#lemma-5.1.14",
+    "href": "classes/10/slides.html#lemma-5.1.14",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Lemma 5.1.14",
+    "text": "Lemma 5.1.14\nIf the identity is written as the product of \\(r\\) transpositions,\n\\[\n\\operatorname{id}=\\tau_1\\tau_2\\cdots\\tau_r,\n\\]\nthen \\(r\\) is an even number.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proof-of-lemma-5.1.14",
+    "href": "classes/10/slides.html#proof-of-lemma-5.1.14",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proof of Lemma 5.1.14",
+    "text": "Proof of Lemma 5.1.14\nWe use induction on \\(r\\) the number of transpositions. A transposition cannot be the identity, so \\(r&gt;1\\). If \\(r=2\\), we are done.\nFor \\(r&gt;2\\), consider the last two transpositions. Up to relabeling, we have\n\\[\n\\begin{aligned}\n(a\\,b)(a\\,b)&=\\operatorname{id},\\\\\n(b\\,c)(a\\,b)&=(a\\,c)(b\\,c),\\\\\n(c\\,d)(a\\,b)&=(a\\,b)(c\\,d),\\\\\n(a\\,c)(a\\,b)&=(a\\,b)(b\\,c).\n\\end{aligned}\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.1.15",
+    "href": "classes/10/slides.html#theorem-5.1.15",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.1.15",
+    "text": "Theorem 5.1.15\nIf a permutation \\(\\sigma\\) can be expressed as the product of an even number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an even number of transpositions.\nSimilarly, if \\(\\sigma\\) can be expressed as the product of an odd number of transpositions, then any other product of transpositions equaling \\(\\sigma\\) must also contain an odd number of transpositions.\n\nThis means that oddness and evenness of permutations is well-defined.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#alternating-group",
+    "href": "classes/10/slides.html#alternating-group",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Alternating Group",
+    "text": "Alternating Group\nThe set of all even permutations in \\(S_n\\) is denoted by \\(A_n\\).\nThe group \\(A_n\\) is called the alternating group on \\(n\\) letters.\n\\[\nA_n=\\{\\sigma\\in S_n:\\sigma\\text{ is even}\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.1.16",
+    "href": "classes/10/slides.html#theorem-5.1.16",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.1.16",
+    "text": "Theorem 5.1.16\nThe set \\(A_n\\) is a subgroup of \\(S_n\\).\n\nWhy?\n\nThe product of two even permutations is even.\nThe identity is even.\nThe inverse of an even permutation is even.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-5.1.17",
+    "href": "classes/10/slides.html#proposition-5.1.17",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 5.1.17",
+    "text": "Proposition 5.1.17\nThe number of even permutations in \\(S_n\\), \\(n\\geq2\\), is equal to the number of odd permutations. So \\(|A_n|=\\frac{n!}{2}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#proposition-5.1.17-proof",
+    "href": "classes/10/slides.html#proposition-5.1.17-proof",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Proposition 5.1.17 Proof",
+    "text": "Proposition 5.1.17 Proof\nLet \\(A_n\\) be the set of even permutations and \\(B_n\\) the set of odd permutations.\nFix a transposition \\(\\sigma\\in S_n\\) and define \\(\\lambda_\\sigma:A_n\\longrightarrow B_n\\)\nby \\(\\lambda_\\sigma(\\tau)=\\sigma\\tau\\). Multiplication by a transposition changes the parity of a permutation. The map \\(\\lambda_\\sigma\\) is a bijection, so \\(A_n\\) and \\(B_n\\) contain the same number of elements.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
+    "href": "classes/10/slides.html#activity-find-the-alternating-group-a_4",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Find the Alternating Group \\(A_4\\)",
+    "text": "Activity: Find the Alternating Group \\(A_4\\)\nFor your \\(S_4\\) tiles:\nLabel and sort the tiles into two piles:\n\neven permutations,\nodd permutations.\n\nThe even pile is \\(A_4\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
+    "href": "classes/10/slides.html#dihedral-group-as-a-subgroup-of-s_n",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Dihedral Group as a Subgroup of \\(S_n\\)",
+    "text": "Dihedral Group as a Subgroup of \\(S_n\\)\nThe dihedral group \\(D_n\\) consists of the rigid motions of a regular \\(n\\)-gon.\nLabel the vertices\n\\[\n1,2,\\ldots,n.\n\\]\nEvery rigid motion permutes these vertices, so each symmetry gives an element of \\(S_n\\).\nThus we can view\n\\[\nD_n\\leq S_n.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-construct-d_5",
+    "href": "classes/10/slides.html#activity-construct-d_5",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Construct \\(D_5\\)",
+    "text": "Activity: Construct \\(D_5\\)\nUse the \\(S_5\\) permutation-drawing tiles.\nBegin with the two tiles representing\n\\[\nr=(1\\,2\\,3\\,4\\,5)\n\\]\nand\n\\[\ns=(2\\,5)(3\\,4).\n\\]\nUse multiplication to construct new tiles from these two. Record these products on the empty tiles. Try to find all possible products of these two elements. Label each tile as a reflection or a rotation of the pentagon.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
+    "href": "classes/10/slides.html#activity-conjugating-cycles-by-reflections",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Conjugating Cycles by Reflections",
+    "text": "Activity: Conjugating Cycles by Reflections\nGiven two group elements \\(\\sigma\\) and \\(\\tau\\), the congugate of \\(\\sigma\\) by \\(\\tau\\) is \\(\\tau \\sigma \\tau^{-1}\\).\nGo back to you \\(D_5\\) tiles. Choose a non-idenity rotation \\(r\\) and a reflection \\(s\\). Calculate \\(srs\\). Do this for a few choices of \\(r\\) and a few choices of \\(s\\). Can you for an conjecture about what the \\(srs\\) is in general?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#another-construction-of-d_n",
+    "href": "classes/10/slides.html#another-construction-of-d_n",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Another Construction of \\(D_n\\)",
+    "text": "Another Construction of \\(D_n\\)\nInstead of starting with a geometric \\(n\\)-gon, we can describe \\(D_n\\) using two generators.\nLet \\(r\\) represent a rotation and \\(s\\) represent a reflection.\nThey satisfy:\n\n\\(r^n=e\\)\n\\(s^2=e\\)\n\\(srs=r^{-1}\\)\n\nThese are called relations.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#d_4-by-generators-and-relations",
+    "href": "classes/10/slides.html#d_4-by-generators-and-relations",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "\\(D_4\\) by Generators and Relations",
+    "text": "\\(D_4\\) by Generators and Relations\nWe write\n\\[\nD_n=\\langle r,s\\mid r^n=e,\\ s^2=e,\\ srs=r^{-1}\\rangle.\n\\]\nEvery element can be written in one of the forms\n\\[\nr^k\n\\qquad\\text{or}\\qquad\nr^ks,\n\\]\nwhere \\(0\\leq k&lt;n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#activity-find-a-copy-of-d_4",
+    "href": "classes/10/slides.html#activity-find-a-copy-of-d_4",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Activity: Find a Copy of \\(D_4\\)",
+    "text": "Activity: Find a Copy of \\(D_4\\)\nReturn to your \\(S_4\\) tiles. Find a copy of \\(D_4\\) in your tiles. What is \\(D_4 \\cap A_4\\)?\n\nThis is called the Klein 4-group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.2.2",
+    "href": "classes/10/slides.html#theorem-5.2.2",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.2.2",
+    "text": "Theorem 5.2.2\nThe dihedral group, \\(D_n\\), is a subgroup of \\(S_n\\) of order \\(2n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
+    "objectID": "classes/10/slides.html#theorem-5.2.3",
+    "href": "classes/10/slides.html#theorem-5.2.3",
+    "title": "Slides: Alternating and Dihedral Groups",
+    "section": "Theorem 5.2.3",
+    "text": "Theorem 5.2.3\nThe group \\(D_n\\), \\(n\\geq3\\), consists of all products of two elements \\(r\\) and \\(s\\), where \\(r\\) has order \\(n\\) and \\(s\\) has order \\(2\\), and \\(srs=r^{-1}\\).\n\n\\[\nD_n=\n\\{e,r,r^2,\\ldots,r^{n-1},\ns,rs,r^2s,\\ldots,r^{n-1}s\\}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Alternating and Dihedral Groups"
+    ]
+  },
+  {
     "objectID": "classes/19/slides-macmini.html#class-session-goals",
     "href": "classes/19/slides-macmini.html#class-session-goals",
     "title": "Slides: Group Products and Factor Groups",
@@ -5075,14 +5130,234 @@
     ]
   },
   {
-    "objectID": "classes/15/slides.html#class-session-goals",
-    "href": "classes/15/slides.html#class-session-goals",
-    "title": "Slides: Midterm",
+    "objectID": "classes/23/slides.html#class-session-goals",
+    "href": "classes/23/slides.html#class-session-goals",
+    "title": "Slides: Simplicity of the Alternating Group",
     "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nDo well on your midterm.",
+    "text": "Class Session Goals\n\nUnderstand the Proof the \\(A_n\\) is simple for n≥5",
     "crumbs": [
       "Class Material",
-      "Slides: Midterm"
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#whats-the-plan",
+    "href": "classes/23/slides.html#whats-the-plan",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "What’s the plan?",
+    "text": "What’s the plan?\n\nAny even permutation can be written as a product of 3-cycles.\nIf there is one 3-cycle in a normal subgroup we can use it to generate all 3-cycles.\nAny nontrivial normal subgroup of \\(A_n\\) contains a 3-cycle.\n\nThen if we find a 3-cylcle in a normal subgroup of \\(A_n\\). That normal subgroup is all of \\(A_n\\). If there are no three cycles in a normal subgroup, then it is trivial. The only normal subgroups of \\(A_n\\) are the trivial subgroup and \\(A_n\\) itself. Hence \\(A_n\\) is simple.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#lemma-10.2.1",
+    "href": "classes/23/slides.html#lemma-10.2.1",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Lemma 10.2.1",
+    "text": "Lemma 10.2.1\nThe alternating group \\(A_n\\) is generated by \\(3\\)-cycles for \\(n\\geq 3\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.1",
+    "href": "classes/23/slides.html#proof-of-10.2.1",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.1",
+    "text": "Proof of 10.2.1\nWe can rewrite any even permutation as a product of transpositions, and then pair the transpositions, and rewrite those pairs as products of \\(3\\)-cycles.\n\\[\n\\begin{aligned}\n(a,b)(a,b)&=\\mathrm{id},\\\\\n(a,b)(c,d)&=(a,c,b)(a,c,d),\\\\\n(a,b)(a,c)&=(a,c,b).\n\\end{aligned}\n\\]\nThese cover identical, disjoint, and overlapping transpositions.\nEvery \\(3\\)-cycle is even, so the \\(3\\)-cycles generate exactly \\(A_n\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#activity-calculate-the-following",
+    "href": "classes/23/slides.html#activity-calculate-the-following",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Activity: Calculate the following",
+    "text": "Activity: Calculate the following\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#recall",
+    "href": "classes/23/slides.html#recall",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Recall",
+    "text": "Recall\nIn the symmetric group \\(S_n\\), any element can be written as a product of disjoint cycles and disjoint cycles commute.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#lemma-10.2.2",
+    "href": "classes/23/slides.html#lemma-10.2.2",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Lemma 10.2.2",
+    "text": "Lemma 10.2.2\nLet \\(N\\) be a normal subgroup of \\(A_n\\), where \\(n\\geq 3\\). If \\(N\\) contains a \\(3\\)-cycle, then \\(N=A_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.2",
+    "href": "classes/23/slides.html#proof-of-10.2.2",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.2",
+    "text": "Proof of 10.2.2\nActivity shows cycles of the form \\((i,j,x)\\) generate all \\(3\\)-cycles.\nSuppose \\((i,j,a)\\in N\\) for some \\(a\\notin\\{i,j\\}\\). Calculate\n\\[\n[(i, j)(a, k)](i, j, a)^2 [(i, j)(a, k)]^{-1} = (i, j, k)\n\\]\nwhere k is any element not in \\(\\{i,j,a\\}\\).\nSo just one 3-cycle in \\(N\\) gives all 3-cycles of the form \\((i,j,x)\\) and hence all of \\(A_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#lemma-about-normal-subgroups",
+    "href": "classes/23/slides.html#lemma-about-normal-subgroups",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Lemma about Normal Subgroups",
+    "text": "Lemma about Normal Subgroups\nLet \\(N\\) be a normal subgroup of \\(G\\) and \\(x\\) be an element of \\(G\\) and \\(y\\in N\\). Then \\(y^{-1}xyx^{-1}\\in N\\).\nProof: \\(xyx^{-1}\\in N\\) since \\(N\\) is normal and \\(y^{-1}\\in N\\) since \\(N\\) is a subgroup. Hence \\(y^{-1}xyx^{-1}\\in N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#lemma-10.2.3",
+    "href": "classes/23/slides.html#lemma-10.2.3",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Lemma 10.2.3",
+    "text": "Lemma 10.2.3\nFor \\(n\\geq 5\\), every nontrivial normal subgroup \\(N\\) of \\(A_n\\) contains a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.3-cases",
+    "href": "classes/23/slides.html#proof-of-10.2.3-cases",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.3: Cases",
+    "text": "Proof of 10.2.3: Cases\nWhat might an element \\(\\sigma\\) of a normal subgroup look like? It can be a product of disjoint cycles since it is a subgroup of the alternating group which is a subgroup of the symmetric group. What’s the longest cycle?\n\nlongest cycle is more than 3, so \\(\\sigma=\\tau (a_1,a_2,\\ldots,a_r)\\) with \\(r&gt;3\\).\nlongest cycle is 3, break this up into subcases:\n\nMultiple 3-cycles \\(\\sigma=\\tau (a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nOne 3-cycle \\(\\sigma=\\tau (a_1,a_2,a_3)\\).\n\nlongest cycle is 2, \\(\\sigma=\\tau (a_1,a_2)(a_3,a_4)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.3-long-cycles",
+    "href": "classes/23/slides.html#proof-of-10.2.3-long-cycles",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.3: Long Cycles",
+    "text": "Proof of 10.2.3: Long Cycles\nCase 1: \\(\\sigma\\) contains a cycle of length \\(r&gt;3\\).\nWrite \\(\\sigma=\\tau(a_1,a_2,\\ldots,a_r)\\) and take \\(\\alpha=(a_1,a_2,a_3)\\).\nThen\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\\\\n&=(a_1,a_3,a_r)\\in N.\n\\end{aligned}\n\\]\nThus \\(N\\) contains a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.3-two-3-cycles",
+    "href": "classes/23/slides.html#proof-of-10.2.3-two-3-cycles",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.3: Two \\(3\\)-Cycles",
+    "text": "Proof of 10.2.3: Two \\(3\\)-Cycles\nCase 2: \\(\\sigma=\\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nTake \\(\\alpha=(a_1,a_2,a_4)\\). Then\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\\\\n&=(a_1,a_4,a_2,a_6,a_3)\\in N.\n\\end{aligned}\n\\]\nThis is a \\(5\\)-cycle.\nCase 1 now produces a \\(3\\)-cycle in \\(N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.3-one-3-cycle",
+    "href": "classes/23/slides.html#proof-of-10.2.3-one-3-cycle",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.3: One \\(3\\)-Cycle",
+    "text": "Proof of 10.2.3: One \\(3\\)-Cycle\nCase 3: \\(\\sigma=\\tau(a_1,a_2,a_3)\\), where \\(\\tau\\) consists of disjoint \\(2\\)-cycles.\nBecause \\(\\tau^2=\\mathrm{id}\\) and the cycles are disjoint,\n\\(\\sigma^2=\\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\\in N\\).\nThus \\(N\\) contains a \\(3\\)-cycle.\nThis includes the case where \\(\\sigma\\) itself is a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.3-only-2-cycles",
+    "href": "classes/23/slides.html#proof-of-10.2.3-only-2-cycles",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.3: Only \\(2\\)-Cycles",
+    "text": "Proof of 10.2.3: Only \\(2\\)-Cycles\nCase 4: \\(\\sigma=\\tau(a_1,a_2)(a_3,a_4)\\), where \\(\\tau\\) consists of an even number of disjoint \\(2\\)-cycles.\nTake \\(\\alpha=(a_1,a_2,a_3)\\). Then\n\\(\\delta=\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}=(a_1,a_3)(a_2,a_4)\\in N\\).\nSince \\(n\\geq 5\\), choose \\(b\\notin\\{a_1,a_2,a_3,a_4\\}\\) and put \\(\\mu=(a_1,a_3,b)\\).\nNormality gives\n\\(\\mu^{-1}\\delta\\mu\\delta=(a_1,a_3,b)\\in N\\).\nEvery possible nonidentity cycle structure has now been covered. Thus \\(N\\) contains a \\(3\\)-cycle. \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#theorem-10.2.4",
+    "href": "classes/23/slides.html#theorem-10.2.4",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Theorem 10.2.4",
+    "text": "Theorem 10.2.4\nThe alternating group, \\(A_n\\), is simple for \\(n\\geq 5\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#proof-of-10.2.4",
+    "href": "classes/23/slides.html#proof-of-10.2.4",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Proof of 10.2.4",
+    "text": "Proof of 10.2.4\nLet \\(N\\) be a nontrivial normal subgroup of \\(A_n\\), where \\(n\\geq 5\\).\nBy Lemma 10.2.3, \\(N\\) contains a \\(3\\)-cycle.\nBy Lemma 10.2.2, \\(N=A_n\\).\nTherefore, the only normal subgroups of \\(A_n\\) are \\(\\{\\mathrm{id}\\}\\) and \\(A_n\\).\nHence \\(A_n\\) is simple. \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#what-about-small-n",
+    "href": "classes/23/slides.html#what-about-small-n",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "what about small n?",
+    "text": "what about small n?\nFor \\(n=2\\) the only even transposition is the identity, so \\(A_2=\\{\\mathrm{id}\\}\\) is simple.\nFor \\(n=3\\), the group \\(A_3\\) has order \\(3\\), so it is cyclic and hence simple.\nFor \\(n=4\\), the group \\(A_4\\), \\(K_4=\\{e,(12)(34),(13)(24),(14)(23)\\}\\) and \\(K_4\\triangleleft A_4\\), so \\(A_4\\) is not simple.\nSo \\(A_4\\) is the only non-simple alternating group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#recall-mathbbz_p",
+    "href": "classes/23/slides.html#recall-mathbbz_p",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Recall: \\(\\mathbb{Z}_p\\)",
+    "text": "Recall: \\(\\mathbb{Z}_p\\)\nLet \\(p\\) be prime.\nIf \\(H\\) is a subgroup of \\(\\mathbb{Z}_p\\), Lagrange’s Theorem gives \\(|H|\\mid p\\).\nTherefore, \\(|H|=1\\) or \\(|H|=p\\), so\n\\(H=\\{0\\}\\) or \\(H=\\mathbb{Z}_p\\).\nConsequently, \\(\\mathbb{Z}_p\\) is simple.\nMore generally: A finite cyclic group is simple if and only if its order is prime.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#classification-theorem-for-finite-simple-groups",
+    "href": "classes/23/slides.html#classification-theorem-for-finite-simple-groups",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "Classification Theorem for Finite Simple Groups",
+    "text": "Classification Theorem for Finite Simple Groups\nEvery finite simple group is isomorphic to one of the following:\n\nA cyclic group \\(\\mathbb{Z}_p\\), where \\(p\\) is prime.\nAn alternating group \\(A_n\\), where \\(n\\geq 5\\).\nA finite simple group of Lie type.\nOne of the \\(26\\) sporadic simple groups.\n\nThe theorem gives a complete list, up to isomorphism.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
+    ]
+  },
+  {
+    "objectID": "classes/23/slides.html#all-known-simple-groups",
+    "href": "classes/23/slides.html#all-known-simple-groups",
+    "title": "Slides: Simplicity of the Alternating Group",
+    "section": "All Known Simple Groups",
+    "text": "All Known Simple Groups",
+    "crumbs": [
+      "Class Material",
+      "Slides: Simplicity of the Alternating Group"
     ]
   },
   {
@@ -5317,259 +5592,6 @@
     ]
   },
   {
-    "objectID": "classes/13/slides.html#class-session-goals",
-    "href": "classes/13/slides.html#class-session-goals",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Class Session Goals",
-    "text": "Class Session Goals\n\nExplain why a subgroup of index \\(2\\) is stable under conjugation.\nUse Lagrange’s Theorem to derive Euler’s Theorem and Fermat’s Little Theorem.\nFind conjugacy classes in \\(S_4\\) and \\(A_4\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#definition-of-a-group",
-    "href": "classes/13/slides.html#definition-of-a-group",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Definition of a Group",
-    "text": "Definition of a Group\nA group \\((G,\\cdot)\\) is a set \\(G\\) together with a law of composition\n\\((a,b)\\mapsto a\\cdot b\\) satisfying:\n\nAssociativity:\n\\((a\\cdot b)\\cdot c=a\\cdot(b\\cdot c)\\) for \\(a,b,c\\in G\\).\nIdentity:\nThere exists \\(e\\in G\\) such that \\(e\\cdot a=a\\cdot e=a\\) for every \\(a\\in G\\).\nInverses:\nFor each \\(a\\in G\\), there exists \\(a^{-1}\\in G\\) such that \\(a\\cdot a^{-1}=a^{-1}\\cdot a=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#definition-of-a-subgroup",
-    "href": "classes/13/slides.html#definition-of-a-subgroup",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Definition of a Subgroup",
-    "text": "Definition of a Subgroup\nLet \\(G\\) be a group.\nA subgroup \\(H\\) of \\(G\\) is a subset \\(H\\) of \\(G\\) such that when the group operation of \\(G\\) is restricted to \\(H\\), \\(H\\) is a group in its own right.\nWe write \\(H \\leq G\\).\nA subgroup uses the same operation as the original group.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#definition-of-cosets",
-    "href": "classes/13/slides.html#definition-of-cosets",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Definition of Cosets",
-    "text": "Definition of Cosets\nLet \\(G\\) be a group and \\(H\\) a subgroup of \\(G\\).\nA left coset of \\(H\\) with representative \\(g \\in G\\) is the set\n\\(gH = \\{gh : h \\in H\\}\\).\nA right coset is defined similarly by\n\\(Hg = \\{hg : h \\in H\\}\\).\nIf left and right cosets coincide, or if it is clear from context which type of coset is meant, we simply use the word coset.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#subgroups-of-index-2",
-    "href": "classes/13/slides.html#subgroups-of-index-2",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Subgroups of Index 2",
-    "text": "Subgroups of Index 2\nLet \\(H\\) be a subgroup of \\(G\\) with \\([G:H]=2\\). There are only two left cosets and two right cosets: \\(H\\) and its complement in \\(G\\).\nThus \\(gH=Hg\\) for every \\(g\\in G\\), or equivalently,\n\\[\ngHg^{-1}=H.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#proposition-6.2.7",
-    "href": "classes/13/slides.html#proposition-6.2.7",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Proposition 6.2.7",
-    "text": "Proposition 6.2.7\nThe group \\(A_4\\) has no subgroup of order \\(6\\).\n\nSuppose \\(|H|=6\\). Then \\([A_4:H]=2\\), so \\(gHg^{-1}=H\\) for every \\(g\\in A_4\\).\nOf the eight \\(3\\)-cycles in \\(A_4\\), at least one lies in \\(H\\). We may take it to be \\((123)\\). Its inverse \\((132)\\) also lies in \\(H\\).\nConjugating by elements of \\(A_4\\) gives \\((243)\\) and \\((142)\\). Their inverses must also lie in \\(H\\). Together with the identity, these are seven distinct elements, contradicting \\(|H|=6\\).\n\n\nThe converse of Lagrange’s Theorem is false: \\(6\\) divides \\(|A_4|=12\\), but \\(A_4\\) has no subgroup of order \\(6\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#corollary",
-    "href": "classes/13/slides.html#corollary",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Corollary",
-    "text": "Corollary\nIf \\(G\\) is a finite group and \\(g\\in G\\), then\n\\[\ng^{|G|}=e.\n\\]\nThe order of \\(g\\) divides \\(|G|\\), so \\(|G|=k|g|\\) for some integer \\(k\\). Hence \\(g^{|G|}=(g^{|g|})^k=e\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#the-group-un",
-    "href": "classes/13/slides.html#the-group-un",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "The Group \\(U(n)\\)",
-    "text": "The Group \\(U(n)\\)\n\\(U(n)\\) is the group of units in \\(\\mathbb{Z}_n\\) under multiplication modulo \\(n\\):\n\\[\nU(n)=\\{[a]\\in\\mathbb{Z}_n:\\gcd(a,n)=1\\}.\n\\]\nFor example, \\(U(12)=\\{[1],[5],[7],[11]\\}\\).\nEach element has a multiplicative inverse modulo \\(n\\). For instance, \\([5][5]=[1]\\) in \\(\\mathbb{Z}_{12}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#eulers-phi-function",
-    "href": "classes/13/slides.html#eulers-phi-function",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Euler’s Phi Function",
-    "text": "Euler’s Phi Function\nThe Euler \\(\\phi\\)-function is the map \\(\\phi:\\mathbb{N}\\to\\mathbb{N}\\) defined by \\(\\phi(1)=1\\) and, for \\(n&gt;1\\),\n\\[\n\\phi(n)=|\\{m:1\\leq m&lt;n,\\ \\gcd(m,n)=1\\}|.\n\\]\nFor example, \\(\\phi(12)=4\\) because \\(1,5,7,11\\) are relatively prime to \\(12\\).\nIf \\(p\\) is prime, then \\(\\phi(p)=p-1\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#theorem-6.3.1",
-    "href": "classes/13/slides.html#theorem-6.3.1",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Theorem 6.3.1",
-    "text": "Theorem 6.3.1\nLet \\(U(n)\\) be the group of units in \\(\\mathbb{Z}_n\\). Then\n\\[\n|U(n)|=\\phi(n).\n\\]\nThe units are precisely the residue classes represented by integers relatively prime to \\(n\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#eulers-theorem",
-    "href": "classes/13/slides.html#eulers-theorem",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Euler’s Theorem",
-    "text": "Euler’s Theorem\nLet \\(a\\) and \\(n\\) be integers such that \\(n&gt;0\\) and \\(\\gcd(a,n)=1\\). Then\n\\[\na^{\\phi(n)}\\equiv 1\\pmod n.\n\\]\n\nThe residue class of \\(a\\) belongs to \\(U(n)\\), which has order \\(\\phi(n)\\). Applying the preceding corollary in \\(U(n)\\) proves the congruence.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#fermats-little-theorem",
-    "href": "classes/13/slides.html#fermats-little-theorem",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Fermat’s Little Theorem",
-    "text": "Fermat’s Little Theorem\nLet \\(p\\) be prime. If \\(p\\nmid a\\), then\n\\[\na^{p-1}\\equiv 1\\pmod p.\n\\]\nFurthermore, for any integer \\(b\\),\n\\[\nb^p\\equiv b\\pmod p.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#conjugation",
-    "href": "classes/13/slides.html#conjugation",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Conjugation",
-    "text": "Conjugation\nFor \\(g,h\\in G\\), the element \\(ghg^{-1}\\) is the conjugate of \\(h\\) by \\(g\\).\nFor a subgroup \\(H\\) of \\(G\\), write \\(gHg^{-1}=\\{ghg^{-1}:h\\in H\\}\\).\n\nConjugating a cycle applies the conjugating permutation to each entry:\n\\[\n\\sigma(a_1\\,a_2\\,\\ldots\\,a_k)\\sigma^{-1}\n=(\\sigma(a_1)\\,\\sigma(a_2)\\,\\ldots\\,\\sigma(a_k)).\n\\]\nFor example, \\((124)(123)(124)^{-1}=(243)\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#theorem-6.2.8",
-    "href": "classes/13/slides.html#theorem-6.2.8",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Theorem 6.2.8",
-    "text": "Theorem 6.2.8\nTwo cycles \\(\\tau\\) and \\(\\mu\\) in \\(S_n\\) have the same length if and only if there exists a \\(\\sigma\\in S_n\\) such that\n\\[\n\\mu=\\sigma\\tau\\sigma^{-1}.\n\\]\n\nIf \\(\\tau=(a_1\\,\\ldots\\,a_k)\\) and \\(\\mu=(b_1\\,\\ldots\\,b_k)\\), choose \\(\\sigma\\) with \\(\\sigma(a_i)=b_i\\) for each \\(i\\), then extend it to a permutation of the remaining symbols.\nConversely, conjugating \\(\\tau\\) replaces its entries by their images under \\(\\sigma\\), preserving the cycle length.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
-    "href": "classes/13/slides.html#conjugation-is-an-equivalence-relation",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Conjugation Is an Equivalence Relation",
-    "text": "Conjugation Is an Equivalence Relation\nDefine \\(h\\sim k\\) when \\(k=ghg^{-1}\\) for some \\(g\\in G\\).\n\nReflexive: \\(h=ehe^{-1}\\).\nSymmetric: If \\(k=ghg^{-1}\\), then \\(h=g^{-1}kg\\).\nTransitive: If \\(k=ghg^{-1}\\) and \\(\\ell=aka^{-1}\\), then \\(\\ell=(ag)h(ag)^{-1}\\).\n\nThe equivalence classes are called conjugacy classes.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
-    "href": "classes/13/slides.html#activity-conjugacy-classes-of-s_4",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Activity: Conjugacy Classes of \\(S_4\\)",
-    "text": "Activity: Conjugacy Classes of \\(S_4\\)\nConjugation in \\(S_4\\) preserves cycle type. List the cycle types, count the elements of each type, and check that the counts add to \\(|S_4|\\).\n\n\n\n\nCycle type\nRepresentative\nClass size\n\n\n\n\nIdentity\n\\((1)\\)\n\\(1\\)\n\n\nTransposition\n\\((12)\\)\n\\(6\\)\n\n\nTwo disjoint transpositions\n\\((12)(34)\\)\n\\(3\\)\n\n\n\\(3\\)-cycle\n\\((123)\\)\n\\(8\\)\n\n\n\\(4\\)-cycle\n\\((1234)\\)\n\\(6\\)\n\n\n\n\\(1+6+3+8+6=24\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
-    "href": "classes/13/slides.html#activity-conjugacy-classes-of-a_4",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Activity: Conjugacy Classes of \\(A_4\\)",
-    "text": "Activity: Conjugacy Classes of \\(A_4\\)\nList the elements of \\(A_4\\) by cycle type. Which \\(S_4\\) conjugacy classes split when conjugation is restricted to elements of \\(A_4\\)?\n\nThe identity forms one class. The three double transpositions form another. The eight \\(3\\)-cycles split into two classes of four:\n\\[\n\\begin{aligned}\n[(123)]_{A_4}&=\\{(123),(142),(134),(243)\\},\\\\\n[(132)]_{A_4}&=\\{(132),(124),(143),(234)\\}.\n\\end{aligned}\n\\]\nThus the class sizes are \\(1+3+4+4=12\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
-    "href": "classes/13/slides.html#conjugacy-classes-and-the-center-of-a-group",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Conjugacy Classes and the Center of a Group",
-    "text": "Conjugacy Classes and the Center of a Group\nThe center of a group \\(G\\) is the set \\(Z(G)=\\{g\\in G:gh=hg\\text{ for all }h\\in G\\}\\).\nWhat is can you say about the conjugacy classes of elements in \\(Z(G)\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
-    "href": "classes/13/slides.html#class-equation-and-conjugacy-classes-in-s_n",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Class Equation and Conjugacy Classes in \\(S_n\\)",
-    "text": "Class Equation and Conjugacy Classes in \\(S_n\\)\nConjugacy classes partition a finite group \\(G\\). If \\(x_1,\\ldots,x_k\\) represent its classes outside the center, the class equation is\n\\[\n|G|=|Z(G)|+|[x_1]|+\\cdots+|[x_k]|.\n\\]\n\nIn \\(S_n\\), permutations are conjugate exactly when they have the same cycle type. If a permutation has \\(m_j\\) cycles of length \\(j\\), including fixed points, then\n\\[\n|[\\sigma]|=\\frac{n!}{\\prod_{j=1}^{n}j^{m_j}m_j!}.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#activity-class-equation-for-d_5",
-    "href": "classes/13/slides.html#activity-class-equation-for-d_5",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Activity: Class Equation for \\(D_5\\)",
-    "text": "Activity: Class Equation for \\(D_5\\)\nFind the conjugacy classes of \\(D_5\\) and write the class equation.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#class-sizes-and-centralizers",
-    "href": "classes/13/slides.html#class-sizes-and-centralizers",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Class Sizes and Centralizers",
-    "text": "Class Sizes and Centralizers\nFor \\(x\\in G\\), its centralizer is \\(C_G(x)=\\{g\\in G:gx=xg\\}\\).\nThe conjugacy class of \\(x\\) has size\n\\[\n|[x]|=[G:C_G(x)]=\\frac{|G|}{|C_G(x)|}.\n\\]\n\nIn \\(S_4\\), the permutations commuting with \\((123)\\) are \\((1)\\), \\((123)\\), and \\((132)\\). Thus\n\\[\n|[(123)]|=\\frac{24}{3}=8.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#the-center-of-a-finite-p-group",
-    "href": "classes/13/slides.html#the-center-of-a-finite-p-group",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "The Center of a Finite \\(p\\)-Group",
-    "text": "The Center of a Finite \\(p\\)-Group\nTheorem. If \\(|G|=p^n\\) for a prime \\(p\\), then \\(Z(G)\\) contains an element other than the identity.\n\nEach conjugacy class outside \\(Z(G)\\) has size greater than \\(1\\) and divides \\(p^n\\). Its size is therefore divisible by \\(p\\).\nThe class equation gives\n\\[\np^n=|Z(G)|+\\sum_i |[x_i]|.\n\\]\nIt follows that \\(p\\) divides \\(|Z(G)|\\). Since \\(e\\in Z(G)\\), we have \\(|Z(G)|\\geq p\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
-    "objectID": "classes/13/slides.html#groups-of-order-p2",
-    "href": "classes/13/slides.html#groups-of-order-p2",
-    "title": "Slides: Fermat and Euler’s Theorems",
-    "section": "Groups of Order \\(p^2\\)",
-    "text": "Groups of Order \\(p^2\\)\nCorollary. Every group of order \\(p^2\\) is abelian.\n\nThe preceding theorem and Lagrange’s Theorem give \\(|Z(G)|=p\\) or \\(p^2\\).\nSuppose \\(|Z(G)|=p\\) and choose \\(x\\notin Z(G)\\). The centralizer \\(C_G(x)\\) contains both \\(Z(G)\\) and \\(x\\), so it has more than \\(p\\) elements. Its order divides \\(p^2\\), forcing \\(C_G(x)=G\\).\nBut then \\(x\\in Z(G)\\), a contradiction. Hence \\(Z(G)=G\\), so \\(G\\) is abelian.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Fermat and Euler's Theorems"
-    ]
-  },
-  {
     "objectID": "classes/14/slides.html#class-session-goals",
     "href": "classes/14/slides.html#class-session-goals",
     "title": "Slides: Centralizers, Centers, and Conjugacy Classes",
@@ -5787,6 +5809,479 @@
     "crumbs": [
       "Class Material",
       "Slides: Centralizers, Centers, and Conjugacy Classes"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#class-session-goals",
+    "href": "classes/22/slides.html#class-session-goals",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\nBy the end of this session, you should be able to:\n\nDefine the natural homomorphism, identify its kernel and image, and interpret the commutative diagram in the First Isomorphism Theorem.\nApply the First, Second, and Third Isomorphism Theorems and the Correspondence Theorem to relate groups, quotient groups, and subgroups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#moving-from-understanding-groups-to-identifying-groups",
+    "href": "classes/22/slides.html#moving-from-understanding-groups-to-identifying-groups",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Moving from Understanding Groups to Identifying Groups",
+    "text": "Moving from Understanding Groups to Identifying Groups\nWe now have a good understanding of what groups are and how they work.\nWe next develop tools to:\n\nIdentify groups by relating them to familiar groups.\nFind normal subgroups and understand the quotient groups they produce.\n\nHomomorphisms and the isomorphism theorems that we learn about are starting tools to identify groups.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#recall-theorem-10.1.3",
+    "href": "classes/22/slides.html#recall-theorem-10.1.3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Recall Theorem 10.1.3",
+    "text": "Recall Theorem 10.1.3\nLet \\(G\\) be a group and \\(N\\) be a subgroup of \\(G\\). Then the following statements are equivalent.\n\nThe subgroup \\(N\\) is normal in \\(G\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}\\subset N\\).\nFor all \\(g\\in G\\), \\(gNg^{-1}=N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#natural-homomorphism",
+    "href": "classes/22/slides.html#natural-homomorphism",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Natural Homomorphism",
+    "text": "Natural Homomorphism\nLet \\(H\\) be a normal subgroup of \\(G\\). The natural or canonical homomorphism \\(\\phi:G\\rightarrow G/H\\) is defined by \\(\\phi(g)=gH\\).\nThis is a homomorphism because\n\\[\n\\phi(g_1)\\phi(g_2)=(g_1H)(g_2H)=g_1g_2H=\\phi(g_1g_2).\n\\]\n\nOnto: Every coset \\(gH\\) is the image of \\(g\\).\nKernel: \\(\\phi(g)=H\\) exactly when \\(g\\in H\\), so \\(\\ker\\phi=H\\).\n\nThus every normal subgroup is the kernel of a homomorphism.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#two-images-of-a-group",
+    "href": "classes/22/slides.html#two-images-of-a-group",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Two Images of a group",
+    "text": "Two Images of a group\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow &  &\\\\\nG/K & &\n\\end{array}\n\\]\nWhat is the relationship between the two images \\(\\psi(G)\\) and \\(G/K\\)?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#commutative-diagrams",
+    "href": "classes/22/slides.html#commutative-diagrams",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Commutative Diagrams",
+    "text": "Commutative Diagrams\nA diagram commutes when following different directed paths with the same starting and ending objects gives the same map.\nFor a homomorphism \\(\\psi:G\\rightarrow H\\), let \\(K=\\ker\\psi\\) and let \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nG/K & &\n\\end{array}\n\\]\nCommutativity means \\(\\psi=\\eta\\phi\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#following-the-paths",
+    "href": "classes/22/slides.html#following-the-paths",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Following the Paths",
+    "text": "Following the Paths\nStart with any \\(g\\in G\\). There are two directed paths from \\(G\\) to \\(\\psi(G)\\):\n\nDirect path: \\(g\\mapsto\\psi(g)\\).\nPath through the quotient: \\(g\\mapsto gK\\mapsto\\eta(gK)\\).\n\nThe First Isomorphism Theorem supplies the isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) defined by \\(\\eta(gK)=\\psi(g)\\).\nTherefore, both paths give the same result:\n\\[\n\\eta(\\phi(g))=\\eta(gK)=\\psi(g).\n\\]\nThe diagram records how \\(\\psi\\) factors through the quotient group \\(G/K\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#theorem-11.2.1",
+    "href": "classes/22/slides.html#theorem-11.2.1",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.1",
+    "text": "Theorem 11.2.1\nFirst Isomorphism Theorem\nIf \\(\\psi:G\\rightarrow H\\) is a group homomorphism with \\(K=\\ker\\psi\\), then \\(K\\) is normal in \\(G\\).\nLet \\(\\phi:G\\rightarrow G/K\\) be the canonical homomorphism.\nThen there exists a unique isomorphism \\(\\eta:G/K\\rightarrow\\psi(G)\\) such that \\(\\psi=\\eta\\phi\\).\n\\[\nG/\\ker\\psi\\cong\\psi(G).\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#first-isomorphism-theorem-commutative-diagram",
+    "href": "classes/22/slides.html#first-isomorphism-theorem-commutative-diagram",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "First Isomorphism Theorem: Commutative Diagram",
+    "text": "First Isomorphism Theorem: Commutative Diagram\nLet \\(\\psi:G\\rightarrow H\\) be a group homomorphism and let \\(K=\\ker\\psi\\).\nThe First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nG & \\xrightarrow{\\ \\psi\\ } & \\psi(G)\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nG/K & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(g)=gK\\).\nInduced isomorphism: \\(\\eta(gK)=\\psi(g)\\).\n\nThe diagram commutes because \\(\\eta(\\phi(g))=\\psi(g)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.1",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.1",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.1",
+    "text": "Proof of Theorem 11.2.1\nWe already know that \\(K\\) is normal in \\(G\\). Define \\(\\eta:G/K\\rightarrow\\psi(G)\\) by \\(\\eta(gK)=\\psi(g)\\).\n\nWell-defined: If \\(g_1K=g_2K\\), then \\(g_2=g_1k\\) for some \\(k\\in K\\). Hence \\(\\psi(g_2)=\\psi(g_1)\\psi(k)=\\psi(g_1)\\).\nHomomorphism: \\(\\eta(g_1K\\,g_2K)=\\psi(g_1g_2)=\\psi(g_1)\\psi(g_2)=\\eta(g_1K)\\eta(g_2K)\\).\nOnto: Every element \\(\\psi(g)\\) of \\(\\psi(G)\\) equals \\(\\eta(gK)\\).\nOne-to-one: If \\(\\eta(g_1K)=\\eta(g_2K)\\), then \\(\\psi(g_1)=\\psi(g_2)\\). Thus \\(\\psi(g_1^{-1}g_2)=e\\), so \\(g_1^{-1}g_2\\in K\\) and \\(g_1K=g_2K\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#example-finite-cyclic-groups",
+    "href": "classes/22/slides.html#example-finite-cyclic-groups",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Example: Finite Cyclic Groups",
+    "text": "Example: Finite Cyclic Groups\nLet \\(G=\\langle g\\rangle\\) with \\(|g|=m\\). Define \\(\\psi:\\mathbb Z\\rightarrow G\\) by \\(\\psi(n)=g^n\\).\nThis is an onto homomorphism because every element of \\(G\\) is a power of \\(g\\), and\n\\[\n\\psi(a)\\psi(b)=g^ag^b=g^{a+b}=\\psi(a+b).\n\\]\nSince \\(g^n=e\\) exactly when \\(m\\) divides \\(n\\), we have \\(\\ker\\psi=m\\mathbb Z\\).\nThe First Isomorphism Theorem gives\n\\[\n\\mathbb Z/m\\mathbb Z\\cong G.\n\\]\nEvery cyclic group of order \\(m\\) is isomorphic to \\(\\mathbb Z_m\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#example-infinite-cyclic-groups",
+    "href": "classes/22/slides.html#example-infinite-cyclic-groups",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Example: Infinite Cyclic Groups",
+    "text": "Example: Infinite Cyclic Groups\nLet \\(G=\\langle g\\rangle\\), where \\(g\\) has infinite order. Again define \\(\\psi:\\mathbb Z\\rightarrow G\\) by \\(\\psi(n)=g^n\\).\n\n\\(\\psi\\) is an onto homomorphism.\nSince \\(g\\) has infinite order, \\(g^n=e\\) only when \\(n=0\\).\nTherefore, \\(\\ker\\psi=\\{0\\}\\).\n\nThe First Isomorphism Theorem gives\n\\[\n\\mathbb Z/\\{0\\}\\cong G,\n\\qquad\\text{so}\\qquad\n\\mathbb Z\\cong G.\n\\]\nUp to isomorphism, the only cyclic groups are \\(\\mathbb Z\\) and \\(\\mathbb Z_m\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#example-identifying-s_3a_3",
+    "href": "classes/22/slides.html#example-identifying-s_3a_3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Example: Identifying \\(S_3/A_3\\)",
+    "text": "Example: Identifying \\(S_3/A_3\\)\nThe sign homomorphism \\(\\psi:S_3\\rightarrow\\mathbb Z_2\\) sends even permutations to \\(0\\) and odd permutations to \\(1\\). We showed this was a homomorphism previously.\n\nOnto: The identity maps to \\(0\\), and a transposition maps to \\(1\\).\nKernel: \\(\\ker\\psi=A_3=\\{e,(123),(132)\\}\\).\n\nThe First Isomorphism Theorem gives\n\\[\nS_3/A_3\\cong\\mathbb Z_2.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#implications-a-strategy-for-identifying-groups",
+    "href": "classes/22/slides.html#implications-a-strategy-for-identifying-groups",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Implications: A Strategy for Identifying Groups",
+    "text": "Implications: A Strategy for Identifying Groups\nTo identify a quotient group \\(G/N\\):\n\nFind a homomorphism \\(\\psi:G\\rightarrow H\\) into a familiar group.\nShow that \\(\\ker\\psi=N\\).\nIdentify the image \\(\\psi(G)\\).\n\nThen the First Isomorphism Theorem gives \\(G/N\\cong\\psi(G)\\).\n\nFinding \\(N\\) as a kernel also proves that \\(N\\) is normal.\nIf \\(\\psi\\) is onto, then \\(G/N\\cong H\\).\nIf \\(\\ker\\psi=\\{e\\}\\), then \\(G\\cong\\psi(G)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#theorem-11.2.3",
+    "href": "classes/22/slides.html#theorem-11.2.3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.3",
+    "text": "Theorem 11.2.3\nSecond Isomorphism Theorem\nLet \\(H\\) be a subgroup of a group \\(G\\), not necessarily normal in \\(G\\), and \\(N\\) a normal subgroup of \\(G\\).\nThen \\(HN\\) is a subgroup of \\(G\\), \\(H\\cap N\\) is a normal subgroup of \\(H\\), and\n\\[\nH/H\\cap N\\cong HN/N.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#second-isomorphism-theorem-commutative-diagram",
+    "href": "classes/22/slides.html#second-isomorphism-theorem-commutative-diagram",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Second Isomorphism Theorem: Commutative Diagram",
+    "text": "Second Isomorphism Theorem: Commutative Diagram\nLet \\(H\\leq G\\) and \\(N\\) be normal in \\(G\\). Define \\(\\psi:H\\rightarrow HN/N\\) by \\(\\psi(h)=hN\\).\nSince \\(\\ker\\psi=H\\cap N\\), the First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nH & \\xrightarrow{\\ \\psi\\ } & HN/N\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\nH/(H\\cap N) & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(h)=h(H\\cap N)\\).\nInduced isomorphism: \\(\\eta(h(H\\cap N))=hN\\).\n\nThe diagram commutes because \\(\\eta(\\phi(h))=hN=\\psi(h)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.3",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.3",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.3",
+    "text": "Proof of Theorem 11.2.3\nFirst, \\(HN=\\{hn:h\\in H,n\\in N\\}\\) contains \\(e\\). Since \\(N\\) is normal,\n\\[\n\\begin{aligned}\n(h_1n_1)(h_2n_2)\n&=h_1h_2(h_2^{-1}n_1h_2)n_2\\in HN,\\\\\n(hn)^{-1}\n&=n^{-1}h^{-1}=h^{-1}(hn^{-1}h^{-1})\\in HN.\n\\end{aligned}\n\\]\nThus \\(HN\\) is a subgroup of \\(G\\).\nFor \\(h\\in H\\) and \\(n\\in H\\cap N\\), the element \\(h^{-1}nh\\) belongs to both \\(H\\) and \\(N\\). Hence \\(H\\cap N\\) is normal in \\(H\\).\nDefine \\(\\phi:H\\rightarrow HN/N\\) by \\(\\phi(h)=hN\\). It is onto because \\(hnN=hN\\), and it is a homomorphism because \\(\\phi(hh')=hh'N=hNh'N=\\phi(h)\\phi(h')\\).\nSince \\(\\ker\\phi=\\{h\\in H:h\\in N\\}=H\\cap N\\), the First Isomorphism Theorem gives \\(H/H\\cap N\\cong HN/N\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#theorem-11.2.4",
+    "href": "classes/22/slides.html#theorem-11.2.4",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.4",
+    "text": "Theorem 11.2.4\nCorrespondence Theorem\nLet \\(N\\) be a normal subgroup of a group \\(G\\).\nThen \\(H\\mapsto H/N\\) is a one-to-one correspondence between the set of subgroups \\(H\\) of \\(G\\) containing \\(N\\) and the set of subgroups of \\(G/N\\).\nFurthermore, the normal subgroups of \\(G\\) containing \\(N\\) correspond to normal subgroups of \\(G/N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.4",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.4",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.4",
+    "text": "Proof of Theorem 11.2.4\nLet \\(\\pi:G\\rightarrow G/N\\) be the canonical homomorphism.\n\nSubgroups correspond: If \\(N\\subseteq H\\leq G\\), then \\(H/N=\\pi(H)\\) is a subgroup of \\(G/N\\). If \\(S\\leq G/N\\), then \\(H=\\pi^{-1}(S)\\) is a subgroup containing \\(N\\), and \\(H/N=S\\).\nThe correspondence is one-to-one: For every subgroup \\(H\\) containing \\(N\\), \\(\\pi^{-1}(H/N)=H\\). Thus taking images and taking inverse images give inverse correspondences.\nNormality passes to the quotient: If \\(H\\) is normal in \\(G\\), the map \\(G/N\\rightarrow G/H\\) defined by \\(gN\\mapsto gH\\) is a homomorphism with kernel \\(H/N\\). Hence \\(H/N\\) is normal in \\(G/N\\).\nNormality lifts from the quotient: If \\(H/N\\) is normal in \\(G/N\\), then \\(H=\\pi^{-1}(H/N)\\) is normal in \\(G\\) by Proposition 11.1.4(4). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#theorem-11.2.5",
+    "href": "classes/22/slides.html#theorem-11.2.5",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Theorem 11.2.5",
+    "text": "Theorem 11.2.5\nThird Isomorphism Theorem\nLet \\(G\\) be a group and \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subset H\\).\nThen\n\\[\nG/H\\cong\\frac{G/N}{H/N}.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#third-isomorphism-theorem-commutative-diagram",
+    "href": "classes/22/slides.html#third-isomorphism-theorem-commutative-diagram",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Third Isomorphism Theorem: Commutative Diagram",
+    "text": "Third Isomorphism Theorem: Commutative Diagram\nLet \\(N\\) and \\(H\\) be normal subgroups of \\(G\\) with \\(N\\subseteq H\\). Define \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\nSince \\(\\ker\\rho=H/N\\), the First Isomorphism Theorem gives:\n\\[\n\\begin{array}{ccc}\nG/N & \\xrightarrow{\\ \\rho\\ } & G/H\\\\\n{\\scriptstyle\\phi}\\downarrow & \\nearrow{\\scriptstyle\\eta} &\\\\\n(G/N)/(H/N) & &\n\\end{array}\n\\]\n\nCanonical homomorphism: \\(\\phi(gN)=(gN)(H/N)\\).\nInduced isomorphism: \\(\\eta((gN)(H/N))=gH\\).\n\nThe diagram commutes because \\(\\eta(\\phi(gN))=gH=\\rho(gN)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/22/slides.html#proof-of-theorem-11.2.5",
+    "href": "classes/22/slides.html#proof-of-theorem-11.2.5",
+    "title": "Slides: Homomorphism Theorems",
+    "section": "Proof of Theorem 11.2.5",
+    "text": "Proof of Theorem 11.2.5\nDefine \\(\\rho:G/N\\rightarrow G/H\\) by \\(\\rho(gN)=gH\\).\n\nWell-defined: If \\(g_1N=g_2N\\), then \\(g_1^{-1}g_2\\in N\\subseteq H\\), so \\(g_1H=g_2H\\).\nHomomorphism: \\(\\rho(g_1N\\,g_2N)=g_1g_2H=(g_1H)(g_2H)\\).\nOnto: Every coset \\(gH\\) is the image of \\(gN\\).\nKernel: \\(\\rho(gN)=H\\) exactly when \\(g\\in H\\). Thus \\(\\ker\\rho=H/N\\).\n\nBy the First Isomorphism Theorem,\n\\[\n\\frac{G/N}{H/N}\\cong G/H.\n\\]\nTherefore \\(G/H\\cong(G/N)/(H/N)\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Homomorphism Theorems"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#class-session-goals",
+    "href": "classes/25/slides.html#class-session-goals",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Class Session Goals",
+    "text": "Class Session Goals\n\nUnderstand the Proof the \\(A_n\\) is simple for n≥5",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#whats-the-plan",
+    "href": "classes/25/slides.html#whats-the-plan",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "What’s the plan?",
+    "text": "What’s the plan?\n\nAny even permutation can be written as a product of 3-cycles.\nIf there is one 3-cycle in a normal subgroup we can use it to generate all 3-cycles.\nAny nontrivial normal subgroup of \\(A_n\\) contains a 3-cycle.\n\nThen if we find a 3-cylcle in a normal subgroup of \\(A_n\\). That normal subgroup is all of \\(A_n\\). If there are no three cycles in a normal subgroup, then it is trivial. The only normal subgroups of \\(A_n\\) are the trivial subgroup and \\(A_n\\) itself. Hence \\(A_n\\) is simple.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#lemma-10.2.1",
+    "href": "classes/25/slides.html#lemma-10.2.1",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Lemma 10.2.1",
+    "text": "Lemma 10.2.1\nThe alternating group \\(A_n\\) is generated by \\(3\\)-cycles for \\(n\\geq 3\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.1",
+    "href": "classes/25/slides.html#proof-of-10.2.1",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.1",
+    "text": "Proof of 10.2.1\nWe can rewrite any even permutation as a product of transpositions, and then pair the transpositions, and rewrite those pairs as products of \\(3\\)-cycles.\n\\[\n\\begin{aligned}\n(a,b)(a,b)&=\\mathrm{id},\\\\\n(a,b)(c,d)&=(a,c,b)(a,c,d),\\\\\n(a,b)(a,c)&=(a,c,b).\n\\end{aligned}\n\\]\nThese cover identical, disjoint, and overlapping transpositions.\nEvery \\(3\\)-cycle is even, so the \\(3\\)-cycles generate exactly \\(A_n\\). \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#activity-calculate-the-following",
+    "href": "classes/25/slides.html#activity-calculate-the-following",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Activity: Calculate the following",
+    "text": "Activity: Calculate the following\nHere \\(a,b,c\\) are distinct and different from \\(1\\) and \\(2\\). \\[\n\\begin{array}{l}\n(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)(1,2,a)^2 = ? \\\\[1em]\n(1,2,b)^2(1,2,a) = ? \\\\[1em]\n(1,2,a)^2(1,2,c)(1,2,b)^2(1,2,a) = ?\n\\end{array}\n\\]\nThis shows that all 3-cycles can be generated from three cycles of the form \\((1,2,x)\\) where \\(x\\in \\{3, 4, 5,\\ldots,n\\}\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#recall",
+    "href": "classes/25/slides.html#recall",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Recall",
+    "text": "Recall\nIn the symmetric group \\(S_n\\), any element can be written as a product of disjoint cycles and disjoint cycles commute.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#lemma-10.2.2",
+    "href": "classes/25/slides.html#lemma-10.2.2",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Lemma 10.2.2",
+    "text": "Lemma 10.2.2\nLet \\(N\\) be a normal subgroup of \\(A_n\\), where \\(n\\geq 3\\). If \\(N\\) contains a \\(3\\)-cycle, then \\(N=A_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.2",
+    "href": "classes/25/slides.html#proof-of-10.2.2",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.2",
+    "text": "Proof of 10.2.2\nActivity shows cycles of the form \\((i,j,x)\\) generate all \\(3\\)-cycles.\nSuppose \\((i,j,a)\\in N\\) for some \\(a\\notin\\{i,j\\}\\). Calculate\n\\[\n[(i, j)(a, k)](i, j, a)^2 [(i, j)(a, k)]^{-1} = (i, j, k)\n\\]\nwhere k is any element not in \\(\\{i,j,a\\}\\).\nSo just one 3-cycle in \\(N\\) gives all 3-cycles of the form \\((i,j,x)\\) and hence all of \\(A_n\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#lemma-about-normal-subgroups",
+    "href": "classes/25/slides.html#lemma-about-normal-subgroups",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Lemma about Normal Subgroups",
+    "text": "Lemma about Normal Subgroups\nLet \\(N\\) be a normal subgroup of \\(G\\) and \\(x\\) be an element of \\(G\\) and \\(y\\in N\\). Then \\(y^{-1}xyx^{-1}\\in N\\).\nProof: \\(xyx^{-1}\\in N\\) since \\(N\\) is normal and \\(y^{-1}\\in N\\) since \\(N\\) is a subgroup. Hence \\(y^{-1}xyx^{-1}\\in N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#lemma-10.2.3",
+    "href": "classes/25/slides.html#lemma-10.2.3",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Lemma 10.2.3",
+    "text": "Lemma 10.2.3\nFor \\(n\\geq 5\\), every nontrivial normal subgroup \\(N\\) of \\(A_n\\) contains a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.3-cases",
+    "href": "classes/25/slides.html#proof-of-10.2.3-cases",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.3: Cases",
+    "text": "Proof of 10.2.3: Cases\nWhat might an element \\(\\sigma\\) of a normal subgroup look like? It can be a product of disjoint cycles since it is a subgroup of the alternating group which is a subgroup of the symmetric group. What’s the longest cycle?\n\nlongest cycle is more than 3, so \\(\\sigma=\\tau (a_1,a_2,\\ldots,a_r)\\) with \\(r&gt;3\\).\nlongest cycle is 3, break this up into subcases:\n\nMultiple 3-cycles \\(\\sigma=\\tau (a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nOne 3-cycle \\(\\sigma=\\tau (a_1,a_2,a_3)\\).\n\nlongest cycle is 2, \\(\\sigma=\\tau (a_1,a_2)(a_3,a_4)\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.3-long-cycles",
+    "href": "classes/25/slides.html#proof-of-10.2.3-long-cycles",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.3: Long Cycles",
+    "text": "Proof of 10.2.3: Long Cycles\nCase 1: \\(\\sigma\\) contains a cycle of length \\(r&gt;3\\).\nWrite \\(\\sigma=\\tau(a_1,a_2,\\ldots,a_r)\\) and take \\(\\alpha=(a_1,a_2,a_3)\\).\nThen\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_r,a_1,a_2)(a_1,a_3,a_2)\\\\\n&=(a_1,a_3,a_r)\\in N.\n\\end{aligned}\n\\]\nThus \\(N\\) contains a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.3-two-3-cycles",
+    "href": "classes/25/slides.html#proof-of-10.2.3-two-3-cycles",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.3: Two \\(3\\)-Cycles",
+    "text": "Proof of 10.2.3: Two \\(3\\)-Cycles\nCase 2: \\(\\sigma=\\tau(a_1,a_2,a_3)(a_4,a_5,a_6)\\).\nTake \\(\\alpha=(a_1,a_2,a_4)\\). Then\n\\[\n\\begin{aligned}\n\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}\n&=(a_3,a_1,a_6)(a_1,a_4,a_2)\\\\\n&=(a_1,a_4,a_2,a_6,a_3)\\in N.\n\\end{aligned}\n\\]\nThis is a \\(5\\)-cycle.\nCase 1 now produces a \\(3\\)-cycle in \\(N\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.3-one-3-cycle",
+    "href": "classes/25/slides.html#proof-of-10.2.3-one-3-cycle",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.3: One \\(3\\)-Cycle",
+    "text": "Proof of 10.2.3: One \\(3\\)-Cycle\nCase 3: \\(\\sigma=\\tau(a_1,a_2,a_3)\\), where \\(\\tau\\) consists of disjoint \\(2\\)-cycles.\nBecause \\(\\tau^2=\\mathrm{id}\\) and the cycles are disjoint,\n\\(\\sigma^2=\\tau^2(a_1,a_2,a_3)^2=(a_1,a_3,a_2)\\in N\\).\nThus \\(N\\) contains a \\(3\\)-cycle.\nThis includes the case where \\(\\sigma\\) itself is a \\(3\\)-cycle.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.3-only-2-cycles",
+    "href": "classes/25/slides.html#proof-of-10.2.3-only-2-cycles",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.3: Only \\(2\\)-Cycles",
+    "text": "Proof of 10.2.3: Only \\(2\\)-Cycles\nCase 4: \\(\\sigma=\\tau(a_1,a_2)(a_3,a_4)\\), where \\(\\tau\\) consists of an even number of disjoint \\(2\\)-cycles.\nTake \\(\\alpha=(a_1,a_2,a_3)\\). Then\n\\(\\delta=\\sigma^{-1}\\alpha\\sigma\\alpha^{-1}=(a_1,a_3)(a_2,a_4)\\in N\\).\nSince \\(n\\geq 5\\), choose \\(b\\notin\\{a_1,a_2,a_3,a_4\\}\\) and put \\(\\mu=(a_1,a_3,b)\\).\nNormality gives\n\\(\\mu^{-1}\\delta\\mu\\delta=(a_1,a_3,b)\\in N\\).\nEvery possible nonidentity cycle structure has now been covered. Thus \\(N\\) contains a \\(3\\)-cycle. \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#theorem-10.2.4",
+    "href": "classes/25/slides.html#theorem-10.2.4",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Theorem 10.2.4",
+    "text": "Theorem 10.2.4\nThe alternating group, \\(A_n\\), is simple for \\(n\\geq 5\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#proof-of-10.2.4",
+    "href": "classes/25/slides.html#proof-of-10.2.4",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Proof of 10.2.4",
+    "text": "Proof of 10.2.4\nLet \\(N\\) be a nontrivial normal subgroup of \\(A_n\\), where \\(n\\geq 5\\).\nBy Lemma 10.2.3, \\(N\\) contains a \\(3\\)-cycle.\nBy Lemma 10.2.2, \\(N=A_n\\).\nTherefore, the only normal subgroups of \\(A_n\\) are \\(\\{\\mathrm{id}\\}\\) and \\(A_n\\).\nHence \\(A_n\\) is simple. \\(\\square\\)",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#what-about-small-n",
+    "href": "classes/25/slides.html#what-about-small-n",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "what about small n?",
+    "text": "what about small n?\nFor \\(n=2\\) the only even transposition is the identity, so \\(A_2=\\{\\mathrm{id}\\}\\) is simple.\nFor \\(n=3\\), the group \\(A_3\\) has order \\(3\\), so it is cyclic and hence simple.\nFor \\(n=4\\), the group \\(A_4\\), \\(K_4=\\{e,(12)(34),(13)(24),(14)(23)\\}\\) and \\(K_4\\triangleleft A_4\\), so \\(A_4\\) is not simple.\nSo \\(A_4\\) is the only non-simple alternating group.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#recall-mathbbz_p",
+    "href": "classes/25/slides.html#recall-mathbbz_p",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Recall: \\(\\mathbb{Z}_p\\)",
+    "text": "Recall: \\(\\mathbb{Z}_p\\)\nLet \\(p\\) be prime.\nIf \\(H\\) is a subgroup of \\(\\mathbb{Z}_p\\), Lagrange’s Theorem gives \\(|H|\\mid p\\).\nTherefore, \\(|H|=1\\) or \\(|H|=p\\), so\n\\(H=\\{0\\}\\) or \\(H=\\mathbb{Z}_p\\).\nConsequently, \\(\\mathbb{Z}_p\\) is simple.\nMore generally: A finite cyclic group is simple if and only if its order is prime.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#classification-theorem-for-finite-simple-groups",
+    "href": "classes/25/slides.html#classification-theorem-for-finite-simple-groups",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Classification Theorem for Finite Simple Groups",
+    "text": "Classification Theorem for Finite Simple Groups\nEvery finite simple group is isomorphic to one of the following:\n\nA cyclic group \\(\\mathbb{Z}_p\\), where \\(p\\) is prime.\nAn alternating group \\(A_n\\), where \\(n\\geq 5\\).\nA finite simple group of Lie type.\nOne of the \\(26\\) sporadic simple groups.\n\nThe theorem gives a complete list, up to isomorphism.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#all-known-simple-groups",
+    "href": "classes/25/slides.html#all-known-simple-groups",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "All Known Simple Groups",
+    "text": "All Known Simple Groups",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
     ]
   },
   {
