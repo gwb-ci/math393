@@ -431,7 +431,18 @@
     "href": "classes/24/slides.html#more-notes-on-multiplication",
     "title": "Slides: Rings",
     "section": "More notes on multiplication",
-    "text": "More notes on multiplication\n\nIf multiplication is commutative, \\(ab=ba\\) for all \\(a\\) and \\(b\\) the ring is a commutative ring.\nIf the ring has an idenity \\(1\\) where \\(1\\cdot a = a= a\\cdot 1\\) the ring is a ring with identity.\nIf an element \\(a\\) has an inverse \\(a \\cot a^{-1}=a \\cot a^{-1}\\) then \\(a\\) is a unit.\nIf the product of two non-zero elements is zero \\(a\\cdot c =0\\) they are zero-divisors.\nIf every non-zero element has an inverse, then the ring is a division ring\nIf every non-zero element has an inverse and multiplication is communatitve, then the ring is a field",
+    "text": "More notes on multiplication\n\nIf multiplication is commutative, \\(ab=ba\\) for all \\(a\\) and \\(b\\) the ring is a commutative ring.\nIf the ring has an idenity \\(1\\) where \\(1\\cdot a = a= a\\cdot 1\\) the ring is a ring with identity.\nIf an element \\(a\\) has an inverse \\(a \\cot a^{-1}=a \\cot a^{-1}\\) then \\(a\\) is a unit.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#even-more-notes-on-multiplication",
+    "href": "classes/24/slides.html#even-more-notes-on-multiplication",
+    "title": "Slides: Rings",
+    "section": "Even more notes on multiplication",
+    "text": "Even more notes on multiplication\n\nIf the product of two non-zero elements is zero \\(a\\cdot c =0\\) they are zero-divisors.\nIf every non-zero element has an inverse, then the ring is a division ring\nIf every non-zero element has an inverse and multiplication is communatitve, then the ring is a field",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -607,7 +618,7 @@
     "href": "classes/24/slides.html#multiplicative-inverses-in-mathbb-h",
     "title": "Slides: Rings",
     "section": "Multiplicative Inverses in \\(\\mathbb H\\)",
-    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.",
+    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.\nQuestion: is \\(\\{a+b\\mathbf i\\}\\) as subring of \\(\\mathbb H\\)?",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -618,7 +629,7 @@
     "href": "classes/24/slides.html#examples-to-keep-in-mind",
     "title": "Slides: Rings",
     "section": "Examples to keep in mind",
-    "text": "Examples to keep in mind\n\nCommuntative Ring with Identity: \\(\\mathbb Z\\)\nField:\\(\\mathbb Q\\), \\(\\mathbb R\\), \\(\\mathbb C\\)\nNon-Commutative Ring with Identity: \\(M_(R)\\)\nNon-communative Division Ring: Quarterions",
+    "text": "Examples to keep in mind\n\nCommuntative Ring with Identity: \\(\\mathbb Z\\)\nField:\\(\\mathbb Q\\), \\(\\mathbb R\\), \\(\\mathbb C\\)\nNon-Commutative Ring with Identity: \\(M_n(\\mathbb R)\\)\nNon-communative Division Ring: Quarterions",
     "crumbs": [
       "Class Material",
       "Slides: Rings"

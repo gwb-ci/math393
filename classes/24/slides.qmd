@@ -74,6 +74,11 @@ The first four conditions imply that $(R,+)$ is an abelian group.
 - If multiplication is commutative, $ab=ba$ for all $a$ and $b$ the ring is a **commutative ring**.
 - If the ring has an idenity $1$ where $1\cdot a = a= a\cdot 1$ the ring is a **ring with identity**.
 - If an element $a$ has an inverse $a \cot a^{-1}=a \cot a^{-1}$ then $a$ is a **unit**.
+
+---
+
+## Even more notes on multiplication
+
 - If the product of two non-zero elements is zero $a\cdot c =0$ they are **zero-divisors**.
 - If every non-zero element has an inverse, then the ring is a **division ring**
 - If every non-zero element has an inverse and multiplication is communatitve, then the ring is a **field**
@@ -279,7 +284,7 @@ $$
 
 Hence $\mathbb H$ is a **noncommutative division ring**.
 
-
+**Question**: is $\{a+b\mathbf i\}$ as subring of $\mathbb H$?
 
 ---
 
@@ -287,6 +292,6 @@ Hence $\mathbb H$ is a **noncommutative division ring**.
 
 - Communtative Ring with Identity: $\mathbb Z$
 - Field:$\mathbb Q$, $\mathbb R$, $\mathbb C$
-- Non-Commutative Ring with Identity: $M_(R)$
+- Non-Commutative Ring with Identity: $M_n(\mathbb R)$
 - Non-communative Division Ring: Quarterions
 
