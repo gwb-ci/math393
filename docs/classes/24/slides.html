@@ -167,7 +167,7 @@
 </section>
 <section id="definitin-of-a-ring" class="slide level2">
 <h2>Definitin of a Ring</h2>
-<p>A nonempty set <span class="math inline">\(R\)</span> is a <strong>ring</strong> if it has two closed binary operations, addition and multiplication, satisfying the following conditions.</p>
+<p>A nonempty set <span class="math inline">\(R\)</span> is a <strong>ring</strong> if it has two closed binary operations, addition and multiplication, satisfying:</p>
 <ol type="1">
 <li><span class="math inline">\(a+b=b+a\)</span> for <span class="math inline">\(a,b\in R\)</span>.</li>
 <li><span class="math inline">\((a+b)+c=a+(b+c)\)</span> for <span class="math inline">\(a,b,c\in R\)</span>.</li>
@@ -177,10 +177,9 @@
 <li>For <span class="math inline">\(a,b,c\in R\)</span>, <span class="math inline">\(a(b+c)=ab+ac\)</span> and <span class="math inline">\((a+b)c=ac+bc\)</span>.</li>
 </ol>
 </section>
-<section id="keeping-track-of-things-in-rings" class="slide level2">
-<h2>Keeping track of things in rings</h2>
-<p>Not only are the two operations but there can be many flavors or rings.</p>
-<p>Many times the hard part of ring theory is keeping track of which properties a given ring has. Each property it has is a tool we can use for computations.</p>
+<section id="notes-on-addition" class="slide level2">
+<h2>Notes on addition</h2>
+<p>The first four conditions imply that <span class="math inline">\((R,+)\)</span> is an abelian group.</p>
 </section>
 <section id="notes-on-multiplication" class="slide level2">
 <h2>Notes on multiplication</h2>
@@ -196,10 +195,26 @@
 <h2>More notes on multiplication</h2>
 <ul>
 <li>If multiplication is commutative, <span class="math inline">\(ab=ba\)</span> for all <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> the ring is a <strong>commutative ring</strong>.</li>
-<li>If the ring has an idenity <span class="math inline">\(1\)</span> where <span class="math inline">\(1\cdot a = a= a\cdot 1\)</span> the ring is a <strong>ring with idenity</strong>.</li>
+<li>If the ring has an idenity <span class="math inline">\(1\)</span> where <span class="math inline">\(1\cdot a = a= a\cdot 1\)</span> the ring is a <strong>ring with identity</strong>.</li>
 <li>If an element <span class="math inline">\(a\)</span> has an inverse <span class="math inline">\(a \cot a^{-1}=a \cot a^{-1}\)</span> then <span class="math inline">\(a\)</span> is a <strong>unit</strong>.</li>
 <li>If the product of two non-zero elements is zero <span class="math inline">\(a\cdot c =0\)</span> they are <strong>zero-divisors</strong>.</li>
 <li>If every non-zero element has an inverse, then the ring is a <strong>division ring</strong></li>
+<li>If every non-zero element has an inverse and multiplication is communatitve, then the ring is a <strong>field</strong></li>
+</ul>
+</section>
+<section id="keeping-track-of-things-in-rings" class="slide level2">
+<h2>Keeping track of things in rings</h2>
+<p>Not only are the two operations but there can be many flavors or rings.</p>
+<p>Many times the hard part of ring theory is keeping track of which properties a given ring has. Each property it has is a tool we can use for computations.</p>
+</section>
+<section id="motivating-examples-of-commutative-rings-and-fields" class="slide level2">
+<h2>Motivating Examples of commutative rings and fields</h2>
+<ul>
+<li><span class="math inline">\(\mathbb Z\)</span> is a commutative ring with identity <span class="math inline">\(1\)</span>.</li>
+<li>If <span class="math inline">\(ab=0\)</span> for integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, then <span class="math inline">\(a=0\)</span> or <span class="math inline">\(b=0\)</span>.</li>
+<li>The only units in <span class="math inline">\(\mathbb Z\)</span> are <span class="math inline">\(1\)</span> and <span class="math inline">\(-1\)</span>.</li>
+<li><span class="math inline">\(\mathbb Z\)</span> is not a field: <span class="math inline">\(2\)</span> has no multiplicative inverse in <span class="math inline">\(\mathbb Z\)</span>.</li>
+<li><span class="math inline">\(\mathbb Q\)</span>, <span class="math inline">\(\mathbb R\)</span>, and <span class="math inline">\(\mathbb C\)</span> are fields under ordinary addition and multiplication.</li>
 </ul>
 </section>
 <section id="example-of-non-commutative-ring-with-zero-divisors" class="slide level2">
@@ -219,8 +234,6 @@
 <li><span class="math inline">\((na)(nb)=n(nab)\in n\mathbb Z\)</span>.</li>
 <li>Associativity, commutativity of addition, and distributivity are inherited from <span class="math inline">\(\mathbb Z\)</span>.</li>
 </ul>
-<p>An identity <span class="math inline">\(e\in n\mathbb Z\)</span> would satisfy <span class="math inline">\(en=n\)</span>, forcing <span class="math inline">\(e=1\notin n\mathbb Z\)</span>.</p>
-<p>Thus <span class="math inline">\(2\mathbb Z\)</span>, <span class="math inline">\(3\mathbb Z\)</span>, and <span class="math inline">\(7\mathbb Z\)</span> are subrings without identities.</p>
 </section>
 <section id="example-of-ring-with-some-units" class="slide level2">
 <h2>Example of Ring with some units</h2>
@@ -228,35 +241,11 @@
 <p><span class="math inline">\(U(20)=\{1,3,7,9,11,13,17,19\}\)</span></p>
 <p>The other elements are zero divisors. For example <span class="math inline">\(2 \cdot 10 =0\)</span></p>
 </section>
-<section id="some-types-of-rings" class="slide level2">
-<h2>Some Types of Rings</h2>
-<ul>
-<li><strong>Ring with unity or identity:</strong> There is an element <span class="math inline">\(1\in R\)</span> such that <span class="math inline">\(1\neq 0\)</span> and <span class="math inline">\(1a=a1=a\)</span> for each element <span class="math inline">\(a\in R\)</span>.</li>
-<li><strong>Commutative ring:</strong> <span class="math inline">\(ab=ba\)</span> for all <span class="math inline">\(a,b\)</span> in <span class="math inline">\(R\)</span>.</li>
-<li><strong>Division ring:</strong> A ring with an identity in which every nonzero element is a unit.</li>
-<li><strong>Field:</strong> A commutative division ring.</li>
-</ul>
-</section>
-<section id="ur-examples-of-commutative-rings-and-fields" class="slide level2">
-<h2>Ur-Examples of commutative rings and fields</h2>
-<ul>
-<li><span class="math inline">\(\mathbb Z\)</span> is a commutative ring with identity <span class="math inline">\(1\)</span>.</li>
-<li>If <span class="math inline">\(ab=0\)</span> for integers <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>, then <span class="math inline">\(a=0\)</span> or <span class="math inline">\(b=0\)</span>.</li>
-<li>The only units in <span class="math inline">\(\mathbb Z\)</span> are <span class="math inline">\(1\)</span> and <span class="math inline">\(-1\)</span>.</li>
-<li><span class="math inline">\(\mathbb Z\)</span> is not a field: <span class="math inline">\(2\)</span> has no multiplicative inverse in <span class="math inline">\(\mathbb Z\)</span>.</li>
-<li><span class="math inline">\(\mathbb Q\)</span>, <span class="math inline">\(\mathbb R\)</span>, and <span class="math inline">\(\mathbb C\)</span> are fields under ordinary addition and multiplication.</li>
-</ul>
-</section>
 <section id="zero-divisors-integral-domains-and-cancellation-law" class="slide level2">
 <h2>Zero Divisors, Integral Domains, and Cancellation Law</h2>
 <p>A nonzero element <span class="math inline">\(a\)</span> in a commutative ring <span class="math inline">\(R\)</span> is called a <strong>zero divisor</strong> if there is a nonzero element <span class="math inline">\(b\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\(ab=0\)</span>.</p>
 <p>A commutative ring <span class="math inline">\(R\)</span> with identity is called an <strong>integral domain</strong> if, for every <span class="math inline">\(a,b\in R\)</span> such that <span class="math inline">\(ab=0\)</span>, either <span class="math inline">\(a=0\)</span> or <span class="math inline">\(b=0\)</span>.</p>
-<ul>
-<li><span class="math inline">\(\mathbb Z\)</span> is an integral domain.</li>
-<li><span class="math inline">\(\mathbb Z_{20}\)</span> is not an integral domain: <span class="math inline">\(3\cdot4=0\)</span>.</li>
-<li>An integral domain has no zero divisors.</li>
-</ul>
-<p>If <span class="math inline">\(ac=bc\)</span> and <span class="math inline">\(c\neq0\)</span> in an integral domain, must <span class="math inline">\(a=b\)</span>?</p>
+<p><strong>Integral Domains have the cancellation law.</strong></p>
 </section>
 <section id="proposition-16.1.8" class="slide level2">
 <h2>Proposition 16.1.8</h2>
@@ -319,7 +308,6 @@
 <li>Add by combining corresponding coefficients.</li>
 <li>Multiply by distributing and using the relationships between <span class="math inline">\(\mathbf i\)</span>, <span class="math inline">\(\mathbf j\)</span>, and <span class="math inline">\(\mathbf k\)</span>.</li>
 </ul>
-<p><strong>Try it:</strong> Compute <span class="math inline">\((1+2\mathbf i-\mathbf j)+(3-\mathbf i+2\mathbf k)\)</span>.</p>
 </section>
 <section id="quaternion-multiplication" class="slide level2">
 <h2>Quaternion Multiplication</h2>
@@ -333,7 +321,6 @@
 <li><span class="math inline">\(\mathbf k\mathbf j=-\mathbf i\)</span>.</li>
 <li><span class="math inline">\(\mathbf i\mathbf k=-\mathbf j\)</span>.</li>
 </ul>
-<p><strong>Try it:</strong> Compute <span class="math inline">\((1+\mathbf i)(1+\mathbf j)\)</span>.</p>
 </section>
 <section id="quaternions-are-noncommutative" class="slide level2">
 <h2>Quaternions Are Noncommutative</h2>
@@ -343,12 +330,6 @@
 <li><span class="math inline">\(\mathbf j\mathbf i=-\mathbf k\)</span>.</li>
 </ul>
 <p>Therefore, multiplication in <span class="math inline">\(\mathbb H\)</span> is not commutative.</p>
-<p><strong>Try it:</strong> Expand and compare:</p>
-<ul>
-<li><span class="math inline">\((1+\mathbf i)(1+\mathbf j)\)</span>.</li>
-<li><span class="math inline">\((1+\mathbf j)(1+\mathbf i)\)</span>.</li>
-</ul>
-<p><strong>Discuss:</strong> Can <span class="math inline">\(\mathbb H\)</span> be a field?</p>
 </section>
 <section id="multiplicative-inverses-in-mathbb-h" class="slide level2">
 <h2>Multiplicative Inverses in <span class="math inline">\(\mathbb H\)</span></h2>
@@ -364,7 +345,6 @@
 q^{-1}=\frac{a-b\mathbf i-c\mathbf j-d\mathbf k}{a^2+b^2+c^2+d^2}.
 \]</span></p>
 <p>Hence <span class="math inline">\(\mathbb H\)</span> is a <strong>noncommutative division ring</strong>.</p>
-<p><strong>Try it:</strong> Find <span class="math inline">\((1+\mathbf i)^{-1}\)</span>.</p>
 </section>
 <section id="examples-to-keep-in-mind" class="slide level2">
 <h2>Examples to keep in mind</h2>

@@ -398,18 +398,18 @@
     "href": "classes/24/slides.html#definitin-of-a-ring",
     "title": "Slides: Rings",
     "section": "Definitin of a Ring",
-    "text": "Definitin of a Ring\nA nonempty set \\(R\\) is a ring if it has two closed binary operations, addition and multiplication, satisfying the following conditions.\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
+    "text": "Definitin of a Ring\nA nonempty set \\(R\\) is a ring if it has two closed binary operations, addition and multiplication, satisfying:\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
     ]
   },
   {
-    "objectID": "classes/24/slides.html#keeping-track-of-things-in-rings",
-    "href": "classes/24/slides.html#keeping-track-of-things-in-rings",
+    "objectID": "classes/24/slides.html#notes-on-addition",
+    "href": "classes/24/slides.html#notes-on-addition",
     "title": "Slides: Rings",
-    "section": "Keeping track of things in rings",
-    "text": "Keeping track of things in rings\nNot only are the two operations but there can be many flavors or rings.\nMany times the hard part of ring theory is keeping track of which properties a given ring has. Each property it has is a tool we can use for computations.",
+    "section": "Notes on addition",
+    "text": "Notes on addition\nThe first four conditions imply that \\((R,+)\\) is an abelian group.",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -431,7 +431,29 @@
     "href": "classes/24/slides.html#more-notes-on-multiplication",
     "title": "Slides: Rings",
     "section": "More notes on multiplication",
-    "text": "More notes on multiplication\n\nIf multiplication is commutative, \\(ab=ba\\) for all \\(a\\) and \\(b\\) the ring is a commutative ring.\nIf the ring has an idenity \\(1\\) where \\(1\\cdot a = a= a\\cdot 1\\) the ring is a ring with idenity.\nIf an element \\(a\\) has an inverse \\(a \\cot a^{-1}=a \\cot a^{-1}\\) then \\(a\\) is a unit.\nIf the product of two non-zero elements is zero \\(a\\cdot c =0\\) they are zero-divisors.\nIf every non-zero element has an inverse, then the ring is a division ring",
+    "text": "More notes on multiplication\n\nIf multiplication is commutative, \\(ab=ba\\) for all \\(a\\) and \\(b\\) the ring is a commutative ring.\nIf the ring has an idenity \\(1\\) where \\(1\\cdot a = a= a\\cdot 1\\) the ring is a ring with identity.\nIf an element \\(a\\) has an inverse \\(a \\cot a^{-1}=a \\cot a^{-1}\\) then \\(a\\) is a unit.\nIf the product of two non-zero elements is zero \\(a\\cdot c =0\\) they are zero-divisors.\nIf every non-zero element has an inverse, then the ring is a division ring\nIf every non-zero element has an inverse and multiplication is communatitve, then the ring is a field",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#keeping-track-of-things-in-rings",
+    "href": "classes/24/slides.html#keeping-track-of-things-in-rings",
+    "title": "Slides: Rings",
+    "section": "Keeping track of things in rings",
+    "text": "Keeping track of things in rings\nNot only are the two operations but there can be many flavors or rings.\nMany times the hard part of ring theory is keeping track of which properties a given ring has. Each property it has is a tool we can use for computations.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Rings"
+    ]
+  },
+  {
+    "objectID": "classes/24/slides.html#motivating-examples-of-commutative-rings-and-fields",
+    "href": "classes/24/slides.html#motivating-examples-of-commutative-rings-and-fields",
+    "title": "Slides: Rings",
+    "section": "Motivating Examples of commutative rings and fields",
+    "text": "Motivating Examples of commutative rings and fields\n\n\\(\\mathbb Z\\) is a commutative ring with identity \\(1\\).\nIf \\(ab=0\\) for integers \\(a\\) and \\(b\\), then \\(a=0\\) or \\(b=0\\).\nThe only units in \\(\\mathbb Z\\) are \\(1\\) and \\(-1\\).\n\\(\\mathbb Z\\) is not a field: \\(2\\) has no multiplicative inverse in \\(\\mathbb Z\\).\n\\(\\mathbb Q\\), \\(\\mathbb R\\), and \\(\\mathbb C\\) are fields under ordinary addition and multiplication.",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -453,7 +475,7 @@
     "href": "classes/24/slides.html#examples-of-subrings-with-out-identities",
     "title": "Slides: Rings",
     "section": "Examples of subrings with out identities",
-    "text": "Examples of subrings with out identities\nFor an integer \\(n\\geq2\\), consider \\(n\\mathbb Z\\subseteq\\mathbb Z\\).\n\n\\(na+nb=n(a+b)\\in n\\mathbb Z\\).\n\\(-(na)=n(-a)\\in n\\mathbb Z\\).\n\\((na)(nb)=n(nab)\\in n\\mathbb Z\\).\nAssociativity, commutativity of addition, and distributivity are inherited from \\(\\mathbb Z\\).\n\nAn identity \\(e\\in n\\mathbb Z\\) would satisfy \\(en=n\\), forcing \\(e=1\\notin n\\mathbb Z\\).\nThus \\(2\\mathbb Z\\), \\(3\\mathbb Z\\), and \\(7\\mathbb Z\\) are subrings without identities.",
+    "text": "Examples of subrings with out identities\nFor an integer \\(n\\geq2\\), consider \\(n\\mathbb Z\\subseteq\\mathbb Z\\).\n\n\\(na+nb=n(a+b)\\in n\\mathbb Z\\).\n\\(-(na)=n(-a)\\in n\\mathbb Z\\).\n\\((na)(nb)=n(nab)\\in n\\mathbb Z\\).\nAssociativity, commutativity of addition, and distributivity are inherited from \\(\\mathbb Z\\).",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -471,33 +493,11 @@
     ]
   },
   {
-    "objectID": "classes/24/slides.html#some-types-of-rings",
-    "href": "classes/24/slides.html#some-types-of-rings",
-    "title": "Slides: Rings",
-    "section": "Some Types of Rings",
-    "text": "Some Types of Rings\n\nRing with unity or identity: There is an element \\(1\\in R\\) such that \\(1\\neq 0\\) and \\(1a=a1=a\\) for each element \\(a\\in R\\).\nCommutative ring: \\(ab=ba\\) for all \\(a,b\\) in \\(R\\).\nDivision ring: A ring with an identity in which every nonzero element is a unit.\nField: A commutative division ring.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Rings"
-    ]
-  },
-  {
-    "objectID": "classes/24/slides.html#ur-examples-of-commutative-rings-and-fields",
-    "href": "classes/24/slides.html#ur-examples-of-commutative-rings-and-fields",
-    "title": "Slides: Rings",
-    "section": "Ur-Examples of commutative rings and fields",
-    "text": "Ur-Examples of commutative rings and fields\n\n\\(\\mathbb Z\\) is a commutative ring with identity \\(1\\).\nIf \\(ab=0\\) for integers \\(a\\) and \\(b\\), then \\(a=0\\) or \\(b=0\\).\nThe only units in \\(\\mathbb Z\\) are \\(1\\) and \\(-1\\).\n\\(\\mathbb Z\\) is not a field: \\(2\\) has no multiplicative inverse in \\(\\mathbb Z\\).\n\\(\\mathbb Q\\), \\(\\mathbb R\\), and \\(\\mathbb C\\) are fields under ordinary addition and multiplication.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Rings"
-    ]
-  },
-  {
     "objectID": "classes/24/slides.html#zero-divisors-integral-domains-and-cancellation-law",
     "href": "classes/24/slides.html#zero-divisors-integral-domains-and-cancellation-law",
     "title": "Slides: Rings",
     "section": "Zero Divisors, Integral Domains, and Cancellation Law",
-    "text": "Zero Divisors, Integral Domains, and Cancellation Law\nA nonzero element \\(a\\) in a commutative ring \\(R\\) is called a zero divisor if there is a nonzero element \\(b\\) in \\(R\\) such that \\(ab=0\\).\nA commutative ring \\(R\\) with identity is called an integral domain if, for every \\(a,b\\in R\\) such that \\(ab=0\\), either \\(a=0\\) or \\(b=0\\).\n\n\\(\\mathbb Z\\) is an integral domain.\n\\(\\mathbb Z_{20}\\) is not an integral domain: \\(3\\cdot4=0\\).\nAn integral domain has no zero divisors.\n\nIf \\(ac=bc\\) and \\(c\\neq0\\) in an integral domain, must \\(a=b\\)?",
+    "text": "Zero Divisors, Integral Domains, and Cancellation Law\nA nonzero element \\(a\\) in a commutative ring \\(R\\) is called a zero divisor if there is a nonzero element \\(b\\) in \\(R\\) such that \\(ab=0\\).\nA commutative ring \\(R\\) with identity is called an integral domain if, for every \\(a,b\\in R\\) such that \\(ab=0\\), either \\(a=0\\) or \\(b=0\\).\nIntegral Domains have the cancellation law.",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -574,7 +574,7 @@
     "href": "classes/24/slides.html#quaternions",
     "title": "Slides: Rings",
     "section": "Quaternions",
-    "text": "Quaternions\nLet \\(\\mathbb H\\) consist of elements of the form \\(a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\), where \\(a,b,c,d\\) are real numbers.\nThe ring \\(\\mathbb H\\) is called the ring of quaternions.\n\nAdd by combining corresponding coefficients.\nMultiply by distributing and using the relationships between \\(\\mathbf i\\), \\(\\mathbf j\\), and \\(\\mathbf k\\).\n\nTry it: Compute \\((1+2\\mathbf i-\\mathbf j)+(3-\\mathbf i+2\\mathbf k)\\).",
+    "text": "Quaternions\nLet \\(\\mathbb H\\) consist of elements of the form \\(a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\), where \\(a,b,c,d\\) are real numbers.\nThe ring \\(\\mathbb H\\) is called the ring of quaternions.\n\nAdd by combining corresponding coefficients.\nMultiply by distributing and using the relationships between \\(\\mathbf i\\), \\(\\mathbf j\\), and \\(\\mathbf k\\).",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -585,7 +585,7 @@
     "href": "classes/24/slides.html#quaternion-multiplication",
     "title": "Slides: Rings",
     "section": "Quaternion Multiplication",
-    "text": "Quaternion Multiplication\nThe generators satisfy the following relations:\n\n\\(\\mathbf i^2=\\mathbf j^2=\\mathbf k^2=-1\\).\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf k=\\mathbf i\\).\n\\(\\mathbf k\\mathbf i=\\mathbf j\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\\(\\mathbf k\\mathbf j=-\\mathbf i\\).\n\\(\\mathbf i\\mathbf k=-\\mathbf j\\).\n\nTry it: Compute \\((1+\\mathbf i)(1+\\mathbf j)\\).",
+    "text": "Quaternion Multiplication\nThe generators satisfy the following relations:\n\n\\(\\mathbf i^2=\\mathbf j^2=\\mathbf k^2=-1\\).\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf k=\\mathbf i\\).\n\\(\\mathbf k\\mathbf i=\\mathbf j\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\\(\\mathbf k\\mathbf j=-\\mathbf i\\).\n\\(\\mathbf i\\mathbf k=-\\mathbf j\\).",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -596,7 +596,7 @@
     "href": "classes/24/slides.html#quaternions-are-noncommutative",
     "title": "Slides: Rings",
     "section": "Quaternions Are Noncommutative",
-    "text": "Quaternions Are Noncommutative\nCompare the products:\n\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\nTherefore, multiplication in \\(\\mathbb H\\) is not commutative.\nTry it: Expand and compare:\n\n\\((1+\\mathbf i)(1+\\mathbf j)\\).\n\\((1+\\mathbf j)(1+\\mathbf i)\\).\n\nDiscuss: Can \\(\\mathbb H\\) be a field?",
+    "text": "Quaternions Are Noncommutative\nCompare the products:\n\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\nTherefore, multiplication in \\(\\mathbb H\\) is not commutative.",
     "crumbs": [
       "Class Material",
       "Slides: Rings"
@@ -607,7 +607,7 @@
     "href": "classes/24/slides.html#multiplicative-inverses-in-mathbb-h",
     "title": "Slides: Rings",
     "section": "Multiplicative Inverses in \\(\\mathbb H\\)",
-    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.\nTry it: Find \\((1+\\mathbf i)^{-1}\\).",
+    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.",
     "crumbs": [
       "Class Material",
       "Slides: Rings"

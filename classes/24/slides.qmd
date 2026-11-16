@@ -41,7 +41,7 @@ We have many examples of objects with both addtion and multiplication operations
 
 ## Definitin of a Ring
 
-A nonempty set $R$ is a **ring** if it has two closed binary operations, addition and multiplication, satisfying the following conditions.
+A nonempty set $R$ is a **ring** if it has two closed binary operations, addition and multiplication, satisfying: 
 
 1. $a+b=b+a$ for $a,b\in R$.
 2. $(a+b)+c=a+(b+c)$ for $a,b,c\in R$.
@@ -52,14 +52,13 @@ A nonempty set $R$ is a **ring** if it has two closed binary operations, additio
 
 ---
 
-## Keeping track of things in rings
 
-Not only are the two operations but there can be many flavors or rings.
+## Notes on addition
 
-Many times the hard part of ring theory is keeping track of which properties a given ring has.  Each property it has is a tool we can use for computations.
-
+The first four conditions imply that $(R,+)$ is an abelian group.
 
 ---
+
 
 ## Notes on multiplication
 
@@ -73,10 +72,35 @@ Many times the hard part of ring theory is keeping track of which properties a g
 ## More notes on multiplication
 
 - If multiplication is commutative, $ab=ba$ for all $a$ and $b$ the ring is a **commutative ring**.
-- If the ring has an idenity $1$ where $1\cdot a = a= a\cdot 1$ the ring is a **ring with idenity**.
+- If the ring has an idenity $1$ where $1\cdot a = a= a\cdot 1$ the ring is a **ring with identity**.
 - If an element $a$ has an inverse $a \cot a^{-1}=a \cot a^{-1}$ then $a$ is a **unit**.
 - If the product of two non-zero elements is zero $a\cdot c =0$ they are **zero-divisors**.
 - If every non-zero element has an inverse, then the ring is a **division ring**
+- If every non-zero element has an inverse and multiplication is communatitve, then the ring is a **field**
+
+---
+
+## Keeping track of things in rings
+
+Not only are the two operations but there can be many flavors or rings.
+
+Many times the hard part of ring theory is keeping track of which properties a given ring has.  Each property it has is a tool we can use for computations.
+
+
+---
+
+## Motivating Examples of commutative rings and fields
+
+
+- $\mathbb Z$ is a commutative ring with identity $1$.
+- If $ab=0$ for integers $a$ and $b$, then $a=0$ or $b=0$.
+- The only units in $\mathbb Z$ are $1$ and $-1$.
+- $\mathbb Z$ is not a field: $2$ has no multiplicative inverse in $\mathbb Z$.
+- $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields under ordinary addition and multiplication.
+
+
+
+---
 
 
 ## Example of non-commutative ring with zero divisors
@@ -97,9 +121,6 @@ For an integer $n\geq2$, consider $n\mathbb Z\subseteq\mathbb Z$.
 - $(na)(nb)=n(nab)\in n\mathbb Z$.
 - Associativity, commutativity of addition, and distributivity are inherited from $\mathbb Z$.
 
-An identity $e\in n\mathbb Z$ would satisfy $en=n$, forcing $e=1\notin n\mathbb Z$.
-
-Thus $2\mathbb Z$, $3\mathbb Z$, and $7\mathbb Z$ are subrings without identities.
 
 ---
 
@@ -116,27 +137,6 @@ The other elements are zero divisors.  For example $2 \cdot 10 =0$
 
 ---
 
-## Some Types of Rings
-
-- **Ring with unity or identity:** There is an element $1\in R$ such that $1\neq 0$ and $1a=a1=a$ for each element $a\in R$.
-- **Commutative ring:** $ab=ba$ for all $a,b$ in $R$.
-- **Division ring:** A ring with an identity in which every nonzero element is a unit.
-- **Field:** A commutative division ring.
-
----
-
-## Ur-Examples of commutative rings and fields
-
-
-- $\mathbb Z$ is a commutative ring with identity $1$.
-- If $ab=0$ for integers $a$ and $b$, then $a=0$ or $b=0$.
-- The only units in $\mathbb Z$ are $1$ and $-1$.
-- $\mathbb Z$ is not a field: $2$ has no multiplicative inverse in $\mathbb Z$.
-- $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields under ordinary addition and multiplication.
-
-
-
----
 
 
 
@@ -146,11 +146,7 @@ A nonzero element $a$ in a commutative ring $R$ is called a **zero divisor** if 
 
 A commutative ring $R$ with identity is called an **integral domain** if, for every $a,b\in R$ such that $ab=0$, either $a=0$ or $b=0$.
 
-- $\mathbb Z$ is an integral domain.
-- $\mathbb Z_{20}$ is not an integral domain: $3\cdot4=0$.
-- An integral domain has no zero divisors.
-
-If $ac=bc$ and $c\neq0$ in an integral domain,  must $a=b$?
+**Integral Domains have the cancellation law.**
 
 ---
 
@@ -220,6 +216,8 @@ Determine whether each set is a ring under the usual operations. If it is a ring
 1. $\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}$.
 2. $\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}$.
 
+---
+
 
 ## Quaternions
 
@@ -231,8 +229,6 @@ The ring $\mathbb H$ is called the **ring of quaternions**.
 - Add by combining corresponding coefficients.
 - Multiply by distributing and using the relationships between $\mathbf i$, $\mathbf j$, and $\mathbf k$.
 
-**Try it:** Compute
-$(1+2\mathbf i-\mathbf j)+(3-\mathbf i+2\mathbf k)$.
 
 ---
 
@@ -248,7 +244,6 @@ The generators satisfy the following relations:
 - $\mathbf k\mathbf j=-\mathbf i$.
 - $\mathbf i\mathbf k=-\mathbf j$.
 
-**Try it:** Compute $(1+\mathbf i)(1+\mathbf j)$.
 
 ---
 
@@ -261,12 +256,6 @@ Compare the products:
 
 Therefore, multiplication in $\mathbb H$ is not commutative.
 
-**Try it:** Expand and compare:
-
-- $(1+\mathbf i)(1+\mathbf j)$.
-- $(1+\mathbf j)(1+\mathbf i)$.
-
-**Discuss:** Can $\mathbb H$ be a field?
 
 ---
 
@@ -290,7 +279,7 @@ $$
 
 Hence $\mathbb H$ is a **noncommutative division ring**.
 
-**Try it:** Find $(1+\mathbf i)^{-1}$.
+
 
 ---
 
