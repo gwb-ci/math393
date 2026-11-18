@@ -44,8 +44,6 @@ Let $R$ be a ring and $S$ a subset of $R$. Then $S$ is a subring of $R$ if and o
 
 ## Proof of 16.1.10
 
-
-
 - Choose $s\in S$. Why does $s-s$ show that $0\in S$?
 - For $r\in S$, why is $-r\in S$?
 - How does subtraction closure imply addition closure?
@@ -53,95 +51,121 @@ Let $R$ be a ring and $S$ a subset of $R$. Then $S$ is a subring of $R$ if and o
 
 ---
 
+
+
+
+
+
+## $\mathbb Z_p$ 
+
+Let $p$ be a prime and consider the non-zero elements of $\mathbb Z_p$, $\{1,2, \ldots, p-1\}$.
+
+__Zero divisors?__
+If we have the product of two non-zero elements $a\cdot b=0$. Then $p$ divides $a\cdot b$, which means that $p$ divides either $a$ or $b$, but $p\ge a$ and $p\ge b$ so this is not possible.  **So $Z_p$ has no zero divisors.**
+
+This is not true for $\mathbb Z_n$ is $n$ is not prime.
+
+
+---
+
+## $\mathbb Z_p$ 
+
+Let $p$ be a prime and consider the non-zero elements of $\mathbb Z_p$, $\{1,2, \ldots, p-1\}$.
+
+__Units?__
+We also showed that the $U(p)$ a cyclic group and any element other that 1 generates the group.  This means that every nonzero element has an inverse under mulitplication.  **So $Z_p$ is a field.**
+
+
+---
+
+##  Example: $\mathbb{Z}_2$
+
+The elements of $\mathbb{Z}_2$ are $[0]$ and $[1]$. Compute modulo $2$.
+
+::: {.columns}
+
+::: {.column width="50%"}
+| $+$ | $[0]$ | $[1]$ |
+|:---:|:---:|:---:|
+| $[0]$ | $[0]$ | $[1]$ |
+| $[1]$ | $[1]$ | $[0]$ |
+:::
+
+::: {.column width="50%"}
+| $\cdot$ | $[0]$ | $[1]$ |
+|:---:|:---:|:---:|
+| $[0]$ | $[0]$ | $[0]$ |
+| $[1]$ | $[0]$ | $[1]$ |
+:::
+
+:::
+
+Note that $2a=0$ for all $a \in \mathbb{Z}_2$.
+
+---
+
+##  Example: $\mathbb{Z}_3$
+
+The elements of $\mathbb{Z}_3$ are $[0]$, $[1]$, and $[2]$. Compute modulo $3$.
+
+::: {.columns}
+
+::: {.column width="50%"}
+| $+$ | $[0]$ | $[1]$ | $[2]$ |
+|:---:|:---:|:---:|:---:|
+| $[0]$ | $[0]$ | $[1]$ | $[2]$ |
+| $[1]$ | $[1]$ | $[2]$ | $[0]$ |
+| $[2]$ | $[2]$ | $[0]$ | $[1]$ |
+:::
+
+::: {.column width="50%"}
+| $\cdot$ | $[0]$ | $[1]$ | $[2]$ |
+|:---:|:---:|:---:|:---:|
+| $[0]$ | $[0]$ | $[0]$ | $[0]$ |
+| $[1]$ | $[0]$ | $[1]$ | $[2]$ |
+| $[2]$ | $[0]$ | $[2]$ | $[1]$ |
+:::
+
+:::
+
+For every $a \in \mathbb{Z}_3$, $3a=0$.
+
+---
+
+
+## Example: A Finite Set of Matrices
+
+Consider the following matrices over $\mathbb Z_2$:
+
+$$
+F=\left\{
+\begin{pmatrix}1&0\\0&1\end{pmatrix},
+\begin{pmatrix}1&1\\1&0\end{pmatrix},
+\begin{pmatrix}0&1\\1&1\end{pmatrix},
+\begin{pmatrix}0&0\\0&0\end{pmatrix}
+\right\}.
+$$
+
+where matrix addition and multiplication modulo $2$.
+
+---
+
 ## Activity
 
-Determine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.
+For F:
 
-
-1. $\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}$.
-2. $\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}$.
-
----
-
-
-## Quaternions
-
-Let $\mathbb H$ consist of elements of the form
-$a+b\mathbf i+c\mathbf j+d\mathbf k$, where $a,b,c,d$ are real numbers.
-
-The ring $\mathbb H$ is called the **ring of quaternions**.
-
-- Add by combining corresponding coefficients.
-- Multiply by distributing and using the relationships between $\mathbf i$, $\mathbf j$, and $\mathbf k$.
-
+- Is this a subring of $M_2(\mathbb Z_2)$?
+- Create an addtion table for F.
+- Create a multiplication table for F.
+- Are there any zero divisors?
+- What are the units?
+- What type of ring is this?  commutative? with indentity? integral domain? field?
 
 ---
 
-## Quaternion Multiplication
-
-The generators satisfy the following relations:
-
-- $\mathbf i^2=\mathbf j^2=\mathbf k^2=-1$.
-- $\mathbf i\mathbf j=\mathbf k$.
-- $\mathbf j\mathbf k=\mathbf i$.
-- $\mathbf k\mathbf i=\mathbf j$.
-- $\mathbf j\mathbf i=-\mathbf k$.
-- $\mathbf k\mathbf j=-\mathbf i$.
-- $\mathbf i\mathbf k=-\mathbf j$.
 
 
----
-
-## Quaternions Are Noncommutative
-
-Compare the products:
-
-- $\mathbf i\mathbf j=\mathbf k$.
-- $\mathbf j\mathbf i=-\mathbf k$.
-
-Therefore, multiplication in $\mathbb H$ is not commutative.
-
-
----
-
-## Multiplicative Inverses in $\mathbb H$
-
-Notice that
-
-$$
-(a+b\mathbf i+c\mathbf j+d\mathbf k)
-(a-b\mathbf i-c\mathbf j-d\mathbf k)
-=a^2+b^2+c^2+d^2.
-$$
-
-This element can be zero only if $a,b,c,d$ are all zero.
-
-Thus, for $q=a+b\mathbf i+c\mathbf j+d\mathbf k\neq0$,
-
-$$
-q^{-1}=\frac{a-b\mathbf i-c\mathbf j-d\mathbf k}{a^2+b^2+c^2+d^2}.
-$$
-
-Hence $\mathbb H$ is a **noncommutative division ring**.
-
-**Question**: is $\{a+b\mathbf i\}$ as subring of $\mathbb H$?
-
-
----
-
-## Examples of Integral Domains and Fields
-
-- $\mathbb Z$ is an integral domain but not a field.
-- $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields.
-- $\mathbb Z_p$ is a field when $p$ is prime.
-- $\mathbb Z_n$ is not an integral domain when $n$ is composite.
-- The quaternions $\mathbb H$ form a division ring but not a field.
-
-**Question:** Why is $\mathbb Z_6$ not an integral domain?
-
----
-
-## Example 16.12: Gaussian Integers
+## Example: Gaussian Integers
 
 The **Gaussian integers** are
 
@@ -155,7 +179,7 @@ where $i^2=-1$.
 - Addition and multiplication are inherited from $\mathbb C$.
 - The ring is commutative and has identity $1$.
 
-**Question:** Is $\mathbb Z[i]$ an integral domain? Is it a field?
+What kind of ring is $\mathbb Z[i]$? an integral domain? a field?
 
 ---
 
@@ -237,38 +261,78 @@ $$
 
 we must have $a^2+b^2=1$.
 
-The integer solutions are
+The integer solutions are $(a,b)=(\pm1,0),\quad(0,\pm1)$.
 
-$$
-(a,b)=(\pm1,0),\quad(0,\pm1).
-$$
-
-Therefore,
-
-$$
-U(\mathbb Z[i])=\{1,-1,i,-i\}.
-$$
+Therefore, $U(\mathbb Z[i])=\{1,-1,i,-i\}$
 
 The Gaussian integers are an integral domain but **not a field**.
 
+
 ---
 
-## Example 16.13: A Finite Field of Matrices
 
-Consider the following matrices over $\mathbb Z_2$:
+
+
+
+
+## Quaternions
+
+Let $\mathbb H$ consist of elements of the form
+$a+b\mathbf i+c\mathbf j+d\mathbf k$, where $a,b,c,d$ are real numbers.
+
+The ring $\mathbb H$ is called the **ring of quaternions**.
+
+- Add by combining corresponding coefficients.
+- Multiply by distributing and using the relationships between $\mathbf i$, $\mathbf j$, and $\mathbf k$.
+
+
+---
+
+## Quaternion Multiplication
+
+The generators satisfy the following relations:
+
+- $\mathbf i^2=\mathbf j^2=\mathbf k^2=-1$.
+- $\mathbf i\mathbf j=\mathbf k$.
+- $\mathbf j\mathbf k=\mathbf i$.
+- $\mathbf k\mathbf i=\mathbf j$.
+- $\mathbf j\mathbf i=-\mathbf k$.
+- $\mathbf k\mathbf j=-\mathbf i$.
+- $\mathbf i\mathbf k=-\mathbf j$.
+
+Note that this is noncommuntative.
+
+---
+
+
+
+## Multiplicative Inverses in $\mathbb H$
+
+Notice that
 
 $$
-F=\left\{
-\begin{pmatrix}1&0\\0&1\end{pmatrix},
-\begin{pmatrix}1&1\\1&0\end{pmatrix},
-\begin{pmatrix}0&1\\1&1\end{pmatrix},
-\begin{pmatrix}0&0\\0&0\end{pmatrix}
-\right\}.
+(a+b\mathbf i+c\mathbf j+d\mathbf k)
+(a-b\mathbf i-c\mathbf j-d\mathbf k)
+=a^2+b^2+c^2+d^2.
 $$
 
-Under matrix addition and multiplication modulo $2$, this set forms a field.
+This element can be zero only if $a,b,c,d$ are all zero.
 
-**Question:** How can a set of matrices form a field even though matrix multiplication is not generally commutative?
+Thus, for $q=a+b\mathbf i+c\mathbf j+d\mathbf k\neq0$,
+
+$$
+q^{-1}=\frac{a-b\mathbf i-c\mathbf j-d\mathbf k}{a^2+b^2+c^2+d^2}.
+$$
+
+Hence $\mathbb H$ is a **noncommutative division ring**.
+
+
+---
+
+## Subrings of $\mathbb H$
+
+-Is $\{a+b\mathbf i\}$ a subring of $\mathbb H$?
+-Is $\{a+b\mathbf i + c\mathbf j\}$ a subring of $\mathbb H$?
 
 ---
 
@@ -319,6 +383,18 @@ Therefore, $\mathbb Q(\sqrt{2})$ is a **field**.
 
 ---
 
+
+## Examples of Integral Domains and Fields
+
+- $\mathbb Z$ is an integral domain but not a field.
+- $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields.
+- $\mathbb Z_p$ is a field when $p$ is prime.
+- $\mathbb Z_n$ is not an integral domain when $n$ is composite.
+- The quaternions $\mathbb H$ form a division ring but not a field.
+
+
+---
+
 ## Proposition 16.15: Cancellation Law
 
 Let $D$ be a commutative ring with identity.
@@ -331,7 +407,7 @@ $$
 
 This is the **cancellation law**.
 
-**Question:** Why is the assumption $a\neq0$ necessary?
+
 
 ---
 
@@ -341,23 +417,11 @@ Suppose $D$ is an integral domain.
 
 Let $a\neq0$ and suppose $ab=ac$.
 
-Then
+Then $ab-ac=0.$
 
-$$
-ab-ac=0.
-$$
+By the distributive law, $a(b-c)=0.$
 
-By the distributive law,
-
-$$
-a(b-c)=0.
-$$
-
-Since $D$ has no zero divisors and $a\neq0$,
-
-$$
-b-c=0.
-$$
+Since $D$ has no zero divisors and $a\neq0$, $b-c=0.$
 
 Therefore, $b=c$.
 
@@ -369,11 +433,7 @@ Suppose that cancellation holds in $D$.
 
 Let $ab=0$ and suppose $a\neq0$.
 
-Since $a0=0$, we have
-
-$$
-ab=a0.
-$$
+Since $a0=0$, we have $ab=a0.$
 
 By cancellation, $b=0$.
 
@@ -383,33 +443,11 @@ Since $D$ is a commutative ring with identity, it is an integral domain.
 
 ---
 
-## Why Cancellation Can Fail
 
-Consider $\mathbb Z_6$.
 
-We have
 
-$$
-2\cdot1=2
-$$
 
-and
 
-$$
-2\cdot4=8=2\pmod6.
-$$
-
-Thus,
-
-$$
-2\cdot1=2\cdot4,
-$$
-
-but $1\neq4$ in $\mathbb Z_6$.
-
-Cancellation fails because $2$ is a zero divisor.
-
----
 
 ## Theorem 16.16
 
@@ -417,13 +455,15 @@ Cancellation fails because $2$ is a zero divisor.
 
 This tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.
 
-The proof uses a familiar fact about finite sets:
 
-**An injective function from a finite set to itself must also be surjective.**
+
+
 
 ---
 
 ## Proof of Theorem 16.16
+
+The proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.
 
 Let $D$ be a finite integral domain, and let
 
@@ -692,12 +732,14 @@ Determine whether each statement is true or false. Justify your answers.
 
 ---
 
-## Important Results to Remember
 
-- A commutative ring with identity is an integral domain precisely when it has no zero divisors.
-- Integral domains satisfy the cancellation law.
-- Every finite integral domain is a field.
-- The characteristic of a ring with identity is the additive order of $1$, when finite.
-- An integral domain has characteristic $0$ or prime characteristic.
 
-**Next:** Ring Homomorphisms and Ideals.
+## Activity
+
+Determine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.
+
+
+1. $\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}$.
+2. $\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}$.
+
+---
