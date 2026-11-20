@@ -1,5 +1,5 @@
 ---
-title: "Slides: Integral Domains and Fields"
+title: "Slides: Ring Homomorphisms and Ideals"
 
 format:
   revealjs:
@@ -56,6 +56,14 @@ Since $r=a-nq$ belongs to $I$, minimality of $n$ forces $r=0$. Thus every $a\in 
 $$
 I=n\mathbb{Z}=\langle n\rangle.
 $$
+
+
+
+## Principal Ideal Domains
+
+An **integral domain** in which every ideal is principal is called a **principal ideal domain (PID)**.
+
+For example, $\mathbb{Z}$ and $\mathbb{Q}[x]$ are PIDs. But $\mathbb{Q}[x,y]$ is not: the ideal $(x,y)$ is not principal. 
 
 ## Kernels Are Ideals
 
@@ -118,7 +126,7 @@ The quotient by the kernel captures the image of the homomorphism: elements that
 | Prime ideal $P$ | $R/P$ is an integral domain |
 | Maximal ideal $M$ | $R/M$ is a field |
 | Integral domain | Cancellation holds: if $a\ne 0$ and $ab=ac$, then $b=c$ |
-| Euclidean domain | The Euclidean algorithm finds greatest common divisors and gives Bézout identities |
+| Euclidean domain | The Euclidean algorithm finds greatest common divisors  |
 
 For commutative rings with identity,
 

@@ -237,6 +237,17 @@
 </div></div>
 <p>Note that <span class="math inline">\(2a=0\)</span> for all <span class="math inline">\(a \in \mathbb{Z}_2\)</span>.</p>
 </section>
+<section id="addition-and-subtraction-in-mathbb-z_2" class="slide level2">
+<h2>Addition and Subtraction in <span class="math inline">\(\mathbb Z_2\)</span></h2>
+<p>In <span class="math inline">\(\mathbb{Z}_2\)</span>, each element is its own additive inverse:</p>
+<p><span class="math display">\[
+-[0]=[0], \qquad -[1]=[1],
+\]</span></p>
+<p>because <span class="math inline">\([1]+[1]=[0]\)</span>. Therefore, for all <span class="math inline">\(a,b\in\mathbb{Z}_2\)</span>,</p>
+<p><span class="math display">\[
+a-b=a+(-b)=a+b.
+\]</span></p>
+</section>
 <section id="example-mathbbz_3" class="slide level2">
 <h2>Example: <span class="math inline">\(\mathbb{Z}_3\)</span></h2>
 <p>The elements of <span class="math inline">\(\mathbb{Z}_3\)</span> are <span class="math inline">\([0]\)</span>, <span class="math inline">\([1]\)</span>, and <span class="math inline">\([2]\)</span>. Compute modulo <span class="math inline">\(3\)</span>.</p>
@@ -319,6 +330,31 @@ F=\left\{
 \]</span></p>
 <p>where matrix addition and multiplication modulo <span class="math inline">\(2\)</span>.</p>
 </section>
+<section id="matrix-multiplication-a-2times2-example" class="slide level2">
+<h2>Matrix Multiplication: A <span class="math inline">\(2\times2\)</span> Example</h2>
+<p>Multiply each <strong>row</strong> of the first matrix by each <strong>column</strong> of the second. Multiply corresponding entries, then add.</p>
+<p><span class="math display">\[
+\begin{pmatrix}
+1 &amp; 2\\
+3 &amp; 4
+\end{pmatrix}
+\begin{pmatrix}
+2 &amp; 0\\
+1 &amp; 5
+\end{pmatrix}
+=
+\begin{pmatrix}
+1(2)+2(1) &amp; 1(0)+2(5)\\
+3(2)+4(1) &amp; 3(0)+4(5)
+\end{pmatrix}
+=
+\begin{pmatrix}
+4 &amp; 10\\
+10 &amp; 20
+\end{pmatrix}
+\]</span></p>
+<p>For example, the top-right entry is the first row dotted with the second column: <span class="math inline">\(1(0)+2(5)=10\)</span>.</p>
+</section>
 <section id="activity" class="slide level2">
 <h2>Activity</h2>
 <p>For F:</p>
@@ -330,6 +366,58 @@ F=\left\{
 <li>What are the units?</li>
 <li>What type of ring is this? commutative? with indentity? integral domain? field?</li>
 </ul>
+</section>
+<section id="multiplication-table-for-f" class="slide level2">
+<h2>Multiplication Table for <span class="math inline">\(F\)</span></h2>
+<p>All entries and products are computed modulo <span class="math inline">\(2\)</span>.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(\cdot\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;1\\1&amp;0\end{pmatrix}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;1\\1&amp;1\end{pmatrix}\)</span></th>
+<th style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;1\\1&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;1\\1&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;1\\1&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;1\\1&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;1\\1&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;1\\1&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;1\\1&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;0\\0&amp;1\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}1&amp;1\\1&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\begin{pmatrix}0&amp;0\\0&amp;0\end{pmatrix}\)</span></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="example-gaussian-integers" class="slide level2">
 <h2>Example: Gaussian Integers</h2>
@@ -401,6 +489,30 @@ F=\left\{
 <p>The integer solutions are <span class="math inline">\((a,b)=(\pm1,0),\quad(0,\pm1)\)</span>.</p>
 <p>Therefore, <span class="math inline">\(U(\mathbb Z[i])=\{1,-1,i,-i\}\)</span></p>
 <p>The Gaussian integers are an integral domain but <strong>not a field</strong>.</p>
+</section>
+<section id="euclidean-domains-the-gaussian-integers" class="slide level2">
+<h2>Euclidean Domains: The Gaussian Integers</h2>
+<p>An integral domain <span class="math inline">\(D\)</span> is <strong>Euclidean</strong> if it has a size function that allows division with remainder: for <span class="math inline">\(a,b\in D\)</span>, <span class="math inline">\(b\ne0\)</span>, there are <span class="math inline">\(q,r\in D\)</span> such that</p>
+<p><span class="math display">\[
+a=bq+r,\qquad r=0\ \text{or}\ N(r)&lt;N(b).
+\]</span></p>
+<p>The Gaussian integers <span class="math inline">\(\mathbb{Z}[i]=\{a+bi:a,b\in\mathbb{Z}\}\)</span> are Euclidean with norm</p>
+<p><span class="math display">\[
+N(a+bi)=a^2+b^2.
+\]</span></p>
+<p>Given <span class="math inline">\(\alpha,\beta\in\mathbb{Z}[i]\)</span> with <span class="math inline">\(\beta\ne0\)</span>, choose <span class="math inline">\(q\in\mathbb{Z}[i]\)</span> by rounding the real and imaginary parts of <span class="math inline">\(\alpha/\beta\)</span> to the nearest integers. Then <span class="math inline">\(r=\alpha-q\beta\)</span> satisfies <span class="math inline">\(N(r)&lt;N(\beta)\)</span>, giving the Euclidean division algorithm.</p>
+<p>–</p>
+</section>
+<section id="activity-gaussian-integers" class="slide level2">
+<h2>Activity: Gaussian Integers</h2>
+<p>Consider the ring <span class="math inline">\(\mathbb Z[i]\)</span>.</p>
+<ol type="1">
+<li>Show that <span class="math inline">\((1+i)(1-i)=2\)</span>.</li>
+<li>Is <span class="math inline">\(1+i\)</span> a unit in <span class="math inline">\(\mathbb Z[i]\)</span>?</li>
+<li>Find the norm of <span class="math inline">\(3+4i\)</span>.</li>
+<li>Show that <span class="math inline">\(\mathbb Z[i]\)</span> has no zero divisors.</li>
+<li>Explain why <span class="math inline">\(\mathbb Z[i]\)</span> is not a field.</li>
+</ol>
 </section>
 <section id="quaternions" class="slide level2">
 <h2>Quaternions</h2>
@@ -485,234 +597,19 @@ q^{-1}=\frac{a-b\mathbf i-c\mathbf j-d\mathbf k}{a^2+b^2+c^2+d^2}.
 <li>The quaternions <span class="math inline">\(\mathbb H\)</span> form a division ring but not a field.</li>
 </ul>
 </section>
-<section id="proposition-16.15-cancellation-law" class="slide level2">
-<h2>Proposition 16.15: Cancellation Law</h2>
-<p>Let <span class="math inline">\(D\)</span> be a commutative ring with identity.</p>
-<p>Then <span class="math inline">\(D\)</span> is an integral domain if and only if, for every nonzero <span class="math inline">\(a\in D\)</span>,</p>
+<section id="a-set-with-four-elements" class="slide level2">
+<h2>A Set with Four Elements</h2>
+<p>Let <span class="math inline">\(\alpha\)</span> be a symbol satisfying <span class="math inline">\(\alpha^2=\alpha+1\)</span> over <span class="math inline">\(\mathbb{Z}_2\)</span>.</p>
 <p><span class="math display">\[
-ab=ac\implies b=c.
+S=\{a+b\alpha : a,b\in\mathbb{F}_2\}.
 \]</span></p>
-<p>This is the <strong>cancellation law</strong>.</p>
-</section>
-<section id="proof-of-proposition-16.15" class="slide level2">
-<h2>Proof of Proposition 16.15</h2>
-<p>Suppose <span class="math inline">\(D\)</span> is an integral domain.</p>
-<p>Let <span class="math inline">\(a\neq0\)</span> and suppose <span class="math inline">\(ab=ac\)</span>.</p>
-<p>Then <span class="math inline">\(ab-ac=0.\)</span></p>
-<p>By the distributive law, <span class="math inline">\(a(b-c)=0.\)</span></p>
-<p>Since <span class="math inline">\(D\)</span> has no zero divisors and <span class="math inline">\(a\neq0\)</span>, <span class="math inline">\(b-c=0.\)</span></p>
-<p>Therefore, <span class="math inline">\(b=c\)</span>.</p>
-</section>
-<section id="converse-of-proposition-16.15" class="slide level2">
-<h2>Converse of Proposition 16.15</h2>
-<p>Suppose that cancellation holds in <span class="math inline">\(D\)</span>.</p>
-<p>Let <span class="math inline">\(ab=0\)</span> and suppose <span class="math inline">\(a\neq0\)</span>.</p>
-<p>Since <span class="math inline">\(a0=0\)</span>, we have <span class="math inline">\(ab=a0.\)</span></p>
-<p>By cancellation, <span class="math inline">\(b=0\)</span>.</p>
-<p>Thus, <span class="math inline">\(D\)</span> has no zero divisors.</p>
-<p>Since <span class="math inline">\(D\)</span> is a commutative ring with identity, it is an integral domain.</p>
-</section>
-<section id="theorem-16.16" class="slide level2">
-<h2>Theorem 16.16</h2>
-<p><strong>Every finite integral domain is a field.</strong></p>
-<p>This tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.</p>
-</section>
-<section id="proof-of-theorem-16.16" class="slide level2">
-<h2>Proof of Theorem 16.16</h2>
-<p>The proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.</p>
-<p>Let <span class="math inline">\(D\)</span> be a finite integral domain, and let</p>
-<p><span class="math display">\[
-D^*=D\setminus\{0\}.
-\]</span></p>
-<p>Choose <span class="math inline">\(a\in D^*\)</span> and define</p>
-<p><span class="math display">\[
-\lambda_a:D^*\to D^*,\qquad
-\lambda_a(d)=ad.
-\]</span></p>
-<p>Since <span class="math inline">\(D\)</span> has no zero divisors, <span class="math inline">\(ad\neq0\)</span> whenever <span class="math inline">\(a,d\neq0\)</span>.</p>
-<p>Thus, <span class="math inline">\(\lambda_a\)</span> is well-defined.</p>
-</section>
-<section id="proof-of-theorem-16.16-continued" class="slide level2">
-<h2>Proof of Theorem 16.16 Continued</h2>
-<p>Suppose</p>
-<p><span class="math display">\[
-\lambda_a(d_1)=\lambda_a(d_2).
-\]</span></p>
-<p>Then <span class="math inline">\(ad_1=ad_2\)</span>.</p>
-<p>By cancellation, <span class="math inline">\(d_1=d_2\)</span>.</p>
-<p>Thus, <span class="math inline">\(\lambda_a\)</span> is one-to-one.</p>
-<p>Since <span class="math inline">\(D^*\)</span> is finite, <span class="math inline">\(\lambda_a\)</span> is also onto.</p>
-<p>Therefore, there exists <span class="math inline">\(d\in D^*\)</span> such that</p>
-<p><span class="math display">\[
-ad=1.
-\]</span></p>
-<p>Since <span class="math inline">\(D\)</span> is commutative, <span class="math inline">\(da=1\)</span> also.</p>
-<p>Every nonzero element has an inverse, so <span class="math inline">\(D\)</span> is a field.</p>
-</section>
-<section id="application-mathbb-z_n" class="slide level2">
-<h2>Application: <span class="math inline">\(\mathbb Z_n\)</span></h2>
-<p>Consider the ring <span class="math inline">\(\mathbb Z_n\)</span>.</p>
+<p>where <span class="math inline">\(a+b\alpha + c+d\alpha = (a+c)+(b+d)\alpha\)</span> and <span class="math inline">\((a+b\alpha) (\cdot )c+d\alpha) = (ac+bd) +(ad+bc+bd)\alpha\)</span>. <span class="math inline">\(\alpha\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 4 elements <span class="math inline">\(\{0,1, \alpha,1+ \alpha }\)</span>.</p>
+<p><strong>What can you determine about <span class="math inline">\(S\)</span>?</strong></p>
 <ul>
-<li>If <span class="math inline">\(n\)</span> is prime, <span class="math inline">\(\mathbb Z_n\)</span> has no zero divisors.</li>
-<li>If <span class="math inline">\(n\)</span> is composite, say <span class="math inline">\(n=ab\)</span> with <span class="math inline">\(1&lt;a,b&lt;n\)</span>, then <span class="math inline">\(ab=0\)</span> in <span class="math inline">\(\mathbb Z_n\)</span>.</li>
+<li>Is this a ring?</li>
+<li>What are the tables for addition and multiplication.</li>
+<li>What kind of a ring is it?</li>
 </ul>
-<p>Consequently,</p>
-<p><span class="math display">\[
-\mathbb Z_n\text{ is a field}
-\iff n\text{ is prime}.
-\]</span></p>
-<p><strong>Question:</strong> Why is <span class="math inline">\(\mathbb Z_{11}\)</span> a field but <span class="math inline">\(\mathbb Z_{12}\)</span> is not?</p>
-</section>
-<section id="characteristic-of-a-ring" class="slide level2">
-<h2>Characteristic of a Ring</h2>
-<p>For a nonnegative integer <span class="math inline">\(n\)</span> and <span class="math inline">\(r\in R\)</span>, write</p>
-<p><span class="math display">\[
-nr=\underbrace{r+\cdots+r}_{n\text{ times}}.
-\]</span></p>
-<p>The <strong>characteristic</strong> of a ring <span class="math inline">\(R\)</span> is the least positive integer <span class="math inline">\(n\)</span> such that</p>
-<p><span class="math display">\[
-nr=0\quad\text{for all }r\in R.
-\]</span></p>
-<p>If no such positive integer exists, the characteristic is defined to be <span class="math inline">\(0\)</span>.</p>
-<p>We write <span class="math inline">\(\operatorname{char}R\)</span>.</p>
-</section>
-<section id="examples-of-characteristic" class="slide level2">
-<h2>Examples of Characteristic</h2>
-<ul>
-<li><span class="math inline">\(\operatorname{char}\mathbb Z=0\)</span>.</li>
-<li><span class="math inline">\(\operatorname{char}\mathbb Q=0\)</span>.</li>
-<li><span class="math inline">\(\operatorname{char}\mathbb R=0\)</span>.</li>
-<li><span class="math inline">\(\operatorname{char}\mathbb Z_n=n\)</span>.</li>
-</ul>
-<p>In <span class="math inline">\(\mathbb Z_5\)</span>,</p>
-<p><span class="math display">\[
-5a=0
-\]</span></p>
-<p>for every <span class="math inline">\(a\in\mathbb Z_5\)</span>.</p>
-<p><strong>Question:</strong> What is the characteristic of <span class="math inline">\(\mathbb Z_6\)</span>? Is <span class="math inline">\(\mathbb Z_6\)</span> an integral domain?</p>
-</section>
-<section id="example-16.17" class="slide level2">
-<h2>Example 16.17</h2>
-<p>For every prime <span class="math inline">\(p\)</span>, the ring <span class="math inline">\(\mathbb Z_p\)</span> is a field of characteristic <span class="math inline">\(p\)</span>.</p>
-<p>Every nonzero element has a multiplicative inverse because</p>
-<p><span class="math display">\[
-\gcd(a,p)=1
-\]</span></p>
-<p>whenever <span class="math inline">\(a\neq0\)</span> in <span class="math inline">\(\mathbb Z_p\)</span>.</p>
-<p>Also,</p>
-<p><span class="math display">\[
-pa=0
-\]</span></p>
-<p>for every <span class="math inline">\(a\in\mathbb Z_p\)</span>.</p>
-<p>Hence,</p>
-<p><span class="math display">\[
-\operatorname{char}\mathbb Z_p=p.
-\]</span></p>
-</section>
-<section id="lemma-16.18" class="slide level2">
-<h2>Lemma 16.18</h2>
-<p>Let <span class="math inline">\(R\)</span> be a ring with identity.</p>
-<p>If <span class="math inline">\(1\)</span> has additive order <span class="math inline">\(n\)</span>, then the characteristic of <span class="math inline">\(R\)</span> is <span class="math inline">\(n\)</span>.</p>
-<p>Recall that the additive order of <span class="math inline">\(1\)</span> is the smallest positive integer <span class="math inline">\(n\)</span> such that</p>
-<p><span class="math display">\[
-n1=0.
-\]</span></p>
-<p>This allows us to determine the characteristic of a ring by examining only its multiplicative identity.</p>
-</section>
-<section id="proof-of-lemma-16.18" class="slide level2">
-<h2>Proof of Lemma 16.18</h2>
-<p>Suppose <span class="math inline">\(1\)</span> has additive order <span class="math inline">\(n\)</span>.</p>
-<p>Then <span class="math inline">\(n1=0\)</span>.</p>
-<p>For any <span class="math inline">\(r\in R\)</span>,</p>
-<p><span class="math display">\[
-nr=n(1r)=(n1)r=0r=0.
-\]</span></p>
-<p>Thus, <span class="math inline">\(\operatorname{char}R\leq n\)</span>.</p>
-<p>If a smaller positive integer annihilated every element of <span class="math inline">\(R\)</span>, it would also annihilate <span class="math inline">\(1\)</span>.</p>
-<p>This contradicts the order of <span class="math inline">\(1\)</span>.</p>
-<p>Hence, <span class="math inline">\(\operatorname{char}R=n\)</span>.</p>
-<p>If <span class="math inline">\(1\)</span> has infinite additive order, then <span class="math inline">\(\operatorname{char}R=0\)</span>.</p>
-</section>
-<section id="theorem-16.19" class="slide level2">
-<h2>Theorem 16.19</h2>
-<p><strong>The characteristic of an integral domain is either prime or zero.</strong></p>
-<p>In other words, if <span class="math inline">\(D\)</span> is an integral domain, then</p>
-<p><span class="math display">\[
-\operatorname{char}D=0
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-\operatorname{char}D=p
-\]</span></p>
-<p>for some prime number <span class="math inline">\(p\)</span>.</p>
-<p>Why can an integral domain not have characteristic <span class="math inline">\(6\)</span>?</p>
-</section>
-<section id="proof-of-theorem-16.19" class="slide level2">
-<h2>Proof of Theorem 16.19</h2>
-<p>Suppose <span class="math inline">\(D\)</span> is an integral domain with</p>
-<p><span class="math display">\[
-\operatorname{char}D=n&gt;0.
-\]</span></p>
-<p>Assume <span class="math inline">\(n\)</span> is composite, so <span class="math inline">\(n=ab\)</span> with</p>
-<p><span class="math display">\[
-1&lt;a&lt;n,\qquad1&lt;b&lt;n.
-\]</span></p>
-<p>By Lemma 16.18, <span class="math inline">\(n1=0\)</span>. Thus,</p>
-<p><span class="math display">\[
-0=n1=(ab)1=(a1)(b1).
-\]</span></p>
-<p>Since <span class="math inline">\(D\)</span> has no zero divisors,</p>
-<p><span class="math display">\[
-a1=0\quad\text{or}\quad b1=0.
-\]</span></p>
-<p>Both contradict the minimality of <span class="math inline">\(n\)</span>.</p>
-<p>Therefore, <span class="math inline">\(n\)</span> must be prime.</p>
-</section>
-<section id="activity-finite-rings" class="slide level2">
-<h2>Activity: Finite Rings</h2>
-<p>Determine whether each ring is an integral domain or a field.</p>
-<ol type="1">
-<li><span class="math inline">\(\mathbb Z_7\)</span></li>
-<li><span class="math inline">\(\mathbb Z_9\)</span></li>
-<li><span class="math inline">\(\mathbb Z_{15}\)</span></li>
-<li><span class="math inline">\(\mathbb Z_{17}\)</span></li>
-</ol>
-<p>For each ring:</p>
-<ul>
-<li>Identify its characteristic.</li>
-<li>Determine whether it has zero divisors.</li>
-<li>Explain whether Theorem 16.16 applies.</li>
-</ul>
-</section>
-<section id="activity-gaussian-integers" class="slide level2">
-<h2>Activity: Gaussian Integers</h2>
-<p>Consider the ring <span class="math inline">\(\mathbb Z[i]\)</span>.</p>
-<ol type="1">
-<li>Show that <span class="math inline">\((1+i)(1-i)=2\)</span>.</li>
-<li>Is <span class="math inline">\(1+i\)</span> a unit in <span class="math inline">\(\mathbb Z[i]\)</span>?</li>
-<li>Find the norm of <span class="math inline">\(3+4i\)</span>.</li>
-<li>Show that <span class="math inline">\(\mathbb Z[i]\)</span> has no zero divisors.</li>
-<li>Explain why <span class="math inline">\(\mathbb Z[i]\)</span> is not a field.</li>
-</ol>
-</section>
-<section id="activity-field-or-not" class="slide level2">
-<h2>Activity: Field or Not?</h2>
-<p>Determine whether each statement is true or false. Justify your answers.</p>
-<ol type="1">
-<li>Every field is an integral domain.</li>
-<li>Every integral domain is a field.</li>
-<li>Every finite integral domain is a field.</li>
-<li>Every ring with prime characteristic is an integral domain.</li>
-<li>Every finite field has prime characteristic.</li>
-</ol>
-</section>
-<section id="activity-1" class="slide level2">
-<h2>Activity</h2>
-<p>Determine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.</p>
-<ol type="1">
-<li><span class="math inline">\(\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}\)</span>.</li>
-<li><span class="math inline">\(\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}\)</span>.</li>
-</ol>
 </section>
 <section class="slide level2">
 

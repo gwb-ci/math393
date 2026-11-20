@@ -1,5 +1,5 @@
 ---
-title: "Slides: Integral Domains and Fields"
+title: "Slides: Ring Homomorphisms and Ideals"
 
 format:
   revealjs:
@@ -8,16 +8,7 @@ format:
 ---
 
 
-## Integral Domains and Fields
 
-- Review zero divisors, units, integral domains, and fields.
-- Find the units in the Gaussian integers.
-- Use the cancellation law to characterize integral domains.
-- Prove that every finite integral domain is a field.
-- Define the characteristic of a ring.
-- Prove that the characteristic of an integral domain is either prime or zero.
-
----
 
 ## Review of Important Definitions
 
@@ -31,715 +22,157 @@ Let $R$ be a ring.
 
 ---
 
-## Proposition 16.1.10 - Subring Test
+# Ring Homomorphisms and Ideals
 
-Let $R$ be a ring and $S$ a subset of $R$. Then $S$ is a subring of $R$ if and only if the following conditions are satisfied.
+A ring homomorphism preserves addition and multiplication.
 
-1. $S\neq\emptyset$.
-2. $rs\in S$ for all $r,s\in S$.
-3. $r-s\in S$ for all $r,s\in S$.
+In this section, we connect homomorphisms to ideals:
 
+- The kernel of a ring homomorphism is an ideal.
+- An ideal lets us build a quotient ring.
+- The First Isomorphism Theorem identifies a quotient by a kernel with the image.
 
----
+## Ring Homomorphisms
 
-## Proof of 16.1.10
+A map $\phi : R \to S$ is a **ring homomorphism** if, for all $a,b \in R$,
 
-- Choose $s\in S$. Why does $s-s$ show that $0\in S$?
-- For $r\in S$, why is $-r\in S$?
-- How does subtraction closure imply addition closure?
-- Which remaining ring axioms are inherited from $R$?
-
----
-
-
-
-
-
-
-## $\mathbb Z_p$ 
-
-Let $p$ be a prime and consider the non-zero elements of $\mathbb Z_p$, $\{1,2, \ldots, p-1\}$.
-
-__Zero divisors?__
-If we have the product of two non-zero elements $a\cdot b=0$. Then $p$ divides $a\cdot b$, which means that $p$ divides either $a$ or $b$, but $p\ge a$ and $p\ge b$ so this is not possible.  **So $Z_p$ has no zero divisors.**
-
-This is not true for $\mathbb Z_n$ is $n$ is not prime.
-
-
----
-
-## $\mathbb Z_p$ 
-
-Let $p$ be a prime and consider the non-zero elements of $\mathbb Z_p$, $\{1,2, \ldots, p-1\}$.
-
-__Units?__
-We also showed that the $U(p)$ a cyclic group and any element other that 1 generates the group.  This means that every nonzero element has an inverse under mulitplication.  **So $Z_p$ is a field.**
-
-
----
-
-##  Example: $\mathbb{Z}_2$
-
-The elements of $\mathbb{Z}_2$ are $[0]$ and $[1]$. Compute modulo $2$.
-
-::: {.columns}
-
-::: {.column width="50%"}
-| $+$ | $[0]$ | $[1]$ |
-|:---:|:---:|:---:|
-| $[0]$ | $[0]$ | $[1]$ |
-| $[1]$ | $[1]$ | $[0]$ |
-:::
-
-::: {.column width="50%"}
-| $\cdot$ | $[0]$ | $[1]$ |
-|:---:|:---:|:---:|
-| $[0]$ | $[0]$ | $[0]$ |
-| $[1]$ | $[0]$ | $[1]$ |
-:::
-
-:::
-
-Note that $2a=0$ for all $a \in \mathbb{Z}_2$.
-
----
-
-##  Example: $\mathbb{Z}_3$
-
-The elements of $\mathbb{Z}_3$ are $[0]$, $[1]$, and $[2]$. Compute modulo $3$.
-
-::: {.columns}
-
-::: {.column width="50%"}
-| $+$ | $[0]$ | $[1]$ | $[2]$ |
-|:---:|:---:|:---:|:---:|
-| $[0]$ | $[0]$ | $[1]$ | $[2]$ |
-| $[1]$ | $[1]$ | $[2]$ | $[0]$ |
-| $[2]$ | $[2]$ | $[0]$ | $[1]$ |
-:::
-
-::: {.column width="50%"}
-| $\cdot$ | $[0]$ | $[1]$ | $[2]$ |
-|:---:|:---:|:---:|:---:|
-| $[0]$ | $[0]$ | $[0]$ | $[0]$ |
-| $[1]$ | $[0]$ | $[1]$ | $[2]$ |
-| $[2]$ | $[0]$ | $[2]$ | $[1]$ |
-:::
-
-:::
-
-For every $a \in \mathbb{Z}_3$, $3a=0$.
-
----
-
-
-## Example: A Finite Set of Matrices
-
-Consider the following matrices over $\mathbb Z_2$:
-
-$$
-F=\left\{
-\begin{pmatrix}1&0\\0&1\end{pmatrix},
-\begin{pmatrix}1&1\\1&0\end{pmatrix},
-\begin{pmatrix}0&1\\1&1\end{pmatrix},
-\begin{pmatrix}0&0\\0&0\end{pmatrix}
-\right\}.
-$$
-
-where matrix addition and multiplication modulo $2$.
-
----
-
-## Activity
-
-For F:
-
-- Is this a subring of $M_2(\mathbb Z_2)$?
-- Create an addtion table for F.
-- Create a multiplication table for F.
-- Are there any zero divisors?
-- What are the units?
-- What type of ring is this?  commutative? with indentity? integral domain? field?
-
----
-
-
-
-## Example: Gaussian Integers
-
-The **Gaussian integers** are
-
-$$
-\mathbb Z[i]=\{a+bi:a,b\in\mathbb Z\},
-$$
-
-where $i^2=-1$.
-
-- $\mathbb Z[i]$ is a subring of $\mathbb C$.
-- Addition and multiplication are inherited from $\mathbb C$.
-- The ring is commutative and has identity $1$.
-
-What kind of ring is $\mathbb Z[i]$? an integral domain? a field?
-
----
-
-## Multiplication in the Gaussian Integers
-
-Let $\alpha=a+bi$ and $\beta=c+di$.
-
-Then
-
-$$
-\alpha\beta=(ac-bd)+(ad+bc)i.
-$$
-
-Since $a,b,c,d\in\mathbb Z$, the product is again in $\mathbb Z[i]$.
-
-Also,
-
-$$
-(a+bi)-(c+di)=(a-c)+(b-d)i.
-$$
-
-Therefore, $\mathbb Z[i]$ is a subring of $\mathbb C$ by the subring test.
-
----
-
-## Norm of a Gaussian Integer
-
-For $\alpha=a+bi$, define its conjugate by
-
-$$
-\overline{\alpha}=a-bi.
-$$
-
-Then
-
-$$
-\alpha\overline{\alpha}=a^2+b^2.
-$$
-
-We call $N(\alpha)=a^2+b^2$ the **norm** of $\alpha$.
-
-- $N(\alpha)$ is a nonnegative integer.
-- $N(\alpha)=0$ if and only if $\alpha=0$.
-- $N(\alpha\beta)=N(\alpha)N(\beta)$.
-
----
-
-## Units in the Gaussian Integers
-
-Suppose $\alpha=a+bi$ is a unit in $\mathbb Z[i]$.
-
-Then there exists $\beta=c+di$ such that $\alpha\beta=1$.
-
-Taking norms gives
-
-$$
-1=N(\alpha\beta)=N(\alpha)N(\beta).
-$$
-
-Thus,
-
-$$
-1=(a^2+b^2)(c^2+d^2).
-$$
-
-Both factors are nonnegative integers.
-
-What values can $a^2+b^2$ have?
-
----
-
-## Units in $\mathbb Z[i]$
-
-Since
-
-$$
-(a^2+b^2)(c^2+d^2)=1,
-$$
-
-we must have $a^2+b^2=1$.
-
-The integer solutions are $(a,b)=(\pm1,0),\quad(0,\pm1)$.
-
-Therefore, $U(\mathbb Z[i])=\{1,-1,i,-i\}$
-
-The Gaussian integers are an integral domain but **not a field**.
-
-
----
-
-
-
-
-
-
-## Quaternions
-
-Let $\mathbb H$ consist of elements of the form
-$a+b\mathbf i+c\mathbf j+d\mathbf k$, where $a,b,c,d$ are real numbers.
-
-The ring $\mathbb H$ is called the **ring of quaternions**.
-
-- Add by combining corresponding coefficients.
-- Multiply by distributing and using the relationships between $\mathbf i$, $\mathbf j$, and $\mathbf k$.
-
-
----
-
-## Quaternion Multiplication
-
-The generators satisfy the following relations:
-
-- $\mathbf i^2=\mathbf j^2=\mathbf k^2=-1$.
-- $\mathbf i\mathbf j=\mathbf k$.
-- $\mathbf j\mathbf k=\mathbf i$.
-- $\mathbf k\mathbf i=\mathbf j$.
-- $\mathbf j\mathbf i=-\mathbf k$.
-- $\mathbf k\mathbf j=-\mathbf i$.
-- $\mathbf i\mathbf k=-\mathbf j$.
-
-Note that this is noncommuntative.
-
----
-
-
-
-## Multiplicative Inverses in $\mathbb H$
-
-Notice that
-
-$$
-(a+b\mathbf i+c\mathbf j+d\mathbf k)
-(a-b\mathbf i-c\mathbf j-d\mathbf k)
-=a^2+b^2+c^2+d^2.
-$$
-
-This element can be zero only if $a,b,c,d$ are all zero.
-
-Thus, for $q=a+b\mathbf i+c\mathbf j+d\mathbf k\neq0$,
-
-$$
-q^{-1}=\frac{a-b\mathbf i-c\mathbf j-d\mathbf k}{a^2+b^2+c^2+d^2}.
-$$
-
-Hence $\mathbb H$ is a **noncommutative division ring**.
-
-
----
-
-## Subrings of $\mathbb H$
-
--Is $\{a+b\mathbf i\}$ a subring of $\mathbb H$?
--Is $\{a+b\mathbf i + c\mathbf j\}$ a subring of $\mathbb H$?
-
----
-
-## Example 16.14: $\mathbb Q(\sqrt{2})$
-
-Consider
-
-$$
-\mathbb Q(\sqrt{2})=
-\{a+b\sqrt{2}:a,b\in\mathbb Q\}.
-$$
-
-This is a subring of $\mathbb R$.
-
-To determine whether it is a field, consider a nonzero element $a+b\sqrt{2}$.
-
-Multiply by its conjugate:
-
-$$
-(a+b\sqrt{2})(a-b\sqrt{2})=a^2-2b^2.
-$$
-
-Why can $a^2-2b^2$ not be zero unless $a=b=0$?
-
----
-
-## Inverses in $\mathbb Q(\sqrt{2})$
-
-For $a+b\sqrt{2}\neq0$,
-
-$$
-(a+b\sqrt{2})^{-1}
-=\frac{a-b\sqrt{2}}{a^2-2b^2}.
-$$
-
-Equivalently,
-
-$$
-\frac{a}{a^2-2b^2}
--\frac{b}{a^2-2b^2}\sqrt{2}.
-$$
-
-Both coefficients are rational.
-
-Thus, every nonzero element has an inverse in $\mathbb Q(\sqrt{2})$.
-
-Therefore, $\mathbb Q(\sqrt{2})$ is a **field**.
-
----
-
-
-## Examples of Integral Domains and Fields
-
-- $\mathbb Z$ is an integral domain but not a field.
-- $\mathbb Q$, $\mathbb R$, and $\mathbb C$ are fields.
-- $\mathbb Z_p$ is a field when $p$ is prime.
-- $\mathbb Z_n$ is not an integral domain when $n$ is composite.
-- The quaternions $\mathbb H$ form a division ring but not a field.
-
-
----
-
-## Proposition 16.15: Cancellation Law
-
-Let $D$ be a commutative ring with identity.
-
-Then $D$ is an integral domain if and only if, for every nonzero $a\in D$,
-
 $$
-ab=ac\implies b=c.
+\phi(a+b)=\phi(a)+\phi(b),
+\qquad
+\phi(ab)=\phi(a)\phi(b).
 $$
-
-This is the **cancellation law**.
-
 
+If $\phi$ is both one-to-one and onto, it is an **isomorphism of rings**.
 
----
-
-## Proof of Proposition 16.15
-
-Suppose $D$ is an integral domain.
-
-Let $a\neq0$ and suppose $ab=ac$.
-
-Then $ab-ac=0.$
-
-By the distributive law, $a(b-c)=0.$
-
-Since $D$ has no zero divisors and $a\neq0$, $b-c=0.$
-
-Therefore, $b=c$.
-
----
-
-## Converse of Proposition 16.15
-
-Suppose that cancellation holds in $D$.
-
-Let $ab=0$ and suppose $a\neq0$.
-
-Since $a0=0$, we have $ab=a0.$
-
-By cancellation, $b=0$.
-
-Thus, $D$ has no zero divisors.
-
-Since $D$ is a commutative ring with identity, it is an integral domain.
-
----
-
-
-
-
-
-
-
-## Theorem 16.16
-
-**Every finite integral domain is a field.**
-
-This tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.
-
-
-
-
-
----
-
-## Proof of Theorem 16.16
-
-The proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.
-
-Let $D$ be a finite integral domain, and let
-
-$$
-D^*=D\setminus\{0\}.
-$$
+## Example: Reduction Modulo $n$
 
-Choose $a\in D^*$ and define
+Define $\phi : \mathbb{Z} \to \mathbb{Z}_n$ by
 
 $$
-\lambda_a:D^*\to D^*,\qquad
-\lambda_a(d)=ad.
+\phi(a)=a \pmod n.
 $$
 
-Since $D$ has no zero divisors, $ad\neq0$ whenever $a,d\neq0$.
+Reduction modulo $n$ preserves addition and multiplication, so $\phi$ is a ring homomorphism.
 
-Thus, $\lambda_a$ is well-defined.
+Its kernel is the set of integers that map to zero:
 
----
-
-## Proof of Theorem 16.16 Continued
-
-Suppose
-
 $$
-\lambda_a(d_1)=\lambda_a(d_2).
+\ker \phi = \{a \in \mathbb{Z} : a \equiv 0 \pmod n\}
+= n\mathbb{Z}.
 $$
-
-Then $ad_1=ad_2$.
 
-By cancellation, $d_1=d_2$.
+## The Kernel of a Homomorphism
 
-Thus, $\lambda_a$ is one-to-one.
+For a ring homomorphism $\phi : R \to S$, define
 
-Since $D^*$ is finite, $\lambda_a$ is also onto.
-
-Therefore, there exists $d\in D^*$ such that
-
 $$
-ad=1.
+\ker \phi = \{r \in R : \phi(r)=0\}.
 $$
-
-Since $D$ is commutative, $da=1$ also.
-
-Every nonzero element has an inverse, so $D$ is a field.
-
----
 
-## Application: $\mathbb Z_n$
+The kernel is an ideal of $R$.
 
-Consider the ring $\mathbb Z_n$.
+If $a \in \ker \phi$ and $r \in R$, then
 
-- If $n$ is prime, $\mathbb Z_n$ has no zero divisors.
-- If $n$ is composite, say $n=ab$ with $1<a,b<n$, then $ab=0$ in $\mathbb Z_n$.
-
-Consequently,
-
 $$
-\mathbb Z_n\text{ is a field}
-\iff n\text{ is prime}.
+\phi(ar)=\phi(a)\phi(r)=0,
+\qquad
+\phi(ra)=\phi(r)\phi(a)=0.
 $$
-
-**Question:** Why is $\mathbb Z_{11}$ a field but $\mathbb Z_{12}$ is not?
-
----
 
-## Characteristic of a Ring
+Thus, both $ar$ and $ra$ are in the kernel.
 
-For a nonnegative integer $n$ and $r\in R$, write
+## Ideals
 
-$$
-nr=\underbrace{r+\cdots+r}_{n\text{ times}}.
-$$
+An **ideal** $I$ of a ring $R$ is a subring such that, whenever $a \in I$ and $r \in R$,
 
-The **characteristic** of a ring $R$ is the least positive integer $n$ such that
-
 $$
-nr=0\quad\text{for all }r\in R.
+ar \in I
+\qquad\text{and}\qquad
+ra \in I.
 $$
-
-If no such positive integer exists, the characteristic is defined to be $0$.
-
-We write $\operatorname{char}R$.
 
----
+These conditions make the ideal a two-sided ideal. In a commutative ring, the two conditions coincide.
 
-## Examples of Characteristic
+Every ring has the trivial ideals $\{0\}$ and $R$.
 
-- $\operatorname{char}\mathbb Z=0$.
-- $\operatorname{char}\mathbb Q=0$.
-- $\operatorname{char}\mathbb R=0$.
-- $\operatorname{char}\mathbb Z_n=n$.
+## Principal Ideals
 
-In $\mathbb Z_5$,
+In a commutative ring $R$ with identity, an ideal generated by one element $a$ is called a **principal ideal**:
 
 $$
-5a=0
+\langle a \rangle = \{ar : r \in R\}.
 $$
 
-for every $a\in\mathbb Z_5$.
+For example, in $\mathbb{Z}$,
 
-**Question:** What is the characteristic of $\mathbb Z_6$? Is $\mathbb Z_6$ an integral domain?
-
----
-
-## Example 16.17
-
-For every prime $p$, the ring $\mathbb Z_p$ is a field of characteristic $p$.
-
-Every nonzero element has a multiplicative inverse because
-
 $$
-\gcd(a,p)=1
+\langle n \rangle = n\mathbb{Z}.
 $$
-
-whenever $a\neq0$ in $\mathbb Z_p$.
 
-Also,
+Every ideal of $\mathbb{Z}$ is principal.
 
-$$
-pa=0
-$$
+## Quotient Rings
 
-for every $a\in\mathbb Z_p$.
+If $I$ is an ideal of $R$, the additive cosets form a ring called the **quotient ring** or **factor ring** $R/I$.
 
-Hence,
+Multiplication is defined by
 
 $$
-\operatorname{char}\mathbb Z_p=p.
+(r+I)(s+I)=rs+I.
 $$
-
----
 
-## Lemma 16.18
+The ideal condition ensures this product does not depend on which representatives of the cosets we choose.
 
-Let $R$ be a ring with identity.
+## The Natural Homomorphism
 
-If $1$ has additive order $n$, then the characteristic of $R$ is $n$.
+For an ideal $I$ of $R$, define
 
-Recall that the additive order of $1$ is the smallest positive integer $n$ such that
-
 $$
-n1=0.
+\phi : R \to R/I,
+\qquad
+\phi(r)=r+I.
 $$
-
-This allows us to determine the characteristic of a ring by examining only its multiplicative identity.
-
----
-
-## Proof of Lemma 16.18
 
-Suppose $1$ has additive order $n$.
+This is a surjective ring homomorphism, called the **natural** or **canonical homomorphism**.
 
-Then $n1=0$.
+Its kernel is exactly $I$:
 
-For any $r\in R$,
-
 $$
-nr=n(1r)=(n1)r=0r=0.
+\ker \phi
+= \{r \in R : r+I=I\}
+= I.
 $$
-
-Thus, $\operatorname{char}R\leq n$.
-
-If a smaller positive integer annihilated every element of $R$, it would also annihilate $1$.
-
-This contradicts the order of $1$.
-
-Hence, $\operatorname{char}R=n$.
 
-If $1$ has infinite additive order, then $\operatorname{char}R=0$.
+## The First Isomorphism Theorem
 
----
+Let $\psi : R \to S$ be a ring homomorphism. Then $\ker \psi$ is an ideal of $R$, and
 
-## Theorem 16.19
-
-**The characteristic of an integral domain is either prime or zero.**
-
-In other words, if $D$ is an integral domain, then
-
-$$
-\operatorname{char}D=0
 $$
-
-or
-
+R/\ker\psi \cong \psi(R).
 $$
-\operatorname{char}D=p
-$$
-
-for some prime number $p$.
-
-Why can an integral domain not have characteristic $6$?
 
----
+The isomorphism is given by
 
-## Proof of Theorem 16.19
-
-Suppose $D$ is an integral domain with
-
 $$
-\operatorname{char}D=n>0.
+r+\ker\psi \longmapsto \psi(r).
 $$
 
-Assume $n$ is composite, so $n=ab$ with
+The quotient identifies elements of $R$ that the homomorphism sends to the same value.
 
-$$
-1<a<n,\qquad1<b<n.
-$$
+## Example: The First Isomorphism Theorem Modulo $n$
 
-By Lemma 16.18, $n1=0$. Thus,
+For $\phi : \mathbb{Z} \to \mathbb{Z}_n$ given by reduction modulo $n$,
 
 $$
-0=n1=(ab)1=(a1)(b1).
+\ker\phi=n\mathbb{Z}
+\qquad\text{and}\qquad
+\phi(\mathbb{Z})=\mathbb{Z}_n.
 $$
 
-Since $D$ has no zero divisors,
+Therefore, the First Isomorphism Theorem gives
 
 $$
-a1=0\quad\text{or}\quad b1=0.
+\mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n.
 $$
-
-Both contradict the minimality of $n$.
-
-Therefore, $n$ must be prime.
-
----
-
-## Activity: Finite Rings
-
-Determine whether each ring is an integral domain or a field.
-
-1. $\mathbb Z_7$
-2. $\mathbb Z_9$
-3. $\mathbb Z_{15}$
-4. $\mathbb Z_{17}$
-
-For each ring:
-
-- Identify its characteristic.
-- Determine whether it has zero divisors.
-- Explain whether Theorem 16.16 applies.
-
----
-
-## Activity: Gaussian Integers
-
-Consider the ring $\mathbb Z[i]$.
-
-1. Show that $(1+i)(1-i)=2$.
-2. Is $1+i$ a unit in $\mathbb Z[i]$?
-3. Find the norm of $3+4i$.
-4. Show that $\mathbb Z[i]$ has no zero divisors.
-5. Explain why $\mathbb Z[i]$ is not a field.
-
----
-
-## Activity: Field or Not?
-
-Determine whether each statement is true or false. Justify your answers.
-
-1. Every field is an integral domain.
-2. Every integral domain is a field.
-3. Every finite integral domain is a field.
-4. Every ring with prime characteristic is an integral domain.
-5. Every finite field has prime characteristic.
-
----
-
-
-
-## Activity
-
-Determine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.
-
-
-1. $\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}$.
-2. $\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}$.
 
----
+The quotient ring is the image of the homomorphism, with elements identified according to its kernel.

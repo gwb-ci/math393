@@ -1,5 +1,5 @@
 ---
-title: "Slides: Integral Domains and Fields"
+title: "Slides: Ideals in Rings"
 
 format:
   revealjs:

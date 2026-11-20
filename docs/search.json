@@ -1890,201 +1890,212 @@
     ]
   },
   {
+    "objectID": "classes/26/slides.html#definitin-of-a-ring",
+    "href": "classes/26/slides.html#definitin-of-a-ring",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "Definitin of a Ring",
+    "text": "Definitin of a Ring\nA nonempty set \\(R\\) is a ring if it has two closed binary operations, addition and multiplication, satisfying:\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cancellation Law and Finite Fields"
+    ]
+  },
+  {
+    "objectID": "classes/26/slides.html#review-of-important-definitions",
+    "href": "classes/26/slides.html#review-of-important-definitions",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "Review of Important Definitions",
+    "text": "Review of Important Definitions\nLet \\(R\\) be a ring.\n\nA nonzero element \\(a\\) is a zero divisor if there is a nonzero \\(b\\) such that \\(ab=0\\).\nA unit is an element with a multiplicative inverse.\nAn integral domain is a commutative ring with identity and no zero divisors.\nA division ring is a ring with identity in which every nonzero element is a unit.\nA field is a commutative division ring.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cancellation Law and Finite Fields"
+    ]
+  },
+  {
     "objectID": "classes/26/slides.html#proposition-16.15-cancellation-law",
     "href": "classes/26/slides.html#proposition-16.15-cancellation-law",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proposition 16.15: Cancellation Law",
     "text": "Proposition 16.15: Cancellation Law\nLet \\(D\\) be a commutative ring with identity.\nThen \\(D\\) is an integral domain if and only if, for every nonzero \\(a\\in D\\),\n\\[\nab=ac\\implies b=c.\n\\]\nThis is the cancellation law.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#proof-of-proposition-16.15",
     "href": "classes/26/slides.html#proof-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Proposition 16.15",
     "text": "Proof of Proposition 16.15\nSuppose \\(D\\) is an integral domain.\nLet \\(a\\neq0\\) and suppose \\(ab=ac\\).\nThen \\(ab-ac=0.\\)\nBy the distributive law, \\(a(b-c)=0.\\)\nSince \\(D\\) has no zero divisors and \\(a\\neq0\\), \\(b-c=0.\\)\nTherefore, \\(b=c\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#converse-of-proposition-16.15",
     "href": "classes/26/slides.html#converse-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Converse of Proposition 16.15",
     "text": "Converse of Proposition 16.15\nSuppose that cancellation holds in \\(D\\).\nLet \\(ab=0\\) and suppose \\(a\\neq0\\).\nSince \\(a0=0\\), we have \\(ab=a0.\\)\nBy cancellation, \\(b=0\\).\nThus, \\(D\\) has no zero divisors.\nSince \\(D\\) is a commutative ring with identity, it is an integral domain.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#theorem-16.16",
     "href": "classes/26/slides.html#theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Theorem 16.16",
     "text": "Theorem 16.16\nEvery finite integral domain is a field.\nThis tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#proof-of-theorem-16.16",
     "href": "classes/26/slides.html#proof-of-theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.16",
     "text": "Proof of Theorem 16.16\nThe proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.\nLet \\(D\\) be a finite integral domain, and let\n\\[\nD^*=D\\setminus\\{0\\}.\n\\]\nChoose \\(a\\in D^*\\) and define\n\\[\n\\lambda_a:D^*\\to D^*,\\qquad\n\\lambda_a(d)=ad.\n\\]\nSince \\(D\\) has no zero divisors, \\(ad\\neq0\\) whenever \\(a,d\\neq0\\).\nThus, \\(\\lambda_a\\) is well-defined.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#proof-of-theorem-16.16-continued",
     "href": "classes/26/slides.html#proof-of-theorem-16.16-continued",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.16 Continued",
     "text": "Proof of Theorem 16.16 Continued\nSuppose\n\\[\n\\lambda_a(d_1)=\\lambda_a(d_2).\n\\]\nThen \\(ad_1=ad_2\\).\nBy cancellation, \\(d_1=d_2\\).\nThus, \\(\\lambda_a\\) is one-to-one.\nSince \\(D^*\\) is finite, \\(\\lambda_a\\) is also onto.\nTherefore, there exists \\(d\\in D^*\\) such that\n\\[\nad=1.\n\\]\nSince \\(D\\) is commutative, \\(da=1\\) also.\nEvery nonzero element has an inverse, so \\(D\\) is a field.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/26/slides.html#application-mathbb-z_n",
-    "href": "classes/26/slides.html#application-mathbb-z_n",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Application: \\(\\mathbb Z_n\\)",
-    "text": "Application: \\(\\mathbb Z_n\\)\nConsider the ring \\(\\mathbb Z_n\\).\n\nIf \\(n\\) is prime, \\(\\mathbb Z_n\\) has no zero divisors.\nIf \\(n\\) is composite, say \\(n=ab\\) with \\(1&lt;a,b&lt;n\\), then \\(ab=0\\) in \\(\\mathbb Z_n\\).\n\nConsequently,\n\\[\n\\mathbb Z_n\\text{ is a field}\n\\iff n\\text{ is prime}.\n\\]\nQuestion: Why is \\(\\mathbb Z_{11}\\) a field but \\(\\mathbb Z_{12}\\) is not?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#characteristic-of-a-ring",
     "href": "classes/26/slides.html#characteristic-of-a-ring",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Characteristic of a Ring",
     "text": "Characteristic of a Ring\nFor a nonnegative integer \\(n\\) and \\(r\\in R\\), write\n\\[\nnr=\\underbrace{r+\\cdots+r}_{n\\text{ times}}.\n\\]\nThe characteristic of a ring \\(R\\) is the least positive integer \\(n\\) such that\n\\[\nnr=0\\quad\\text{for all }r\\in R.\n\\]\nIf no such positive integer exists, the characteristic is defined to be \\(0\\).\nWe write \\(\\operatorname{char}R\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#examples-of-characteristic",
     "href": "classes/26/slides.html#examples-of-characteristic",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Examples of Characteristic",
-    "text": "Examples of Characteristic\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\).\n\nIn \\(\\mathbb Z_5\\),\n\\[\n5a=0\n\\]\nfor every \\(a\\in\\mathbb Z_5\\).\nQuestion: What is the characteristic of \\(\\mathbb Z_6\\)? Is \\(\\mathbb Z_6\\) an integral domain?",
+    "text": "Examples of Characteristic\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\)\n\\(\\operatorname{char}\\mathbb F=2\\)",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
-    "objectID": "classes/26/slides.html#example-16.17",
-    "href": "classes/26/slides.html#example-16.17",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example 16.17",
-    "text": "Example 16.17\nFor every prime \\(p\\), the ring \\(\\mathbb Z_p\\) is a field of characteristic \\(p\\).\nEvery nonzero element has a multiplicative inverse because\n\\[\n\\gcd(a,p)=1\n\\]\nwhenever \\(a\\neq0\\) in \\(\\mathbb Z_p\\).\nAlso,\n\\[\npa=0\n\\]\nfor every \\(a\\in\\mathbb Z_p\\).\nHence,\n\\[\n\\operatorname{char}\\mathbb Z_p=p.\n\\]",
+    "objectID": "classes/26/slides.html#the-freshmans-dream-in-mathbbz_p",
+    "href": "classes/26/slides.html#the-freshmans-dream-in-mathbbz_p",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "The Freshman’s Dream in \\(\\mathbb{Z}_p\\)",
+    "text": "The Freshman’s Dream in \\(\\mathbb{Z}_p\\)\nFor a prime \\(p\\), the binomial theorem gives\n\\[\n(a+b)^p\n= a^p + \\binom{p}{1}a^{p-1}b + \\cdots\n+ \\binom{p}{p-1}ab^{p-1} + b^p.\n\\]\nEach middle coefficient \\(\\binom{p}{k}\\) is divisible by \\(p\\), so those terms are \\(0\\) in \\(\\mathbb{Z}_p\\). Therefore,\n\\[\n(a+b)^p = a^p+b^p \\qquad \\text{in } \\mathbb{Z}_p.\n\\]\nFor example, in \\(\\mathbb{Z}_3\\), \\((a+b)^3=a^3+b^3\\) because the middle terms have coefficients \\(3\\).\nThis identity is called the Freshman’s Dream.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#lemma-16.18",
     "href": "classes/26/slides.html#lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Lemma 16.18",
     "text": "Lemma 16.18\nLet \\(R\\) be a ring with identity.\nIf \\(1\\) has additive order \\(n\\), then the characteristic of \\(R\\) is \\(n\\).\nRecall that the additive order of \\(1\\) is the smallest positive integer \\(n\\) such that\n\\[\nn1=0.\n\\]\nThis allows us to determine the characteristic of a ring by examining only its multiplicative identity.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#proof-of-lemma-16.18",
     "href": "classes/26/slides.html#proof-of-lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Lemma 16.18",
     "text": "Proof of Lemma 16.18\nSuppose \\(1\\) has additive order \\(n\\).\nThen \\(n1=0\\).\nFor any \\(r\\in R\\),\n\\[\nnr=n(1r)=(n1)r=0r=0.\n\\]\nThus, \\(\\operatorname{char}R\\leq n\\).\nIf a smaller positive integer annihilated every element of \\(R\\), it would also annihilate \\(1\\).\nThis contradicts the order of \\(1\\).\nHence, \\(\\operatorname{char}R=n\\).\nIf \\(1\\) has infinite additive order, then \\(\\operatorname{char}R=0\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#theorem-16.19",
     "href": "classes/26/slides.html#theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Theorem 16.19",
     "text": "Theorem 16.19\nThe characteristic of an integral domain is either prime or zero.\nIn other words, if \\(D\\) is an integral domain, then\n\\[\n\\operatorname{char}D=0\n\\]\nor\n\\[\n\\operatorname{char}D=p\n\\]\nfor some prime number \\(p\\).\nWhy can an integral domain not have characteristic \\(6\\)?",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#proof-of-theorem-16.19",
     "href": "classes/26/slides.html#proof-of-theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.19",
     "text": "Proof of Theorem 16.19\nSuppose \\(D\\) is an integral domain with\n\\[\n\\operatorname{char}D=n&gt;0.\n\\]\nAssume \\(n\\) is composite, so \\(n=ab\\) with\n\\[\n1&lt;a&lt;n,\\qquad1&lt;b&lt;n.\n\\]\nBy Lemma 16.18, \\(n1=0\\). Thus,\n\\[\n0=n1=(ab)1=(a1)(b1).\n\\]\nSince \\(D\\) has no zero divisors,\n\\[\na1=0\\quad\\text{or}\\quad b1=0.\n\\]\nBoth contradict the minimality of \\(n\\).\nTherefore, \\(n\\) must be prime.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/26/slides.html#activity-finite-rings",
-    "href": "classes/26/slides.html#activity-finite-rings",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Finite Rings",
-    "text": "Activity: Finite Rings\nDetermine whether each ring is an integral domain or a field.\n\n\\(\\mathbb Z_7\\)\n\\(\\mathbb Z_9\\)\n\\(\\mathbb Z_{15}\\)\n\\(\\mathbb Z_{17}\\)\n\nFor each ring:\n\nIdentify its characteristic.\nDetermine whether it has zero divisors.\nExplain whether Theorem 16.16 applies.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/26/slides.html#activity-gaussian-integers",
-    "href": "classes/26/slides.html#activity-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Gaussian Integers",
-    "text": "Activity: Gaussian Integers\nConsider the ring \\(\\mathbb Z[i]\\).\n\nShow that \\((1+i)(1-i)=2\\).\nIs \\(1+i\\) a unit in \\(\\mathbb Z[i]\\)?\nFind the norm of \\(3+4i\\).\nShow that \\(\\mathbb Z[i]\\) has no zero divisors.\nExplain why \\(\\mathbb Z[i]\\) is not a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#activity-field-or-not",
     "href": "classes/26/slides.html#activity-field-or-not",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Activity: Field or Not?",
     "text": "Activity: Field or Not?\nDetermine whether each statement is true or false. Justify your answers.\n\nEvery field is an integral domain.\nEvery integral domain is a field.\nEvery finite integral domain is a field.\nEvery ring with prime characteristic is an integral domain.\nEvery finite field has prime characteristic.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
     "objectID": "classes/26/slides.html#activity",
     "href": "classes/26/slides.html#activity",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Activity",
     "text": "Activity\nDetermine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.\n\n\\(\\mathbb Q(\\sqrt{2})=\\{a+b\\sqrt{2}:a,b\\in\\mathbb Q\\}\\).\n\\(\\mathbb Z[\\sqrt{3}]=\\{a+b\\sqrt{3}:a,b\\in\\mathbb Z\\}\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Cancellation Law and Finite Fields"
+    ]
+  },
+  {
+    "objectID": "classes/26/slides.html#a-set-with-nine-elements",
+    "href": "classes/26/slides.html#a-set-with-nine-elements",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "A Set with Nine Elements",
+    "text": "A Set with Nine Elements\nLet \\(\\alpha\\) be a symbol satisfying \\(\\alpha^2=2\\) in \\(\\mathbb{F}_3\\), and consider\n\\[\nS=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_3\\}\n\\]\nwhere \\(a+b\\alpha + c+d\\alpha = (a+c)+(b+d)\\alpha\\) and \\(a+b\\alpha \\cdot c+d\\alpha = (ac+2bd) +(ad+bc)\\alpha\\) . \\(\\alpha\\) communtes with elements in \\(\\{\\mathbb{Z}_3\\}\\). S has 9 elements.\nWhat can you determine about \\(S\\)?\n\nIs this a ring&gt;\nWhat are the tables for addition and multiplication.\nWhat kind of a ring is it?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cancellation Law and Finite Fields"
+    ]
+  },
+  {
+    "objectID": "classes/26/slides.html#another-nine-element-set",
+    "href": "classes/26/slides.html#another-nine-element-set",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "Another Nine-Element Set",
+    "text": "Another Nine-Element Set\nLet \\(\\beta\\) be a symbol satisfying \\(\\beta^2=0\\) in \\(\\mathbb{Z}_3\\), and consider\n\\[\nR=\\{a+b\\beta : a,b\\in\\mathbb{F}_3\\}.\n\\]\nwhere \\(a+b\\beta + c+d\\beta = (a+c)+(b+d)\\beta\\) and \\(a+b\\beta \\cdot c+d\\beta = (ac) +(ad+bc)\\beta\\) . \\(\\beta\\) communtes with elements in \\(\\{\\mathbb{Z}_3\\}\\). S has 9 elements.\nWhat can you determine about \\(R\\)?\n\nIs this a ring?\nWhat are the tables for addition and multiplication.\nWhat kind of a ring is it?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
@@ -2497,443 +2508,113 @@
     ]
   },
   {
-    "objectID": "classes/28/slides.html#integral-domains-and-fields",
-    "href": "classes/28/slides.html#integral-domains-and-fields",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Integral Domains and Fields",
-    "text": "Integral Domains and Fields\n\nReview zero divisors, units, integral domains, and fields.\nFind the units in the Gaussian integers.\nUse the cancellation law to characterize integral domains.\nProve that every finite integral domain is a field.\nDefine the characteristic of a ring.\nProve that the characteristic of an integral domain is either prime or zero.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
     "objectID": "classes/28/slides.html#review-of-important-definitions",
     "href": "classes/28/slides.html#review-of-important-definitions",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Review of Important Definitions",
     "text": "Review of Important Definitions\nLet \\(R\\) be a ring.\n\nA nonzero element \\(a\\) is a zero divisor if there is a nonzero \\(b\\) such that \\(ab=0\\).\nA unit is an element with a multiplicative inverse.\nAn integral domain is a commutative ring with identity and no zero divisors.\nA division ring is a ring with identity in which every nonzero element is a unit.\nA field is a commutative division ring.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#proposition-16.1.10---subring-test",
-    "href": "classes/28/slides.html#proposition-16.1.10---subring-test",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proposition 16.1.10 - Subring Test",
-    "text": "Proposition 16.1.10 - Subring Test\nLet \\(R\\) be a ring and \\(S\\) a subset of \\(R\\). Then \\(S\\) is a subring of \\(R\\) if and only if the following conditions are satisfied.\n\n\\(S\\neq\\emptyset\\).\n\\(rs\\in S\\) for all \\(r,s\\in S\\).\n\\(r-s\\in S\\) for all \\(r,s\\in S\\).",
+    "objectID": "classes/28/slides.html#ring-homomorphisms",
+    "href": "classes/28/slides.html#ring-homomorphisms",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Ring Homomorphisms",
+    "text": "Ring Homomorphisms\nA map \\(\\phi : R \\to S\\) is a ring homomorphism if, for all \\(a,b \\in R\\),\n\\[\n\\phi(a+b)=\\phi(a)+\\phi(b),\n\\qquad\n\\phi(ab)=\\phi(a)\\phi(b).\n\\]\nIf \\(\\phi\\) is both one-to-one and onto, it is an isomorphism of rings.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#proof-of-16.1.10",
-    "href": "classes/28/slides.html#proof-of-16.1.10",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of 16.1.10",
-    "text": "Proof of 16.1.10\n\nChoose \\(s\\in S\\). Why does \\(s-s\\) show that \\(0\\in S\\)?\nFor \\(r\\in S\\), why is \\(-r\\in S\\)?\nHow does subtraction closure imply addition closure?\nWhich remaining ring axioms are inherited from \\(R\\)?",
+    "objectID": "classes/28/slides.html#example-reduction-modulo-n",
+    "href": "classes/28/slides.html#example-reduction-modulo-n",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Example: Reduction Modulo \\(n\\)",
+    "text": "Example: Reduction Modulo \\(n\\)\nDefine \\(\\phi : \\mathbb{Z} \\to \\mathbb{Z}_n\\) by\n\\[\n\\phi(a)=a \\pmod n.\n\\]\nReduction modulo \\(n\\) preserves addition and multiplication, so \\(\\phi\\) is a ring homomorphism.\nIts kernel is the set of integers that map to zero:\n\\[\n\\ker \\phi = \\{a \\in \\mathbb{Z} : a \\equiv 0 \\pmod n\\}\n= n\\mathbb{Z}.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#mathbb-z_p",
-    "href": "classes/28/slides.html#mathbb-z_p",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "\\(\\mathbb Z_p\\)",
-    "text": "\\(\\mathbb Z_p\\)\nLet \\(p\\) be a prime and consider the non-zero elements of \\(\\mathbb Z_p\\), \\(\\{1,2, \\ldots, p-1\\}\\).\nZero divisors? If we have the product of two non-zero elements \\(a\\cdot b=0\\). Then \\(p\\) divides \\(a\\cdot b\\), which means that \\(p\\) divides either \\(a\\) or \\(b\\), but \\(p\\ge a\\) and \\(p\\ge b\\) so this is not possible. So \\(Z_p\\) has no zero divisors.\nThis is not true for \\(\\mathbb Z_n\\) is \\(n\\) is not prime.",
+    "objectID": "classes/28/slides.html#the-kernel-of-a-homomorphism",
+    "href": "classes/28/slides.html#the-kernel-of-a-homomorphism",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "The Kernel of a Homomorphism",
+    "text": "The Kernel of a Homomorphism\nFor a ring homomorphism \\(\\phi : R \\to S\\), define\n\\[\n\\ker \\phi = \\{r \\in R : \\phi(r)=0\\}.\n\\]\nThe kernel is an ideal of \\(R\\).\nIf \\(a \\in \\ker \\phi\\) and \\(r \\in R\\), then\n\\[\n\\phi(ar)=\\phi(a)\\phi(r)=0,\n\\qquad\n\\phi(ra)=\\phi(r)\\phi(a)=0.\n\\]\nThus, both \\(ar\\) and \\(ra\\) are in the kernel.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#mathbb-z_p-1",
-    "href": "classes/28/slides.html#mathbb-z_p-1",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "\\(\\mathbb Z_p\\)",
-    "text": "\\(\\mathbb Z_p\\)\nLet \\(p\\) be a prime and consider the non-zero elements of \\(\\mathbb Z_p\\), \\(\\{1,2, \\ldots, p-1\\}\\).\nUnits? We also showed that the \\(U(p)\\) a cyclic group and any element other that 1 generates the group. This means that every nonzero element has an inverse under mulitplication. So \\(Z_p\\) is a field.",
+    "objectID": "classes/28/slides.html#ideals",
+    "href": "classes/28/slides.html#ideals",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Ideals",
+    "text": "Ideals\nAn ideal \\(I\\) of a ring \\(R\\) is a subring such that, whenever \\(a \\in I\\) and \\(r \\in R\\),\n\\[\nar \\in I\n\\qquad\\text{and}\\qquad\nra \\in I.\n\\]\nThese conditions make the ideal a two-sided ideal. In a commutative ring, the two conditions coincide.\nEvery ring has the trivial ideals \\(\\{0\\}\\) and \\(R\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#example-mathbbz_2",
-    "href": "classes/28/slides.html#example-mathbbz_2",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example: \\(\\mathbb{Z}_2\\)",
-    "text": "Example: \\(\\mathbb{Z}_2\\)\nThe elements of \\(\\mathbb{Z}_2\\) are \\([0]\\) and \\([1]\\). Compute modulo \\(2\\).\n\n\n\n\n\n\\(+\\)\n\\([0]\\)\n\\([1]\\)\n\n\n\n\n\\([0]\\)\n\\([0]\\)\n\\([1]\\)\n\n\n\\([1]\\)\n\\([1]\\)\n\\([0]\\)\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\\([0]\\)\n\\([1]\\)\n\n\n\n\n\\([0]\\)\n\\([0]\\)\n\\([0]\\)\n\n\n\\([1]\\)\n\\([0]\\)\n\\([1]\\)\n\n\n\n\nNote that \\(2a=0\\) for all \\(a \\in \\mathbb{Z}_2\\).",
+    "objectID": "classes/28/slides.html#principal-ideals",
+    "href": "classes/28/slides.html#principal-ideals",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Principal Ideals",
+    "text": "Principal Ideals\nIn a commutative ring \\(R\\) with identity, an ideal generated by one element \\(a\\) is called a principal ideal:\n\\[\n\\langle a \\rangle = \\{ar : r \\in R\\}.\n\\]\nFor example, in \\(\\mathbb{Z}\\),\n\\[\n\\langle n \\rangle = n\\mathbb{Z}.\n\\]\nEvery ideal of \\(\\mathbb{Z}\\) is principal.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#example-mathbbz_3",
-    "href": "classes/28/slides.html#example-mathbbz_3",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example: \\(\\mathbb{Z}_3\\)",
-    "text": "Example: \\(\\mathbb{Z}_3\\)\nThe elements of \\(\\mathbb{Z}_3\\) are \\([0]\\), \\([1]\\), and \\([2]\\). Compute modulo \\(3\\).\n\n\n\n\n\n\\(+\\)\n\\([0]\\)\n\\([1]\\)\n\\([2]\\)\n\n\n\n\n\\([0]\\)\n\\([0]\\)\n\\([1]\\)\n\\([2]\\)\n\n\n\\([1]\\)\n\\([1]\\)\n\\([2]\\)\n\\([0]\\)\n\n\n\\([2]\\)\n\\([2]\\)\n\\([0]\\)\n\\([1]\\)\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\\([0]\\)\n\\([1]\\)\n\\([2]\\)\n\n\n\n\n\\([0]\\)\n\\([0]\\)\n\\([0]\\)\n\\([0]\\)\n\n\n\\([1]\\)\n\\([0]\\)\n\\([1]\\)\n\\([2]\\)\n\n\n\\([2]\\)\n\\([0]\\)\n\\([2]\\)\n\\([1]\\)\n\n\n\n\nFor every \\(a \\in \\mathbb{Z}_3\\), \\(3a=0\\).",
+    "objectID": "classes/28/slides.html#quotient-rings",
+    "href": "classes/28/slides.html#quotient-rings",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Quotient Rings",
+    "text": "Quotient Rings\nIf \\(I\\) is an ideal of \\(R\\), the additive cosets form a ring called the quotient ring or factor ring \\(R/I\\).\nMultiplication is defined by\n\\[\n(r+I)(s+I)=rs+I.\n\\]\nThe ideal condition ensures this product does not depend on which representatives of the cosets we choose.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#example-a-finite-set-of-matrices",
-    "href": "classes/28/slides.html#example-a-finite-set-of-matrices",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example: A Finite Set of Matrices",
-    "text": "Example: A Finite Set of Matrices\nConsider the following matrices over \\(\\mathbb Z_2\\):\n\\[\nF=\\left\\{\n\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix},\n\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix},\n\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix},\n\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\n\\right\\}.\n\\]\nwhere matrix addition and multiplication modulo \\(2\\).",
+    "objectID": "classes/28/slides.html#the-natural-homomorphism",
+    "href": "classes/28/slides.html#the-natural-homomorphism",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "The Natural Homomorphism",
+    "text": "The Natural Homomorphism\nFor an ideal \\(I\\) of \\(R\\), define\n\\[\n\\phi : R \\to R/I,\n\\qquad\n\\phi(r)=r+I.\n\\]\nThis is a surjective ring homomorphism, called the natural or canonical homomorphism.\nIts kernel is exactly \\(I\\):\n\\[\n\\ker \\phi\n= \\{r \\in R : r+I=I\\}\n= I.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#activity",
-    "href": "classes/28/slides.html#activity",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity",
-    "text": "Activity\nFor F:\n\nIs this a subring of \\(M_2(\\mathbb Z_2)\\)?\nCreate an addtion table for F.\nCreate a multiplication table for F.\nAre there any zero divisors?\nWhat are the units?\nWhat type of ring is this? commutative? with indentity? integral domain? field?",
+    "objectID": "classes/28/slides.html#the-first-isomorphism-theorem",
+    "href": "classes/28/slides.html#the-first-isomorphism-theorem",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "The First Isomorphism Theorem",
+    "text": "The First Isomorphism Theorem\nLet \\(\\psi : R \\to S\\) be a ring homomorphism. Then \\(\\ker \\psi\\) is an ideal of \\(R\\), and\n\\[\nR/\\ker\\psi \\cong \\psi(R).\n\\]\nThe isomorphism is given by\n\\[\nr+\\ker\\psi \\longmapsto \\psi(r).\n\\]\nThe quotient identifies elements of \\(R\\) that the homomorphism sends to the same value.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
-    "objectID": "classes/28/slides.html#example-gaussian-integers",
-    "href": "classes/28/slides.html#example-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example: Gaussian Integers",
-    "text": "Example: Gaussian Integers\nThe Gaussian integers are\n\\[\n\\mathbb Z[i]=\\{a+bi:a,b\\in\\mathbb Z\\},\n\\]\nwhere \\(i^2=-1\\).\n\n\\(\\mathbb Z[i]\\) is a subring of \\(\\mathbb C\\).\nAddition and multiplication are inherited from \\(\\mathbb C\\).\nThe ring is commutative and has identity \\(1\\).\n\nWhat kind of ring is \\(\\mathbb Z[i]\\)? an integral domain? a field?",
+    "objectID": "classes/28/slides.html#example-the-first-isomorphism-theorem-modulo-n",
+    "href": "classes/28/slides.html#example-the-first-isomorphism-theorem-modulo-n",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Example: The First Isomorphism Theorem Modulo \\(n\\)",
+    "text": "Example: The First Isomorphism Theorem Modulo \\(n\\)\nFor \\(\\phi : \\mathbb{Z} \\to \\mathbb{Z}_n\\) given by reduction modulo \\(n\\),\n\\[\n\\ker\\phi=n\\mathbb{Z}\n\\qquad\\text{and}\\qquad\n\\phi(\\mathbb{Z})=\\mathbb{Z}_n.\n\\]\nTherefore, the First Isomorphism Theorem gives\n\\[\n\\mathbb{Z}/n\\mathbb{Z}\\cong\\mathbb{Z}_n.\n\\]\nThe quotient ring is the image of the homomorphism, with elements identified according to its kernel.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#multiplication-in-the-gaussian-integers",
-    "href": "classes/28/slides.html#multiplication-in-the-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Multiplication in the Gaussian Integers",
-    "text": "Multiplication in the Gaussian Integers\nLet \\(\\alpha=a+bi\\) and \\(\\beta=c+di\\).\nThen\n\\[\n\\alpha\\beta=(ac-bd)+(ad+bc)i.\n\\]\nSince \\(a,b,c,d\\in\\mathbb Z\\), the product is again in \\(\\mathbb Z[i]\\).\nAlso,\n\\[\n(a+bi)-(c+di)=(a-c)+(b-d)i.\n\\]\nTherefore, \\(\\mathbb Z[i]\\) is a subring of \\(\\mathbb C\\) by the subring test.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#norm-of-a-gaussian-integer",
-    "href": "classes/28/slides.html#norm-of-a-gaussian-integer",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Norm of a Gaussian Integer",
-    "text": "Norm of a Gaussian Integer\nFor \\(\\alpha=a+bi\\), define its conjugate by\n\\[\n\\overline{\\alpha}=a-bi.\n\\]\nThen\n\\[\n\\alpha\\overline{\\alpha}=a^2+b^2.\n\\]\nWe call \\(N(\\alpha)=a^2+b^2\\) the norm of \\(\\alpha\\).\n\n\\(N(\\alpha)\\) is a nonnegative integer.\n\\(N(\\alpha)=0\\) if and only if \\(\\alpha=0\\).\n\\(N(\\alpha\\beta)=N(\\alpha)N(\\beta)\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#units-in-the-gaussian-integers",
-    "href": "classes/28/slides.html#units-in-the-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Units in the Gaussian Integers",
-    "text": "Units in the Gaussian Integers\nSuppose \\(\\alpha=a+bi\\) is a unit in \\(\\mathbb Z[i]\\).\nThen there exists \\(\\beta=c+di\\) such that \\(\\alpha\\beta=1\\).\nTaking norms gives\n\\[\n1=N(\\alpha\\beta)=N(\\alpha)N(\\beta).\n\\]\nThus,\n\\[\n1=(a^2+b^2)(c^2+d^2).\n\\]\nBoth factors are nonnegative integers.\nWhat values can \\(a^2+b^2\\) have?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#units-in-mathbb-zi",
-    "href": "classes/28/slides.html#units-in-mathbb-zi",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Units in \\(\\mathbb Z[i]\\)",
-    "text": "Units in \\(\\mathbb Z[i]\\)\nSince\n\\[\n(a^2+b^2)(c^2+d^2)=1,\n\\]\nwe must have \\(a^2+b^2=1\\).\nThe integer solutions are \\((a,b)=(\\pm1,0),\\quad(0,\\pm1)\\).\nTherefore, \\(U(\\mathbb Z[i])=\\{1,-1,i,-i\\}\\)\nThe Gaussian integers are an integral domain but not a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#quaternions",
-    "href": "classes/28/slides.html#quaternions",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Quaternions",
-    "text": "Quaternions\nLet \\(\\mathbb H\\) consist of elements of the form \\(a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\), where \\(a,b,c,d\\) are real numbers.\nThe ring \\(\\mathbb H\\) is called the ring of quaternions.\n\nAdd by combining corresponding coefficients.\nMultiply by distributing and using the relationships between \\(\\mathbf i\\), \\(\\mathbf j\\), and \\(\\mathbf k\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#quaternion-multiplication",
-    "href": "classes/28/slides.html#quaternion-multiplication",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Quaternion Multiplication",
-    "text": "Quaternion Multiplication\nThe generators satisfy the following relations:\n\n\\(\\mathbf i^2=\\mathbf j^2=\\mathbf k^2=-1\\).\n\\(\\mathbf i\\mathbf j=\\mathbf k\\).\n\\(\\mathbf j\\mathbf k=\\mathbf i\\).\n\\(\\mathbf k\\mathbf i=\\mathbf j\\).\n\\(\\mathbf j\\mathbf i=-\\mathbf k\\).\n\\(\\mathbf k\\mathbf j=-\\mathbf i\\).\n\\(\\mathbf i\\mathbf k=-\\mathbf j\\).\n\nNote that this is noncommuntative.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#multiplicative-inverses-in-mathbb-h",
-    "href": "classes/28/slides.html#multiplicative-inverses-in-mathbb-h",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Multiplicative Inverses in \\(\\mathbb H\\)",
-    "text": "Multiplicative Inverses in \\(\\mathbb H\\)\nNotice that\n\\[\n(a+b\\mathbf i+c\\mathbf j+d\\mathbf k)\n(a-b\\mathbf i-c\\mathbf j-d\\mathbf k)\n=a^2+b^2+c^2+d^2.\n\\]\nThis element can be zero only if \\(a,b,c,d\\) are all zero.\nThus, for \\(q=a+b\\mathbf i+c\\mathbf j+d\\mathbf k\\neq0\\),\n\\[\nq^{-1}=\\frac{a-b\\mathbf i-c\\mathbf j-d\\mathbf k}{a^2+b^2+c^2+d^2}.\n\\]\nHence \\(\\mathbb H\\) is a noncommutative division ring.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#subrings-of-mathbb-h",
-    "href": "classes/28/slides.html#subrings-of-mathbb-h",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Subrings of \\(\\mathbb H\\)",
-    "text": "Subrings of \\(\\mathbb H\\)\n-Is \\(\\{a+b\\mathbf i\\}\\) a subring of \\(\\mathbb H\\)? -Is \\(\\{a+b\\mathbf i + c\\mathbf j\\}\\) a subring of \\(\\mathbb H\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#example-16.14-mathbb-qsqrt2",
-    "href": "classes/28/slides.html#example-16.14-mathbb-qsqrt2",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example 16.14: \\(\\mathbb Q(\\sqrt{2})\\)",
-    "text": "Example 16.14: \\(\\mathbb Q(\\sqrt{2})\\)\nConsider\n\\[\n\\mathbb Q(\\sqrt{2})=\n\\{a+b\\sqrt{2}:a,b\\in\\mathbb Q\\}.\n\\]\nThis is a subring of \\(\\mathbb R\\).\nTo determine whether it is a field, consider a nonzero element \\(a+b\\sqrt{2}\\).\nMultiply by its conjugate:\n\\[\n(a+b\\sqrt{2})(a-b\\sqrt{2})=a^2-2b^2.\n\\]\nWhy can \\(a^2-2b^2\\) not be zero unless \\(a=b=0\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#inverses-in-mathbb-qsqrt2",
-    "href": "classes/28/slides.html#inverses-in-mathbb-qsqrt2",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Inverses in \\(\\mathbb Q(\\sqrt{2})\\)",
-    "text": "Inverses in \\(\\mathbb Q(\\sqrt{2})\\)\nFor \\(a+b\\sqrt{2}\\neq0\\),\n\\[\n(a+b\\sqrt{2})^{-1}\n=\\frac{a-b\\sqrt{2}}{a^2-2b^2}.\n\\]\nEquivalently,\n\\[\n\\frac{a}{a^2-2b^2}\n-\\frac{b}{a^2-2b^2}\\sqrt{2}.\n\\]\nBoth coefficients are rational.\nThus, every nonzero element has an inverse in \\(\\mathbb Q(\\sqrt{2})\\).\nTherefore, \\(\\mathbb Q(\\sqrt{2})\\) is a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#examples-of-integral-domains-and-fields",
-    "href": "classes/28/slides.html#examples-of-integral-domains-and-fields",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Examples of Integral Domains and Fields",
-    "text": "Examples of Integral Domains and Fields\n\n\\(\\mathbb Z\\) is an integral domain but not a field.\n\\(\\mathbb Q\\), \\(\\mathbb R\\), and \\(\\mathbb C\\) are fields.\n\\(\\mathbb Z_p\\) is a field when \\(p\\) is prime.\n\\(\\mathbb Z_n\\) is not an integral domain when \\(n\\) is composite.\nThe quaternions \\(\\mathbb H\\) form a division ring but not a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proposition-16.15-cancellation-law",
-    "href": "classes/28/slides.html#proposition-16.15-cancellation-law",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proposition 16.15: Cancellation Law",
-    "text": "Proposition 16.15: Cancellation Law\nLet \\(D\\) be a commutative ring with identity.\nThen \\(D\\) is an integral domain if and only if, for every nonzero \\(a\\in D\\),\n\\[\nab=ac\\implies b=c.\n\\]\nThis is the cancellation law.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proof-of-proposition-16.15",
-    "href": "classes/28/slides.html#proof-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Proposition 16.15",
-    "text": "Proof of Proposition 16.15\nSuppose \\(D\\) is an integral domain.\nLet \\(a\\neq0\\) and suppose \\(ab=ac\\).\nThen \\(ab-ac=0.\\)\nBy the distributive law, \\(a(b-c)=0.\\)\nSince \\(D\\) has no zero divisors and \\(a\\neq0\\), \\(b-c=0.\\)\nTherefore, \\(b=c\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#converse-of-proposition-16.15",
-    "href": "classes/28/slides.html#converse-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Converse of Proposition 16.15",
-    "text": "Converse of Proposition 16.15\nSuppose that cancellation holds in \\(D\\).\nLet \\(ab=0\\) and suppose \\(a\\neq0\\).\nSince \\(a0=0\\), we have \\(ab=a0.\\)\nBy cancellation, \\(b=0\\).\nThus, \\(D\\) has no zero divisors.\nSince \\(D\\) is a commutative ring with identity, it is an integral domain.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#theorem-16.16",
-    "href": "classes/28/slides.html#theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Theorem 16.16",
-    "text": "Theorem 16.16\nEvery finite integral domain is a field.\nThis tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proof-of-theorem-16.16",
-    "href": "classes/28/slides.html#proof-of-theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.16",
-    "text": "Proof of Theorem 16.16\nThe proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.\nLet \\(D\\) be a finite integral domain, and let\n\\[\nD^*=D\\setminus\\{0\\}.\n\\]\nChoose \\(a\\in D^*\\) and define\n\\[\n\\lambda_a:D^*\\to D^*,\\qquad\n\\lambda_a(d)=ad.\n\\]\nSince \\(D\\) has no zero divisors, \\(ad\\neq0\\) whenever \\(a,d\\neq0\\).\nThus, \\(\\lambda_a\\) is well-defined.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proof-of-theorem-16.16-continued",
-    "href": "classes/28/slides.html#proof-of-theorem-16.16-continued",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.16 Continued",
-    "text": "Proof of Theorem 16.16 Continued\nSuppose\n\\[\n\\lambda_a(d_1)=\\lambda_a(d_2).\n\\]\nThen \\(ad_1=ad_2\\).\nBy cancellation, \\(d_1=d_2\\).\nThus, \\(\\lambda_a\\) is one-to-one.\nSince \\(D^*\\) is finite, \\(\\lambda_a\\) is also onto.\nTherefore, there exists \\(d\\in D^*\\) such that\n\\[\nad=1.\n\\]\nSince \\(D\\) is commutative, \\(da=1\\) also.\nEvery nonzero element has an inverse, so \\(D\\) is a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#application-mathbb-z_n",
-    "href": "classes/28/slides.html#application-mathbb-z_n",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Application: \\(\\mathbb Z_n\\)",
-    "text": "Application: \\(\\mathbb Z_n\\)\nConsider the ring \\(\\mathbb Z_n\\).\n\nIf \\(n\\) is prime, \\(\\mathbb Z_n\\) has no zero divisors.\nIf \\(n\\) is composite, say \\(n=ab\\) with \\(1&lt;a,b&lt;n\\), then \\(ab=0\\) in \\(\\mathbb Z_n\\).\n\nConsequently,\n\\[\n\\mathbb Z_n\\text{ is a field}\n\\iff n\\text{ is prime}.\n\\]\nQuestion: Why is \\(\\mathbb Z_{11}\\) a field but \\(\\mathbb Z_{12}\\) is not?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#characteristic-of-a-ring",
-    "href": "classes/28/slides.html#characteristic-of-a-ring",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Characteristic of a Ring",
-    "text": "Characteristic of a Ring\nFor a nonnegative integer \\(n\\) and \\(r\\in R\\), write\n\\[\nnr=\\underbrace{r+\\cdots+r}_{n\\text{ times}}.\n\\]\nThe characteristic of a ring \\(R\\) is the least positive integer \\(n\\) such that\n\\[\nnr=0\\quad\\text{for all }r\\in R.\n\\]\nIf no such positive integer exists, the characteristic is defined to be \\(0\\).\nWe write \\(\\operatorname{char}R\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#examples-of-characteristic",
-    "href": "classes/28/slides.html#examples-of-characteristic",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Examples of Characteristic",
-    "text": "Examples of Characteristic\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\).\n\nIn \\(\\mathbb Z_5\\),\n\\[\n5a=0\n\\]\nfor every \\(a\\in\\mathbb Z_5\\).\nQuestion: What is the characteristic of \\(\\mathbb Z_6\\)? Is \\(\\mathbb Z_6\\) an integral domain?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#example-16.17",
-    "href": "classes/28/slides.html#example-16.17",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example 16.17",
-    "text": "Example 16.17\nFor every prime \\(p\\), the ring \\(\\mathbb Z_p\\) is a field of characteristic \\(p\\).\nEvery nonzero element has a multiplicative inverse because\n\\[\n\\gcd(a,p)=1\n\\]\nwhenever \\(a\\neq0\\) in \\(\\mathbb Z_p\\).\nAlso,\n\\[\npa=0\n\\]\nfor every \\(a\\in\\mathbb Z_p\\).\nHence,\n\\[\n\\operatorname{char}\\mathbb Z_p=p.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#lemma-16.18",
-    "href": "classes/28/slides.html#lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Lemma 16.18",
-    "text": "Lemma 16.18\nLet \\(R\\) be a ring with identity.\nIf \\(1\\) has additive order \\(n\\), then the characteristic of \\(R\\) is \\(n\\).\nRecall that the additive order of \\(1\\) is the smallest positive integer \\(n\\) such that\n\\[\nn1=0.\n\\]\nThis allows us to determine the characteristic of a ring by examining only its multiplicative identity.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proof-of-lemma-16.18",
-    "href": "classes/28/slides.html#proof-of-lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Lemma 16.18",
-    "text": "Proof of Lemma 16.18\nSuppose \\(1\\) has additive order \\(n\\).\nThen \\(n1=0\\).\nFor any \\(r\\in R\\),\n\\[\nnr=n(1r)=(n1)r=0r=0.\n\\]\nThus, \\(\\operatorname{char}R\\leq n\\).\nIf a smaller positive integer annihilated every element of \\(R\\), it would also annihilate \\(1\\).\nThis contradicts the order of \\(1\\).\nHence, \\(\\operatorname{char}R=n\\).\nIf \\(1\\) has infinite additive order, then \\(\\operatorname{char}R=0\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#theorem-16.19",
-    "href": "classes/28/slides.html#theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Theorem 16.19",
-    "text": "Theorem 16.19\nThe characteristic of an integral domain is either prime or zero.\nIn other words, if \\(D\\) is an integral domain, then\n\\[\n\\operatorname{char}D=0\n\\]\nor\n\\[\n\\operatorname{char}D=p\n\\]\nfor some prime number \\(p\\).\nWhy can an integral domain not have characteristic \\(6\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#proof-of-theorem-16.19",
-    "href": "classes/28/slides.html#proof-of-theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.19",
-    "text": "Proof of Theorem 16.19\nSuppose \\(D\\) is an integral domain with\n\\[\n\\operatorname{char}D=n&gt;0.\n\\]\nAssume \\(n\\) is composite, so \\(n=ab\\) with\n\\[\n1&lt;a&lt;n,\\qquad1&lt;b&lt;n.\n\\]\nBy Lemma 16.18, \\(n1=0\\). Thus,\n\\[\n0=n1=(ab)1=(a1)(b1).\n\\]\nSince \\(D\\) has no zero divisors,\n\\[\na1=0\\quad\\text{or}\\quad b1=0.\n\\]\nBoth contradict the minimality of \\(n\\).\nTherefore, \\(n\\) must be prime.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#activity-finite-rings",
-    "href": "classes/28/slides.html#activity-finite-rings",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Finite Rings",
-    "text": "Activity: Finite Rings\nDetermine whether each ring is an integral domain or a field.\n\n\\(\\mathbb Z_7\\)\n\\(\\mathbb Z_9\\)\n\\(\\mathbb Z_{15}\\)\n\\(\\mathbb Z_{17}\\)\n\nFor each ring:\n\nIdentify its characteristic.\nDetermine whether it has zero divisors.\nExplain whether Theorem 16.16 applies.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#activity-gaussian-integers",
-    "href": "classes/28/slides.html#activity-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Gaussian Integers",
-    "text": "Activity: Gaussian Integers\nConsider the ring \\(\\mathbb Z[i]\\).\n\nShow that \\((1+i)(1-i)=2\\).\nIs \\(1+i\\) a unit in \\(\\mathbb Z[i]\\)?\nFind the norm of \\(3+4i\\).\nShow that \\(\\mathbb Z[i]\\) has no zero divisors.\nExplain why \\(\\mathbb Z[i]\\) is not a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#activity-field-or-not",
-    "href": "classes/28/slides.html#activity-field-or-not",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Field or Not?",
-    "text": "Activity: Field or Not?\nDetermine whether each statement is true or false. Justify your answers.\n\nEvery field is an integral domain.\nEvery integral domain is a field.\nEvery finite integral domain is a field.\nEvery ring with prime characteristic is an integral domain.\nEvery finite field has prime characteristic.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/28/slides.html#activity-1",
-    "href": "classes/28/slides.html#activity-1",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity",
-    "text": "Activity\nDetermine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.\n\n\\(\\mathbb Q(\\sqrt{2})=\\{a+b\\sqrt{2}:a,b\\in\\mathbb Q\\}\\).\n\\(\\mathbb Z[\\sqrt{3}]=\\{a+b\\sqrt{3}:a,b\\in\\mathbb Z\\}\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
@@ -3027,100 +2708,111 @@
   {
     "objectID": "classes/27/slides.html#ring-homomorphisms",
     "href": "classes/27/slides.html#ring-homomorphisms",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Ring Homomorphisms",
     "text": "Ring Homomorphisms\nA ring homomorphism \\(\\phi:R\\to S\\) preserves addition and multiplication:\n\\[\n\\phi(a+b)=\\phi(a)+\\phi(b), \\qquad\n\\phi(ab)=\\phi(a)\\phi(b).\n\\]\nIf \\(\\phi\\) is one-to-one and onto, it is an isomorphism of rings.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#example-reduction-modulo-n",
     "href": "classes/27/slides.html#example-reduction-modulo-n",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Example: Reduction Modulo \\(n\\)",
     "text": "Example: Reduction Modulo \\(n\\)\nDefine \\(\\phi:\\mathbb{Z}\\to\\mathbb{Z}_n\\) by \\(\\phi(a)=[a]\\).\nThis map preserves addition and multiplication modulo \\(n\\). Its kernel is\n\\[\n\\ker\\phi=\\{a\\in\\mathbb{Z}:\\phi(a)=[0]\\}=n\\mathbb{Z}.\n\\]\nSo the integers that map to zero are exactly the multiples of \\(n\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#ideals",
     "href": "classes/27/slides.html#ideals",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Ideals",
     "text": "Ideals\nAn ideal \\(I\\) of a ring \\(R\\) is a subring that absorbs multiplication by elements of \\(R\\): if \\(a\\in I\\) and \\(r\\in R\\), then \\(ra\\) and \\(ar\\) belong to \\(I\\).\nEvery ring has the trivial ideals \\(\\{0\\}\\) and \\(R\\).\nIn a commutative ring with identity, the ideal generated by \\(a\\) is\n\\[\n\\langle a\\rangle=\\{ar:r\\in R\\}.\n\\]\nAn ideal of this form is called a principal ideal.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#every-ideal-of-mathbbz-is-principal",
     "href": "classes/27/slides.html#every-ideal-of-mathbbz-is-principal",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Every Ideal of \\(\\mathbb{Z}\\) Is Principal",
     "text": "Every Ideal of \\(\\mathbb{Z}\\) Is Principal\nLet \\(I\\) be a nonzero ideal of \\(\\mathbb{Z}\\). Choose its least positive element \\(n\\).\nFor any \\(a\\in I\\), the division algorithm gives \\(a=nq+r\\), where \\(0\\le r&lt;n\\).\nSince \\(r=a-nq\\) belongs to \\(I\\), minimality of \\(n\\) forces \\(r=0\\). Thus every \\(a\\in I\\) is a multiple of \\(n\\), and\n\\[\nI=n\\mathbb{Z}=\\langle n\\rangle.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
+    ]
+  },
+  {
+    "objectID": "classes/27/slides.html#principal-ideal-domains",
+    "href": "classes/27/slides.html#principal-ideal-domains",
+    "title": "Slides: Ring Homomorphisms and Ideals",
+    "section": "Principal Ideal Domains",
+    "text": "Principal Ideal Domains\nAn integral domain in which every ideal is principal is called a principal ideal domain (PID).\nFor example, \\(\\mathbb{Z}\\) and \\(\\mathbb{Q}[x]\\) are PIDs. But \\(\\mathbb{Q}[x,y]\\) is not: the ideal \\((x,y)\\) is not principal.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#kernels-are-ideals",
     "href": "classes/27/slides.html#kernels-are-ideals",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Kernels Are Ideals",
     "text": "Kernels Are Ideals\nFor a ring homomorphism \\(\\phi:R\\to S\\), its kernel is\n\\[\n\\ker\\phi=\\{a\\in R:\\phi(a)=0\\}.\n\\]\nIt is an additive subgroup. If \\(a\\in\\ker\\phi\\) and \\(r\\in R\\), then\n\\[\n\\phi(ar)=\\phi(a)\\phi(r)=0\n\\quad\\text{and}\\quad\n\\phi(ra)=\\phi(r)\\phi(a)=0.\n\\]\nTherefore, \\(\\ker\\phi\\) is an ideal of \\(R\\).",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#quotient-rings",
     "href": "classes/27/slides.html#quotient-rings",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Quotient Rings",
     "text": "Quotient Rings\nIf \\(I\\) is an ideal of \\(R\\), the cosets of \\(I\\) form a quotient ring \\(R/I\\).\nAddition is the usual coset addition, and multiplication is defined by\n\\[\n(r+I)(s+I)=rs+I.\n\\]\nThe ideal property ensures that this product does not depend on which representatives of the cosets are chosen.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#the-natural-map",
     "href": "classes/27/slides.html#the-natural-map",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "The Natural Map",
     "text": "The Natural Map\nFor an ideal \\(I\\) of \\(R\\), define \\(\\phi:R\\to R/I\\) by\n\\[\n\\phi(r)=r+I.\n\\]\nThis map is onto, and its kernel is \\(I\\).\nThus the ideal used to form the quotient is exactly the set of elements sent to zero by the natural map.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#first-isomorphism-theorem",
     "href": "classes/27/slides.html#first-isomorphism-theorem",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "First Isomorphism Theorem",
     "text": "First Isomorphism Theorem\nIf \\(\\psi:R\\to S\\) is a ring homomorphism, then\n\\[\nR/\\ker\\psi \\cong \\psi(R).\n\\]\nThe quotient by the kernel captures the image of the homomorphism: elements that map to the same value are identified in the quotient.",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
     "objectID": "classes/27/slides.html#connections-to-ring-types",
     "href": "classes/27/slides.html#connections-to-ring-types",
-    "title": "Slides: Integral Domains and Fields",
+    "title": "Slides: Ring Homomorphisms and Ideals",
     "section": "Connections to Ring Types",
-    "text": "Connections to Ring Types\n\n\n\n\n\n\n\nIdea\nConnection\n\n\n\n\nKernel of a ring homomorphism\nAlways an ideal\n\n\nQuotient by an ideal\nForms a quotient ring\n\n\nPrime ideal \\(P\\)\n\\(R/P\\) is an integral domain\n\n\nMaximal ideal \\(M\\)\n\\(R/M\\) is a field\n\n\nIntegral domain\nCancellation holds: if \\(a\\ne 0\\) and \\(ab=ac\\), then \\(b=c\\)\n\n\nEuclidean domain\nThe Euclidean algorithm finds greatest common divisors and gives Bézout identities\n\n\n\nFor commutative rings with identity,\n\\[\n\\text{field} \\Longrightarrow \\text{Euclidean domain}\n\\Longrightarrow \\text{integral domain}.\n\\]",
+    "text": "Connections to Ring Types\n\n\n\n\n\n\n\nIdea\nConnection\n\n\n\n\nKernel of a ring homomorphism\nAlways an ideal\n\n\nQuotient by an ideal\nForms a quotient ring\n\n\nPrime ideal \\(P\\)\n\\(R/P\\) is an integral domain\n\n\nMaximal ideal \\(M\\)\n\\(R/M\\) is a field\n\n\nIntegral domain\nCancellation holds: if \\(a\\ne 0\\) and \\(ab=ac\\), then \\(b=c\\)\n\n\nEuclidean domain\nThe Euclidean algorithm finds greatest common divisors\n\n\n\nFor commutative rings with identity,\n\\[\n\\text{field} \\Longrightarrow \\text{Euclidean domain}\n\\Longrightarrow \\text{integral domain}.\n\\]",
     "crumbs": [
       "Class Material",
-      "Slides: Integral Domains and Fields"
+      "Slides: Ring Homomorphisms and Ideals"
     ]
   },
   {
@@ -6967,6 +6659,17 @@
     ]
   },
   {
+    "objectID": "classes/25/slides.html#addition-and-subtraction-in-mathbb-z_2",
+    "href": "classes/25/slides.html#addition-and-subtraction-in-mathbb-z_2",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Addition and Subtraction in \\(\\mathbb Z_2\\)",
+    "text": "Addition and Subtraction in \\(\\mathbb Z_2\\)\nIn \\(\\mathbb{Z}_2\\), each element is its own additive inverse:\n\\[\n-[0]=[0], \\qquad -[1]=[1],\n\\]\nbecause \\([1]+[1]=[0]\\). Therefore, for all \\(a,b\\in\\mathbb{Z}_2\\),\n\\[\na-b=a+(-b)=a+b.\n\\]",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
     "objectID": "classes/25/slides.html#example-mathbbz_3",
     "href": "classes/25/slides.html#example-mathbbz_3",
     "title": "Slides: Integral Domains and Fields",
@@ -6989,11 +6692,33 @@
     ]
   },
   {
+    "objectID": "classes/25/slides.html#matrix-multiplication-a-2times2-example",
+    "href": "classes/25/slides.html#matrix-multiplication-a-2times2-example",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Matrix Multiplication: A \\(2\\times2\\) Example",
+    "text": "Matrix Multiplication: A \\(2\\times2\\) Example\nMultiply each row of the first matrix by each column of the second. Multiply corresponding entries, then add.\n\\[\n\\begin{pmatrix}\n1 & 2\\\\\n3 & 4\n\\end{pmatrix}\n\\begin{pmatrix}\n2 & 0\\\\\n1 & 5\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n1(2)+2(1) & 1(0)+2(5)\\\\\n3(2)+4(1) & 3(0)+4(5)\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n4 & 10\\\\\n10 & 20\n\\end{pmatrix}\n\\]\nFor example, the top-right entry is the first row dotted with the second column: \\(1(0)+2(5)=10\\).",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
     "objectID": "classes/25/slides.html#activity",
     "href": "classes/25/slides.html#activity",
     "title": "Slides: Integral Domains and Fields",
     "section": "Activity",
     "text": "Activity\nFor F:\n\nIs this a subring of \\(M_2(\\mathbb Z_2)\\)?\nCreate an addtion table for F.\nCreate a multiplication table for F.\nAre there any zero divisors?\nWhat are the units?\nWhat type of ring is this? commutative? with indentity? integral domain? field?",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#multiplication-table-for-f",
+    "href": "classes/25/slides.html#multiplication-table-for-f",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Multiplication Table for \\(F\\)",
+    "text": "Multiplication Table for \\(F\\)\nAll entries and products are computed modulo \\(2\\).\n\n\n\n\n\n\n\n\n\n\n\\(\\cdot\\)\n\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\n\n\n\n\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\n\n\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\n\n\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&1\\\\1&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&0\\\\0&1\\end{pmatrix}\\)\n\\(\\begin{pmatrix}1&1\\\\1&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\n\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)\n\\(\\begin{pmatrix}0&0\\\\0&0\\end{pmatrix}\\)",
     "crumbs": [
       "Class Material",
       "Slides: Integral Domains and Fields"
@@ -7049,6 +6774,28 @@
     "title": "Slides: Integral Domains and Fields",
     "section": "Units in \\(\\mathbb Z[i]\\)",
     "text": "Units in \\(\\mathbb Z[i]\\)\nSince\n\\[\n(a^2+b^2)(c^2+d^2)=1,\n\\]\nwe must have \\(a^2+b^2=1\\).\nThe integer solutions are \\((a,b)=(\\pm1,0),\\quad(0,\\pm1)\\).\nTherefore, \\(U(\\mathbb Z[i])=\\{1,-1,i,-i\\}\\)\nThe Gaussian integers are an integral domain but not a field.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#euclidean-domains-the-gaussian-integers",
+    "href": "classes/25/slides.html#euclidean-domains-the-gaussian-integers",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Euclidean Domains: The Gaussian Integers",
+    "text": "Euclidean Domains: The Gaussian Integers\nAn integral domain \\(D\\) is Euclidean if it has a size function that allows division with remainder: for \\(a,b\\in D\\), \\(b\\ne0\\), there are \\(q,r\\in D\\) such that\n\\[\na=bq+r,\\qquad r=0\\ \\text{or}\\ N(r)&lt;N(b).\n\\]\nThe Gaussian integers \\(\\mathbb{Z}[i]=\\{a+bi:a,b\\in\\mathbb{Z}\\}\\) are Euclidean with norm\n\\[\nN(a+bi)=a^2+b^2.\n\\]\nGiven \\(\\alpha,\\beta\\in\\mathbb{Z}[i]\\) with \\(\\beta\\ne0\\), choose \\(q\\in\\mathbb{Z}[i]\\) by rounding the real and imaginary parts of \\(\\alpha/\\beta\\) to the nearest integers. Then \\(r=\\alpha-q\\beta\\) satisfies \\(N(r)&lt;N(\\beta)\\), giving the Euclidean division algorithm.\n–",
+    "crumbs": [
+      "Class Material",
+      "Slides: Integral Domains and Fields"
+    ]
+  },
+  {
+    "objectID": "classes/25/slides.html#activity-gaussian-integers",
+    "href": "classes/25/slides.html#activity-gaussian-integers",
+    "title": "Slides: Integral Domains and Fields",
+    "section": "Activity: Gaussian Integers",
+    "text": "Activity: Gaussian Integers\nConsider the ring \\(\\mathbb Z[i]\\).\n\nShow that \\((1+i)(1-i)=2\\).\nIs \\(1+i\\) a unit in \\(\\mathbb Z[i]\\)?\nFind the norm of \\(3+4i\\).\nShow that \\(\\mathbb Z[i]\\) has no zero divisors.\nExplain why \\(\\mathbb Z[i]\\) is not a field.",
     "crumbs": [
       "Class Material",
       "Slides: Integral Domains and Fields"
@@ -7132,198 +6879,11 @@
     ]
   },
   {
-    "objectID": "classes/25/slides.html#proposition-16.15-cancellation-law",
-    "href": "classes/25/slides.html#proposition-16.15-cancellation-law",
+    "objectID": "classes/25/slides.html#a-set-with-four-elements",
+    "href": "classes/25/slides.html#a-set-with-four-elements",
     "title": "Slides: Integral Domains and Fields",
-    "section": "Proposition 16.15: Cancellation Law",
-    "text": "Proposition 16.15: Cancellation Law\nLet \\(D\\) be a commutative ring with identity.\nThen \\(D\\) is an integral domain if and only if, for every nonzero \\(a\\in D\\),\n\\[\nab=ac\\implies b=c.\n\\]\nThis is the cancellation law.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#proof-of-proposition-16.15",
-    "href": "classes/25/slides.html#proof-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Proposition 16.15",
-    "text": "Proof of Proposition 16.15\nSuppose \\(D\\) is an integral domain.\nLet \\(a\\neq0\\) and suppose \\(ab=ac\\).\nThen \\(ab-ac=0.\\)\nBy the distributive law, \\(a(b-c)=0.\\)\nSince \\(D\\) has no zero divisors and \\(a\\neq0\\), \\(b-c=0.\\)\nTherefore, \\(b=c\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#converse-of-proposition-16.15",
-    "href": "classes/25/slides.html#converse-of-proposition-16.15",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Converse of Proposition 16.15",
-    "text": "Converse of Proposition 16.15\nSuppose that cancellation holds in \\(D\\).\nLet \\(ab=0\\) and suppose \\(a\\neq0\\).\nSince \\(a0=0\\), we have \\(ab=a0.\\)\nBy cancellation, \\(b=0\\).\nThus, \\(D\\) has no zero divisors.\nSince \\(D\\) is a commutative ring with identity, it is an integral domain.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#theorem-16.16",
-    "href": "classes/25/slides.html#theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Theorem 16.16",
-    "text": "Theorem 16.16\nEvery finite integral domain is a field.\nThis tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#proof-of-theorem-16.16",
-    "href": "classes/25/slides.html#proof-of-theorem-16.16",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.16",
-    "text": "Proof of Theorem 16.16\nThe proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.\nLet \\(D\\) be a finite integral domain, and let\n\\[\nD^*=D\\setminus\\{0\\}.\n\\]\nChoose \\(a\\in D^*\\) and define\n\\[\n\\lambda_a:D^*\\to D^*,\\qquad\n\\lambda_a(d)=ad.\n\\]\nSince \\(D\\) has no zero divisors, \\(ad\\neq0\\) whenever \\(a,d\\neq0\\).\nThus, \\(\\lambda_a\\) is well-defined.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#proof-of-theorem-16.16-continued",
-    "href": "classes/25/slides.html#proof-of-theorem-16.16-continued",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.16 Continued",
-    "text": "Proof of Theorem 16.16 Continued\nSuppose\n\\[\n\\lambda_a(d_1)=\\lambda_a(d_2).\n\\]\nThen \\(ad_1=ad_2\\).\nBy cancellation, \\(d_1=d_2\\).\nThus, \\(\\lambda_a\\) is one-to-one.\nSince \\(D^*\\) is finite, \\(\\lambda_a\\) is also onto.\nTherefore, there exists \\(d\\in D^*\\) such that\n\\[\nad=1.\n\\]\nSince \\(D\\) is commutative, \\(da=1\\) also.\nEvery nonzero element has an inverse, so \\(D\\) is a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#application-mathbb-z_n",
-    "href": "classes/25/slides.html#application-mathbb-z_n",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Application: \\(\\mathbb Z_n\\)",
-    "text": "Application: \\(\\mathbb Z_n\\)\nConsider the ring \\(\\mathbb Z_n\\).\n\nIf \\(n\\) is prime, \\(\\mathbb Z_n\\) has no zero divisors.\nIf \\(n\\) is composite, say \\(n=ab\\) with \\(1&lt;a,b&lt;n\\), then \\(ab=0\\) in \\(\\mathbb Z_n\\).\n\nConsequently,\n\\[\n\\mathbb Z_n\\text{ is a field}\n\\iff n\\text{ is prime}.\n\\]\nQuestion: Why is \\(\\mathbb Z_{11}\\) a field but \\(\\mathbb Z_{12}\\) is not?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#characteristic-of-a-ring",
-    "href": "classes/25/slides.html#characteristic-of-a-ring",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Characteristic of a Ring",
-    "text": "Characteristic of a Ring\nFor a nonnegative integer \\(n\\) and \\(r\\in R\\), write\n\\[\nnr=\\underbrace{r+\\cdots+r}_{n\\text{ times}}.\n\\]\nThe characteristic of a ring \\(R\\) is the least positive integer \\(n\\) such that\n\\[\nnr=0\\quad\\text{for all }r\\in R.\n\\]\nIf no such positive integer exists, the characteristic is defined to be \\(0\\).\nWe write \\(\\operatorname{char}R\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#examples-of-characteristic",
-    "href": "classes/25/slides.html#examples-of-characteristic",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Examples of Characteristic",
-    "text": "Examples of Characteristic\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\).\n\nIn \\(\\mathbb Z_5\\),\n\\[\n5a=0\n\\]\nfor every \\(a\\in\\mathbb Z_5\\).\nQuestion: What is the characteristic of \\(\\mathbb Z_6\\)? Is \\(\\mathbb Z_6\\) an integral domain?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#example-16.17",
-    "href": "classes/25/slides.html#example-16.17",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Example 16.17",
-    "text": "Example 16.17\nFor every prime \\(p\\), the ring \\(\\mathbb Z_p\\) is a field of characteristic \\(p\\).\nEvery nonzero element has a multiplicative inverse because\n\\[\n\\gcd(a,p)=1\n\\]\nwhenever \\(a\\neq0\\) in \\(\\mathbb Z_p\\).\nAlso,\n\\[\npa=0\n\\]\nfor every \\(a\\in\\mathbb Z_p\\).\nHence,\n\\[\n\\operatorname{char}\\mathbb Z_p=p.\n\\]",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#lemma-16.18",
-    "href": "classes/25/slides.html#lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Lemma 16.18",
-    "text": "Lemma 16.18\nLet \\(R\\) be a ring with identity.\nIf \\(1\\) has additive order \\(n\\), then the characteristic of \\(R\\) is \\(n\\).\nRecall that the additive order of \\(1\\) is the smallest positive integer \\(n\\) such that\n\\[\nn1=0.\n\\]\nThis allows us to determine the characteristic of a ring by examining only its multiplicative identity.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#proof-of-lemma-16.18",
-    "href": "classes/25/slides.html#proof-of-lemma-16.18",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Lemma 16.18",
-    "text": "Proof of Lemma 16.18\nSuppose \\(1\\) has additive order \\(n\\).\nThen \\(n1=0\\).\nFor any \\(r\\in R\\),\n\\[\nnr=n(1r)=(n1)r=0r=0.\n\\]\nThus, \\(\\operatorname{char}R\\leq n\\).\nIf a smaller positive integer annihilated every element of \\(R\\), it would also annihilate \\(1\\).\nThis contradicts the order of \\(1\\).\nHence, \\(\\operatorname{char}R=n\\).\nIf \\(1\\) has infinite additive order, then \\(\\operatorname{char}R=0\\).",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#theorem-16.19",
-    "href": "classes/25/slides.html#theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Theorem 16.19",
-    "text": "Theorem 16.19\nThe characteristic of an integral domain is either prime or zero.\nIn other words, if \\(D\\) is an integral domain, then\n\\[\n\\operatorname{char}D=0\n\\]\nor\n\\[\n\\operatorname{char}D=p\n\\]\nfor some prime number \\(p\\).\nWhy can an integral domain not have characteristic \\(6\\)?",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#proof-of-theorem-16.19",
-    "href": "classes/25/slides.html#proof-of-theorem-16.19",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Proof of Theorem 16.19",
-    "text": "Proof of Theorem 16.19\nSuppose \\(D\\) is an integral domain with\n\\[\n\\operatorname{char}D=n&gt;0.\n\\]\nAssume \\(n\\) is composite, so \\(n=ab\\) with\n\\[\n1&lt;a&lt;n,\\qquad1&lt;b&lt;n.\n\\]\nBy Lemma 16.18, \\(n1=0\\). Thus,\n\\[\n0=n1=(ab)1=(a1)(b1).\n\\]\nSince \\(D\\) has no zero divisors,\n\\[\na1=0\\quad\\text{or}\\quad b1=0.\n\\]\nBoth contradict the minimality of \\(n\\).\nTherefore, \\(n\\) must be prime.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#activity-finite-rings",
-    "href": "classes/25/slides.html#activity-finite-rings",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Finite Rings",
-    "text": "Activity: Finite Rings\nDetermine whether each ring is an integral domain or a field.\n\n\\(\\mathbb Z_7\\)\n\\(\\mathbb Z_9\\)\n\\(\\mathbb Z_{15}\\)\n\\(\\mathbb Z_{17}\\)\n\nFor each ring:\n\nIdentify its characteristic.\nDetermine whether it has zero divisors.\nExplain whether Theorem 16.16 applies.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#activity-gaussian-integers",
-    "href": "classes/25/slides.html#activity-gaussian-integers",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Gaussian Integers",
-    "text": "Activity: Gaussian Integers\nConsider the ring \\(\\mathbb Z[i]\\).\n\nShow that \\((1+i)(1-i)=2\\).\nIs \\(1+i\\) a unit in \\(\\mathbb Z[i]\\)?\nFind the norm of \\(3+4i\\).\nShow that \\(\\mathbb Z[i]\\) has no zero divisors.\nExplain why \\(\\mathbb Z[i]\\) is not a field.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#activity-field-or-not",
-    "href": "classes/25/slides.html#activity-field-or-not",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity: Field or Not?",
-    "text": "Activity: Field or Not?\nDetermine whether each statement is true or false. Justify your answers.\n\nEvery field is an integral domain.\nEvery integral domain is a field.\nEvery finite integral domain is a field.\nEvery ring with prime characteristic is an integral domain.\nEvery finite field has prime characteristic.",
-    "crumbs": [
-      "Class Material",
-      "Slides: Integral Domains and Fields"
-    ]
-  },
-  {
-    "objectID": "classes/25/slides.html#activity-1",
-    "href": "classes/25/slides.html#activity-1",
-    "title": "Slides: Integral Domains and Fields",
-    "section": "Activity",
-    "text": "Activity\nDetermine whether each set is a ring under the usual operations. If it is a ring, determine whether it is a field.\n\n\\(\\mathbb Q(\\sqrt{2})=\\{a+b\\sqrt{2}:a,b\\in\\mathbb Q\\}\\).\n\\(\\mathbb Z[\\sqrt{3}]=\\{a+b\\sqrt{3}:a,b\\in\\mathbb Z\\}\\).",
+    "section": "A Set with Four Elements",
+    "text": "A Set with Four Elements\nLet \\(\\alpha\\) be a symbol satisfying \\(\\alpha^2=\\alpha+1\\) over \\(\\mathbb{Z}_2\\).\n\\[\nS=\\{a+b\\alpha : a,b\\in\\mathbb{F}_2\\}.\n\\]\nwhere \\(a+b\\alpha + c+d\\alpha = (a+c)+(b+d)\\alpha\\) and \\((a+b\\alpha) (\\cdot )c+d\\alpha) = (ac+bd) +(ad+bc+bd)\\alpha\\). \\(\\alpha\\) communtes with elements in \\(\\{\\mathbb{Z}_3\\}\\). S has 4 elements \\(\\{0,1, \\alpha,1+ \\alpha }\\).\nWhat can you determine about \\(S\\)?\n\nIs this a ring?\nWhat are the tables for addition and multiplication.\nWhat kind of a ring is it?",
     "crumbs": [
       "Class Material",
       "Slides: Integral Domains and Fields"

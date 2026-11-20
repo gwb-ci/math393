@@ -9,7 +9,7 @@
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.9.37">
 
-  <title>Math 393 - Abstract Algebra – Slides: Integral Domains and Fields</title>
+  <title>Math 393 - Abstract Algebra – Slides: Cancellation Law and Finite Fields</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -129,11 +129,34 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Slides: Integral Domains and Fields</h1>
+  <h1 class="title">Slides: Cancellation Law and Finite Fields</h1>
 
 <div class="quarto-title-authors">
 </div>
 
+</section>
+<section id="definitin-of-a-ring" class="slide level2">
+<h2>Definitin of a Ring</h2>
+<p>A nonempty set <span class="math inline">\(R\)</span> is a <strong>ring</strong> if it has two closed binary operations, addition and multiplication, satisfying:</p>
+<ol type="1">
+<li><span class="math inline">\(a+b=b+a\)</span> for <span class="math inline">\(a,b\in R\)</span>.</li>
+<li><span class="math inline">\((a+b)+c=a+(b+c)\)</span> for <span class="math inline">\(a,b,c\in R\)</span>.</li>
+<li>There is an element <span class="math inline">\(0\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\(a+0=a\)</span> for all <span class="math inline">\(a\in R\)</span>.</li>
+<li>For every element <span class="math inline">\(a\in R\)</span>, there exists an element <span class="math inline">\(-a\)</span> in <span class="math inline">\(R\)</span> such that <span class="math inline">\(a+(-a)=0\)</span>.</li>
+<li><span class="math inline">\((ab)c=a(bc)\)</span> for <span class="math inline">\(a,b,c\in R\)</span>.</li>
+<li>For <span class="math inline">\(a,b,c\in R\)</span>, <span class="math inline">\(a(b+c)=ab+ac\)</span> and <span class="math inline">\((a+b)c=ac+bc\)</span>.</li>
+</ol>
+</section>
+<section id="review-of-important-definitions" class="slide level2">
+<h2>Review of Important Definitions</h2>
+<p>Let <span class="math inline">\(R\)</span> be a ring.</p>
+<ul>
+<li>A nonzero element <span class="math inline">\(a\)</span> is a <strong>zero divisor</strong> if there is a nonzero <span class="math inline">\(b\)</span> such that <span class="math inline">\(ab=0\)</span>.</li>
+<li>A <strong>unit</strong> is an element with a multiplicative inverse.</li>
+<li>An <strong>integral domain</strong> is a commutative ring with identity and no zero divisors.</li>
+<li>A <strong>division ring</strong> is a ring with identity in which every nonzero element is a unit.</li>
+<li>A <strong>field</strong> is a commutative division ring.</li>
+</ul>
 </section>
 <section id="proposition-16.15-cancellation-law" class="slide level2">
 <h2>Proposition 16.15: Cancellation Law</h2>
@@ -199,20 +222,6 @@ ad=1.
 <p>Since <span class="math inline">\(D\)</span> is commutative, <span class="math inline">\(da=1\)</span> also.</p>
 <p>Every nonzero element has an inverse, so <span class="math inline">\(D\)</span> is a field.</p>
 </section>
-<section id="application-mathbb-z_n" class="slide level2">
-<h2>Application: <span class="math inline">\(\mathbb Z_n\)</span></h2>
-<p>Consider the ring <span class="math inline">\(\mathbb Z_n\)</span>.</p>
-<ul>
-<li>If <span class="math inline">\(n\)</span> is prime, <span class="math inline">\(\mathbb Z_n\)</span> has no zero divisors.</li>
-<li>If <span class="math inline">\(n\)</span> is composite, say <span class="math inline">\(n=ab\)</span> with <span class="math inline">\(1&lt;a,b&lt;n\)</span>, then <span class="math inline">\(ab=0\)</span> in <span class="math inline">\(\mathbb Z_n\)</span>.</li>
-</ul>
-<p>Consequently,</p>
-<p><span class="math display">\[
-\mathbb Z_n\text{ is a field}
-\iff n\text{ is prime}.
-\]</span></p>
-<p><strong>Question:</strong> Why is <span class="math inline">\(\mathbb Z_{11}\)</span> a field but <span class="math inline">\(\mathbb Z_{12}\)</span> is not?</p>
-</section>
 <section id="characteristic-of-a-ring" class="slide level2">
 <h2>Characteristic of a Ring</h2>
 <p>For a nonnegative integer <span class="math inline">\(n\)</span> and <span class="math inline">\(r\in R\)</span>, write</p>
@@ -232,32 +241,24 @@ nr=0\quad\text{for all }r\in R.
 <li><span class="math inline">\(\operatorname{char}\mathbb Z=0\)</span>.</li>
 <li><span class="math inline">\(\operatorname{char}\mathbb Q=0\)</span>.</li>
 <li><span class="math inline">\(\operatorname{char}\mathbb R=0\)</span>.</li>
-<li><span class="math inline">\(\operatorname{char}\mathbb Z_n=n\)</span>.</li>
+<li><span class="math inline">\(\operatorname{char}\mathbb Z_n=n\)</span></li>
+<li><span class="math inline">\(\operatorname{char}\mathbb F=2\)</span></li>
 </ul>
-<p>In <span class="math inline">\(\mathbb Z_5\)</span>,</p>
-<p><span class="math display">\[
-5a=0
-\]</span></p>
-<p>for every <span class="math inline">\(a\in\mathbb Z_5\)</span>.</p>
-<p><strong>Question:</strong> What is the characteristic of <span class="math inline">\(\mathbb Z_6\)</span>? Is <span class="math inline">\(\mathbb Z_6\)</span> an integral domain?</p>
 </section>
-<section id="example-16.17" class="slide level2">
-<h2>Example 16.17</h2>
-<p>For every prime <span class="math inline">\(p\)</span>, the ring <span class="math inline">\(\mathbb Z_p\)</span> is a field of characteristic <span class="math inline">\(p\)</span>.</p>
-<p>Every nonzero element has a multiplicative inverse because</p>
+<section id="the-freshmans-dream-in-mathbbz_p" class="slide level2">
+<h2>The Freshman’s Dream in <span class="math inline">\(\mathbb{Z}_p\)</span></h2>
+<p>For a prime <span class="math inline">\(p\)</span>, the binomial theorem gives</p>
 <p><span class="math display">\[
-\gcd(a,p)=1
+(a+b)^p
+= a^p + \binom{p}{1}a^{p-1}b + \cdots
++ \binom{p}{p-1}ab^{p-1} + b^p.
 \]</span></p>
-<p>whenever <span class="math inline">\(a\neq0\)</span> in <span class="math inline">\(\mathbb Z_p\)</span>.</p>
-<p>Also,</p>
+<p>Each middle coefficient <span class="math inline">\(\binom{p}{k}\)</span> is divisible by <span class="math inline">\(p\)</span>, so those terms are <span class="math inline">\(0\)</span> in <span class="math inline">\(\mathbb{Z}_p\)</span>. Therefore,</p>
 <p><span class="math display">\[
-pa=0
+(a+b)^p = a^p+b^p \qquad \text{in } \mathbb{Z}_p.
 \]</span></p>
-<p>for every <span class="math inline">\(a\in\mathbb Z_p\)</span>.</p>
-<p>Hence,</p>
-<p><span class="math display">\[
-\operatorname{char}\mathbb Z_p=p.
-\]</span></p>
+<p>For example, in <span class="math inline">\(\mathbb{Z}_3\)</span>, <span class="math inline">\((a+b)^3=a^3+b^3\)</span> because the middle terms have coefficients <span class="math inline">\(3\)</span>.</p>
+<p>This identity is called the <strong>Freshman’s Dream</strong>.</p>
 </section>
 <section id="lemma-16.18" class="slide level2">
 <h2>Lemma 16.18</h2>
@@ -318,33 +319,6 @@ a1=0\quad\text{or}\quad b1=0.
 <p>Both contradict the minimality of <span class="math inline">\(n\)</span>.</p>
 <p>Therefore, <span class="math inline">\(n\)</span> must be prime.</p>
 </section>
-<section id="activity-finite-rings" class="slide level2">
-<h2>Activity: Finite Rings</h2>
-<p>Determine whether each ring is an integral domain or a field.</p>
-<ol type="1">
-<li><span class="math inline">\(\mathbb Z_7\)</span></li>
-<li><span class="math inline">\(\mathbb Z_9\)</span></li>
-<li><span class="math inline">\(\mathbb Z_{15}\)</span></li>
-<li><span class="math inline">\(\mathbb Z_{17}\)</span></li>
-</ol>
-<p>For each ring:</p>
-<ul>
-<li>Identify its characteristic.</li>
-<li>Determine whether it has zero divisors.</li>
-<li>Explain whether Theorem 16.16 applies.</li>
-</ul>
-</section>
-<section id="activity-gaussian-integers" class="slide level2">
-<h2>Activity: Gaussian Integers</h2>
-<p>Consider the ring <span class="math inline">\(\mathbb Z[i]\)</span>.</p>
-<ol type="1">
-<li>Show that <span class="math inline">\((1+i)(1-i)=2\)</span>.</li>
-<li>Is <span class="math inline">\(1+i\)</span> a unit in <span class="math inline">\(\mathbb Z[i]\)</span>?</li>
-<li>Find the norm of <span class="math inline">\(3+4i\)</span>.</li>
-<li>Show that <span class="math inline">\(\mathbb Z[i]\)</span> has no zero divisors.</li>
-<li>Explain why <span class="math inline">\(\mathbb Z[i]\)</span> is not a field.</li>
-</ol>
-</section>
 <section id="activity-field-or-not" class="slide level2">
 <h2>Activity: Field or Not?</h2>
 <p>Determine whether each statement is true or false. Justify your answers.</p>
@@ -363,6 +337,34 @@ a1=0\quad\text{or}\quad b1=0.
 <li><span class="math inline">\(\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}\)</span>.</li>
 <li><span class="math inline">\(\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}\)</span>.</li>
 </ol>
+</section>
+<section id="a-set-with-nine-elements" class="slide level2">
+<h2>A Set with Nine Elements</h2>
+<p>Let <span class="math inline">\(\alpha\)</span> be a symbol satisfying <span class="math inline">\(\alpha^2=2\)</span> in <span class="math inline">\(\mathbb{F}_3\)</span>, and consider</p>
+<p><span class="math display">\[
+S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}
+\]</span></p>
+<p>where <span class="math inline">\(a+b\alpha + c+d\alpha = (a+c)+(b+d)\alpha\)</span> and <span class="math inline">\(a+b\alpha \cdot c+d\alpha = (ac+2bd) +(ad+bc)\alpha\)</span> . <span class="math inline">\(\alpha\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 9 elements.</p>
+<p><strong>What can you determine about <span class="math inline">\(S\)</span>?</strong></p>
+<ul>
+<li>Is this a ring&gt;</li>
+<li>What are the tables for addition and multiplication.</li>
+<li>What kind of a ring is it?</li>
+</ul>
+</section>
+<section id="another-nine-element-set" class="slide level2">
+<h2>Another Nine-Element Set</h2>
+<p>Let <span class="math inline">\(\beta\)</span> be a symbol satisfying <span class="math inline">\(\beta^2=0\)</span> in <span class="math inline">\(\mathbb{Z}_3\)</span>, and consider</p>
+<p><span class="math display">\[
+R=\{a+b\beta : a,b\in\mathbb{F}_3\}.
+\]</span></p>
+<p>where <span class="math inline">\(a+b\beta + c+d\beta = (a+c)+(b+d)\beta\)</span> and <span class="math inline">\(a+b\beta \cdot c+d\beta = (ac) +(ad+bc)\beta\)</span> . <span class="math inline">\(\beta\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 9 elements.</p>
+<p><strong>What can you determine about <span class="math inline">\(R\)</span>?</strong></p>
+<ul>
+<li>Is this a ring?</li>
+<li>What are the tables for addition and multiplication.</li>
+<li>What kind of a ring is it?</li>
+</ul>
 </section>
 <section class="slide level2">
 
