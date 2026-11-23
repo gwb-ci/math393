@@ -135,6 +135,15 @@
 </div>
 
 </section>
+<section id="ring-homomorphisms-and-ideals" class="slide level2">
+<h2>Ring Homomorphisms and Ideals</h2>
+<ul>
+<li>Define a Homomorphism of rings</li>
+<li>Use Properties of the kernel to define ideals</li>
+<li>Form quotient rings with ideals</li>
+<li>Isomorphism Theorems</li>
+</ul>
+</section>
 <section id="review-of-important-definitions" class="slide level2">
 <h2>Review of Important Definitions</h2>
 <p>Let <span class="math inline">\(R\)</span> be a ring.</p>
@@ -144,20 +153,6 @@
 <li>An <strong>integral domain</strong> is a commutative ring with identity and no zero divisors.</li>
 <li>A <strong>division ring</strong> is a ring with identity in which every nonzero element is a unit.</li>
 <li>A <strong>field</strong> is a commutative division ring.</li>
-</ul>
-</section>
-<section class="slide level2">
-
-</section>
-<section>
-<section id="ring-homomorphisms-and-ideals" class="title-slide slide level1 center">
-<h1>Ring Homomorphisms and Ideals</h1>
-<p>A ring homomorphism preserves addition and multiplication.</p>
-<p>In this section, we connect homomorphisms to ideals:</p>
-<ul>
-<li>The kernel of a ring homomorphism is an ideal.</li>
-<li>An ideal lets us build a quotient ring.</li>
-<li>The First Isomorphism Theorem identifies a quotient by a kernel with the image.</li>
 </ul>
 </section>
 <section id="ring-homomorphisms" class="slide level2">
@@ -170,31 +165,21 @@
 \]</span></p>
 <p>If <span class="math inline">\(\phi\)</span> is both one-to-one and onto, it is an <strong>isomorphism of rings</strong>.</p>
 </section>
-<section id="example-reduction-modulo-n" class="slide level2">
-<h2>Example: Reduction Modulo <span class="math inline">\(n\)</span></h2>
-<p>Define <span class="math inline">\(\phi : \mathbb{Z} \to \mathbb{Z}_n\)</span> by</p>
-<p><span class="math display">\[
-\phi(a)=a \pmod n.
-\]</span></p>
-<p>Reduction modulo <span class="math inline">\(n\)</span> preserves addition and multiplication, so <span class="math inline">\(\phi\)</span> is a ring homomorphism.</p>
-<p>Its kernel is the set of integers that map to zero:</p>
-<p><span class="math display">\[
-\ker \phi = \{a \in \mathbb{Z} : a \equiv 0 \pmod n\}
-= n\mathbb{Z}.
-\]</span></p>
-</section>
 <section id="the-kernel-of-a-homomorphism" class="slide level2">
 <h2>The Kernel of a Homomorphism</h2>
 <p>For a ring homomorphism <span class="math inline">\(\phi : R \to S\)</span>, define</p>
 <p><span class="math display">\[
 \ker \phi = \{r \in R : \phi(r)=0\}.
 \]</span></p>
-<p>The kernel is an ideal of <span class="math inline">\(R\)</span>.</p>
-<p>If <span class="math inline">\(a \in \ker \phi\)</span> and <span class="math inline">\(r \in R\)</span>, then</p>
+</section>
+<section id="properties-of-the-kernel" class="slide level2">
+<h2>Properties of the Kernel</h2>
+<p><strong>Kernels are subrings:</strong> Ring kernels are group kernel for <span class="math inline">\((R,+)\)</span>. Suppose <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are elements of the kernel, then <span class="math inline">\(\phi(ab)=\phi(a)\phi(b)=0 \cdot0=0\)</span>. So <span class="math inline">\(ab\)</span> is in the kernel.</p>
+<p><strong>Closure under multiplication by elemets in <span class="math inline">\(R\)</span>:</strong> If <span class="math inline">\(a \in \ker \phi\)</span> and <span class="math inline">\(r \in R\)</span>, then</p>
 <p><span class="math display">\[
-\phi(ar)=\phi(a)\phi(r)=0,
+\phi(ar)=\phi(a)\phi(r)=0\phi(r)=0,
 \qquad
-\phi(ra)=\phi(r)\phi(a)=0.
+\phi(ra)=\phi(r)\phi(a)=\phi(r)0=0.
 \]</span></p>
 <p>Thus, both <span class="math inline">\(ar\)</span> and <span class="math inline">\(ra\)</span> are in the kernel.</p>
 </section>
@@ -206,7 +191,7 @@ ar \in I
 \qquad\text{and}\qquad
 ra \in I.
 \]</span></p>
-<p>These conditions make the ideal a two-sided ideal. In a commutative ring, the two conditions coincide.</p>
+<p>These conditions make the ideal a two-sided ideal. In a commutative ring, the two conditions are the same.</p>
 <p>Every ring has the trivial ideals <span class="math inline">\(\{0\}\)</span> and <span class="math inline">\(R\)</span>.</p>
 </section>
 <section id="principal-ideals" class="slide level2">
@@ -220,6 +205,89 @@ ra \in I.
 \langle n \rangle = n\mathbb{Z}.
 \]</span></p>
 <p>Every ideal of <span class="math inline">\(\mathbb{Z}\)</span> is principal.</p>
+</section>
+<section id="example-reduction-modulo-n" class="slide level2">
+<h2>Example: Reduction Modulo <span class="math inline">\(n\)</span></h2>
+<p>Define <span class="math inline">\(\phi : \mathbb{Z} \to \mathbb{Z}_n\)</span> by</p>
+<p><span class="math display">\[
+\phi(a)=a \pmod n.
+\]</span></p>
+<p>Reduction modulo <span class="math inline">\(n\)</span> preserves addition and multiplication, so <span class="math inline">\(\phi\)</span> is a ring homomorphism. What is the kernel?</p>
+</section>
+<section id="example-evaluation-homomorphisms" class="slide level2">
+<h2>Example: Evaluation Homomorphisms</h2>
+<p>Let <span class="math inline">\(\mathbb C[a,b]\)</span> be the ring of continuous real-valued functions on <span class="math inline">\([a,b]\)</span>. Fix <span class="math inline">\(\alpha \in [a,b]\)</span> and define</p>
+<p><span class="math display">\[
+\phi_\alpha(f)=f(\alpha).
+\]</span></p>
+<p>Then <span class="math inline">\(\phi_\alpha:C[a,b]\to\mathbb{R}\)</span> is a ring homomorphism because</p>
+<p><span class="math display">\[
+\phi_\alpha(f+g)=\phi_\alpha(f)+\phi_\alpha(g),
+\qquad
+\phi_\alpha(fg)=\phi_\alpha(f)\phi_\alpha(g).
+\]</span></p>
+<p>The map sends each function to its value at <span class="math inline">\(\alpha\)</span>. What is the kernel of this homomprhism?</p>
+</section>
+<section id="example-the-kernel-of-evaluation" class="slide level2">
+<h2>Example: The Kernel of Evaluation</h2>
+<p>For the evaluation homomorphism <span class="math inline">\(\phi_\alpha(f)=f(\alpha)\)</span>,</p>
+<p><span class="math display">\[
+\ker\phi_\alpha=\{f\in C[a,b]:f(\alpha)=0\}.
+\]</span></p>
+<p>So the kernel consists of all continuous functions whose graph passes through <span class="math inline">\((\alpha,0)\)</span>.</p>
+</section>
+<section id="example-ideals-in-mathbbz" class="slide level2">
+<h2>Example: Ideals in <span class="math inline">\(\mathbb{Z}\)</span></h2>
+<p>For any integer <span class="math inline">\(n\)</span>, the set</p>
+<p><span class="math display">\[
+n\mathbb{Z}=\{nk:k\in\mathbb{Z}\}
+\]</span></p>
+<p>is an ideal of <span class="math inline">\(\mathbb{Z}\)</span>.</p>
+<p>If <span class="math inline">\(a=nk\in n\mathbb{Z}\)</span> and <span class="math inline">\(r\in\mathbb{Z}\)</span>, then</p>
+<p><span class="math display">\[
+ar=(nk)r=n(kr)\in n\mathbb{Z}.
+\]</span></p>
+</section>
+<section id="example-a-principal-ideal" class="slide level2">
+<h2>Example: A Principal Ideal</h2>
+<p>Consider the set of all polynomials in <span class="math inline">\(x\)</span> over <span class="math inline">\(\mathbb R\)</span>, <span class="math inline">\(\mathbb{R}[x]\)</span>. Is this a ring?</p>
+<p>What is the ideal generated by the element <span class="math inline">\(x\)</span>?</p>
+<p><span class="math display">\[
+\langle x\rangle=\{x f(x):f(x)\in\mathbb{R}[x]\}.
+\]</span></p>
+<p>This is exactly the set of polynomials with constant term <span class="math inline">\(0\)</span>. For example, <span class="math inline">\(x^3-2x\)</span> is in <span class="math inline">\(\langle x\rangle\)</span>.</p>
+</section>
+<section id="example-another-principal-ideal" class="slide level2">
+<h2>Example: Another Principal Ideal</h2>
+<p>Consider the set of all polynomials in <span class="math inline">\(x\)</span> over <span class="math inline">\(\mathbb R\)</span>, <span class="math inline">\(\mathbb{R}[x]\)</span>. What is the ideal generated by a non-zero <span class="math inline">\(a\)</span> and element of <span class="math inline">\(\mathbb R\)</span>?</p>
+<p><span class="math display">\[
+\langle a\rangle=\{f(x) a:f(x)\in\mathbb{R}[x]\}.
+\]</span></p>
+<p>Well, <span class="math inline">\(a^{-1}a=1\)</span> is in <span class="math inline">\(\langle a\rangle\)</span> so <span class="math inline">\(\langle a\rangle=\mathbb{R}[x]\)</span>.</p>
+<p>In general, if you have a unit in you ideal, the idea is the</p>
+</section>
+<section id="activity-two-nine-element-rings" class="slide level2">
+<h2>Activity: Two Nine-Element Rings</h2>
+<p>Recall the two rings</p>
+<p><span class="math display">\[
+R_2=\{a+b\alpha:a,b\in\mathbb{Z}_3,\ \alpha^2=2\}
+\]</span></p>
+<p><span class="math display">\[
+R_0=\{a+b\alpha:a,b\in\mathbb{Z}_3,\ \alpha^2=0\}.
+\]</span></p>
+<p>For each ring <span class="math inline">\(R_0\)</span> and <span class="math inline">\(R_2\)</span>, investigate these subsets and determine if either <span class="math inline">\(\{a:a\in\mathbb{Z}_3\}\)</span> or <span class="math inline">\(\{b\alpha:b\in\mathbb{Z}_3\}\)</span> is an ideal.</p>
+</section>
+<section id="part-2-connect-homomorphisms-and-ideals" class="slide level2">
+<h2>Part 2: Connect Homomorphisms and Ideals</h2>
+<p>Define <span class="math inline">\(\pi:R_0\to\mathbb{Z}_3\)</span> by</p>
+<p><span class="math display">\[
+\pi(a+b\alpha)=a.
+\]</span></p>
+<ol type="1">
+<li>Show that <span class="math inline">\(\pi\)</span> preserves addition and multiplication.</li>
+<li>Find <span class="math inline">\(\ker\pi\)</span>.</li>
+<li>Is <span class="math inline">\(\pi\)</span> onto?</li>
+</ol>
 </section>
 <section id="quotient-rings" class="slide level2">
 <h2>Quotient Rings</h2>
@@ -257,6 +325,22 @@ R/\ker\psi \cong \psi(R).
 r+\ker\psi \longmapsto \psi(r).
 \]</span></p>
 <p>The quotient identifies elements of <span class="math inline">\(R\)</span> that the homomorphism sends to the same value.</p>
+<p>–</p>
+</section>
+<section id="first-isomorphism-theorem-commutative-diagram" class="slide level2">
+<h2>First Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(\psi:R\to S\)</span> be a ring homomorphism and let <span class="math inline">\(K=\ker\psi\)</span>. The First Isomorphism Theorem gives the following communtative diagram:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+R &amp; \xrightarrow{\ \psi\ } &amp; \psi(R)\\
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+R/K &amp;&amp;
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Canonical homomorphism:</strong> <span class="math inline">\(\phi(r)=r+K\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta(r+K)=\psi(r)\)</span>.</li>
+</ul>
 </section>
 <section id="example-the-first-isomorphism-theorem-modulo-n" class="slide level2">
 <h2>Example: The First Isomorphism Theorem Modulo <span class="math inline">\(n\)</span></h2>
@@ -271,9 +355,107 @@ r+\ker\psi \longmapsto \psi(r).
 \mathbb{Z}/n\mathbb{Z}\cong\mathbb{Z}_n.
 \]</span></p>
 <p>The quotient ring is the image of the homomorphism, with elements identified according to its kernel.</p>
+</section>
+<section id="first-isomorphism-theorem-example-with-r_0" class="slide level2">
+<h2>First Isomorphism Theorem: Example with <span class="math inline">\(R_0\)</span></h2>
+<p>Let <span class="math display">\[
+R_0=\{a+b\varepsilon:a,b\in\mathbb{Z}_3,\ \varepsilon^2=0\},
+\]</span> and define <span class="math inline">\(\psi:R_0\to\mathbb{Z}_3\)</span> by <span class="math inline">\(\psi(a+b\varepsilon)=a.\)</span></p>
+<p>This is a surjective ring homomorphism with <span class="math display">\[
+K=\ker\psi=\{0,\varepsilon,2\varepsilon\}=(\varepsilon).
+\]</span></p>
+<p>The First Isomorphism Theorem gives <span class="math inline">\(R_0/K\cong\mathbb{Z}_3.\)</span></p>
+</section>
+<section id="the-second-isomorphism-theorem" class="slide level2">
+<h2>The Second Isomorphism Theorem</h2>
+<p>Let <span class="math inline">\(I\)</span> be a subring of a ring <span class="math inline">\(R\)</span>, and let <span class="math inline">\(J\)</span> be an ideal of <span class="math inline">\(R\)</span>. Then <span class="math inline">\(I\cap J\)</span> is an ideal of <span class="math inline">\(I\)</span>, and</p>
+<p><span class="math display">\[
+I/(I\cap J)\cong (I+J)/J.
+\]</span></p>
+<p>The theorem compares a quotient of <span class="math inline">\(I\)</span> with the image of <span class="math inline">\(I\)</span> inside the quotient ring <span class="math inline">\(R/J\)</span>.</p>
+</section>
+<section id="second-isomorphism-theorem-commutative-diagram" class="slide level2">
+<h2>Second Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(I\)</span> be a subring of <span class="math inline">\(R\)</span> and <span class="math inline">\(J\)</span> an ideal of <span class="math inline">\(R\)</span>. The Second Isomorphism Theorem gives the following commutative diagram:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+I &amp; \xrightarrow{\ q|_I\ } &amp; (I+J)/J\\
+{\scriptstyle\phi}\downarrow &amp; \nearrow{\scriptstyle\eta} &amp;\\
+I/(I\cap J) &amp;&amp;
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Quotient map:</strong> <span class="math inline">\(q|_I(i)=i+J\)</span>.</li>
+<li><strong>Canonical homomorphism:</strong> <span class="math inline">\(\phi(i)=i+(I\cap J)\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta(i+(I\cap J))=i+J\)</span>.</li>
+</ul>
+</section>
+<section id="example-the-second-isomorphism-theorem" class="slide level2">
+<h2>Example: The Second Isomorphism Theorem</h2>
+<p>Take <span class="math inline">\(R=\mathbb{Z}[x]\)</span>, let <span class="math inline">\(I=\mathbb{Z}\)</span> be the subring of constant polynomials, and let <span class="math inline">\(J=(x)\)</span>.</p>
+<p>Every polynomial is a constant plus a multiple of <span class="math inline">\(x\)</span>, so <span class="math inline">\(I+J=R\)</span>. Also, <span class="math inline">\(I\cap J=\{0\}\)</span>.</p>
+<p>Thus the theorem gives</p>
+<p><span class="math display">\[
+\mathbb{Z}/\{0\}\cong \mathbb{Z}[x]/(x).
+\]</span></p>
+<p>The isomorphism sends the integer <span class="math inline">\(n\)</span> to the coset <span class="math inline">\(n+(x)\)</span>. In the quotient, every polynomial is identified with its constant term.</p>
+</section>
+<section id="the-third-isomorphism-theorem" class="slide level2">
+<h2>The Third Isomorphism Theorem</h2>
+<p>Let <span class="math inline">\(J\subseteq I\)</span> be ideals of a ring <span class="math inline">\(R\)</span>. Then <span class="math inline">\(I/J\)</span> is an ideal of <span class="math inline">\(R/J\)</span>, and</p>
+<p><span class="math display">\[
+(R/J)/(I/J)\cong R/I.
+\]</span></p>
+<p>Taking a quotient in two steps gives the same ring as quotienting by the larger ideal at once.</p>
+</section>
+<section id="third-isomorphism-theorem-commutative-diagram" class="slide level2">
+<h2>Third Isomorphism Theorem: Commutative Diagram</h2>
+<p>Let <span class="math inline">\(J\subseteq I\)</span> be ideals of <span class="math inline">\(R\)</span>. The Third Isomorphism Theorem gives the following communtative diagram:</p>
+<p><span class="math display">\[
+\begin{array}{ccc}
+R &amp; \xrightarrow{\ q_J\ } &amp; R/J\\
+{\scriptstyle q_I}\downarrow &amp; &amp; \downarrow{\scriptstyle q_{I/J}}\\
+R/I &amp; \xrightarrow{\ \eta\ } &amp; (R/J)/(I/J)
+\end{array}
+\]</span></p>
+<ul>
+<li><strong>Quotient maps:</strong> <span class="math inline">\(q_J(r)=r+J\)</span> and <span class="math inline">\(q_I(r)=r+I\)</span>.</li>
+<li><strong>Second quotient map:</strong> <span class="math inline">\(q_{I/J}(r+J)=(r+J)+(I/J)\)</span>.</li>
+<li><strong>Induced isomorphism:</strong> <span class="math inline">\(\eta(r+I)=(r+J)+(I/J)\)</span>.</li>
+</ul>
+</section>
+<section id="example-the-third-isomorphism-theorem" class="slide level2">
+<h2>Example: The Third Isomorphism Theorem</h2>
+<p>In <span class="math inline">\(R=\mathbb{Z}\)</span>, choose <span class="math inline">\(J=6\mathbb{Z}\)</span> and <span class="math inline">\(I=2\mathbb{Z}\)</span>. Since <span class="math inline">\(6\mathbb{Z}\subseteq2\mathbb{Z}\)</span>,</p>
+<p><span class="math display">\[
+(\mathbb{Z}/6\mathbb{Z})/(2\mathbb{Z}/6\mathbb{Z})
+\cong \mathbb{Z}/2\mathbb{Z}.
+\]</span></p>
+<p>Here <span class="math inline">\(2\mathbb{Z}/6\mathbb{Z}\)</span> is the ideal <span class="math inline">\(\{0+6\mathbb{Z},\,2+6\mathbb{Z},\,4+6\mathbb{Z}\}\)</span> in <span class="math inline">\(\mathbb{Z}/6\mathbb{Z}\)</span>.</p>
+</section>
+<section id="the-correspondence-theorem" class="slide level2">
+<h2>The Correspondence Theorem</h2>
+<p>Let <span class="math inline">\(I\)</span> be an ideal of <span class="math inline">\(R\)</span>. The ideals of <span class="math inline">\(R\)</span> that contain <span class="math inline">\(I\)</span> correspond one-to-one with the ideals of <span class="math inline">\(R/I\)</span>.</p>
+<p>An ideal <span class="math inline">\(K\)</span> of <span class="math inline">\(R\)</span> with <span class="math inline">\(I\subseteq K\)</span> corresponds to the ideal <span class="math inline">\(K/I\)</span> of <span class="math inline">\(R/I\)</span>.</p>
+</section>
+<section id="example-ideals-corresponding-in-mathbbz6mathbbz" class="slide level2">
+<h2>Example: Ideals Corresponding in <span class="math inline">\(\mathbb{Z}/6\mathbb{Z}\)</span></h2>
+<p>The ideals of <span class="math inline">\(\mathbb{Z}\)</span> that contain <span class="math inline">\(6\mathbb{Z}\)</span> are</p>
+<p><span class="math display">\[
+6\mathbb{Z},\quad 3\mathbb{Z},\quad 2\mathbb{Z},\quad \mathbb{Z}.
+\]</span></p>
+<p>They correspond to these ideals of <span class="math inline">\(\mathbb{Z}/6\mathbb{Z}\)</span>:</p>
+<p><span class="math display">\[
+\{0\},\quad (3),\quad (2),\quad \mathbb{Z}/6\mathbb{Z},
+\]</span></p>
+<p>respectively.</p>
+<p>For example, <span class="math inline">\(2\mathbb{Z}\)</span> corresponds to</p>
+<p><span class="math display">\[
+2\mathbb{Z}/6\mathbb{Z}=\{0+6\mathbb{Z},\,2+6\mathbb{Z},\,4+6\mathbb{Z}\}.
+\]</span></p>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">

@@ -31,7 +31,32 @@ Let $R$ be a ring.
 - A **division ring** is a ring with identity in which every nonzero element is a unit.
 - A **field** is a commutative division ring.
 
+---
 
+
+## Activity: Two Nine-Element Sets
+
+Consider this set of nine elements
+$S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}$ where
+
+$$
+(a+b\alpha)+(c+d\alpha)
+=(a+c)+(b+d)\alpha
+$$
+
+$$
+(a+b\alpha)(c+d\alpha)
+=(ac)+(ad+bc)\alpha +(bd)\alpha^2
+$$
+
+where the left side of the class $\alpha^2=2$ on the right side of the class $\alpha^2=0$
+
+
+
+For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.
+
+
+---
 
 ## Proposition 16.15: Cancellation Law
 
@@ -202,29 +227,7 @@ Both contradict the minimality of $n$. Therefore, $n$ must be prime.
 ---
 
 
-## Activity: Two Nine-Element Sets
 
-Consider this set of nine elements
-$S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}$ where
-
-$$
-(a+b\alpha)+(c+d\alpha)
-=(a+c)+(b+d)\alpha
-$$
-
-$$
-(a+b\alpha)(c+d\alpha)
-=(ac)+(ad+bc)\alpha +(bd)\alpha^2
-$$
-
-where the left side of the class $\alpha^2=2$ on the right side of the class $\alpha^2=0$
-
-
-
-For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.
-
-
----
 
 
 
