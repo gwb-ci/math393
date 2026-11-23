@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.19">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
 
   <title>Math 393 - Abstract Algebra – Slides: Cancellation Law and Finite Fields</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,13 +19,10 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
+    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: 1.5em;}
-    div.column{flex: auto;}
-    @media screen {
-    div.columns{gap: min(4vw, 1.5em);}
-    div.column{overflow-x: auto;}
-    }
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -300,37 +297,6 @@ nr=n(1r)=(n1)r=0r=0.
 <li><span class="math inline">\(\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}\)</span>.</li>
 <li><span class="math inline">\(\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}\)</span>.</li>
 </ol>
-</section>
-<section id="a-set-with-nine-elements" class="slide level2">
-<h2>A Set with Nine Elements</h2>
-<p>Let <span class="math inline">\(\alpha\)</span> be a symbol satisfying <span class="math inline">\(\alpha^2=2\)</span> in <span class="math inline">\(\mathbb{F}_3\)</span>, and consider</p>
-<p><span class="math display">\[
-S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}
-\]</span></p>
-<p>where <span class="math inline">\(a+b\alpha + c+d\alpha = (a+c)+(b+d)\alpha\)</span> and <span class="math inline">\(a+b\alpha \cdot c+d\alpha = (ac+2bd) +(ad+bc)\alpha\)</span> . <span class="math inline">\(\alpha\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 9 elements.</p>
-<p><strong>What can you determine about <span class="math inline">\(S\)</span>?</strong></p>
-<ul>
-<li>Is this a ring?</li>
-<li>What are the tables for addition and multiplication.</li>
-<li>What kind of a ring is it?</li>
-</ul>
-</section>
-<section id="another-nine-element-set" class="slide level2">
-<h2>Another Nine-Element Set</h2>
-<p>Let <span class="math inline">\(\beta\)</span> be a symbol satisfying <span class="math inline">\(\beta^2=0\)</span> in <span class="math inline">\(\mathbb{Z}_3\)</span>, and consider</p>
-<p><span class="math display">\[
-R=\{a+b\beta : a,b\in\mathbb{F}_3\}.
-\]</span></p>
-<p>where <span class="math inline">\(a+b\beta + c+d\beta = (a+c)+(b+d)\beta\)</span> and <span class="math inline">\(a+b\beta \cdot c+d\beta = (ac) +(ad+bc)\beta\)</span> . <span class="math inline">\(\beta\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 9 elements.</p>
-<p><strong>What can you determine about <span class="math inline">\(R\)</span>?</strong></p>
-<ul>
-<li>Is this a ring?</li>
-<li>What are the tables for addition and multiplication.</li>
-<li>What kind of a ring is it?</li>
-</ul>
-</section>
-<section class="slide level2">
-
 
 
 </section>
