@@ -1912,11 +1912,11 @@
     ]
   },
   {
-    "objectID": "classes/26/slides.html#activity-two-nine-element-sets",
-    "href": "classes/26/slides.html#activity-two-nine-element-sets",
+    "objectID": "classes/26/slides.html#activity-two-rings-of-four-elements",
+    "href": "classes/26/slides.html#activity-two-rings-of-four-elements",
     "title": "Slides: Cancellation Law and Finite Fields",
-    "section": "Activity: Two Nine-Element Sets",
-    "text": "Activity: Two Nine-Element Sets\nConsider this set of nine elements \\(S=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_3\\}\\) where\n\\[\n(a+b\\alpha)+(c+d\\alpha)\n=(a+c)+(b+d)\\alpha\n\\]\n\\[\n(a+b\\alpha)(c+d\\alpha)\n=(ac)+(ad+bc)\\alpha +(bd)\\alpha^2\n\\]\nwhere the left side of the class \\(\\alpha^2=2\\) on the right side of the class \\(\\alpha^2=0\\)\nFor your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.",
+    "section": "Activity: Two Rings of Four-Elements",
+    "text": "Activity: Two Rings of Four-Elements\nConsider this set of nine elements \\(S=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_2\\}\\) where\n\\[\n(a+b\\alpha)+(c+d\\alpha)\n=(a+c)+(b+d)\\alpha\n\\]\n\\[\n(a+b\\alpha)(c+d\\alpha)\n=(ac)+(ad+bc)\\alpha +(bd)\\alpha^2\n\\]\nwhere the left side of the class \\(\\alpha^2=1\\) on the right side of the class \\(\\alpha^2=\\alpha+1\\)\nBuild the addition and multiplication tables. What are the units? What are the zero divisors? What kind of ring is it? Be ready to share one observation with the class.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"

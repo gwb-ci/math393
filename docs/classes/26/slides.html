@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <title>Math 393 - Abstract Algebra – Slides: Cancellation Law and Finite Fields</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,10 +19,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -158,9 +161,9 @@
 <li>A <strong>field</strong> is a commutative division ring.</li>
 </ul>
 </section>
-<section id="activity-two-nine-element-sets" class="slide level2">
-<h2>Activity: Two Nine-Element Sets</h2>
-<p>Consider this set of nine elements <span class="math inline">\(S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}\)</span> where</p>
+<section id="activity-two-rings-of-four-elements" class="slide level2">
+<h2>Activity: Two Rings of Four-Elements</h2>
+<p>Consider this set of nine elements <span class="math inline">\(S=\{a+b\alpha : a,b\in\mathbb{Z}_2\}\)</span> where</p>
 <p><span class="math display">\[
 (a+b\alpha)+(c+d\alpha)
 =(a+c)+(b+d)\alpha
@@ -169,8 +172,8 @@
 (a+b\alpha)(c+d\alpha)
 =(ac)+(ad+bc)\alpha +(bd)\alpha^2
 \]</span></p>
-<p>where the left side of the class <span class="math inline">\(\alpha^2=2\)</span> on the right side of the class <span class="math inline">\(\alpha^2=0\)</span></p>
-<p>For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.</p>
+<p>where the left side of the class <span class="math inline">\(\alpha^2=1\)</span> on the right side of the class <span class="math inline">\(\alpha^2=\alpha+1\)</span></p>
+<p>Build the addition and multiplication tables. What are the units? What are the zero divisors? What kind of ring is it? Be ready to share one observation with the class.</p>
 </section>
 <section id="proposition-16.15-cancellation-law" class="slide level2">
 <h2>Proposition 16.15: Cancellation Law</h2>

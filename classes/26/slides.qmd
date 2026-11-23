@@ -34,10 +34,10 @@ Let $R$ be a ring.
 ---
 
 
-## Activity: Two Nine-Element Sets
+## Activity: Two Rings of Four-Elements
 
 Consider this set of nine elements
-$S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}$ where
+$S=\{a+b\alpha : a,b\in\mathbb{Z}_2\}$ where
 
 $$
 (a+b\alpha)+(c+d\alpha)
@@ -49,11 +49,11 @@ $$
 =(ac)+(ad+bc)\alpha +(bd)\alpha^2
 $$
 
-where the left side of the class $\alpha^2=2$ on the right side of the class $\alpha^2=0$
+where the left side of the class $\alpha^2=1$ on the right side of the class $\alpha^2=\alpha+1$
 
 
 
-For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.
+Build the addition and multiplication tables. What are the units?  What are the zero divisors? What kind of ring is it? Be ready to share one observation with the class.
 
 
 ---
