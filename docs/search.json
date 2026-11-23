@@ -1894,7 +1894,7 @@
     "href": "classes/26/slides.html#definitin-of-a-ring",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Definitin of a Ring",
-    "text": "Definitin of a Ring\nA nonempty set \\(R\\) is a ring if it has two closed binary operations, addition and multiplication, satisfying:\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
+    "text": "Definitin of a Ring\n\\((R, +, \\cdot)\\) is a ring if it satisfies:\n\n\\(a+b=b+a\\) for \\(a,b\\in R\\).\n\\((a+b)+c=a+(b+c)\\) for \\(a,b,c\\in R\\).\nThere is an element \\(0\\) in \\(R\\) such that \\(a+0=a\\) for all \\(a\\in R\\).\nFor every element \\(a\\in R\\), there exists an element \\(-a\\) in \\(R\\) such that \\(a+(-a)=0\\).\n\\((ab)c=a(bc)\\) for \\(a,b,c\\in R\\).\nFor \\(a,b,c\\in R\\), \\(a(b+c)=ab+ac\\) and \\((a+b)c=ac+bc\\).",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1916,7 +1916,7 @@
     "href": "classes/26/slides.html#proposition-16.15-cancellation-law",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proposition 16.15: Cancellation Law",
-    "text": "Proposition 16.15: Cancellation Law\nLet \\(D\\) be a commutative ring with identity.\nThen \\(D\\) is an integral domain if and only if, for every nonzero \\(a\\in D\\),\n\\[\nab=ac\\implies b=c.\n\\]\nThis is the cancellation law.",
+    "text": "Proposition 16.15: Cancellation Law\nLet \\(D\\) be a commutative ring with identity.\nThen \\(D\\) is an integral domain if and only if, for every nonzero \\(a\\in D\\),\n\\[\nab=ac\\implies b=c.\n\\]",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1927,18 +1927,18 @@
     "href": "classes/26/slides.html#proof-of-proposition-16.15",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Proposition 16.15",
-    "text": "Proof of Proposition 16.15\nSuppose \\(D\\) is an integral domain.\nLet \\(a\\neq0\\) and suppose \\(ab=ac\\).\nThen \\(ab-ac=0.\\)\nBy the distributive law, \\(a(b-c)=0.\\)\nSince \\(D\\) has no zero divisors and \\(a\\neq0\\), \\(b-c=0.\\)\nTherefore, \\(b=c\\).",
+    "text": "Proof of Proposition 16.15\nSuppose \\(D\\) is an integral domain. Let \\(a\\neq0\\) and suppose \\(ab=ac\\). Then \\(ab-ac=0.\\) By the distributive law, \\(a(b-c)=0.\\).Since \\(D\\) has no zero divisors and \\(a\\neq0\\), \\(b-c=0.\\) Therefore, \\(b=c\\).",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
-    "objectID": "classes/26/slides.html#converse-of-proposition-16.15",
-    "href": "classes/26/slides.html#converse-of-proposition-16.15",
+    "objectID": "classes/26/slides.html#proof-of-proposition-16.15-1",
+    "href": "classes/26/slides.html#proof-of-proposition-16.15-1",
     "title": "Slides: Cancellation Law and Finite Fields",
-    "section": "Converse of Proposition 16.15",
-    "text": "Converse of Proposition 16.15\nSuppose that cancellation holds in \\(D\\).\nLet \\(ab=0\\) and suppose \\(a\\neq0\\).\nSince \\(a0=0\\), we have \\(ab=a0.\\)\nBy cancellation, \\(b=0\\).\nThus, \\(D\\) has no zero divisors.\nSince \\(D\\) is a commutative ring with identity, it is an integral domain.",
+    "section": "Proof of Proposition 16.15",
+    "text": "Proof of Proposition 16.15\nSuppose that cancellation holds in \\(D\\). Let \\(ab=0\\) and suppose \\(a\\neq0\\). Since \\(a0=0\\), we have \\(ab=a0.\\) By cancellation, \\(b=0\\). Thus, \\(D\\) has no zero divisors. Since \\(D\\) is a commutative ring with identity, it is an integral domain.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1949,7 +1949,7 @@
     "href": "classes/26/slides.html#theorem-16.16",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Theorem 16.16",
-    "text": "Theorem 16.16\nEvery finite integral domain is a field.\nThis tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.",
+    "text": "Theorem 16.16\nEvery finite integral domain is a field.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1960,7 +1960,7 @@
     "href": "classes/26/slides.html#proof-of-theorem-16.16",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.16",
-    "text": "Proof of Theorem 16.16\nThe proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.\nLet \\(D\\) be a finite integral domain, and let\n\\[\nD^*=D\\setminus\\{0\\}.\n\\]\nChoose \\(a\\in D^*\\) and define\n\\[\n\\lambda_a:D^*\\to D^*,\\qquad\n\\lambda_a(d)=ad.\n\\]\nSince \\(D\\) has no zero divisors, \\(ad\\neq0\\) whenever \\(a,d\\neq0\\).\nThus, \\(\\lambda_a\\) is well-defined.",
+    "text": "Proof of Theorem 16.16\nAn injective function from a finite set to itself must also be surjective.\nLet \\(D\\) be a finite integral domain, and let \\(D^*=D\\setminus\\{0\\}.\\)\nChoose \\(a\\in D^*\\) and define\n\\[\n\\lambda_a:D^*\\to D^*,\\qquad\n\\lambda_a(d)=ad.\n\\]\nSince \\(D\\) has no zero divisors, \\(ad\\neq0\\) whenever \\(a,d\\neq0\\).\nThus, \\(\\lambda_a\\) is well-defined.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1971,7 +1971,7 @@
     "href": "classes/26/slides.html#proof-of-theorem-16.16-continued",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.16 Continued",
-    "text": "Proof of Theorem 16.16 Continued\nSuppose\n\\[\n\\lambda_a(d_1)=\\lambda_a(d_2).\n\\]\nThen \\(ad_1=ad_2\\).\nBy cancellation, \\(d_1=d_2\\).\nThus, \\(\\lambda_a\\) is one-to-one.\nSince \\(D^*\\) is finite, \\(\\lambda_a\\) is also onto.\nTherefore, there exists \\(d\\in D^*\\) such that\n\\[\nad=1.\n\\]\nSince \\(D\\) is commutative, \\(da=1\\) also.\nEvery nonzero element has an inverse, so \\(D\\) is a field.",
+    "text": "Proof of Theorem 16.16 Continued\nSuppose \\(\\lambda_a(d_1)=\\lambda_a(d_2).\\) Then \\(ad_1=ad_2\\).\nBy cancellation, \\(d_1=d_2\\). Thus, \\(\\lambda_a\\) is one-to-one.\nSince \\(D^*\\) is finite, \\(\\lambda_a\\) is also onto. Therefore, there exists \\(d\\in D^*\\) such that\n\\[\nad=1.\n\\]\nSince \\(D\\) is commutative, \\(da=1\\) also. Every nonzero element has an inverse, so \\(D\\) is a field.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -1982,29 +1982,29 @@
     "href": "classes/26/slides.html#characteristic-of-a-ring",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Characteristic of a Ring",
-    "text": "Characteristic of a Ring\nFor a nonnegative integer \\(n\\) and \\(r\\in R\\), write\n\\[\nnr=\\underbrace{r+\\cdots+r}_{n\\text{ times}}.\n\\]\nThe characteristic of a ring \\(R\\) is the least positive integer \\(n\\) such that\n\\[\nnr=0\\quad\\text{for all }r\\in R.\n\\]\nIf no such positive integer exists, the characteristic is defined to be \\(0\\).\nWe write \\(\\operatorname{char}R\\).",
+    "text": "Characteristic of a Ring\nFor a nonnegative integer \\(n\\) and \\(r\\in R\\), write\n\\[\nnr=\\underbrace{r+\\cdots+r}_{n\\text{ times}}.\n\\]\nThe characteristic of a ring \\(R\\) is the least positive integer \\(n\\) such that\n\\[\nnr=0\\quad\\text{for all }r\\in R.\n\\]\nIf no such positive integer exists, the characteristic is defined to be \\(0\\).",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
-    "objectID": "classes/26/slides.html#examples-of-characteristic",
-    "href": "classes/26/slides.html#examples-of-characteristic",
+    "objectID": "classes/26/slides.html#examples-of-characteristics",
+    "href": "classes/26/slides.html#examples-of-characteristics",
     "title": "Slides: Cancellation Law and Finite Fields",
-    "section": "Examples of Characteristic",
-    "text": "Examples of Characteristic\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\)\n\\(\\operatorname{char}\\mathbb F=2\\)",
+    "section": "Examples of Characteristics",
+    "text": "Examples of Characteristics\n\n\\(\\operatorname{char}\\mathbb Z=0\\).\n\\(\\operatorname{char}\\mathbb Q=0\\).\n\\(\\operatorname{char}\\mathbb R=0\\).\n\\(\\operatorname{char}\\mathbb Z_n=n\\)\n\\(\\operatorname{char} F=2\\)",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
     ]
   },
   {
-    "objectID": "classes/26/slides.html#the-freshmans-dream-in-mathbbz_p",
-    "href": "classes/26/slides.html#the-freshmans-dream-in-mathbbz_p",
+    "objectID": "classes/26/slides.html#powers-of-p-in-mathbbz_p",
+    "href": "classes/26/slides.html#powers-of-p-in-mathbbz_p",
     "title": "Slides: Cancellation Law and Finite Fields",
-    "section": "The Freshman’s Dream in \\(\\mathbb{Z}_p\\)",
-    "text": "The Freshman’s Dream in \\(\\mathbb{Z}_p\\)\nFor a prime \\(p\\), the binomial theorem gives\n\\[\n(a+b)^p\n= a^p + \\binom{p}{1}a^{p-1}b + \\cdots\n+ \\binom{p}{p-1}ab^{p-1} + b^p.\n\\]\nEach middle coefficient \\(\\binom{p}{k}\\) is divisible by \\(p\\), so those terms are \\(0\\) in \\(\\mathbb{Z}_p\\). Therefore,\n\\[\n(a+b)^p = a^p+b^p \\qquad \\text{in } \\mathbb{Z}_p.\n\\]\nFor example, in \\(\\mathbb{Z}_3\\), \\((a+b)^3=a^3+b^3\\) because the middle terms have coefficients \\(3\\).\nThis identity is called the Freshman’s Dream.",
+    "section": "Powers of \\(p\\) in \\(\\mathbb{Z}_p\\)",
+    "text": "Powers of \\(p\\) in \\(\\mathbb{Z}_p\\)\nFor a prime \\(p\\), the binomial theorem gives\n\\[\n(a+b)^p\n= a^p + \\binom{p}{1}a^{p-1}b + \\cdots\n+ \\binom{p}{p-1}ab^{p-1} + b^p.\n\\]\nEach middle coefficient \\(\\binom{p}{k}\\) is divisible by \\(p\\), so those terms are \\(0\\) in \\(\\mathbb{Z}_p\\). Therefore,\n\\[\n(a+b)^p = a^p+b^p \\qquad \\text{in } \\mathbb{Z}_p.\n\\]",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -2015,7 +2015,7 @@
     "href": "classes/26/slides.html#lemma-16.18",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Lemma 16.18",
-    "text": "Lemma 16.18\nLet \\(R\\) be a ring with identity.\nIf \\(1\\) has additive order \\(n\\), then the characteristic of \\(R\\) is \\(n\\).\nRecall that the additive order of \\(1\\) is the smallest positive integer \\(n\\) such that\n\\[\nn1=0.\n\\]\nThis allows us to determine the characteristic of a ring by examining only its multiplicative identity.",
+    "text": "Lemma 16.18\nLet \\(R\\) be a ring with identity. If \\(1\\) has additive order \\(n\\), then the characteristic of \\(R\\) is \\(n\\).\nWe can find the characteristic of a ring just by looking multiplicative identity.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -2026,7 +2026,7 @@
     "href": "classes/26/slides.html#proof-of-lemma-16.18",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Lemma 16.18",
-    "text": "Proof of Lemma 16.18\nSuppose \\(1\\) has additive order \\(n\\).\nThen \\(n1=0\\).\nFor any \\(r\\in R\\),\n\\[\nnr=n(1r)=(n1)r=0r=0.\n\\]\nThus, \\(\\operatorname{char}R\\leq n\\).\nIf a smaller positive integer annihilated every element of \\(R\\), it would also annihilate \\(1\\).\nThis contradicts the order of \\(1\\).\nHence, \\(\\operatorname{char}R=n\\).\nIf \\(1\\) has infinite additive order, then \\(\\operatorname{char}R=0\\).",
+    "text": "Proof of Lemma 16.18\nSuppose \\(1\\) has order \\(n\\) in the abelian group \\((R, +)\\). Then \\(n1=0\\).\nFor any \\(r\\in R\\),\n\\[\nnr=n(1r)=(n1)r=0r=0.\n\\]\nThus, \\(\\operatorname{char}R\\leq n\\).\nIf \\(1\\) has infinite additive order, then \\(\\operatorname{char}R=0\\).",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -2037,7 +2037,7 @@
     "href": "classes/26/slides.html#theorem-16.19",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Theorem 16.19",
-    "text": "Theorem 16.19\nThe characteristic of an integral domain is either prime or zero.\nIn other words, if \\(D\\) is an integral domain, then\n\\[\n\\operatorname{char}D=0\n\\]\nor\n\\[\n\\operatorname{char}D=p\n\\]\nfor some prime number \\(p\\).\nWhy can an integral domain not have characteristic \\(6\\)?",
+    "text": "Theorem 16.19\nThe characteristic of an integral domain is either prime or zero.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -2048,7 +2048,18 @@
     "href": "classes/26/slides.html#proof-of-theorem-16.19",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "Proof of Theorem 16.19",
-    "text": "Proof of Theorem 16.19\nSuppose \\(D\\) is an integral domain with\n\\[\n\\operatorname{char}D=n&gt;0.\n\\]\nAssume \\(n\\) is composite, so \\(n=ab\\) with\n\\[\n1&lt;a&lt;n,\\qquad1&lt;b&lt;n.\n\\]\nBy Lemma 16.18, \\(n1=0\\). Thus,\n\\[\n0=n1=(ab)1=(a1)(b1).\n\\]\nSince \\(D\\) has no zero divisors,\n\\[\na1=0\\quad\\text{or}\\quad b1=0.\n\\]\nBoth contradict the minimality of \\(n\\).\nTherefore, \\(n\\) must be prime.",
+    "text": "Proof of Theorem 16.19\nSuppose \\(D\\) is an integral domain with \\(\\operatorname{char}D=n&gt;0.\\)\nAssume \\(n\\) is composite, so \\(n=ab\\) with \\(1&lt;a&lt;n,\\qquad1&lt;b&lt;n.\\)\nBy Lemma 16.18, \\(n1=0\\). Thus,\n\\[\n0=n1=(ab)1=(a1)(b1)\n\\]\nSince \\(D\\) has no zero divisors, \\(a1=0\\quad\\text{or}\\quad b1=0.\\)\nBoth contradict the minimality of \\(n\\). Therefore, \\(n\\) must be prime.",
+    "crumbs": [
+      "Class Material",
+      "Slides: Cancellation Law and Finite Fields"
+    ]
+  },
+  {
+    "objectID": "classes/26/slides.html#activity-two-nine-element-sets",
+    "href": "classes/26/slides.html#activity-two-nine-element-sets",
+    "title": "Slides: Cancellation Law and Finite Fields",
+    "section": "Activity: Two Nine-Element Sets",
+    "text": "Activity: Two Nine-Element Sets\nConsider this set of nine elements \\(S=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_3\\}\\) where\n\\[\n(a+b\\alpha)+(c+d\\alpha)\n=(a+c)+(b+d)\\alpha\n\\]\n\\[\n(a+b\\alpha)(c+d\\alpha)\n=(ac)+(ad+bc)\\alpha +(bd)\\alpha^2\n\\]\nwhere the left side of the class \\(\\alpha^2=2\\) on the right side of the class \\(\\alpha^2=0\\)\nFor your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"
@@ -2081,7 +2092,7 @@
     "href": "classes/26/slides.html#a-set-with-nine-elements",
     "title": "Slides: Cancellation Law and Finite Fields",
     "section": "A Set with Nine Elements",
-    "text": "A Set with Nine Elements\nLet \\(\\alpha\\) be a symbol satisfying \\(\\alpha^2=2\\) in \\(\\mathbb{F}_3\\), and consider\n\\[\nS=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_3\\}\n\\]\nwhere \\(a+b\\alpha + c+d\\alpha = (a+c)+(b+d)\\alpha\\) and \\(a+b\\alpha \\cdot c+d\\alpha = (ac+2bd) +(ad+bc)\\alpha\\) . \\(\\alpha\\) communtes with elements in \\(\\{\\mathbb{Z}_3\\}\\). S has 9 elements.\nWhat can you determine about \\(S\\)?\n\nIs this a ring&gt;\nWhat are the tables for addition and multiplication.\nWhat kind of a ring is it?",
+    "text": "A Set with Nine Elements\nLet \\(\\alpha\\) be a symbol satisfying \\(\\alpha^2=2\\) in \\(\\mathbb{F}_3\\), and consider\n\\[\nS=\\{a+b\\alpha : a,b\\in\\mathbb{Z}_3\\}\n\\]\nwhere \\(a+b\\alpha + c+d\\alpha = (a+c)+(b+d)\\alpha\\) and \\(a+b\\alpha \\cdot c+d\\alpha = (ac+2bd) +(ad+bc)\\alpha\\) . \\(\\alpha\\) communtes with elements in \\(\\{\\mathbb{Z}_3\\}\\). S has 9 elements.\nWhat can you determine about \\(S\\)?\n\nIs this a ring?\nWhat are the tables for addition and multiplication.\nWhat kind of a ring is it?",
     "crumbs": [
       "Class Material",
       "Slides: Cancellation Law and Finite Fields"

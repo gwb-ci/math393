@@ -9,7 +9,7 @@ format:
 
 ## Definitin of a Ring
 
-A nonempty set $R$ is a **ring** if it has two closed binary operations, addition and multiplication, satisfying: 
+ $(R, +, \cdot)$ is a **ring** if it satisfies: 
 
 1. $a+b=b+a$ for $a,b\in R$.
 2. $(a+b)+c=a+(b+c)$ for $a,b,c\in R$.
@@ -43,7 +43,7 @@ $$
 ab=ac\implies b=c.
 $$
 
-This is the **cancellation law**.
+
 
 
 
@@ -51,63 +51,28 @@ This is the **cancellation law**.
 
 ## Proof of Proposition 16.15
 
-Suppose $D$ is an integral domain.
-
-Let $a\neq0$ and suppose $ab=ac$.
-
-Then $ab-ac=0.$
-
-By the distributive law, $a(b-c)=0.$
-
-Since $D$ has no zero divisors and $a\neq0$, $b-c=0.$
-
-Therefore, $b=c$.
+**Suppose $D$ is an integral domain.** Let $a\neq0$ and suppose $ab=ac$. Then $ab-ac=0.$ By the distributive law, $a(b-c)=0.$.Since $D$ has no zero divisors and $a\neq0$, $b-c=0.$ Therefore, $b=c$.
 
 ---
 
-## Converse of Proposition 16.15
+## Proof of Proposition 16.15
 
-Suppose that cancellation holds in $D$.
-
-Let $ab=0$ and suppose $a\neq0$.
-
-Since $a0=0$, we have $ab=a0.$
-
-By cancellation, $b=0$.
-
-Thus, $D$ has no zero divisors.
-
-Since $D$ is a commutative ring with identity, it is an integral domain.
+**Suppose that cancellation holds in $D$.** Let $ab=0$ and suppose $a\neq0$. Since $a0=0$, we have $ab=a0.$ By cancellation, $b=0$. Thus, $D$ has no zero divisors.  Since $D$ is a commutative ring with identity, it is an integral domain.
 
 ---
-
-
-
-
-
 
 
 ## Theorem 16.16
 
 **Every finite integral domain is a field.**
 
-This tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.
-
-
-
-
-
 ---
 
 ## Proof of Theorem 16.16
 
-The proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.
+An injective function from a finite set to itself must also be surjective.
 
-Let $D$ be a finite integral domain, and let
-
-$$
-D^*=D\setminus\{0\}.
-$$
+Let $D$ be a finite integral domain, and let $D^*=D\setminus\{0\}.$
 
 Choose $a\in D^*$ and define
 
@@ -124,29 +89,17 @@ Thus, $\lambda_a$ is well-defined.
 
 ## Proof of Theorem 16.16 Continued
 
-Suppose
+Suppose $\lambda_a(d_1)=\lambda_a(d_2).$ Then $ad_1=ad_2$.
 
-$$
-\lambda_a(d_1)=\lambda_a(d_2).
-$$
+By cancellation, $d_1=d_2$. Thus, $\lambda_a$ is one-to-one.
 
-Then $ad_1=ad_2$.
-
-By cancellation, $d_1=d_2$.
-
-Thus, $\lambda_a$ is one-to-one.
-
-Since $D^*$ is finite, $\lambda_a$ is also onto.
-
-Therefore, there exists $d\in D^*$ such that
+Since $D^*$ is finite, $\lambda_a$ is also onto. Therefore, there exists $d\in D^*$ such that
 
 $$
 ad=1.
 $$
 
-Since $D$ is commutative, $da=1$ also.
-
-Every nonzero element has an inverse, so $D$ is a field.
+Since $D$ is commutative, $da=1$ also. Every nonzero element has an inverse, so $D$ is a field.
 
 ---
 
@@ -167,22 +120,21 @@ $$
 
 If no such positive integer exists, the characteristic is defined to be $0$.
 
-We write $\operatorname{char}R$.
 
 ---
 
-## Examples of Characteristic
+## Examples of Characteristics
 
 - $\operatorname{char}\mathbb Z=0$.
 - $\operatorname{char}\mathbb Q=0$.
 - $\operatorname{char}\mathbb R=0$.
 - $\operatorname{char}\mathbb Z_n=n$
-- $\operatorname{char}\mathbb F=2$
+- $\operatorname{char} F=2$
 
 
 ---
 
-## The Freshman’s Dream in $\mathbb{Z}_p$
+## Powers of $p$ in $\mathbb{Z}_p$
 
 For a prime $p$, the binomial theorem gives
 
@@ -198,31 +150,19 @@ $$
 (a+b)^p = a^p+b^p \qquad \text{in } \mathbb{Z}_p.
 $$
 
-For example, in $\mathbb{Z}_3$, $(a+b)^3=a^3+b^3$ because the middle terms have coefficients $3$.
-
-This identity is called the **Freshman’s Dream**.
+---
 
 ## Lemma 16.18
 
-Let $R$ be a ring with identity.
+**Let $R$ be a ring with identity. If $1$ has additive order $n$, then the characteristic of $R$ is $n$.**
 
-If $1$ has additive order $n$, then the characteristic of $R$ is $n$.
-
-Recall that the additive order of $1$ is the smallest positive integer $n$ such that
-
-$$
-n1=0.
-$$
-
-This allows us to determine the characteristic of a ring by examining only its multiplicative identity.
+We can find the characteristic of a ring just by looking multiplicative identity.
 
 ---
 
 ## Proof of Lemma 16.18
 
-Suppose $1$ has additive order $n$.
-
-Then $n1=0$.
+Suppose $1$ has  order $n$ in the abelian group $(R, +)$. Then $n1=0$.
 
 For any $r\in R$,
 
@@ -230,13 +170,7 @@ $$
 nr=n(1r)=(n1)r=0r=0.
 $$
 
-Thus, $\operatorname{char}R\leq n$.
-
-If a smaller positive integer annihilated every element of $R$, it would also annihilate $1$.
-
-This contradicts the order of $1$.
-
-Hence, $\operatorname{char}R=n$.
+Thus, $\operatorname{char}R\leq n$. 
 
 If $1$ has infinite additive order, then $\operatorname{char}R=0$.
 
@@ -246,56 +180,51 @@ If $1$ has infinite additive order, then $\operatorname{char}R=0$.
 
 **The characteristic of an integral domain is either prime or zero.**
 
-In other words, if $D$ is an integral domain, then
-
-$$
-\operatorname{char}D=0
-$$
-
-or
-
-$$
-\operatorname{char}D=p
-$$
-
-for some prime number $p$.
-
-Why can an integral domain not have characteristic $6$?
 
 ---
 
 ## Proof of Theorem 16.19
 
-Suppose $D$ is an integral domain with
+Suppose $D$ is an integral domain with $\operatorname{char}D=n>0.$
 
-$$
-\operatorname{char}D=n>0.
-$$
-
-Assume $n$ is composite, so $n=ab$ with
-
-$$
-1<a<n,\qquad1<b<n.
-$$
+Assume $n$ is composite, so $n=ab$ with $1<a<n,\qquad1<b<n.$
 
 By Lemma 16.18, $n1=0$. Thus,
 
 $$
-0=n1=(ab)1=(a1)(b1).
+0=n1=(ab)1=(a1)(b1)
 $$
 
-Since $D$ has no zero divisors,
+Since $D$ has no zero divisors, $a1=0\quad\text{or}\quad b1=0.$
 
-$$
-a1=0\quad\text{or}\quad b1=0.
-$$
-
-Both contradict the minimality of $n$.
-
-Therefore, $n$ must be prime.
+Both contradict the minimality of $n$. Therefore, $n$ must be prime.
 
 ---
 
+
+## Activity: Two Nine-Element Sets
+
+Consider this set of nine elements
+$S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}$ where
+
+$$
+(a+b\alpha)+(c+d\alpha)
+=(a+c)+(b+d)\alpha
+$$
+
+$$
+(a+b\alpha)(c+d\alpha)
+=(ac)+(ad+bc)\alpha +(bd)\alpha^2
+$$
+
+where the left side of the class $\alpha^2=2$ on the right side of the class $\alpha^2=0$
+
+
+
+For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.
+
+
+---
 
 
 
@@ -321,41 +250,4 @@ Determine whether each set is a ring under the usual operations. If it is a ring
 1. $\mathbb Q(\sqrt{2})=\{a+b\sqrt{2}:a,b\in\mathbb Q\}$.
 2. $\mathbb Z[\sqrt{3}]=\{a+b\sqrt{3}:a,b\in\mathbb Z\}$.
 
----
 
-## A Set with Nine Elements
-
-Let $\alpha$ be a symbol satisfying $\alpha^2=2$ in $\mathbb{F}_3$, and consider
-
-$$
-S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}
-$$
-
-where $a+b\alpha + c+d\alpha = (a+c)+(b+d)\alpha$ and $a+b\alpha \cdot c+d\alpha = (ac+2bd) +(ad+bc)\alpha$ . $\alpha$ communtes with elements in $\{\mathbb{Z}_3\}$. S has 9 elements.
-
-
-**What can you determine about $S$?**
-
-- Is this a ring>
-- What are the tables for addition and multiplication.
-- What kind of a ring is it?
-
----
-
-## Another Nine-Element Set
-
-Let $\beta$ be a symbol satisfying $\beta^2=0$ in $\mathbb{Z}_3$, and consider
-
-$$
-R=\{a+b\beta : a,b\in\mathbb{F}_3\}.
-$$
-
-where $a+b\beta + c+d\beta = (a+c)+(b+d)\beta$ and $a+b\beta \cdot c+d\beta = (ac) +(ad+bc)\beta$ . $\beta$ communtes with elements in $\{\mathbb{Z}_3\}$. S has 9 elements.
-
-**What can you determine about $R$?**
-
-- Is this a ring?
-- What are the tables for addition and multiplication.
-- What kind of a ring is it?
-
----

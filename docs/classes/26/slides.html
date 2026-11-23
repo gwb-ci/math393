@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.37">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.19">
 
   <title>Math 393 - Abstract Algebra – Slides: Cancellation Law and Finite Fields</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -19,10 +19,13 @@
     /* Default styles provided by pandoc.
     ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
     */
-    code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -137,7 +140,7 @@
 </section>
 <section id="definitin-of-a-ring" class="slide level2">
 <h2>Definitin of a Ring</h2>
-<p>A nonempty set <span class="math inline">\(R\)</span> is a <strong>ring</strong> if it has two closed binary operations, addition and multiplication, satisfying:</p>
+<p><span class="math inline">\((R, +, \cdot)\)</span> is a <strong>ring</strong> if it satisfies:</p>
 <ol type="1">
 <li><span class="math inline">\(a+b=b+a\)</span> for <span class="math inline">\(a,b\in R\)</span>.</li>
 <li><span class="math inline">\((a+b)+c=a+(b+c)\)</span> for <span class="math inline">\(a,b,c\in R\)</span>.</li>
@@ -165,38 +168,23 @@
 <p><span class="math display">\[
 ab=ac\implies b=c.
 \]</span></p>
-<p>This is the <strong>cancellation law</strong>.</p>
 </section>
 <section id="proof-of-proposition-16.15" class="slide level2">
 <h2>Proof of Proposition 16.15</h2>
-<p>Suppose <span class="math inline">\(D\)</span> is an integral domain.</p>
-<p>Let <span class="math inline">\(a\neq0\)</span> and suppose <span class="math inline">\(ab=ac\)</span>.</p>
-<p>Then <span class="math inline">\(ab-ac=0.\)</span></p>
-<p>By the distributive law, <span class="math inline">\(a(b-c)=0.\)</span></p>
-<p>Since <span class="math inline">\(D\)</span> has no zero divisors and <span class="math inline">\(a\neq0\)</span>, <span class="math inline">\(b-c=0.\)</span></p>
-<p>Therefore, <span class="math inline">\(b=c\)</span>.</p>
+<p><strong>Suppose <span class="math inline">\(D\)</span> is an integral domain.</strong> Let <span class="math inline">\(a\neq0\)</span> and suppose <span class="math inline">\(ab=ac\)</span>. Then <span class="math inline">\(ab-ac=0.\)</span> By the distributive law, <span class="math inline">\(a(b-c)=0.\)</span>.Since <span class="math inline">\(D\)</span> has no zero divisors and <span class="math inline">\(a\neq0\)</span>, <span class="math inline">\(b-c=0.\)</span> Therefore, <span class="math inline">\(b=c\)</span>.</p>
 </section>
-<section id="converse-of-proposition-16.15" class="slide level2">
-<h2>Converse of Proposition 16.15</h2>
-<p>Suppose that cancellation holds in <span class="math inline">\(D\)</span>.</p>
-<p>Let <span class="math inline">\(ab=0\)</span> and suppose <span class="math inline">\(a\neq0\)</span>.</p>
-<p>Since <span class="math inline">\(a0=0\)</span>, we have <span class="math inline">\(ab=a0.\)</span></p>
-<p>By cancellation, <span class="math inline">\(b=0\)</span>.</p>
-<p>Thus, <span class="math inline">\(D\)</span> has no zero divisors.</p>
-<p>Since <span class="math inline">\(D\)</span> is a commutative ring with identity, it is an integral domain.</p>
+<section id="proof-of-proposition-16.15-1" class="slide level2">
+<h2>Proof of Proposition 16.15</h2>
+<p><strong>Suppose that cancellation holds in <span class="math inline">\(D\)</span>.</strong> Let <span class="math inline">\(ab=0\)</span> and suppose <span class="math inline">\(a\neq0\)</span>. Since <span class="math inline">\(a0=0\)</span>, we have <span class="math inline">\(ab=a0.\)</span> By cancellation, <span class="math inline">\(b=0\)</span>. Thus, <span class="math inline">\(D\)</span> has no zero divisors. Since <span class="math inline">\(D\)</span> is a commutative ring with identity, it is an integral domain.</p>
 </section>
 <section id="theorem-16.16" class="slide level2">
 <h2>Theorem 16.16</h2>
 <p><strong>Every finite integral domain is a field.</strong></p>
-<p>This tells us that a finite commutative ring with identity and no zero divisors automatically has multiplicative inverses for every nonzero element.</p>
 </section>
 <section id="proof-of-theorem-16.16" class="slide level2">
 <h2>Proof of Theorem 16.16</h2>
-<p>The proof uses a familiar fact about finite sets: An injective function from a finite set to itself must also be surjective.</p>
-<p>Let <span class="math inline">\(D\)</span> be a finite integral domain, and let</p>
-<p><span class="math display">\[
-D^*=D\setminus\{0\}.
-\]</span></p>
+<p>An injective function from a finite set to itself must also be surjective.</p>
+<p>Let <span class="math inline">\(D\)</span> be a finite integral domain, and let <span class="math inline">\(D^*=D\setminus\{0\}.\)</span></p>
 <p>Choose <span class="math inline">\(a\in D^*\)</span> and define</p>
 <p><span class="math display">\[
 \lambda_a:D^*\to D^*,\qquad
@@ -207,20 +195,13 @@ D^*=D\setminus\{0\}.
 </section>
 <section id="proof-of-theorem-16.16-continued" class="slide level2">
 <h2>Proof of Theorem 16.16 Continued</h2>
-<p>Suppose</p>
-<p><span class="math display">\[
-\lambda_a(d_1)=\lambda_a(d_2).
-\]</span></p>
-<p>Then <span class="math inline">\(ad_1=ad_2\)</span>.</p>
-<p>By cancellation, <span class="math inline">\(d_1=d_2\)</span>.</p>
-<p>Thus, <span class="math inline">\(\lambda_a\)</span> is one-to-one.</p>
-<p>Since <span class="math inline">\(D^*\)</span> is finite, <span class="math inline">\(\lambda_a\)</span> is also onto.</p>
-<p>Therefore, there exists <span class="math inline">\(d\in D^*\)</span> such that</p>
+<p>Suppose <span class="math inline">\(\lambda_a(d_1)=\lambda_a(d_2).\)</span> Then <span class="math inline">\(ad_1=ad_2\)</span>.</p>
+<p>By cancellation, <span class="math inline">\(d_1=d_2\)</span>. Thus, <span class="math inline">\(\lambda_a\)</span> is one-to-one.</p>
+<p>Since <span class="math inline">\(D^*\)</span> is finite, <span class="math inline">\(\lambda_a\)</span> is also onto. Therefore, there exists <span class="math inline">\(d\in D^*\)</span> such that</p>
 <p><span class="math display">\[
 ad=1.
 \]</span></p>
-<p>Since <span class="math inline">\(D\)</span> is commutative, <span class="math inline">\(da=1\)</span> also.</p>
-<p>Every nonzero element has an inverse, so <span class="math inline">\(D\)</span> is a field.</p>
+<p>Since <span class="math inline">\(D\)</span> is commutative, <span class="math inline">\(da=1\)</span> also. Every nonzero element has an inverse, so <span class="math inline">\(D\)</span> is a field.</p>
 </section>
 <section id="characteristic-of-a-ring" class="slide level2">
 <h2>Characteristic of a Ring</h2>
@@ -233,20 +214,19 @@ nr=\underbrace{r+\cdots+r}_{n\text{ times}}.
 nr=0\quad\text{for all }r\in R.
 \]</span></p>
 <p>If no such positive integer exists, the characteristic is defined to be <span class="math inline">\(0\)</span>.</p>
-<p>We write <span class="math inline">\(\operatorname{char}R\)</span>.</p>
 </section>
-<section id="examples-of-characteristic" class="slide level2">
-<h2>Examples of Characteristic</h2>
+<section id="examples-of-characteristics" class="slide level2">
+<h2>Examples of Characteristics</h2>
 <ul>
 <li><span class="math inline">\(\operatorname{char}\mathbb Z=0\)</span>.</li>
 <li><span class="math inline">\(\operatorname{char}\mathbb Q=0\)</span>.</li>
 <li><span class="math inline">\(\operatorname{char}\mathbb R=0\)</span>.</li>
 <li><span class="math inline">\(\operatorname{char}\mathbb Z_n=n\)</span></li>
-<li><span class="math inline">\(\operatorname{char}\mathbb F=2\)</span></li>
+<li><span class="math inline">\(\operatorname{char} F=2\)</span></li>
 </ul>
 </section>
-<section id="the-freshmans-dream-in-mathbbz_p" class="slide level2">
-<h2>The Freshman’s Dream in <span class="math inline">\(\mathbb{Z}_p\)</span></h2>
+<section id="powers-of-p-in-mathbbz_p" class="slide level2">
+<h2>Powers of <span class="math inline">\(p\)</span> in <span class="math inline">\(\mathbb{Z}_p\)</span></h2>
 <p>For a prime <span class="math inline">\(p\)</span>, the binomial theorem gives</p>
 <p><span class="math display">\[
 (a+b)^p
@@ -257,67 +237,50 @@ nr=0\quad\text{for all }r\in R.
 <p><span class="math display">\[
 (a+b)^p = a^p+b^p \qquad \text{in } \mathbb{Z}_p.
 \]</span></p>
-<p>For example, in <span class="math inline">\(\mathbb{Z}_3\)</span>, <span class="math inline">\((a+b)^3=a^3+b^3\)</span> because the middle terms have coefficients <span class="math inline">\(3\)</span>.</p>
-<p>This identity is called the <strong>Freshman’s Dream</strong>.</p>
 </section>
 <section id="lemma-16.18" class="slide level2">
 <h2>Lemma 16.18</h2>
-<p>Let <span class="math inline">\(R\)</span> be a ring with identity.</p>
-<p>If <span class="math inline">\(1\)</span> has additive order <span class="math inline">\(n\)</span>, then the characteristic of <span class="math inline">\(R\)</span> is <span class="math inline">\(n\)</span>.</p>
-<p>Recall that the additive order of <span class="math inline">\(1\)</span> is the smallest positive integer <span class="math inline">\(n\)</span> such that</p>
-<p><span class="math display">\[
-n1=0.
-\]</span></p>
-<p>This allows us to determine the characteristic of a ring by examining only its multiplicative identity.</p>
+<p><strong>Let <span class="math inline">\(R\)</span> be a ring with identity. If <span class="math inline">\(1\)</span> has additive order <span class="math inline">\(n\)</span>, then the characteristic of <span class="math inline">\(R\)</span> is <span class="math inline">\(n\)</span>.</strong></p>
+<p>We can find the characteristic of a ring just by looking multiplicative identity.</p>
 </section>
 <section id="proof-of-lemma-16.18" class="slide level2">
 <h2>Proof of Lemma 16.18</h2>
-<p>Suppose <span class="math inline">\(1\)</span> has additive order <span class="math inline">\(n\)</span>.</p>
-<p>Then <span class="math inline">\(n1=0\)</span>.</p>
+<p>Suppose <span class="math inline">\(1\)</span> has order <span class="math inline">\(n\)</span> in the abelian group <span class="math inline">\((R, +)\)</span>. Then <span class="math inline">\(n1=0\)</span>.</p>
 <p>For any <span class="math inline">\(r\in R\)</span>,</p>
 <p><span class="math display">\[
 nr=n(1r)=(n1)r=0r=0.
 \]</span></p>
 <p>Thus, <span class="math inline">\(\operatorname{char}R\leq n\)</span>.</p>
-<p>If a smaller positive integer annihilated every element of <span class="math inline">\(R\)</span>, it would also annihilate <span class="math inline">\(1\)</span>.</p>
-<p>This contradicts the order of <span class="math inline">\(1\)</span>.</p>
-<p>Hence, <span class="math inline">\(\operatorname{char}R=n\)</span>.</p>
 <p>If <span class="math inline">\(1\)</span> has infinite additive order, then <span class="math inline">\(\operatorname{char}R=0\)</span>.</p>
 </section>
 <section id="theorem-16.19" class="slide level2">
 <h2>Theorem 16.19</h2>
 <p><strong>The characteristic of an integral domain is either prime or zero.</strong></p>
-<p>In other words, if <span class="math inline">\(D\)</span> is an integral domain, then</p>
-<p><span class="math display">\[
-\operatorname{char}D=0
-\]</span></p>
-<p>or</p>
-<p><span class="math display">\[
-\operatorname{char}D=p
-\]</span></p>
-<p>for some prime number <span class="math inline">\(p\)</span>.</p>
-<p>Why can an integral domain not have characteristic <span class="math inline">\(6\)</span>?</p>
 </section>
 <section id="proof-of-theorem-16.19" class="slide level2">
 <h2>Proof of Theorem 16.19</h2>
-<p>Suppose <span class="math inline">\(D\)</span> is an integral domain with</p>
-<p><span class="math display">\[
-\operatorname{char}D=n&gt;0.
-\]</span></p>
-<p>Assume <span class="math inline">\(n\)</span> is composite, so <span class="math inline">\(n=ab\)</span> with</p>
-<p><span class="math display">\[
-1&lt;a&lt;n,\qquad1&lt;b&lt;n.
-\]</span></p>
+<p>Suppose <span class="math inline">\(D\)</span> is an integral domain with <span class="math inline">\(\operatorname{char}D=n&gt;0.\)</span></p>
+<p>Assume <span class="math inline">\(n\)</span> is composite, so <span class="math inline">\(n=ab\)</span> with <span class="math inline">\(1&lt;a&lt;n,\qquad1&lt;b&lt;n.\)</span></p>
 <p>By Lemma 16.18, <span class="math inline">\(n1=0\)</span>. Thus,</p>
 <p><span class="math display">\[
-0=n1=(ab)1=(a1)(b1).
+0=n1=(ab)1=(a1)(b1)
 \]</span></p>
-<p>Since <span class="math inline">\(D\)</span> has no zero divisors,</p>
+<p>Since <span class="math inline">\(D\)</span> has no zero divisors, <span class="math inline">\(a1=0\quad\text{or}\quad b1=0.\)</span></p>
+<p>Both contradict the minimality of <span class="math inline">\(n\)</span>. Therefore, <span class="math inline">\(n\)</span> must be prime.</p>
+</section>
+<section id="activity-two-nine-element-sets" class="slide level2">
+<h2>Activity: Two Nine-Element Sets</h2>
+<p>Consider this set of nine elements <span class="math inline">\(S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}\)</span> where</p>
 <p><span class="math display">\[
-a1=0\quad\text{or}\quad b1=0.
+(a+b\alpha)+(c+d\alpha)
+=(a+c)+(b+d)\alpha
 \]</span></p>
-<p>Both contradict the minimality of <span class="math inline">\(n\)</span>.</p>
-<p>Therefore, <span class="math inline">\(n\)</span> must be prime.</p>
+<p><span class="math display">\[
+(a+b\alpha)(c+d\alpha)
+=(ac)+(ad+bc)\alpha +(bd)\alpha^2
+\]</span></p>
+<p>where the left side of the class <span class="math inline">\(\alpha^2=2\)</span> on the right side of the class <span class="math inline">\(\alpha^2=0\)</span></p>
+<p>For your assigned set, build the addition and multiplication tables. Is it a ring? What kind of ring is it? Be ready to share one observation with the class.</p>
 </section>
 <section id="activity-field-or-not" class="slide level2">
 <h2>Activity: Field or Not?</h2>
@@ -347,7 +310,7 @@ S=\{a+b\alpha : a,b\in\mathbb{Z}_3\}
 <p>where <span class="math inline">\(a+b\alpha + c+d\alpha = (a+c)+(b+d)\alpha\)</span> and <span class="math inline">\(a+b\alpha \cdot c+d\alpha = (ac+2bd) +(ad+bc)\alpha\)</span> . <span class="math inline">\(\alpha\)</span> communtes with elements in <span class="math inline">\(\{\mathbb{Z}_3\}\)</span>. S has 9 elements.</p>
 <p><strong>What can you determine about <span class="math inline">\(S\)</span>?</strong></p>
 <ul>
-<li>Is this a ring&gt;</li>
+<li>Is this a ring?</li>
 <li>What are the tables for addition and multiplication.</li>
 <li>What kind of a ring is it?</li>
 </ul>
